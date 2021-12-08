@@ -1,0 +1,34 @@
+---
+layout: post
+title: Google Summer of Code 2017 Students
+category: activism
+author: Genadi Samokovarov
+published: true
+date: 2017-05-12 18:00:00 -02:00
+---
+
+We are super excited to announce our accepted Google Summer of Code students
+for 2017. Welcome [Marko] and [Assain]! They will hack on Rails for the summer.
+
+## [Marko Bogdanović][Marko]
+
+[Marko] will be implementing and improving long running benchmarks for Ruby and
+Rails. He will be mentored by [Jon], [Robin] and [Noah].
+
+## [Assain Jaleel][Assain]
+
+[Assain] is going to refresh the cookie system in Rails. He'll be mentored by
+[Kasper] with help from [Michael Coyne].
+
+## Thank You
+
+We'd like to shout-out to everyone who participated in this year's selection
+process – both students and mentors. Let's have a great summer, all!
+
+[Assain]: https://github.com/Assain
+[Marko]: https://github.com/bmarkons
+[Robin]: https://github.com/robin850
+[Jon]: https://github.com/maclover7
+[Noah]: https://github.com/noahgibbs
+[Kasper]: https://github.com/kaspth
+[Michael Coyne]: https://github.com/mikeycgto

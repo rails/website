@@ -1,0 +1,27 @@
+<nav class="nav">
+  <a class="nav__logo" href="{{ '/' | absolute_url }}"></a>
+
+  {% if page.id == 'home' %}
+    <input class="nav__checkbox" id="nav__checkbox" type="checkbox" role="button" />
+
+    <label class="nav__toggle" for="nav__checkbox">
+      <span></span>
+    </label>
+
+    <div class="nav__options">
+      <div>
+        <ul>
+          {% for option in site.data.nav.items limit:3 %}
+            <li><a href="{{ option.url | absolute_url }}"><span>{{ option.title }}</span></a></li>
+          {% endfor %}
+        </ul>
+
+        <ul>
+          {% for option in site.data.nav.items limit:3 offset:3 %}
+            <li><a href="{{ option.url | absolute_url }}"><span>{{ option.title }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+</nav>

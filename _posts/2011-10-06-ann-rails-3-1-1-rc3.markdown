@@ -1,0 +1,228 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.1.1.rc3'
+categories:
+- releases
+author: spastorino
+published: true
+date: 2011-10-06 02:21:00.000000000 +01:00
+---
+Hi everyone,
+
+Rails 3.1.1.rc3 has been released. Please give it a try, it's our chance to fix regressions you might find and make a beautiful 3.1.1 stable release. If there are no regressions I will be releasing 3.1.1 final next October 7th. If you find any regression please contact me ASAP by email, twitter or github.
+
+## CHANGES
+
+*Action Mailer*
+
+* No changes
+
+
+*Action Pack*
+
+* stylesheet_link_tag('/stylesheets/application') and similar helpers doesn't
+throw Sprockets::FileOutsidePaths exception anymore [Santiago Pastorino]
+
+* Ensure default_asset_host_protocol is respected, closes #2980. [José Valim]
+
+  Changing rake db:schema:dump to run :environment as well as :load_config,
+  as running :load_config alone will lead to the dumper being run without
+  including extensions such as those included in foreigner and
+  spatial_adapter.
+
+  This reverses a change made here:
+  https://github.com/rails/rails/commit/5df72a238e9fcb18daf6ab6e6dc9051c9106d7bb#L0L324
+
+  I'm assuming here that :load_config needs to be invoked
+  separately from :environment, as it is elsewhere in the
+  file for db operations, if not the alternative is to go
+  back to "task :dump => :environment do".
+
+  [Ben Woosley]
+
+* Update to rack-cache 1.1.
+
+  Versions prior to 1.1 delete the If-Modified-Since and If-Not-Modified
+  headers when config.action_controller.perform_caching is true. This has two
+  problems:
+    * unexpected inconsistent behaviour between development &
+      production environments
+    * breaks applications that use of these headers
+
+  [Brendan Ribera]
+
+* Ensure that enhancements to assets:precompile task are only run once [Sam Pohlenz]
+
+* TestCase should respect the view_assigns API instead of pulling variables on
+its own. [José Valim]
+
+* javascript_path and stylesheet_path now refer to /assets if asset pipelining
+is on. [Santiago Pastorino]
+
+* button_to support form option. Now you're able to pass for example
+'data-type' => 'json'. [ihower]
+
+* image_path and image_tag should use /assets if asset pipelining is turned
+on. Closes #3126 [Santiago Pastorino and christos]
+
+* Avoid use of existing precompiled assets during rake assets:precompile run.
+Closes #3119 [Guillermo Iguaran]
+
+* Copy assets to nondigested filenames too [Santiago Pastorino]
+
+* Give precedence to `config.digest = false` over the existence of
+manifest.yml asset digests [christos]
+
+* escape options for the stylesheet_link_tag method [Alexey Vakhov]
+
+* Re-launch assets:precompile task using (Rake.)ruby instead of Kernel.exec so
+it works on Windows [cablegram]
+
+* env var passed to process shouldn't be modified in process method. [Santiago
+Pastorino]
+
+* `rake assets:precompile` loads the application but does not initialize
+it.
+
+  To the app developer, this means configuration add in
+	config/initializers/* will not be executed.
+
+  Plugins developers need to special case their initializers that are
+  meant to be run in the assets group by adding :group => :assets. [José Valim]
+
+* Sprockets uses config.assets.prefix for asset_path [asee]
+
+* FileStore key_file_path properly limit filenames to 255 characters. [phuibonhoa]
+
+* Fix Hash#to_query edge case with html_safe strings. [brainopia]
+
+* Allow asset tag helper methods to accept :digest => false option in order to completely avoid the digest generation.
+Useful for linking assets from static html files or from emails when the user
+could probably look at an older html email with an older asset. [Santiago Pastorino]
+
+* Don't mount Sprockets server at config.assets.prefix if config.assets.compile is false. [Mark J. Titorenko]
+
+* Set relative url root in assets when controller isn't available for Sprockets (eg. Sass files using asset_path). Fixes #2435 [Guillermo Iguaran]
+
+* Fix basic auth credential generation to not make newlines. GH #2882
+
+* Fixed the behavior of asset pipeline when config.assets.digest and config.assets.compile are false and requested asset isn't precompiled.
+  Before the requested asset were compiled anyway ignoring that the config.assets.compile flag is false. [Guillermo Iguaran]
+
+* CookieJar is now Enumerable. Fixes #2795
+
+* Fixed AssetNotPrecompiled error raised when rake assets:precompile is compiling certain .erb files. See GH #2763 #2765 #2805 [Guillermo Iguaran]
+
+* Manifest is correctly placed in assets path when default assets prefix is changed. Fixes #2776 [Guillermo Iguaran]
+
+* Fixed stylesheet_link_tag and javascript_include_tag to respect additional options passed by the users when debug is on. [Guillermo Iguaran]
+
+* Fix ActiveRecord#exists? when passsed a nil value
+
+* Fix assert_select_email to work on multipart and non-multipart emails as the method stopped working correctly in Rails 3.x due to changes in the new mail gem.
+
+
+*Active Model*
+
+* Remove hard dependency on bcrypt-ruby to avoid make ActiveModel dependent on a binary library.
+  You must add the gem explicitly to your Gemfile if you want use ActiveModel::SecurePassword:
+
+  gem 'bcrypt-ruby', '~> 3.0.0'
+
+  See GH #2687. [Guillermo Iguaran]
+
+
+*Active Record*
+
+* Add deprecation for the preload_associations method. Fixes #3022.
+
+  [Jon Leighton]
+
+* Don't require a DB connection when loading a model that uses set_primary_key. GH #2807.
+
+  [Jon Leighton]
+
+* Fix using select() with a habtm association, e.g. Person.friends.select(:name). GH #3030 and
+  #2923.
+
+  [Hendy Tanata]
+
+* Fix belongs_to polymorphic with custom primary key on target. GH #3104.
+
+  [Jon Leighton]
+
+* CollectionProxy#replace should change the DB records rather than just mutating the array.
+  Fixes #3020.
+
+  [Jon Leighton]
+
+* LRU cache in mysql and sqlite are now per-process caches.
+
+	* lib/active_record/connection_adapters/mysql_adapter.rb: LRU cache
+	  keys are per process id.
+	* lib/active_record/connection_adapters/sqlite_adapter.rb: ditto
+
+* Database adapters use a statement pool for limiting the number of open
+  prepared statments on the database.  The limit defaults to 1000, but can
+  be adjusted in your database config by changing 'statement_limit'.
+
+* Fix clash between using 'preload', 'joins' or 'eager_load' in a default scope and including the
+  default scoped model in a nested through association. (GH #2834.) [Jon Leighton]
+
+* Ensure we are not comparing a string with a symbol in HasManyAssociation#inverse_updates_counter_cache?.
+  Fixes GH #2755, where a counter cache could be decremented twice as far as it was supposed to be.
+
+  [Jon Leighton]
+
+* Don't send any queries to the database when the foreign key of a belongs_to is nil. Fixes
+  GH #2828. [Georg Friedrich]
+
+* Fixed find_in_batches method to not include order from default_scope. See GH #2832 [Arun Agrawal]
+
+* Don't compute table name for abstract classes. Fixes problem with setting the primary key
+  in an abstract class. See GH #2791. [Akira Matsuda]
+
+* Psych errors with poor yaml formatting are proxied. Fixes GH #2645 and
+  GH #2731
+
+* Use the LIMIT word with the methods #last and #first. Fixes GH #2783 [Damien Mathieu]
+
+
+*Active Resource*
+
+* No changes
+
+
+*ActiveSupport*
+
+* ruby193: String#prepend is also unsafe [Akira Matsuda]
+
+* Fix obviously breakage of Time.=== for Time subclasses [jeremyevans]
+
+* Added fix so that file store does not raise an exception when cache dir does
+not exist yet. This can happen if a delete_matched is called before anything
+is saved in the cache. [Philippe Huibonhoa]
+
+* Fixed performance issue where TimeZone lookups would require tzinfo each time [Tim Lucas]
+
+* ActiveSupport::OrderedHash is now marked as extractable when using Array#extract_options! [Prem Sichanugrist]
+
+
+*Railties*
+
+* Add jquery-rails to Gemfile of plugins, test/dummy app needs it. Closes #3091. [Santiago Pastorino]
+
+* `rake assets:precompile` loads the application but does not initialize it.
+
+  To the app developer, this means configuration add in
+  config/initializers/* will not be executed.
+
+  Plugins developers need to special case their initializers that are
+  meant to be run in the assets group by adding :group => :assets.
+
+
+You can find an exhaustive list of changes on [github](https://github.com/rails/rails/compare/v3.1.0...v3.1.1.rc3). Along with the [closed issues marked for v3.1.1](https://github.com/rails/rails/issues?milestone=6&state=closed). You can also take a look to what's new between [v3.1.1.rc2 and v3.1.1.rc3](https://github.com/rails/rails/compare/v3.1.1.rc2...v3.1.1.rc3)
+
+You can also see issues [we haven't closed yet](https://github.com/rails/rails/issues?milestone=8&state=open).
+
+Thanks to everyone!

@@ -1,0 +1,90 @@
+---
+title: Community
+description:
+---
+
+<div class="heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>We make Rails better.</h1>
+
+        <h4>Rails is improving every year from the work of thousands of volunteers contributing in ways big and small. Everyone can help make this framework better whether they've been using it since the beginning or they just started yesterday.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="core common-background--grey common-shape--bottom-white-up-left common-shape--top-white-down-right">
+  <div class="container">
+    <div class="core__body">
+      <div class="core__headline common-headline">
+        <h3>Meet the Core team.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p><strong>The direction of the framework is being stewarded by the Rails Core.</strong> This group of long-term contributors manage releases, evaluate pull-requests, handle conduct complaints, and does a lot of the groundwork on major new features.</p>
+      </div>
+
+      <div class="core__members">
+        {% for member in site.data.community.core %}
+          <div class="core__member">
+            <div class="core__member__image">
+              <a href="{{ member.url }}">
+                <figure>
+                  <img src="{{ member.image | absolute_url }}" alt="" />
+                </figure>
+              </a>
+            </div>
+
+            <div class="core__member__content">
+              <h3><a href="{{ member.url }}">{{ member.name }}</a></h3>
+              <h4>{{ member.location }}</h4>
+              <h5>Since {{ member.since }}</h5>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="core__headline core__headline--padding-top common-headline">
+        <h3>The Committers.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p><strong>In addition to the Core team,</strong> the Committer team assists with processing pull requests and making changes to the framework, but does not have the keys to make final releases or set policy. All members of the Core team came up through working on this team: {% for member in site.data.community.committers %}{% if member.url %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+      </div>
+
+      <div class="core__headline core__headline--padding-top common-headline">
+        <h3>The Alumni.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p><strong>We’d like to extend a special thanks</strong> to the following Rails Core team members, lovingly known as The Alumni: {% for member in site.data.community.alumni %}{{ member.name }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+      </div>
+
+      <div class="core__content core__content--border-top core__content--padding-top common-content">
+        <h3>And everyone else in between!</h3>
+
+        <p>On top of these formal teams, there are thousands of code contributors. We’ve tracked everyones work on the <a href="http://contributors.rubyonrails.org">Rails Contributors site</a>. The community also cherishes all the people who contribute in other important ways to have a sound community, including documentation, evangelism, organizing, and more.</p>
+
+        <p><strong>Thank you to all who volunteer their time to improve Rails!</strong> ❤️</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heading common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h2>You can make it better.</h2>
+
+        <h4>Not only is Rails free to use, you can also help make it better. <a href="http://contributors.rubyonrails.org">More than 5,000 people</a> already have contributed.</h4>
+      </div>
+
+      <div class="heading__button">
+        <a href="https://github.com/rails/rails" class="common-button common-button--size-large common-button--color-red"><span>Contribute on GitHub</span></a>
+      </div>
+    </div>
+  </div>
+</div>

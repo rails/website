@@ -1,0 +1,128 @@
+.blog {
+
+  position: relative;
+
+  .container {
+    max-width: 1080px;
+  }
+
+  &__posts,
+  &__pagination {
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    width: calc(100% - 60px);
+  }
+
+  &__post {
+
+    border-top: 3px solid rgba($color-black, 0.1);
+    padding-top: 30px;
+
+    h6 {
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: -0.006em;
+      line-height: 26px;
+      margin-top: -7px;
+    }
+
+    dl {
+
+      margin-bottom: -6px;
+      margin-top: 1px;
+
+      dt {
+
+        color: $color-black;
+        font-size: 31px;
+        font-weight: 700;
+        letter-spacing: -0.006em;
+        line-height: 34px;
+
+        a {
+
+          color: $color-red;
+          text-decoration: underline;
+
+          &:hover {
+            color: $color-black;
+          }
+
+        }
+
+      }
+
+      dd {
+
+        color: $color-grey-5;
+        font-size: 21px;
+        line-height: 26px;
+        margin-top: 16px;
+
+        a {
+
+          color: $color-red;
+          text-decoration: underline;
+
+          &:hover {
+            color: $color-black;
+          }
+
+        }
+
+      }
+
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+
+  }
+
+  &__pagination {
+    border-top: 3px solid rgba($color-black, 0.1);
+    margin-top: 40px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+
+
+  @media(min-width: 1024px) {
+
+    &__posts,
+    &__pagination {
+      margin-left: 60px;
+      margin-right: 60px;
+      width: calc(100% - 120px);
+    }
+
+    &__post {
+
+      display: flex;
+      gap: 30px;
+      padding-top: 40px;
+
+      h6 {
+        flex: 1;
+        margin-top: -1px;
+      }
+
+      dl {
+        flex: 3;
+        margin-top: -8px;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 40px;
+      }
+
+    }
+
+  }
+
+
+
+}

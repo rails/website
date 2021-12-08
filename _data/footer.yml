@@ -1,0 +1,15 @@
+items:
+  - title: Conduct
+    url: /conduct
+
+  - title: Maintenance
+    url: /maintenance
+
+  - title: Security
+    url: /security
+
+  - title: Trademarks
+    url: /trademarks
+
+  - title: License
+    url: https://opensource.org/licenses/MIT

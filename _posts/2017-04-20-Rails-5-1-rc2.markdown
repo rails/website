@@ -1,0 +1,52 @@
+---
+layout: post
+title: 'Rails 5.1.0.rc2: Loving JavaScript, System Tests, Encrypted Secrets, and more'
+category: releases
+author: rafaelfranca
+published: true
+date: 2017-04-20 21:50 -04:00
+---
+
+We're happy to announce Rails 5.1.0.rc2 has been released. We are now really close to the final release.
+We still have a [few open issues in the milestone](https://github.com/rails/rails/milestone/49) but we are
+still expecting to be able to do the final release during the Railsconf 2017.
+
+While we are working to close the last issues, you can check [the Rails 5.1 releases notes](http://edgeguides.rubyonrails.org/5_1_release_notes.html),
+or the awesome summary of new features present in [the 5.1.0.beta1 blog post](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/).
+
+To view the changes for each gem, please read the changelogs on GitHub:
+
+* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/actioncable/CHANGELOG.md)
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/activesupport/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc2/railties/CHANGELOG.md)
+
+As per our [maintenance policy][maintenance-policy], the release of Rails 5.1 will mean that bug fixes will only apply
+to 5.1.x, regular security issues to 5.1.x and 5.0.x, and severe security issues to 5.1.x, 5.0.x, and 4.2.x.
+This means 4.x and below will essentially be unsupported!
+
+To try out this new release:
+
+```
+gem install rails -v 5.1.0.rc2
+```
+
+Make sure you are using RubyGems 2.6.11 or later before trying to install a pre release, with:
+
+```
+gem update --system 2.6.11
+```
+
+Please help us test this release candidate version of Rails. It's always frustrating when we put a lot of work into a
+new release, betas, release candidates, and then get people report all sorts of issues on week one of the final release.
+This is an incremental upgrade to Rails 5.0. Please do your community duty and help us land a solid 5.1 without needing
+an immediate 5.1.1.
+
+Thank you!
+
+[maintenance-policy]: http://edgeguides.rubyonrails.org/maintenance_policy.html

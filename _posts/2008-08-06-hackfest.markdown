@@ -1,0 +1,14 @@
+---
+layout: post
+title: Hackfest
+categories:
+- edge
+author: Pratik Naik
+published: true
+date: 2008-08-06 12:49:00.000000000 +01:00
+---
+<p>And once again, <a href="http://hackfest.rubyonrails.org">hackfest</a> is back. Only this time, it&#8217;s better than ever, thanks to <a href="http://weblog.rubyonrails.org/2008/4/2/rails-is-moving-from-svn-to-git">Git</a></p>
+<p>The idea is quite simple. You get 5000 points for each of your patches that get merged to the <a href="http://github.com/rails/rails/tree/master">core</a>. The person with the highest points at the end of the month wins.</p>
+<p><a href="http://hackfest.rubyonrails.org/2008/8">August hackfest</a> is already on and almost 3 more weeks to go, so hack on for the first prize &#8211; a free pass to <a href="http://en.oreilly.com/railseurope2008/public/content/home">RailsConf Europe</a> ( special thanks goes to O&#8217;Reilly for the prize )</p>
+<p>If you&#8217;ve never contributed to Rails before, now is a good time. <a href="http://railscasts.com/episodes/113">This railscast</a> is a nice head start.</p>
+<p>Thanks to all those who have contributed to Rails, making it better and better.</p>

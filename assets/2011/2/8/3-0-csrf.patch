@@ -1,0 +1,397 @@
+From 66ce3843d32e9f2ac3b1da20067af53019bbb034 Mon Sep 17 00:00:00 2001
+From: Michael Koziarski <michael@koziarski.com>
+Date: Wed, 5 Jan 2011 13:36:07 +1300
+Subject: [PATCH 1/2] Change the CSRF whitelisting to only apply to get requests
+
+Unfortunately the previous method of browser detection and XHR whitelisting is unable to prevent requests issued from some Flash animations and Java applets.  To ease the work required to include the CSRF token in ajax requests rails now supports providing the token in a custom http header:
+
+ X-CSRF-Token: ...
+
+This fixes CVE-2011-0447
+---
+ .../metal/request_forgery_protection.rb            |   19 +-
+ actionpack/lib/action_dispatch/http/request.rb     |    3 +-
+ .../controller/request_forgery_protection_test.rb  |  197 ++++++++------------
+ 3 files changed, 88 insertions(+), 131 deletions(-)
+
+diff --git a/actionpack/lib/action_controller/metal/request_forgery_protection.rb b/actionpack/lib/action_controller/metal/request_forgery_protection.rb
+index 429bec5..843a8d8 100644
+--- a/actionpack/lib/action_controller/metal/request_forgery_protection.rb
++++ b/actionpack/lib/action_controller/metal/request_forgery_protection.rb
+@@ -89,25 +89,24 @@ module ActionController #:nodoc:
+     end
+ 
+     protected
+-
+-      def protect_from_forgery(options = {})
+-        self.request_forgery_protection_token ||= :authenticity_token
+-        before_filter :verify_authenticity_token, options
+-      end
+-
+       # The actual before_filter that is used.  Modify this to change how you handle unverified requests.
+       def verify_authenticity_token
+-        verified_request? || raise(ActionController::InvalidAuthenticityToken)
++        verified_request? || handle_unverified_request
++      end
++
++      def handle_unverified_request
++        reset_session
+       end
+ 
+       # Returns true or false if a request is verified.  Checks:
+       #
+-      # * is the format restricted?  By default, only HTML requests are checked.
+       # * is it a GET request?  Gets should be safe and idempotent
+       # * Does the form_authenticity_token match the given token value from the params?
++      # * Does the X-CSRF-Token header match the form_authenticity_token
+       def verified_request?
+-        !protect_against_forgery? || request.forgery_whitelisted? ||
+-          form_authenticity_token == params[request_forgery_protection_token]
++        !protect_against_forgery? || request.get? ||
++          form_authenticity_token == params[request_forgery_protection_token] ||
++          form_authenticity_token == request.headers['X-CSRF-Token']
+       end
+ 
+       # Sets the token value for the current session.
+diff --git a/actionpack/lib/action_dispatch/http/request.rb b/actionpack/lib/action_dispatch/http/request.rb
+index eb165ed..4d4f95d 100644
+--- a/actionpack/lib/action_dispatch/http/request.rb
++++ b/actionpack/lib/action_dispatch/http/request.rb
+@@ -141,8 +141,9 @@ module ActionDispatch
+     end
+ 
+     def forgery_whitelisted?
+-      get? || xhr? || content_mime_type.nil? || !content_mime_type.verify_request?
++      get?
+     end
++    deprecate :forgery_whitelisted? => "it is just an alias for 'get?' now, update your code"
+ 
+     def media_type
+       content_mime_type.to_s
+diff --git a/actionpack/test/controller/request_forgery_protection_test.rb b/actionpack/test/controller/request_forgery_protection_test.rb
+index 5ec760d..398e75b 100644
+--- a/actionpack/test/controller/request_forgery_protection_test.rb
++++ b/actionpack/test/controller/request_forgery_protection_test.rb
+@@ -1,5 +1,4 @@
+ require 'abstract_unit'
+-require 'digest/sha1'
+ 
+ # common controller actions
+ module RequestForgeryProtectionActions
+@@ -28,6 +27,16 @@ class RequestForgeryProtectionController < ActionController::Base
+   protect_from_forgery :only => %w(index meta)
+ end
+ 
++class RequestForgeryProtectionControllerUsingOldBehaviour < ActionController::Base
++  include RequestForgeryProtectionActions
++  protect_from_forgery :only => %w(index meta)
++
++  def handle_unverified_request
++    raise(ActionController::InvalidAuthenticityToken)
++  end
++end
++
++
+ class FreeCookieController < RequestForgeryProtectionController
+   self.allow_forgery_protection = false
+ 
+@@ -50,153 +59,92 @@ end
+ # common test methods
+ 
+ module RequestForgeryProtectionTests
+-  def teardown
+-    ActionController::Base.request_forgery_protection_token = nil
+-  end
+-
+-
+-  def test_should_render_form_with_token_tag
+-     get :index
+-     assert_select 'form>div>input[name=?][value=?]', 'authenticity_token', @token
+-   end
+-
+-   def test_should_render_button_to_with_token_tag
+-     get :show_button
+-     assert_select 'form>div>input[name=?][value=?]', 'authenticity_token', @token
+-   end
+-
+-   def test_should_allow_get
+-     get :index
+-     assert_response :success
+-   end
+-
+-   def test_should_allow_post_without_token_on_unsafe_action
+-     post :unsafe
+-     assert_response :success
+-   end
+-
+-  def test_should_not_allow_html_post_without_token
+-    @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-    assert_raise(ActionController::InvalidAuthenticityToken) { post :index, :format => :html }
+-  end
+-
+-  def test_should_not_allow_html_put_without_token
+-    @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-    assert_raise(ActionController::InvalidAuthenticityToken) { put :index, :format => :html }
+-  end
+-
+-  def test_should_not_allow_html_delete_without_token
+-    @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-    assert_raise(ActionController::InvalidAuthenticityToken) { delete :index, :format => :html }
+-  end
++  def setup
++    @token      = "cf50faa3fe97702ca1ae"
+ 
+-  def test_should_allow_api_formatted_post_without_token
+-    assert_nothing_raised do
+-      post :index, :format => 'xml'
+-    end
++    ActiveSupport::SecureRandom.stubs(:base64).returns(@token)
++    ActionController::Base.request_forgery_protection_token = :authenticity_token
+   end
+ 
+-  def test_should_not_allow_api_formatted_put_without_token
+-    assert_nothing_raised do
+-      put :index, :format => 'xml'
+-    end
+-  end
+ 
+-  def test_should_allow_api_formatted_delete_without_token
+-    assert_nothing_raised do
+-      delete :index, :format => 'xml'
++  def test_should_render_form_with_token_tag
++    assert_not_blocked do
++      get :index
+     end
++    assert_select 'form>div>input[name=?][value=?]', 'authenticity_token', @token
+   end
+ 
+-  def test_should_not_allow_api_formatted_post_sent_as_url_encoded_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-      post :index, :format => 'xml'
++  def test_should_render_button_to_with_token_tag
++    assert_not_blocked do
++      get :show_button
+     end
++    assert_select 'form>div>input[name=?][value=?]', 'authenticity_token', @token
+   end
+ 
+-  def test_should_not_allow_api_formatted_put_sent_as_url_encoded_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-      put :index, :format => 'xml'
+-    end
++  def test_should_allow_get
++    assert_not_blocked { get :index }
+   end
+ 
+-  def test_should_not_allow_api_formatted_delete_sent_as_url_encoded_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-      delete :index, :format => 'xml'
+-    end
++  def test_should_allow_post_without_token_on_unsafe_action
++    assert_not_blocked { post :unsafe }
+   end
+ 
+-  def test_should_not_allow_api_formatted_post_sent_as_multipart_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::MULTIPART_FORM.to_s
+-      post :index, :format => 'xml'
+-    end
++  def test_should_not_allow_post_without_token
++    assert_blocked { post :index }
+   end
+ 
+-  def test_should_not_allow_api_formatted_put_sent_as_multipart_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::MULTIPART_FORM.to_s
+-      put :index, :format => 'xml'
+-    end
++  def test_should_not_allow_post_without_token_irrespective_of_format
++    assert_blocked { post :index, :format=>'xml' }
+   end
+ 
+-  def test_should_not_allow_api_formatted_delete_sent_as_multipart_form_without_token
+-    assert_raise(ActionController::InvalidAuthenticityToken) do
+-      @request.env['CONTENT_TYPE'] = Mime::MULTIPART_FORM.to_s
+-      delete :index, :format => 'xml'
+-    end
++  def test_should_not_allow_put_without_token
++    assert_blocked { put :index }
+   end
+ 
+-  def test_should_allow_xhr_post_without_token
+-    assert_nothing_raised { xhr :post, :index }
++  def test_should_not_allow_delete_without_token
++    assert_blocked { delete :index }
+   end
+ 
+-  def test_should_allow_xhr_put_without_token
+-    assert_nothing_raised { xhr :put, :index }
++  def test_should_not_allow_xhr_post_without_token
++    assert_blocked { xhr :post, :index }
+   end
+ 
+-  def test_should_allow_xhr_delete_without_token
+-    assert_nothing_raised { xhr :delete, :index }
++  def test_should_allow_post_with_token
++    assert_not_blocked { post :index, :authenticity_token => @token }
+   end
+ 
+-  def test_should_allow_xhr_post_with_encoded_form_content_type_without_token
+-    @request.env['CONTENT_TYPE'] = Mime::URL_ENCODED_FORM.to_s
+-    assert_nothing_raised { xhr :post, :index }
++  def test_should_allow_put_with_token
++    assert_not_blocked { put :index, :authenticity_token => @token }
+   end
+ 
+-  def test_should_allow_post_with_token
+-    post :index, :authenticity_token => @token
+-    assert_response :success
++  def test_should_allow_delete_with_token
++    assert_not_blocked { delete :index, :authenticity_token => @token }
+   end
+ 
+-  def test_should_allow_put_with_token
+-    put :index, :authenticity_token => @token
+-    assert_response :success
++  def test_should_allow_post_with_token_in_header
++    @request.env['HTTP_X_CSRF_TOKEN'] = @token
++    assert_not_blocked { post :index }
+   end
+ 
+-  def test_should_allow_delete_with_token
+-    delete :index, :authenticity_token => @token
+-    assert_response :success
++  def test_should_allow_delete_with_token_in_header
++    @request.env['HTTP_X_CSRF_TOKEN'] = @token
++    assert_not_blocked { delete :index }
+   end
+ 
+-  def test_should_allow_post_with_xml
+-    @request.env['CONTENT_TYPE'] = Mime::XML.to_s
+-    post :index, :format => 'xml'
+-    assert_response :success
++  def test_should_allow_put_with_token_in_header
++    @request.env['HTTP_X_CSRF_TOKEN'] = @token
++    assert_not_blocked { put :index }
+   end
+ 
+-  def test_should_allow_put_with_xml
+-    @request.env['CONTENT_TYPE'] = Mime::XML.to_s
+-    put :index, :format => 'xml'
++  def assert_blocked
++    session[:something_like_user_id] = 1
++    yield
++    assert_nil session[:something_like_user_id], "session values are still present"
+     assert_response :success
+   end
+ 
+-  def test_should_allow_delete_with_xml
+-    @request.env['CONTENT_TYPE'] = Mime::XML.to_s
+-    delete :index, :format => 'xml'
++  def assert_not_blocked
++    assert_nothing_raised { yield }
+     assert_response :success
+   end
+ end
+@@ -205,16 +153,6 @@ end
+ 
+ class RequestForgeryProtectionControllerTest < ActionController::TestCase
+   include RequestForgeryProtectionTests
+-  def setup
+-    @controller = RequestForgeryProtectionController.new
+-    @request    = ActionController::TestRequest.new
+-    @request.format = :html
+-    @response   = ActionController::TestResponse.new
+-    @token      = "cf50faa3fe97702ca1ae"
+-
+-    ActiveSupport::SecureRandom.stubs(:base64).returns(@token)
+-    ActionController::Base.request_forgery_protection_token = :authenticity_token
+-  end
+ 
+   test 'should emit a csrf-token meta tag' do
+     ActiveSupport::SecureRandom.stubs(:base64).returns(@token + '<=?')
+@@ -223,6 +161,15 @@ class RequestForgeryProtectionControllerTest < ActionController::TestCase
+   end
+ end
+ 
++class RequestForgeryProtectionControllerUsingOldBehaviourTest < ActionController::TestCase
++  include RequestForgeryProtectionTests
++  def assert_blocked
++    assert_raises(ActionController::InvalidAuthenticityToken) do
++      yield
++    end
++  end
++end
++
+ class FreeCookieControllerTest < ActionController::TestCase
+   def setup
+     @controller = FreeCookieController.new
+@@ -255,13 +202,23 @@ class FreeCookieControllerTest < ActionController::TestCase
+   end
+ end
+ 
++
++
++
++
+ class CustomAuthenticityParamControllerTest < ActionController::TestCase
+   def setup
++    ActionController::Base.request_forgery_protection_token = :custom_token_name
++    super
++  end
++
++  def teardown
+     ActionController::Base.request_forgery_protection_token = :authenticity_token
++    super
+   end
+ 
+   def test_should_allow_custom_token
+-    post :index, :authenticity_token => 'foobar'
++    post :index, :custom_token_name => 'foobar'
+     assert_response :ok
+   end
+ end
+-- 
+1.7.2
+
+
+From 7b64adecf148852ca94bba1888d94aa4e3f77270 Mon Sep 17 00:00:00 2001
+From: Michael Koziarski <michael@koziarski.com>
+Date: Thu, 13 Jan 2011 11:05:52 +1300
+Subject: [PATCH 2/2] Make rails.js include the CSRF token in the X-CSRF-Token header with every ajax request.
+
+---
+ .../app/templates/public/javascripts/rails.js      |   16 ++++++++++++++++
+ 1 files changed, 16 insertions(+), 0 deletions(-)
+
+diff --git a/railties/lib/rails/generators/rails/app/templates/public/javascripts/rails.js b/railties/lib/rails/generators/rails/app/templates/public/javascripts/rails.js
+index 4283ed8..aed6aed 100644
+--- a/railties/lib/rails/generators/rails/app/templates/public/javascripts/rails.js
++++ b/railties/lib/rails/generators/rails/app/templates/public/javascripts/rails.js
+@@ -172,4 +172,20 @@
+       input.disabled = false;
+     });
+   });
++
++  Ajax.Responders.register({
++    onCreate: function(request) {
++      var csrf_meta_tag = $$('meta[name=csrf-token]')[0];
++
++      if (csrf_meta_tag) {
++        var header = 'X-CSRF-Token',
++            token = csrf_meta_tag.readAttribute('content');
++
++        if (!request.options.requestHeaders) {
++          request.options.requestHeaders = {};
++        }
++        request.options.requestHeaders[header] = token;
++      }
++    }
++  });
+ })();
+-- 
+1.7.2
+

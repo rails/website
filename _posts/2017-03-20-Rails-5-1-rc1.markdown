@@ -1,0 +1,60 @@
+---
+layout: post
+title: 'Rails 5.1.0.rc1: Loving JavaScript, System Tests, Encrypted Secrets, and more'
+category: releases
+author: rafaelfranca
+published: true
+date: 2017-03-20 15:00 -04:00
+---
+
+We're happy to announce Rails 5.1.0.rc1 has been released. With the help of the community we polished the Rails 5.1
+release with more than [380 commits](https://github.com/rails/rails/compare/v5.1.0.beta1...v5.1.0.rc1).
+
+Notably, [Stephen Touset](https://github.com/stouset) helped us up the encryption used for encrypted secrets, so you'll want to run [this script](https://gist.github.com/kaspth/bc37989c2f39a5642112f28b1d93f343)
+to upgrade your app if you're already dabbling with the feature. Thanks Stephen!
+
+While we are working to close the last issues, you can check [the Rails 5.1 releases notes](http://edgeguides.rubyonrails.org/5_1_release_notes.html),
+or the awesome summary of new features present in [the 5.1.0.beta1 blog post](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/).
+
+To view the changes for each gem, please read the changelogs on GitHub:
+
+* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/actioncable/CHANGELOG.md)
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/activesupport/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.rc1/railties/CHANGELOG.md)
+
+[Basecamp 3](https://basecamp.com) is already running this release candidate in production. Our friends at
+[Heroku](https://heroku.com) prepared the platform that is now fully compatible with all those shiny new features.
+
+As per our [maintenance policy][maintenance-policy], the release of Rails 5.1 will mean that bug fixes will only apply
+to 5.1.x, regular security issues to 5.1.x and 5.0.x, and severe security issues to 5.1.x, 5.0.x, and 4.2.x.
+This means 4.x and below will essentially be unsupported!
+
+To try out this new release:
+
+```
+gem install rails -v 5.1.0.rc1
+```
+
+Make sure you are using RubyGems 2.6.11 or later before trying to install a pre release, with:
+
+```
+gem update --system 2.6.11
+```
+
+Thank you to [Samuel Giddins](https://github.com/segiddins) for releasing this new version of RubyGems just in time for
+our release.
+
+Please help us test this release candidate version of Rails. It's always frustrating when we put a lot of work into a
+new release, betas, release candidates, and then get people report all sorts of issues on week one of the final release.
+This is an incremental upgrade to Rails 5.0. Please do your community duty and help us land a solid 5.1 without needing
+an immediate 5.1.1.
+
+Thank you!
+
+[maintenance-policy]: http://guides.rubyonrails.org/maintenance_policy.html

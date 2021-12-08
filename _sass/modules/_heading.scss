@@ -1,0 +1,153 @@
+.heading {
+
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+
+  .container {
+    max-width: 1080px;
+  }
+
+  &__body {
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    text-align: center;
+    width: calc(100% - 60px);
+    z-index: 2;
+  }
+
+  &__headline {
+
+    margin-bottom: -6px;
+    margin-top: -8px;
+
+    h3 {
+      padding-bottom: 3px;
+    }
+
+    h4 {
+      padding-top: 17px;
+    }
+
+    &--no-h1 {
+
+      h3 {
+        padding-top: 7px;
+      }
+
+      h4 {
+        padding-top: 3px;
+      }
+
+    }
+
+  }
+
+  &__content {
+
+    color: $color-grey-5;
+    margin-bottom: -33px;
+    margin-top: -7px;
+
+    &--has-headline {
+      margin-top: 33px;
+    }
+
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+
+
+
+  &--align-left {
+
+    .heading__body {
+      text-align: left;
+    }
+
+  }
+
+  &--frame-grey,
+  &--frame-white {
+
+    .heading__body {
+      border-radius: 12px;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 40px 30px;
+      width: calc(100% - 120px);
+    }
+
+  }
+
+  &--frame-grey {
+
+    .heading__body {
+      background: $color-grey-2;
+    }
+
+  }
+
+  &--frame-white {
+
+    .heading__body {
+      background: $color-white;
+      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+    }
+
+  }
+
+
+
+  @media(min-width: 1024px) {
+
+    &__body {
+      margin-left: 60px;
+      margin-right: 60px;
+      width: calc(100% - 120px);
+    }
+
+    &__headline {
+
+      margin-bottom: -9px;
+      margin-top: -15px;
+
+      h2 {
+        padding-bottom: 2px;
+        padding-top: 4px;
+      }
+
+      h4 {
+        padding-top: 20px;
+      }
+
+    }
+
+    &__button {
+      margin-top: 40px;
+    }
+
+    &--frame-grey,
+    &--frame-white {
+
+      .container {
+        max-width: 1320px;
+      }
+
+      .heading__body {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 80px 120px;
+        width: calc(100% - 360px);
+      }
+
+    }
+
+  }
+
+
+
+}

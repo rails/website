@@ -1,0 +1,83 @@
+---
+layout: post
+title: 'Rails 4.2.0 beta1: Active Job, Deliver Later, Adequate Record, Web Console'
+category: releases
+author: dhh
+published: true
+date: 2014-08-19 19:30:00 -08:00
+---
+We're putting the final touches on the first major new release of Rails in its second decade of life. While most software would be in a retirement home after a decade of operation, Rails has never been more fit, and this release is packed with goodies that'll make your work even easier, your apps even faster, and the whole experience even better.
+
+## Active Job, ActionMailer #deliver_later
+The headline feature for Rails 4.2 is the brand new Active Job framework, and its integrations. Active Job is an adapter layer on top of queuing systems like [Resque][resque], [Delayed Job][dj], [Sidekiq][sidekiq], and [more][more-aj-adapters]. You can write your jobs to Active Job, and they'll run on all these queues with no changes.
+
+With an always-configured queue in place (though the default is just an [inline runner][aj-inline-runner]), we can build on top of that where it makes sense. And the first place it makes sense is to send Action Mailer emails asynchronously. So we're introducing the [#deliver_later][deliver-later] method, which will do just that: Add your email to be sent as a job to a queue, so you don't bog down the controller or model. Voila!
+
+The cherry on top is our new [GlobalID][globalid] library. It makes it easy to pass Active Record objects to jobs by serializing them in a generic form. This means you no longer have to manually pack and unpack your Active Records by passing ids. Just give the job the straight AR object, and it'll serialize it using GlobalID, and deserialize it at run time. So much easier!
+
+Special thanks go out to [Cristian Bica][cristianbica] and [Abdelkader Boudih][seuros] for their outstanding work bringing this trinity of improvements to Rails!
+
+
+## Adequate Record
+[Aaron Patterson][tenderlove] is always hunting for performance bounties in Rails, and with an improvement project called [Adequate Record][adequate-record] for Active Record, he's come up good. A lot of common queries are now no less than twice as fast in Rails 4.2! This is a great step forward for performance. While computers are constantly getting cheaper and performance is improving, nobody ever said "hey, get that free speed out of my framework". So there you go: Some free speed, buddy!
+
+
+## Web Console
+Out of the wonderful [Google Summer of Code][gsoc] for Rails campaign comes [Web Console][web-console]. It's an IRB console available in the browser. In development mode, you can go to `/console` and do your work right there.
+
+Now that's neat, but what's insanely useful is that this console is automatically available on all exception pages! So when something is bust, you'll now instantly be able to inspect the state of affairs. It even allows you to jump between the different points in the backtrace, and you'll be able to inspect things right at that point.
+
+It's a wonderful improvement to the debugging workflow. Thanks to [Genadi Samokovarov][gsamokovarov] and [Ryan Dao][ryandao] for their work on this project.
+
+
+## Everything else
+Some quick highlights from the rest of all the wonder that is Rails 4.2:
+
+* Template digests are now automatically included when calculating etags for caching. So caches are bust when the template changes.
+* `respond_with` has moved out and into its own proper home with the [responders][responders] gem.
+* Support for real foreign keys! `add_foreign_key`/`remove_foreign_key` are now available in migrations.
+* A ton of bug fixes and minor improvements to Active Record.
+* Added `config.x.whatever.you_want = true` for custom configuration of your app in `config/environments/*`, `config/application.rb`, and initializers.
+* Added `Rails::Application.config_for(:some_yaml)` to load YAML configurations store in `config/` easily.
+
+We're working on a set of [preliminary release notes][release-notes] too.
+
+<h2 id="maintenance-consequences-and-rails-5-0">Maintenance consequences and Rails 5.0!</h2>
+
+As per our [maintenance policy][maintenance-policy], the release of Rails 4.2 will mean that bug fixes will only apply to 4-2-stable, regular security issues to 4.2.x, 4.1.x, and severe security issues to 4.2.x, 4.1.x, and 3.2.x. In addition to these already stated commitments, the honorable [Rafael França][rafaelfranca] has agreed to also apply bug fixes to 4-1-stable. So everyone still on 4.1 and unable to move quickly can thank Rafael!
+
+Rails 4.2 will also mark the last big release in the 4.x series. After release, we're going to work towards the big Rails 5.0! This means rails/master will have that target as soon as the release candidates for 4.2 start, and 4-2-stable is created.
+
+Rails 5.0 is in most likelihood going to target Ruby 2.2. There's a bunch of optimizations coming in Ruby 2.2 that are going to be very nice, but most importantly for Rails, symbols are going to be garbage collected. This means we can shed a lot of weight related to juggling strings when we accept input from the outside world. It also means that we can convert fully to keyword arguments and all the other good stuff from the latest Ruby.
+
+The release target for Rails 5.0 is currently spring/summer of 2015. So there's a while yet, but we're putting this out there for people to know, so gem maintainers and other Ruby implementations can know where we're going.
+
+
+## Please help us make Rails 4.2 solid!
+We rely on the feedback from everyone in the community to flush out bugs and upgrade issues ahead of a big release like this. So please give Rails 4.2 a try on your app, and if you're starting a new app today, you should probably use the beta1 for that, if you're just the least bit savvy with Rails.
+
+Issues can be recorded on the [Github issues tracker][issues].
+
+Already, [476 people have contributed][contributors] to this new release of Rails. Please do become one of them!
+
+[resque]: https://github.com/resque/resque
+[dj]: https://github.com/collectiveidea/delayed_job
+[sidekiq]: https://github.com/mperham/sidekiq
+[more-aj-adapters]: http://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html
+[aj-inline-runner]: http://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters/InlineAdapter.html
+[deliver-later]: http://edgeapi.rubyonrails.org/classes/ActionMailer/MessageDelivery.html#method-i-deliver_later
+[globalid]: https://github.com/rails/globalid
+[cristianbica]: https://github.com/cristianbica
+[seuros]: https://github.com/seuros
+[tenderlove]: https://github.com/tenderlove
+[adequate-record]: http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html
+[gsoc]: http://weblog.rubyonrails.org/2014/5/23/meet-our-google-summer-of-code-students-and-mentors/
+[web-console]: https://github.com/rails/web-console
+[gsamokovarov]: https://github.com/gsamokovarov
+[ryandao]: https://github.com/ryandao
+[release-notes]: http://edgeguides.rubyonrails.org/4_2_release_notes.html
+[maintenance-policy]: http://guides.rubyonrails.org/maintenance_policy.html
+[rafaelfranca]: https://github.com/rafaelfranca
+[issues]: https://github.com/rails/rails/issues
+[contributors]: http://contributors.rubyonrails.org/edge/contributors
+[responders]: https://github.com/plataformatec/responders

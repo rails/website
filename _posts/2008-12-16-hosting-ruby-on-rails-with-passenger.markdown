@@ -1,0 +1,15 @@
+---
+layout: post
+title: Hosting Ruby on Rails with Passenger
+categories: []
+author: David
+published: true
+date: 2008-12-16 12:31:00.000000000 +00:00
+---
+<p><a href="http://www.modrails.com/">Phusion Passenger aka mod_rails</a> has been on a tour de force lately and rightfully so. It makes Rails deployment so much simpler and combined with <a href="http://www.rubyenterpriseedition.com/"><span class="caps">REE</span></a> faster and with less memory overhead. So I&#8217;m really happy to see that lots of the hosting companies in the Rails world are adopting it and making it available to their customers.</p>
+<p>Rails Machine recently announced that <a href="http://blog.railsmachine.com/2008/12/6/hosting-your-way-passenger">Passenger is now part of their standard stack</a> and that they&#8217;ve made it silly easy to switch from a Mongrel-based setup to Passenger. The <a href="http://www.joyeur.com/2008/11/05/joyent-accelerator-214-release">latest Accelerator from Joyent</a> has Passenger preconfigured as well. At the shared hosting end, <a href="http://blog.dreamhost.com/2008/05/13/passenger-for-ruby-on-rails/">Dreamhost has been supporting Passenger for a while</a> (<a href="http://railstips.org/2008/12/14/deploying-rails-on-dreamhost-with-passenger">nice tutorial using Passenger at Dreamhost</a>).</p>
+<p>I&#8217;ve personally been setting up Passenger at Slicehost with Ubuntu and having great results with that. At 37signals, we&#8217;re already running <a href="http://www.tadalist.com/">Ta-da List</a> (on EC2) and <a href="http://www.backpackit.com/">Backpack</a> (at Rackspace) on Passenger and plan to move over the rest of the applications shortly. Our system administrators certainly appreciate not having to funk with Mongrels any more.</p>
+<p>Lots of other hosters are in advanced testing with Passenger as well. Brightbox has been <a href="http://blog.brightbox.co.uk/posts/the-passenger-masterplan">building Ubuntu packages for Passenger</a> and is putting one together for <span class="caps">REE</span>. They should have complete Passenger support shortly. Most other Rails hosters I&#8217;ve talked to are at least looking into it as well.</p>
+<p>But just because Passenger is a big step forward for Rails hosting, it doesn&#8217;t mean that other approaches are suddenly useless. There may still be situations where a traditional proxy/Mongrel setup would be relevant. For example, if you for some reason are unable to use Apache, that&#8217;s still the way to go. Rails will continue to support both <span class="caps">FCGI</span>, proxy/Mongrel, any Rack web server, and of course Passenger.</p>
+<p>The change is that if you do not already have an investment in an alternative solution, or if you&#8217;re feeling pain with that solution, you should definitely consider Passenger to be the default choice for Rails.</p>
+<p><b>Update:</b> Phusion has posted a <a href="http://blog.phusion.nl/2008/12/16/passing-environment-variables-to-ruby-from-phusion-passenger/">guide to how you control the Rails and Ruby environment variables under Passenger</a>. Useful for tweaking the GC settings etc.</p>

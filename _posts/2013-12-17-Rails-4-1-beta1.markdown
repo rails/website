@@ -1,0 +1,21 @@
+---
+layout: post
+title: 'Rails 4.1.0 beta1: Variants, Spring, mailer previews, JS CSRF, config/secrets.yml, Enums'
+category: releases
+author: dhh
+published: true
+date: 2013-12-17 16:30:00 -08:00
+---
+Hohoho, it's Xmas time, kids! We have a beta full of goodies for everyone who's been nice this year. Rails 4.1 is packed to the gills with more marvelous real-world feature extractions, bug fixes, and the tireless polish only a community full of Rails elves could bestow it with.
+
+While this is just a beta release, it's arguably a lot better tested and ready than most of our previous beta releases. The bulk of what's new are legit bug fixes and additional features. Less shifting of the tectonic plates of the architecture this time around. This should hopefully mean relatively smooth sailing for anyone on 4.0 who wish to upgrade.
+
+In fact, we're already running beta1 in production for <a href="http://basecamp.com">Basecamp</a>, so you know it's been taking a good beating. This helped us catch a couple of performance regressions, and we've verified that everything is still spiffy fast on Basecamp.
+
+This new release also follows our new policy of targeting a minor release every six months. The idea being that the jump from minor to minor shouldn't try to include everything under the sun. Just whatever is ready after the six month mark.
+
+So there are already a laundry list of things lined up for 4.2, but that's alright. We can target for that to land in another six months or so.
+
+Yves and Godfrey have done such a splendid job putting together the <a href="http://edgeguides.rubyonrails.org/4_1_release_notes.html">release notes for 4.1 as a guide</a> and <a href="http://coherence.io/blog/2013/12/17/whats-new-in-rails-4-1.html">Godfrey's feature walk-through</a>, so I won't repeat them here. But you're definitely in for a treat.
+
+As always, please report any issues as a bug report on Github. If all goes well, we'll try to have the final release out before the end of the year!

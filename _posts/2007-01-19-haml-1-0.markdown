@@ -1,0 +1,10 @@
+---
+layout: post
+title: Haml 1.0
+categories:
+- releases
+author: jamis
+published: true
+date: 2007-01-19 02:13:00.000000000 +00:00
+---
+<p>Since we&#8217;re all celebrating new releases, it seems only fair to point out that <a href="http://haml.hamptoncatlin.com/">Haml</a>, an alternative markup format to Rails&#8217; <span class="caps">RHTML</span> templates, has reached the lofty version of 1.0. It even comes with a plugin for seamless integration with Rails applications, so you really have no excuse not to give it a try. If you&#8217;re looking for an alternative to <span class="caps">RHTML</span>, Haml may just be you. Check it out!</p>

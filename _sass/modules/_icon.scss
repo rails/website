@@ -1,0 +1,47 @@
+.icon {
+
+  display: inline-block;
+  padding-left: 19px;
+  position: relative;
+
+  &:after {
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    filter: $filter-red;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: filter $transition;
+    width: 15px;
+  }
+
+  &:hover:after {
+    filter: $filter-black;
+  }
+
+
+
+  &--twitter {
+
+    padding-left: 23px;
+
+    &:after {
+      background-image: url(../images/icon-twitter.svg);
+      width: 19px;
+    }
+
+  }
+
+  &--world {
+
+    &:after {
+      background-image: url(../images/icon-world.svg);
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,18 @@
+items:
+  - title: Blog
+    url: /blog
+
+  - title: Guides
+    url: https://guides.rubyonrails.org
+
+  - title: Forum
+    url: https://discuss.rubyonrails.org
+
+  - title: API
+    url: https://api.rubyonrails.org/
+
+  - title: Contribute
+    url: https://github.com/rails/rails
+
+  - title: Team
+    url: /community

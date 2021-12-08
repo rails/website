@@ -1,0 +1,24 @@
+---
+layout: post
+title: Thanks!
+categories: []
+author: michael
+published: true
+date: 2007-10-01 04:20:00.000000000 +01:00
+---
+<p>Now seems like a good time to thank the community which helped make <a href="http://weblog.rubyonrails.org/2007/9/30/rails-2-0-0-preview-release">our new release</a> a reality.  Rails 2.0 includes the work of more than 160 individuals who have contributed features through trac and our mailing list.  Our <a href="http://groups.google.com/group/rubyonrails-talk/">user mailing list</a> has 11002 subscribers all helping each other out. The <a href="http://groups.google.com/group/rubyonrails-core">development list</a> has 1847 people helping improve the framework for all the users.</p>
+<p>In particular we&#8217;d like to single out the following people who top the list of accepted patches</p>
+<ul>
+	<li><a href="http://m.onkey.org/">Pratik Naik</a></li>
+	<li><a href="http://joshpeek.com/">Josh Peek</a></li>
+	<li><a href="http://primetheory.org/">Norbert Crombach</a></li>
+	<li><a href="http://www.shiftcommathree.com/">Chris Kampmeier</a></li>
+	<li><a href="http://www.workingwithrails.com/person/7168-tarmo-t-nav">Tarmo Tänav</a></li>
+	<li><a href="http://www.mrneighborly.com/">Jeremy McAnally</a></li>
+	<li><a href="http://blog.hasmanythrough.com/">Josh Susser</a></li>
+	<li><a href="http://www.fearoffish.co.uk/">Jamie van Dyke</a></li>
+	<li><a href="http://www.sandofsky.com/">Ben Sandofsky</a></li>
+	<li><a href="http://operation0.org/">Manfred Stienstra</a></li>
+	<li><a href="http://6brand.com/">Jack Danger Canty</a></li>
+</ul>
+<p>Our community is our greatest asset, and thanks to every single one of you who&#8217;s helped out throughout our history.</p>

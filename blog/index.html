@@ -1,0 +1,20 @@
+---
+title: Blog
+description:
+---
+
+<div class="blog common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="blog__posts">
+      {% for post in paginator.posts %}
+        {% include post.html %}
+      {% endfor %}
+    </div>
+
+    {% if paginator.next_page %}
+      <div class="blog__pagination">
+        <a href="{{ paginator.next_page_path | absolute_url }}" class="common-button common-button--color-red"><span>See more posts&hellip;</span></a>
+      </div>
+    {% endif %}
+  </div>
+</div>

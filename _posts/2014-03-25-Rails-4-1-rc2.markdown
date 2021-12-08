@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Rails 4.1.0: Release candidate 2'
+category: releases
+author: dhh
+published: true
+date: 2014-03-25 21:15:00 +01:00
+---
+This is intended as the last stop before the final version of Rails 4.1.0 hits the virtual presses. We've been stamping out bugs and polishing things for about a month since the last release candidate. Thanks to everyone who so graciously helped report issues and work on getting things fixed. It makes a big difference to the final product!
+
+Please do the same with this version. If you haven't already given a release candidate a try, this is an excellent time to do so. We expect very little to change between this version and the forthcoming final release. Barring any major upsets, we shouldn't be more than a few weeks out from the final release. Just in time for <a href="http://railsconf.com">RailsConf</a>!
+
+As a repeat reminder, Yves and Godfrey have done such a splendid job putting together the <a href="http://edgeguides.rubyonrails.org/4_1_release_notes.html">release notes for 4.1 as a guide</a> and <a href="http://coherence.io/blog/2013/12/17/whats-new-in-rails-4-1.html">Godfrey's feature walk-through</a>, so I won't repeat them here. But you're definitely in for a treat.
+
+We have a <a href="https://github.com/rails/rails/tree/4-1-0">4-1-0</a> branch that's tracking rc2 through release of final. And we have a <a href="https://github.com/rails/rails/tree/4-1-0-stable">4-1-stable</a> branch that has a few more fixes for things that weren't appropriate to throw into the release candidate cycle. Finally, there's of course <a href="https://github.com/rails/rails/">rails/master</a> which now targets 4.2.0, so expect a bit more flux there. Oh, and of course the <a href="https://github.com/rails/rails/tree/v4.1.0.rc2">v4.1.0.rc2 tag</a> for this particular release.
+
+Enjoy!

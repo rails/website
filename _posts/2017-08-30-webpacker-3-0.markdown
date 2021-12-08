@@ -1,0 +1,26 @@
+---
+layout: post
+title: 'Webpacker 3.0: No separate process needed, less config generated'
+categories: releases
+author: dhh
+published: true
+date: 2017-08-30 13:00:00 -06:00
+---
+
+We’ve just made it even easier to use [Webpack](https://webpack.github.io/) with Rails with this third major release of [Webpacker](https://github.com/rails/webpacker). The two big changes are that a separate process is no longer needed in development and that the vast majority of the config now lives in the [Webpacker npm package](https://www.npmjs.com/package/@rails/webpacker), so your `config/` directory stays clean and updates are much easier.
+
+We nixed the need for the separate process by allowing Webpacker to compile on-demand in development as well as testing. We’ve done a lot of work to speed up this process, and for lots of apps, the performance will be more than fine. But if you have a huge app, or if you like live reloading or hot module replacements, you can still use the `bin/webpacker-dev-server`. Webpacker will automatically detect if this process is running and start serving packs from there rather than on-demand. Really slick.
+
+We also dramatically cut down on the amount of config boilerplate that’s generated in the Rails `config/` directory. All the standard stuff is now living inside the Webpacker npm module, which makes upgrading so much easier. And you can still overwrite any of the defaults as you please. So it’s a big win all around.
+
+Additionally, we’ve moved all the compilation and clobber logic out of the Rake tasks and into [the Webpacker singleton instance](https://github.com/rails/webpacker/blob/29cce672a525c113ae75dfe31455a15890ebb5d0/lib/webpacker/instance.rb) itself. This makes it easier to use Webpacker in custom setups, like if you don’t use Yarn or have a different deployment strategy than just `assets:precompile`.
+
+This follows from a large refactoring of the Webpacker internals. Gone are the many individual singletons, replaced by a single top-level singleton that just aggregates a normal set of classes for [configuration](https://github.com/rails/webpacker/blob/29cce672a525c113ae75dfe31455a15890ebb5d0/lib/webpacker/configuration.rb), [compilation](https://github.com/rails/webpacker/blob/29cce672a525c113ae75dfe31455a15890ebb5d0/lib/webpacker/compiler.rb), and so on.
+
+Webpacker 3.0 points to what a Webpack-by-default strategy could look like in Rails 6.0. One where the asset pipeline focuses on static assets, like images, fonts, sounds, and compiled CSS, using SASS and so on, but bows out of the JavaScript compilation game. We still haven’t pinned the final approach, but this is our best current take on how the two could split the work-load of dealing with JavaScript, stylesheets, and other assets in the next big Rails release.
+
+If you haven’t yet given Webpack, ES6-flavored JavaScript, and all the other modern improvements to the client-side development experience a spin, then Webpacker 3.0 is a great place to start. At [Basecamp](https://basecamp.com), we’re already using it in production, even though we don’t use any of the big JavaScript client-side frameworks. It works great with the [Turbolinks](https://github.com/turbolinks/turbolinks) + Action Cable + Vanilla JS approach too.
+
+And if you’re looking to use React, Vue, Angular, or Elm with Rails, Webpacker makes the whole thing so much easier. We still have a bunch of Hello World generators for these four frameworks, so you can get started with development without any manual drudgery of configuration.
+
+This major new release has many contributors, but I want to especially thank [Gaurav Tiwari](https://github.com/gauravtiwari) and [Javan Makhmali](https://github.com/javan) for their big, continued contributions. Enjoy!

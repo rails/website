@@ -1,0 +1,10 @@
+---
+layout: post
+title: Noobkit
+categories:
+- documentation
+author: jamis
+published: true
+date: 2007-08-17 13:40:00.000000000 +01:00
+---
+<p>Looking for a good way to browse the Rails <span class="caps">API</span> documentation? Alex Gorbatchev has recently created <a href="http://www.noobkit.com/">Noobkit</a>, a documentation browser for Rails, Ruby core, and over 20 other useful libraries. It also supports searching, comments (with your OpenID), and bookmarks.</p>

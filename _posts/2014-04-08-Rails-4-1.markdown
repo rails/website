@@ -1,0 +1,27 @@
+---
+layout: post
+title: 'Rails 4.1.0: Spring, Variants, Enums, Mailer previews, secrets.yml'
+category: releases
+author: dhh
+published: true
+date: 2014-04-08 21:15:00 +01:00
+---
+Rails 4.1.0 might carry a minor version bump, but there's nothing minor about the bag of goodies it carries. It simply means that upgrading from 4.0.x should be a relatively mild affair as most of the changes are additions or improvements, not backwards-incompatible changes. Let's go over some of those new goodies.
+
+**Spring** is our new application preloader. It makes running tests, rake, and generators much faster on large applications. You could think of what we had before as the CGI-mode of the command-line. Every time you ran rake, your entire application would be loaded from scratch, only to be thrown out as soon as the command finished. With Spring, your application is a persistent process that can be reused across commands, so only the first run is slow. And we automatically detect code changes, and reload just those parts. It makes a big difference!
+
+**Variants** allows you to have different templates and action responses for the same mime type (say, HTML). This is a magic bullet for any Rails app that's serving mobile clients. You can now have individual templates for the desktop, tablet, and phone views while sharing all the same controller logic. This is the secret sauce behind Basecamp's hybrid native/HTML strategy for mobile apps: One Rails app serving desktop browsers, mobile browsers, native mobile apps. The reuse benefits are immense and the productivity boost staggering. Really.
+
+**Enums** wraps the pattern of having a status field constrained to just a few options. It's just enough syntactic sugar to make tinyint-backed status fields taste delicious while still reaping the optimization benefit of avoiding repeated status strings. Poor man's state machine? Nah, Just Enough for Most of the Time.
+
+**Mailer previews** make it dead simple to visually iterate over your Action Mailer views with test data, so you can get the same work flow as you have for any other view in your app. Make a change, reload to see it. Easy as pie. And certainly a lot better than either starting with static files that then have to be converted to mailer templates, or trying to copy'n'paste the HTML out of the log files to view them in a browser (come on, you've been there!).
+
+Finally, we've committed to moving production passwords out of your application repository with two changes. The first is **secrets.yml**, which gives you one place and one convenient interface to access secrets that have been set either via ENV variables or deployment scripts. By default it's used for the secret token guarding cookie integrity, but you can use it for whatever else you need in your app. Second is that we've added support for database URLs in database.yml, and that we by default will be referring to ENV-backed URLs in the generated files. Hurray security!
+
+Now that's just a quick look in the goodie bag. If you want the play-by-play, you can have a look through <a href="https://github.com/rails/rails/compare/4-0-stable...v4.1.0">the 5,200 commits we've done between 4-0-stable and v4.1.0</a>. That's right, five thousand. Witness the firepower of this armed and fully operational community!
+
+You can also digest the changes, and see some real code, by diving into Yves' and Godfrey's splendid work on the <a href="http://edgeguides.rubyonrails.org/4_1_release_notes.html">release notes for 4.1 as a guide</a> and the <a href="http://coherence.io/blog/2013/12/17/whats-new-in-rails-4-1.html">feature walk-through</a>.
+
+The gems are now on RubyGems, so `gem install rails` will get you the latest. Or you can use the v4.1.0 tag.
+
+Enjoy and we hope to see you at <a href="http://railsconf.com">RailsConf</a> in two weeks!

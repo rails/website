@@ -1,0 +1,56 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.0.10'
+categories: []
+author: aaronp
+published: true
+date: 2011-08-16 23:36:00.000000000 +01:00
+---
+Hi everyone,
+
+Rails 3.0.10 has been released.  This release contains critical security fixes.
+
+## CHANGES 
+
+You can find an exhaustive list of changes on [github](https://github.com/rails/rails/compare/v3.0.9...v3.0.10).  Here are some notable excerpts: 
+
+## 4 Security Fixes
+
+  * [Filter Skipping bugs](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/3420ac71aed312d6)
+  * [SQL Injection issues](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/6a1e473744bc389b)
+  * [Parse error in `strip_tags`](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/2b9130749b74ea12)
+  * [UTF-8 escaping vulnerability](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/56bffb5923ab1195)
+
+Please follow the links to see specific information about each vulnerability, along with individual patches for fixing them.
+
+Please note that these security fixes do not have CVE identifiers.  We requested identifiers on August 5th, and have yet to received a response.  When we get identifiers, we'll update the notices with those values.
+
+Also remember to subscribe to the [Ruby on Rails Security mailing list](http://groups.google.com/group/rubyonrails-security).
+
+## ActionPack: 
+
+  * Fixes an issue where cache sweepers with only after filters would have no controller object, it would raise undefined method `controller_name` for `nil` [jeroenj] 
+  * Ensure status codes are logged when exceptions are raised. 
+  * Subclasses of OutputBuffer are respected. 
+  * Fixed `ActionView::FormOptionsHelper#select` with `:multiple => false` 
+  * Avoid extra call to `Cache#read` in case of a fragment cache hit 
+
+## ActiveRecord: 
+
+  * Magic encoding comment added to schema.rb files 
+  * schema.rb is written as UTF-8 by default. 
+  * Ensuring an established connection when running `rake db:schema:dump` 
+  * Association conditions will not clobber join conditions. 
+  * Destroying a record will destroy the HABTM record before destroying itself.  GH #402. 
+  * Make `ActiveRecord::Batches#find_each` to not return `self`. 
+  * Update `table_exists?` in PG to to always use current `search_path` or schema if explictly set. 
+
+## Why was this release delayed?
+
+You may have noticed this release was originally slated to be released on August 8th.  We decided to delay the release in order to obtain CVE identifiers.  Unfortunately, identifiers still have not been issued.  We felt that getting the security fixes to our users was more important than obtaining CVE values.
+
+That is why our release is late, and contains no CVE identifiers.
+
+## THE END 
+
+Thanks! <3 

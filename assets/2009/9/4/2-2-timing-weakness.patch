@@ -1,0 +1,44 @@
+From 674f780d59a5a7ec0301755d43a7b277a3ad2978 Mon Sep 17 00:00:00 2001
+From: Michael Koziarski <michael@koziarski.com>
+Date: Sun, 23 Aug 2009 17:26:46 +1200
+Subject: [PATCH] Fix timing attack vulnerability in the Cookie Store
+
+Use a constant-time comparison algorithm to compare the candidate HMAC with the calculated HMAC to prevent leaking information about the calculated HMAC
+---
+ .../lib/action_controller/session/cookie_store.rb  |   15 ++++++++++++++-
+ 1 files changed, 14 insertions(+), 1 deletions(-)
+
+diff --git a/actionpack/lib/action_controller/session/cookie_store.rb b/actionpack/lib/action_controller/session/cookie_store.rb
+index f2fb200..0254747 100644
+--- a/actionpack/lib/action_controller/session/cookie_store.rb
++++ b/actionpack/lib/action_controller/session/cookie_store.rb
+@@ -140,7 +140,7 @@ class CGI::Session::CookieStore
+         data, digest = cookie.split('--')
+ 
+         # Do two checks to transparently support old double-escaped data.
+-        unless digest == generate_digest(data) || digest == generate_digest(data = CGI.unescape(data))
++        unless secure_compare(digest, generate_digest(data)) || secure_compare(digest, generate_digest(data = CGI.unescape(data)))
+           delete
+           raise TamperedWithCookie
+         end
+@@ -164,4 +164,17 @@ class CGI::Session::CookieStore
+     def clear_old_cookie_value
+       @session.cgi.cookies[@cookie_options['name']].clear
+     end
++    
++    # constant-time comparison algorithm to prevent timing attacks
++    def secure_compare(a, b)
++      if a.length == b.length
++        result = 0
++        for i in 0..(a.length - 1)
++          result |= a[i] ^ b[i]
++        end
++        result == 0
++      else
++        false
++      end
++    end
+ end
+-- 
+1.6.0.1
+

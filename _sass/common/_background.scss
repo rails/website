@@ -1,0 +1,15 @@
+.common-background {
+
+  &--black {
+    background: $color-black;
+  }
+
+  &--grey {
+    background: $color-grey-1;
+  }
+
+  &--white {
+    background: $color-white;
+  }
+
+}

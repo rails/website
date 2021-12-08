@@ -1,0 +1,88 @@
+---
+layout: post
+title: 'Rails 5.0.0.beta1: Action Cable, API mode, Rails command'
+category: releases
+author: dhh
+published: true
+date: 2015-12-18 21:00:00 +01:00
+---
+Rails 5.0! Can you believe it? We only just celebrated [the tenth anniversary of Rails 1.0][rails-1-0] a few days ago. Time flies when you're having fun with good friends, and we've never had more fun or better friends in the Rails community, so no wonder it's going swoosh! Now this is just the first beta release, but Rails 5.0.0.beta1 is already running [Basecamp 3][basecamp] in production.
+
+## Action Cable
+The big new thing in Rails 5.0 is a brand-new framework for handling WebSockets called [Action Cable][actioncable]. It's a completely integrated solution that includes an EventMachine-powered connection loop, a thread-backed channels layer for server-side processing, and a JavaScript layer for client-side interaction. It's incredibly easy to use, and makes designing live features like chat, notifications, and presence so much easier. It's what's powering all those features of [Basecamp 3][basecamp], if you want to see it in action.
+
+What's really lovely about Action Cable is that you get access to your entire Active Record and PORO domain model in your WebSockets work. We even added a brand-new `ActionController::Renderer` system that makes it trivial to render your templates outside of controllers, when you want to reuse server-side templates for WebSocket responses.
+
+In development, Action Cable runs in-process with the rest of your app. To do this, we've switched the default development server from Webrick to Puma. In production, you may well want to run Action Cable servers in their own processes. That's how we run it at Basecamp at scale.
+
+Special thanks to [Pratik Naik][pratiknaik] and [Javan Makhmali][javanmakhmali] for their formative work.
+
+## API mode
+Rails is not only a great choice when you want to build a full-stack application that uses server-side rendering of HTML templates, but also a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We've made this even clearer now with the new --api mode. If you create a new Rails application using `rails new backend --api`, you'll get a slimmed down skeleton and configuration that assumes you'll be working with JSON, not HTML.
+
+There's still more work to be done on this feature, but we're off to a great start. By default, API mode just relies on #to_json calls on model classes. But you can either use [Jbuilder][jbuilder], [Active Model Serializers][ams], or look at the new [JSONAPI::Resources][jsonapi] project for a more advanced solution.
+
+Thanks in particular to [Santiago Pastorino][santiagopastorino] and [Jorge Bejar][jorgebejar] for making this happen.
+
+## One Rails command to rule them all
+Why are some commands living in `bin/rails` and some commands living in `bin/rake`? That's a common question, especially for beginners, and we never had a good answer (just lots of technical excuses). So now we've committed to making `bin/rails` the one master command to rule them all. All your rake commands are available through here as a gateway, but we'll eventually port many of them over. So your fingers will now have to get used to `bin/rails db:migrate` instead of `bin/rake db:migrate`. That should only take a few months!
+
+[Kasper Timm Hansen][kasper] has been herding this project.
+
+## A few other highlights
+
+* [New Attributes API][attributes-api] by [Sean Griffin][sean].
+* The test runner now reports failures inline, so you don't have to complete the suite to see what went wrong.
+* ApplicationRecord has been born as a default parent class of all models created by the generators.
+* ActiveRecord::Relation#in_batches makes it much easier to deal with record work in batches at a time to lessen memory overloads.
+* Post.where('id = 1').or(Post.where('id = 2')) gives you exactly what you'd think!
+* No more accidentally halting Active Record callbacks because the last statement is false. Now you throw(:abort) explicitly!
+
+You should really checkout the CHANGELOGs, though. There's just so much new and good stuff available in all the frameworks:
+
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/activesupport/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta1/railties/CHANGELOG.md)
+
+Claudio did a [nice little slide deck][claudio-slides] walking through some of his favorite improvements (and removals!).
+
+Note too that we're cooking Turbolinks 5 – the one with native iOS and Android wrapper implementations! – for concurrent release with Rails 5. You can follow along on [basecamp/turbolinks/v5][turbolinks-v5].
+
+## Maintenance consequences
+
+As per our [maintenance policy][maintenance-policy], the release of Rails 5.0 will mean that bug fixes will only apply to 5.0.x, regular security issues to 5.0.x and 4.2.x, and severe security issues also to 5.0.x and 4.2.x (but when 5.1 drops, to 5.1.x, 5.0.x, and 4.2.x). This means 4.1.x and below will essentially be unsupported! Ruby 2.2.2+ is now also the only supported version of Ruby for Rails.
+
+## Please help us make Rails 5.0 solid!
+We rely on the feedback from everyone in the community to flush out bugs and upgrade issues ahead of a big release like this. So please give Rails 5.0 a try on your app, and if you're starting a new app today, you should probably use the beta1 for that, if you're just the least bit savvy with Rails.
+
+Issues can be recorded on the [Github issues tracker][issues].
+
+Already, [789 people have contributed][contributors] to this new release of Rails. Please do become one of them!
+
+Your dynamic release manager duo for Rails 5.0 is [Eileen M. Uchitelle][eileen] and [Sean Griffin][sean]. And the undisputed PR merge champ is [Rafael França][rafaelfranca]!
+
+[rails-1-0]: http://weblog.rubyonrails.org/2005/12/13/rails-1-0-party-like-its-one-oh-oh/
+[basecamp]: https://basecamp.com
+[jbuilder]: https://github.com/rails/jbuilder
+[ams]: https://github.com/rails-api/active_model_serializers
+[jsonapi]: https://github.com/cerebris/jsonapi-resources
+[turbolinks-v5]: https://github.com/turbolinks/turbolinks/tree/v5.0.0
+[actioncable]: https://github.com/rails/rails/tree/master/actioncable
+[attributes-api]: https://github.com/rails/rails/blob/8c752c7ac739d5a86d4136ab1e9d0142c4041e58/activerecord/lib/active_record/attributes.rb
+[pratiknaik]: https://github.com/lifo
+[javanmakhmali]: https://github.com/javan
+[santiagopastorino]: https://github.com/spastorino
+[jorgebejar]: https://github.com/jmbejar
+[kasper]: https://github.com/kaspth
+[eileen]: https://github.com/eileencodes
+[sean]: https://github.com/sgrif
+[rafaelfranca]: https://github.com/rafaelfranca
+[maintenance-policy]: http://guides.rubyonrails.org/maintenance_policy.html
+[issues]: https://github.com/rails/rails/issues
+[contributors]: http://contributors.rubyonrails.org/edge/contributors
+[claudio-slides]: https://speakerdeck.com/claudiob/rails-5-awesome-features-and-breaking-changes

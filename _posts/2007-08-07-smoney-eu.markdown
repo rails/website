@@ -1,0 +1,11 @@
+---
+layout: post
+title: sMoney.EU
+categories:
+- sightings
+- launches
+author: jamis
+published: true
+date: 2007-08-07 14:28:00.000000000 +01:00
+---
+<p>The Czech Rails shop <a href="http://www.skvely.cz/">Skvělý.CZ</a> has just announced the release of <a href="http://www.smoney.eu/">sMoney.EU</a>, a free expense tracking application written in (of course) Ruby on Rails. It sports translations for several languages, too, and joins the growing ranks of Rails applications with localized interfaces. Great job, Robert and team!</p>

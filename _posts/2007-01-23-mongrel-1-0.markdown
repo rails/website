@@ -1,0 +1,10 @@
+---
+layout: post
+title: Mongrel 1.0
+categories:
+- sightings
+author: rick
+published: true
+date: 2007-01-23 15:08:00.000000000 +00:00
+---
+<p>To coincide with Rails 1.2.1, Zed just made <a href="http://mongrel.rubyforge.org/news.html">Mongrel 1.0.1 official</a>.  He also points out that he started working on Mongrel around January, making it <em>around</em> 1 year old too.  Congrats to Zed and everyone else that contributed to the application and to the wonderful Mongrel community.</p>

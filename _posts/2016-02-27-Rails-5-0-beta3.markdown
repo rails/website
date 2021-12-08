@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Rails 5.0.0.beta3: More fixes, RC1 is soon'
+category: releases
+author: dhh
+published: true
+date: 2016-02-27 17:00:00 +01:00
+---
+We're currently down to [18 open issues](https://github.com/rails/rails/milestones/5.0.0) on the issue tracker for Rails 5.0.0.RC1. But while we continue to drive that number down, we thought it'd be nice to release another beta with the many fixes and updates we've seen since beta2. We've had some [500+ commits pass since that release](https://github.com/rails/rails/compare/v5.0.0.beta2...v5.0.0.beta3), and for people testing out Rails 5.0, it's just a better release.
+
+The release targets have been moved out a bit, so RC1 on March 1 and then final on March 16. That may well be a tad optimistic still, but that's the current target.
+
+If you missed the announcement on what's new in Rails 5, [checkout the beta1 story](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/). Thanks to Eileen Uchitelle for coordinating this release.

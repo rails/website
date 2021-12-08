@@ -1,0 +1,33 @@
+---
+layout: post
+title: 'Rails 4.0: Final version released!'
+category: releases
+author: dhh
+published: true
+date: 2013-06-25 16:00:00 +01:00
+---
+Rails 4.0 is finally ready after a thorough process of betas and release candidates. It's an amazing new version packed with new goodies and farewells to old features past their expiration date.
+
+A big focus has been on making it dead simple to build modern web applications that are screaming fast without needing to go the client-side JS/JSON server route. Much of this work was <a href="http://37signals.com/svn/posts/3112-how-basecamp-next-got-to-be-so-damn-fast-without-using-much-client-side-ui">pioneered for Rails in the new version of Basecamp</a> and focuses on three aspects:
+
+1. Make it super easy to do Russian Doll-caching through <a href="http://37signals.com/svn/posts/3113-how-key-based-cache-expiration-works">key-based expiration</a> with automatic dependency management of nested templates (explored first in the <a href="https://github.com/rails/cache_digests">cache_digests</a> plugin).
+1. Speed-up the client-side with <a href="https://github.com/rails/turbolinks/">Turbolinks</a>, which essentially turns your app into a single-page javascript application in terms of speed, but with none of the developmental drawbacks (except, maybe, compatibility issues with some existing JavaScript packages).
+1. <a href="https://github.com/rails/rails/commit/ed5c938fa36995f06d4917d9543ba78ed506bb8d">Declarative etags</a> makes it even easier to ensure you're taking advantage of HTTP freshness.
+
+Rails is of course still a great JSON server for people who want to build client-side JS views with <a href="http://emberjs.com">Ember.js</a>, <a href="http://backbonejs.org">Backbone.js</a> or <a href="http://angularjs.org">Angular.js</a>, but with the progress we've made for Rails 4.0, you certainly won't need to go down that route just to have a super fast application.
+
+We've also added <a href="http://tenderlovemaking.com/2012/07/30/is-it-live.html">live streaming for persistent connections</a> and Rails 4.0 is now safe for threaded servers out of the box (no more need for config.threadsafe!).
+
+Active Record has received a ton of love as well to make everything related to scoping and the query structure more consistent. We've also locked down the general security defaults even tighter with this version.
+
+On top of these new features and fixes, we have hundreds more of all sorts. Everything has been combed over, streamlined, simplified, and we've extracted out lots of old APIs and things that just don't fit "most people most of the time". 
+
+<a href="https://github.com/rails/activeresource">Active Resource</a>, <a href="https://github.com/rails/rails-observers">Active Record Observers</a>, and Action Pack <a href="https://github.com/rails/actionpack-page_caching">page</a> and <a href="https://github.com/rails/actionpack-action_caching">action caching</a> are all examples of things that are no longer in core, but lives on in plugins.
+
+We encourage you to peruse the CHANGELOGs for all the Rails frameworks and delight over the hundreds of improvements we've made to Rails 4.0: <a href="https://github.com/rails/rails/blob/v4.0.0/actionpack/CHANGELOG.md">Action Pack</a>, <a href="https://github.com/rails/rails/blob/v4.0.0/activemodel/CHANGELOG.md">Active Model</a>, <a href="https://github.com/rails/rails/blob/v4.0.0/activerecord/CHANGELOG.md">Active Record</a>, <a href="https://github.com/rails/rails/blob/v4.0.0/activesupport/CHANGELOG.md">Active Support</a>, <a href="https://github.com/rails/rails/blob/v4.0.0/railties/CHANGELOG.md">Rails</a>.
+
+If you're upgrading an existing application to Rails 4, have a look at the <a href="http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#upgrading-from-rails-3-2-to-rails-4-0">upgrade guide</a> or the <a href="http://railscasts.com/episodes/415-upgrading-to-rails-4">Railscast screencast</a>. As always, install the latest with `gem install rails --version 4.0.0 --no-ri --no-rdoc` or depend on the <a href="https://github.com/rails/rails/tree/v4.0.0">v4.0.0 tag</a>. If you haven't already, now is a good time to upgrade to Ruby 2.0 as well. Rails 5+ will require Ruby 2.0, so you might as well get a head start.
+
+If you'd like to learn more about developing Rails 4 applications, the final version of <a href="http://pragprog.com/book/rails4/agile-web-development-with-rails">Agile Web Development with Rails 4</a> was released today as well. The more advanced <a href="http://pragprog.com/book/jvrails2/crafting-rails-applications">Crafting Rails 4 Applications</a> is also out in late-stage beta. For screencasts, checkout the new <a href="http://rails4.codeschool.com/videos">Rails 4: Zombie Outlaws</a> and <a href="http://pragmaticstudio.com/rails">Mike Clark's Rails 4 class</a>. There's new material and books coming out all the time from a variety of other authors and broadcasters, so we're really in good shape with training material timed for the release this time.
+
+Finally, thanks to everyone who contributed to this release. There has been <a href="https://github.com/rails/rails/compare/3-2-stable...4-0-0">some 10,000 commits</a> between the latest 3.2 release and Rails 4.0 and <a href="http://contributors.rubyonrails.org/contributors/in-time-window/this-year">~500 people have contributed in 2013 alone</a>. We have a bigger and more engaged community than ever before and it shows: Rails 4 is an incredibly polished release. It's a real milestone and something for everyone in the community to be proud of.

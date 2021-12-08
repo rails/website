@@ -1,0 +1,10 @@
+---
+layout: post
+title: Haml 1.7
+categories:
+- releases
+author: jamis
+published: true
+date: 2007-07-10 17:20:00.000000000 +01:00
+---
+<p>The <a href="http://haml.hamptoncatlin.com/">Haml</a> team recently announced the release of <a href="http://haml.hamptoncatlin.com/release-notes">Haml 1.7</a>, which is an alternative markup system that you can use in Rails, instead of the default ERb-based markup. Version 1.7 is significantly faster than previous releases (and is almost as fast as Rails&#8217; default system, now!). There are a few other new features, too: <a href="http://haml.hamptoncatlin.com/release-notes">read all about it in the release notes</a>. Great work!</p>

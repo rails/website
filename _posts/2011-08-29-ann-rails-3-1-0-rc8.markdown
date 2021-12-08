@@ -1,0 +1,31 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.1.0.rc8'
+categories:
+- releases
+author: spastorino
+published: true
+date: 2011-08-29 13:39:00.000000000 +01:00
+---
+Hi everyone,
+
+Rails 3.1.0.rc8 has been released (we've an issue with rc7).  This is
+the final release candidate. Please give it a try, it's our last
+chance to fix regressions and severe issues. We will be releasing
+final 3.1.0 next August 30th.
+
+## CHANGES
+
+Check the CHANGELOG file of each framework to see what we've changed.
+
+You can find an exhaustive list of changes on
+[github](https://github.com/rails/rails/compare/v3.1.0.rc6...v3.1.0.rc8).
+ Along with the [closed issues marked for
+v3.1.0](https://github.com/rails/rails/issues?sort=created&direction=desc&sta...).
+
+You can also see issues [we haven't
+closed](https://github.com/rails/rails/issues?sort=created&direction=desc&sta...).
+
+A comprehensive CHANGELOG will be announced when 3.1.0 final is released.
+
+Thanks! 

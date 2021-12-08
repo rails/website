@@ -1,0 +1,39 @@
+---
+layout: post
+title: Capistrano 1.4.0
+categories:
+- releases
+author: jamis
+published: true
+date: 2007-02-04 21:10:00.000000000 +00:00
+---
+<p>Capistrano is a utility for executing commands in parallel on multiple machines, such as for automating the deployment of applications. Version 1.4.0 is now available.</p>
+<p>To install:</p>
+gem install capistrano
+<p>Version 1.4.0 fixes a few bugs, and adds a few features. The new features:</p>
+<ul>
+	<li>A &#8220;capture&#8221; helper has been added, to make it easy to capture the stdout of a remote command and return it as a string:</li>
+</ul>
+result = capture(&#8220;uptime&#8221;)
+<ul>
+	<li>A &#8220;get&#8221; helper has been added, to mirror the &#8220;put&#8221; command, letting you easily download files from a remote server to the local host. It will only download from the <em>first</em> server that matches the criteria for the current task. You must have Net::<span class="caps">SFTP</span> installed (gem install net-sftp) in order to use the &#8220;get&#8221; helper.</li>
+</ul>
+get &#8220;#{current_path}/log/production.log&#8221;, &#8220;logs/production.log&#8221;
+<ul>
+	<li>Support for a system-wide config file has been added. If a file exists in &#8220;/etc/capistrano.conf&#8221;, it will be loaded immediately after the standard recipe file is loaded, and immediately before any user-specific configuration.</li>
+</ul>
+<p>The fixed bugs:</p>
+<ul>
+	<li>There used to be issues with cap hanging when running multiple capistrano instances at the same time when using gateways. This has been fixed.</li>
+	<li>The permissions tweaking in the standard recipe has been refactored into a separate task (set_permissions), which you can override if you are on a host that won&#8217;t let you set group-writable permissions.</li>
+	<li>The setup task now uses umask so that intermediate directories are created with the proper permissions.</li>
+	<li>Make sure the standard recipe loads first, so that .caprc and friends can oerride what it defines.</li>
+	<li>cold_deploy now calls update instead of deploy, to avoid invoking the restart task.</li>
+	<li>The &#8216;touch&#8217; command in update_code now sets TZ to <span class="caps">UTC</span> for the duration of that command, so that asset timestamps are set correctly.</li>
+	<li>An off-by-one bug in the width computation for show_tasks has been fixed.</li>
+</ul>
+<p>Minor deprecations:</p>
+<ul>
+	<li>The <del>c/</del>-caprc switch has been removed, since the new load order (standard, system, user, application) makes it meaningless.</li>
+</ul>
+<p>Thanks to Mark Imbriaco, Neil Wilson, Bojan Mihelac, Joshua Wehner, and Mike Bailey for their contributions to this release.</p>

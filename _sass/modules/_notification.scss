@@ -1,0 +1,49 @@
+.notification {
+
+  background: $color-white;
+  position: relative;
+  text-align: center;
+
+  p {
+
+    display: inline-block;
+    background: $color-red;
+    border-radius: 6px;
+    color: $color-white;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 20px 30px 0 30px;
+    max-width: 1120px;
+    padding: 10px 20px;
+    width: calc(100% - 100px);
+
+    a {
+
+      color: $color-white;
+      font-weight: 600;
+      text-decoration: underline;
+
+      &:hover {
+        color: rgba($color-white, 0.9);
+      }
+
+    }
+
+  }
+
+
+
+  @media(min-width: 1024px) {
+
+    p {
+      margin-left: 60px;
+      margin-right: 60px;
+      width: calc(100% - 160px);
+    }
+
+  }
+
+
+
+}

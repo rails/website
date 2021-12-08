@@ -1,0 +1,46 @@
+---
+layout: post
+title: Capistrano 2.2.0
+categories:
+- releases
+author: jamis
+published: true
+date: 2008-02-28 04:15:00.000000000 +00:00
+---
+<p><a href="http://www.capify.org">Capistrano</a> is a utility for managing remote servers and automating remote tasks. It is popularly used to deploy Rails applications (but can do oh, so much more!). Version 2.2.0 is now available (well, it&#8217;s released, anyway, you might need to wait for the file to propagate to the gem mirrors).</p>
+gem install capistrano
+<p>Version 2.2.0 sports the following changes:</p>
+<p><strong><span class="caps">FEATURE</span></strong>: Dynamic role definition. The role() method now accepts a block, which should return either a host name, a Capistrano::ServerDefinition object, an array of host names, or an array of Capistrano::ServerDefinition objects. This can be used to describe the servers in a role at runtime.</p>
+<pre>role :app do
+  hosts = some_method_that_looks_up_the_current_hosts
+  hosts[0,3]
+end
+</pre>
+<p><strong><span class="caps">FEATURE</span></strong>: Alternative server-centric role definitions, using the server() method:</p>
+<pre>role :app, "server"
+role :web, "server"
+
+# the above is the same as this:
+server "server", :app, :web
+</pre>
+<p><strong><span class="caps">FEATURE</span></strong>: Support for a :max_hosts option in tasks, that restricts the task so that it is only executed in <max_hosts> hosts at a time, in chunks. This helps people who use Capistrano with very large numbers of servers, and prevents them running into connection caps and from running out of memory.</p>
+<pre>task :ping, :max_hosts =&gt; 100 do
+  # anything here will only run against 100 hosts at a time
+end
+
+# alternatively, you can pass :max_hosts to the run command itself for
+# finer granularity
+task :pong do
+  # this will run on ALL hosts at once
+  run "something"
+
+  # this will run on no more than 100 hosts at a time
+  run "something-else", :max_hosts =&gt; 100
+end
+</pre>
+<p><strong><span class="caps">ENHANCEMENT</span></strong>: Improved Git support!</p>
+<p><strong><span class="caps">ENHANCEMENT</span></strong>: Password prompt support in the Mercurial <span class="caps">SCM</span>.</p>
+<p><strong><span class="caps">ENHANCEMENT</span></strong>: Implement Bzr#next_revision so that pending changes can be reported correctly, and use checkout &#8212;lightweight instead of branch.</p>
+<p><strong><span class="caps">ENHANCEMENT</span></strong>: Bring back the :p4sync_flags and :p4client_root variables for perforce <span class="caps">SCM</span>.</p>
+<p>Additionally, there are several minor bugs and typos that have been fixed. You can see the <a href="http://svn.rubyonrails.org/rails/tags/capistrano_2-2-0/CHANGELOG"><span class="caps">CHANGELOG</span></a> for all the gory details.</p>
+<p>As ever, please report bugs via the Rails trac, at <a href="http://dev.rubyonrails.org">http://dev.rubyonrails.org</a>. And if you aren&#8217;t yet subscribed to the <a href="http://groups.google.com/group/capistrano">Capistrano mailing list</a>, it&#8217;s where all the cool cappists hang out.</p>

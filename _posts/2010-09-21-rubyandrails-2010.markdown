@@ -1,0 +1,12 @@
+---
+layout: post
+title: RubyAndRails 2010
+categories:
+- sightings
+author: Jeremy Kemper
+published: true
+date: 2010-09-21 23:07:00.000000000 +01:00
+---
+<p>RubyEnRails returns this year bigger and better as <a href="http://rubyandrails.eu">RubyAndRails 2010</a>, running from 21-22 October in Amsterdam. Talks are in English and entry is just €149,00.</p>
+<p>The <a href="http://rubyandrails.eu/speakers">speaker lineup</a> is shaping up great. Check out the <a href="http://rubyandrails.eu/program">program</a> and <a href="http://rubyandrails.eu/signup">sign up</a> now.</p>
+<p>RubyAndRails has been run by volunteers for five years now, growing from a friendly regional gathering to an even friendlier all-European event. The <a href="http://rubyandrails.eu/rumble">Rumble</a> is back this year, too!</p>

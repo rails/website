@@ -1,0 +1,16 @@
+---
+layout: post
+title: ! 'Rails 3.0: Second beta release'
+categories:
+- releases
+author: David
+published: true
+date: 2010-04-01 21:51:00.000000000 +01:00
+---
+<p>It took longer than we thought, but then again, what doesn&#8217;t? This is the second beta release of Rails 3.0 and hopefully our last stop before a release candidate. There are still a handful of known regressions (see the list at the end), but we&#8217;ve made huge strides since the last release and so have auxiliary tools like <a href="http://gembundler.com/">Bundler</a>.</p>
+<p>You can find all the detailed changes in the the CHANGELOGs for each framework: <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/actionmailer/CHANGELOG">Action Mailer</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/actionpack/CHANGELOG">Action Pack</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/activerecord/CHANGELOG">Active Record</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/activeresource/CHANGELOG">Active Resource</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/activemodel/CHANGELOG">Active Model</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/activesupport/CHANGELOG">Active Support</a>, <a href="http://github.com/rails/rails/raw/v3.0.0.beta2/railties/CHANGELOG">Rails</a>.</p>
+<p>Please install beta 2 and try it out with new and existing applications. (<code>gem install rails --prerelease</code> after you make sure you&#8217;re on Ruby Gems 1.3.6 with <code>gem update --system</code>).</p>
+<p>You can use Jeremy McAnally&#8217;s excellent <a href="http://github.com/rails/rails_upgrade">rails_upgrade plugin</a> to take a 2.3.x app to 3.0 (and get <a href="http://www.railsupgradehandbook.com/">his update book</a> too). There are already a good number of Rails 3 applications <a href="http://answers.37signals.com/">live</a> <a href="http://homerun.com/">in</a> the wild.</p>
+<p>Thanks a million to everyone who&#8217;s been working on this. Rails 3 is a mighty big barn and it&#8217;s been a joy seeing the community come together to raise it.</p>
+<p><small>Note that Ruby 1.8.7 p248 and p249 has marshaling bugs that crash both Rails 2.3.x and Rails 3.0.0. Ruby 1.9.1 outright segfaults on Rails 3.0.0, so if you want to use Rails 3 with 1.9.x, jump on 1.9.2 trunk for smooth sailing.</small></p>
+<p><small>Known regressions: <a href="https://rails.lighthouseapp.com/projects/8994/tickets/4106">Rails crashes unless <code>configuration.action_controller.session</code> is set</a>, <a href="https://rails.lighthouseapp.com/projects/8994/tickets/4095"><code>config.thread_safe</code> does not work</a>, <a href="https://rails.lighthouseapp.com/projects/8994/tickets/4025">Unable to run a <span class="caps">RJS</span> partial from an <span class="caps">HTML</span> template</a>, <a href="https://rails.lighthouseapp.com/projects/8994/tickets/4277">Backtrace silencers oftem remove application lines from test failures backtraces</a>, <a href="https://rails.lighthouseapp.com/projects/8994/tickets/2409">Active Record double escapes <code>error_messages_for</code></a></small></p>

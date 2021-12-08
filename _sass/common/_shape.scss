@@ -1,0 +1,129 @@
+.common-shape {
+
+  &--bottom-grey-down-left,
+  &--bottom-grey-down-right,
+  &--bottom-grey-up-left,
+  &--bottom-grey-up-right,
+  &--top-grey-down-left,
+  &--top-grey-down-right,
+  &--top-grey-up-left,
+  &--top-grey-up-right {
+
+    &:after {
+      filter: $filter-grey;
+    }
+
+    &:before {
+      filter: $filter-grey;
+    }
+
+  }
+
+  &--bottom-white-down-left,
+  &--bottom-white-down-right,
+  &--bottom-white-up-left,
+  &--bottom-white-up-right,
+  &--top-white-down-left,
+  &--top-white-down-right,
+  &--top-white-up-left,
+  &--top-white-up-right {
+
+    &:after {
+      filter: $filter-white;
+    }
+
+    &:before {
+      filter: $filter-white;
+    }
+
+  }
+
+  &--bottom-grey-down-left,
+  &--bottom-grey-down-right,
+  &--bottom-grey-up-left,
+  &--bottom-grey-up-right,
+  &--bottom-white-down-left,
+  &--bottom-white-down-right,
+  &--bottom-white-up-left,
+  &--bottom-white-up-right {
+
+    &:after {
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      bottom: 0;
+      content: '';
+      height: 10vw;
+      left: 0;
+      max-height: 160px;
+      position: absolute;
+      width: 100%;
+    }
+
+  }
+
+  &--bottom-grey-down-left:after,
+  &--bottom-white-down-left:after {
+    background-image: url(../images/shape-bottom-down-left.svg);
+  }
+
+  &--bottom-grey-down-right:after,
+  &--bottom-white-down-right:after {
+    background-image: url(../images/shape-bottom-down-right.svg);
+  }
+
+  &--bottom-grey-up-left:after,
+  &--bottom-white-up-left:after {
+    background-image: url(../images/shape-bottom-up-left.svg);
+  }
+
+  &--bottom-grey-up-right:after,
+  &--bottom-white-up-right:after {
+    background-image: url(../images/shape-bottom-up-right.svg);
+  }
+
+  &--top-grey-down-left,
+  &--top-grey-down-right,
+  &--top-grey-up-left,
+  &--top-grey-up-right,
+  &--top-white-down-left,
+  &--top-white-down-right,
+  &--top-white-up-left,
+  &--top-white-up-right {
+
+    &:before {
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      content: '';
+      height: 10vw;
+      left: 0;
+      max-height: 160px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+  }
+
+  &--top-grey-down-left:before,
+  &--top-white-down-left:before {
+    background-image: url(../images/shape-top-down-left.svg);
+  }
+
+  &--top-grey-down-right:before,
+  &--top-white-down-right:before {
+    background-image: url(../images/shape-top-down-right.svg);
+  }
+
+  &--top-grey-up-left:before,
+  &--top-white-up-left:before {
+    background-image: url(../images/shape-top-up-left.svg);
+  }
+
+  &--top-grey-up-right:before,
+  &--top-white-up-right:before {
+    background-image: url(../images/shape-top-up-right.svg);
+  }
+
+}

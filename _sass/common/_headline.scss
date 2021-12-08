@@ -1,0 +1,116 @@
+.common-headline {
+
+  color: $color-black;
+  font-size: 18px;
+  line-height: 24px;
+
+  h1 {
+    color: $color-red;
+    font-size: 47px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 43px;
+  }
+
+  h2 {
+    color: $color-red;
+    font-size: 39px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 38px;
+  }
+
+  h3 {
+    color: $color-red;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 34px;
+  }
+
+  h4 {
+
+    color: $color-black;
+    font-size: 26px;
+    letter-spacing: -0.006em;
+    line-height: 29px;
+
+    a {
+      font-weight: 700;
+    }
+
+  }
+
+  h5 {
+    color: $color-black;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.006em;
+    line-height: 26px;
+  }
+
+  h6 {
+    color: $color-grey-4;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.006em;
+    line-height: 26px;
+  }
+
+  a {
+
+    color: $color-black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-red;
+    }
+
+  }
+
+  b,
+  strong {
+    color: $color-black;
+    font-weight: 700;
+  }
+
+  i,
+  em {
+    color: $color-black;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+
+
+  @media(min-width: 1024px) {
+
+    font-size: 21px;
+    line-height: 26px;
+
+    h1 {
+      font-size: 78px;
+      line-height: 72px;
+    }
+
+    h2 {
+      font-size: 55px;
+      line-height: 52px;
+    }
+
+    h3 {
+      font-size: 47px;
+      line-height: 43px;
+    }
+
+    h4 {
+      font-size: 39px;
+      letter-spacing: -0.01em;
+      line-height: 44px;
+    }
+
+  }
+
+
+
+}

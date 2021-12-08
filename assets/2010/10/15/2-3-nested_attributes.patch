@@ -1,0 +1,125 @@
+From a2a9bee4621151e5ab2624d04b94f4266955d262 Mon Sep 17 00:00:00 2001
+From: Michael Koziarski <michael@koziarski.com>
+Date: Tue, 12 Oct 2010 11:21:56 +1300
+Subject: [PATCH] Revert 7d2173ec5c68e10807da96f4bc8bc6ab1e89c167 which introduced a security vulnerability.
+
+This addresses  CVE-2010-3933
+---
+ .../lib/active_record/nested_attributes.rb         |   19 ++++++--------
+ activerecord/test/cases/nested_attributes_test.rb  |   26 +++++++++----------
+ 2 files changed, 20 insertions(+), 25 deletions(-)
+
+diff --git a/activerecord/lib/active_record/nested_attributes.rb b/activerecord/lib/active_record/nested_attributes.rb
+index 6290fe6..65434fb 100644
+--- a/activerecord/lib/active_record/nested_attributes.rb
++++ b/activerecord/lib/active_record/nested_attributes.rb
+@@ -286,9 +286,7 @@ module ActiveRecord
+         assign_to_or_mark_for_destruction(record, attributes, options[:allow_destroy])
+ 
+       elsif attributes['id']
+-        existing_record = self.class.reflect_on_association(association_name).klass.find(attributes['id'])
+-        assign_to_or_mark_for_destruction(existing_record, attributes, options[:allow_destroy])
+-        self.send(association_name.to_s+'=', existing_record)
++        raise_nested_attributes_record_not_found(association_name, attributes['id'])
+ 
+       elsif !reject_new_record?(association_name, attributes)
+         method = "build_#{association_name}"
+@@ -358,16 +356,11 @@ module ActiveRecord
+           unless reject_new_record?(association_name, attributes)
+             association.build(attributes.except(*UNASSIGNABLE_KEYS))
+           end
+-
+-        elsif existing_records.size == 0 # Existing record but not yet associated
+-          existing_record = self.class.reflect_on_association(association_name).klass.find(attributes['id'])
+-          association.send(:add_record_to_target_with_callbacks, existing_record) unless association.loaded?
+-          assign_to_or_mark_for_destruction(existing_record, attributes, options[:allow_destroy])
+-
+         elsif existing_record = existing_records.detect { |record| record.id.to_s == attributes['id'].to_s }
+           association.send(:add_record_to_target_with_callbacks, existing_record) unless association.loaded?
+           assign_to_or_mark_for_destruction(existing_record, attributes, options[:allow_destroy])
+-
++        else
++          raise_nested_attributes_record_not_found(association_name, attributes['id'])
+         end
+       end
+     end
+@@ -387,7 +380,7 @@ module ActiveRecord
+       ConnectionAdapters::Column.value_to_boolean(hash['_destroy'])
+     end
+ 
+-    # Determines if a new record should be built by checking for
++    # Determines if a new record should be build by checking for
+     # has_destroy_flag? or if a <tt>:reject_if</tt> proc exists for this
+     # association and evaluates to +true+.
+     def reject_new_record?(association_name, attributes)
+@@ -403,5 +396,9 @@ module ActiveRecord
+       end
+     end
+ 
++    def raise_nested_attributes_record_not_found(association_name, record_id)
++      reflection = self.class.reflect_on_association(association_name)
++      raise RecordNotFound, "Couldn't find #{reflection.klass.name} with ID=#{record_id} for #{self.class.name} with ID=#{id}"
++    end
+   end
+ end
+diff --git a/activerecord/test/cases/nested_attributes_test.rb b/activerecord/test/cases/nested_attributes_test.rb
+index cd432e2..3adcc88 100644
+--- a/activerecord/test/cases/nested_attributes_test.rb
++++ b/activerecord/test/cases/nested_attributes_test.rb
+@@ -175,6 +175,12 @@ class TestNestedAttributesOnAHasOneAssociation < ActiveRecord::TestCase
+     assert_equal 'Davy Jones Gold Dagger', @pirate.ship.name
+   end
+ 
++  def test_should_raise_RecordNotFound_if_an_id_is_given_but_doesnt_return_a_record
++    assert_raise_with_message ActiveRecord::RecordNotFound, "Couldn't find Ship with ID=1234567890 for Pirate with ID=#{@pirate.id}" do
++      @pirate.ship_attributes = { :id => 1234567890 }
++    end
++  end
++
+   def test_should_take_a_hash_with_string_keys_and_update_the_associated_model
+     @pirate.reload.ship_attributes = { 'id' => @ship.id, 'name' => 'Davy Jones Gold Dagger' }
+ 
+@@ -324,13 +330,10 @@ class TestNestedAttributesOnABelongsToAssociation < ActiveRecord::TestCase
+     assert_equal 'Arr', @ship.pirate.catchphrase
+   end
+ 
+-  def test_should_associate_with_record_if_parent_record_is_not_saved
+-    @ship.destroy
+-    @pirate = Pirate.create(:catchphrase => 'Arr')
+-    @ship = Ship.new(:name => 'Nights Dirty Lightning', :pirate_attributes => { :id => @pirate.id, :catchphrase => @pirate.catchphrase})
+-
+-    assert_equal @ship.name, 'Nights Dirty Lightning'
+-    assert_equal @pirate, @ship.pirate
++  def test_should_raise_RecordNotFound_if_an_id_is_given_but_doesnt_return_a_record
++    assert_raise_with_message ActiveRecord::RecordNotFound, "Couldn't find Pirate with ID=1234567890 for Ship with ID=#{@ship.id}" do
++      @ship.pirate_attributes = { :id => 1234567890 }
++    end
+   end
+ 
+   def test_should_take_a_hash_with_string_keys_and_update_the_associated_model
+@@ -434,11 +437,6 @@ module NestedAttributesOnACollectionAssociationTests
+     assert_equal ['Grace OMalley', 'Privateers Greed'], [@child_1.reload.name, @child_2.reload.name]
+   end
+ 
+-  def test_should_assign_existing_children_if_parent_is_new
+-    @pirate = Pirate.new({:catchphrase => "Don' botharr talkin' like one, savvy?"}.merge(@alternate_params))
+-    assert_equal ['Grace OMalley', 'Privateers Greed'], [@pirate.send(@association_name)[0].name, @pirate.send(@association_name)[1].name]
+-  end
+-
+   def test_should_take_an_array_and_assign_the_attributes_to_the_associated_models
+     @pirate.send(association_setter, @alternate_params[association_getter].values)
+     @pirate.save
+@@ -508,8 +506,8 @@ module NestedAttributesOnACollectionAssociationTests
+     assert_equal ['Grace OMalley', 'Privateers Greed'], [@child_1.name, @child_2.name]
+   end
+ 
+-  def test_should_not_raise_RecordNotFound_if_an_id_is_given_but_doesnt_return_a_record
+-    assert_nothing_raised ActiveRecord::RecordNotFound do
++  def test_should_raise_RecordNotFound_if_an_id_is_given_but_doesnt_return_a_record
++    assert_raise_with_message ActiveRecord::RecordNotFound, "Couldn't find #{@child_1.class.name} with ID=1234567890 for Pirate with ID=#{@pirate.id}" do
+       @pirate.attributes = { association_getter => [{ :id => 1234567890 }] }
+     end
+   end
+-- 
+1.7.2
+

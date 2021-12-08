@@ -1,0 +1,35 @@
+---
+layout: post
+title: Capistrano 1.3.1
+categories:
+- releases
+author: jamis
+published: true
+date: 2007-01-06 04:54:00.000000000 +00:00
+---
+<p>I&#8217;ve been remiss in announcing recent Capistrano releases, so I&#8217;m making up for lost time now. Capistrano 1.3.1 is now available!</p>
+<p>Capistrano, for those of you that are late to the game, is a utility for executing commands in parallel on multiple remote machines. It comes with support for vastly simplifying the deployment process of Rails applications, but can be customized to work with virtually any environment.</p>
+<p>Since 1.2.0, the following enhancements and changes have been made:</p>
+<ul>
+	<li>You can encode the username and port for a host in the host string. Does one machine require a different user than another? A non-standard port for <span class="caps">SSH</span> access? It&#8217;s as simple as:</li>
+</ul>
+<pre>
+role :app,  "app1.host.com"
+role :web,  "webuser@web1.host.com"
+role :db,   "db1.host.com:1234"
+role :file, "fileuser@file1.host.com:1234"
+</pre>
+<ul>
+	<li>You can pass an <code>:as</code> option to <code>sudo</code>, to specify which user a command should be run as:</li>
+</ul>
+<pre>
+sudo "spinner", :as =&gt; "app"
+</pre>
+<ul>
+	<li>If you define a &#8220;.caprc&#8221; file in your home directory, Capistrano will automatically load that file on every invocation. (It has the same format as any other Capistrano recipe file.)</li>
+	<li>Assets in the images, javascripts, and stylesheets directories are now touched after updating the code, to ensure that Rails&#8217; asset timestamping feature works correctly.</li>
+	<li>Make sure new setups and checkouts are group-writable.</li>
+	<li>Do not run the cleanup task on servers marked &#8220;no_release&#8221;.</li>
+	<li>Rake integration is now deprecated. You should be invoking &#8216;cap&#8217; directly. A future release will remove rake integration altogether.</li>
+</ul>
+<p>Feel free to read the changelog several other fixes and tweaks. It might be a few hours before the 1.3.1 gem reaches all the mirrors, but when it gets there, a simple &#8220;gem install capistrano&#8221; ought to do the trick!</p>

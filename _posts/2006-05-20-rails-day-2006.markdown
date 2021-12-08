@@ -1,0 +1,15 @@
+---
+layout: post
+title: Rails Day 2006
+categories:
+- sightings
+- horizon
+author: marcel
+published: true
+date: 2006-05-20 22:28:00.000000000 +01:00
+---
+<p>Last June was the first Rails Day, where teams of two or three competed to build the best all around Rails app in a 24 hour period.</p>
+<p>Well they&#8217;re doing it again this year: <a href="http://www.railsday2006.com/">Rails Day 2006</a> will be held on June 17th, just a few days before the first official <a href="http://railsconf.org">Rails Conference</a>.</p>
+<p>Last year&#8217;s contest had dozens of dozens of teams and almost as many prizes, including some pretty sweet ones for the teams that won top honors.</p>
+<p>This year&#8217;s organizers are <a href="http://www.railsday2006.com/articles/2006/05/20/help-us-tweak-the-rules">looking for your help on fine tuning the rules</a>. So weigh in with your opinions if you have any.</p>
+<p><a href="http://www.railsday2006.com/pages/register/">Registration</a> isn&#8217;t quite open yet. So rally the troops and stay tuned.</p>

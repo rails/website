@@ -1,0 +1,19 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.0.8.rc2'
+categories: []
+author: aaronp
+published: true
+date: 2011-05-27 17:22:00.000000000 +01:00
+---
+Hey folks!  I've pushed 3.0.8.rc2. 
+
+I want to give a big thanks to Philip Arndt and Robert Pankowecki for reporting regressions in 3.0.8.rc1!  We've fixed the regressions, so I pushed an rc2.
+
+To see the diffs for this rc, check out [the commit list on github](https://github.com/rails/rails/compare/v3.0.8.rc1...v3.0.8.rc2).
+
+Since we've released a new release candidate, I'll target the final release for June 1.  If you find regressions between v3.0.7 and v3.0.8.rc2, please let me know and we'll do another rc!
+
+Thanks everyone!
+
+    $ curl 'http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/383777' | ruby -n -e'print $_.gsub(/rc1/, "rc2")'

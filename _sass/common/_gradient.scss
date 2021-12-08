@@ -1,0 +1,11 @@
+.common-gradient {
+
+  &--grey-to-white {
+    background: linear-gradient(0deg, $color-white, $color-grey-1);
+  }
+
+  &--white-to-grey {
+    background: linear-gradient(0deg, $color-grey-1, $color-white);
+  }
+
+}

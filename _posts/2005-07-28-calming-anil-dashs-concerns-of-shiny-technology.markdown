@@ -1,0 +1,12 @@
+---
+layout: post
+title: Calming Anil Dash's concerns of shiny technology
+categories: []
+author: admin
+published: true
+date: 2005-07-28 13:42:32.000000000 +01:00
+---
+<p>Anil Dash from Six Apart is worried that <a href="http://www.blinksale.com/">Blinksale</a> is <a href="http://www.dashes.com/anil/2005/07/27/how_do_we_judge">getting attention for all the wrong reasons</a>. That just because it&#8217;s using Ruby on Rails, features snappy Ajax, and is built by a small team it should be inherently deserving of attention. Christian from xml-blog tries his hand at <a href="http://www.xml-blog.com/articles/2005/07/27/drinking-the-rails-kool-aid">explaining to Anil why it is indeed exciting</a>, at least in regards to Rails:</p>
+<blockquote>What I will say is that I understand why Rails/Ajax enthusiasts get so excited about every new product built on Rails that sees the light of day. First, it&rsquo;s well documented that few IT projects ever make it to production. Second, once you&rsquo;ve actually worked with Rails, you tend to fall in love with it. This is not some sort of new-kid-on-the-block infatuation; it&rsquo;s a kind of thankful love born of the countless hours Rails shaves off your development time letting you concentrate on the very thing Anil is concerned about: building apps that meet a need or solve a real-world problem. Lastly, it&rsquo;s a bit of cheerful exuberance at seeing that mere mortals are indeed able to complete a plan-build-deploy cycle for a real-world Rails application in short time and have it withstand all the traffic that invariably will be thrown at it.</blockquote>
+<p>To add my own two cents, I think it&#8217;s very exciting to see Blinksale go live using the technology and approach to software development that we&#8217;re championing at <a href="http://www.37signals.com/">37signals</a>. It shows that others are more than able to use our tools and thoughts to achieve good things, which again encourages the belief that Rails and <a href="http://gettingreal.37signals.com/">Getting Real</a> are indeed not specific to a single crew &mdash; but that you can use them too to similar effect.</p>
+<p>Oh, and Blinksale does work very nicely for sending out invoices, too ;). 37signals already sent our first real invoice through the system.</p>

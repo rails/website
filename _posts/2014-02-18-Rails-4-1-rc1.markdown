@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Rails 4.1.0: Release candidate 1'
+category: releases
+author: dhh
+published: true
+date: 2014-02-18 21:30:00 +01:00
+---
+We're getting really close to signing off on Rails 4.1.0, but we need your help to push it the last mile. Today we're putting out the first (and, with luck, only) release candidate of Rails 4.1.0. It would be swell if you would try it out and tell us where it breaks.
+
+It's already in really good shape (we've been running beta1 and forward in production for <a href="http://basecamp.com">Basecamp</a> for months), but still, let's make it a shiny gemstone for release.
+
+As a reminder, Yves and Godfrey have done such a splendid job putting together the <a href="http://edgeguides.rubyonrails.org/4_1_release_notes.html">release notes for 4.1 as a guide</a> and <a href="http://coherence.io/blog/2013/12/17/whats-new-in-rails-4-1.html">Godfrey's feature walk-through</a>, so I won't repeat them here. But you're definitely in for a treat.
+
+We have also now aimed rails/master at Rails 4.2.0, but there's a new <a href="https://github.com/rails/rails/tree/4-1-stable">rails/4-1-stable</a> branch to follow for this release series. And of course there's the <a href="https://github.com/rails/rails/tree/v4.1.0.rc1">v4-1-0-rc1 tag</a> for this particular release.
+
+Enjoy!

@@ -1,0 +1,12 @@
+---
+layout: post
+title: RubyEnRails 2009
+categories:
+- sightings
+author: Jeremy Kemper
+published: true
+date: 2009-09-15 20:15:00.000000000 +01:00
+---
+<p><a href="http://2009.rubyenrails.nl/?locale=en">RubyEnRails 2009</a> goes down this 30/31 October in Amsterdam. Talks are in English and Dutch.</p>
+<p>RubyEnRails has been all-volunteer for four years running, building on a history of sweet venues, good talks, and great company. It&#8217;s gradually grown from a local gathering to a full-fledged European event, and this year it&#8217;s also stepping up to fill the shoes of RailsConf EU.</p>
+<p>Yehuda and I are speaking and will be mixing a potent batch of Rails 3 kool-aid. Please join us for a sip!</p>

@@ -1,0 +1,21 @@
+---
+layout: post
+title: ! 'New Releases: 2.3.11 and 3.0.4'
+categories: []
+author: michael
+published: true
+date: 2011-02-08 22:39:00.000000000 +00:00
+---
+<p>Two new versions of Ruby On Rails have been released today.  As well as including a number of bugfixes they contain fixes for some security issues.  The full details of each of the vulnerabilities are available on the <a href="http://groups.google.com/group/rubyonrails-security">rubyonrails-security mailing list</a>.  We <strong>strongly</strong> urge you to update production Rails applications as soon as possible. Rather than post the advisories individually to this blog, I&#8217;ll just link to the google talk archives.</p>
+<p>Install the latest version using <ins>gem install rails</ins>. Or if you&#8217;re using bundler, edit your gemfile and run <ins>bundle update rails</ins>.</p>
+<h2>Summaries</h2>
+<p>Affecting 2.&#215;.x and 3.0.x</p>
+<ul>
+	<li>&#8220;<span class="caps">XSS</span> Risk in mail_to :encode=&gt;:javascript&#8221;:http://groups.google.com/group/rubyonrails-security/t/f02a48ede8315f81 <span class="caps">CVE</span>-2011-0446</li>
+	<li><a href="http://groups.google.com/group/rubyonrails-security/t/2d95a3cc23e03665"><span class="caps">CSRF</span> Bypass Risk</a> <span class="caps">CVE</span>-2011-0447</li>
+</ul>
+<p>Affecting 3.0.x only</p>
+<ul>
+	<li><a href="http://groups.google.com/group/rubyonrails-security/t/362f1fbc1761b336">Filter Problems on Case Insensitive Filesystems</a> <span class="caps">CVE</span>-2011-0449</li>
+	<li><a href="http://groups.google.com/group/rubyonrails-security/t/b658902cf6bf4eed" title="">Potential <span class="caps">SQL</span> Injection with limit</a> <span class="caps">CVE</span>-2011-0448</li>
+</ul>

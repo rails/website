@@ -1,0 +1,11 @@
+.common-border {
+
+  &--bottom {
+    border-bottom: 3px solid rgba($color-black, 0.035);
+  }
+
+  &--top {
+    border-top: 3px solid rgba($color-black, 0.035);
+  }
+
+}

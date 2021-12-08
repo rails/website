@@ -1,0 +1,13 @@
+---
+layout: post
+title: Capistrano 2.4.0
+categories:
+- releases
+author: jamis
+published: true
+date: 2008-06-13 17:14:00.000000000 +01:00
+---
+<p><a href="http://www.capify.org">Capistrano 2.4.0</a> is now available. Capistrano is the deployment tool of choice for many Rails programmers, but can be used for much more, allowing you to automate remote tasks using a simple task-oriented framework in Ruby.</p>
+<p>Install it via RubyGems:</p>
+<pre>  gem install capistrano</pre>
+<p>You can read the entire release announcement <a href="http://weblog.jamisbuck.org/2008/6/13/capistrano-2-4-0">on Jamis Buck&#8217;s weblog</a>.</p>

@@ -1,0 +1,59 @@
+.common-padding {
+
+  &--bottom {
+    padding-bottom: 60px;
+  }
+
+  &--bottom-small {
+    padding-bottom: 40px;
+  }
+
+  &--bottom-large {
+    padding-bottom: 60px;
+  }
+
+  &--top {
+    padding-top: 60px;
+  }
+
+  &--top-small {
+    padding-top: 40px;
+  }
+
+  &--top-large {
+    padding-top: 60px;
+  }
+
+
+
+  @media(min-width: 1024px) {
+
+    &--bottom {
+      padding-bottom: 80px;
+    }
+
+    &--bottom-small {
+      padding-bottom: 60px;
+    }
+
+    &--bottom-large {
+      padding-bottom: 120px;
+    }
+
+    &--top {
+      padding-top: 80px;
+    }
+
+    &--top-small {
+      padding-top: 60px;
+    }
+
+    &--top-large {
+      padding-top: 120px;
+    }
+
+  }
+
+
+
+}

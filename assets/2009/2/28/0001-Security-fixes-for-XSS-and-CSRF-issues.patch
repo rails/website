@@ -1,0 +1,53 @@
+From 4ee6a932ef141449896f8c54a6e934f533f0d9eb Mon Sep 17 00:00:00 2001
+From: Pawel Stradomski <pstradomski@gmail.com>
+Date: Mon, 23 Feb 2009 22:14:06 +0100
+Subject: [PATCH] Security fixes for XSS and CSRF issues.
+
+---
+ lib/in_place_editing.rb       |    5 ++++-
+ lib/in_place_macros_helper.rb |   12 +++++++-----
+ 2 files changed, 11 insertions(+), 6 deletions(-)
+
+diff --git a/lib/in_place_editing.rb b/lib/in_place_editing.rb
+index 3cbf59b..f252bde 100644
+--- a/lib/in_place_editing.rb
++++ b/lib/in_place_editing.rb
+@@ -16,9 +16,12 @@ module InPlaceEditing
+   module ClassMethods
+     def in_place_edit_for(object, attribute, options = {})
+       define_method("set_#{object}_#{attribute}") do
++        unless [:post, :put].include?(request.method) then
++          return render(:text => 'Method not allowed', :status => 405)
++        end
+         @item = object.to_s.camelize.constantize.find(params[:id])
+         @item.update_attribute(attribute, params[:value])
+-        render :text => @item.send(attribute).to_s
++        render :text => CGI::escapeHTML(@item.send(attribute).to_s)
+       end
+     end
+   end
+diff --git a/lib/in_place_macros_helper.rb b/lib/in_place_macros_helper.rb
+index 8f0dfea..fdd45d1 100644
+--- a/lib/in_place_macros_helper.rb
++++ b/lib/in_place_macros_helper.rb
+@@ -69,10 +69,12 @@ module InPlaceMacrosHelper
+   
+   # Renders the value of the specified object and method with in-place editing capabilities.
+   def in_place_editor_field(object, method, tag_options = {}, in_place_editor_options = {})
+-    tag = ::ActionView::Helpers::InstanceTag.new(object, method, self)
+-    tag_options = {:tag => "span", :id => "#{object}_#{method}_#{tag.object.id}_in_place_editor", :class => "in_place_editor_field"}.merge!(tag_options)
+-    in_place_editor_options[:url] = in_place_editor_options[:url] || url_for({ :action => "set_#{object}_#{method}", :id => tag.object.id })
+-    tag.to_content_tag(tag_options.delete(:tag), tag_options) +
+-    in_place_editor(tag_options[:id], in_place_editor_options)
++    instance_tag = ::ActionView::Helpers::InstanceTag.new(object, method, self)
++    tag_options = {:tag => "span",
++                   :id => "#{object}_#{method}_#{instance_tag.object.id}_in_place_editor",
++                   :class => "in_place_editor_field"}.merge!(tag_options)
++    in_place_editor_options[:url] = in_place_editor_options[:url] || url_for({ :action => "set_#{object}_#{method}", :id => instance_tag.object.id })
++    tag = content_tag(tag_options.delete(:tag), h(instance_tag.value(instance_tag.object)),tag_options)
++    return tag + in_place_editor(tag_options[:id], in_place_editor_options)
+   end
+ end
+-- 
+1.6.0.6
+

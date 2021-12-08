@@ -1,0 +1,16 @@
+---
+layout: post
+title: ! '4th book coming: Rails Developer Notebook'
+categories:
+- documentation
+author: admin
+published: true
+date: 2005-03-22 10:46:50.000000000 +00:00
+---
+<p>O&#8217;Reilly is getting on board the Rails too. Their first book is going to be the Rails Developer Notebook, which as the name suggests is part of their <a href="http://devnotebooks.oreilly.com/">Developer&#8217;s Notebooks</a> series:</p>
+<blockquote>The Developer&#8217;s Notebook series is for early adopters of leading-edge technologies who want to get up to speed quickly on what they can do now with emerging technologies. If you&#8217;re a coder down to your core, and just want to get on with the job, then you want a Developer&#8217;s Notebook. Coffee stains and all, these books are from the minds of developers to yours, barely cleaned up enough for print.</blockquote>
+<p>The book is being coauthored by Bruce Tate (<a href="http://www.manning.com/tate">Bitter Java</a>, <a href="http://www.manning.com/tate2">Bitter <span class="caps">EJB</span></a>, more) and David Geary (<a href="http://www.amazon.com/exec/obidos/tg/detail/-/0131463055/qid=1111488195/sr=8-11/ref=sr_8_xs_ap_i11_xgl14/002-6150913-2503248?v=glance&amp;s=books&amp;n=507846">Core JavaServer Faces</a>, <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0131001531/qid=1111488195/sr=8-10/ref=sr_8_xs_ap_i10_xgl14/002-6150913-2503248?v=glance&amp;s=books&amp;n=507846">Core <span class="caps">JSTL</span></a>, <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=stripbooks:relevance-above&amp;field-keywords=%252522david%252520geary%252522&amp;search-type=ss&amp;bq=1&amp;store-name=books/ref=xs_ap_l_xgl14/002-6150913-2503248">more</a>). The writing is supposed to start in April and the book should be out by June. So the focus is definitely to get something short out early and quickly.</p>
+<p>If you&#8217;ve been following Rails advocacy, you may remember the name David Geary. I <a href="http://www.loudthinking.com/arc/000408.html">ripped into him</a> fiercely about a month ago as <a href="http://www.jroller.com/comments/dgeary/Weblog/ruby_derailed">he quickly dismissed Rails</a> as being nothing but a <span class="caps">CRUD</span> scaffolder and declared &#8220;&#8230;you take this <span class="caps">ROR</span> koolaid. I&#8217;ll stick with the <span class="caps">JSF</span> flavor&#8221;.</p>
+<p>Luckily, it didn&#8217;t take much more than two weeks for Geary to <a href="http://www.jroller.com/comments/dgeary/Weblog/okay_let_s_take_a">reconsider the dismissal</a> and commit to looking closer at Rails. And now just a month later, he has signed on with Bruce Tate and O&#8217;Reilly to write a book about Rails!</p>
+<p>What a fantastic and inspiring transformation. Hopefully Geary can serve as a role model for other Java developers who are feeling &#8220;&#8230;a bit nervous about this <span class="caps">ROR</span> thing&#8221;. Despite being heavily vested with Struts, Tiles, <span class="caps">JSF</span>, and Shale, he was able to see that there was amble room for a competing stack and jumped on to it.</p>
+<p>My warmest welcomes to the Rails world, Geary! I wish Bruce Tate and you the best of luck with the Rails Developer Notebook and can&#8217;t wait to read it.</p>

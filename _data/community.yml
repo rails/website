@@ -1,0 +1,123 @@
+core:
+  - name: David
+    since: 2003
+    location: Denmark
+    url: https://dhh.dk
+    handle: dhh
+    image: /assets/images/core-david.jpg
+
+  - name: Jeremy
+    since: 2005
+    location: USA
+    url: https://twitter.com/bitsweat
+    handle: bitsweat
+    image: /assets/images/core-jeremy.jpg
+
+  - name: Aaron
+    since: 2011
+    location: USA
+    url: https://twitter.com/tenderlove
+    handle: tenderlove
+    image: /assets/images/core-aaron.jpg
+
+  - name: Xavier
+    since: 2011
+    location: Catalonia
+    url: https://hashref.com
+    handle: fxn
+    image: /assets/images/core-xavier.png
+
+  - name: Rafael
+    since: 2012
+    location: Canada
+    url: https://twitter.com/rafaelfranca
+    handle: rafaelfranca
+    image: /assets/images/core-rafael.jpg
+
+  - name: Andrew
+    since: 2012
+    location: UK
+    url: https://twitter.com/pixeltrix
+    handle: pixeltrix
+    image: /assets/images/core-andrew.jpg
+
+  - name: Guillermo
+    since: 2012
+    location: Canada
+    url: https://twitter.com/guilleiguaran
+    handle: guilleiguaran
+    image: /assets/images/core-guillermo.jpg
+
+  - name: Carlos
+    since: 2012
+    location: Brazil
+    url: https://twitter.com/cantoniodasilva
+    handle: cantoniodasilva
+    image: /assets/images/core-carlos.jpg
+
+  - name: Matthew
+    since: 2015
+    location: Australia
+    url: https://twitter.com/_matthewd
+    handle: _matthewd
+    image: /assets/images/core-matthew.jpg
+
+  - name: Kasper
+    since: 2016
+    location: Denmark
+    url: https://twitter.com/kaspth
+    handle: kaspth
+    image: /assets/images/core-kasper.jpg
+
+  - name: Eileen
+    since: 2017
+    location: USA
+    url: https://twitter.com/eileencodes
+    handle: eileencodes
+    image: /assets/images/core-eileen.jpg
+
+committers:
+  - name: Akira Matsuda
+    url: https://twitter.com/a_matsuda
+
+  - name: Eugene Kenny
+    url: https://twitter.com/eugeneius
+
+  - name: Gannon McGibbon
+    url: https://github.com/gmcgibbon
+
+  - name: Jean Boussier
+    url: https://github.com/byroot
+
+  - name: John Hawthorn
+    url: https://twitter.com/jhawthorn
+
+  - name: Richard Schneeman
+    url: https://twitter.com/schneems
+
+  - name: Ryuta Kamizono
+    url: https://twitter.com/kamipo
+
+  - name: Yuji Yaginuma
+    url: https://twitter.com/y_yagi
+
+alumni:
+  - name: George Claghorn
+  - name: Santiago Pastorino
+  - name: Yves Senn
+  - name: Godfrey Chan
+  - name: Michael Koziarski
+  - name: José Valim
+  - name: Yehuda Katz
+  - name: Jon Leighton
+  - name: Josh Peek
+  - name: Carl Lerche
+  - name: Pratik Naik
+  - name: Jamis Buck
+  - name: Marcel Molina
+  - name: Nicholas Seckar
+  - name: Sam Stephenson
+  - name: Florian Weber
+  - name: Scott Barron
+  - name: Tobias Lütke
+  - name: Rick Olson

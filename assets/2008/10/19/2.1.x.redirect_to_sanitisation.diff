@@ -1,0 +1,16 @@
+diff --git a/actionpack/lib/action_controller/response.rb b/actionpack/lib/action_controller/response.rb
+index 1d9f667..56dace0 100755
+--- a/actionpack/lib/action_controller/response.rb
++++ b/actionpack/lib/action_controller/response.rb
+@@ -30,9 +30,9 @@ module ActionController
+ 
+     def redirect(to_url, response_status)
+       self.headers["Status"] = response_status
+-      self.headers["Location"] = to_url
++      self.headers["Location"] = to_url.gsub(/[\r\n]/, '')
+ 
+-      self.body = "<html><body>You are being <a href=\"#{to_url}\">redirected</a>.</body></html>"
++      self.body = "<html><body>You are being <a href=\"#{CGI.escapeHTML(to_url)}\">redirected</a>.</body></html>"
+     end
+ 
+     def prepare!

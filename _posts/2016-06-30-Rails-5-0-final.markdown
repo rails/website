@@ -1,0 +1,82 @@
+---
+layout: post
+title: 'Rails 5.0: Action Cable, API mode, and so much more'
+category: releases
+author: dhh
+published: true
+date: 2016-06-30 10:00:00 -06:00
+---
+After six months of polish, four betas, and two release candidates, Rails 5.0 is finally done! It's taken hundreds of [contributors][contributors] and thousands of commits to get here, but what a destination: Rails 5.0 is without a doubt the best, most complete version of Rails yet. It's incredible that this community is still going so strong after so long. Thanks to everyone who helped get us here.
+
+The two star features of Rails 5.0 are as follows:
+
+## Action Cable
+[Action Cable][actioncable] is a brand-new framework for handling WebSockets in Rails. It's a completely integrated solution for managing connections, a channels layer for server-side processing, and a JavaScript layer for client-side interaction. It's incredibly easy to use, and makes designing live features like chat, notifications, and presence so much easier. It's what's powering all those features of [Basecamp 3][basecamp], if you want to see it in action.
+
+What's really lovely about Action Cable is that you get access to your entire Active Record and PORO domain model in your WebSockets work. We even added a brand-new [ActionController::Renderer][ac-renderer] system that makes it trivial to render your templates outside of controllers, when you want to reuse server-side templates for WebSocket responses.
+
+In development, Action Cable runs in-process with the rest of your app. To do this, we've switched the default development server from Webrick to [Puma][puma]. In production, you may well want to run Action Cable servers in their own processes. That's how we run it at Basecamp at scale.
+
+Special thanks to [Pratik Naik][pratiknaik], [Javan Makhmali][javanmakhmali] and [Matthew Draper][matthewdraper] for their formative work on Action Cable.
+
+## API mode
+Rails is not only a great choice when you want to build a full-stack application that uses server-side rendering of HTML templates, but also a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We've made this even clearer now with the new --api mode. If you create a new Rails application using `rails new backend --api`, you'll get a slimmed down skeleton and configuration that assumes you'll be working with JSON, not HTML.
+
+There's still more work to be done on this feature, but we're off to a great start. By default, API mode just relies on `#to_json` calls on model classes. But you can either use [Jbuilder][jbuilder], [Active Model Serializers][ams], or look at the new [JSONAPI::Resources][jsonapi] project for a more advanced solution.
+
+Thanks in particular to [Santiago Pastorino][santiagopastorino] and [Jorge Bejar][jorgebejar] for making this happen.
+
+## Other highlights
+
+* One Rails Command instead of the split-brain setup between rake and rails, so now it's `bin/rails db:migrate` instead of `bin/rake db:migrate` (herding by [Kasper Timm Hansen][kasper]).
+* [New Attributes API][attributes-api] by [Sean Griffin][sean].
+* The test runner now reports failures inline, so you don't have to complete the suite to see what went wrong.
+* ApplicationRecord has been born as a default parent class of all models created by the generators.
+* ActiveRecord::Relation#in_batches makes it much easier to deal with record work in batches at a time to lessen memory overloads.
+* Post.where('id = 1').or(Post.where('id = 2')) gives you exactly what you'd think!
+* No more accidentally halting Active Record callbacks because the last statement is false. Now you throw(:abort) explicitly!
+
+You should really checkout the CHANGELOGs, though. There's just so much new and good stuff available in all the frameworks:
+
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/activesupport/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.0.0/railties/CHANGELOG.md)
+
+Rails 5.0 also ships with [Turbolinks 5][turbolinks-v5] – the one with native iOS and Android wrapper implementations! If you've dismissed Turbolinks in the past, I urge you to checkout Sam Stephenson's RailsConf presentation: [Turbolinks 5: I Can't Believe It's Not Native!][turbolinks-presentation].
+
+There's even more detail in [the full Rails 5.0 release notes][release-notes] and Claudio B. did a [nice little slide deck][claudio-slides] walking through some of his favorite improvements (and removals!). And I did a brand-new [let's build a blog in Rails 5][rails5-video] video to demonstrate the basics.
+
+Your dynamic release manager duo for Rails 5.0 was [Eileen M. Uchitelle][eileen] and [Sean Griffin][sean]. And the undisputed PR merge champ was [Rafael França][rafaelfranca]!
+
+Note: As per our [maintenance policy][maintenance-policy], the release of Rails 5.0 will mean that bug fixes will only apply to 5.0.x, regular security issues to 5.0.x and 4.2.x, and severe security issues also to 5.0.x and 4.2.x (but when 5.1 drops, to 5.1.x, 5.0.x, and 4.2.x). This means 4.1.x and below will essentially be unsupported! Ruby 2.2.2+ is now also the only supported version of Rails 5.0+.
+
+[basecamp]: https://basecamp.com
+[jbuilder]: https://github.com/rails/jbuilder
+[ams]: https://github.com/rails-api/active_model_serializers
+[jsonapi]: https://github.com/cerebris/jsonapi-resources
+[turbolinks-v5]: https://github.com/turbolinks/turbolinks/
+[actioncable]: https://github.com/rails/rails/tree/master/actioncable
+[attributes-api]: https://github.com/rails/rails/blob/8c752c7ac739d5a86d4136ab1e9d0142c4041e58/activerecord/lib/active_record/attributes.rb
+[pratiknaik]: https://github.com/lifo
+[javanmakhmali]: https://github.com/javan
+[matthewdraper]: https://github.com/matthewd
+[santiagopastorino]: https://github.com/spastorino
+[jorgebejar]: https://github.com/jmbejar
+[kasper]: https://github.com/kaspth
+[eileen]: https://github.com/eileencodes
+[sean]: https://github.com/sgrif
+[rafaelfranca]: https://github.com/rafaelfranca
+[maintenance-policy]: http://guides.rubyonrails.org/maintenance_policy.html
+[issues]: https://github.com/rails/rails/issues
+[contributors]: http://contributors.rubyonrails.org/releases/5-0-0/contributors
+[claudio-slides]: https://speakerdeck.com/claudiob/rails-5-awesome-features-and-breaking-changes
+[turbolinks-presentation]: https://www.youtube.com/watch?v=SWEts0rlezA
+[release-notes]: http://guides.rubyonrails.org/5_0_release_notes.html
+[ac-renderer]: http://blog.bigbinary.com/2016/01/08/rendering-views-outside-of-controllers-in-rails-5.html
+[puma]: http://puma.io
+[rails5-video]: https://www.youtube.com/watch?v=OaDhY_y8WTo

@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'Rails 5.0.0.beta4'
+category: releases
+author: eileencodes
+published: true
+date: 2016-04-28
+---
+
+We're happy to announce Rails 5 Beta 4 release. We're down to [4 open issues](https://github.com/rails/rails/milestones/5.0.0) on the issue tracker for Rails 5.0.0.RC1.
+
+We continue to work torwards RC1. Between beta3 and beta4 Rails got over [1,000 commits](https://github.com/rails/rails/compare/v5.0.0.beta3...v5.0.0.beta4)!
+
+To view the changes for each gem, please read the changelogs on GitHub:
+
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/activesupport/CHANGELOG.md)
+* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/actioncable/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.0.0.beta4/railties/CHANGELOG.md)

@@ -1,0 +1,43 @@
+body {
+
+  @include calibre();
+  background: $color-grey-1;
+  color: $color-black;
+  font-size: 18px;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 24px;
+  -webkit-tap-highlight-color: rgba($color-black, 0);
+
+  a {
+    color: $color-red;
+    text-decoration: none;
+    transition: color $transition;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    @include calibre();
+  }
+
+  img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+
+  @media(min-width: 1024px) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+
+
+}

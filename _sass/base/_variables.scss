@@ -1,0 +1,17 @@
+$color-black: #261B23;
+$color-grey-1: #F0E7E9;
+$color-grey-2: #E6DDDF;
+$color-grey-3: #DCD3D5;
+$color-grey-4: #968D8F;
+$color-grey-5: #5A5153;
+$color-red: #D30001;
+$color-white: #FFF;
+
+$filter-black: invert(5%) sepia(18%) saturate(1397%) hue-rotate(314deg) brightness(95%) contrast(83%);
+$filter-grey: invert(97%) sepia(2%) saturate(669%) hue-rotate(314deg) brightness(96%) contrast(97%);
+$filter-red: invert(15%) sepia(95%) saturate(3482%) hue-rotate(354deg) brightness(82%) contrast(124%);
+$filter-white: brightness(0) invert(1);
+
+$transition: 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+
+$container: 1440px;

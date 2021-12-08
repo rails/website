@@ -1,0 +1,365 @@
+---
+id: home
+---
+
+<div class="heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Compress the complexity of modern web apps.</h1>
+        <h4>Learn just what you need to get started, then keep leveling up as you go. <strong>Ruby on Rails scales from HELLO WORLD to IPO.</strong></h4>
+      </div>
+
+{% if site.data.version.label %}
+
+      <div class="heading__button">
+        <a href="{{ site.data.version.url | absolute_url }}" class="common-button common-button--version"><span>{{ site.data.version.label }}{% if site.data.version.date %} &mdash; released {{ site.data.version.date }}{% endif %}</span></a>
+      </div>
+
+{% endif %}
+
+    </div>
+  </div>
+</div>
+
+<div class="video common-background--grey common-shape--top-white-down-left">
+  <div class="container">
+    <div class="video__embed">
+      <video poster="{{ '/assets/videos/hotwire-screencast-poster.jpg' | absolute_url }}" width="1920" height="1080" controls="" playsinline="">
+        <source src="https://s3.amazonaws.com/hotwire.dev/hotwire-screencast.mp4" type="video/mp4">
+        <track kind="captions" label="English captions" src="{{ '/assets/videos/hotwire-screencast-english.vtt' | absolute_url }}" srclang="en" default="">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="heading common-gradient--grey-to-white common-padding--bottom-small common-padding--top">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>You’re in good company.</h1>
+        <h4>Over the past two decades, Rails has taken countless companies to millions of users and billions in market valuations.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trusted common-padding--bottom-small">
+  <div class="container">
+    <div class="trusted__blocks">
+      <div class="trusted__block">
+        <a href="https://basecamp.com">
+          <img src="{{ '/assets/images/logo-basecamp.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://hey.com">
+          <img src="{{ '/assets/images/logo-hey.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://github.com">
+          <img src="{{ '/assets/images/logo-github.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://shopify.com">
+          <img src="{{ '/assets/images/logo-shopify.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://twitch.tv">
+          <img src="{{ '/assets/images/logo-twitch.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://dribbble.com">
+          <img src="{{ '/assets/images/logo-dribbble.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://hulu.com">
+          <img src="{{ '/assets/images/logo-hulu.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://zendesk.com">
+          <img src="{{ '/assets/images/logo-zendesk.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://airbnb.com">
+          <img src="{{ '/assets/images/logo-airbnb.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://squareup.com">
+          <img src="{{ '/assets/images/logo-square.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://kickstarter.com">
+          <img src="{{ '/assets/images/logo-kickstarter.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+      <div class="trusted__block">
+        <a href="https://heroku.com">
+          <img src="{{ '/assets/images/logo-heroku.svg' | absolute_url }}" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text text--align-center common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content common-content--size-large">
+        <p><strong>These are just a few of the big names.</strong> There have been many hundreds of thousands of apps created with Rails since its inception.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heading common-background--grey common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Building it together.</h1>
+
+        <h4>Over five thousand people have <a href="https://contributors.rubyonrails.org">contributed code to Rails</a>, and many more have served the community through evangelism, documentation, and bug reports. Join us!</h4>
+      </div>
+
+      <div class="heading__button">
+        <a href="{{ '/community' | absolute_url }}" class="common-button common-button--text common-button--icon-arrow"><span>Meet the Rails team</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heading heading--frame-white common-padding--bottom common-shape--top-grey-down-left">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Everything you need.</h1>
+        <h4><strong>Rails is a full-stack framework.</strong> It ships with all the tools needed to build amazing web apps on both the front and back end.</h4>
+      </div>
+
+      <div class="heading__content heading__content--has-headline common-content common-content--size-large">
+        <p>Rendering HTML templates, updating databases, sending and receiving emails, maintaining live pages via WebSockets, enqueuing jobs for asynchronous work, storing uploads in the cloud, providing solid security protections for common attacks. Rails does it all and so much more.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="example common-background--grey common-padding--bottom common-shape--top-white-down-right">
+  <div class="container">
+    <div class="example__body">
+      <div class="example__block example__block--align-left">
+        <div class="example__code common-code">
+          <h6>app/models/article.rb</h6>
+<pre>
+class Article < ApplicationRecord
+  belongs_to :author, default: -> { Current.user }
+  has_many   :comments
+
+  has_one_attached :avatar
+  has_rich_text :content, encrypted: true
+  enum status: [ :drafted, :published ]
+
+  scope :recent, -> { order(created_at: :desc).limit(25) }
+
+  after_save_commit :deliver_later, if: :published?
+
+  def byline
+    "Written by #{author.name} on #{created_at.to_s(:short)}"
+  end
+
+  def deliver_later
+    Article::DeliveryJob.perform_later self
+  end
+end
+</pre>
+        </div>
+
+        <div class="example__content common-content">
+          <h3>Active Records makes modeling easy.</h3>
+          <p>Databases come to life with business logic encapsulated in rich objects. Modeling associations between tables, providing callbacks when saved, encrypting sensitive data seamlessly, and expressing SQL queries beautifully.</p>
+        </div>
+      </div>
+
+      <div class="example__block example__block--align-left">
+        <div class="example__code common-code">
+          <h6>app/controllers/articles_controller.rb</h6>
+<pre>
+class ArticlesController < ApplicationController
+  def index
+    @articles = Article.recent
+  end
+
+  def show
+    @article = Article.find(params[:id])
+    fresh_when etag: @article
+  end
+
+  def create
+    article = Article.create!(article_params)
+    redirect_to article
+  end
+
+  private
+    def article_params
+      params.require(:article).permit!(:title, :content)
+    end
+end
+</pre>
+        </div>
+
+        <div class="example__content common-content">
+          <h3>Action Controllers handle all requests.</h3>
+          <p>Controllers expose the domain model to the web, process incoming parameters, set caching headers, and renders templates, responding with either HTML or JSON.</p>
+        </div>
+      </div>
+
+      <div class="example__block example__block--align-left">
+        <div class="example__code common-code">
+          <h6>app/views/articles/show.html.erb</h6>
+<pre>
+&lt;h1&gt;&lt;%= @article.title %&gt;&lt;/h1&gt;
+
+&lt;%= image_tag @article.creator.avatar.url %&gt;
+
+&lt;p&gt;&lt;%= @article.content %&gt;&lt;/p&gt;
+
+&lt;%= link_to "Edit", edit_article_path(@article) if Current.user.admin? %&gt;
+</pre>
+        </div>
+
+        <div class="example__content common-content">
+          <h3>Action Views mix Ruby and HTML.</h3>
+          <p>Templates can use the full version of Ruby, excessive code is extracted into helpers, and the domain model is used directly and inter-vowed with the HTML.</p>
+        </div>
+      </div>
+
+      <div class="example__block example__block--align-left">
+        <div class="example__code common-code">
+          <h6>config/routes.rb</h6>
+<pre>
+Rails.application.routes.draw do
+  resources :articles do    # /articles, /articles/1
+    resources :comments     # /articles/1/comments, /comments/1
+  end
+
+  root to: "articles#index" # /
+end
+</pre>
+        </div>
+
+        <div class="example__content common-content">
+          <h3>Action Dispatch route URLs.</h3>
+          <p>Configure how URLs connect to the controllers using the routing domain language. Routes expose the bundle of actions that go together as a resource: index, show, new, create, edit, update, destroy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heading heading--frame-white common-background--grey common-shape--bottom-white-up-left">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Optimized for happiness.</h1>
+      </div>
+
+      <div class="heading__content heading__content--has-headline common-content common-content--size-large">
+        <p>Rails has united and cultivated a strong tribe around a <strong>wide set of heretical thoughts</strong> about the nature of programming and programmers. Understanding these thoughts will help you understand the design of the framework.</p>
+      </div>
+
+      <div class="heading__button">
+        <a href="{{ '/doctrine/en' | absolute_url }}" class="common-button common-button--text common-button--icon-arrow"><span>Read the Rails Doctrine</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heading common-padding--bottom-small common-padding--top">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Let’s get started.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cards common-padding--bottom-small">
+  <div class="container">
+    <div class="cards__container">
+      <div class="card">
+        <a href="https://guides.rubyonrails.org">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Learning</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>Read the guides.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>Learn what the frameworks can do and how they fit together.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/rails/rails">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Contributing</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>Contribute on GitHub.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>File bug reports and make pull-requests.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="{{ '/blog' | absolute_url }}">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Keeping up</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>See what’s new.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>The latest releases and updates on development.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text text--align-center common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content common-content--size-large">
+        <p>Learn more <a href="https://hotwired.dev">Hotwire</a>, the default front-end framework for Rails.</p>
+
+        <p><strong>Stay up to date</strong> with Rails on <a href="https://twitter.com/rails" class="icon icon--twitter">Twitter</a> and <a href="https://world.hey.com/this.week.in.rails" class="icon icon--world">This Week in Rails</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+---
+title: Security
+description:
+---
+
+<div class="heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Security policy.</h1>
+        <h4>Rails takes web security <strong>very seriously.</strong></h4>
+      </div>
+      <div class="heading__content heading__content--has-headline common-content common-content--size-large">
+        <p>This means including features to protect app makers from common issues like CSRF, Script Injection, SQL Injection, and the like. But it also means a clear policy on how to report vulnerabilities and receive updates when patches are released.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Supported Versions</h3>
+        <p>Please see the <a href="https://guides.rubyonrails.org/maintenance_policy.html#security-issues">Maintenance policy</a> for supported versions.</p>
+        <hr class="divider" />
+        <h3>Reporting a Vulnerability</h3>
+        <p>All security bugs in rails should be reported through our <a href="https://hackerone.com/rails">bounty program page at HackerOne</a>. This will deliver a message to a subset of the core team who handle security issues. Your report will be acknowledged within 24 hours, and you’ll receive a more detailed response to your email within 48 hours indicating the next steps in handling your report.</p>
+        <p>After the initial reply to your report the security team will endeavor to keep you informed of the progress being made towards a fix and full announcement. These updates will be sent at least every five days, in reality this is more likely to be every 24-48 hours.</p>
+        <p>If you have not received a reply to your email within 48 hours, or have not heard from the security team for the past five days there are a few steps you can take:</p>
+        <ul>
+          <li>Send an email to the security reports list <a href="mailto:security@rubyonrails.org">security@rubyonrails.org</a>.</li>
+          <li>Contact the current security coordinator <a href="mailto:rafaelmfranca@gmail.com">Rafael França</a> directly.</li>
+          <li>Contact the back-up contact <a href="mailto:jeremy@basecamp.com">Jeremy Daer</a> directly.</li>
+          <li>Email the <a href="https://discuss.rubyonrails.org/c/rubyonrails-core">rails core list</a> or ask in #rails-contrib on irc.freenode.net.</li>
+        </ul>
+        <p>Please note, the rails core list and #rails-contrib are public areas. When escalating to that address please do not discuss your issue, simply say that you’re trying to get a hold of someone from the security team.</p>
+        <hr class="divider" />
+        <h3>Disclosure Process</h3>
+        <ol>
+          <li>Security report received and is assigned a primary handler. This person will coordinate the fix and release process. Problem is confirmed and a list of all affected versions is determined. Code is audited to find any potential similar problems.</li>
+          <li>Fixes are prepared for all releases which are still supported. These fixes are not committed to the public repository but rather held locally pending the announcement.</li>
+          <li>A suggested embargo date for this vulnerability is chosen and <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a> is notified. This notification will include patches for all versions still under support and a contact address for packagers who need advice backporting patches to older versions.</li>
+          <li>On the embargo date, the rails security mailing list is sent a copy of the announcement. The changes are pushed to the public repository and new gems released to rubygems. At least 6 hours after the mailing list is notified, a copy of the advisory will be published on <a href="https://weblog.rubyonrails.org">the Rails weblog</a>.</li>
+        </ol>
+        <p>Typically the embargo date will be set 72 hours from the time <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a> is first notified, however this may vary depending on the severity of the bug or difficulty in applying a fix.</p>
+        <p>This process can take some time, especially when coordination is required with maintainers of other projects. Every effort will be made to handle the bug in as timely a manner as possible, however it’s important that we follow the release process above to ensure that the disclosure is handled in a consistent manner.</p>
+        <hr class="divider" />
+        <h3>Receiving Disclosures</h3>
+        <p>The best way to receive all the security announcements is to subscribe to the <a href="https://groups.google.com/d/forum/rubyonrails-security">Rails Security mailing list</a>. The mailing list is very low traffic, and it receives the public notifications the moment the embargo is lifted. If you produce packages of Ruby on Rails and require prior notification of vulnerabilities, you should be subscribed to <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a>.</p>
+        <p>No one outside the core team, the initial reporter or <a href="http://oss-security.openwall.org/wiki/mailing-lists/distros">distros@openwall</a> will be notified prior to the lifting of the embargo. We regret that we cannot make exceptions to this policy for high traffic or important sites, as any disclosure beyond the minimum required to coordinate a fix could cause an early leak of the vulnerability.</p>
+        <p>If you have any suggestions to improve this policy, please send an email to <a href="mailto:security@rubyonrails.org">security@rubyonrails.org</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>

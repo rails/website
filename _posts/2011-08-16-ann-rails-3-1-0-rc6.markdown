@@ -1,0 +1,42 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.1.0.rc6'
+categories: []
+author: aaronp
+published: true
+date: 2011-08-16 23:37:00.000000000 +01:00
+---
+Hi everyone,
+
+Rails 3.1.0.rc6 has been released.  This release contains critical security fixes.
+
+## CHANGES 
+
+You can find an exhaustive list of changes on [github](https://github.com/rails/rails/compare/v3.1.0.rc5...v3.1.0.rc6).  Along with the [closed issues marked for v3.1.0](https://github.com/rails/rails/issues?sort=created&direction=desc&state=closed&page=1&milestone=1).
+
+You can also see issues [we haven't closed](https://github.com/rails/rails/issues?sort=created&direction=desc&state=open&page=1&milestone=1). 
+
+A comprehensive CHANGELOG will be announced when 3.1.0 final is released.  Barring any show stopping bugs, Rails 3.1.0 will be released on August 30th.
+
+## 4 Security Fixes
+
+  * [Filter Skipping bugs](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/3420ac71aed312d6)
+  * [SQL Injection issues](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/6a1e473744bc389b)
+  * [Parse error in `strip_tags`](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/2b9130749b74ea12)
+  * [UTF-8 escaping vulnerability](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/56bffb5923ab1195)
+
+Please follow the links to see specific information about each vulnerability, along with individual patches for fixing them.
+
+Please note that these security fixes do not have CVE identifiers.  We requested identifiers on August 5th, and have yet to received a response.  When we get identifiers, we'll update the notices with those values.
+
+Also remember to subscribe to the [Ruby on Rails Security mailing list](http://groups.google.com/group/rubyonrails-security).
+
+## Why was this release delayed?
+
+You may have noticed this release was originally slated to be released on August 8th.  We decided to delay the release in order to obtain CVE identifiers.  Unfortunately, identifiers still have not been issued.  We felt that getting the security fixes to our users was more important than obtaining CVE values.
+
+That is why our release is late, and contains no CVE identifiers.
+
+## THE END 
+
+Thanks! <3 

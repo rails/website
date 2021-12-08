@@ -1,0 +1,23 @@
+---
+layout: post
+title: Capistrano 1.4.1
+categories:
+- releases
+author: jamis
+published: true
+date: 2007-02-24 20:39:00.000000000 +00:00
+---
+<p>Here it is, another Capistrano release, and less than a month since the last one! Miracles truly never cease.</p>
+<p>Capistrano, for those embarrassingly late to the party, is a utility for executing commands in parallel on multiple remote servers. It is useful for lots of things, including automating deployment of Rails applications.</p>
+<p>Version 1.4.1, available just as soon as the mirrors get updated, is a pretty minor update, but has one new feature:</p>
+<ul>
+	<li>You can now pass :env to &#8216;run&#8217; (and friends), in order to specify environment variables that should be set for that command. For example:</li>
+</ul>
+run &#8220;some_batch_thang.rb&#8221;, :env =&gt; { &#8220;<span class="caps">DEBUG</span>&#8221; =&gt; &#8220;1&#8221; }
+<p>There is also one deprecation: if you are using <span class="caps">UPPERCASE</span> variables in your Capistrano recipes, you&#8217;ll being seeing warnings now. Support for variables that start with uppercase letters will be removed altogether in Capistrano 2.0. If you want uppercase identifiers, you should use Ruby constants.</p>
+<p>The two fixes in this release:</p>
+<ul>
+	<li>Actor#get will not close the <span class="caps">SFTP</span> channel when it finishes. This makes it possible to do multiple <span class="caps">SFTP</span> gets and puts in a single session.</li>
+	<li>The subversion adapter now passes the &#8220;no-auth-cache&#8221; option, so that if you configure an explicit subversion username for deployment <em>other</em> than your dev username, those deployment auth tokens won&#8217;t clobber your development tokens.</li>
+</ul>
+<p>So, go get it, &#8220;gem install capistrano.&#8221; Or download it directly from <a href="http://rubyforge.org/frs/?group_id=1420">RubyForge</a>. And at the risk of promising too much, too early: I expect this to be the last 1.x release of Capistrano, barring any critical problems that may arise with 1.4.1. Come on, cap2!</p>

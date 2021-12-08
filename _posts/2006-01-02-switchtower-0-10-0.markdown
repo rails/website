@@ -1,0 +1,43 @@
+---
+layout: post
+title: SwitchTower 0.10.0
+categories:
+- releases
+author: jamis
+published: true
+date: 2006-01-02 18:19:00.000000000 +00:00
+---
+<p>You can read the <a href="http://rubyforge.org/frs/shownotes.php?release_id=3930">complete changelog</a>, but here&#8217;s a quick overview of some of the most notable changes:</p>
+<h3>Bugs Fixed</h3>
+<ul>
+	<li>Handle <span class="caps">SSH</span> password prompts formatted like &#8220;someone&#8217;s password:&#8221;</li>
+	<li>Allow the sudo password to be reentered if it was entered incorrectly</li>
+	<li>Errors during checkout are now caught and reported early</li>
+	<li>Avoid timeouts on long-running commands</li>
+	<li>Add a small sleep during command processing to give the <span class="caps">CPU</span> a rest</li>
+	<li>Rake tasks should work much more nicely on Windows (you&#8217;ll need to do <code>switchtower --apply-to /path/to/app</code> to update, keeping your <code>config/deploy.rb</code> and overwriting <code>lib/tasks/switchtower.rake</code>)</li>
+</ul>
+<h3>New Features</h3>
+<p><strong><code>ssh_options</code> variable</strong></p>
+<p>There is now an <code>ssh_options</code> hash that you can use in your recipe files to set custom <span class="caps">SSH</span> connection options, like setting a non-standard port to connect on:</p>
+<typo:code lang="ruby">
+ssh_options[:port] = 2345
+</typo:code>
+<p><strong>Allow svn checkouts to use <code>export</code> instead of <code>co</code></strong></p>
+<p>If you don&#8217;t want to use an <code>svn co</code> to checkout your code, you can set the <code>:checkout</code> variable to <code>:export</code>, and SwitchTower will use <code>svn export</code> instead.</p>
+<typo:code lang="ruby">
+set :checkout, :export
+</typo:code>
+<p>This variable defaults to <code>:co</code>.</p>
+<p><strong><code>update_current</code> task</strong></p>
+<p>There is now an <code>update_current</code> task that just does an <code>svn up</code> on the last-deployed release. This is useful for trivial updates, like when a template changed.</p>
+<p><strong><code>cleanup</code> task</strong></p>
+<p>You can easily remove unused releases from your deployment directories with the <code>cleanup</code> task. It will (by default) keep the 5 most recent releases, and delete the rest.</p>
+<p><strong><span class="caps">SFTP</span> for file transfers</strong></p>
+<p>Net::<span class="caps">SFTP</span> is now used (if it is available) for file transfers. This should make transferring large files more robust, as well as allow binary characters in files.</p>
+<p><strong><code>restart_via</code> variable</strong></p>
+<p>You can now set the <code>:restart_via</code> variable to <code>:run</code>, if you need to have the <code>restart</code> task use <code>run</code> instead of <code>sudo</code>.</p>
+<typo:code lang="ruby">
+set :restart_via, :run
+</typo:code>
+<p>This defaults variable to <code>:sudo</code>.</p>

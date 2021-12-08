@@ -1,0 +1,108 @@
+---
+layout: post
+title: 'Rails 5.1.0.beta1: Loving JavaScript, System Tests, Encrypted Secrets, and more'
+category: releases
+author: dhh
+published: true
+date: 2017-02-23 15:20:00 -05:00
+---
+Rails 5.0 was released just some eight months ago, and now, [some 3500 commits later](https://github.com/rails/rails/compare/v5.0.0...master/), we're already close to the next big release. And what release this version 5.1 is lining up to be! We've made great strides on long-term promises and key ergonomics while also spring cleaning a bunch of deprecated code.
+
+Let me walk you through the highlight reel:
+
+
+## Loving JavaScript
+
+We've had a stormy, perhaps even contentious, relationship with JavaScript over the years. But that time is past. JavaScript has improved immensely over the past few years, particularly with the advent of ES6, and with package and compilation tools like Yarn and Webpack. Rails is embracing both of these solutions with open arms and letting whatever past water flow under the bridge.
+
+JavaScript and Ruby share a deep philosophical bond over language design, if not ecosystem management. Let's focus on the aspects we have in common and help Rails programmers extract the best from JavaScript with the help of some key guiding conventions.
+
+The improvements in Rails 5.1 focus on three major parts:
+
+1. **Manage JavaScript dependencies from NPM via Yarn.** Think of [Yarn](https://yarnpkg.com/en/) like Bundler for JavaScript (it even has [Yehuda Katz](https://github.com/wycats) involved!). This makes it easy to depend on libraries like React or anything else from NPM. Everything you depend on via Yarn is then made available to be required in the asset pipeline, just like vendored dependencies would have been. Just use the binstub `bin/yarn` to add dependencies.
+
+2. **Optionally compile JavaScript with Webpack.** While there are a million different module bundlers/compilers for JavaScript, [Webpack](https://webpack.github.io/) is quickly emerging as the preeminent choice. We've made it easy to use Webpack with Rails through the new [Webpacker](https://github.com/rails/webpacker) gem that you can configure automatically on new projects with `--webpack`. This is fully compatible with the asset pipeline, which you can continue to use for images, fonts, sounds, whatever. You can even have some JavaScript on the asset pipeline and some done via Webpack. It's all managed via Yarn that's on by default.
+
+3. **Drop jQuery as a default dependency.** We used to require jQuery in order to provide features like data-remote, data-confirm, and the other parts of Rails UJS. This dependency is no longer necessary as we've [rewritten rails-ujs to use vanilla JavaScript](https://github.com/rails/rails-ujs). You're of course still free to use jQuery, but you no longer have to.
+
+
+Thanks to [Liceth Ovalles](https://github.com/Liceth) for her work on Yarn integration, [Dangyi Liu](https://github.com/liudangyi) for his work on rails-ujs, and [Guillermo Iguaran](https://github.com/guilleiguaran) for chaperoning the whole thing!
+
+
+## System tests
+
+In my [2014 keynote at RailsConf](https://www.youtube.com/watch?v=9LfmrkyP81M), I spoke at length about how an over focus on unit tests (and TDD) has lead us astray. While unit tests are part of a complete testing solution, they're not the most important one. Integration tests that verify behavior all the way from controllers through models and views should play a much bigger part. Rails already has a great answer for these baked in.
+
+But integration tests do not help you test the entire system, if that system relies on JavaScript. And most major web systems today rely at least to some extent on JavaScript. That's where system tests driven by a real browser come in.
+
+There's long been an answer for system tests like this in Ruby called [Capybara](http://teamcapybara.github.io/capybara/). It's just been kind of a journey to configure properly for Rails. So now we've [baked them straight into the framework](https://github.com/rails/rails/blob/658b5244356feba2b262e87d8b333c5a46999a5d/actionpack/lib/action_dispatch/system_test_case.rb#L11)! You get a lovely wrapping of Capybara that's preconfigured for Chrome and enhanced to provide failure screenshots as part of Action Dispatch. You also don't have to worry about extra [database cleanup strategies anymore](https://github.com/rails/rails/pull/28083) because the baked in transactional tests now rollback system test changes.
+
+These tests are not without trade-offs. It's of course still slower to run through a whole browser setup than just test a model with a stubbed out database. But it also tests so much more. You'd do well to familiarize yourself with system tests and have them as part of your testing answer.
+
+Thanks to [Eileen M. Uchitelle](https://github.com/eileencodes) for her work extracting this from [Basecamp](https://basecamp.com)!
+
+
+## Encrypted secrets
+
+If you're checking production passwords, API keys, and other secrets undisguised into your revision control system, you're doing it wrong. That's not safe and you should stop it! Now that's an easy prescription, but without a coherent answer to what you should do instead, it's also not that helpful.
+
+People have long been loading up the ENV to store these secrets or used a variety of other solutions. There are all sorts of trade-offs and drawbacks to the ENV-model, not least of which that you _still_ need to store those secrets for real somewhere else.
+
+Inspired by [Ara T. Howard](https://github.com/ahoward)'s [sekrets gem](https://github.com/ahoward/sekrets), we've [built encrypted secrets management into Rails 5.1](https://github.com/rails/rails/pull/28038). You can setup a new encrypted secrets file with `bin/rails secrets:setup`. That'll generate a master key you'll store outside of the repository, but allow you to commit the actual production secrets to your revision control. They're then decrypted in production either through an injected key file or through RAILS_MASTER_KEY in the ENV.
+
+Thank you to [Kasper Timm Hansen][kasper] for the work on this and Ara for the inspiration!
+
+
+## Parameterized mailers
+
+Action Mailer is modeled on Action Controller. It shares underpinnings through Abstract Controller, but it's long been disadvantaged from its controller cousin in the way it can share logic between actions.
+
+In Action Controller, it's common to use `before_action` and similar callbacks to extract logic that applies to multiple actions. This is doable because the params hash is available before the action is invoked. But in Action Mailer, we've been using regular method signatures with explicit arguments, so those arguments haven't been available to filters that run before the actions.
+
+With [Parameterized Mailers](https://github.com/rails/rails/blob/2dadf73891431ff16709ae41ccb552a56ce34c32/actionmailer/lib/action_mailer/parameterized.rb), we now give you the option of calling mailers with parameters that, like in controllers, are available before the action is invoked. This combines with the default to/from/reply_to headers to dramatically DRY-up some mailer actions.
+
+It's completely backwards compatible and you can convert just the mailers that stand to gain the most from extraction first.
+
+
+## Direct & resolved routes
+
+We have a lovely, simple API for declaring new resource routes. But if you'd like to add new programmatic routes that has logic determining the final destination based on the parameters, well, you'd have to row your own boat with helpers and other messy approaches.
+
+With directed routes, you can now declare programmatic routes that have the full power of Ruby to do different things depending on the parameters passed.
+
+With resolved routes, you can reprogram the polymorphic look-up for models based straight to compatible methods. So this allow you to turn `link_to @comment` into a final route like `message_path(@comment.parent, anchor: "comment_#{@comment.id}")`.
+
+Thank you to [Andrew White](https://github.com/pixeltrix) for [making all this work](https://github.com/rails/rails/pull/23138)!
+
+
+## Unify form_tag/form_for with form_with
+
+We've long had two parallel structures for creating forms. Those that were based off records through `form_for`, where we used convention over configuration to extract the details, and manually configured ones using `form_tag`. Now we've unified these two hierarchies with [form_with](https://github.com/rails/rails/issues/25197). A single root tree that you can configure through an inferred record or manually. It's much nicer and simpler.
+
+Thanks to [Kasper Timm Hansen][kasper] for this one too!
+
+
+## Everything else
+
+In addition to the highlight reel, we have hundreds of other fixes and improvements across all the frameworks. Please peruse the CHANGELOGs to acquaint yourself with all the goodies:
+
+* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/actioncable/CHANGELOG.md)
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/actionpack/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/actionview/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/activerecord/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/activesupport/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/activejob/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v5.1.0.beta1/railties/CHANGELOG.md)
+
+Your release manager for Rails 5.1 is [Rafael França][rafaelfranca]. He'll be chaperoning us through the betas, release candidates, and onto the final release in advance of [RailsConf 2017](http://railsconf.com/).
+
+As per our [maintenance policy][maintenance-policy], the release of Rails 5.1 will mean that bug fixes will only apply to 5.1.x, regular security issues to 5.1.x and 5.0.x, and severe security issues to 5.1.x, 5.0.x, and 4.2.x. This means 4.x and below will essentially be unsupported!
+
+Please help us test this beta version of Rails. It's always frustrating when we put a lot of work into a new release, betas, release candidates, and then get people report all sorts of issues on week one of the final release. [Basecamp 3](https://basecamp.com) is already running this beta in production. This is an incremental upgrade to Rails 5.0. Please do your community duty and help us land a solid 5.1 without needing an immediate 5.1.1. Thank you! Gracias! Merci! TAK!
+
+
+[kasper]: https://github.com/kaspth
+[rafaelfranca]: https://github.com/rafaelfranca
+[maintenance-policy]: http://guides.rubyonrails.org/maintenance_policy.html

@@ -1,0 +1,22 @@
+---
+layout: post
+title: Justin&#160;Gehtland is back with numbers to back it up
+categories:
+- praise
+author: admin
+published: true
+date: 2005-04-04 03:30:53.000000000 +01:00
+---
+<p>Justin&#160;Gehtland is <a href="http://www.relevancellc.com/blogs/?p=31">back with numbers</a> to back up <a href="http://weblog.rubyonrails.com/archives/2005/03/07/ease-of-development-speed-of-execution-pick-two/">his original claim</a> that &#8220;Rails is actually faster&#8221; for his application than the Java/Spring/Hibernate/<span class="caps">JSTL</span> stack powered version was. Through various benchmarks, he has found Rails to be roughly 15-30% faster than the old Java version. Interestingly enough, it seemed that Rails was especially better performing on deeper domain features:</p>
+<blockquote>What I found was that, the less complex the feature, the faster the Java app served it relative to the Rails app. The more complex the feature, the slower the Java app served it relative to the Rails app.</blockquote>
+<p>Looking at pages that are a good fit for caching, the difference is a lot more startling. While Justin admits that there was probably a lot more work with tuning and tweaking that could be done on the Java versions (where page caching in Rails is triggered by 1 line of code), his tests shows the Rails version to perform 1,754-1,785 requests/second vs the 80/88 requests/second on the Java side.</p>
+<p>The blistering performance is naturally due to the way that Rails steps out of the way for page caching and lets lighttpd serve the caches straight from the static cached files. So while the difference is 20:1, it&#8217;s not that interesting a comparison. Except for the point that this type of page caching is integrated in the Rails framework and used by default. So it requires no effort to get this type of performance.</p>
+<p>But even though Justin now has the numbers to back up his claim about his particular application, such numbers are not in generally all that interesting. I concur with Justin that the interesting conclusion is that Rails isn&#8217;t naturally dog slow because its in Ruby and a Java/Spring/Hibernate/<span class="caps">JSTL</span>-stack app not automatically blazing fast because its in Java:</p>
+<blockquote>To me, the eye-opening revelation isn&rsquo;t &ldquo;Rails is faster than Java/Spring/Hibernate&rdquo;. It&rsquo;s &ldquo;Rails can be very fast&rdquo;. I think that there is a lot to be said for Rails, and it deserves much of the press it is getting.</blockquote><p><b>Size of the application</b><br />
+Just as extract general lessons about performance from particular applications, so is it hard to compare the size and complexity of two solutions implementing the same application. So measurements such as <span class="caps">KLOC</span> are hardly the be all, end all. They&#8217;re merely indicators.</p>
+<p>But as such indicators go, Justin serves a rather nice one with the comparison on his application. The Rails application was done with 1,277 lines of code and configuration while the Java-stack application required 4,454 lines. About a factor of 3,5&#215;. And here comes the kicker, the Rails application includes <i>a month&rsquo;s worth of new features added</i> over the abandoned Java version.</p>
+<p>So what does all this mean? Justin concludes&#8230;</p>
+<blockquote>I think that the application I&rsquo;m working on is perfectly suited for Rails and Rails is perfectly suited for it. I think that I have had more fun working on the Rails app than the Java version. However, I think that the Java version is just as capable, and could be just as performant, as the Rails app. <br />
+<br />
+I think there are plenty of applications, and development teams, that are better suited to Java and its immense universe of available support libraries. I certainly am not going to stop developing in and learning about Java just because I&rsquo;ve discovered Rails. On the other hand, I am going to spend more of my time trying to find projects that I can use Rails on.</blockquote>
+<p>Justin&#160;Gehtland is the co-author of <a href="http://www.oreilly.com/catalog/springadn/">Spring: A Developer&#8217;s Notebook</a> due out this month (congratulations!).</p>

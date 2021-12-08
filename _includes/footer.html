@@ -1,0 +1,13 @@
+<footer class="footer common-background--grey common-padding--bottom common-padding--top common-shape--top-white-up-left">
+  <div class="footer__logo"><a href="{{ '/' | absolute_url }}"></a></div>
+
+  {% if page.id == 'home' %}
+    <div class="footer__options">
+      <ul>
+        {% for item in site.data.footer.items %}
+          <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</footer>

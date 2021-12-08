@@ -1,0 +1,35 @@
+---
+layout: post
+title: ! '[ANN] Rails 2.3.14'
+categories: []
+author: aaronp
+published: true
+date: 2011-08-16 23:35:00.000000000 +01:00
+---
+Hi everyone,
+
+Rails 2.3.14 has been released.  This release contains critical security fixes.
+
+## CHANGES 
+
+You can find an exhaustive list of changes on [github](https://github.com/rails/rails/compare/v2.3.12...v2.3.14).  Here are some notable excerpts: 
+
+## 4 Security Fixes
+
+  * [Response Splitting](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/6ffc93bde0298768)
+  * [SQL Injection issues](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/6a1e473744bc389b)
+  * [Parse error in `strip_tags`](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/2b9130749b74ea12)
+  * [UTF-8 escaping vulnerability](http://groups.google.com/group/rubyonrails-security/browse_thread/thread/56bffb5923ab1195)
+
+Please follow the links to see specific information about each vulnerability, along with individual patches for fixing them.
+
+Also remember to subscribe to the [Ruby on Rails Security mailing list](http://groups.google.com/group/rubyonrails-security).
+
+## 2 Bug Fixes
+
+  * Rescue from RDoc task errors
+  * OrderedHash can merge with blocks
+
+## THE END 
+
+Thanks! <3 

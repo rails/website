@@ -1,0 +1,49 @@
+<head>
+  <title>{% if page.title %}{{ site.title }} &mdash; {{ page.title }}{% else %}{{ site.title }} &mdash; {{ site.description }}{% endif %}</title>
+
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="description" content="{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
+
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
+  <meta property="og:image" content="{{ '/assets/images/opengraph.png' | absolute_url }}" />
+  <meta property="og:url" content="{{ page.url  | absolute_url }}" />
+  <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
+
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
+  <meta name="twitter:image" content="{{ '/assets/images/opengraph.png' | absolute_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@{{ site.twitter }}" />
+  <meta name="twitter:image:alt" content="{{ site.title }}" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.collection == 'posts' %}BlogPosting{% else %}WebPage{% endif %}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url  | absolute_url }}"
+      },
+      "name": "{{ site.title }}",
+      "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+      "description": "{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}",
+      "url": "{{ page.url  | absolute_url }}",
+      "image": "{{ '/assets/images/opengraph.png' | absolute_url }}"{% if page.collection == 'posts' %},
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author }}"
+      },
+      "datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}
+    }
+  </script>
+
+  <link rel="canonical" href="{{ page.url  | absolute_url }}" />
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | absolute_url }}" />
+  <link rel="apple-touch-icon" type="image/png" href="{{ '/assets/images/apple-touch-icon.png' | absolute_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}" />
+</head>

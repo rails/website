@@ -1,0 +1,70 @@
+---
+layout: post
+title: ! '[ANN] Rails 3.0.8.rc1'
+categories: []
+author: aaronp
+published: true
+date: 2011-05-26 00:19:00.000000000 +01:00
+---
+ZOMG HI EVERYBODY!!!!  HAPPY WEDNESDAY (UTC-7).
+
+I am EXCITED, PLEASED, and even MORE EXCITED to announce the release of the
+Rails 3.0.8 released candidate NUMBER ONE!
+
+## OMG RELEASE CANDIDATE.  WHAT DOES IT MEAN?
+
+This is a release candidate!  It means that we (the rails core team) are asking
+*you* (our lovely users) to test out the code that we'd like to release!
+
+This is your chance to VETO our release of Rails 3.0.8 final!
+
+## VETO??  WHY WOULD I DO THAT?
+
+Well you see, dear public, let me explain.  In order to bring you this latest
+and greatest released of rails, we've made bug fixes and changed codes.
+Unfortunately, that means that we may have inadvertently broken your
+application.  We don't want to break your application, we want to fix bugs!
+
+This is your chance to try our the release candidate and let us know if we've
+broken your application!
+
+## HOW DO I TEST YOUR WONDERFUL AND AMAZING RELEASE CANDIDATE?
+
+Very simple!  If you're using bundler, just update your Gemfile to point at
+rails version '3.0.8.rc1'.  Then do a `bundle update`, and you're off to the
+races!  Make sure your application behaves normally, all your tests pass, etc.
+
+## I think I've found a boog!  How do I veto???
+
+It's easy, breezy, beautiful, to veto!  Just reply to this on the [rails-core
+mailing list](http://groups.google.com/group/rubyonrails-core?pli=1), and let us
+know what went wrong!  We'll fix the problem and cut another release candidate.
+
+Make sure to check that your failure does not occur on Rails 3.0.7, but *does*
+occur on the release candidate.  If the failure is also on 3.0.7, we still want
+to know!  It just won't block our release.
+
+## TELLME THE CHANGES YOU'VE MADE!
+
+Ok, just calm down.  For now, go check out this [link on github](https://github.com/rails/rails/compare/v3.0.7...v3.0.8.rc1).
+
+Or go check out the CHANGELOG files in each project.  When we release the final,
+I'll add the changelog to the announce email.
+
+## WHEN WILL THE FINAL RELEASE BE???  TELL ME NOW!!!
+
+Typically we release the final version 72 hours after the release candidate.
+But this weekend is a holiday, so I don't feel like doing a release this
+weekend.  Instead, I will target the final to be released on May 31st.
+
+If we find show stopping bugs, we'll release another RC and the 72hour counter
+will reset!
+
+## WHY AREN'T YOU RELEASING ON THE WEEKEND?  COMMON, BRO.
+
+What?!?!  Why aren't *you* releasing on the weekend???  I'm going to be making
+sausage.  :-P
+
+Thanks everybody!!!!
+
+<3 <3 <3 <3 <3 <3

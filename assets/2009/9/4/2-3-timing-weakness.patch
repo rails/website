@@ -1,0 +1,53 @@
+From 89fd00cfbd6f054ad32b2c25deca54865c2010b6 Mon Sep 17 00:00:00 2001
+From: Coda Hale <coda.hale@gmail.com>
+Date: Thu, 13 Aug 2009 10:03:08 -0700
+Subject: [PATCH] Fix timing attack vulnerability in ActiveSupport::MessageVerifier.
+
+Use a constant-time comparison algorithm to compare the candidate HMAC with the calculated HMAC to prevent leaking information about the calculated HMAC.
+
+Signed-off-by: Michael Koziarski <michael@koziarski.com>
+---
+ .../lib/active_support/message_verifier.rb         |   19 ++++++++++++++++---
+ 1 files changed, 16 insertions(+), 3 deletions(-)
+
+diff --git a/activesupport/lib/active_support/message_verifier.rb b/activesupport/lib/active_support/message_verifier.rb
+index b24acb9..aae5a34 100644
+--- a/activesupport/lib/active_support/message_verifier.rb
++++ b/activesupport/lib/active_support/message_verifier.rb
+@@ -25,10 +25,10 @@ module ActiveSupport
+     
+     def verify(signed_message)
+       data, digest = signed_message.split("--")
+-      if digest != generate_digest(data)
+-        raise InvalidSignature
+-      else
++      if secure_compare(digest, generate_digest(data))
+         Marshal.load(ActiveSupport::Base64.decode64(data))
++      else
++        raise InvalidSignature
+       end
+     end
+     
+@@ -38,6 +38,19 @@ module ActiveSupport
+     end
+     
+     private
++      # constant-time comparison algorithm to prevent timing attacks
++      def secure_compare(a, b)
++        if a.length == b.length
++          result = 0
++          for i in 0..(a.length - 1)
++            result |= a[i] ^ b[i]
++          end
++          result == 0
++        else
++          false
++        end
++      end
++
+       def generate_digest(data)
+         require 'openssl' unless defined?(OpenSSL)
+         OpenSSL::HMAC.hexdigest(OpenSSL::Digest::Digest.new(@digest), @secret, data)
+-- 
+1.6.0.1
+

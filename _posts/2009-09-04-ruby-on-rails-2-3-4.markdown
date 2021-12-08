@@ -1,0 +1,22 @@
+---
+layout: post
+title: ! 'Ruby on Rails 2.3.4: Security Fixes'
+categories: []
+author: michael
+published: true
+date: 2009-09-04 06:04:00.000000000 +01:00
+---
+<p>We&#8217;ve released Ruby on Rails 2.3.4, this release fixes bugs and introduces a few minor features.  Due to the inclusion of two security fixes, all users of the 2.3 series are recommended to upgrade as soon as possible.</p>
+<h4>Security Fixes</h4>
+<p>2.3.4 contains fixes for two security issues which were reported to us.   For more details see the security announcements:</p>
+<ul>
+	<li><a href="http://weblog.rubyonrails.org/2009/9/4/xss-vulnerability-in-ruby-on-rails"><span class="caps">CVE</span>-2009-3009 &#8211; <span class="caps">XSS</span> vulnerability</a></li>
+	<li><a href="http://weblog.rubyonrails.org/2009/9/4/timing-weakness-in-ruby-on-rails">Timing Weakness in MessageVerifier and the Cookie Store</a></li>
+</ul>
+<h4>Bug Fixes</h4>
+<p>Thanks to the success of the <a href="http://weblog.rubyonrails.org/2009/7/28/rails-bugmash">BugMash</a> we have around 100  bug fixes as part of this release.  Of particular not is the fix to reloading problems related to rack middleware and rails metals when running in development mode.</p>
+<h4>New Features</h4>
+<ul>
+	<li>Support for bundling I18n translations in plugins, Rails will now automatically add locale files found in any engine&#8217;s locale directory to the I18n.load_path.  <a href="http://github.com/rails/rails/commit/49342d1745dd0e6c4ebebe9e535e374783ac2c10">commit</a></li>
+	<li>Added db/seeds.rb as a default file for storing seed data for the database. Can be loaded with rake db:seed <a href="http://github.com/rails/rails/commit/f3c7bbeedd81d2f379c5e6a9e8739d3b3784ca5f">commit</a></li>
+</ul>

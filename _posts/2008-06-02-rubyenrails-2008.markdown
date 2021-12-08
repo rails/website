@@ -1,0 +1,10 @@
+---
+layout: post
+title: RubyEnRails 2008
+categories:
+- sightings
+author: David
+published: true
+date: 2008-06-02 18:09:00.000000000 +01:00
+---
+<p><a href="http://2008.rubyenrails.nl/">RubyEnRails 2008</a> is a Dutch Rails conference happening on June 10th. They still have a few tickets left, so if you&#8217;re able to go, there&#8217;s still the option. Lots of good speakers there including Charlie from JRuby, Obie, and the Phusion Passenger guys. I&#8217;ll be doing a iChat Q&amp;A session as well.</p>

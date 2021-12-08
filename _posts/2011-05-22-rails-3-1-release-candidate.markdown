@@ -1,0 +1,30 @@
+---
+layout: post
+title: ! 'Rails 3.1: Release candidate'
+categories:
+- releases
+author: David
+published: true
+date: 2011-05-22 02:40:00.000000000 +01:00
+---
+<p>As I promised at RailsConf, we&#8217;re finally good to go on the Rails 3.1: Release Candidate. This is a fantastically exciting release. We have three new star features and an even greater number of just awesome improvements. First the stars:</p>
+<p><b>The Asset Pipeline</b><br/>
+The star feature of 3.1 is the asset pipeline powered by <a href="https://github.com/sstephenson/sprockets/">Sprockets 2.0</a>. It makes <span class="caps">CSS</span> and JavaScript first-class code citizens and enables proper organization, including use in plugins and engines. See <a href="http://www.youtube.com/watch?v=cGdCI2HhfAU">my RailsConf keynote</a> for a full tour. This comes with <a href="http://sass-lang.com/"><span class="caps">SCSS</span></a> as the default for stylesheets and <a href="http://coffeescript.org/">CoffeeScript</a> as the default for JavaScript. Much documentation is on the way for this.</p>
+<p><b><span class="caps">HTTP</span> Streaming</b><br/>
+This lets the browser download your stylesheet and javascripts while the server is still generating the response. The result is noticeable faster pages. It&#8217;s opt-in and does require support from the web server as well, but the popular combo of nginx and unicorn is ready to take advantage of it. There&#8217;s a great <a href="http://railscasts.com/episodes/266-http-streaming">Railscast on <span class="caps">HTTP</span> streaming</a> and <a href="https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/streaming.rb">the <span class="caps">API</span> documentation</a> is strong too.</p>
+<p><b>jQuery is now the default</b><br/>
+We&#8217;ve made <a href="http://jquery.com/">jQuery</a> the default JavaScript framework that ships with Rails, but it&#8217;s silly easy to switch back to Prototype if you fancy. It&#8217;s all bundled up in the jquery-rails and prototype-rails gems. Just depend on the one you&#8217;d like in the Gemfile and it&#8217;ll Just Work.</p>
+<p>Other good stuff:</p>
+<ul><li><a href="http://edgerails.info/articles/what-s-new-in-edge-rails/2011/05/06/reversible-migrations/index.html">Reversible migrations</a>: <span class="caps">DRY</span> migrations that know how to revert themselves. Cleaner, nicer migrations.</li>
+<li><a href="https://github.com/rails/rails/blob/master/railties/lib/rails/engine.rb">Mountable engines</a>: Engines can now have their own routing and helper scope. They can also take advantage of the asset pipeline (more documentation on this soon). Read <a href="http://piotrsarnacki.com/2010/09/14/mountable-engines/">the story behind mountable engines</a> (even if the asset stuff is now out of date).</li>
+<li><a href="http://edgerails.info/articles/what-s-new-in-edge-rails/2011/04/21/activerecord-identity-map/index.html">Identity Map</a>: It&#8217;s not enabled by default because of some <a href="https://github.com/rails/rails/blob/master/activerecord/lib/active_record/identity_map.rb">important caveats</a> that are still to be ironed out, but if you can deal with those, it&#8217;s a great way to cut down on the number of queries your app will trigger. Faster is better!</li>
+<li><a href="http://www.youtube.com/watch?v=kWOAHIpmLAI&t=9m28s">Prepared statements</a>: Active Record now uses cached prepared statements, which is a big boost for PostgreSQL in all cases and a boost for MySQL on complex statements.</li>
+<li><a href="http://rtomayko.github.com/rack-cache/">Rack::Cache on by default</a>: This makes it possible to use <span class="caps">HTTP</span> caching with <a href="https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/conditional_get.rb">conditional get</a> as a replacement for page caching (which we&#8217;ll soon factor into a plugin and remove from core).</li>
+<li><a href="https://github.com/TwP/turn">Turn test-output on Ruby 1.9</a>: Much nicer test output courtesy of the Turn gem. It&#8217;s on with new applications by default on Ruby 1.9.</li>
+<li><a href="https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/force_ssl.rb">Force <span class="caps">SSL</span></a>: It&#8217;s now easier than ever to keep your app safe with force_ssl. Either per-app or per-controller.</li>
+<li><a href="https://github.com/rails/rails/blob/master/activerecord/test/cases/mass_assignment_security_test.rb">Role-based mass-assignment protection</a>: attr_protected now accepts roles, so it&#8217;s easier do deal with admin/non-admin splits and more.</li>
+<li><a href="https://github.com/rails/rails/blob/master/activemodel/lib/active_model/secure_password.rb">has_secure_password</a>: Dead-simple BCrypt-based passwords. Now there&#8217;s no excuse not to roll your own authentication scheme.</li>
+<li><a href="http://edgerails.info/articles/what-s-new-in-edge-rails/2011/03/09/custom-activerecord-attribute-serialization/index.html">Custom serializers</a>: Serialize objects with <span class="caps">JSON</span> or whatever else you&#8217;d like.</li></ul>
+<p>You can also check out the <a href="https://gist.github.com/958283">an even longer changelog</a> and get <a href="http://railscasts.com/episodes/265-rails-3-1-overview">a video overview from Railscast</a>.</p>
+<p>If you&#8217;re starting a new application, it&#8217;s strongly recommended that you do so using Ruby 1.9.2. Rails will continue to support 1.8.x until Rails 4.0, but it&#8217;s considered the legacy option. Ruby 1.9.x is where the action is. Get on board and enjoy the massive speed boost.</p>
+<p>You can install the Rails 3.1: Release Candidate with <code>gem install rails --pre</code>. Enjoy and <a href="https://github.com/rails/rails/issues?milestone=&sort=created&direction=desc&labels=&state=open">report any release candidate issues on Github</a>. We expect to release the final version in a couple of weeks if all goes well.</p>
