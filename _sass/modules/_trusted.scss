@@ -1,5 +1,7 @@
 .trusted {
 
+  font-size: 0;
+  line-height: 0;
   position: relative;
 
   .container {
@@ -7,19 +9,19 @@
   }
 
   &__blocks {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: -5px 30px;
     position: relative;
+    text-align: center;
     width: calc(100% - 60px);
     z-index: 1;
   }
 
   &__block {
 
+    display: inline-block;
+    margin: 5px;
     position: relative;
+    width: calc(50% - 10px);
 
     a {
 
@@ -51,8 +53,8 @@
 
   @media(min-width: 667px) {
 
-    &__blocks {
-      grid-template-columns: repeat(3, 1fr);
+    &__block {
+      width: calc(33.33% - 10px);
     }
 
   }
@@ -62,11 +64,13 @@
   @media(min-width: 1024px) {
 
     &__blocks {
-      gap: 20px;
-      grid-template-columns: repeat(4, 1fr);
-      margin-left: 60px;
-      margin-right: 60px;
+      margin: -10px 60px;
       width: calc(100% - 120px);
+    }
+
+    &__block {
+      margin: 10px;
+      width: calc(25% - 20px);
     }
 
   }
