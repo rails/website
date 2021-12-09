@@ -10,7 +10,7 @@
 
   &__container {
     display: grid;
-    gap: 40px 0;
+    gap: 30px 0;
     margin: 3px 30px;
     z-index: 1;
   }
@@ -82,9 +82,13 @@
     }
 
     &__body {
+      align-items: center;
       background: $color-white;
       border-radius: 8px;
       box-shadow: 0 3px 15px 2px rgba($color-black, 0.05), 0 1px 1px rgba($color-black, 0.02), 0 0 0 3px rgba($color-black, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       transition: background $transition, box-shadow $transition, transform $transition;
     }
 
@@ -98,7 +102,6 @@
     &__headline {
 
       padding-bottom: 6px;
-      padding-top: 32px;
 
       h3 {
         clear: both;
@@ -117,7 +120,7 @@
 
     &__content {
 
-      padding-bottom: 35px;
+      padding-bottom: 3px;
 
       p {
         clear: both;
@@ -139,13 +142,13 @@
 
     &__container {
       grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
+      gap: 30px;
     }
 
     .card {
 
-      height: 40vw;
-      max-height: 173px;
+      height: 30vw;
+      max-height: 150px;
 
       a,
       &__body {
@@ -162,30 +165,9 @@
   @media(min-width: 1024px) {
 
     &__container {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-  }
-
-
-
-  @media(min-width: 1280px) {
-
-    &__container {
       grid-template-columns: repeat(3, 1fr);
       margin-left: 60px;
       margin-right: 60px;
-    }
-
-    .card {
-
-      &__headline,
-      &__content {
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-
     }
 
   }
