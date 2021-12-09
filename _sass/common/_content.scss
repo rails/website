@@ -187,6 +187,11 @@
     color: $color-red;
     font-weight: 600;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    b, strong {
+      color: inherit;
+    }
 
     &:hover {
       color: $color-black;
@@ -252,6 +257,31 @@
     ol {
       font-size: 23px;
       line-height: 27px;
+    }
+
+  }
+
+  &--post {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+
+      color: $color-black;
+
+      a {
+
+        color: $color-black;
+
+        &:hover {
+          color: $color-red;
+        }
+
+      }
+
     }
 
   }
