@@ -1,0 +1,29 @@
+---
+title: News
+description:
+category: news
+---
+
+<div class="heading common-padding--bottom-small common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blog common-padding--bottom">
+  <div class="container">
+    <div class="blog__posts">
+
+{% for post in site.categories[page.category] %}
+
+    {% include post.html %}
+
+{% endfor %}
+
+    </div>
+  </div>
+</div>

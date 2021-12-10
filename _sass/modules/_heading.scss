@@ -60,6 +60,38 @@
     margin-top: 30px;
   }
 
+  &__buttons {
+
+    font-size: 0;
+    line-height: 0;
+
+    ul li a {
+
+      display: inline-block;
+      text-decoration: none;
+
+      span {
+        background: none;
+        border-radius: 6px;
+        color: $color-black;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.006em;
+        line-height: 32px;
+        padding: 0 12px;
+        transition: background $transition, color $transition;
+      }
+
+      &:hover span {
+        background: $color-grey-1;
+        color: $color-red;
+      }
+
+    }
+
+  }
+
 
 
   &--align-left {
@@ -102,6 +134,20 @@
 
 
 
+  @media(min-width: 375px) {
+
+    &__buttons {
+
+      ul li {
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+
+
   @media(min-width: 1024px) {
 
     &__body {
@@ -128,6 +174,16 @@
 
     &__button {
       margin-top: 40px;
+    }
+
+    &__buttons {
+
+      ul li a span {
+        font-size: 23px;
+        line-height: 42px;
+        padding: 0 20px 2px 20px;
+      }
+
     }
 
     &--frame-grey,

@@ -3,7 +3,23 @@ title: Blog
 description:
 ---
 
-<div class="blog common-padding--bottom common-padding--top-small">
+<div class="heading common-padding--bottom-small common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <div class="heading__buttons">
+          <ul>
+            <li><a href="{{ '/blog' | absolute_url }}"><span>Everything</span></a></li>
+            <li><a href="{{ '/category/releases' | absolute_url }}"><span>Releases</span></a></li>
+            <li><a href="{{ '/category/news' | absolute_url }}"><span>News</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blog common-padding--bottom">
   <div class="container">
     <div class="blog__posts">
       {% for post in paginator.posts %}
