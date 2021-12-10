@@ -1,0 +1,1185 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:04.640
+Welcome to Ruby on Rails. We're going to build&nbsp;
+a demo blog to demonstrate how to get started&nbsp;&nbsp;
+
+00:00:04.640 --> 00:00:10.880
+with the framework, build something real, and then&nbsp;
+deploy to production. Let's go. We're going to start with&nbsp;&nbsp;
+
+00:00:10.880 --> 00:00:18.400
+the creation of the Rails skeleton. This includes&nbsp;
+all the default directories and some stock files&nbsp;&nbsp;
+
+00:00:18.400 --> 00:00:23.840
+for you to fill in with all your content and it&nbsp;
+also sets up all the dependencies that the Rails&nbsp;&nbsp;
+
+00:00:23.840 --> 00:00:29.840
+framework uses by default now that we have this&nbsp;
+skeleton we can start by generating the first&nbsp;&nbsp;
+
+00:00:29.840 --> 00:00:38.000
+model for our blog a post model that's going&nbsp;
+to have a string as a title and a text field&nbsp;&nbsp;
+
+00:00:38.000 --> 00:00:46.320
+as content we're using this generator to create&nbsp;
+the files needed for the controller for the post&nbsp;&nbsp;
+
+00:00:46.320 --> 00:00:50.400
+model for the views for everything&nbsp;
+let's have a look at what's been created&nbsp;&nbsp;
+
+00:00:52.240 --> 00:00:56.960
+the first thing we're going to have a look at&nbsp;
+is the migration the migration is what sets&nbsp;&nbsp;
+
+00:00:56.960 --> 00:01:03.920
+up the database table and as you can see here we&nbsp;
+designated that we want a string title and a text&nbsp;&nbsp;
+
+00:01:03.920 --> 00:01:11.200
+content and then by default rails also adds a set&nbsp;
+of timestamps for created at and updated ad this&nbsp;&nbsp;
+
+00:01:11.200 --> 00:01:17.680
+is then connected to the post model that will&nbsp;
+instantiate and encapsulate these database rows&nbsp;&nbsp;
+
+00:01:18.480 --> 00:01:25.760
+which again is invoked by the posts controller&nbsp;
+it has all the actions needed to encapsulate a&nbsp;&nbsp;
+
+00:01:25.760 --> 00:01:33.520
+rest style approach to developing web applications&nbsp;
+you have the seven default actions and a handful&nbsp;&nbsp;
+
+00:01:33.520 --> 00:01:40.560
+of these actions then have templates like index&nbsp;
+show new and edit i could show you one of those&nbsp;&nbsp;
+
+00:01:42.160 --> 00:01:47.120
+and that is basically all we need&nbsp;
+to get started with the most basic&nbsp;&nbsp;
+
+00:01:47.120 --> 00:01:57.680
+uh outline of a web application so we will run&nbsp;
+the migration as the first thing to set up the&nbsp;&nbsp;
+
+00:01:57.680 --> 00:02:06.160
+database and set up the post table and then we can&nbsp;
+have a look at that schema that's been generated&nbsp;&nbsp;
+
+00:02:06.160 --> 00:02:11.840
+for us as you can see now it just has the post&nbsp;
+table in there let's have a look at how that looks&nbsp;&nbsp;
+
+00:02:12.480 --> 00:02:19.760
+in the browser so we start the rails server and&nbsp;
+then we jump over to the browser and as you can&nbsp;&nbsp;
+
+00:02:19.760 --> 00:02:25.040
+see here it just gives us a nice boot screen&nbsp;
+that shows the version of rails that we're using&nbsp;&nbsp;
+
+00:02:25.040 --> 00:02:30.800
+and the version of ruby but our new app that we&nbsp;
+created with the scaffold lives under slash posts&nbsp;&nbsp;
+
+00:02:32.720 --> 00:02:41.600
+it is the basic crud app hello world we create a&nbsp;
+new post first post and when we post that it'll&nbsp;&nbsp;
+
+00:02:41.600 --> 00:02:48.880
+go to the create action which will redirect to&nbsp;
+the show action and then we can go back to the&nbsp;&nbsp;
+
+00:02:48.880 --> 00:02:54.560
+index action i've done this demo a bunch of&nbsp;
+times before and it's always looked like this&nbsp;&nbsp;
+
+00:02:54.560 --> 00:03:02.160
+it's not very nice so for this demo i'm going&nbsp;
+to pop in the simple css framework straight off&nbsp;&nbsp;
+
+00:03:02.160 --> 00:03:07.680
+the cdn so system we can have something slightly&nbsp;
+nicer to look at and i'll do that by going to the&nbsp;&nbsp;
+
+00:03:08.320 --> 00:03:17.040
+default layout that all the views are rendered&nbsp;
+within and i'm just going to pop in the symbol css&nbsp;&nbsp;
+
+00:03:17.680 --> 00:03:24.160
+styles and then let's have a look if that&nbsp;
+doesn't look a little better it sure does okay&nbsp;&nbsp;
+
+00:03:24.160 --> 00:03:32.240
+so now we have the crot actions not just&nbsp;
+for html but actually also for a json api&nbsp;&nbsp;
+
+00:03:32.240 --> 00:03:37.440
+if i do json behind the post here you'll see the&nbsp;
+entire collection currently consisting just of one&nbsp;&nbsp;
+
+00:03:37.440 --> 00:03:44.560
+element returned as json that you could hook up&nbsp;
+to a single page application exposes a public api&nbsp;&nbsp;
+
+00:03:44.560 --> 00:03:49.760
+whatever you want if we jump back and take a&nbsp;
+quick look here at the controller you can see that&nbsp;&nbsp;
+
+00:03:49.760 --> 00:03:56.480
+this is all mapped up and for these actions that&nbsp;
+create an update we have different paths whether&nbsp;&nbsp;
+
+00:03:56.480 --> 00:04:03.760
+you are submitting from html or whether you're&nbsp;
+submitting from json okay let's actually start&nbsp;&nbsp;
+
+00:04:05.040 --> 00:04:08.720
+developing our domain model so the&nbsp;
+first thing we could do is we could add&nbsp;&nbsp;
+
+00:04:08.720 --> 00:04:17.680
+validations to the post we could say validates&nbsp;
+presence of title and now if we go to&nbsp;&nbsp;
+
+00:04:18.800 --> 00:04:26.000
+attempt to make a new post that has no title&nbsp;
+we will get an error that simply says this&nbsp;&nbsp;
+
+00:04:26.000 --> 00:04:32.160
+can't be saved because the title can't&nbsp;
+be blank that error is generated by the
+
+00:04:35.200 --> 00:04:42.800
+the form html that we have the template&nbsp;
+here we have under app views posts form&nbsp;&nbsp;
+
+00:04:42.800 --> 00:04:47.760
+and see if there are any errors it'll show all&nbsp;
+these errors first and you can trace that all&nbsp;&nbsp;
+
+00:04:47.760 --> 00:04:53.040
+the way through from the create as we go through&nbsp;
+the create action we tried first to save if that&nbsp;&nbsp;
+
+00:04:53.040 --> 00:04:58.240
+is successful then find the post that's created&nbsp;
+and redirect if it's not successful we will&nbsp;&nbsp;
+
+00:04:58.240 --> 00:05:04.800
+render the new action again as an unpossible&nbsp;
+entity with those error messages in there&nbsp;&nbsp;
+
+00:05:06.560 --> 00:05:11.840
+that is a user error if you will we can also&nbsp;
+make a programmer error here and see what that&nbsp;&nbsp;
+
+00:05:11.840 --> 00:05:17.040
+looks like if we reference the wrong variable&nbsp;
+and then try to load it we can see we get this&nbsp;&nbsp;
+
+00:05:18.400 --> 00:05:23.680
+error screen in development that shows the&nbsp;
+exception being raised and the back trace where&nbsp;&nbsp;
+
+00:05:23.680 --> 00:05:30.880
+it's coming from and then we actually also have&nbsp;
+a console built right into the error screen that&nbsp;&nbsp;
+
+00:05:30.880 --> 00:05:38.000
+lets you manipulate and look at all the variables&nbsp;
+that have been assigned in there now that console&nbsp;&nbsp;
+
+00:05:38.000 --> 00:05:45.840
+is also accessible um from the command line we&nbsp;
+can jump in and start a brand new console here&nbsp;&nbsp;
+
+00:05:45.840 --> 00:05:52.000
+and interact with the main model that we've been&nbsp;
+building up if we go to first post first it'll&nbsp;&nbsp;
+
+00:05:52.000 --> 00:05:55.600
+fetch the first post that we created this was the&nbsp;
+one we created through the web interface but we&nbsp;&nbsp;
+
+00:05:55.600 --> 00:06:06.080
+can create a another one through this console as&nbsp;
+well if we do title from the console content nice&nbsp;&nbsp;
+
+00:06:07.840 --> 00:06:13.120
+we'll see you start a transaction insert into&nbsp;
+the posts table and there we have it another&nbsp;&nbsp;
+
+00:06:13.120 --> 00:06:19.120
+post object we can also create these objects for&nbsp;
+example just post all will get us everything if&nbsp;&nbsp;
+
+00:06:19.120 --> 00:06:27.600
+we want to find just some of it we can for example&nbsp;
+query on created ad we could do time now all day&nbsp;&nbsp;
+
+00:06:27.600 --> 00:06:32.240
+that'll create a range for the entire day we'll&nbsp;
+see we find still the same two posts you can see&nbsp;&nbsp;
+
+00:06:32.240 --> 00:06:37.840
+what that sql statement actually looks like in&nbsp;
+total we can try one where we don't find anything&nbsp;&nbsp;
+
+00:06:37.840 --> 00:06:44.480
+time now yesterday didn't have anything posted&nbsp;
+then that's the sequel for it and this is the&nbsp;&nbsp;
+
+00:06:44.480 --> 00:06:52.080
+empty array that's returning back okay great&nbsp;
+but having a blog that simply just accepts&nbsp;&nbsp;
+
+00:06:52.080 --> 00:06:58.480
+content as plain text is a little boring so you&nbsp;
+use another set of rails features um this is&nbsp;&nbsp;
+
+00:06:58.480 --> 00:07:04.800
+action text we're going to add to get what you&nbsp;
+see is what you get editing for our new blog&nbsp;&nbsp;
+
+00:07:04.800 --> 00:07:13.200
+we'll start here by adding the action text&nbsp;
+elements rails action text install we'll add&nbsp;&nbsp;
+
+00:07:13.920 --> 00:07:20.160
+a little bit of javascript that we need it'll&nbsp;
+add some css for the new editor and it'll add&nbsp;&nbsp;
+
+00:07:20.160 --> 00:07:26.640
+a set of migrations for us to upload and store&nbsp;
+files using active storage in this example we're&nbsp;&nbsp;
+
+00:07:26.640 --> 00:07:33.120
+just storing locally when you deploy to production&nbsp;
+you can store on s3 or other cloud storage setups&nbsp;&nbsp;
+
+00:07:33.120 --> 00:07:38.720
+it also adds an image image processing gems&nbsp;
+so we can make variants of the files that we&nbsp;&nbsp;
+
+00:07:38.720 --> 00:07:45.440
+upload so that we can get smaller versions of the&nbsp;
+images or otherwise so we'll bundle to get that&nbsp;&nbsp;
+
+00:07:46.560 --> 00:07:51.360
+image processing gem on there and then&nbsp;
+we'll run railsdb migrate to pick up the&nbsp;&nbsp;
+
+00:07:51.360 --> 00:07:58.880
+couple of migrations we have now we have to set&nbsp;
+up the model to say that we're going to use this
+
+00:08:01.040 --> 00:08:08.240
+rich text setup and do has rich text content&nbsp;
+and then if we jump to the form for that&nbsp;&nbsp;
+
+00:08:08.240 --> 00:08:11.840
+instead of having a text area we&nbsp;
+can add it as a rich text area&nbsp;&nbsp;
+
+00:08:13.200 --> 00:08:18.560
+now we just have to restart the server because&nbsp;
+we added a new gem and then we can jump over and&nbsp;&nbsp;
+
+00:08:18.560 --> 00:08:27.600
+see what our new posts look like oh we left the&nbsp;
+error in there gotta pick that out again let's&nbsp;&nbsp;
+
+00:08:27.600 --> 00:08:35.600
+do that and then reload great now you see that&nbsp;
+the content is not just the plain text field&nbsp;&nbsp;
+
+00:08:36.480 --> 00:08:45.440
+this is rich we can use rich text we can do&nbsp;
+the various forms of markups we have in here&nbsp;&nbsp;
+
+00:08:45.440 --> 00:08:52.320
+and we can even do file uploads so file&nbsp;
+uploads can simply be dragged and dropped into&nbsp;&nbsp;
+
+00:08:53.360 --> 00:08:59.040
+our editor here it'll upload it in&nbsp;
+the background via active storage&nbsp;&nbsp;
+
+00:08:59.600 --> 00:09:06.640
+to either local as we're doing here in development&nbsp;
+or with direct upload to cloud storage but we're&nbsp;&nbsp;
+
+00:09:06.640 --> 00:09:14.560
+just going to do it here rails logo and then&nbsp;
+we create the post great so now we have a post&nbsp;&nbsp;
+
+00:09:15.440 --> 00:09:18.400
+it has an image attached and if we&nbsp;
+go back to all the posts we can see&nbsp;&nbsp;
+
+00:09:19.200 --> 00:09:26.080
+both of the posts that we've put in there let me&nbsp;
+show you how the javascript for that is set up&nbsp;&nbsp;
+
+00:09:27.120 --> 00:09:34.320
+rails by default uses something called import&nbsp;
+maps which allows us to use advanced javascript&nbsp;&nbsp;
+
+00:09:35.200 --> 00:09:40.000
+without having node installed on&nbsp;
+our system we're simply using the&nbsp;&nbsp;
+
+00:09:40.000 --> 00:09:46.080
+javascript as text and serving through the&nbsp;
+browser and using esm to to deliver that&nbsp;&nbsp;
+
+00:09:48.000 --> 00:09:55.120
+this is set up in terms of what we can use in&nbsp;
+our map or in our app as this import map um&nbsp;&nbsp;
+
+00:09:55.120 --> 00:10:00.880
+the default is this stuff up here rails ships with&nbsp;
+hot wire by default turned on that means the turbo&nbsp;&nbsp;
+
+00:10:00.880 --> 00:10:06.560
+framework and the stimulus framework is already&nbsp;
+set up and ready to use and then when we ran the&nbsp;&nbsp;
+
+00:10:06.560 --> 00:10:14.560
+action text installed generator it also added the&nbsp;
+tricks and action text pins and as you can see&nbsp;&nbsp;
+
+00:10:14.560 --> 00:10:21.440
+here the application.js then imports tricks and&nbsp;
+action text and that is what makes those available&nbsp;&nbsp;
+
+00:10:22.240 --> 00:10:28.800
+to our application so that we can use it but what&nbsp;
+if we wanted to add some other javascript from npm&nbsp;&nbsp;
+
+00:10:30.080 --> 00:10:38.480
+let's have a look at that we will add a piece&nbsp;
+of javascript for localizing the timestamps&nbsp;&nbsp;
+
+00:10:38.480 --> 00:10:46.240
+that these posts were created on our blog both&nbsp;
+localizing and using time ago setups so we will&nbsp;&nbsp;
+
+00:10:46.240 --> 00:10:56.160
+use the bin stop import map and we will pin local&nbsp;
+time it will fetch that off npm figure out which&nbsp;&nbsp;
+
+00:10:57.760 --> 00:11:04.400
+url it should use based off the default cdn that&nbsp;
+we're using for this javascript that is jspm&nbsp;&nbsp;
+
+00:11:05.280 --> 00:11:10.400
+i'll show you later how you can also download&nbsp;
+that but we're just going to depend on the cdn&nbsp;&nbsp;
+
+00:11:10.400 --> 00:11:15.760
+at this time so now we've added&nbsp;
+local time to our import map&nbsp;&nbsp;
+
+00:11:15.760 --> 00:11:21.600
+let's see it right here now we can also&nbsp;
+import it and start using it as part of our&nbsp;&nbsp;
+
+00:11:23.200 --> 00:11:28.000
+application.js we'll import local time from&nbsp;
+local time and then we'll start that local&nbsp;&nbsp;
+
+00:11:28.000 --> 00:11:41.840
+time now we can use this have a look at the post&nbsp;
+here we will pop in a new bit where we can have a&nbsp;&nbsp;
+
+00:11:43.120 --> 00:11:48.480
+posted and then have a time tag and&nbsp;
+this time tag will generate an html&nbsp;&nbsp;
+
+00:11:48.480 --> 00:11:54.640
+time tag which the local time javascript&nbsp;
+will identify look at the data local&nbsp;&nbsp;
+
+00:11:55.280 --> 00:12:04.960
+attribute it says time it goes it'll convert that&nbsp;
+utc time into time ago and that's all done in the&nbsp;&nbsp;
+
+00:12:05.760 --> 00:12:10.640
+in the browser which means it's cache&nbsp;
+safe which is a lovely way to present time&nbsp;&nbsp;
+
+00:12:10.640 --> 00:12:17.120
+so let's have a look at that jump here to the&nbsp;
+browser post it ten minutes ago posted six&nbsp;&nbsp;
+
+00:12:17.120 --> 00:12:26.400
+minutes ago three minutes ago so this is all using&nbsp;
+npm directly it does not require node of any kind&nbsp;&nbsp;
+
+00:12:26.960 --> 00:12:35.360
+does not require npm installed on your local&nbsp;
+machine this is all running off a api using jsp m&nbsp;&nbsp;
+
+00:12:36.000 --> 00:12:44.160
+the cdn but you could also just add these pins to&nbsp;
+your application yourself wherever you want them&nbsp;&nbsp;
+
+00:12:45.840 --> 00:12:52.880
+they can be off your own cdn setup or it can be&nbsp;
+off any of the other cdns that are out there like&nbsp;&nbsp;
+
+00:12:52.880 --> 00:12:59.920
+js deliver but we could also download this local&nbsp;
+time instead of having it as a cdn dependency&nbsp;&nbsp;
+
+00:12:59.920 --> 00:13:05.600
+let's do that um we'll download it instead and&nbsp;
+as you can see here it's going to download it&nbsp;&nbsp;
+
+00:13:05.600 --> 00:13:13.120
+to vendor javascript local time js and when we&nbsp;
+jump back into see there we can see that that pin&nbsp;&nbsp;
+
+00:13:13.120 --> 00:13:16.320
+is automatically mapped there we just&nbsp;
+get a little comment of which version&nbsp;&nbsp;
+
+00:13:16.320 --> 00:13:21.280
+that we're using and if we jump over&nbsp;
+to the browser it works just the same
+
+00:13:23.760 --> 00:13:33.840
+great so now our little blog has posts&nbsp;
+with localized times has a way to use&nbsp;&nbsp;
+
+00:13:35.120 --> 00:13:40.640
+a trix editor to use what you see is what you&nbsp;
+get but we would also like to add some comments&nbsp;&nbsp;
+
+00:13:40.640 --> 00:13:46.240
+to this because that'll allow us to show the&nbsp;
+relationship within a domain model between&nbsp;&nbsp;
+
+00:13:46.240 --> 00:13:54.320
+multiple models at once so we'll go back to the&nbsp;
+terminal here and use our generator again instead&nbsp;&nbsp;
+
+00:13:54.320 --> 00:14:00.400
+of rails generate we can also just do rails g and&nbsp;
+instead of a scaffold we'll do a resource which&nbsp;&nbsp;
+
+00:14:00.400 --> 00:14:06.000
+adds just a thinner wrapper around the model&nbsp;
+that we're adding here we're going to add a&nbsp;&nbsp;
+
+00:14:06.000 --> 00:14:12.640
+comment and that comet is simply going&nbsp;
+to have a post references which creates&nbsp;&nbsp;
+
+00:14:13.280 --> 00:14:19.440
+a foreign key setup and a dependency in the model&nbsp;
+that this belongs to the post and it's also going&nbsp;&nbsp;
+
+00:14:19.440 --> 00:14:24.960
+to have a content that's also just going to&nbsp;
+be text as you can see it creates another
+
+00:14:27.120 --> 00:14:33.280
+migration and you can have a look at that quite&nbsp;
+similar you see it sets up the reference it will&nbsp;&nbsp;
+
+00:14:33.280 --> 00:14:38.320
+create a foreign key for that reference it becomes&nbsp;
+the post underscore id and then it has a text&nbsp;&nbsp;
+
+00:14:38.320 --> 00:14:47.840
+column for the content for us to use so let's&nbsp;
+run that migration and have a look at the main&nbsp;&nbsp;
+
+00:14:47.840 --> 00:14:54.480
+model that we've just created rails console will&nbsp;
+find the first post and that post has comments
+
+00:14:56.960 --> 00:15:04.320
+oh it doesn't have comments yet because we have&nbsp;
+not yet connected um as you can see here the&nbsp;&nbsp;
+
+00:15:04.880 --> 00:15:10.000
+comment model belongs to the post but we also&nbsp;
+need to tell the post that the post has many&nbsp;&nbsp;
+
+00:15:11.200 --> 00:15:18.000
+comments now if we pop back into the console&nbsp;
+here we can actually just reload in line and&nbsp;&nbsp;
+
+00:15:19.840 --> 00:15:25.840
+voila updates to the main model live there are no&nbsp;
+comments right now so let's create the first one&nbsp;&nbsp;
+
+00:15:27.280 --> 00:15:34.480
+it's going to have content of first comment&nbsp;
+there we go now we have a post in the system&nbsp;&nbsp;
+
+00:15:34.480 --> 00:15:41.600
+that has comments but we don't have any way&nbsp;
+of seeing that in our web ui so let's add that&nbsp;&nbsp;
+
+00:15:41.600 --> 00:15:52.000
+to the web ui jumping back in here and then going&nbsp;
+to um the post we're just going to have it on the&nbsp;&nbsp;
+
+00:15:53.040 --> 00:15:59.920
+show template on the show template here&nbsp;
+we're going to render all the comments&nbsp;&nbsp;
+
+00:16:01.600 --> 00:16:04.640
+we'll actually do a partial&nbsp;
+for it that'll be post slash&nbsp;&nbsp;
+
+00:16:04.640 --> 00:16:10.000
+comments we'll pass in instant variable&nbsp;
+of postsystem we just use local variables&nbsp;&nbsp;
+
+00:16:11.520 --> 00:16:17.040
+and let's do comments here and i've&nbsp;
+pre-baked some html that we can just pop in
+
+00:16:21.280 --> 00:16:27.360
+there we go so this will render all the&nbsp;
+comments that belong to this post this&nbsp;&nbsp;
+
+00:16:27.360 --> 00:16:32.400
+is shorthand for what you see up here we're&nbsp;
+going to render the partial of comments comment&nbsp;&nbsp;
+
+00:16:32.400 --> 00:16:37.200
+with a collection of posts so it iterates over&nbsp;
+those and then we will also render a new form&nbsp;&nbsp;
+
+00:16:37.200 --> 00:16:40.240
+so let's create those partials&nbsp;
+first we create the comment one
+
+00:16:43.440 --> 00:16:49.440
+and i'm also just going to pop that in it's just&nbsp;
+going to be a basic div that has an id which we&nbsp;&nbsp;
+
+00:16:49.440 --> 00:16:56.000
+will later use for live updating of stuff it has&nbsp;
+the comment content and we're using that time tag&nbsp;&nbsp;
+
+00:16:56.000 --> 00:17:04.320
+again with um a time ago to see when the comments&nbsp;
+were posted and we're also going to create a um&nbsp;&nbsp;
+
+00:17:04.320 --> 00:17:12.080
+partial for the new form so that we can create new&nbsp;
+comments on our post as you can see here we use&nbsp;&nbsp;
+
+00:17:12.080 --> 00:17:17.840
+a helper called form width it uses the model then&nbsp;
+we pass into it actually we're going gonna pass in&nbsp;&nbsp;
+
+00:17:18.640 --> 00:17:25.760
+local variable here um and the comment and um&nbsp;
+and there we go and then actually let's also&nbsp;&nbsp;
+
+00:17:25.760 --> 00:17:32.400
+pop in a little notice on the comment itself or&nbsp;
+on the post itself just a counter to show how&nbsp;&nbsp;
+
+00:17:32.400 --> 00:17:43.120
+many comments were uh posted on that we use one of&nbsp;
+those helpers pure lies pluralize that will go one&nbsp;&nbsp;
+
+00:17:44.160 --> 00:17:52.480
+comment to comments and you'll see that in the ui&nbsp;
+in just a second here although we also actually&nbsp;&nbsp;
+
+00:17:52.480 --> 00:17:57.680
+need to add the comments controller it starts out&nbsp;
+as just this empty shell here in order to be able&nbsp;&nbsp;
+
+00:17:57.680 --> 00:18:04.560
+to create any comments we need a create action&nbsp;
+we're going to set that up with some prepaid here&nbsp;&nbsp;
+
+00:18:04.560 --> 00:18:10.000
+before any of the actions are loaded we run&nbsp;
+a callback called setpost that will plug out&nbsp;&nbsp;
+
+00:18:10.000 --> 00:18:16.160
+the post id from the url since we know which post&nbsp;
+that these comments are supposed to be created for&nbsp;&nbsp;
+
+00:18:16.720 --> 00:18:22.720
+it will then take the parameters from the form&nbsp;
+and their scope by comment it'll require that&nbsp;&nbsp;
+
+00:18:22.720 --> 00:18:27.680
+which means that if the comment scope is not&nbsp;
+present it'll erase an exemption exception&nbsp;&nbsp;
+
+00:18:27.680 --> 00:18:34.400
+telling us that and then will only permit a allow&nbsp;
+list of attributes in this case just content&nbsp;&nbsp;
+
+00:18:34.400 --> 00:18:37.760
+says that you can't sneak anything&nbsp;
+else in you can't set a different&nbsp;&nbsp;
+
+00:18:39.680 --> 00:18:46.320
+foreign key or id and corrupt the system this is&nbsp;
+just one of those security benefits that you have&nbsp;&nbsp;
+
+00:18:46.320 --> 00:18:52.880
+in rails out of the box great let's have&nbsp;
+a look and see what that looks like we&nbsp;&nbsp;
+
+00:18:52.880 --> 00:19:03.520
+are now on post we'll go to this post&nbsp;
+and see we are missing the route that&nbsp;&nbsp;
+
+00:19:04.640 --> 00:19:09.760
+post comment is supposed to look up and that's&nbsp;
+because we i forgot to edit the routes file&nbsp;&nbsp;
+
+00:19:09.760 --> 00:19:16.480
+so the resources generator adds this comments&nbsp;
+uh resources but it's of course at the root&nbsp;&nbsp;
+
+00:19:16.480 --> 00:19:20.880
+and what we want it is to have it nested&nbsp;
+such that the comments belong to the post&nbsp;&nbsp;
+
+00:19:22.080 --> 00:19:29.520
+great see there are zero comments so far but&nbsp;
+we have our um form down here let's do let's do&nbsp;&nbsp;
+
+00:19:30.080 --> 00:19:35.920
+one comment we'll create that comment&nbsp;
+and there we go we have our comment&nbsp;&nbsp;
+
+00:19:37.600 --> 00:19:43.920
+and have a quick look at the console for&nbsp;
+the the log for this you see here we do&nbsp;&nbsp;
+
+00:19:44.480 --> 00:19:50.320
+started a post against posts slash three slash&nbsp;
+comments this is the nested route that we have&nbsp;&nbsp;
+
+00:19:51.600 --> 00:19:59.120
+here are the parameters it's using an authenticity&nbsp;
+token to make sure that we don't have any csrf&nbsp;&nbsp;
+
+00:20:00.240 --> 00:20:04.080
+exploits and as you can see here it's even&nbsp;
+filtered just it doesn't show up in the log&nbsp;&nbsp;
+
+00:20:04.080 --> 00:20:08.720
+we also filter other things like passwords and&nbsp;
+stuff that you shouldn't be putting into your&nbsp;&nbsp;
+
+00:20:08.720 --> 00:20:15.280
+logs and then you could see the parameters um&nbsp;
+this was the required scope comment and it just&nbsp;&nbsp;
+
+00:20:15.280 --> 00:20:21.200
+has one attribute that is going to be the content&nbsp;
+and what that content actually is then here you&nbsp;&nbsp;
+
+00:20:21.200 --> 00:20:28.960
+can see setpost is calling um that id the three&nbsp;
+from up here it looks it up since we have the&nbsp;&nbsp;
+
+00:20:28.960 --> 00:20:35.200
+post it proceeds then inserts the comments and&nbsp;
+when it's done it redirects to post number three&nbsp;&nbsp;
+
+00:20:35.200 --> 00:20:42.640
+and that renders everything again so now we have&nbsp;
+a blog that has posts and those posts can have&nbsp;&nbsp;
+
+00:20:42.640 --> 00:20:47.840
+comments but let's add another feature of&nbsp;
+rails let's add a mailer such that when a new&nbsp;&nbsp;
+
+00:20:48.560 --> 00:20:55.680
+comment is posted the owner of the blog gets a&nbsp;
+email letting the person know that a new comment&nbsp;&nbsp;
+
+00:20:55.680 --> 00:21:00.160
+has been posted so we use another generator&nbsp;
+for a mailer here um and that mail is going&nbsp;&nbsp;
+
+00:21:00.160 --> 00:21:05.120
+to be called the comments mailer and it's just&nbsp;
+going to have one action on it called submitted&nbsp;&nbsp;
+
+00:21:06.640 --> 00:21:10.880
+you see this generator of course does not&nbsp;
+generate any migrations just a bunch of&nbsp;&nbsp;
+
+00:21:10.880 --> 00:21:17.040
+files for us to play with so first thing we're&nbsp;
+going to edit is the comments mailer and you&nbsp;&nbsp;
+
+00:21:17.040 --> 00:21:21.680
+can see it's just a stub here we're going to&nbsp;
+be passing in the comment that we want to let&nbsp;&nbsp;
+
+00:21:21.680 --> 00:21:24.720
+the owner know about we're going to&nbsp;
+assign that to an instant variable&nbsp;&nbsp;
+
+00:21:24.720 --> 00:21:29.840
+such that it's available in the view we're&nbsp;
+going to mail that to let's say the blog&nbsp;&nbsp;
+
+00:21:30.880 --> 00:21:35.440
+owner at example.com and we're going&nbsp;
+to set a subject for this email to be&nbsp;&nbsp;
+
+00:21:36.080 --> 00:21:43.440
+new comment then we can edit the templates that go&nbsp;
+with this comment mailer that forms the content of&nbsp;&nbsp;
+
+00:21:43.440 --> 00:21:49.920
+the email that's going to be sent out so that's&nbsp;
+going to be submitted html i have one that's&nbsp;&nbsp;
+
+00:21:50.720 --> 00:21:56.320
+pre-baked we can just pop in and the neat thing&nbsp;
+here you can see is we're reusing the same partial&nbsp;&nbsp;
+
+00:21:56.320 --> 00:22:04.080
+templates the comments comment template the html&nbsp;
+template for the html part of the email as well&nbsp;&nbsp;
+
+00:22:04.080 --> 00:22:08.160
+this is how a lot of things in rails work&nbsp;
+that you can use the same templates across&nbsp;&nbsp;
+
+00:22:08.160 --> 00:22:13.360
+things like emails the first render live&nbsp;
+updates you're never recreating templates&nbsp;&nbsp;
+
+00:22:13.360 --> 00:22:18.080
+more than once and then of course we also have&nbsp;
+the plain text version of the email where we're&nbsp;&nbsp;
+
+00:22:18.080 --> 00:22:23.440
+not going to use that partial we're just going&nbsp;
+to pop it in as plain text rails has this newest&nbsp;&nbsp;
+
+00:22:23.440 --> 00:22:28.640
+feature a neat feature where we can actually&nbsp;
+see what these emails are going to look like&nbsp;&nbsp;
+
+00:22:30.160 --> 00:22:35.120
+we are going to use one of these previews&nbsp;
+and it's going to just preview whatever&nbsp;&nbsp;
+
+00:22:35.120 --> 00:22:42.080
+the first comment is and we can jump to this&nbsp;
+url in a browser to see what that looks like&nbsp;&nbsp;
+
+00:22:43.440 --> 00:22:49.680
+you got a new comment on hello world first comment&nbsp;
+that's the html version here's the plain text&nbsp;&nbsp;
+
+00:22:49.680 --> 00:22:56.960
+version and now we know that the mailer itself&nbsp;
+works let's hook the mailer up to our flow such&nbsp;&nbsp;
+
+00:22:56.960 --> 00:23:02.560
+that when a new comment is created we will also&nbsp;
+send out the email so we have the comments mailer&nbsp;&nbsp;
+
+00:23:02.560 --> 00:23:07.840
+it has the submitted action we're going to pass in&nbsp;
+the comment that is being created in this action
+
+00:23:10.000 --> 00:23:16.320
+and then we're going to deliver later deliver&nbsp;
+later we'll use a asynchronous job queue such that&nbsp;&nbsp;
+
+00:23:16.320 --> 00:23:22.480
+neither the rendering of the html for this&nbsp;
+mailer nor the delivery of the email itself&nbsp;&nbsp;
+
+00:23:22.480 --> 00:23:27.600
+happens in line it happens asynchronously&nbsp;
+much faster response time in the ui&nbsp;&nbsp;
+
+00:23:28.160 --> 00:23:34.960
+and that's pretty neat so let's um see&nbsp;
+if that actually works we'll jump over to&nbsp;&nbsp;
+
+00:23:35.840 --> 00:23:42.560
+the browser again jump back to our&nbsp;
+post and then send a comment via email&nbsp;&nbsp;
+
+00:23:44.080 --> 00:23:49.520
+create that comment and we can see whether it's&nbsp;
+been sent by checking the log scrolling back here&nbsp;&nbsp;
+
+00:23:49.520 --> 00:23:54.720
+and you can see the email is being sent it's&nbsp;
+being sent to blog owner it has that subject&nbsp;&nbsp;
+
+00:23:54.720 --> 00:24:00.960
+of new comment it's rendering a mime part for&nbsp;
+the html and my part for the clear text and&nbsp;&nbsp;
+
+00:24:00.960 --> 00:24:05.600
+if you look up here you can see the deliver&nbsp;
+later is set up as an action mailer delivery&nbsp;&nbsp;
+
+00:24:05.600 --> 00:24:13.680
+job which is this out-of-band asynchronous setup&nbsp;
+in production we would use a full queuing system&nbsp;&nbsp;
+
+00:24:14.400 --> 00:24:23.520
+rescue or something else like that in development&nbsp;
+it is just happening in line great now we have a&nbsp;&nbsp;
+
+00:24:23.520 --> 00:24:30.560
+blog that can also send email let's make this&nbsp;
+blog live and we're going to use the default&nbsp;&nbsp;
+
+00:24:31.120 --> 00:24:38.400
+wire stack or at least one part of it the turbo&nbsp;
+part of it to make adding comments a live event&nbsp;&nbsp;
+
+00:24:39.440 --> 00:24:46.160
+and it is surprisingly simple as you saw before&nbsp;
+when we looked at the application js hotwire is&nbsp;&nbsp;
+
+00:24:46.160 --> 00:24:51.840
+already configured in a new rails app so we&nbsp;
+can simply start using it so we're going to&nbsp;&nbsp;
+
+00:24:51.840 --> 00:25:01.920
+start using it by setting up a subscription to&nbsp;
+a turbo stream on the post um show action we're&nbsp;&nbsp;
+
+00:25:01.920 --> 00:25:07.440
+going to use this turbo stream from and then the&nbsp;
+name of the stream we're going to use is going&nbsp;&nbsp;
+
+00:25:07.440 --> 00:25:13.120
+to be derived from the post um since it has an&nbsp;
+exclusive stream for the comments that are posted&nbsp;&nbsp;
+
+00:25:13.120 --> 00:25:22.800
+is that and then when a comment is created we're&nbsp;
+going to let it broadcast um to the post that will&nbsp;&nbsp;
+
+00:25:22.800 --> 00:25:33.360
+broadcast both uh creates updates and destroys&nbsp;
+which we can now demonstrate so let's jump over to&nbsp;&nbsp;
+
+00:25:35.120 --> 00:25:42.240
+our browser and then let's actually make another&nbsp;
+browser such that we can have them side by side&nbsp;&nbsp;
+
+00:25:42.240 --> 00:25:50.800
+and see that this stuff is happening live okay&nbsp;
+let's scroll down here is this a live comment
+
+00:25:52.880 --> 00:26:00.160
+it sure is it showed up over here as well&nbsp;
+because via web sockets we're delivering&nbsp;&nbsp;
+
+00:26:00.160 --> 00:26:04.880
+all these updates that are made to&nbsp;
+the comments they're being broadcast&nbsp;&nbsp;
+
+00:26:04.880 --> 00:26:11.920
+whether they're being invoked from a web ui is&nbsp;
+here or if they're being invoked from the console&nbsp;&nbsp;
+
+00:26:13.360 --> 00:26:20.800
+as well since it just goes through the rails&nbsp;
+domain model so we could do here find the post&nbsp;&nbsp;
+
+00:26:20.800 --> 00:26:25.840
+3 and then look at the comments we have those&nbsp;
+comments we could take a look at the last one&nbsp;&nbsp;
+
+00:26:25.840 --> 00:26:32.080
+and what would happen if we destroyed last&nbsp;
+one boom it's gone and it's gone because&nbsp;&nbsp;
+
+00:26:32.080 --> 00:26:37.600
+when we destroy the last one a callback is&nbsp;
+being triggered by that setup of broadcast 2&nbsp;&nbsp;
+
+00:26:37.600 --> 00:26:44.320
+that will broadcast this turbostream element&nbsp;
+remove and the target is comment underscore id&nbsp;&nbsp;
+
+00:26:44.320 --> 00:26:49.680
+which matches the dom id we had set up for the&nbsp;
+partial for the individual comment we can also&nbsp;&nbsp;
+
+00:26:49.680 --> 00:27:02.240
+update here from the console so if we do a update&nbsp;
+of the content content uh updated from console you&nbsp;&nbsp;
+
+00:27:02.240 --> 00:27:07.760
+can see that that update is sent out as well that&nbsp;
+update contrary to the delete update is actually&nbsp;&nbsp;
+
+00:27:07.760 --> 00:27:13.360
+done asynchronously because we're rendering&nbsp;
+a template so that also happens out of band&nbsp;&nbsp;
+
+00:27:14.400 --> 00:27:19.280
+and there you have it creates updates and deletes&nbsp;
+are all broadcast automatically and of course you&nbsp;&nbsp;
+
+00:27:19.280 --> 00:27:25.360
+can tweak this and set it up to your heart consent&nbsp;
+but simply adding the broadcast to will do it for&nbsp;&nbsp;
+
+00:27:25.360 --> 00:27:31.920
+all the three actions by default when you follow&nbsp;
+the conventions okay we've created quite a lot&nbsp;&nbsp;
+
+00:27:31.920 --> 00:27:37.040
+of code let's have a look and see if we also have&nbsp;
+some tests and of course we do because all these&nbsp;&nbsp;
+
+00:27:37.040 --> 00:27:43.360
+generators we've been running have been creating&nbsp;
+stop testing that actually exercises the app&nbsp;&nbsp;
+
+00:27:43.360 --> 00:27:50.480
+and if we run those with rails test we'll see a&nbsp;
+couple of them failing we have one failing because&nbsp;&nbsp;
+
+00:27:50.480 --> 00:27:56.800
+of a invalid foreign key and that happens&nbsp;
+when we go to destroy the post then you have&nbsp;&nbsp;
+
+00:27:56.800 --> 00:28:02.960
+comments that depend on that post now having&nbsp;
+an invalid foreign key so we can fix that first&nbsp;&nbsp;
+
+00:28:03.760 --> 00:28:10.400
+by jumping back into the post model and instead of&nbsp;
+just saying has many comments we'll also say that&nbsp;&nbsp;
+
+00:28:10.400 --> 00:28:16.240
+they are dependent and they will be destroyed when&nbsp;
+we destroy a post then let's run the tests again&nbsp;&nbsp;
+
+00:28:17.440 --> 00:28:22.240
+now that test is no longer failing we still&nbsp;
+have a failing test for the comments mailer&nbsp;&nbsp;
+
+00:28:22.240 --> 00:28:24.560
+because that is of course just generated off&nbsp;&nbsp;
+
+00:28:25.840 --> 00:28:35.360
+the defaults that weren't tweaked we'll use um a&nbsp;
+fixture here if you have a look at com gml you'll&nbsp;&nbsp;
+
+00:28:35.360 --> 00:28:40.960
+see we set up fixtures for all models that are&nbsp;
+generated through the generators such that you can&nbsp;&nbsp;
+
+00:28:41.840 --> 00:28:47.120
+set up a set of fixtures that you can refer to&nbsp;
+in your text in your tests that run very fast&nbsp;&nbsp;
+
+00:28:47.120 --> 00:28:53.120
+and then i also remember we changed the subject&nbsp;
+to new comment and then we sent this to the blog&nbsp;&nbsp;
+
+00:28:53.760 --> 00:28:58.080
+owner and it was from example we're not&nbsp;
+going to match on the body right now&nbsp;&nbsp;
+
+00:28:58.880 --> 00:29:05.440
+let's go back and run that boom all our&nbsp;
+tests are passing on our new wonderful blog&nbsp;&nbsp;
+
+00:29:05.440 --> 00:29:11.840
+that does what you see is what you get&nbsp;
+editing it does comments it does live comments&nbsp;&nbsp;
+
+00:29:13.280 --> 00:29:18.880
+and now our application as such is is done&nbsp;
+but what if we wanted to show other people&nbsp;&nbsp;
+
+00:29:18.880 --> 00:29:24.960
+this application let's deploy this to production&nbsp;
+and i'm going to use heroku to do this because&nbsp;&nbsp;
+
+00:29:24.960 --> 00:29:32.560
+heroku is nice and simple and easy to use but&nbsp;
+where the rail skeleton by default is started&nbsp;&nbsp;
+
+00:29:32.560 --> 00:29:40.080
+with sql lite as the database heroku uses&nbsp;
+postgres but thankfully there is a command here&nbsp;&nbsp;
+
+00:29:40.640 --> 00:29:46.640
+railsdb system change where we can change&nbsp;
+the configuration of our database to use
+
+00:29:49.680 --> 00:29:55.280
+postgres instead that will add the postgres&nbsp;
+adapter so we'll have to bundle for that&nbsp;&nbsp;
+
+00:29:56.480 --> 00:30:04.480
+and then we can add um everything to&nbsp;
+git because that is how we will push&nbsp;&nbsp;
+
+00:30:04.480 --> 00:30:10.400
+to heroku so we'll add everything to git we will&nbsp;
+commit everything that we've added as first here&nbsp;&nbsp;
+
+00:30:10.960 --> 00:30:17.920
+and then we will create the heroku setup&nbsp;
+that we're going to deploy our app to&nbsp;&nbsp;
+
+00:30:19.440 --> 00:30:25.920
+and once we've done that we can push&nbsp;
+our app straight to heroku heroku&nbsp;&nbsp;
+
+00:30:26.480 --> 00:30:31.840
+main and we're going to get a little error&nbsp;
+here in just a second that we can correct&nbsp;&nbsp;
+
+00:30:33.120 --> 00:30:38.320
+because there is a check here and you can see this&nbsp;
+is failing because i'm making this demo on an m1&nbsp;&nbsp;
+
+00:30:38.320 --> 00:30:46.240
+machine and heroku is not running on an arm64 so&nbsp;
+we just have to add x64 here as our platform for&nbsp;&nbsp;
+
+00:30:46.240 --> 00:30:53.600
+the bundle lock we'll do that and then we'll&nbsp;
+add the um gem file lock again commit that
+
+00:30:55.840 --> 00:31:03.840
+added the platform and then we can push again
+
+00:31:08.960 --> 00:31:15.360
+and now we have deployed our app to heroku&nbsp;
+we've been assigned the mighty tundra&nbsp;&nbsp;
+
+00:31:16.000 --> 00:31:21.360
+as our url for this and we can go have&nbsp;
+a look at that in just a second we need&nbsp;&nbsp;
+
+00:31:21.360 --> 00:31:24.080
+to do a couple more things we need to first of all&nbsp;&nbsp;
+
+00:31:24.080 --> 00:31:31.840
+migrate our database which will also set&nbsp;
+it up or we use heroku run rake db migrate
+
+00:31:34.320 --> 00:31:39.280
+and then we need to add redis&nbsp;
+as an add-on to our heroku setup&nbsp;&nbsp;
+
+00:31:39.280 --> 00:31:45.840
+because red is is used by the turbo setup&nbsp;
+to send those live updates back and forth&nbsp;&nbsp;
+
+00:31:47.680 --> 00:31:53.760
+great now everything should be setting up so let's&nbsp;
+have a look at our live app deployed in production
+
+00:31:56.800 --> 00:32:03.520
+i can use this one here and you see the page&nbsp;
+you're looking for doesn't exist and that's&nbsp;&nbsp;
+
+00:32:03.520 --> 00:32:08.880
+because we haven't actually set up a root route&nbsp;
+in our application so let's do that if we go back&nbsp;&nbsp;
+
+00:32:08.880 --> 00:32:14.000
+to the routes here you'll see there's actually&nbsp;
+a comment just for that purpose so we'll set it&nbsp;&nbsp;
+
+00:32:14.000 --> 00:32:19.600
+up so when you go to the root it'll go straight&nbsp;
+to the posts index and we will commit that setup
+
+00:32:23.280 --> 00:32:32.160
+we'll add it and commit it adding the root&nbsp;
+route and then we can push that again to heroku
+
+00:32:36.000 --> 00:32:40.000
+now that's set up so let's have a look&nbsp;
+and see if the app works in production&nbsp;&nbsp;
+
+00:32:40.800 --> 00:32:48.080
+there we go we have an empty one of course because&nbsp;
+it's a brand new database this is the first post
+
+00:32:52.240 --> 00:32:56.880
+now the only thing that does not work yet&nbsp;
+here in production is drag and dropping&nbsp;&nbsp;
+
+00:32:56.880 --> 00:33:05.280
+files because heroku would require us to set up&nbsp;
+s3 and you can use that as an exercise for the&nbsp;&nbsp;
+
+00:33:05.280 --> 00:33:09.920
+reader for you to set that up but it is quite&nbsp;
+easy to do just a matter of a little bit of&nbsp;&nbsp;
+
+00:33:09.920 --> 00:33:13.920
+configuration and then you will also have&nbsp;
+the direct uploads with drag and drop here&nbsp;&nbsp;
+
+00:33:14.720 --> 00:33:19.520
+but let's create this post and&nbsp;
+then let's create the first comment
+
+00:33:22.320 --> 00:33:28.720
+and check that everything is working here in&nbsp;
+production and there you go there is now one&nbsp;&nbsp;
+
+00:33:28.720 --> 00:33:35.200
+comment posted so let's do the test and see&nbsp;
+if we're set up and it works correctly with&nbsp;&nbsp;
+
+00:33:36.080 --> 00:33:44.080
+the turbo back to get the comments from one&nbsp;
+side to the other this is the second comment
+
+00:33:47.440 --> 00:33:53.360
+and it sure does so now we have the entire&nbsp;
+application running in production backed by&nbsp;&nbsp;
+
+00:33:54.000 --> 00:33:57.840
+a live setup that uses redis&nbsp;
+and all the other goodies&nbsp;&nbsp;
+
+00:33:59.040 --> 00:34:04.720
+and that's all you need to get going get&nbsp;
+started building something real with ruby&nbsp;&nbsp;
+
+00:34:04.720 --> 00:34:14.160
+on rails taking it all the way from hello world&nbsp;
+to who knows perhaps maybe one day IPO thank you
+
