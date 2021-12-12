@@ -34,6 +34,7 @@ defaults:
       layout: "default"
 
 markdown: kramdown
+highlighter: rouge
 paginate: 10
 paginate_path: "/blog/page/:num"
 sass:

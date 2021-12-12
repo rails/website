@@ -173,7 +173,7 @@ id: home
       <div class="example__block example__block--align-left">
         <div class="example__code common-code">
           <h6>app/models/article.rb</h6>
-<pre>
+{% highlight ruby %}
 class Article < ApplicationRecord
   belongs_to :author, default: -> { Current.user }
   has_many   :comments
@@ -194,7 +194,7 @@ class Article < ApplicationRecord
     Article::DeliveryJob.perform_later self
   end
 end
-</pre>
+{% endhighlight %}
         </div>
 
         <div class="example__content common-content">
@@ -206,7 +206,7 @@ end
       <div class="example__block example__block--align-left">
         <div class="example__code common-code">
           <h6>app/controllers/articles_controller.rb</h6>
-<pre>
+{% highlight ruby %}
 class ArticlesController < ApplicationController
   def index
     @articles = Article.recent
@@ -227,7 +227,7 @@ class ArticlesController < ApplicationController
       params.require(:article).permit!(:title, :content)
     end
 end
-</pre>
+{% endhighlight %}
         </div>
 
         <div class="example__content common-content">
@@ -239,15 +239,15 @@ end
       <div class="example__block example__block--align-left">
         <div class="example__code common-code">
           <h6>app/views/articles/show.html.erb</h6>
-<pre>
-&lt;h1&gt;&lt;%= @article.title %&gt;&lt;/h1&gt;
+{% highlight ruby %}
+<h1><%= @article.title %></h1>
 
-&lt;%= image_tag @article.creator.avatar.url %&gt;
+<%= image_tag @article.creator.avatar.url %>
 
-&lt;p&gt;&lt;%= @article.content %&gt;&lt;/p&gt;
+<p><%= @article.content %></p>
 
-&lt;%= link_to "Edit", edit_article_path(@article) if Current.user.admin? %&gt;
-</pre>
+<%= link_to "Edit", edit_article_path(@article) if Current.user.admin? %>
+{% endhighlight %}
         </div>
 
         <div class="example__content common-content">
@@ -259,7 +259,7 @@ end
       <div class="example__block example__block--align-left">
         <div class="example__code common-code">
           <h6>config/routes.rb</h6>
-<pre>
+{% highlight ruby %}
 Rails.application.routes.draw do
   resources :articles do    # /articles, /articles/1
     resources :comments     # /articles/1/comments, /comments/1
@@ -267,7 +267,7 @@ Rails.application.routes.draw do
 
   root to: "articles#index" # /
 end
-</pre>
+{% endhighlight %}
         </div>
 
         <div class="example__content common-content">

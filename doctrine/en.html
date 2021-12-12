@@ -70,7 +70,7 @@ title: Doctrine
         <p>I’m not exaggerating when I say that Ruby transformed me and set the course for my life’s work. So deep was the revelation. It imbued me with a calling to do missionary work in service of Matz’s creation. To help spread this profound creation and its benefits.</p>
         <p>Now I can imagine most of you shaking your heads with incredulity. I don’t blame you. If someone had described the experience above to me when I was still living under the “programming is just a tool” paradigm, I too would have shook my head. And then I would probably have laughed at the over-the-top use of religious language. But for this to be a truthful account, it also has to be honest, even if that’s off-putting to some or even most.</p>
         <p>Anyway, what did this mean for Rails and how does this principle continue to guide its evolution? To answer that, I think it’s instructive to look at another principle that was often used to describe Ruby in the early days: The Principle of Least Surprise. Ruby should behave how you’d expect it to. This is easily described with a contrast to Python:</p>
-<pre>
+{% highlight ruby %}
 $ irb
 irb(main):001:0> exit
 $ irb
@@ -79,7 +79,7 @@ irb(main):001:0> quit
 $ python
 >>> exit
 Use exit() or Ctrl-D (i.e. EOF) to exit
-</pre>
+{% endhighlight %}
         <p>Ruby accepts both exit and quit to accommodate the programmer’s obvious desire to quit its interactive console. Python, on the other hand, pedantically instructs the programmer how to properly do what’s requested, even though it obviously knows what is meant (since it’s displaying the error message). That’s a pretty clear-cut, albeit small, example of PoLS.</p>
         <p>The reason PoLS fell out of favor with the Ruby community was that this principle is inherently subjective. Least surprising to whom? Well, to Matz. And people who are surprised in the same way as him. As the Ruby community grew, and the ratio of people who were surprised by different things than Matz grew with it, this became a source of fruitless bike-shedding on the mailing lists. So the principle faded to the background, lest to invite more debates going nowhere over whether person X was surprised by behavior Y or not.</p>
         <p>So again, what does this have to do with Rails? Well, Rails has been designed with a similar principle to Principle of Least Surprise (To Matz). The Principle of The Bigger Smile (of DHH), which is just what it says on the tin: APIs designed with great attention paid to whatever would make me smile more and broader.  When I write it out like this, that sounds almost comically narcissistic, and even I find hard to argue against that first impression.</p>
@@ -167,17 +167,17 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
         <p>We write code not just to be understood by the computer or other programmers, but to bask in the warm glow of beauty. Aesthetically pleasing code is a value unto itself and should be pursued with vigor. That doesn’t mean that beautiful code always trumps other concerns, but it should have a full seat at the table of priorities.</p>
         <p>So what is beautiful code? In Ruby, it’s often somewhere at the intersection between native Ruby idioms and the power of a custom domain-specific language. It’s a fuzzy line, but one well worth trying to dance.</p>
         <p>Here’s a simple example from Active Record:</p>
-<pre>
+{% highlight ruby %}
 class Project < ApplicationRecord
   belongs_to :account
   has_many :participants, class_name: 'Person'
   validates_presence_of :name
 end
-</pre>
+{% endhighlight %}
         <p>This looks like DSL, but it’s really just a class definition with three class-method calls that take symbols and options. There’s nothing fancy here. But it sure is pretty. It sure is simple. It gives an immense amount of power and flexibility from those few declarations.</p>
         <p>Part of the beauty comes from these calls honoring the previous principles, like Convention over Configuration. When we call belongs_to :account, we’re assuming that the foreign key is called account_id and that it lives in the projects table. When we have to designate the class_name of Person to the role of the participants association, we require just that class name definition. From it we’ll derive, again, the foreign keys and other configuration points.</p>
         <p>Here’s another example from the database migrations system:</p>
-<pre>
+{% highlight ruby %}
 class CreateAccounts < ActiveRecord::Migration
   def change
     create_table :accounts do |t|
@@ -186,16 +186,16 @@ class CreateAccounts < ActiveRecord::Migration
     end
   end
 end
-</pre>
+{% endhighlight %}
         <p>This is the essence of framework power. The programmer declares a class according to certain convention, like a ActiveRecord::Migration subclass that implements #change, and the framework can do all the plumbing that goes around that, and know this is the method to call.</p>
         <p>This leaves the programmer with very little code to write. In the case of migrations, not only will this allow a call to rails db:migrate to upgrade the database to add this new table, it’ll also allow it to go the other way of dropping this table with another call. This is very different from a programmer making all this happen and stitching the workflow together from libraries they call themselves.</p>
         <p>Sometimes beautiful code is more subtle, though. It’s less about making something as short or powerful as possible, but more about making the rhythm of the declaration flow.</p>
         <p>These two statements do the same:</p>
-<pre>
+{% highlight ruby %}
 if people.include? person
 ...
 if person.in? people
-</pre>
+{% endhighlight %}
         <p>But the flow and focus is subtly different. In the first statement, the focus is on the collection. That’s our subject. In the second statement, the subject is clearly the person. There’s not much between the two statements in length, but I’ll contend that the second is far more beautiful and likely to make me smile when used in a spot where the condition is about the person.</p>
       </div>
     </div>

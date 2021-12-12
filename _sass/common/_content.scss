@@ -215,12 +215,13 @@
   pre,
   code {
     @include plex();
-    background: rgba($color-black, 0.05);
-    border: 1px solid rgba($color-black, 0.1);
+    background: rgba($color-black, 0.9);
     border-radius: 4px;
-    color: $color-black;
+    box-sizing: border-box;
+    color: $color-white;
     font-size: 13px;
     line-height: 23px;
+    text-align: left;
   }
 
   pre {
@@ -231,12 +232,11 @@
     margin-top: 7px;
     max-width: 100%;
     overflow-x: auto;
-    padding: 32px 40px;
+    padding: 22px 30px;
     white-space: pre;
 
     code {
       background: none;
-      border: none;
       padding: 0;
     }
 

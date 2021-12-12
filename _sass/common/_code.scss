@@ -1,7 +1,7 @@
 .common-code {
 
   background: rgba($color-black, 0.9);
-  border-radius: 12px;
+  border-radius: 8px;
   box-sizing: border-box;
   box-shadow: 0 1px 1px rgba($color-black, 0.1);
   text-align: left;
@@ -9,7 +9,7 @@
   h6 {
     background: linear-gradient(0deg, rgba($color-black, 0.5), rgba($color-black, 0));
     border-bottom: 1px solid rgba($color-black, 0.9);
-    border-radius: 12px 12px 0 0;
+    border-radius: 8px 8px 0 0;
     box-sizing: border-box;
     color: $color-grey-3;
     font-size: 18px;

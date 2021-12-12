@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'IBM Plex Mono';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   src: url('../fonts/IBMPlexMono-Text.eot');
   src: url('../fonts/IBMPlexMono-Text.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-Text.woff2') format('woff2'),
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   src: url('../fonts/IBMPlexMono-TextItalic.eot');
   src: url('../fonts/IBMPlexMono-TextItalic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-TextItalic.woff2') format('woff2'),
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'IBM Plex Mono';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   src: url('../fonts/IBMPlexMono-Medium.eot');
   src: url('../fonts/IBMPlexMono-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-Medium.woff2') format('woff2'),
@@ -31,11 +31,31 @@
 @font-face {
   font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   src: url('../fonts/IBMPlexMono-MediumItalic.eot');
   src: url('../fonts/IBMPlexMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-MediumItalic.woff2') format('woff2'),
        url('../fonts/IBMPlexMono-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/IBMPlexMono-Bold.eot');
+  src: url('../fonts/IBMPlexMono-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
+       url('../fonts/IBMPlexMono-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/IBMPlexMono-BoldItalic.eot');
+  src: url('../fonts/IBMPlexMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/IBMPlexMono-BoldItalic.woff2') format('woff2'),
+       url('../fonts/IBMPlexMono-BoldItalic.woff') format('woff');
 }
 
 @font-face {
