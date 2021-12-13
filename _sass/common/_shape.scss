@@ -51,7 +51,7 @@
       background-position: left top;
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      bottom: 0;
+      bottom: -1px;
       content: '';
       height: 10vw;
       left: 0;
@@ -100,7 +100,7 @@
       left: 0;
       max-height: 160px;
       position: absolute;
-      top: 0;
+      top: -1px;
       width: 100%;
     }
 
