@@ -1,6 +1,6 @@
 items:
   - title: Blog
-    url: /blog
+    url: /blog/
 
   - title: Guides
     url: https://guides.rubyonrails.org
@@ -15,4 +15,4 @@ items:
     url: https://github.com/rails/rails
 
   - title: Team
-    url: /community
+    url: /community/

@@ -10,13 +10,13 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
-  <meta property="og:image" content="{{ '/assets/images/opengraph.png' | absolute_url }}" />
+  <meta property="og:image" content="/assets/images/opengraph.png" />
   <meta property="og:url" content="{{ page.url  | absolute_url }}" />
   <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
 
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
-  <meta name="twitter:image" content="{{ '/assets/images/opengraph.png' | absolute_url }}" />
+  <meta name="twitter:image" content="/assets/images/opengraph.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />
   <meta name="twitter:image:alt" content="{{ site.title }}" />
@@ -33,7 +33,7 @@
       "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
       "description": "{% if page.collection == 'posts' %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}",
       "url": "{{ page.url  | absolute_url }}",
-      "image": "{{ '/assets/images/opengraph.png' | absolute_url }}"{% if page.collection == 'posts' %},
+      "image": "/assets/images/opengraph.png"{% if page.collection == 'posts' %},
       "author": {
         "@type": "Person",
         "name": "{{ page.author }}"
@@ -43,7 +43,7 @@
   </script>
 
   <link rel="canonical" href="{{ page.url  | absolute_url }}" />
-  <link rel="icon" href="{{ '/assets/images/favicon.ico' | absolute_url }}" />
-  <link rel="apple-touch-icon" type="image/png" href="{{ '/assets/images/apple-touch-icon.png' | absolute_url }}" />
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
