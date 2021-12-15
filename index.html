@@ -13,7 +13,7 @@ id: home
 {% if site.data.version.label %}
 
       <div class="heading__button">
-        <a href="{{ site.data.version.url | absolute_url }}" class="common-button common-button--version"><span>{{ site.data.version.label }}{% if site.data.version.date %} &mdash; released {{ site.data.version.date }}{% endif %}</span></a>
+        <a href="{{ site.data.version.url }}" class="common-button common-button--version"><span>{{ site.data.version.label }}{% if site.data.version.date %} &mdash; released {{ site.data.version.date }}{% endif %}</span></a>
       </div>
 
 {% endif %}
