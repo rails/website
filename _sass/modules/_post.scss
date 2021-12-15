@@ -13,7 +13,12 @@
     text-align: center;
 
     h5 {
-      padding-bottom: 13px;
+      margin-bottom: 16px;
+    }
+
+    h6 {
+      font-weight: 400;
+      margin-top: 17px;
     }
 
   }
@@ -93,11 +98,22 @@
     }
 
     &__headline {
+
       margin-bottom: -7px;
+
+      h5 {
+        margin-bottom: 13px;
+      }
+
+      h6 {
+        margin-top: 16px;
+        padding-bottom: 1px;
+      }
+
     }
 
     &__content {
-      margin-top: 80px;
+      margin-top: 60px;
       padding-top: 53px;
     }
 
