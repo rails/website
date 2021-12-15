@@ -1,7 +1,9 @@
 .nav {
 
   background: $color-white;
+  font-size: 0;
   height: 106px;
+  line-height: 0;
   position: relative;
   z-index: 1000;
 
@@ -223,10 +225,18 @@
       ul {
 
         position: absolute;
-        top: 41px;
+        top: 47px;
 
         li {
+
           display: inline-block;
+
+          a span {
+            font-size: 19px;
+            line-height: 32px;
+            padding: 0 15px;
+          }
+
         }
 
         &:first-child {
@@ -287,6 +297,12 @@
       ul {
 
         top: 54px;
+
+        li a span {
+          font-size: 23px;
+          line-height: 42px;
+          padding: 0 20px 2px 20px;
+        }
 
         &:first-child {
           right: calc(50% + 76px);
