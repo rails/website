@@ -4,7 +4,7 @@ title: 'Rails 7.0: Fulfilling a vision'
 categories: releases
 author: dhh
 published: true
-date: 2021-12-15 14:00:00 -08:00
+date: 2021-12-15 15:17:00 -08:00
 ---
 
 This version of Rails has been years in the conceptual making. It's the fulfillment of a vision to present a truly full-stack approach to web development that tackles both the front- and back-end challenges with equal vigor. An omakase menu that includes everything from the aperitif to the desert.
