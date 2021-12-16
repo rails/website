@@ -39,101 +39,36 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/IBMPlexMono-Bold.eot');
-  src: url('../fonts/IBMPlexMono-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
-       url('../fonts/IBMPlexMono-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/IBMPlexMono-BoldItalic.eot');
-  src: url('../fonts/IBMPlexMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/IBMPlexMono-BoldItalic.woff2') format('woff2'),
-       url('../fonts/IBMPlexMono-BoldItalic.woff') format('woff');
-}
-
-@font-face {
   font-family: 'Calibre';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/CalibreWeb-Regular.eot');
-  src: url('../fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-Regular.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-Regular.woff') format('woff');
+  src: url('../fonts/calibre-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Calibre';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/CalibreWeb-RegularItalic.eot');
-  src: url('../fonts/CalibreWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-RegularItalic.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-RegularItalic.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calibre';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/CalibreWeb-Medium.eot');
-  src: url('../fonts/CalibreWeb-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-Medium.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-Medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calibre';
-  font-style: italic;
-  font-weight: 500;
-  src: url('../fonts/CalibreWeb-MediumItalic.eot');
-  src: url('../fonts/CalibreWeb-MediumItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-MediumItalic.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-MediumItalic.woff') format('woff');
+  src: url('../fonts/calibre-regular-italic.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Calibre';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/CalibreWeb-Semibold.eot');
-  src: url('../fonts/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-Semibold.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-Semibold.woff') format('woff');
+  src: url('../fonts/calibre-semibold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Calibre';
   font-style: italic;
   font-weight: 600;
-  src: url('../fonts/CalibreWeb-SemiboldItalic.eot');
-  src: url('../fonts/CalibreWeb-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-SemiboldItalic.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-SemiboldItalic.woff') format('woff');
+  src: url('../fonts/calibre-semibold-italic.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Calibre';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/CalibreWeb-Bold.eot');
-  src: url('../fonts/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-Bold.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calibre';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/CalibreWeb-BoldItalic.eot');
-  src: url('../fonts/CalibreWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/CalibreWeb-BoldItalic.woff2') format('woff2'),
-       url('../fonts/CalibreWeb-BoldItalic.woff') format('woff');
+  src: url('../fonts/calibre-bold.woff2') format('woff2');
 }
