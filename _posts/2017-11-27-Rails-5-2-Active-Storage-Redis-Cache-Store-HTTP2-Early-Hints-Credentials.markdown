@@ -71,7 +71,7 @@ meant to pair beautifully with the new Webpacker 3.0 release. Rails has fully em
 pre-configured build pipeline run by Webpack. We keep strengthening that relationship.
 
 
-And of course there’s about [five bajillion other fixes, improvements, and tweaks](https://github.com/rails/rails/compare/v5.1.4...master/) in this new, big release of Rails. It's
+And of course there’s about [five bajillion other fixes, improvements, and tweaks](https://github.com/rails/rails/compare/v5.1.4...master) in this new, big release of Rails. It's
 been lovingly tendered over the past seven months or so since Rails 5.1. We're so happy to share all this with you, and
 as always thank the [many, many contributors](http://contributors.rubyonrails.org/edge/contributors) for their continued effort to make Rails the wonderful framework that it is.
 

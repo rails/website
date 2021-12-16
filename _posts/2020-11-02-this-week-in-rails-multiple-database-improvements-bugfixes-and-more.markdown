@@ -22,7 +22,7 @@ Previously you could skip encoding which would encode all parameters on an actio
 When you load a script or css (by using javascript\_include\_tag or stylesheet\_link\_tag respectively) with crossorigin attribute applied, Rails currently causes some browsers to fetch these resources twice. That is because crossorigin in the link header preload directive and on the resource itself need to match in order for browsers to re-use a resource.  
 This PR changes it so that the link header directives include the same crossorigin values as those that have been passed to the resources themselves, which allows browsers to reuse the preloaded resource.
 
-### [Implement `connecting_to` method](https://github.com/rails/rails/pull/40486/)
+### [Implement `connecting_to` method](https://github.com/rails/rails/pull/40486)
 
 Sometimes you need to have a different default connection but aren't calling the connection with a block. An example is booting a console in reading mode. This PR adds the ability for a script to set a specific connection on boot while preserving the behaviour of connected\_to for application code.
 

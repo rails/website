@@ -9,11 +9,11 @@ date: 2018-12-16
 
 Hello. This is [Wojtek](https://twitter.com/morgoth85) with a short list of news from Rails world.
 
-### [George joins Rails Core](https://weblog.rubyonrails.org/2018/12/13/george-joins-rails-core/)
+### [George joins Rails Core](https://rubyonrails.org/2018/12/13/george-joins-rails-core)
 
 George Claghorn is now a member of the [Rails core team](https://rubyonrails.org/community/#core). Welcome George!
 
-### [Introducing Action Mailbox for Rails 6](https://weblog.rubyonrails.org/2018/12/13/introducing-action-mailbox-for-rails-6/)
+### [Introducing Action Mailbox for Rails 6](https://rubyonrails.org/2018/12/13/introducing-action-mailbox-for-rails-6)
 
 Action Mailbox is the brand new framework coming to Rails 6 extracted from Basecamp.
 

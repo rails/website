@@ -35,7 +35,7 @@ If all your life's ROFLMAO'ing have left you with ass left to laugh off, you'll 
 
 ### [Windows Users Needs the Latest Development Kit](https://github.com/rails/rails/pull/20734)
 
-If you're a Windows user and witness to the horror of `rails new` failing with native gems not being able to be installed - rejoice! You need the latest [Development Kit](http://rubyinstaller.org/downloads/) version, which our getting started guide will now tell you.
+If you're a Windows user and witness to the horror of `rails new` failing with native gems not being able to be installed - rejoice! You need the latest [Development Kit](http://rubyinstaller.org/downloads) version, which our getting started guide will now tell you.
 
 ## Fixed
 

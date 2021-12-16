@@ -8,7 +8,7 @@ published: true
 date: 2009-03-13 12:22:00.000000000 +00:00
 ---
 <h3>March 6, 2009 &#8211; March 13, 2009</h3>
-<p>Things have been pretty busy on the development side since the release of <a href="http://weblog.rubyonrails.org/2009/3/5/rails-2-3-rc2-final-stop-before-release">Rails 2.3 RC2</a>. The core team has been making a serious effort to review all of the open bugs and patches with an eye towards getting us a solid release. At this point, the bar for new features is set fairly high, but even so, there have been an incredible 94 commits in the week since RC2 &#8211; mostly fixes to ensure expected behavior and stability. Here are some of the highlights.</p>
+<p>Things have been pretty busy on the development side since the release of <a href="https://rubyonrails.org/2009/3/5/rails-2-3-rc2-final-stop-before-release">Rails 2.3 RC2</a>. The core team has been making a serious effort to review all of the open bugs and patches with an eye towards getting us a solid release. At this point, the bar for new features is set fairly high, but even so, there have been an incredible 94 commits in the week since RC2 &#8211; mostly fixes to ensure expected behavior and stability. Here are some of the highlights.</p>
 <h2>Swappable Parsers for XMLmini</h2>
 <p>The support for <span class="caps">XML</span> parsing in ActiveSupport has been made more flexible by allowing you to swap in different parsers. By default, it uses the standard <span class="caps">REXML</span> implementation, but you can easily specify the faster LibXML or Nokogiri implementations for your own applications, provided you have the appropriate gems installed:</p>
 <pre><code>

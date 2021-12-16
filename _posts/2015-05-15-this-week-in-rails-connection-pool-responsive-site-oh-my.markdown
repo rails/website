@@ -27,7 +27,7 @@ Active Record keeps a pool of database connections. To keep the pool safe from p
 
 ### [Holy Ruby on Rails on Responsive Website, Batman!](https://github.com/rails/rails.github.com/issues/46)
 
-Are you on your phone? Are you on your watch? Are you on the toi... eh, anyway, the [Rails website](http://rubyonrails.org) is now responsive.
+Are you on your phone? Are you on your watch? Are you on the toi... eh, anyway, the [Rails website](https://rubyonrails.org) is now responsive.
 
 Just to tide you over until the website redesign will be revealed. That'll surely be a royal flush.
 

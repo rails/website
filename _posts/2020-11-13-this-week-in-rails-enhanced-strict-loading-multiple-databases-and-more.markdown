@@ -9,7 +9,7 @@ date: 2020-11-13
 
 Hi, [Wojtek](https://twitter.com/morgoth85) from this side with a summary of the latest changes that will be available in the upcoming Rails 6.1.
 
-### [Rails 6.1 RC1 released](https://weblog.rubyonrails.org/2020/11/2/Rails-6-1-rc1-release/)
+### [Rails 6.1 RC1 released](https://rubyonrails.org/2020/11/2/Rails-6-1-rc1-release)
 
 Release candidate of Rails 6.1 is ready for testing.
 

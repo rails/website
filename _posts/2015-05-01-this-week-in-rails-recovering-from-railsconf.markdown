@@ -19,7 +19,7 @@ This week 31 people helped Rails out. Six people had their first commit merged i
 
 One by one, all the presentations of RailsConf are being uploaded. Lots of great talks to fill your weekend!
 
-### [GSoC students announced!](http://weblog.rubyonrails.org/2015/5/2/welcome-to-gsoc-15/)
+### [GSoC students announced!](https://rubyonrails.org/2015/5/2/welcome-to-gsoc-15)
 
 We are proud to announce that 8 students will be working on improving Rails as part of the Google Summer of Code 2015. Congratulations and welcome to Rails!
 

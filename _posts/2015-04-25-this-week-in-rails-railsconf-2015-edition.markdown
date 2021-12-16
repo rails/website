@@ -17,7 +17,7 @@ Note: The links to the RailsConf videos are the unedited live-stream versions, a
 
 [David Heinemeier Hansson](https://twitter.com/dhh) kicked off the conference by announcing a few new features in Rails 5: Rails API, turbolinks 3, a native mobile wrapper and web sockets support (a.k.a. Action Cable).
 
-The amazing [Sara Chipps](https://twitter.com/sarajchipps) wrapped up the day by sharing her experience [teaching kids to code](http://www.jewelbots.com/).
+The amazing [Sara Chipps](https://twitter.com/sarajchipps) wrapped up the day by sharing her experience [teaching kids to code](http://www.jewelbots.com).
 
 Check the [schedule](http://railsconf.com/schedule) for a full list of talks from Room 202. Shameless plug: [yours truly](https://twitter.com/chancancode) gave a talk following the DHH keynote ;)
 
@@ -29,7 +29,7 @@ Don't forget to catch the lightning talks towards the end of the stream!
 
 ### [Day 3: Ruby heroes, core team panel, Kent Beck closing keynote](https://www.youtube.com/watch?v=LdWMcs9EEOE)
 
-The [Ruby heroes](http://rubyheroes.com/) awards were given on the third day, followed by a panel discussion featuring some members from the [Rails core team](http://rubyonrails.org/core).
+The [Ruby heroes](http://rubyheroes.com) awards were given on the third day, followed by a panel discussion featuring some members from the [Rails core team](https://rubyonrails.org/core).
 
 [Kent Beck](https://twitter.com/kentbeck), aka the creator of [XP](http://en.wikipedia.org/wiki/Extreme_programming) (not to be confused with [the other XP](http://en.wikipedia.org/wiki/Windows_XP)) wrapped up the conference with a focus on the human elements of programming.
 

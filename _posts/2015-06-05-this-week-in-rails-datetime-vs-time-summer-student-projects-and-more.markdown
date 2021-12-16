@@ -21,11 +21,11 @@ This is [Marcel](https://twitter.com/marcelmorgan) making my 'initial commit' wi
 
 Ever wondered what is the difference between `DateTime` and `Time`? Checkout this enlightening gist on when you would use each which also landed in the [ruby documentation](https://github.com/ruby/ruby/commit/45458752d3f54ac81661d93aa55b8b5805f78138).
 
-### [Google Summer of Code – Web Console](http://brx-web-console.blogspot.jp/)
+### [Google Summer of Code – Web Console](http://brx-web-console.blogspot.jp)
 
-Follow one of our [Google Summer of Code](https://developers.google.com/open-source/soc/) student [Hiroyuki](https://github.com/sh19910711) on his thoughts, experiments and progress with the [web-console](https://github.com/rails/web-console) browser extension project.
+Follow one of our [Google Summer of Code](https://developers.google.com/open-source/soc) student [Hiroyuki](https://github.com/sh19910711) on his thoughts, experiments and progress with the [web-console](https://github.com/rails/web-console) browser extension project.
 
-### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-06-04-2015-teams/)
+### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-06-04-2015-teams)
 
 Meet the 16 official teams that will be participating in the 2015 Rails Girls Summer of Code. We wish them the best of luck.
 

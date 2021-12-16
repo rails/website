@@ -7,9 +7,9 @@ published: true
 date: 2009-02-06 13:53:00.000000000 +00:00
 ---
 <h3>January 31, 2009 &#8211; February 6, 2009</h3>
-<p>The big news in edge Rails this week, of course, is the <a href="http://weblog.rubyonrails.org/2009/2/1/rails-2-3-0-rc1-templates-engines-rack-metal-much-more">release of Rails 2.3.0 RC1</a>. There&#8217;s been a fair amount of activity in the days since that happened, much of it concerned with tidying things up and fixing bugs based on early adopter issues and feedback. Thanks for all the testing, and by all means keep it up!</p>
+<p>The big news in edge Rails this week, of course, is the <a href="https://rubyonrails.org/2009/2/1/rails-2-3-0-rc1-templates-engines-rack-metal-much-more">release of Rails 2.3.0 RC1</a>. There&#8217;s been a fair amount of activity in the days since that happened, much of it concerned with tidying things up and fixing bugs based on early adopter issues and feedback. Thanks for all the testing, and by all means keep it up!</p>
 <h2>Nested Form Support in Active Record and Action Pack</h2>
-<p>This one is big enough that it got a whole <a href="http://weblog.rubyonrails.org/2009/1/26/nested-model-forms">blog entry</a> of its own (the version that was committed has minor changes from what you&#8217;ll see there). There are two main parts to this commit. First, Active Record can now update the attributes on nested models directly, provided you tell it to do so:</p>
+<p>This one is big enough that it got a whole <a href="https://rubyonrails.org/2009/1/26/nested-model-forms">blog entry</a> of its own (the version that was committed has minor changes from what you&#8217;ll see there). There are two main parts to this commit. First, Active Record can now update the attributes on nested models directly, provided you tell it to do so:</p>
 <pre><code>
 class Book &lt; ActiveRecord::Base
   has_one :author

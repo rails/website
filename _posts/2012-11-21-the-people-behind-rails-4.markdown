@@ -6,7 +6,7 @@ author: fxn
 published: true
 ---
 
-Rails 4 is coming along nicely [with a ton of new stuff](http://blog.wyeworks.com/2012/11/13/rails-4-compilation-links/), but this major release would have not been possible without the help of some people whose contributions have been outstanding. We want to dedicate this post to them, to show our appreciation and recognition for their extraordinary work:
+Rails 4 is coming along nicely [with a ton of new stuff](http://blog.wyeworks.com/2012/11/13/rails-4-compilation-links), but this major release would have not been possible without the help of some people whose contributions have been outstanding. We want to dedicate this post to them, to show our appreciation and recognition for their extraordinary work:
 
 [Arun Agrawal](http://contributors.rubyonrails.org/contributors/arun-agrawal/commits) has been helping with some housekeeping tasks. He puts a lot of effort to remove warnings, fix broken builds, remove some unneeded code, and ensure Rails works well with JRuby.
 

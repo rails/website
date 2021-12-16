@@ -7,7 +7,7 @@ author: David
 published: true
 date: 2007-02-06 16:29:00.000000000 +00:00
 ---
-<p>It&#8217;s time for another minor update to Rails 1.2. This was primarily prompted by a change in the <span class="caps">API</span> for SQLite between version 3.3.7 and 3.3.8+, which <a href="http://weblog.rubyonrails.org/2007/1/29/using-sqlite3-with-rails">left the Rails database adapter for dead</a> by the road side. But with this release and Jamis Buck&#8217;s sqlite3-ruby gem at version 1.2.1, we&#8217;re back in business on all versions of SQLite3.</p>
+<p>It&#8217;s time for another minor update to Rails 1.2. This was primarily prompted by a change in the <span class="caps">API</span> for SQLite between version 3.3.7 and 3.3.8+, which <a href="https://rubyonrails.org/2007/1/29/using-sqlite3-with-rails">left the Rails database adapter for dead</a> by the road side. But with this release and Jamis Buck&#8217;s sqlite3-ruby gem at version 1.2.1, we&#8217;re back in business on all versions of SQLite3.</p>
 <p>Second, we&#8217;re now depending on RubyGems 0.9.0 and above. This will fix the deprecation messages for require_gem (the new method is just gem) and will restore rake rails:freeze:gems to working order. So be sure to update to the latest RubyGems before installing. That&#8217;s done with &#8220;gem update &#8212;system&#8221;.</p>
 <p>Finally, we&#8217;ve decided to throw in a few goodies along with the fixes described above and the rest of the bug reparations in this release. Singular resources, for example, allow you to model singleton resources within the scope of the domain. The common example is user.application.com/account. That&#8217;s now modeled with:</p>
 map.resource :account

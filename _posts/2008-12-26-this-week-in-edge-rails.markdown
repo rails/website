@@ -8,7 +8,7 @@ published: true
 date: 2008-12-26 14:22:00.000000000 +00:00
 ---
 <h3>December 20-December 26, 2008 Edition</h3>
-<p>The biggest change in Rails in recent memory isn&#8217;t reflected in edge Rails yet: I&#8217;m speaking, of course, about the <a href="http://weblog.rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">merger of Merb into Rails 3</a> . There is a <strong>3-0-unstable</strong> branch in the repository, but it hasn&#8217;t yet started to diverge from the main line of development. I&#8217;ll continue to focus on the <strong>master</strong> branch, which will be released as Rails 2.3, for the time being.</p>
+<p>The biggest change in Rails in recent memory isn&#8217;t reflected in edge Rails yet: I&#8217;m speaking, of course, about the <a href="https://rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">merger of Merb into Rails 3</a> . There is a <strong>3-0-unstable</strong> branch in the repository, but it hasn&#8217;t yet started to diverge from the main line of development. I&#8217;ll continue to focus on the <strong>master</strong> branch, which will be released as Rails 2.3, for the time being.</p>
 <p>And Rails 2.3 is still cooking along. The team managed 39 commits this week, despite people taking holiday time off. Many of those were minor bug fixes, but here are a few things you might want to track in the new development.</p>
 <h2>Unified rendering</h2>
 <p><code>ActionController::Base#render</code> is a lot smarter about deciding what to render. You can just throw things at it and expect to get the right results. If you&#8217;re using Rails 2.2, you often need to supply explicit information to render:</p>

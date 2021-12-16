@@ -10,11 +10,11 @@ date: 2009-09-04 06:04:00.000000000 +01:00
 <h4>Security Fixes</h4>
 <p>2.3.4 contains fixes for two security issues which were reported to us.   For more details see the security announcements:</p>
 <ul>
-	<li><a href="http://weblog.rubyonrails.org/2009/9/4/xss-vulnerability-in-ruby-on-rails"><span class="caps">CVE</span>-2009-3009 &#8211; <span class="caps">XSS</span> vulnerability</a></li>
-	<li><a href="http://weblog.rubyonrails.org/2009/9/4/timing-weakness-in-ruby-on-rails">Timing Weakness in MessageVerifier and the Cookie Store</a></li>
+	<li><a href="https://rubyonrails.org/2009/9/4/xss-vulnerability-in-ruby-on-rails"><span class="caps">CVE</span>-2009-3009 &#8211; <span class="caps">XSS</span> vulnerability</a></li>
+	<li><a href="https://rubyonrails.org/2009/9/4/timing-weakness-in-ruby-on-rails">Timing Weakness in MessageVerifier and the Cookie Store</a></li>
 </ul>
 <h4>Bug Fixes</h4>
-<p>Thanks to the success of the <a href="http://weblog.rubyonrails.org/2009/7/28/rails-bugmash">BugMash</a> we have around 100  bug fixes as part of this release.  Of particular not is the fix to reloading problems related to rack middleware and rails metals when running in development mode.</p>
+<p>Thanks to the success of the <a href="https://rubyonrails.org/2009/7/28/rails-bugmash">BugMash</a> we have around 100  bug fixes as part of this release.  Of particular not is the fix to reloading problems related to rack middleware and rails metals when running in development mode.</p>
 <h4>New Features</h4>
 <ul>
 	<li>Support for bundling I18n translations in plugins, Rails will now automatically add locale files found in any engine&#8217;s locale directory to the I18n.load_path.  <a href="http://github.com/rails/rails/commit/49342d1745dd0e6c4ebebe9e535e374783ac2c10">commit</a></li>

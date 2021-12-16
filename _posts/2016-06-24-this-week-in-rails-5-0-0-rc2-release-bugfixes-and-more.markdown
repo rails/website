@@ -15,7 +15,7 @@ Hello everyone! This is [Greg](https://twitter.com/gregmolnar) bringing latest n
 
 22 great people helped this week to move the Rails framework forward! If you want to join these folks, have a look at the [issues list](https://github.com/rails/rails/issues).
 
-### [Rails 5.0.0.rc2 release!](http://weblog.rubyonrails.org/2016/6/22/Rails-5-0-rc2/)
+### [Rails 5.0.0.rc2 release!](https://rubyonrails.org/2016/6/22/Rails-5-0-rc2)
 
 Rails 5 RC2 has been released with a lot of bug fixes and polishing. We are one step closer to the final release!
 

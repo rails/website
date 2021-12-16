@@ -7,7 +7,7 @@ published: true
 date: 2018-06-23
 ---
 
-Hello, this is Claudio with a quick recap of what changed this week in the [source code of Ruby on Rails](https://github.com/rails/rails/).
+Hello, this is Claudio with a quick recap of what changed this week in the [source code of Ruby on Rails](https://github.com/rails/rails).
 
 ### [Add `year_format` option to date_select tag](https://github.com/rails/rails/pull/32190)
 

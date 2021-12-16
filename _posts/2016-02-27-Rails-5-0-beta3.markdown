@@ -10,4 +10,4 @@ We're currently down to [18 open issues](https://github.com/rails/rails/mileston
 
 The release targets have been moved out a bit, so RC1 on March 1 and then final on March 16. That may well be a tad optimistic still, but that's the current target.
 
-If you missed the announcement on what's new in Rails 5, [checkout the beta1 story](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/). Thanks to Eileen Uchitelle for coordinating this release.
+If you missed the announcement on what's new in Rails 5, [checkout the beta1 story](https://rubyonrails.org/2015/12/18/Rails-5-0-beta1). Thanks to Eileen Uchitelle for coordinating this release.

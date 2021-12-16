@@ -15,7 +15,7 @@ Anyway, let's get to the exciting stuff from this week!
 
 ### [This Week in Rails – Now in Korean!](http://suhanlee.github.io/2016/ruby-2-4-integer-action-mailer-rescued-and-more.html)
 
-First off, a very special thanks to [Suhan Lee](http://suhanlee.github.io/about/) for translating our newsletter into Korean! He's going to try to translate each newsletter going forward. If you're interested in providing more translations, feel free to get in touch with [Godfrey](https://twitter.com/chancancode).
+First off, a very special thanks to [Suhan Lee](http://suhanlee.github.io/about) for translating our newsletter into Korean! He's going to try to translate each newsletter going forward. If you're interested in providing more translations, feel free to get in touch with [Godfrey](https://twitter.com/chancancode).
 
 ### [This Week's Contributors](http://contributors.rubyonrails.org/contributors/in-time-window/20160528-20160603)
 

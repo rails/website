@@ -11,7 +11,7 @@ This is [Prathamesh](https://twitter.com/_cha1tanya) bringing the latest news fr
 
 ## Featured
 
-### [Security releases!](http://weblog.rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released/)
+### [Security releases!](https://rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released)
 
 New Rails versions are released with many important security fixes. If you have not done already, upgrade as soon as possible.
 

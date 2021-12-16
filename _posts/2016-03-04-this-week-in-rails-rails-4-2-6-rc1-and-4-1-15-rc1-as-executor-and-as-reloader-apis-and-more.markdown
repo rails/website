@@ -17,7 +17,7 @@ This is [Vipul](https://twitter.com/vipulnsward) bringing you the latest news fr
 
 This week 48 contributors helped to move Rails forward! Want to be one of them? Look at the [issues](https://github.com/rails/rails/issues) list and make a contribution!
 
-### [Rails 4.2.6.rc1 and 4.1.15.rc1 have been released](http://weblog.rubyonrails.org/2016/3/1/Rails-4-2-6-rc1-and-4-1-15-rc1-have-been-released/)
+### [Rails 4.2.6.rc1 and 4.1.15.rc1 have been released](https://rubyonrails.org/2016/3/1/Rails-4-2-6-rc1-and-4-1-15-rc1-have-been-released)
 
 Rails 4.2.6.rc1 and 4.1.15.rc1 have been released!
 If no regressions are found expect the final release around March 4, 2016.

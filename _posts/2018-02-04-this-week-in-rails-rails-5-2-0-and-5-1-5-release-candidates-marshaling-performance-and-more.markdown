@@ -11,11 +11,11 @@ Hey there, news attenuated people of planet Rails! It's your trusty prudent edit
   
 Lets slow our roll a bit to pursue what's meaningful not merely what's expedient!
 
-### [Help test Rails 5.2.0.rc1 and 5.1.5.rc1](http://weblog.rubyonrails.org/2018/1/30/Rails-5-2-RC1-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials/)
+### [Help test Rails 5.2.0.rc1 and 5.1.5.rc1](https://rubyonrails.org/2018/1/30/Rails-5-2-RC1-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials)
 
 This week came the release candidate of the next Rails release. Bundle it, run your tests, boot a server — maybe even try it a bit in production. That'll really help ensure 5.2.0 is solid gold.  
   
-If you're not 5.2 ready yet, Rails [5.1.5.rc1](http://weblog.rubyonrails.org/2018/2/1/Rails-5-1-5-rc1-has-been-released/) is also ready to test.
+If you're not 5.2 ready yet, Rails [5.1.5.rc1](https://rubyonrails.org/2018/2/1/Rails-5-1-5-rc1-has-been-released) is also ready to test.
 
 ### [This Week's Contributors](http://contributors.rubyonrails.org/contributors/in-time-window/20180126-20180204)
 

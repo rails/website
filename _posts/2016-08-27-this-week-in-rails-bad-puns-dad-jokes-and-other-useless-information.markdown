@@ -17,7 +17,7 @@ This week, 11 new contributors along with 19 other returning contributors took s
 
 ### [Include The Content of "The Flash" In ETags](https://github.com/rails/rails/pull/26250)
 
-When confronted about [code bloat](https://github.com/rails/rails/commit/22af62cf486721ee2e45bb720c42ac2f4121faf4#commitcomment-8110), DHH [does not take it lightly](https://github.com/rails/rails/commit/e50530ca3ab5db53ebc74314c54b62b91b932389). This week, he pulled another one of those moves by committing the content of [_The Flash_](http://www.imdb.com/title/tt0439572/) into the Rails codebase.
+When confronted about [code bloat](https://github.com/rails/rails/commit/22af62cf486721ee2e45bb720c42ac2f4121faf4#commitcomment-8110), DHH [does not take it lightly](https://github.com/rails/rails/commit/e50530ca3ab5db53ebc74314c54b62b91b932389). This week, he pulled another one of those moves by committing the content of [_The Flash_](http://www.imdb.com/title/tt0439572) into the Rails codebase.
 
 ### [Redirect POST Requests With 307 Status Code](https://github.com/rails/rails/pull/23941)
 

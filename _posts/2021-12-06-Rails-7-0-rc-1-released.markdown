@@ -6,7 +6,7 @@ author: dhh
 published: true
 date: 2021-12-06 18:00:00 +01:00
 ---
-We're almost ready to declare Rails 7 done! The feedback since [the first alpha release](https://weblog.rubyonrails.org/2021/9/15/Rails-7-0-alpha-1-released/) has been wonderful, we've eliminated a slew of issues, and we've seen Basecamp, HEY, GitHub, and Shopify all run in production on this alpha series. So we now feel so confident that this is nearly ready that we're skipping straight from alpha to release candidate. This is RC1.
+We're almost ready to declare Rails 7 done! The feedback since [the first alpha release](https://rubyonrails.org/2021/9/15/Rails-7-0-alpha-1-released) has been wonderful, we've eliminated a slew of issues, and we've seen Basecamp, HEY, GitHub, and Shopify all run in production on this alpha series. So we now feel so confident that this is nearly ready that we're skipping straight from alpha to release candidate. This is RC1.
 
 Please help us do the final testing of all this new stuff so we can ensure a solid final release of Rails 7 this year!
 
@@ -16,7 +16,7 @@ After almost five years with [Webpacker](https://github.com/rails/webpacker) as 
 
 Together with the replacement of Turbolinks and Rails UJS by the [Hotwire](https://hotwired.dev) combination of [Stimulus](https://stimulus.hotwired.dev) and [Turbo](https://turbo.hotwired.dev), we now have the most complete in-the-box front-end setup for writing great Rails applications ever. Without needing thousands of node dependencies in `node_modules`, fighting with bundler configurations, or any of the other challenges common with JavaScript development.
 
-At the same time, we've also [dramatically improved the integration](https://www.youtube.com/watch?v=JsNtLiph87Y) between Rails and JavaScript + CSS bundlers for those who need that. Through two new companion gems that can be triggered via rails new [--javascript [bundler]](https://github.com/rails/jsbundling-rails/) and [--css [bundler]](https://github.com/rails/cssbundling-rails/), you get easy access to starting a new application or changing one that starts with import maps to use [esbuild](https://github.com/evanw/esbuild), [rollup.js](https://rollupjs.org/guide/en/), [Webpack](https://webpack.js.org/), [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://postcss.org/), [Dart Sass](https://sass-lang.com/dart-sass), and [Bootstrap](https://getbootstrap.com/).
+At the same time, we've also [dramatically improved the integration](https://www.youtube.com/watch?v=JsNtLiph87Y) between Rails and JavaScript + CSS bundlers for those who need that. Through two new companion gems that can be triggered via rails new [--javascript [bundler]](https://github.com/rails/jsbundling-rails) and [--css [bundler]](https://github.com/rails/cssbundling-rails), you get easy access to starting a new application or changing one that starts with import maps to use [esbuild](https://github.com/evanw/esbuild), [rollup.js](https://rollupjs.org/guide/en), [Webpack](https://webpack.js.org), [Tailwind CSS](https://tailwindcss.com), [PostCSS](https://postcss.org), [Dart Sass](https://sass-lang.com/dart-sass), and [Bootstrap](https://getbootstrap.com).
 
 ## At-Work Encryption With Active Record
 

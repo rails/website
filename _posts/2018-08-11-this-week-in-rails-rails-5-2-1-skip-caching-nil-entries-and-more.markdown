@@ -9,9 +9,9 @@ date: 2018-08-11
 
 Namaste everyone! This is [Prathamesh](https://twitter.com/_cha1tanya) bringing you the latest news from the Rails world with some rain and chai from Pune.
 
-### [Rails 5.2.1 is out in the wild](https://weblog.rubyonrails.org/2018/8/7/Rails-5-2-1-has-been-released/)
+### [Rails 5.2.1 is out in the wild](https://rubyonrails.org/2018/8/7/Rails-5-2-1-has-been-released)
 
-Rails 5.2.1 is [released](https://weblog.rubyonrails.org/2018/8/7/Rails-5-2-1-has-been-released/). Give it a try and check out all the awesome features.
+Rails 5.2.1 is [released](https://rubyonrails.org/2018/8/7/Rails-5-2-1-has-been-released). Give it a try and check out all the awesome features.
 
 ### [Better error handling of Active Storage adapters](https://github.com/rails/rails/pull/33540)
 

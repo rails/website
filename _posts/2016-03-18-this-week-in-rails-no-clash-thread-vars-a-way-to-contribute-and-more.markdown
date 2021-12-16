@@ -21,7 +21,7 @@ Let's check it out!
 
 Did you know? Rails is written by people no smarter than you (I know, low bar! 😘). They show up, Google a few things for the common good and submit patches. They even get their name on this here fancy page!
 
-### [A Rails conference in the Pacific](http://www.railspacific.com/)
+### [A Rails conference in the Pacific](http://www.railspacific.com)
 
 The pacific Rails conference is rolling, from May 20th to 21st in Taipei, Taiwan. Several editors of this newsletter will be [speaking](http://www.railspacific.com/#speakers), so we recommend checking it out!
 

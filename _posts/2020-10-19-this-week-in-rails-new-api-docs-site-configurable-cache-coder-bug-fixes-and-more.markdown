@@ -7,11 +7,11 @@ published: true
 date: 2020-10-19
 ---
 
-Hi there! This is [Andy](https://andyatkinson.com/) bringing you the latest on what's shipped this week in Ruby on Rails!
+Hi there! This is [Andy](https://andyatkinson.com) bringing you the latest on what's shipped this week in Ruby on Rails!
 
 ### [New API docs back-end](https://github.com/rails/rails/pull/40396)
 
-The frames-based Rails API docs site has been replaced with CSS and Turbolinks. Deep linking is now supported! Let's take a moment and remember the humble 1990s era \<frame/\>! Check it out at [https://edgeapi.rubyonrails.org](https://edgeapi.rubyonrails.org/).
+The frames-based Rails API docs site has been replaced with CSS and Turbolinks. Deep linking is now supported! Let's take a moment and remember the humble 1990s era \<frame/\>! Check it out at [https://edgeapi.rubyonrails.org](https://edgeapi.rubyonrails.org).
 
 ### [Stable sorting for DatabaseConfigurations#find_db_config](https://github.com/rails/rails/pull/40372)
 

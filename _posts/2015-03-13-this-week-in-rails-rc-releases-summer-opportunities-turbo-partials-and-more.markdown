@@ -13,7 +13,7 @@ Here is [Washington](https://twitter.com/huoxito) bringing you this week's news 
 
 ## Featured
 
-### [4.2.1.rc4 and 4.1.10.rc4 have been released](http://weblog.rubyonrails.org/2015/3/12/Rails-4-2-1-rc4-and-4-1-10-rc4-have-been-released/)
+### [4.2.1.rc4 and 4.1.10.rc4 have been released](https://rubyonrails.org/2015/3/12/Rails-4-2-1-rc4-and-4-1-10-rc4-have-been-released)
 
 Give them a try on your projects to help make the next release as rock solid as possible. Many regressions have already been fixed and the final release should be out on March 17.
 
@@ -23,15 +23,15 @@ Couple more developers made their first commit into Rails this week. Take a mome
 
 ## Summer Opportunities
 
-### [Google Summer of Code 2015](http://weblog.rubyonrails.org/2015/3/4/google-summer-of-code-2015/)
+### [Google Summer of Code 2015](https://rubyonrails.org/2015/3/4/google-summer-of-code-2015)
 
-It's that time of the year again! As reported last week, we have been selected to participate in this year's [Google Summer of Code program](https://developers.google.com/open-source/soc/). This week, a few more exciting ideas have landed on our [project page](https://github.com/railsgsoc/ideas/wiki/2015-Ideas)!
+It's that time of the year again! As reported last week, we have been selected to participate in this year's [Google Summer of Code program](https://developers.google.com/open-source/soc). This week, a few more exciting ideas have landed on our [project page](https://github.com/railsgsoc/ideas/wiki/2015-Ideas)!
 
 [Applications](https://www.google-melange.com/gsoc/homepage/google/gsoc2015) will open next week, so please help spread the word!
 
-### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-applications-open/)
+### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-applications-open)
 
-Speaking of summer, [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/) have just opened their applications today. If your company can afford it, consider [becoming a sponsor](http://railsgirlssummerofcode.org/sponsors/)!
+Speaking of summer, [Rails Girls Summer of Code](http://railsgirlssummerofcode.org) have just opened their applications today. If your company can afford it, consider [becoming a sponsor](http://railsgirlssummerofcode.org/sponsors)!
 
 ## New Stuff
 

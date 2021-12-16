@@ -9,7 +9,7 @@ date: 2021-06-18
 
 Hello,&nbsp;[zzak](https://github.com/zzak)&nbsp;here with the latest changes from the last week to Rails.
 
-### [Rails 6.0.4 was released](https://weblog.rubyonrails.org/2021/6/15/Rails-6-0-4-has-been-released/)
+### [Rails 6.0.4 was released](https://rubyonrails.org/2021/6/15/Rails-6-0-4-has-been-released)
 
 This release includes many bug fixes so be sure to upgrade! You can read the full summary of changes [here](https://github.com/rails/rails/releases/tag/v6.0.4).
 

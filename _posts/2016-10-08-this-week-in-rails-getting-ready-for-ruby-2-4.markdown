@@ -17,7 +17,7 @@ The content for this week's newsletter is sponsored by the 19 individuals who au
 
 ### [Fixnum and Bignum are deprecated in Ruby 2.4](https://github.com/rails/rails/pull/26732)
 
-One of the notable changes in the [upcoming Ruby 2.4 release](https://www.ruby-lang.org/en/news/2016/09/08/ruby-2-4-0-preview2-released/) is the unification of `Fixnum` and `Bignum` into a single `Integer` class. Following that change, the legacy classes were [deprecated](https://bugs.ruby-lang.org/issues/12739) recently.
+One of the notable changes in the [upcoming Ruby 2.4 release](https://www.ruby-lang.org/en/news/2016/09/08/ruby-2-4-0-preview2-released) is the unification of `Fixnum` and `Bignum` into a single `Integer` class. Following that change, the legacy classes were [deprecated](https://bugs.ruby-lang.org/issues/12739) recently.
 
 This pull request avoids triggering those deprecation warnings with a feature detection. If you maintain code that references those constants, you might want to adopt this pattern in your projects too!
 
@@ -49,7 +49,7 @@ This pull requests avoids the error by skipping over invalid local
 variable names, while still allowing them to be accessed via
 `local_assigns`.
 
-You can read more about this issue, as well as the story behind this pull request in [Peter's blog post](http://www.peterschilling.org/blackhole/babys-first-rails-commit/).
+You can read more about this issue, as well as the story behind this pull request in [Peter's blog post](http://www.peterschilling.org/blackhole/babys-first-rails-commit).
 
 ## Gone
 

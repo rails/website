@@ -13,7 +13,7 @@ Boo! It's [Daniel](https://twitter.com/dodecadaniel) here, bringing you news abo
 
 Less than two years ago Rails introduced the Webpacker gem, making it easy to manage JavaScript with webpack. We started October strong by merging a whole bunch of commits by a number of people to make Webpacker the default for Rails 6.
 
-### [Introducing Action Text](https://weblog.rubyonrails.org/2018/10/3/introducing-action-text-for-rails-6/)
+### [Introducing Action Text](https://rubyonrails.org/2018/10/3/introducing-action-text-for-rails-6)
 
 Combining the powers of Active Storage, Webpacker, and Trix, Action Text brings rich text content and editing to Rails. Check it out!
 

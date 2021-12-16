@@ -11,7 +11,7 @@ date: 2015-06-12 16:51:37 -0400
 
 Howdy folks!
 
-My name is [Todd](https://twitter.com/toddbealmear) and I'll be your guide through the land of [Rails](https://github.com/rails/rails) this week. Straight from the comfort of my couch with awful lumbar support, I proudly present bad posture and the highlights from [This Week in Rails](https://rails-weekly.ongoodbits.com/).
+My name is [Todd](https://twitter.com/toddbealmear) and I'll be your guide through the land of [Rails](https://github.com/rails/rails) this week. Straight from the comfort of my couch with awful lumbar support, I proudly present bad posture and the highlights from [This Week in Rails](https://rails-weekly.ongoodbits.com).
 
 ## Featured
 
@@ -45,7 +45,7 @@ Migrations using `remove_foreign_key` can now be automatically reverted with `ra
 
 ## Fixed
 
-### [Prefix and suffix options for enums](https://github.com/rails/rails/pull/19813/)
+### [Prefix and suffix options for enums](https://github.com/rails/rails/pull/19813)
 
 This allows you to add a prefix or suffix to enum's auto-generated methods. Useful if you have multiple enums with the same values.
 

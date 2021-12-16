@@ -9,13 +9,13 @@ date: 2019-12-01
 
 Hey readers! This is [Kasper](https://twitter.com/kaspth) bringing you the latest news in Rails. I'm writing from deep winter-like Copenhagen, starting on the last month of the decade.  
   
-Speaking of progress, Rails recently crossed 75.000 commits on GitHub. Last time we marked commit progress was over 4 years ago for 50.000. I happened to write that issue too, you can&nbsp;[read it here](https://weblog.rubyonrails.org/2015/3/7/this-week-in-rails-50-000-commits-gsoc-opportunity-and-more/).
+Speaking of progress, Rails recently crossed 75.000 commits on GitHub. Last time we marked commit progress was over 4 years ago for 50.000. I happened to write that issue too, you can&nbsp;[read it here](https://rubyonrails.org/2015/3/7/this-week-in-rails-50-000-commits-gsoc-opportunity-and-more).
 
-### [Rails 6.0.2.rc1 released](https://weblog.rubyonrails.org/2019/11/27/Rails-6-0-2-rc1-has-been-released/)
+### [Rails 6.0.2.rc1 released](https://rubyonrails.org/2019/11/27/Rails-6-0-2-rc1-has-been-released)
 
 As always, this release is loaded with fixes and improvements. It's currently set to ship Monday Dec 2 and so far no regressions have been found as far as I know. Final day to test the release candidate on your app, try it out ✌️
 
-### [Rails 5.2.4 released](https://weblog.rubyonrails.org/2019/11/27/Rails-5-2-4-has-been-released/)
+### [Rails 5.2.4 released](https://rubyonrails.org/2019/11/27/Rails-5-2-4-has-been-released)
 
 The final bug fix release of Rails 5.2, now it'll only get security releases from here on out. Good time to plan a Rails 6 upgrade.
 

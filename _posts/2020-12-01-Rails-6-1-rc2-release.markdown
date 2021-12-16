@@ -12,7 +12,7 @@ at work tweaking and adjusting the nobs to have so using this version is a smoot
 to everyone. The final release is scheduled to happen next week.
 
 It's amazing how Rails has grown over the years and while we have some improvements to make to the
-[onboarding process](https://weblog.rubyonrails.org/2020/5/7/A-May-of-WTFs/), Rails has never been better. The features
+[onboarding process](https://rubyonrails.org/2020/5/7/A-May-of-WTFs), Rails has never been better. The features
 in this release focus on adding the functionality you need to keep your application up and running for years to come.
 
 Let's look at some of the new functionality:

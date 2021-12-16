@@ -61,4 +61,4 @@ Streaming is still being polished for Rails 3.1, expect another post in the futu
 
 ## Thanks ##
 
-[Tony Gentilcore](http://gent.ilcore.com/) provided his insider's guidance into this, thank you very much Tony! Also, thanks a lot to the [Browserscope project](http://www.browserscope.org/?category=network) for their really useful tables.
+[Tony Gentilcore](http://gent.ilcore.com) provided his insider's guidance into this, thank you very much Tony! Also, thanks a lot to the [Browserscope project](http://www.browserscope.org/?category=network) for their really useful tables.

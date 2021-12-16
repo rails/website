@@ -15,7 +15,7 @@ The change makes it much easier to instrument CPU time and object allocations wi
 
 ### [Prefer rails command over bin/rails](https://github.com/rails/rails/pull/33229)
 
-In some files we recommended using _rails_, in others _bin/rails_. The inconsistency is now fixed [🎉](https://emojipedia.org/party-popper/)  
+In some files we recommended using _rails_, in others _bin/rails_. The inconsistency is now fixed [🎉](https://emojipedia.org/party-popper)  
 
 Why prefer _rails_ as the recommended executable? It does all the heavy lifting of dispatching to the app appropriate Rails version, so that's why users don't need to target _bin/rails_ manually.
 

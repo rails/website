@@ -9,7 +9,7 @@ date: 2016-11-11
 
 Hello everyone!
 
-And welcome to our special edition from, live from [RubyConf](http://rubyconf.org/) in Cincinnati 😎.
+And welcome to our special edition from, live from [RubyConf](http://rubyconf.org) in Cincinnati 😎.
 
 This is [Vipul](https://twitter.com/vipulnsward) along with [Tim](https://twitter.com/imtayadeway) and [Prathamesh](https://twitter.com/_cha1tanya) teaming together to bring you all the latest news from the Rails community.&nbsp;
 Lets get started!

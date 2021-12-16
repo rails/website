@@ -9,7 +9,7 @@ date: 2018-08-04
 
 Hello everyone! This is [Roque](https://twitter.com/repinel), with the latest news about Ruby on Rails!
 
-### [Help test Rails 5.2.1.rc1](https://weblog.rubyonrails.org/2018/7/30/Rails-5-2-1-rc1-has-been-released/)
+### [Help test Rails 5.2.1.rc1](https://rubyonrails.org/2018/7/30/Rails-5-2-1-rc1-has-been-released)
 
 Help us test this release candidate to have a solid and stable `5.2.1`.
 

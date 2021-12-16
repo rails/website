@@ -45,7 +45,7 @@ Now they are defined while the app is booted to save the database round trip cos
   
 Rails ignores it now by using **_-X_** option.  
   
-It is also [ignored while loading structure.sql](https://github.com/rails/rails/pull/34001/) file for PostgreSQL databases by Rails.
+It is also [ignored while loading structure.sql](https://github.com/rails/rails/pull/34001) file for PostgreSQL databases by Rails.
 
 ### [Add a way to check for subset of arguments when performing jobs](https://github.com/rails/rails/pull/33995)
 

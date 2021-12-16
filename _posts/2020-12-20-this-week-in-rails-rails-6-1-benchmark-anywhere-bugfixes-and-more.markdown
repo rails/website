@@ -9,7 +9,7 @@ date: 2020-12-20
 
 Hi there, it is [Greg](https://twitter.com/gregmolnar), bringing you the latest news about Rails!
 
-### [Rails 6.1 released! Horizontal Sharding, Multi-DB Improvements, Strict Loading, Destroy Associations in Background, Error Objects, and more!](https://weblog.rubyonrails.org/2020/12/9/Rails-6-1-0-release/)
+### [Rails 6.1 released! Horizontal Sharding, Multi-DB Improvements, Strict Loading, Destroy Associations in Background, Error Objects, and more!](https://rubyonrails.org/2020/12/9/Rails-6-1-0-release)
 
 Rails 6.1 has been released and wow does it have a lot of great stuff! The changes include improvements to multiple databases, adding support for destroying associations in jobs instead of in-memory, turning errors into objects, and so much more.
 

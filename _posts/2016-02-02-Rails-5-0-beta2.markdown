@@ -14,4 +14,4 @@ Beyond that, there's literally [25 pages of commits on GitHub](https://github.co
 
 The release targets from here are RC1 on February 16 and then final on February 23. All depends on how much stuff pops up from beta2 and RC1, though. So don't order cake or champagne for delivery on those dates just yet!
 
-If you missed the announcement on what's new in Rails 5, [checkout the beta1 story](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/). Oh, and thanks to Sean Griffin for coordinating this release.
+If you missed the announcement on what's new in Rails 5, [checkout the beta1 story](https://rubyonrails.org/2015/12/18/Rails-5-0-beta1). Oh, and thanks to Sean Griffin for coordinating this release.

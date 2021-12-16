@@ -81,6 +81,6 @@ I know that in the RailsEnvy podcast I jabbed a few ribs about the amount of tim
 
 I'm sure I've left out several important and/or interesting commits this week.  So, I apologize if one of those was yours.  I, and the rest of the community, certainly appreciate the effort you all put in this weekend and Rails is certainly better for it.  So, thank you, thank you, thank you to all of you BugMashers out there.  And, if you missed out on getting your commit in this round, we're certainly ready to welcome you into the next.
 
-If you prefer to have a shorter audio summary of this content, you should check out a new podcast just launched by Envy Labs, called [Ruby5](http://ruby5.codeschool.com/); a 5 minute, twice-weekly podcast covering Ruby and Ruby on Rails news.
+If you prefer to have a shorter audio summary of this content, you should check out a new podcast just launched by Envy Labs, called [Ruby5](http://ruby5.codeschool.com); a 5 minute, twice-weekly podcast covering Ruby and Ruby on Rails news.
 
 <small>Photo: <a href="http://www.flickr.com/photos/3336/157412508/">Brooklyn Bridge Virtual Tour</a> by Diego_3336</small>

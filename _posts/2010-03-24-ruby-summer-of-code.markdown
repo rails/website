@@ -6,7 +6,7 @@ author: Jeremy Kemper
 published: true
 date: 2010-03-24 09:28:00.000000000 +00:00
 ---
-<p>Rails participated in Google&#8217;s summer of code program for the <a href="http://weblog.rubyonrails.org/2009/3/19/get-paid-to-work-on-rails">first time</a> last year. We got <a href="http://weblog.rubyonrails.org/2009/4/22/2009-rails-google-summer-of-code-projects">four great projects</a> and three long-term contributors from the effort, including Josh Peek and José Valim, who&#8217;ve both joined Rails core, and Emilio Tagua, who revitalized Arel and integrated it with Active Record.</p>
+<p>Rails participated in Google&#8217;s summer of code program for the <a href="https://rubyonrails.org/2009/3/19/get-paid-to-work-on-rails">first time</a> last year. We got <a href="https://rubyonrails.org/2009/4/22/2009-rails-google-summer-of-code-projects">four great projects</a> and three long-term contributors from the effort, including Josh Peek and José Valim, who&#8217;ve both joined Rails core, and Emilio Tagua, who revitalized Arel and integrated it with Active Record.</p>
 <p>We applied again this year but didn&#8217;t make the cut, so we moped for a day then thought, why not make this happen ourselves. So here we are kicking off the <strong>first Ruby summer of code</strong> together with <a href="http://www.engineyard.com/">Engine Yard</a> and <a href="http://rubycentral.org/">Ruby Central</a>.</p>
 <p>Head over to <a href="http://rubysoc.org/">rubysoc.org</a> to get started and start following <a href="http://twitter.com/rubysoc">@rubysoc</a> for news.</p>
 <p>We&#8217;re following Google&#8217;s example closely:</p>

@@ -9,7 +9,7 @@ date: 2018-10-03
 
 [Action Text](https://github.com/rails/actiontext) is a brand new framework coming to Rails 6 that's going to make creating, editing, and displaying rich text content in your applications super easy. It's an integration between [the Trix editor](https://trix-editor.org), Active Storage-backed file and image processing, and a text-processing flow that ties it all together. With Action Text, you really shouldn't ever have to impoverish your users with a vanilla textarea ever again!
 
-Rails 6 is still a long ways off – we're hoping to start the beta process in early 2019 – but Action Text is already in pretty decent shape. Yes, this is an alpha preview, and we haven't even merged it into [rails/rails](http://github.com/rails/rails/) yet, but it's a release that's been extracted from the code we've been using to power rich text editing in [Basecamp 3](https://basecamp.com) for several years now.
+Rails 6 is still a long ways off – we're hoping to start the beta process in early 2019 – but Action Text is already in pretty decent shape. Yes, this is an alpha preview, and we haven't even merged it into [rails/rails](http://github.com/rails/rails) yet, but it's a release that's been extracted from the code we've been using to power rich text editing in [Basecamp 3](https://basecamp.com) for several years now.
 
 The Trix editor itself just turned 1.0, and is the product of endless craftwork by Sam Stephenson and Javan Makhmali. Both of whom also worked on Action Text to extract our Basecamp wrapping into this reusable package.
 

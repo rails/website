@@ -87,7 +87,7 @@ That's it for today's tour, but the true journey has only just begun.
   
 Starting today, choose any file in the [Rails codebase](https://github.com/rails/rails) and read it.  
   
-Pick an [open issue](https://github.com/rails/rails/issues/) on the master branch, and try to reproduce the bug using the [Rails bug report templates](https://github.com/rails/rails/tree/master/guides/bug_report_templates).
+Pick an [open issue](https://github.com/rails/rails/issues) on the master branch, and try to reproduce the bug using the [Rails bug report templates](https://github.com/rails/rails/tree/master/guides/bug_report_templates).
   
 Go through the [Contributing to Ruby on Rails Guide](http://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html). Set up your Rails test environment.
   

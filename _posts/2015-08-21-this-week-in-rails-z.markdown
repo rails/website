@@ -13,7 +13,7 @@ Just kidding. This is [Godfrey](https://twitter.com/chancancode) here. It's been
 
 ## ✨ Featured ✨
 
-### [❤️ Code of Conduct](http://rubyonrails.org/conduct/)
+### [❤️ Code of Conduct](https://rubyonrails.org/conduct)
 
 The Rails team is committed to fostering a welcoming community for everyone. With [the help of our community](https://github.com/rails/rails/pull/21292), we have added an official Code of Conduct for the project this week.
 

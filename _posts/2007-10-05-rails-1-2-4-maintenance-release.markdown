@@ -20,4 +20,4 @@ date: 2007-10-05 04:38:00.000000000 +01:00
 	<li>Potential Security and performance problems with XmlSimple have been fixed by disabling certain dangerous options by default.</li>
 </ul>
 <p>Upgrade with the standard gem install rails command. Rails 1.2.4 serves as a drop-in replacement for 1.2.3.</p>
-<p><strong>Update:</strong> please see the latest <a href="http://weblog.rubyonrails.org/2007/10/12/rails-1-2-5-maintenance-release">1.2.5 stable release</a></p>
+<p><strong>Update:</strong> please see the latest <a href="https://rubyonrails.org/2007/10/12/rails-1-2-5-maintenance-release">1.2.5 stable release</a></p>

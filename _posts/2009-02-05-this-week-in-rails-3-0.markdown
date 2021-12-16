@@ -9,7 +9,7 @@ date: 2009-02-05 11:38:00.000000000 +00:00
 ---
 <p>Now that Rails 2.3 has hit the release candidate phase, some of the development effort is turning to Rails 3.0. With that activity heating up, it&#8217;s time to start keeping you all informed as to happenings on the 3.0 version of the Rails source. I&#8217;ll still be posting separate &#8220;This Week in Edge Rails&#8221; information focused on Rails 2.3, so you can keep straight which changes are ready now and which still lie in the relatively distant future.</p>
 <h2>The Vision</h2>
-<p>The Rails 3 vision is based on the <a href="http://weblog.rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">announcement</a> that was made in December: we&#8217;re bringing in the key ideas from Merb to Rails, including:</p>
+<p>The Rails 3 vision is based on the <a href="https://rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">announcement</a> that was made in December: we&#8217;re bringing in the key ideas from Merb to Rails, including:</p>
 <ul>
 	<li>A more modular Rails core, so you can run applications with less than the full Rails stack</li>
 	<li>Performance optimizations</li>

@@ -9,7 +9,7 @@ date: 2019-03-15
 
 Hello. This is [Wojtek](https://twitter.com/morgoth85) here bringing you the exciting updates from Rails.
 
-### [Security fix releases of Rails](https://weblog.rubyonrails.org/2019/3/13/Rails-4-2-5-1-5-1-6-2-have-been-released/)
+### [Security fix releases of Rails](https://rubyonrails.org/2019/3/13/Rails-4-2-5-1-5-1-6-2-have-been-released)
 
 Rails 4.2.11.1, 5.0.7.2, 5.1.6.2, 5.2.2.1, and 6.0.0.beta3 have been released containing important security fixes. Note that with 6.0 release only Rails 6.x.y and Rails 5.2.x are guaranteed to receive both major and minor security fixes by Rails core.
 

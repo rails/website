@@ -9,18 +9,18 @@ date: 2020-05-08
 
 This is [Greg](https://twitter.com/gregmolnar) and [Wojtek](https://twitter.com/morgoth85) bringing you the latest news about Rails in these crazy times.
 
-### [A May of WTFs](https://weblog.rubyonrails.org/2020/5/7/A-May-of-WTFs/)
+### [A May of WTFs](https://rubyonrails.org/2020/5/7/A-May-of-WTFs)
 
 Have you ever lost time on some strange Rails issue? Would you like to make it go away, so the others won't do the same?
 It is an initiative running this month to improve Rails, especially for the first time users.
 Check the details and help making Rails better!
 
-### [RailsConf - Couch Edition](https://www.railsconf.com/)
+### [RailsConf - Couch Edition](https://www.railsconf.com)
 
 This year RailsConf took place online. You can already watch all the videos. Take a look at the official announcement or
 jump straight to the playlist [here](https://www.youtube.com/playlist?list=PLE7tQUdRKcyZ-TzxlxdLvh6tDUfZHqm76).
 
-### [Rails 6.0.3 has been released](https://weblog.rubyonrails.org/2020/5/6/Rails-6-0-3-has-been-released/)
+### [Rails 6.0.3 has been released](https://rubyonrails.org/2020/5/6/Rails-6-0-3-has-been-released)
 
 This version fixes warnings when used with Ruby 2.7 altogether with many other framework bug fixes.
 

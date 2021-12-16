@@ -42,11 +42,11 @@ Hope you all had the most gorgeous holidays ever doing things you love the most.
 
 ## Featured
 
-### [Ruby 2.2.0 Released](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
+### [Ruby 2.2.0 Released](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released)
 
 YAY! December 25th saw another important Ruby release. See the blog post for all the goodies in this new version and keep in mind Rails 5 will target Ruby 2.2+ exclusively. As of this week, Rails' master branch will only work on Ruby 2.2 or above.
 
-### [Rails 4.0.13 and 4.1.9 have been released!](http://weblog.rubyonrails.org/2015/1/6/Rails-4-1-9-and-4-0-13-have-been-released/)
+### [Rails 4.0.13 and 4.1.9 have been released!](https://rubyonrails.org/2015/1/6/Rails-4-1-9-and-4-0-13-have-been-released)
 
 4.0.13 is last planned release for the 4.0 release series, so you should migrate off it as soon as possible. From here on, the 4.1 (you can thank [Rafael](https://github.com/rafaelfranca)) and 4.2 release series will continue to receive regular bug fixes. Consult the [maintenance policy](http://guides.rubyonrails.org/maintenance_policy.html) for details.
 
@@ -97,7 +97,7 @@ P.S. If you enjoyed this newsletter, why not [share it with your friends](http:/
 [greg]: https://twitter.com/gregmolnar
 [washington]: https://twitter.com/huoxito
 [godfrey-email]: mailto:godfrey@brewhouse.io
-[blog]: http://weblog.rubyonrails.org
+[blog]: https://rubyonrails.org
 [brewhouse]: http://brewhouse.io
 [goodbits]: http://goodbits.io
 [contributors]: http://contributors.rubyonrails.org

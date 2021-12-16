@@ -50,7 +50,7 @@ there are objects already instantiated. Better be explicit.
 
 Thanks to [Puneet Agarwal](https://github.com/puneet24), who wrote the initial
 patch for this feature as part of [this year's
-GSoC](http://weblog.rubyonrails.org/2015/5/2/welcome-to-gsoc-15/).
+GSoC](https://rubyonrails.org/2015/5/2/welcome-to-gsoc-15).
 
 Also kudos to the [listen authors and
 maintainers](https://github.com/guard/listen/graphs/contributors), thanks to

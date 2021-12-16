@@ -11,7 +11,7 @@ Hey everyone - [Tim](https://twitter.com/imtayadeway) here with another monster 
 
 ## Featured
 
-### [Riding Rails: Snappier Development Mode in Rails 5](http://weblog.rubyonrails.org/2015/11/11/snappier-development-mode-in-rails-5/)
+### [Riding Rails: Snappier Development Mode in Rails 5](https://rubyonrails.org/2015/11/11/snappier-development-mode-in-rails-5)
 
 One of the nicest things about development mode in Rails has to be the sheer convenience of running on your latest revision on each request. This of course comes at a performance cost but is about to change: instead the filesystem will notify Rails asynchronously of any changes.
 

@@ -15,7 +15,7 @@ Hello Everyone! This is [Roque](https://twitter.com/repinel) bringing the latest
 
 We had 36 awesome contributors to the Rails codebase this week. Check out the active [issues](https://github.com/rails/rails/issues) over on GitHub if you'd like to see your name here.
 
-### [Rails 4.2.4 RC1 and 4.1.13 RC1 have been released!](http://weblog.rubyonrails.org/2015/8/14/Rails-4-2-4-rc1-and-4-1-13-rc1-have-been-released/)
+### [Rails 4.2.4 RC1 and 4.1.13 RC1 have been released!](https://rubyonrails.org/2015/8/14/Rails-4-2-4-rc1-and-4-1-13-rc1-have-been-released)
 
 There's new release candidates, please try them and report any regressions you find, so that the Rails team can fix them before the final release.
 

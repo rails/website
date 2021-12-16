@@ -9,9 +9,9 @@ date: 2018-04-15
 
 And now a Rails 🌩 News Flash 🌩! (Hint: we've got some big news this week, if you hadn't heard). We take you now, live, to our reporter on the scene, [Tim](https://twitter.com/imtayadeway), for all the latest and greatest this week.
 
-### [Rails 5.2.0 is out!](http://weblog.rubyonrails.org/2018/4/9/Rails-5-2-0-final/)
+### [Rails 5.2.0 is out!](https://rubyonrails.org/2018/4/9/Rails-5-2-0-final)
 
-5.2.0 is officially among us, a little bit ahead of [RailsConf](http://railsconf.com/) this year. If you can't wait until then to find out everything that this new release brings, do go read the original [blog post](http://weblog.rubyonrails.org/2018/4/9/Rails-5-2-0-final/) that accompanied the release for all the details!
+5.2.0 is officially among us, a little bit ahead of [RailsConf](http://railsconf.com) this year. If you can't wait until then to find out everything that this new release brings, do go read the original [blog post](https://rubyonrails.org/2018/4/9/Rails-5-2-0-final) that accompanied the release for all the details!
 
 
 

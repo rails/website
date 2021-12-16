@@ -22,10 +22,10 @@ can be found in the usual locations, and you can find a list of changes on GitHu
 * [Changes in 3.2.22.2](https://github.com/rails/rails/compare/v3.2.22.1...v3.2.22.2)
 
 We've done our best to minimize any impact to your applications, but if you run in to any issues, please
-[file a ticket](https://github.com/rails/rails/issues/) and we'll do our best to help!
+[file a ticket](https://github.com/rails/rails/issues) and we'll do our best to help!
 
-Again, as always, if you run in to any bugs, please file them on the Rails issue tracker which is located [here](https://github.com/rails/rails/issues/).
-If you run in to security issues, please follow the reporting process which can be found [here](http://rubyonrails.org/security/).
+Again, as always, if you run in to any bugs, please file them on the Rails issue tracker which is located [here](https://github.com/rails/rails/issues).
+If you run in to security issues, please follow the reporting process which can be found [here](https://rubyonrails.org/security).
 
 Here are checksums for the released gems:
 

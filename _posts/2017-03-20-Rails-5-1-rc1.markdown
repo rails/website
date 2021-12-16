@@ -14,7 +14,7 @@ Notably, [Stephen Touset](https://github.com/stouset) helped us up the encryptio
 to upgrade your app if you're already dabbling with the feature. Thanks Stephen!
 
 While we are working to close the last issues, you can check [the Rails 5.1 releases notes](http://edgeguides.rubyonrails.org/5_1_release_notes.html),
-or the awesome summary of new features present in [the 5.1.0.beta1 blog post](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/).
+or the awesome summary of new features present in [the 5.1.0.beta1 blog post](https://rubyonrails.org/2017/2/23/Rails-5-1-beta1).
 
 To view the changes for each gem, please read the changelogs on GitHub:
 

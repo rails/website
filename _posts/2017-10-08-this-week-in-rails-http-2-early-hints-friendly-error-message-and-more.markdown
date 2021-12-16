@@ -15,7 +15,7 @@ Hi there! It's [Prathamesh](https://twitter.com/_cha1tanya) from Pune, enjoying 
 
 ### [HTTP2 early hints support for Rails](https://github.com/rails/rails/pull/30744)
 
-Early Hints is a new HTTP status code that allows your application to send links to assets that you would like to load early. The [spec](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints-04) is still in draft but Rails is ready to support it along with [Puma](https://github.com/puma/puma/pull/1403). Check [this blog post](http://eileencodes.com/posts/http2-early-hints/) to know more about this feature.
+Early Hints is a new HTTP status code that allows your application to send links to assets that you would like to load early. The [spec](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints-04) is still in draft but Rails is ready to support it along with [Puma](https://github.com/puma/puma/pull/1403). Check [this blog post](http://eileencodes.com/posts/http2-early-hints) to know more about this feature.
 
 ### [Friendly error message when unsubscribing from non-existent Action Cable subscription](https://github.com/rails/rails/pull/30702)
 

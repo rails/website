@@ -8,7 +8,7 @@ date: 2008-12-23 19:47:00.000000000 +00:00
 ---
 <p>It&#8217;s christmas, baby, and do we have a present for you. We&#8217;re ending the bickering between Merb and Rails with a this bombshell: Merb is being merged into Rails 3!</p>
 <p>We all realized that working together for a common good would be much more productive than duplicating things on each side of the fence. Merb and Rails already share so much in terms of design and sensibility that joining forces seemed like the obvious way to go. All we needed was to sit down for a chat and hash it out, so we did just that.</p>
-<p>What this will mean in practice is that the Merb team is putting their efforts into bringing all of the key Merb ideas into Rails 3. Yehuda Katz will outright join <a href="http://rubyonrails.org/core">the Rails core team</a>, Matt Aimonetti will work on a new evangelism team, and Carl Lerche and Daniel Neighman (hassox) will be co-starring the effort to bring all this over. We&#8217;ve immortalized the merge with plaque page at <a href="http://rubyonrails.org/merb">rubyonrails.org/merb</a>.</p>
+<p>What this will mean in practice is that the Merb team is putting their efforts into bringing all of the key Merb ideas into Rails 3. Yehuda Katz will outright join <a href="https://rubyonrails.org/core">the Rails core team</a>, Matt Aimonetti will work on a new evangelism team, and Carl Lerche and Daniel Neighman (hassox) will be co-starring the effort to bring all this over. We&#8217;ve immortalized the merge with plaque page at <a href="https://rubyonrails.org/merb">rubyonrails.org/merb</a>.</p>
 <p><b>What&#8217;s being brought over?</b><br/>
 Some of the key ideas that they&#8217;ll be taking with them from Merb into Rails 3 are:</p>
 <ul>

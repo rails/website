@@ -12,7 +12,7 @@ Hi everyone!  I've released rails version 2.3.12.
 
 There are security issues in the `rails_xss` plugin, and we've fixed them with this release.  Please make sure to upgrade your `rails_xss` plugin.
 
-Please [see here](http://weblog.rubyonrails.org/2011/6/8/potential-xss-vulnerability-in-ruby-on-rails-applications) for more details about the security issue.
+Please [see here](https://rubyonrails.org/2011/6/8/potential-xss-vulnerability-in-ruby-on-rails-applications) for more details about the security issue.
 
 ## CHANGES
 

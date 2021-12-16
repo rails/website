@@ -17,7 +17,7 @@ In fact, to really underline the magnitude of this achievement please play [this
 
 ## Featured
 
-### [Rails 5 is here!](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/)
+### [Rails 5 is here!](https://rubyonrails.org/2016/6/30/Rails-5-0-final)
 
 After a period of betas Rails 5.0 has now been released. The headline features are Action Cable and a mode primed for API-only apps.  
   

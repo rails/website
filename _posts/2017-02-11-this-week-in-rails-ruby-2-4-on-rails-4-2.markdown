@@ -15,7 +15,7 @@ Hello! This is [Tim](https://twitter.com/imtayadeway) , bringing you another edi
 
 This week saw contributions from 26 contributors, including 4 for the first time! What a fantastic bunch!
 
-### [Rails 4.2.8.rc1 has been released!](http://weblog.rubyonrails.org/2017/2/10/Rails-4-2-8-rc1-has-been-released/)
+### [Rails 4.2.8.rc1 has been released!](https://rubyonrails.org/2017/2/10/Rails-4-2-8-rc1-has-been-released)
 
 If you're using Rails 4.2, you may want to get a head start by trying out the release candidate for the latest patch release. It's the first Rails 4 release to support Ruby 2.4, so see if you can give it a try to help us iron out any kinks!
 

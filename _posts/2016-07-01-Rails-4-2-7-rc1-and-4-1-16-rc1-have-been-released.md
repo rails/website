@@ -11,7 +11,7 @@ Hi everyone,
 
 I am happy to announce that Rails 4.2.7.rc1 and 4.1.16.rc1 have been released.
 
-As [Rails 5 was released](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/), this is probably
+As [Rails 5 was released](https://rubyonrails.org/2016/6/30/Rails-5-0-final), this is probably
 going to be the last release of Rails 4.1. Please take some time to upgrade your application to
 Rails 4.2 or Rails 5.
 

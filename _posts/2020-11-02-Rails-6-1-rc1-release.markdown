@@ -11,7 +11,7 @@ at work these past few months implementing improvements to multiple databases, a
 associations in jobs instead of in-memory, turning errors into objects, and so much more.
 
 It's amazing how Rails has grown over the years and while we have some improvements to make to the
-[onboarding process](https://weblog.rubyonrails.org/2020/5/7/A-May-of-WTFs/), Rails has never been better. The features
+[onboarding process](https://rubyonrails.org/2020/5/7/A-May-of-WTFs), Rails has never been better. The features
 in this release focus on adding the functionality you need to keep your application up and running for years to come.
 
 Let's look at some of the new functionality:

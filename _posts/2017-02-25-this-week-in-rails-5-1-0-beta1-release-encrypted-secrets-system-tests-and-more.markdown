@@ -13,12 +13,12 @@ Hi everyone,
 
 ## Featured
 
-### [New Rails releases](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/)
+### [New Rails releases](https://rubyonrails.org/2017/2/23/Rails-5-1-beta1)
 
-The first beta release for [5.1.0](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/) is out with some love towards JavaScript, System Tests, Encrypted Secrets and more!   
-There is also a new stable release for [4.2.8](http://weblog.rubyonrails.org/2017/2/21/Rails-4-2-8-has-been-released/) and a release candidate for [5.0.2](http://weblog.rubyonrails.org/2017/2/25/Rails-5-0-2-rc1-has-been-released/)
+The first beta release for [5.1.0](https://rubyonrails.org/2017/2/23/Rails-5-1-beta1) is out with some love towards JavaScript, System Tests, Encrypted Secrets and more!   
+There is also a new stable release for [4.2.8](https://rubyonrails.org/2017/2/21/Rails-4-2-8-has-been-released) and a release candidate for [5.0.2](https://rubyonrails.org/2017/2/25/Rails-5-0-2-rc1-has-been-released)
 
-### [Eileen joins Rails core](http://weblog.rubyonrails.org/2017/2/22/Eileen-joins-Rails-core/)
+### [Eileen joins Rails core](https://rubyonrails.org/2017/2/22/Eileen-joins-Rails-core)
 
 We’re proud to welcome Eileen M. Uchitelle to Rails core!
 

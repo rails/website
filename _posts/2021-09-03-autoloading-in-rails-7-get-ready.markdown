@@ -11,7 +11,7 @@ The forthcoming Rails 7 represents a milestone for autoloading.
 
 There are two important changes coming:
 
-1. [Zeitwerk](https://github.com/fxn/zeitwerk) has been the default autoloader for [more than two years](https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/). Rails 6.0 and Rails 6.1 supported both `zeitwerk` and `classic` modes to help projects transition. This period ends with Rails 7: `classic` mode won't be available anymore.
+1. [Zeitwerk](https://github.com/fxn/zeitwerk) has been the default autoloader for [more than two years](https://rubyonrails.org/2019/8/15/Rails-6-0-final-release). Rails 6.0 and Rails 6.1 supported both `zeitwerk` and `classic` modes to help projects transition. This period ends with Rails 7: `classic` mode won't be available anymore.
 
 2. Initializers can autoload reloadable constants if wrapped in `to_prepare` blocks, but they no longer can otherwise.
 

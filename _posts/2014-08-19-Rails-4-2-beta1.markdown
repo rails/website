@@ -71,7 +71,7 @@ Already, [476 people have contributed][contributors] to this new release of Rail
 [seuros]: https://github.com/seuros
 [tenderlove]: https://github.com/tenderlove
 [adequate-record]: http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html
-[gsoc]: http://weblog.rubyonrails.org/2014/5/23/meet-our-google-summer-of-code-students-and-mentors/
+[gsoc]: https://rubyonrails.org/2014/5/23/meet-our-google-summer-of-code-students-and-mentors/
 [web-console]: https://github.com/rails/web-console
 [gsamokovarov]: https://github.com/gsamokovarov
 [ryandao]: https://github.com/ryandao

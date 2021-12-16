@@ -22,7 +22,7 @@ The past 2 weeks 38 awesome people contributed to Rails. Want to be part of the 
 
 The Rails javascript helpers has been rewritten in a new gem called _rails-ujs_ and they use vanilla javascript, so jQuery is not a dependency of Rails anymore.
 
-### [Rails 5.0.1.rc1 has been released!](http://weblog.rubyonrails.org/2016/11/30/Rails-5-0-1-rc1-has-been-released/)
+### [Rails 5.0.1.rc1 has been released!](https://rubyonrails.org/2016/11/30/Rails-5-0-1-rc1-has-been-released)
 
 The first release candidate for 5.0.1 has been released and if no issues found, the final will be release on the 6th of December.
 

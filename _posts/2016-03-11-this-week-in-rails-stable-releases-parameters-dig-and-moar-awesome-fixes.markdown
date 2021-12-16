@@ -17,7 +17,7 @@ This is [Washington](https://twitter.com/huoxito) with the latest news from [Rai
 
 Again we start pointing to the 40 people who took some time to improve the framework this week!
 
-### [Rails 4.2.6 and 4.1.15 have been released](http://weblog.rubyonrails.org/2016/3/11/Rails-4-2-6-and-4-1-15-have-been-released/)
+### [Rails 4.2.6 and 4.1.15 have been released](https://rubyonrails.org/2016/3/11/Rails-4-2-6-and-4-1-15-have-been-released)
 
 After a round of release candidates here goes the latest stable releases. Hopefully a quite easy upgrade if you've been following the latest security patches.
 

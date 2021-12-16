@@ -10,7 +10,7 @@ date: 2011-06-08 15:55:00.000000000 +01:00
 
 This release contains fixes for possible XSS problems in your rails application.  It is unlikely that your application is vulnerable, but you should take precautions by updating your application.
 
-For more information about the XSS issue that was fixed in this release, please [read this blog post](http://weblog.rubyonrails.org/2011/6/8/potential-xss-vulnerability-in-ruby-on-rails-applications).
+For more information about the XSS issue that was fixed in this release, please [read this blog post](https://rubyonrails.org/2011/6/8/potential-xss-vulnerability-in-ruby-on-rails-applications).
 
 ## WELCOME!
 

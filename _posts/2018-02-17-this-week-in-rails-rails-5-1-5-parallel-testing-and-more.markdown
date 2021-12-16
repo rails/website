@@ -9,7 +9,7 @@ date: 2018-02-17
 
 Hello everyone! This is [Roque](https://twitter.com/repinel) bringing you the latest news from the Rails world.
 
-### [Rails 5.1.5 released 🎉](http://weblog.rubyonrails.org/2018/2/14/Rails-5-1-5-has-been-released/)
+### [Rails 5.1.5 released 🎉](https://rubyonrails.org/2018/2/14/Rails-5-1-5-has-been-released)
 
 Release 5.1.5 is out, but you can still help the community by testing 5.2.0.rc1 to ensure it is solid.
 

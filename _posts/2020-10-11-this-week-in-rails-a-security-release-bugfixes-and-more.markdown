@@ -9,7 +9,7 @@ date: 2020-10-11
 
 Hey, this is [Greg](https://twitter.com/gregmolnar), bringing you the latest news about Ruby on Rails!
 
-### [Rails 6.0.3.4 has been released!](https://weblog.rubyonrails.org/2020/10/7/Rails-6-0-3-4-has-been-released/)
+### [Rails 6.0.3.4 has been released!](https://rubyonrails.org/2020/10/7/Rails-6-0-3-4-has-been-released)
 
 Rails 6.0.3.4 has been released! It is a security release and addresses a possible XSS attack vector in Actionable Exceptions.  
 You can read more about the issue [here](https://groups.google.com/g/rubyonrails-security/c/yQzUVfv42jk) and check the commit with the fix [here](https://github.com/rails/rails/commit/ddcca86f0ed5064140924c88cc5ad556d5ce32d4).

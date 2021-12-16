@@ -66,7 +66,7 @@ Already, [789 people have contributed][contributors] to this new release of Rail
 
 Your dynamic release manager duo for Rails 5.0 is [Eileen M. Uchitelle][eileen] and [Sean Griffin][sean]. And the undisputed PR merge champ is [Rafael França][rafaelfranca]!
 
-[rails-1-0]: http://weblog.rubyonrails.org/2005/12/13/rails-1-0-party-like-its-one-oh-oh/
+[rails-1-0]: https://rubyonrails.org/2005/12/13/rails-1-0-party-like-its-one-oh-oh/
 [basecamp]: https://basecamp.com
 [jbuilder]: https://github.com/rails/jbuilder
 [ams]: https://github.com/rails-api/active_model_serializers

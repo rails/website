@@ -8,7 +8,7 @@ published: true
 date: 2009-03-20 14:52:00.000000000 +00:00
 ---
 <h3>March 14, 2009 &#8211; March 20, 2009</h3>
-<p>The big news in Rails this week, of course, was the <a href="http://weblog.rubyonrails.org/2009/3/16/rails-2-3-templates-engines-rack-metal-much-more">release of Rails 2.3</a>. But that certainly doesn&#8217;t mean the Rails edge story is over! To the contrary, we&#8217;re embarking on one of the more ambitious and exciting Rails projects of all: the creation of Rails 3.0. Read on to see where things stand.</p>
+<p>The big news in Rails this week, of course, was the <a href="https://rubyonrails.org/2009/3/16/rails-2-3-templates-engines-rack-metal-much-more">release of Rails 2.3</a>. But that certainly doesn&#8217;t mean the Rails edge story is over! To the contrary, we&#8217;re embarking on one of the more ambitious and exciting Rails projects of all: the creation of Rails 3.0. Read on to see where things stand.</p>
 <p><b>Final 2.3 Changes</b><br /></p>
 <p>A few things went in to Rails 2.3 in the days leading up to release. These include:</p>
 <ul>

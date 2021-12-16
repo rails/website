@@ -13,7 +13,7 @@ Hey there, esteemed readers of Rails' public repo tea leaves. It's [Kasper](http
 
 Here goes a hey-o to the 16 contributors this week! You can make the list no doubt, try finding an&nbsp;[open issue](https://github.com/rails/rails/issues).
 
-### [Rails 5.0.7 and 5.1.6 are out](http://weblog.rubyonrails.org/2018/3/29/Rails-5-0-7-and-5-1-6-have-been-released/)
+### [Rails 5.0.7 and 5.1.6 are out](https://rubyonrails.org/2018/3/29/Rails-5-0-7-and-5-1-6-have-been-released)
 
 New bug fix releases are out, so you can upgrade your apps today.
 

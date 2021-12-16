@@ -46,7 +46,7 @@ Bye for now! 👋🏻
 
 [Daniel]: https://twitter.com/dodecadaniel
 [RubyConf]: https://www.rubyconf.org/
-[Rails 6.0.1 released]: https://weblog.rubyonrails.org/2019/11/5/Rails-6-0-1-released/
+[Rails 6.0.1 released]: https://rubyonrails.org/2019/11/5/Rails-6-0-1-released/
 [Introduce role manager to manage connections]: https://github.com/rails/rails/pull/37622
 [Disable logging for jobs with sensitive arguments]: https://github.com/rails/rails/pull/37660
 [Use both implicit order column and primary key for ordering]: https://github.com/rails/rails/pull/37626

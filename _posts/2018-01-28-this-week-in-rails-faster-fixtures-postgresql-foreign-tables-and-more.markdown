@@ -21,7 +21,7 @@ This change constructs a single query for inserting fixtures from different tabl
 
 This change allows a job that is discarded to be handled by a custom handler. The **_retry\_on_** already provides the ability for a custom handler and now same has been added to **_discard\_on_** handler.
 
-### [Support for PostgreSQL foreign tables](https://github.com/rails/rails/pull/31549/)
+### [Support for PostgreSQL foreign tables](https://github.com/rails/rails/pull/31549)
 
 With this change, it will be possible to work with models backed by foreign tables present in external PostgreSQL servers.
 

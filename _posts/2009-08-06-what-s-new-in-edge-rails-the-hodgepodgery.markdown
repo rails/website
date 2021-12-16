@@ -43,7 +43,7 @@ Geoff Buesing provided a [useful fix](http://github.com/rails/rails/commit/6f97a
 
 ActiveRecord now has [easy access](http://github.com/rails/rails/commit/aad5a30bf25d8a3167afd685fc91c99f4f09cc57) to ActiveModel's `StateMachine` implementation.  I don't know about you, but somehow I always seem to find a way to bring state machines into my Rails applications, and now building in - even fairly complex - state machines just got a whole lot easier.
 
-For an example of `ActiveModel::StateMachine` and to get an idea of how you might use it, check out my more detailed [blog post over at Envy Labs](http://blog.envylabs.com/2009/08/the-rails-state-machine/).
+For an example of `ActiveModel::StateMachine` and to get an idea of how you might use it, check out my more detailed [blog post over at Envy Labs](http://blog.envylabs.com/2009/08/the-rails-state-machine).
 
 
 #### Front. Back. Side to side.

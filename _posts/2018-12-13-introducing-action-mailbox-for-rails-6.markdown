@@ -15,7 +15,7 @@ The framework was, like Action Text and Active Storage, extracted from [Basecamp
 
 Yes, Rails already had an anemic way of [receiving emails using Action Mailer](https://guides.rubyonrails.org/action_mailer_basics.html#receiving-emails), but it was poorly flushed out, lacked cohesion with the task of sending emails, and offered no help on integrating with popular inbound email processing platforms. Action Mailbox supersedes the receiving part of Action Mailer, which will be deprecated in due course.
 
-Rails 6 is getting closer, but it's still a ways off – we're hoping to start the beta process in early 2019. Action Mailbox is already in pretty decent shape, though, and you can even use it with Rails 5.2 applications, if you fancy dancing on the wild side. Just be prepared for things changing as we work our way through community review and towards merging it into [rails/rails](http://github.com/rails/rails/).
+Rails 6 is getting closer, but it's still a ways off – we're hoping to start the beta process in early 2019. Action Mailbox is already in pretty decent shape, though, and you can even use it with Rails 5.2 applications, if you fancy dancing on the wild side. Just be prepared for things changing as we work our way through community review and towards merging it into [rails/rails](http://github.com/rails/rails).
 
 The Action Mailbox framework is based off ideas hatched by Jeremy Daer, and this particular implementation was done as a collaboration between yours truly and George Claghorn.
 

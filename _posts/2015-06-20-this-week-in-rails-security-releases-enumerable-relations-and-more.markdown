@@ -19,7 +19,7 @@ I'm just glad we all made to this Friday. This is [Washington](https://twitter.c
 
 Keeping our tradition let's start with the 32 splendid contributors that made their commits to rails/rails this week. Keep in mind a ton other people also helped by creating issues and helping the core team with PR reviews.
 
-### [Rails security releases 3.2.22, 4.1.11 and 4.2.2](http://weblog.rubyonrails.org/2015/6/16/Rails-3-2-22-4-1-11-and-4-2-2-have-been-released-and-more/)
+### [Rails security releases 3.2.22, 4.1.11 and 4.2.2](https://rubyonrails.org/2015/6/16/Rails-3-2-22-4-1-11-and-4-2-2-have-been-released-and-more)
 
 Time to upgrade your applications. Five announcements landed on [Rails security mailing list](https://groups.google.com/forum/#!forum/rubyonrails-security) this week. Consider joining that list as well if you haven't yet.
 

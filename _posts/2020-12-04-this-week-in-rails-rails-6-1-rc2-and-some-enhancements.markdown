@@ -9,7 +9,7 @@ date: 2020-12-04
 
 Hi, [Wojtek](https://twitter.com/morgoth85) from this side with a small set of changes since the last week.
 
-### [Rails 6.1 RC2 released](https://weblog.rubyonrails.org/2020/12/1/Rails-6-1-rc2-release/)
+### [Rails 6.1 RC2 released](https://rubyonrails.org/2020/12/1/Rails-6-1-rc2-release)
 
 The second release candidate for Rails 6.1 has been released and brings a more robust experience for those already trying this version.
 

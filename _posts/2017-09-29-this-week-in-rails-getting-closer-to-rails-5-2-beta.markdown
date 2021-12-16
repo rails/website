@@ -9,7 +9,7 @@ date: 2017-09-29
 
 Hi there! It's [Claudio](https://www.meetup.com/laruby) from sunny Los Angeles. Step by step we are getting closer to the first beta of Rails 5.2. Check out the changes that occurred in Ra-Ra-Rails-land last week.
 
-### [Rails 4.2.10 released](http://weblog.rubyonrails.org/2017/9/27/Rails-4-2-10-released/)
+### [Rails 4.2.10 released](https://rubyonrails.org/2017/9/27/Rails-4-2-10-released)
 
 Unless more regressions are found this will likely be the last release for Rails 4.2.
 

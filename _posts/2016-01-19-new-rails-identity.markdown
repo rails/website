@@ -21,5 +21,5 @@ I was going to record a new video for the homepage, but since we're just on the 
 Hope you all enjoy the new look. Now let's ship Rails 5!
 
 [jamied]: https://twitter.com/asianmack
-[doctrine]: http://rubyonrails.org/doctrine
-[rails-5]: http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/
+[doctrine]: https://rubyonrails.org/doctrine
+[rails-5]: https://rubyonrails.org/2015/12/18/Rails-5-0-beta1/

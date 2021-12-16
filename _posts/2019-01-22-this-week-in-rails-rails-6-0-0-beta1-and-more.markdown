@@ -9,7 +9,7 @@ date: 2019-01-22
 
 [Daniel](https://twitter.com/dodecadaniel) here, writing from chilly NYC to bring you the latest Rails news.
 
-### [Rails 6.0.0 beta1](https://weblog.rubyonrails.org/2019/1/18/Rails-6-0-Action-Mailbox-Action-Text-Multiple-DBs-Parallel-Testing/)
+### [Rails 6.0.0 beta1](https://rubyonrails.org/2019/1/18/Rails-6-0-Action-Mailbox-Action-Text-Multiple-DBs-Parallel-Testing)
 
 Many thanks to everyone who helped get this amazing release together. It includes [Action Text](https://github.com/rails/rails/pull/34873) and [Action Mailbox](https://github.com/rails/rails/pull/34786), both recently merged into Rails. Try it out today!
 
@@ -25,7 +25,7 @@ I think we can all appreciate helpful error messages. Many thanks to Eileen for 
 
 The test helpers from the [action-cable-testing](https://github.com/palkan/action-cable-testing) gem are now fully merged into Rails. Testing your cables has never been easier.
 
-### [Endless ranges in where conditions](https://github.com/rails/rails/pull/34906/)
+### [Endless ranges in where conditions](https://github.com/rails/rails/pull/34906)
 
 Ruby 2.6 introduced endless ranges. In Rails 6 we will be able to use them in where conditions: `features.where(awesomeness: 10..)`
 

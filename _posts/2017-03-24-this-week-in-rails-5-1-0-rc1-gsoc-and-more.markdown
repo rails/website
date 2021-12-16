@@ -9,19 +9,19 @@ date: 2017-03-24
 
 Hello everyone! This is [Roque](https://twitter.com/repinel) bringing the latest from the last two weeks.  
   
-The last couple of weeks have been very busy with the releasing of [Rails 5.1.0.rc1](http://weblog.rubyonrails.org/2017/3/20/Rails-5-1-rc1/) and the starting of [Rails 5.2](https://github.com/rails/rails/commit/6c08d480f13d3332c878ca8a120a03fcd78f7ba2) 🎉  
+The last couple of weeks have been very busy with the releasing of [Rails 5.1.0.rc1](https://rubyonrails.org/2017/3/20/Rails-5-1-rc1) and the starting of [Rails 5.2](https://github.com/rails/rails/commit/6c08d480f13d3332c878ca8a120a03fcd78f7ba2) 🎉  
   
 Congratulations to all involved!!
 
 ## Featured
 
-### [Rails 5.1.0.rc1 has been released!](http://weblog.rubyonrails.org/2017/3/20/Rails-5-1-rc1/)
+### [Rails 5.1.0.rc1 has been released!](https://rubyonrails.org/2017/3/20/Rails-5-1-rc1)
 
 Please check it out and help the community by reporting issues before 5.1 is released.  
   
 If you are already using encrypted secrets, make sure to run [this script](https://gist.github.com/kaspth/bc37989c2f39a5642112f28b1d93f343) to upgrade your app.
 
-### [Google Summer of Code 2017](http://weblog.rubyonrails.org/2017/3/22/google-summer-of-code-2017-application-period/)
+### [Google Summer of Code 2017](https://rubyonrails.org/2017/3/22/google-summer-of-code-2017-application-period)
 
 Are you a student, or know someone who would love to contribute to Rails? Our GSoC students application is now open! Check out [our ideas page](https://github.com/railsgsoc/ideas/wiki/2017-Ideas) and join us on the [mailing list](https://groups.google.com/forum/#!forum/rubyonrails-gsoc) for discussion.
 

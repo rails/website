@@ -17,7 +17,7 @@ This is [Prathamesh](https://twitter.com/_cha1tanya) with this week's recap from
 
 This week 40 people contributed to Rails, 7 out of them are new. Do you also want to help? Check out the [issue tracker](https://github.com/rails/rails/issues) and start making Rails better.
 
-By the way, [Xavier](https://github.com/fxn/) and [Kasper](https://github.com/kaspth) added the [permalink feature](https://github.com/fxn/rails-contributors/pull/61) to the link of weekly contributors. So each weekly contributors link is forever to stay!
+By the way, [Xavier](https://github.com/fxn) and [Kasper](https://github.com/kaspth) added the [permalink feature](https://github.com/fxn/rails-contributors/pull/61) to the link of weekly contributors. So each weekly contributors link is forever to stay!
 
 ## New Stuff
 
@@ -57,9 +57,9 @@ Previously if the table name was made singular using `ActiveRecord::Base.pluaral
 
 ## Summer Opportunity
 
-### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/)
+### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org)
 
-Checkout [Rails Girls summer of code](http://railsgirlssummerofcode.org/). You can submit your [open source project](http://railsgirlssummerofcode.org/guide/projects/) to be included. Also you can help [fund](http://railsgirlssummerofcode.org/campaign/) the campaign.
+Checkout [Rails Girls summer of code](http://railsgirlssummerofcode.org). You can submit your [open source project](http://railsgirlssummerofcode.org/guide/projects) to be included. Also you can help [fund](http://railsgirlssummerofcode.org/campaign) the campaign.
 
 ## Wrapping up
 

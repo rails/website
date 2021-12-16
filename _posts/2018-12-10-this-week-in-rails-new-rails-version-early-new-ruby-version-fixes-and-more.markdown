@@ -13,7 +13,7 @@ In the northern hemisphere, daylight is getting scarce, driving [certain](https:
 
 On with the show....
 
-### [Rails 5.2.2 has been released!](https://weblog.rubyonrails.org/2018/12/4/Rails-5-2-2-has-been-released/)
+### [Rails 5.2.2 has been released!](https://rubyonrails.org/2018/12/4/Rails-5-2-2-has-been-released)
 
 This week saw the release of a new patch version of Rails! Too numerous to list here, check out the official blog post for the full changelog.
 

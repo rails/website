@@ -7,7 +7,7 @@ author: fxn
 published: true
 date: 2011-04-21 10:25:00.000000000 +01:00
 ---
-In Rails 3.1 [jQuery](http://jquery.com/) is going to be the default JavaScript library. Also, RJS has been extracted out. This post explains what that means for new applications, and what to look for while upgrading existing applications.
+In Rails 3.1 [jQuery](http://jquery.com) is going to be the default JavaScript library. Also, RJS has been extracted out. This post explains what that means for new applications, and what to look for while upgrading existing applications.
 
 ## New Applications ##
 
@@ -15,9 +15,9 @@ Starting with Rails 3.1
 
     rails new my_app
 
-generates an application with [jQuery](http://jquery.com/).
+generates an application with [jQuery](http://jquery.com).
 
-The `-j` option of the generator lets you choose [Prototype](http://www.prototypejs.org/) and [Scriptaculous](http://script.aculo.us/) instead:
+The `-j` option of the generator lets you choose [Prototype](http://www.prototypejs.org) and [Scriptaculous](http://script.aculo.us) instead:
 
     rails new my_app -j prototype
 
@@ -55,7 +55,7 @@ When you include a module `M` into a class `C`, the class stores a proxy to `M` 
 
 By the time `prototype-rails` is loaded `ActionView::Helpers` has already been included into `ActionView::Base` and `ActionView::TestCase`, so we need to inject them directly where they are needed. Standard usage just works, but please take into account that change in case you reopened or used `ActionView::Helpers` assuming those ancestors.
 
-Before release, `prototype-rails` is going to provide also a way to bring [Prototype](http://www.prototypejs.org/) and [Scriptaculous](http://script.aculo.us/) to any application.
+Before release, `prototype-rails` is going to provide also a way to bring [Prototype](http://www.prototypejs.org) and [Scriptaculous](http://script.aculo.us) to any application.
 
 ## One Last Detail: The `xhr` Test Helper ##
 

@@ -9,7 +9,7 @@ date: 2016-09-10
 
 Howdy everyone!
 
-This is [Prathamesh](https://twitter.com/_cha1tanya/) bringing you the changes from this week in Rails!
+This is [Prathamesh](https://twitter.com/_cha1tanya) bringing you the changes from this week in Rails!
 
 ## Featured
 
@@ -19,7 +19,7 @@ This week we had 22 awesome people making Rails better. We also had 3 people con
 
 ### [One more step towards Ruby 2.4 compatibility](https://github.com/rails/rails/pull/25758)
 
-[Ruby 2.4 is coming!](https://www.ruby-lang.org/en/news/2016/09/08/ruby-2-4-0-preview2-released/) If you have already tried it with Rails 5, a [**_key must be 32 bits_**](https://github.com/rails/rails/issues/25185) error was raised due to a [breaking change](https://github.com/ruby/ruby/commit/ce635262f53b760284d56bb1027baebaaec175d1) in Ruby 2.4 related to openssl cipher key lengths. It is now fixed, while keeping backward compatibility with any existing signed data. 🎉
+[Ruby 2.4 is coming!](https://www.ruby-lang.org/en/news/2016/09/08/ruby-2-4-0-preview2-released) If you have already tried it with Rails 5, a [**_key must be 32 bits_**](https://github.com/rails/rails/issues/25185) error was raised due to a [breaking change](https://github.com/ruby/ruby/commit/ce635262f53b760284d56bb1027baebaaec175d1) in Ruby 2.4 related to openssl cipher key lengths. It is now fixed, while keeping backward compatibility with any existing signed data. 🎉
 
 ## Improved
 

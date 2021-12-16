@@ -21,7 +21,7 @@ _P.P.S. Isn't it a New Year, everyday somewhere around the World?_
 
 36 people contributed to make Rails awesome this week. If you haven't already, go ahead and watch [Rails on GitHub](https://github.com/rails/rails/watchers) to follow the discussions and find your first opprtunity to help out!
 
-### [Rails 4.2.1 and 4.1.10 have been released!](http://weblog.rubyonrails.org/2015/3/19/Rails-4-2-1-and-4-1-10-have-been-released/)
+### [Rails 4.2.1 and 4.1.10 have been released!](https://rubyonrails.org/2015/3/19/Rails-4-2-1-and-4-1-10-have-been-released)
 
 After four release candidates, Rails 4.2.1 and 4.1.10 have finally been released! Thanks to all the contributors, for tons of fixes. Check out the full changes for [4.2.1](https://github.com/rails/rails/compare/v4.2.0...v4.2.1) and [4.1.10](https://github.com/rails/rails/compare/v4.1.9...v4.1.10) respectively.
 
@@ -53,13 +53,13 @@ Previously, `nil` values in PostgreSQL enums were casted to an empty string, whi
 
 ## Summer Opportunities
 
-### [Google Summer of Code 2015](http://weblog.rubyonrails.org/2015/3/4/google-summer-of-code-2015/)
+### [Google Summer of Code 2015](https://rubyonrails.org/2015/3/4/google-summer-of-code-2015)
 
 Are you a student, or know someone who would love to contribute to Rails? Our GSoC students application [is now open](https://groups.google.com/forum/#!topic/rubyonrails-gsoc/e9l-HwzHtkY)! Check out [our ideas page](https://github.com/railsgsoc/ideas/wiki/2015-Ideas) and join us on the [mailing list](https://groups.google.com/forum/#!forum/rubyonrails-gsoc) for discussion.
 
-### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-applications-open/)
+### [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/blog/2015-applications-open)
 
-Rails Girls Summer of Code is also accepting application! You can also consider [submiting your open-source project](http://railsgirlssummerofcode.org/guide/projects/) to be included.
+Rails Girls Summer of Code is also accepting application! You can also consider [submiting your open-source project](http://railsgirlssummerofcode.org/guide/projects) to be included.
 
 ## Wrapping up
 

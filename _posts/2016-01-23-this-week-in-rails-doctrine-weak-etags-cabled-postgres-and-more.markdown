@@ -17,13 +17,13 @@ Hey, does that sign say "Tracks End Here"?
 
 ## Featured
 
-### [Fresh off the tracks, a new Rails site!](http://rubyonrails.org)
+### [Fresh off the tracks, a new Rails site!](https://rubyonrails.org)
 
 Ahead of the coming major release of Rails, we got a new website and logo and... doctrine?
 
-Yes! See, Rails has been going strong for over 10 years, [the Rails Doctrine](http://rubyonrails.org/doctrine/) just captures that magic and spells it out. Thus Rails is ready to roll on for the next decade. The [blog post](http://weblog.rubyonrails.org/2016/1/19/new-rails-identity/) dishes on the new design's backstory.
+Yes! See, Rails has been going strong for over 10 years, [the Rails Doctrine](https://rubyonrails.org/doctrine) just captures that magic and spells it out. Thus Rails is ready to roll on for the next decade. The [blog post](https://rubyonrails.org/2016/1/19/new-rails-identity) dishes on the new design's backstory.
 
-P.S. The Rails core team got some [awesome new pictures](http://weblog.rubyonrails.org/2016/1/19/new-rails-identity/) too!
+P.S. The Rails core team got some [awesome new pictures](https://rubyonrails.org/2016/1/19/new-rails-identity) too!
 
 ### [This weeks Rails Contributors](http://contributors.rubyonrails.org/contributors/in-time-window/20160115-20160123)
 
@@ -55,7 +55,7 @@ Not anymore! In Rails 5, Rails now correctly issue "weak" ETags — matching [`R
 
 Action Cable's dependency on the `celluloid` gem has been removed by using the thread pool from `concurrent-ruby` (which Rails already uses). While [temporarily reverted](https://github.com/rails/rails/pull/22977) it was [reintroduced](https://github.com/rails/rails/commit/01c320001bcce617196270f3d398d48a89a6ea2a) this week.
 
-### [Better configuration documentation for Action Cable](https://github.com/rails/rails/pull/23096/)
+### [Better configuration documentation for Action Cable](https://github.com/rails/rails/pull/23096)
 
 Now rejiggered: the Action Cable documentation on how to configure the library has been clarified and better highlights how useful some methods are.
 

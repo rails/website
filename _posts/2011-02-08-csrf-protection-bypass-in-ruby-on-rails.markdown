@@ -15,7 +15,7 @@ date: 2011-02-08 22:53:00.000000000 +00:00
 <h2>Impact</h2>
 <p>Certain combinations of browser plugins and <span class="caps">HTTP</span> redirects can be used to trick the user&#8217;s browser into making cross-domain requests which include arbitrary <span class="caps">HTTP</span> headers specified by the attacker.  An attacker can utilise this to spoof ajax and <span class="caps">API</span> requests and bypass the built in <a href="http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf"><span class="caps">CSRF</span> protection</a> and successfully attack an application.  All users running an affected release should upgrade or apply the patches immediately.</p>
 <h2>Releases</h2>
-<p>The 3.0.4 and 2.3.11 releases are <a href="http://weblog.rubyonrails.org/2011/2/8/new-releases-2-3-11-and-3-0-4">available at the normal locations</a>.</p>
+<p>The 3.0.4 and 2.3.11 releases are <a href="https://rubyonrails.org/2011/2/8/new-releases-2-3-11-and-3-0-4">available at the normal locations</a>.</p>
 <h2>Upgrade Process</h2>
 <p>There are two major changes in this fix,  the behaviour when <span class="caps">CSRF</span> protection fails has changed and the token will now be required for <strong>all</strong> non-<span class="caps">GET</span> requests.</p>
 <p>After applying this patch failed <span class="caps">CSRF</span> requests will no longer generate <span class="caps">HTTP</span> 500 errors, instead the session will be reset.  Users can override this behaviour by overriding <ins>handle_unverified_request</ins> in their own controllers.</p>

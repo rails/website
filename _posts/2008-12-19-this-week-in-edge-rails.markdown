@@ -12,7 +12,7 @@ date: 2008-12-19 13:55:00.000000000 +00:00
 <h2>Rails Metal</h2>
 <p>If you&#8217;ve been keeping in touch with Rails at all, you&#8217;ve heard about Metal this week: superfast endpoints inside of your Rails applications that bypass routing and Action Controller to give you raw speed (at the cost of all the things in Action Controller, of course). This builds on all of the recent foundation work to make Rails a Rack application with an exposed middleware stack. Rather than explain Metal in more detail, here are places you can read more about it:</p>
 <ul>
-	<li><a href="http://weblog.rubyonrails.org/2008/12/17/introducing-rails-metal">Introducing Rails Metal</a> by <span class="caps">DHH</span></li>
+	<li><a href="https://rubyonrails.org/2008/12/17/introducing-rails-metal">Introducing Rails Metal</a> by <span class="caps">DHH</span></li>
 	<li><a href="http://soylentfoo.jnewland.com/articles/2008/12/16/rails-metal-a-micro-framework-with-the-power-of-rails-m">Rails Metal: a micro-framework with the power of Rails</a> by Jesse Newland</li>
 	<li><a href="http://www.railsinside.com/deployment/180-metal-super-fast-endpoints-within-your-rails-apps.html">Metal: Super-fast Endpoints within your Rails Apps</a> by Peter Cooper</li>
 	<li><a href="http://ryandaigle.com/articles/2008/12/18/what-s-new-in-edge-rails-rails-metal">What&#8217;s New in Edge Rails: Rails Metal</a> by Ryan Daigle</li>

@@ -51,7 +51,7 @@ date: 2009-01-15 09:58:00.000000000 +00:00
 <p>It&#8217;s important to note that we don&#8217;t see these four projects as entirely separate efforts that have no interaction with one another. In particular, it seems likely that the Book will link to the Guides for those seeking additional detail, while the Guides will link to the Book for those seeking additional high-level guidance. We also anticipate that the wiki will point readers to both Guides and Book (as well as to other sources of information).</p>
 <p>So, what can <em>you</em> do to get involved? If you&#8217;re a writer, translator, or editor, any of these documentation projects would love to have your help:</p>
 <ul>
-	<li>To contribute to the RDoc, write a Rails patch with good comments or check out the <a href="http://weblog.rubyonrails.org/2008/5/2/help-improve-rails-documentation-on-git-branch">docrails</a> project.</li>
+	<li>To contribute to the RDoc, write a Rails patch with good comments or check out the <a href="https://rubyonrails.org/2008/5/2/help-improve-rails-documentation-on-git-branch">docrails</a> project.</li>
 	<li>To help the Rails Guides, get in touch with <a href="mailto:pratiknaik@gmail.com">Pratik Naik</a> or <a href="mailto:mikeg1@larkfarm.com">Mike Gunderloy</a>, or drop by the #docrails channel on <span class="caps">IRC</span> freenode.</li>
 	<li>To get involved with the Rails Book, contact <a href="mailto:mattaimonetti@gmail.com">Matt Aimonetti</a>.</li>
 	<li>To add to the Rails Wiki, join the <a href="http://groups.google.com/group/rubyonrails-wiki">rubyonrails-wiki</a> group.</li>

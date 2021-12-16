@@ -7,7 +7,7 @@ author: José Valim
 published: true
 date: 2009-08-31 18:02:00.000000000 +01:00
 ---
-A couple weeks ago, I wrote about the newly added [ActionController::Responder](http://blog.plataformatec.com.br/2009/08/embracing-rest-with-mind-body-and-soul/) which summarizes your application behavior for a specified format in just one place. For example, the default html behavior is written as:
+A couple weeks ago, I wrote about the newly added [ActionController::Responder](http://blog.plataformatec.com.br/2009/08/embracing-rest-with-mind-body-and-soul) which summarizes your application behavior for a specified format in just one place. For example, the default html behavior is written as:
 
 <pre><code class="ruby">
 class ActionController::Responder

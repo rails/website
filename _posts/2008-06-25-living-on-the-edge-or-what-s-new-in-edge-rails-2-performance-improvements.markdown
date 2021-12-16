@@ -7,7 +7,7 @@ author: Chu Yeow
 published: true
 date: 2008-06-25 16:24:00.000000000 +01:00
 ---
-<p>The <a href="http://weblog.rubyonrails.org/2008/6/20/living-on-the-edge-or-what-s-new-in-edge-rails-1-api-changes-and-performancetests">first Living on the Edge</a> covered some of the <span class="caps">API</span> changes since Rails 2.1, and this time round, I&#8217;m going to cover the <strong>performance improvements</strong> as promised.</p>
+<p>The <a href="https://rubyonrails.org/2008/6/20/living-on-the-edge-or-what-s-new-in-edge-rails-1-api-changes-and-performancetests">first Living on the Edge</a> covered some of the <span class="caps">API</span> changes since Rails 2.1, and this time round, I&#8217;m going to cover the <strong>performance improvements</strong> as promised.</p>
 <p>Jumping right in&#8230;</p>
 <h4>Faster Erb templates</h4>
 <p>Jeremy Kemper has made the Erb processing more efficient, especially the <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#M001724">concat</a> and <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/CaptureHelper.html#M001747">capture</a> helper methods.</p>

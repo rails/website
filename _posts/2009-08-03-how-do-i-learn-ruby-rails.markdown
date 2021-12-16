@@ -66,7 +66,7 @@ I tried to compile some of what I thought were great resources that helped me an
 <h4 id="never_heard_of_rails_or_ruby_what_is_it">Never heard of Rails or Ruby, what is it?</h4>
 
 <p><p><img src="/assets/2009/7/30/3479085377_98251e3c93_m.jpg" alt="newbie" title=""></p>
-Start by watching one of the many <a href="http://rubyonrails.org/screencasts">screencasts/presentations</a> about <a href="http://rubyonrails.org">Rails</a>.
+Start by watching one of the many <a href="https://rubyonrails.org/screencasts">screencasts/presentations</a> about <a href="https://rubyonrails.org">Rails</a>.
 Rails and software developed using Rails are written in a programming language called <a href="http://www.ruby-lang.org/en/">Ruby</a>.
 If you are new to software developer, you can quickly learn Ruby and I would recommend a great book called <a href="http://www.pragprog.com/titles/ltp2/learn-to-program-2nd-edition">Learn to program by Chris Pine</a>.
 Ruby is a very elegant and intuitive language that you will be able to pick up quickly while learning new tricks for many years.
@@ -145,7 +145,7 @@ It will honestly help your Ruby skills and broaden your horizons.</p>
 
 <h4 id="i_know_ruby_and_rails_like_nobody_else_i_could_even_quote_rails_and_mri8217s_source_code_by_heart_just_ask_a_loc">I know Ruby and Rails like nobody else, I could even quote Rails and MRI&#8217;s source code by heart. (just ask a LOC)</h4>
 
-<p>Then I hope you are helping with the <a href="http://www.ruby-lang.org/">Ruby 1.9</a> efforts, contributing code to other implementations (<a href="http://www.ironruby.net/">IronRuby</a>, <a href="http://www.jruby.org/">JRuby</a>, <a href="http://www.macruby.org">MacRuby</a>, <a href="http://rubini.us/">Rubinius</a>) and helping with <a href="http://weblog.rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">Rails 3</a> :)</p>
+<p>Then I hope you are helping with the <a href="http://www.ruby-lang.org/">Ruby 1.9</a> efforts, contributing code to other implementations (<a href="http://www.ironruby.net/">IronRuby</a>, <a href="http://www.jruby.org/">JRuby</a>, <a href="http://www.macruby.org">MacRuby</a>, <a href="http://rubini.us/">Rubinius</a>) and helping with <a href="https://rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3">Rails 3</a> :)</p>
 
 <hr>
 

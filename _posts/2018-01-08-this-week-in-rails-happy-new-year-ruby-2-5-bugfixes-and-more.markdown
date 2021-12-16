@@ -17,7 +17,7 @@ Since our last issue, 36 people gave the gift of Pull Request 🎁 to Rails. 6 o
 
 Ruby 2.5.0 was released on December 25 2017, bringing many exciting changes. Rails has been confirmed to work with this new Ruby as it has been officially added to its testing matrix.
 
-### [RailsConf 2018 CFP is now open](https://cfp.rubycentral.org/events/railsconf2018/)
+### [RailsConf 2018 CFP is now open](https://cfp.rubycentral.org/events/railsconf2018)
 
 RailsConf is calling for proposals for its 2018 conference which will be held in Pittsburgh. The deadline is January 19th, so now's the time to get that proposal in!
 

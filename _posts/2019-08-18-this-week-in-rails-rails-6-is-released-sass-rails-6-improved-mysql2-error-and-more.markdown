@@ -9,7 +9,7 @@ date: 2019-08-18
 
 Hello! This is [Prathamesh](https://twitter.com/_cha1tanya) bringing the latest news from the Rails community. This week we have some big news. Get ready.
 
-### [Rails 6 is out!](https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/)
+### [Rails 6 is out!](https://rubyonrails.org/2019/8/15/Rails-6-0-final-release)
 
 After two and half years of development from more than 800 people having staggering [7275 commits](https://contributors.rubyonrails.org/releases/6-0-0/commits), Rails 6 is released. Time to upgrade 😁  
 Check out the [release notes](https://guides.rubyonrails.org/6_0_release_notes.html) and [upgrading guide](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html) to know more.

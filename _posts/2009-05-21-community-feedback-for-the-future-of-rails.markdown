@@ -18,7 +18,7 @@ My goal in this post is to give you a quick overview on the status of the [userv
   This is something that was actually started before we put the forum together and this feature is now available since Rails 2.3.x
 
 * [Rails magazine](http://rails.uservoice.com/pages/10012-rails/suggestions/98699-have-a-rails-magazine)
-  Olimpiu Metiu already released two issues of his [Rails Magazine](http://railsmagazine.com/). The PDF versions are available for free but you can also purchase the print version.
+  Olimpiu Metiu already released two issues of his [Rails Magazine](http://railsmagazine.com). The PDF versions are available for free but you can also purchase the print version.
 
 * [Better Wiki](http://rails.uservoice.com/pages/10012-rails/suggestions/97471-have-a-better-wiki-)
   A lot of people have put efforts in building [the new wiki](http://wiki.rubyonrails.org) and I'm sure a lot more content will be provided. We have also made the wiki available for translation.
@@ -41,7 +41,7 @@ My goal in this post is to give you a quick overview on the status of the [userv
  Thanks to Action ORM and some more refactoring, non RDBMS and other data stores will be better supported.
  
  - [Unbind Test::Unit and Prototype](http://rails.uservoice.com/pages/10012-rails/suggestions/99489-unbind-the-framework-from-test-unit-and-prototype)
- Agnosticism is a big theme in Rails 3. Even though, Test::Unit and prototype will be the default, Rails won't make any assumptions about users using one framework or the other. Watch [David's keynote at RailsConf](http://railsconf.blip.tv/file/2081411/) for more information.
+ Agnosticism is a big theme in Rails 3. Even though, Test::Unit and prototype will be the default, Rails won't make any assumptions about users using one framework or the other. Watch [David's keynote at RailsConf](http://railsconf.blip.tv/file/2081411) for more information.
  
  - [Make Action Mailer consistent with regular controllers](http://rails.uservoice.com/pages/10012-rails/suggestions/98442-make-actionmailer-consistent-with-regular-controllers)
  This task was started as part of the [work done on Abstract Controller](http://github.com/rails/rails/tree/3-0-unstable).

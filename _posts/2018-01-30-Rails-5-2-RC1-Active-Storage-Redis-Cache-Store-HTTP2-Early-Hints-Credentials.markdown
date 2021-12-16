@@ -6,7 +6,7 @@ author: dhh
 published: true
 date: 2018-01-30 16:00:00 -09:00
 ---
-It's been two months since the [first beta release of Rails 5.2](http://weblog.rubyonrails.org/2017/11/27/Rails-5-2-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials/), 
+It's been two months since the [first beta release of Rails 5.2](https://rubyonrails.org/2017/11/27/Rails-5-2-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials), 
 and we've spent the time since to improve, polish, and tweak the release in all sorts of lovely ways for this first release candidate.
 
 Our headline feature, the new [Active Storage](https://github.com/rails/rails/blob/d3893ec38ec61282c2598b01a298124356d6b35a/activestorage/README.md)

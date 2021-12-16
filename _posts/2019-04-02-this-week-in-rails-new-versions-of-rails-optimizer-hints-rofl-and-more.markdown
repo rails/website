@@ -15,8 +15,8 @@ Brooklyn, NY.
 [Rails 5.2.3][5.2.3] and [Rails 5.1.7][5.1.7] were released last week. Check out
 the CHANGELOG and upgrade today!
 
-[5.2.3]: https://weblog.rubyonrails.org/2019/3/28/Rails-5-2-3-has-been-released/
-[5.1.7]: https://weblog.rubyonrails.org/2019/3/28/Rails-5-1-7-has-been-released/
+[5.2.3]: https://rubyonrails.org/2019/3/28/Rails-5-2-3-has-been-released/
+[5.1.7]: https://rubyonrails.org/2019/3/28/Rails-5-1-7-has-been-released/
 
 ### [Optimizer Hints and Annotations][optimizer_hints]
 

@@ -7,7 +7,7 @@ published: true
 date: 2016-03-25
 ---
 
-[Business](https://www.instagram.com/p/BDDjrm2ICFl/) [Todd](https://twitter.com/toddbealmear) here with your weekly briefing of all the goings-on in the Rails organization.
+[Business](https://www.instagram.com/p/BDDjrm2ICFl) [Todd](https://twitter.com/toddbealmear) here with your weekly briefing of all the goings-on in the Rails organization.
 
 Since our last update, a number of initiatives were undertaken by many of our stakeholders to breed cross-functional synergies between the underlying components of the Rails vertical. Or, if your eyes glazed over at the sight of "cross-functional synergies" or any of the other garbage I just typed out, a bunch of people did some stuff to make Rails better and junk.
 

@@ -11,7 +11,7 @@ Hi everyone! This is [Godfrey](https://twitter.com/chancancode) bringing you the
 
 ## Featured
 
-### [RailsConf 2016](http://railsconf.com/)
+### [RailsConf 2016](http://railsconf.com)
 
 The RailsConf 2016 website is up! This year, we will be gathering in Kansas City from May 4 to May 6. If you would like to submit a talk, the [call for proposals (CFP) is open](http://rubycentral-cfp.herokuapp.com/events/railsconf2016) from now until Jan 15!
 

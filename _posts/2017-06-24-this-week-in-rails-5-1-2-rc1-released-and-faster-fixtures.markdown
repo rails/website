@@ -17,7 +17,7 @@ We had 21 awesome people who helped make Rails better this week, with one first-
 
 ## New
 
-### [🎉 Rails 4.2.9.rc2, 5.0.4 and 5.1.2rc1 have been released 🎉](http://weblog.rubyonrails.org/2017/6/20/Rails-5-1-2-rc1-has-been-released/)
+### [🎉 Rails 4.2.9.rc2, 5.0.4 and 5.1.2rc1 have been released 🎉](https://rubyonrails.org/2017/6/20/Rails-5-1-2-rc1-has-been-released)
 
 It's your chance to help us discover bugs in 4.2.9 and 5.1.2 release candidates. Also, Rails 4.2.9 will be the last release in 4.2 series, so it's time to upgrade if your app is still running on Rails 4.
 

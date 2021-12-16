@@ -11,7 +11,7 @@ Hi, everybody! This is [Tim](https://twitter.com/imtayadeway) and [Claudio](http
 
 ## Releases
 
-### [Rails 4.2.4 and 4.1.13 have been released!](http://weblog.rubyonrails.org/2015/8/24/Rails-4-2-4-and-4-1-13-have-been-released/)
+### [Rails 4.2.4 and 4.1.13 have been released!](https://rubyonrails.org/2015/8/24/Rails-4-2-4-and-4-1-13-have-been-released)
 
 The new versions are backward compatible, so if you are using any 4.2.x version, you can safely upgrade to 4.2.4. And if you are using 4.1.x, bump your Gemfile to 4.1.13.
 
@@ -49,7 +49,7 @@ Pull requests that improve the performance of Rails are always welcome, especial
 
 ## Wrapping Up
 
-One last thing that deserves a mention is that the new Code of Conduct has gone live on [the main website](http://rubyonrails.org/conduct/). Hurrah!
+One last thing that deserves a mention is that the new Code of Conduct has gone live on [the main website](https://rubyonrails.org/conduct). Hurrah!
 
 That's all for This week in Rails. As always, there are many more changes than we have room to cover here, but feel free to [check them out yourself](https://github.com/rails/rails/compare/master@%7B2015-08-22%7D...@%7B2015-08-28%7D)!
 

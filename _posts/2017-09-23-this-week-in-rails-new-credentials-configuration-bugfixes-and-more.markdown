@@ -13,7 +13,7 @@ Hi there! It's [Greg](https://twitter.com/GregMolnar), bringing you a double-edi
 
 28 people contributed to Rails the past two weeks! If you'd like to join them, why not check out the list of [open issues](https://github.com/rails/rails/issues)?
 
-### [Rails 4.2.10.rc1 released](http://weblog.rubyonrails.org/2017/9/20/Rails-4-2-10-rc1-released/)
+### [Rails 4.2.10.rc1 released](https://rubyonrails.org/2017/9/20/Rails-4-2-10-rc1-released)
 
 Although Rails 4.2 is not officially supported anymore, this release fixes some regressions introduced by the previous one. If no new regressions found, the final should be released mid next week.
 

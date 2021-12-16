@@ -85,12 +85,12 @@ Tidbit: run `ack -a` to have guides included in the search.
 ## I made a doc fix, when is it going to be online?
 
 Rails releases are a complete set. The documentation itself is part of the
-release. The fix is going to be online in the [stable API](http://api.rubyonrails.org/) or
-[guides](http://guides.rubyonrails.org/) websites when
+release. The fix is going to be online in the [stable API](http://api.rubyonrails.org) or
+[guides](http://guides.rubyonrails.org) websites when
 the branch that contains the fix gets released.
 
-Edits merged into master are always online in the [edge API](http://edgeapi.rubyonrails.org/)
-and [edge guides](http://edgeguides.rubyonrails.org/),
+Edits merged into master are always online in the [edge API](http://edgeapi.rubyonrails.org)
+and [edge guides](http://edgeguides.rubyonrails.org),
 which are regenerated after every push to master. Thus, edits done via docrails
 are online in the edge docs website after the next docrails/master cross-merge.
 

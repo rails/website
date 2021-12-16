@@ -16,7 +16,7 @@ A DoS attack was recently found in Ruby that uses specially-crafted input to dra
 
 A good way to limit the effectiveness of such attacks is to configure your frontend servers to limit the size of the HTTP request line, headers and body. Nginx does this by default. Apache can be configured to do this by setting the LimitRequestBody directive.
 
-In addition, all Ruby 1.9 users are recommended to upgrade to [ruby-1.9.3 patchlevel 327](http://www.ruby-lang.org/en/news/2012/11/09/ruby-1-9-3-p327-is-released/) to get this security fix.
+In addition, all Ruby 1.9 users are recommended to upgrade to [ruby-1.9.3 patchlevel 327](http://www.ruby-lang.org/en/news/2012/11/09/ruby-1-9-3-p327-is-released) to get this security fix.
 
 ## CHANGES since 3.2.8
 

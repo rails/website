@@ -8,7 +8,7 @@ date: 2021-11-26
 ---
 
 Hey, [Wojtek](https://twitter.com/morgoth85) here with recent additions to Rails. All of them today for FREE, for you.  
-Thank you [all the contributors](https://contributors.rubyonrails.org/contributors/) for making Rails. Those from one-time to day by day committers.  
+Thank you [all the contributors](https://contributors.rubyonrails.org/contributors) for making Rails. Those from one-time to day by day committers.  
   
 
 [**Add compose method to Active Storage Blob**](https://github.com/rails/rails/pull/41544)  

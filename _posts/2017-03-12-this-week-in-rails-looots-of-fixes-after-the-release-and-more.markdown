@@ -16,7 +16,7 @@ So many fixes and much more.
 
 ## Featured
 
-### [Google Summer of Code 2017](http://weblog.rubyonrails.org/2017/3/2/google-summer-of-code-2017/)
+### [Google Summer of Code 2017](https://rubyonrails.org/2017/3/2/google-summer-of-code-2017)
 
 We’re very happy to announce that Ruby on Rails has been accepted as an organization for the Google Summer of Code (GSoC) 2017 edition!
 

@@ -15,7 +15,7 @@ Welcome to _Kansas City_! This is your advisor [Godfrey](https://twitter.com/cha
 
 ## Featured
 
-### [1000 Commit Pile-Up Results In New Beta Release](http://weblog.rubyonrails.org/2016/4/28/Rails-5-0-beta4/)
+### [1000 Commit Pile-Up Results In New Beta Release](https://rubyonrails.org/2016/4/28/Rails-5-0-beta4)
 
 Rails 5.0.0.beta4 was released this week. Based on the increasing version numbers, I speculate the core team is working towards a 5.0.0.RC1 release and eventually a 5.0.0 final release. I recommend you try out the beta release on our apps.
 
@@ -27,7 +27,7 @@ According to sources close to the development, 34 contributors were seen submitt
 
 ### [Kansas Dresses Up In Color In Anticipation Of RailsConf](http://railsconf.com)
 
-Our plans to import colors from Oz have worked – I am proud to say Kansas is no longer black and white. I recommend that you install the [Guidebook app](https://guidebook.com/g/railsconf2016/) ahead of the conference. You might also want to sign up for the [workshops](http://railsconf.com/program/workshops) too – see the official welcome email in your inbox for details.
+Our plans to import colors from Oz have worked – I am proud to say Kansas is no longer black and white. I recommend that you install the [Guidebook app](https://guidebook.com/g/railsconf2016) ahead of the conference. You might also want to sign up for the [workshops](http://railsconf.com/program/workshops) too – see the official welcome email in your inbox for details.
 
 ### [Tapped Out: Local Breweries Close Doors](http://railsconf.com/program/parties)
 

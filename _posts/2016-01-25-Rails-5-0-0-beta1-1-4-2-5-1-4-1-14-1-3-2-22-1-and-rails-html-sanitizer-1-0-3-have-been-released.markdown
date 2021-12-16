@@ -36,9 +36,9 @@ In order to maintain our "secure by default" policy, rectifying this has forced 
 
 If you use the sanitizer in 4.2, you will need to verify that the more restrictive filter still permits all the tags you need to allow. If it doesn't, you can add additional tags to the whitelist.
 
-We've done our best to minimize any impact to your applications, but if you run in to any issues, please [file a ticket](https://github.com/rails/rails/issues/) and we'll do our best to help!
+We've done our best to minimize any impact to your applications, but if you run in to any issues, please [file a ticket](https://github.com/rails/rails/issues) and we'll do our best to help!
 
-Again, as always, if you run in to any bugs, please file them on the Rails issue tracker which is located [here](https://github.com/rails/rails/issues/).  If you run in to security issues, please follow the reporting process which can be found [here](http://rubyonrails.org/security/).
+Again, as always, if you run in to any bugs, please file them on the Rails issue tracker which is located [here](https://github.com/rails/rails/issues).  If you run in to security issues, please follow the reporting process which can be found [here](https://rubyonrails.org/security).
 
 Please have a happy Monday! <3<3<3
 

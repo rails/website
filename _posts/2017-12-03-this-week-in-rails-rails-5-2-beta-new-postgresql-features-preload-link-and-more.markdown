@@ -9,7 +9,7 @@ date: 2017-12-03
 
 Hello everyone! This is [Roque](https://twitter.com/repinel) bringing you the latest news from the Rails world.
 
-### [Rails 5.2.0 beta released 🎉](http://weblog.rubyonrails.org/2017/11/27/Rails-5-2-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials/)
+### [Rails 5.2.0 beta released 🎉](https://rubyonrails.org/2017/11/27/Rails-5-2-Active-Storage-Redis-Cache-Store-HTTP2-Early-Hints-Credentials)
 
 This release includes [Active Storage](https://github.com/rails/rails/blob/d3893ec38ec61282c2598b01a298124356d6b35a/activestorage/README.md), a new framework provided by Rails to make it easier to upload and process files.
 
@@ -22,13 +22,13 @@ This release includes [Active Storage](https://github.com/rails/rails/blob/d3893
 The operator classes identify database operators to be used by the index for the columns. You can assign the same operator to all columns, or not.
 It currently only supports PostgreSQL.
 
-### [Add ability to create PostgreSQL foreign keys without validation](https://github.com/rails/rails/pull/27756/)
+### [Add ability to create PostgreSQL foreign keys without validation](https://github.com/rails/rails/pull/27756)
 
 Normally, PostgresSQL verifies that all rows in a table satisfy its foreign keys constraints. With this option, you can create these constraints without the overhead of checking if they are valid.
 
 ### [Add `preload_link_tag` helper](https://github.com/rails/rails/pull/31251)
 
-The helper creates a link tag with the [`preload`](https://w3c.github.io/preload/) keyword that allows you to basically define resources that pages will need very soon after loading. In addition, Rails will send [HTTP2 Early Hints if the proxy server supports it](http://eileencodes.com/posts/http2-early-hints/), helping the fetch process.
+The helper creates a link tag with the [`preload`](https://w3c.github.io/preload) keyword that allows you to basically define resources that pages will need very soon after loading. In addition, Rails will send [HTTP2 Early Hints if the proxy server supports it](http://eileencodes.com/posts/http2-early-hints), helping the fetch process.
 
 ### [Prevent Active Record scopes with reserved names](https://github.com/rails/rails/pull/31179)
 

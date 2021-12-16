@@ -11,7 +11,7 @@ Hello! This is [Roque](https://twitter.com/repinel) covering latest events from 
 
 ## Featured
 
-### [Security releases!](http://weblog.rubyonrails.org/2016/8/11/Rails-5-0-0-1-4-2-7-2-and-3-2-22-3-have-been-released/)
+### [Security releases!](https://rubyonrails.org/2016/8/11/Rails-5-0-0-1-4-2-7-2-and-3-2-22-3-have-been-released)
 
 New Rails versions are released with many important security fixes. If you have not done already, do not drop the ball and upgrade as soon as possible.
 

@@ -9,7 +9,7 @@ date: 2017-07-30
 
 Hello everyone! This is [Prathamesh](https://twitter.com/_cha1tanya) with the latest news from the Rails world.
 
-### [Rails 5.1.3.rc2 and 5.0.5.rc2 released](http://weblog.rubyonrails.org/2017/7/25/Rails-5-0-5-rc2-and-5-1-3-rc2-have-been-released/)
+### [Rails 5.1.3.rc2 and 5.0.5.rc2 released](https://rubyonrails.org/2017/7/25/Rails-5-0-5-rc2-and-5-1-3-rc2-have-been-released)
 
 Two new release candidates has been released this week, if there are no regressions found, the final releases are coming next week! We said it last week as well 😁
 

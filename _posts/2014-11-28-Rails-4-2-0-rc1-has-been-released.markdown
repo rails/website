@@ -47,4 +47,4 @@ the master branch will be targeted for Rails 5.0 and backported according to our
 [beginning]: https://github.com/rails/rails/commit/f25ad07f5ade46eb978fa82658463232d0247c65
 [4-2-stable]: https://github.com/rails/rails/tree/4-2-stable
 [maintenance-policy]: http://edgeguides.rubyonrails.org/maintenance_policy.html
-[rails-5]: http://weblog.rubyonrails.org/2014/8/20/Rails-4-2-beta1/#maintenance-consequences-and-rails-5-0
+[rails-5]: https://rubyonrails.org/2014/8/20/Rails-4-2-beta1/#maintenance-consequences-and-rails-5-0

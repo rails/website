@@ -7,7 +7,7 @@ author: josh
 published: true
 date: 2006-11-26 16:19:00.000000000 +00:00
 ---
-Here are some of the smaller yet notable features in the Rails 1.2 release of ActiveRecord made since the 1.1 release. (compiled by [Josh Susser](http://blog.hasmanythrough.com/)).
+Here are some of the smaller yet notable features in the Rails 1.2 release of ActiveRecord made since the 1.1 release. (compiled by [Josh Susser](http://blog.hasmanythrough.com)).
 
 # Finding
 **Added simple hash conditions to #find** that will just convert a hash to an equality/AND-based condition string. Example:

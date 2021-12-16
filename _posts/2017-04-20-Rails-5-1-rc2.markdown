@@ -12,7 +12,7 @@ We still have a [few open issues in the milestone](https://github.com/rails/rail
 still expecting to be able to do the final release during the Railsconf 2017.
 
 While we are working to close the last issues, you can check [the Rails 5.1 releases notes](http://edgeguides.rubyonrails.org/5_1_release_notes.html),
-or the awesome summary of new features present in [the 5.1.0.beta1 blog post](http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/).
+or the awesome summary of new features present in [the 5.1.0.beta1 blog post](https://rubyonrails.org/2017/2/23/Rails-5-1-beta1).
 
 To view the changes for each gem, please read the changelogs on GitHub:
 

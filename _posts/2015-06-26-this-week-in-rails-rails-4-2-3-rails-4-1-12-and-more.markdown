@@ -19,7 +19,7 @@ This is [Claudio](https://claudiob.github.io), celebrating a historical moment o
 
 28 people contributed to the framework by having their commits merged into [rails/rails](http://github.com/rails/rails) this week. Thanks and keep up the good work!
 
-### [Rails 4.2.3 and 4.1.12 have been released!](http://weblog.rubyonrails.org/2015/6/26/Rails-4-2-3-and-4-1-12-have-been-released/)
+### [Rails 4.2.3 and 4.1.12 have been released!](https://rubyonrails.org/2015/6/26/Rails-4-2-3-and-4-1-12-have-been-released)
 
 What are you waiting for? Run `bundle update rails` and get four months of updates in your codebases!
 

@@ -9,7 +9,7 @@ date: 2021-09-17
 
 Hi, [Wojtek](https://twitter.com/morgoth85) here with more new Rails 7 changes.
 
-### [Rails 7.0 alpha released](https://weblog.rubyonrails.org/2021/9/15/Rails-7-0-alpha-1-released/)
+### [Rails 7.0 alpha released](https://rubyonrails.org/2021/9/15/Rails-7-0-alpha-1-released)
 
 The new Rails frontend approach and all the other new goodies can already be checked in this release.
 

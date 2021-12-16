@@ -16,7 +16,7 @@ And here I thought everyone was just playing [Pokemon Go](http://9gag.com/tv/p/a
 
 ## Featured
 
-### [Kasper joins Rails core!](http://weblog.rubyonrails.org/2016/7/19/Kasper-joins-Rails-core/)
+### [Kasper joins Rails core!](https://rubyonrails.org/2016/7/19/Kasper-joins-Rails-core)
 
 That's right Kasper gets himself a cartoon face!  
   
@@ -28,7 +28,7 @@ He's continued to making substantial, individual contributions, like the new par
 
 This week saw contributions from 30 fabulous people. 2 of those had a commit merged into Rails for the very first time.   
   
-A big thank you to you all! ❤️ If you fancy seeing yourself up there next week, why not take a peek at the list of [current issues](https://goodbits.io/newsletters/19/emails/18495/**https://github.com/rails/rails/issues)? Improvements to the [documentation](http://api.rubyonrails.org/) can also be a great place to start!
+A big thank you to you all! ❤️ If you fancy seeing yourself up there next week, why not take a peek at the list of [current issues](https://goodbits.io/newsletters/19/emails/18495/**https://github.com/rails/rails/issues)? Improvements to the [documentation](http://api.rubyonrails.org) can also be a great place to start!
 
 ### [2x performance boost for String#blank? in Ruby 2.4!](https://github.com/rails/rails/commit/929a6500806fe671d9ac0002da8537bf26b8f25d)
 

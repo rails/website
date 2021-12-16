@@ -21,7 +21,7 @@ Giddyup!
 
 Let rip some proper hootin' & hollerin' fer these [38 heroic wranglers](http://contributors.rubyonrails.org/contributors/in-time-window/20160702-201607008)who contributed to Rails this week, including 8 first-timers! Check out the [current issues](https://github.com/rails/rails/issues) and the [contributing guide](http://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html) if ye'd like to join 'em!
 
-### [Rails 4.2.7.rc1 and 4.1.16.rc1 released, gold fever ensues](http://weblog.rubyonrails.org/2016/7/2/Rails-4-2-7-rc1-and-4-1-16-rc1-have-been-released/)
+### [Rails 4.2.7.rc1 and 4.1.16.rc1 released, gold fever ensues](https://rubyonrails.org/2016/7/2/Rails-4-2-7-rc1-and-4-1-16-rc1-have-been-released)
 
 These two release candidates hit the trail this week. The final release of Rails 4.1.16 should be on its way shortly if no regressions are found. It will probably be the last release of Rails 4.1, so please take some time soon to upgrade your application to Rails 4.2 or Rails 5.
 

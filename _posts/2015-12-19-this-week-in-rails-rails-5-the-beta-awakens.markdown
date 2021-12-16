@@ -9,7 +9,7 @@ date: 2015-12-19 11:48:35 -0800
 
 I hear you're looking for a pilot. Name's [Todd](https://twitter.com/toddbealmear) Solo, captain of This Week in Rails. She may not look like much, but this bucket of bolts did the Kessel Run in less than twelve parsecs. She's more than capable of smuggling all of the latest Rails intelligence to you.
 
-I've got a very Special Edition™ for you this week - we're celebrating the release of the [very first beta](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/) of Rails 5! We're going to be covering all of the big additions made since the release of Rails 4.2 in this issue. Don't worry - no Bothans died to bring you this information.
+I've got a very Special Edition™ for you this week - we're celebrating the release of the [very first beta](https://rubyonrails.org/2015/12/18/Rails-5-0-beta1) of Rails 5! We're going to be covering all of the big additions made since the release of Rails 4.2 in this issue. Don't worry - no Bothans died to bring you this information.
 
 ## Featured
 
@@ -19,7 +19,7 @@ We had 790 scruffy-looking nerf herders contribute to this release. That's over 
 
 ### [Rails 5 Only Supports Ruby 2.2.2+](https://github.com/rails/rails/commit/32f7491808d2c4e097ed7b3ee875e4d1cea8c442#diff-73ac7236f7a8247a9cd61d338ef49cda)
 
-This is important - Rails 5 will only support versions of Ruby greater than 2.2.2. Ruby 2.2 introduces a number of new features and performance enhancements that the Rails team wants to capitalize on. You can read more about Ruby 2.2 in the [release announcement](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/).
+This is important - Rails 5 will only support versions of Ruby greater than 2.2.2. Ruby 2.2 introduces a number of new features and performance enhancements that the Rails team wants to capitalize on. You can read more about Ruby 2.2 in the [release announcement](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released).
 
 ## New Stuff
 

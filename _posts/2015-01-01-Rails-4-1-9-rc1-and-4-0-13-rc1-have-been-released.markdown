@@ -13,7 +13,7 @@ I am happy to announce that Rails 4.1.9.rc1 and 4.0.13.rc1 have been released.
 
 This is the first release of the year and it includes a lot of bug fixes. This will be also
 the last release of 4.0 series as announced
-[in a previous blog post](http://weblog.rubyonrails.org/2014/9/12/Rails-4-1-6-and-4-0-10-has-been-released/).
+[in a previous blog post](https://rubyonrails.org/2014/9/12/Rails-4-1-6-and-4-0-10-has-been-released).
 
 As per our maintenance policy, the release of Rails 4.2.0 means bug fixes will only apply to 4-2-stable,
 regular security issues to 4.2.x, 4.1.x, and severe security issues to 4.2.x, 4.1.x, and 3.2.x.

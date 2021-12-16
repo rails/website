@@ -13,12 +13,12 @@ It's [Claudio](http://railsconf.com/2017/program#session-125) from sunny Los Ang
 
 ## Featured
 
-### [Rails 5.0.2 has been released!](http://weblog.rubyonrails.org/2017/3/1/Rails-5-0-2-has-been-released/)
+### [Rails 5.0.2 has been released!](https://rubyonrails.org/2017/3/1/Rails-5-0-2-has-been-released)
 
 Go on and update your Rails 5 app to the latest release!  
 v5.0.2 is fully backward-compatible with v5.0.1 and v5.0.0.
 
-### [Google Summer of Code 2017](http://weblog.rubyonrails.org/2017/3/2/google-summer-of-code-2017/)
+### [Google Summer of Code 2017](https://rubyonrails.org/2017/3/2/google-summer-of-code-2017)
 
 We’re very happy to announce that Ruby on Rails has been accepted as an organization for the Google Summer of Code (GSoC) 2017 edition!
 

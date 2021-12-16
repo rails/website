@@ -15,7 +15,7 @@ Hi there everyone o/
 
 ## Featured
 
-### [Rails 4.2.5.rc2 and Rails 4.1.14.rc2 are out](http://weblog.rubyonrails.org/2015/11/6/Rails-4-2-5-rc2-and-4-1-14-rc2-have-been-released/)
+### [Rails 4.2.5.rc2 and Rails 4.1.14.rc2 are out](https://rubyonrails.org/2015/11/6/Rails-4-2-5-rc2-and-4-1-14-rc2-have-been-released)
 
 Please take a minute or two to update your project Gemfile and run the build on the RCs. Spotting regressions now means they're fixed in another RC rather than a new point release some month(s) away.
 

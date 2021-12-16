@@ -9,7 +9,7 @@ date: 2009-09-06 17:07:00.000000000 +01:00
 ---
 <img src="/assets/2009/9/6/restricted.jpg" height="100" width="450" alt=""/>
 
-It's been a bit over two weeks since the last WNiER ("winner"?) post and in the time since our last visit, [Ruby on Rails 2.3.4 was released](http://weblog.rubyonrails.org/2009/9/4/ruby-on-rails-2-3-4) to fix some reported security issues.  It is important that you try to upgrade your applications as soon as possible, or even just apply the [provided](http://weblog.rubyonrails.org/2009/9/4/timing-weakness-in-ruby-on-rails) [patches](http://weblog.rubyonrails.org/2009/9/4/xss-vulnerability-in-ruby-on-rails) if a full upgrade isn't easily accomplished in your situation.
+It's been a bit over two weeks since the last WNiER ("winner"?) post and in the time since our last visit, [Ruby on Rails 2.3.4 was released](https://rubyonrails.org/2009/9/4/ruby-on-rails-2-3-4) to fix some reported security issues.  It is important that you try to upgrade your applications as soon as possible, or even just apply the [provided](https://rubyonrails.org/2009/9/4/timing-weakness-in-ruby-on-rails) [patches](https://rubyonrails.org/2009/9/4/xss-vulnerability-in-ruby-on-rails) if a full upgrade isn't easily accomplished in your situation.
 
 Along with this release, you're also going to see several bug fixes and enhancements to the Rails  framework, coming from many contributors, that have been discussed here over the previous weeks and  even a few that are mentioned just below.
 
@@ -32,7 +32,7 @@ And, if that wasn't enough, Yehuda went on to add [`ActiveModel::Lint`](http://g
 
 The output is similar to a Test::Unit output and will indicate with which portions of the ActiveModel API the given object is - or more importantly is not - compliant.
 
-If Metal is your thing, you may want to take a look at Yehuda Katz's recent blog post, [How to Build Sinatra on Rails 3](http://yehudakatz.com/2009/08/26/how-to-build-sinatra-on-rails-3/).
+If Metal is your thing, you may want to take a look at Yehuda Katz's recent blog post, [How to Build Sinatra on Rails 3](http://yehudakatz.com/2009/08/26/how-to-build-sinatra-on-rails-3).
 
 ## Pour some sugar on me
 

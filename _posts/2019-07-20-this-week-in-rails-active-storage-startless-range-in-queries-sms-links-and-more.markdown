@@ -16,7 +16,7 @@ For Apps generated on 6.0, assigning replaces the existing attachments in the co
 
 ### [Support startless ranges in queries](https://github.com/rails/rails/pull/36696)
 
-Add support to [startless ranges](https://bugs.ruby-lang.org/issues/14799) (_e.g._ `..10` and `..Date.today`), introduced by [Ruby 2.7.0-preview1](https://www.ruby-lang.org/en/news/2019/05/30/ruby-2-7-0-preview1-released/), to Active Record queries. This enables expression like `Order.where(created_at: ..1.year.ago)`.
+Add support to [startless ranges](https://bugs.ruby-lang.org/issues/14799) (_e.g._ `..10` and `..Date.today`), introduced by [Ruby 2.7.0-preview1](https://www.ruby-lang.org/en/news/2019/05/30/ruby-2-7-0-preview1-released), to Active Record queries. This enables expression like `Order.where(created_at: ..1.year.ago)`.
 
 ### [Helper method to create an SMS link](https://github.com/rails/rails/pull/36511)
 

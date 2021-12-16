@@ -10,7 +10,7 @@ date: 2008-11-21 17:22:00.000000000 +00:00
 ---
 <p>Rails 2.2 is finally done after we cleared the last issues from the release candidate program. This release contains an long list of fixes, improvements, and additions that&#8217;ll make everything Rails smoother and better, but we also have a number of star player features to parade this time.</p>
 <p><b>Internationalization by default</b><br/>
-The most important is that Rails now includes a full-on internationalization framework and that it&#8217;s <a href="http://weblog.rubyonrails.org/2008/11/18/new-rails-2-2-i18n-defaults">pre-wired from start</a>. The work of the i18n group has been very impressive and it&#8217;s great to see that Rails finally ships with a solution in the box that&#8217;s both simple and extensible. Great job, guys!</p>
+The most important is that Rails now includes a full-on internationalization framework and that it&#8217;s <a href="https://rubyonrails.org/2008/11/18/new-rails-2-2-i18n-defaults">pre-wired from start</a>. The work of the i18n group has been very impressive and it&#8217;s great to see that Rails finally ships with a solution in the box that&#8217;s both simple and extensible. Great job, guys!</p>
 <p><b>Stronger etag and last-modified support</b><br/>
 We&#8217;ve also added much better support for <span class="caps">HTTP</span> validators in the form of etag and last-modified. Making it so much easier to skip expensive procesesing if the client already has the latest stuff. This also makes it even easier to use Rails with <a href="http://tomayko.com/writings/things-caches-do">gateway proxies</a>.</p>
 <p><b>Thread safety and a connection pool</b><br/>

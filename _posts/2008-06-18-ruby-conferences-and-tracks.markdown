@@ -45,7 +45,7 @@ San Francisco, CA</p>
 <p>Also worth mentioning:</p>
 <ul>
 	<li><a href="http://rubyfringe.com/">Ruby Fringe</a> is July 18-20, but tickets are no longer available.</li>
-	<li><a href="http://en.oreilly.com/railseurope2008/public/content/home">Railsconf Europe</a> is September 2-4 as <a href="http://weblog.rubyonrails.org/2008/6/10/railsconf-europe-registration-is-open">David announced</a> last week.</li>
+	<li><a href="http://en.oreilly.com/railseurope2008/public/content/home">Railsconf Europe</a> is September 2-4 as <a href="https://rubyonrails.org/2008/6/10/railsconf-europe-registration-is-open">David announced</a> last week.</li>
 	<li>Rubyconf is November 6-8 in <a href="http://www.omnihotels.com/FindAHotel/OrlandoChampionsGate.aspx">Orlando, FL</a>, but <a href="http://www.rubyconf.org">rubyconf.org</a> doesn&#8217;t have any information about that yet.</li>
 	<li>Voices that Matter: <a href="http://www.voicesthatmatter.com/ruby2008/">Professional Ruby Conference</a> is November 17-20 in Boston, MA.  I&#8217;m told more details will be revealed next month.</li>
 	<li>Merb Camp is hasn&#8217;t been officially announced yet, but I hear it might be October 11-12 in San Diego.</li>

@@ -32,7 +32,7 @@ We've done our best to minimize any impact to your applications, but if you run 
 [file a ticket](https://github.com/rails/rails/issues) and we'll do our best to help!
 
 If you run in to security issues, please follow the reporting process which can be found
-[here](http://rubyonrails.org/security/).
+[here](https://rubyonrails.org/security).
 
 ## SHA-256
 

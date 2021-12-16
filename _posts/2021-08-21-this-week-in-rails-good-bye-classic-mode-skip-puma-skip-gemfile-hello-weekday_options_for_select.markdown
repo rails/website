@@ -13,7 +13,7 @@ Hello, [zzak](https://github.com/zzak) again with the latest changes in Rails th
 
 In this YouTube, DHH goes through the latest changes planned for Rails 7 and how the face of front-end development has evolved.
 
-### [Rails 6.0.4.1 and 6.1.4.1 have been released](https://weblog.rubyonrails.org/2021/8/19/Rails-6-0-4-1-and-6-1-4-1-have-been-released/)
+### [Rails 6.0.4.1 and 6.1.4.1 have been released](https://rubyonrails.org/2021/8/19/Rails-6-0-4-1-and-6-1-4-1-have-been-released)
 
 A reminder to upgrade to the latest stable versions of Rails which includes a critical security fix for Action Pack.
 

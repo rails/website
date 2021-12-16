@@ -13,9 +13,9 @@ This week saw some small fixes applied to Rails 5. Nothing major. Nothing that s
 
 ## Featured
 
-### [Rails 4.2.7 and 4.1.16 have been released!](http://weblog.rubyonrails.org/2016/7/13/Rails-4-2-7-and-4-1-16-have-been-released/)
+### [Rails 4.2.7 and 4.1.16 have been released!](https://rubyonrails.org/2016/7/13/Rails-4-2-7-and-4-1-16-have-been-released)
 
-Check the blog post for links to all the CHANGELOGs. As [Rails 5 was released](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/), this is probably going to be the last release of Rails 4.1. Please take some time to upgrade your application to Rails 4.2 or Rails 5.
+Check the blog post for links to all the CHANGELOGs. As [Rails 5 was released](https://rubyonrails.org/2016/6/30/Rails-5-0-final), this is probably going to be the last release of Rails 4.1. Please take some time to upgrade your application to Rails 4.2 or Rails 5.
 
 ### [This week's Rails contributors](http://contributors.rubyonrails.org/contributors/in-time-window/20160709-201607015)
 
@@ -57,7 +57,7 @@ Repeat after me: “Next week I will upgrade all my projects to Rails 5.”
 
 💬 “Next week I will upgrade all my projects to Rails 5” 💬
 
-I hope you do! And finally, if you happen to travel to sunny California this summer, come say hi at the [Los Angeles Ruby meetup](http://www.meetup.com/laruby/events/232604411/). 🌇😎🏄
+I hope you do! And finally, if you happen to travel to sunny California this summer, come say hi at the [Los Angeles Ruby meetup](http://www.meetup.com/laruby/events/232604411). 🌇😎🏄
 
 –Claudio
 

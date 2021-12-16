@@ -20,7 +20,7 @@ Have you ever wondered what happens when you visit a URL (say **/posts/5** ) in 
   
 The first (of many) step is to compare the URL against the routes table for potential matches. To make this lookup as fast as possible, the routes table is pre-compiled into a [finite state machine](https://en.wikipedia.org/wiki/Finite-state_machine), specifically a [nondeterministic finite automaton (NFA)](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton).  
   
-If that sounds very intimidating, don't worry! The Rails router actually comes with a debugging tool that could generates an [interactive visualization](http://tenderlove.github.io/fsmjs/) of your router NFA.  
+If that sounds very intimidating, don't worry! The Rails router actually comes with a debugging tool that could generates an [interactive visualization](http://tenderlove.github.io/fsmjs) of your router NFA.  
   
 To generate one for your app, simply run **Rails.application.routes.router.visualizer** from your Rails console and save the returned string into an html file. (You will need the **dot** command-line tool for this – OS X users can get it from homebrew with **brew install graphviz.** )  
   

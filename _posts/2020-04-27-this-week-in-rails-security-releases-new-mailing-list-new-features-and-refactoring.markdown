@@ -13,7 +13,7 @@ exciting Rails news?
 
 [Daniel]: https://twitter.com/dodecadaniel
 
-### [Security Fixes](https://weblog.rubyonrails.org/2020/3/19/Rails-6-0-2-2-and-5-2-4-2-has-been-released/)
+### [Security Fixes](https://rubyonrails.org/2020/3/19/Rails-6-0-2-2-and-5-2-4-2-has-been-released)
 
 Rails 6.0.2.2 and 5.2.4.2 were recently released to fix a XSS vulnerability in
 Action View. If you are not running one of these versions, it is time to
@@ -22,7 +22,7 @@ or 2.7.1][ruby releases].
 
 [ruby releases]: https://www.ruby-lang.org/en/downloads/releases/
 
-### [Ruby on Rails on Discourse](https://discuss.rubyonrails.org/)
+### [Ruby on Rails on Discourse](https://discuss.rubyonrails.org)
 
 The Ruby on Rails mailing list has migrated to https://discuss.rubyonrails.org/.
 If you would like to suggest changes or new features, discuss documentation, or

@@ -7,7 +7,7 @@ published: true
 date: 2018-07-01
 ---
 
-Hey there, detective! Here's [Kasper](https://twitter.com/kaspth) fumbling through his own trenchcoat for his notebook to give you what went down on the [Rails codebase](https://github.com/rails/rails/) this week.
+Hey there, detective! Here's [Kasper](https://twitter.com/kaspth) fumbling through his own trenchcoat for his notebook to give you what went down on the [Rails codebase](https://github.com/rails/rails) this week.
 
 ### [Redis cache store: increment/decrement expiry](https://github.com/rails/rails/pull/33254)
 

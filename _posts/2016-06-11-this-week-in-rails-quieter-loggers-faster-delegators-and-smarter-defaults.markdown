@@ -15,7 +15,7 @@ Ahoy hoy! [Tim](https://twitter.com/imtayadeway) (aka Godfrey[9]) here bringing 
 
 This week saw contributions from 26 fabulous people. 3 of those had a commit merged into Rails for the very first time. A big thank you to you all! ❤️
 
-If you fancy seeing yourself up there next week, why not take a peek at the list of [current issues](https://github.com/rails/rails/issues)? Improvements to the [documentation](http://api.rubyonrails.org/) can also be a great place to start!
+If you fancy seeing yourself up there next week, why not take a peek at the list of [current issues](https://github.com/rails/rails/issues)? Improvements to the [documentation](http://api.rubyonrails.org) can also be a great place to start!
 
 ### [Rails 5: The Tour](https://www.youtube.com/watch?v=OaDhY_y8WTo)
 

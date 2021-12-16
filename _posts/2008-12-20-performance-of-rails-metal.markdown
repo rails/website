@@ -6,7 +6,7 @@ author: Pratik Naik
 published: true
 date: 2008-12-20 00:25:00.000000000 +00:00
 ---
-<p>Josh recently added <a href="http://weblog.rubyonrails.org/2008/12/17/introducing-rails-metal">Rails Metal</a>, which has been getting a fair bit of publicity. Metal is a great piece of functionality for those rare cases where the speed of your framework actually matters.</p>
+<p>Josh recently added <a href="https://rubyonrails.org/2008/12/17/introducing-rails-metal">Rails Metal</a>, which has been getting a fair bit of publicity. Metal is a great piece of functionality for those rare cases where the speed of your framework actually matters.</p>
 <p>However, people have been reporting <a href="http://www.infoq.com/news/2008/12/rails-metal">25x speed increase</a> over a regular Rails action, and that just doesn&#8217;t seem right. So I decided to do some benchmarking of &#8216;Hello World&#8217; Rails action v/s Metal. Here are my results :</p>
 <h2>Rails action</h2>
 <filter:code>Time per request : 1.244 [ms]<br />

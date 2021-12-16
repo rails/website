@@ -10,7 +10,7 @@ date: 2019-08-25
 Greetings! [Daniel](https://twitter.com/dodecadaniel) here, reporting from
 Brooklyn, NY.
 
-### [Rails 6 in the wild](https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/)
+### [Rails 6 in the wild](https://rubyonrails.org/2019/8/15/Rails-6-0-final-release)
 
 I know we mentioned this last week, but I am so excited I wanted to mention it
 again. Rails 6 has been out for a little over a week and has had over 60,000

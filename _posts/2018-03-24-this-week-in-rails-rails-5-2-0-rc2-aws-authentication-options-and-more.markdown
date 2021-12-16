@@ -10,7 +10,7 @@ date: 2018-03-24
 Hello fellow Rubyists, this is [Wojtek](https://twitter.com/morgoth85) bringing you the polished set of latest Rails news.  
 We do like to "polish" things here in Poland ;-)
 
-### [Rails 5.2.0.RC2 released](http://weblog.rubyonrails.org/2018/3/20/Rails-5-2-RC2/)
+### [Rails 5.2.0.RC2 released](https://rubyonrails.org/2018/3/20/Rails-5-2-RC2)
 
 Aiming for 5.2.0 final version to be released before the RailsConf in April. Help us test it, to have a solid and stable release.  
   

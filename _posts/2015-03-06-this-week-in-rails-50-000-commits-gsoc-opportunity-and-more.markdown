@@ -22,15 +22,15 @@ Come aboard and let's cast away.
 Our backs are all red from the pats given when news broke of Rails having more than 50,000 commits.  
 Adding to that chalupa 42 chummy contributors crossed the web and [helped out](http://contributors.rubyonrails.org/contributors/in-time-window/this-week).
 
-### [10+ Years of Rails with DHH](http://thechangelog.com/145/)
+### [10+ Years of Rails with DHH](http://thechangelog.com/145)
 
 Listen in as David takes a trip down memory lane. Hear why he made Rails and get some stories on the early days of Rails contributing. He also has some thoughts about money and open source. It might not be such a good thing to get paid to work on open source, after all.
 
-### [Rails & Google Summer of Code 2015](http://weblog.rubyonrails.org/2015/3/4/google-summer-of-code-2015/)
+### [Rails & Google Summer of Code 2015](https://rubyonrails.org/2015/3/4/google-summer-of-code-2015)
 
 Speaking of being paid for open source, Rails will be part of this year's GSoC. I was a student two years ago and wouldn't be here without it.
 
-I highly recommend doing your [research](https://groups.google.com/forum/#!topic/rubyonrails-gsoc/TR5EUPpWLck). Submit an honest [proposal](https://github.com/kaspth/gsoc-application) and you just might [make it](http://weblog.rubyonrails.org/2013/5/27/rails-google-summer-of-code-projects/).
+I highly recommend doing your [research](https://groups.google.com/forum/#!topic/rubyonrails-gsoc/TR5EUPpWLck). Submit an honest [proposal](https://github.com/kaspth/gsoc-application) and you just might [make it](https://rubyonrails.org/2013/5/27/rails-google-summer-of-code-projects).
 
 ## Seagulls of the Sea
 

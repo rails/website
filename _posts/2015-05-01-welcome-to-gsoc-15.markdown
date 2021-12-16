@@ -92,7 +92,7 @@ cookie jar, allowing us to have better control and security over our systems.
 **Student:** [Kasif Gilbert](https://github.com/klgilbert)<br>
 **Mentors:** [Sam Saffron](https://github.com/SamSaffron)
 
-In case you're not familiar with it, [RubyBench](http://rubybench.org/) is an amazing effort to keep
+In case you're not familiar with it, [RubyBench](http://rubybench.org) is an amazing effort to keep
 long running benchmarks for Ruby and related projects (like
 [Rails](http://rubybench.org/rails/rails/releases)). As you can see, our own benchmarks could use
 some love, so Kasif will be taking care of this. If everything goes well, JRuby support in
@@ -106,12 +106,12 @@ RubyBench would be the next step for this project.
 We hope to keep you up on important updates during the summer, but if you're interested in staying
 up to date (or maybe lending a hand?) please make sure to subscribe to our [mailing list](ml).
 
-Finally, we want to thank [José Valim](https://github.com/josevalim)/[The Pragmatic Programmers](https://pragprog.com/),
-[Pat Shaughnessy](http://patshaughnessy.net/)/[No Starch Press](http://www.nostarch.com/) and
-[O'Reilly](http://www.oreilly.com/) for donating copies of [Crafting Rails
+Finally, we want to thank [José Valim](https://github.com/josevalim)/[The Pragmatic Programmers](https://pragprog.com),
+[Pat Shaughnessy](http://patshaughnessy.net)/[No Starch Press](http://www.nostarch.com) and
+[O'Reilly](http://www.oreilly.com) for donating copies of [Crafting Rails
 Applications](https://pragprog.com/book/jvrails/crafting-rails-applications), [Ruby Under the
 Microscope](http://patshaughnessy.net/ruby-under-a-microscope) and offering discounts on
-[O'Reilly products](http://www.oreilly.com/) to our students.
+[O'Reilly products](http://www.oreilly.com) to our students.
 
 PS: In case you missed it, Ruby and SciRuby will also be part of this year's GSoC! You can learn
 more in the [Ruby GSoC][rubygsoc-ml] and [SciRuby

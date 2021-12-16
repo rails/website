@@ -7,7 +7,7 @@ published: true
 date: 2016-07-29
 ---
 
-This is detective&nbsp; 🕵&nbsp; [Prathamesh](https://twitter.com/_cha1tanya/) reporting from the secret chambers of Rails.
+This is detective&nbsp; 🕵&nbsp; [Prathamesh](https://twitter.com/_cha1tanya) reporting from the secret chambers of Rails.
 
 We were busy investigating many&nbsp; 🐛🐛🐛🐛🐛&nbsp; this week and I am happy to announce that we have successfully solved many mysterious cases 💪
 
@@ -17,9 +17,9 @@ We were busy investigating many&nbsp; 🐛🐛🐛🐛🐛&nbsp; this week and I
 
 Great 🔍 work by 22 detectives who solved mysterious cases this week. Also welcome to 4 new&nbsp; 🕵&nbsp; in our growing list of contributors!
 
-### [Ruby/Rails applications not vulnerable to HTTProxy security issue](https://blog.phusion.nl/2016/07/21/web-applications-on-phusion-passenger-are-not-vulnerable-to-httpoxy/)
+### [Ruby/Rails applications not vulnerable to HTTProxy security issue](https://blog.phusion.nl/2016/07/21/web-applications-on-phusion-passenger-are-not-vulnerable-to-httpoxy)
 
-The [Phusion](http://www.phusion.nl/) team found out that Ruby, Rails and Rack applications are not affected by the recent security issue related to HTTProxy. Great&nbsp; 🕵&nbsp; investigation!
+The [Phusion](http://www.phusion.nl) team found out that Ruby, Rails and Rack applications are not affected by the recent security issue related to HTTProxy. Great&nbsp; 🕵&nbsp; investigation!
 
 ## Fixed
 

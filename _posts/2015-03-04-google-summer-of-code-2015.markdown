@@ -45,8 +45,8 @@ Useful links:
 [ideas]: https://github.com/railsgsoc/ideas/wiki/2015-Ideas
 [ml]: http://groups.google.com/forum/#!forum/rubyonrails-gsoc
 [rubybench]: http://rubybench.org/
-[projects-2013]: http://weblog.rubyonrails.org/2013/5/27/rails-google-summer-of-code-projects/
-[projects-2014]: http://weblog.rubyonrails.org/2014/5/23/meet-our-google-summer-of-code-students-and-mentors/
+[projects-2013]: https://rubyonrails.org/2013/5/27/rails-google-summer-of-code-projects/
+[projects-2014]: https://rubyonrails.org/2014/5/23/meet-our-google-summer-of-code-students-and-mentors/
 [student-guide]: http://en.flossmanuals.net/GSoCStudentGuide/
 [melange]: http://www.google-melange.com/gsoc/profile/register/org_member/google/gsoc2015
 [timeline]: http://www.google-melange.com/gsoc/events/google/gsoc2015

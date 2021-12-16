@@ -7,7 +7,7 @@ published: true
 date: 2021-01-11
 ---
 
-Hi there. [Andy](https://andyatkinson.com/) here, with the first newsletter of 2021, highlighting some updates to Ruby on Rails over the last few weeks. Let's jump right in!
+Hi there. [Andy](https://andyatkinson.com) here, with the first newsletter of 2021, highlighting some updates to Ruby on Rails over the last few weeks. Let's jump right in!
 
 ### [Find and assert the presence of exactly one record](https://github.com/rails/rails/pull/40768)
 

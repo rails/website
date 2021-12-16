@@ -11,7 +11,7 @@ Hello everyone! This is [Marcel](https://twitter.com/marcelmorgan) with help fro
 
 ## Featured
 
-### [Google Summer of Code 2015](http://weblog.rubyonrails.org/2015/9/25/gsoc-2015-wrapping-up/)
+### [Google Summer of Code 2015](https://rubyonrails.org/2015/9/25/gsoc-2015-wrapping-up)
 
 The fourth year of participation in Google Summer of Code 2015 is over with excellent work done in the areas of Asset Pipeline (performance and... source maps!), Web Console (browser extension), the Rails test suite (Regression Test Selection), development setup (evented file system monitoring) and internals refactoring (cookies). Special thanks to Google, mentors and students who made this all possible.
 

@@ -13,7 +13,7 @@ Hello everyone! This is [Roque](https://twitter.com/repinel) bringing the latest
 
 ## Featured
 
-### [Rails 5.0.0.beta2 has been released!](http://weblog.rubyonrails.org/2016/2/2/Rails-5-0-beta2/)
+### [Rails 5.0.0.beta2 has been released!](https://rubyonrails.org/2016/2/2/Rails-5-0-beta2)
 
 Please give Rails 5.0 a try on your app. Spotting bugs and upgrade issues ahead helps big releases like this.
 
@@ -27,7 +27,7 @@ All aboard! The next train is leaving to Kansas City. Don't miss it! Tickets sal
 
 ### [Rails 5 only supports PostgreSQL 9.1+](https://github.com/rails/rails/pull/23434)
 
-Rails 5 will only support versions of PostgreSQL greater than or equal to 9.1. Older versions are no longer supported by the PostgreSQL team. You can read more on their [official page](http://www.postgresql.org/support/versioning/).
+Rails 5 will only support versions of PostgreSQL greater than or equal to 9.1. Older versions are no longer supported by the PostgreSQL team. You can read more on their [official page](http://www.postgresql.org/support/versioning).
 
 ## New Stuff
 

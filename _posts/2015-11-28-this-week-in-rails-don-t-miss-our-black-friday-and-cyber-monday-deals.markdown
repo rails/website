@@ -9,7 +9,7 @@ date: 2015-11-28 10:38:23 -0800
 
 Hello everyone!
 
-This is [Godfrey](https://twitter.com/chancancode), bringing you the latest news deals in [Rails](https://github.com/rails/rails). Have you been holding out on getting the latest copy of [Rails](http://rubyonrails.org)? Don't wait any longer as we are having our biggest sale of the year this weekend. Check out these unbelievable deals before they are gone!
+This is [Godfrey](https://twitter.com/chancancode), bringing you the latest news deals in [Rails](https://github.com/rails/rails). Have you been holding out on getting the latest copy of [Rails](https://rubyonrails.org)? Don't wait any longer as we are having our biggest sale of the year this weekend. Check out these unbelievable deals before they are gone!
 
 ## Featured
 

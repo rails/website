@@ -9,7 +9,7 @@ date: 2015-09-25 15:00:00 -07:00
 ---
 
 This year marked our fourth participation in [Google's Summer of
-Code](https://developers.google.com/open-source/gsoc/) (GSoC). In this post we'd like to tell you a bit
+Code](https://developers.google.com/open-source/gsoc) (GSoC). In this post we'd like to tell you a bit
 about this year's projects:
 
 ## Asset Source Maps ([Andrei Istratii](https://github.com/Andreis13))
@@ -67,6 +67,6 @@ We want to thank all the students and mentors involved in this year's Summer of 
 a good experience for everyone. We also want to thank Google for supporting the projects, and [José
 Valim](http://plataformatec.com.br/crafting-rails-applications), [Pat
 Shaughnessy](http://patshaughnessy.net/ruby-under-a-microscope) and [O'Reilly
-Media](http://www.oreilly.com/) for helping out with learning resources for our students.
+Media](http://www.oreilly.com) for helping out with learning resources for our students.
 
 See you next year!
