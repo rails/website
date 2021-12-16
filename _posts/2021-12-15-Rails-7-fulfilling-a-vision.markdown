@@ -7,9 +7,9 @@ published: true
 date: 2021-12-15 15:17:00 -08:00
 ---
 
-This version of Rails has been years in the conceptual making. It's the fulfillment of a vision to present a truly full-stack approach to web development that tackles both the front- and back-end challenges with equal vigor. An omakase menu that includes everything from the aperitif to the desert.
+This version of Rails has been years in the conceptual making. It's the fulfillment of a vision to present a truly full-stack approach to web development that tackles both the front- and back-end challenges with equal vigor. An omakase menu that includes everything from the aperitif to the dessert.
 
-This vision wasn't possible even just a few years ago. We simply didn't have the core technologies in place. But with advancements in browser support for ES6/ESM, widespread adoption of HTTP/2, and [the exciting new standard for import maps](https://github.com/rails/importmap-rails), it's finally possible. Rails 7 takes advantage of all of these advances to deliver [a no-Node default approach to the front end](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755) – without sacrificing neither access to [npm packages](https://github.com/rails/importmap-rails#using-node-modules-via-javascript-cdns) nor modern JavaScript in the process.
+This vision wasn't possible even just a few years ago. We simply didn't have the core technologies in place. But with advancements in browser support for ES6/ESM, widespread adoption of HTTP/2, and [the exciting new standard for import maps](https://github.com/rails/importmap-rails), it's finally possible. Rails 7 takes advantage of all of these advances to deliver [a no-Node default approach to the front end](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755) – without sacrificing either access to [npm packages](https://github.com/rails/importmap-rails#using-node-modules-via-javascript-cdns) or modern JavaScript in the process.
 
 [Hotwire](https://hotwired.dev)'s combination of [Turbo](https://turbo.hotwired.dev) and [Stimulus](https://stimulus.hotwired.dev) deliver all the tools needed to produce fantastic user experiences that leave little to nothing on the table in contrast to single-page applications – at a fraction of the complexity. It's the default choice for new Rails apps, replacing the far more limited options of Turbolinks and Rails UJS.
 
@@ -23,7 +23,7 @@ These are the [best default choices](https://world.hey.com/dhh/rails-7-will-have
 
 But of course, this is not all! While Rails 7's big idea is the reformation of the front-end answers, there's plenty of additional progress to celebrate as well. Like our [brand new website](https://rubyonrails.org)! Created together with Basecamp designer Sean Mitchell. The new look has also been applied to the boot screen for new apps. And I've recorded a new demo video to show off the framework properly.
 
-And here's some of the many other new features and improvements:
+And here are some of the many other new features and improvements:
 
 ## At-Work Encryption With Active Record
 
