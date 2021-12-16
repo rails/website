@@ -2,6 +2,7 @@ title: Ruby on Rails
 description: A web-app framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
 twitter: rails
 baseurl: /
+feed_path: /feed.xml
 
 plugins:
   - jekyll-feed
