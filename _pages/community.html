@@ -1,6 +1,7 @@
 ---
 title: Community
 description:
+permalink: /community
 ---
 
 <div class="heading common-padding--bottom common-padding--top-small">
@@ -18,7 +19,7 @@ description:
 <div class="core common-background--grey common-shape--bottom-white-up-left common-shape--top-white-down-right">
   <div class="container">
     <div class="core__body">
-      <div class="core__headline common-headline">
+      <div class="core__headline common-headline" id="core">
         <h3>Meet the Core team.</h3>
       </div>
 
@@ -46,7 +47,7 @@ description:
         {% endfor %}
       </div>
 
-      <div class="core__headline core__headline--padding-top common-headline">
+      <div class="core__headline core__headline--padding-top common-headline" id="committers">
         <h3>The Committers.</h3>
       </div>
 
@@ -54,7 +55,7 @@ description:
         <p><strong>In addition to the Core team,</strong> the Committer team assists with processing pull requests and making changes to the framework, but does not have the keys to make final releases or set policy. All members of the Core team came up through working on this team: {% for member in site.data.community.committers %}{% if member.url %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
       </div>
 
-      <div class="core__headline core__headline--padding-top common-headline">
+      <div class="core__headline core__headline--padding-top common-headline" id="alumni">
         <h3>The Alumni.</h3>
       </div>
 
