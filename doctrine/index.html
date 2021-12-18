@@ -1,5 +1,8 @@
 ---
 title: The Rails Doctrine
+permalink: /doctrine
+redirect_from:
+  - /doctrine/
 ---
 
 <div class="heading common-padding--bottom common-padding--top common-shape--bottom-grey-down-left">
@@ -60,7 +63,7 @@ title: The Rails Doctrine
     <div class="text__body">
       <div class="text__content common-content">
         <h3>Optimize for programmer happiness</h3>
-        <p>There would be no Rails without Ruby, so it's only fitting that the first doctrinal pillar is lifted straight from the core motivation for creating Ruby.</p>
+        <p>There would be no Rails without Ruby, so it’s only fitting that the first doctrinal pillar is lifted straight from the core motivation for creating Ruby.</p>
         <p>Ruby’s original heresy was indeed to place the happiness of the programmer on a pedestal. Above many other competing and valid concerns that had driven programming languages and ecosystems before it.</p>
         <p>Where Python might boast that there’s “one and preferably only one way to do something”, Ruby relished expressiveness and subtlety. Where Java championed forcefully protecting programmers from themselves, Ruby included a set of sharp knives in the welcome kit. Where Smalltalk drilled a purity of message passing, Ruby accumulated keywords and constructs with an almost gluttonous appetite.</p>
         <p>Ruby was different because it valued different things. And most of those things were in service of this yearning for programmer happiness. A pursuit that brought it at odds with not only most other programming environments, but also the mainstream perception of what a programmer was and how they were supposed to act.</p>
@@ -101,7 +104,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
       <div class="text__content common-content">
         <h3>Convention over Configuration</h3>
         <p>One of the early productivity mottos of Rails went: “You’re not a beautiful and unique snowflake”. It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.</p>
-        <p>Who cares what format your database primary keys are described by? Does it really matter whether it's “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of  recurrent deliberation? No.</p>
+        <p>Who cares what format your database primary keys are described by? Does it really matter whether it’s “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of  recurrent deliberation? No.</p>
         <p>Part of the Rails’ mission is to swing its machete at the thick, and ever growing, jungle of recurring decisions that face developers creating information systems for the web. There are thousands of such decisions that just need to be made once, and if someone else can do it for you, all the better.</p>
         <p>Not only does the transfer of configuration to convention free us from deliberation, it also provides a lush field to grow deeper abstractions. If we can depend on a Person class mapping to people table, we can use that same inflection to map an association declared as has_many :people to look for a Person class. The power of good conventions is that they pay dividends across a wide spectrum of use.</p>
         <p>But beyond the productivity gains for experts, conventions also lower the barriers of entry for beginners. There are so many conventions in Rails that a beginner doesn’t even need to know about, but can just benefit from in ignorance. It’s possible to create great applications without knowing why everything is the way it is.</p>
@@ -258,7 +261,7 @@ if person.in? people
         <p>Those are the hard bargains we have to continue to make. Is Rails going to be better off in five years for the changes we make today? Is Rails going to be better off for adopting another problem domain, like job queuing or WebSockets, in years to come? If yes, then let’s suck it up and do the work.</p>
         <p>This work isn’t just something that needs to happen in Rails itself, but also in the larger Ruby community. Rails should be at the frontier of helping Ruby’s progress by driving its constituents to adopt later versions faster. </p>
         <p>We’ve done very well at this so far. From when I started, we’ve moved through Ruby 1.6, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 and now onto 2.6. Lots of major changes along the way, but Rails was there to have Ruby’s back, and help everyone get with the program faster. That’s in part the privilege and obligation Rails serves as the major popularizer of Ruby.</p>
-        <p>This too is true for the auxiliary tools of the chain. Bundler was once a controversial idea, but through Rails' insistence that it be a cornerstone of a shared future, it’s today just taken for granted. The same is true for things like the asset pipeline and Spring, the persistent command process. All three of these went through, or are still going through, growing pains, but the obviousness of their value in the long term helped us push through that.</p>
+        <p>This too is true for the auxiliary tools of the chain. Bundler was once a controversial idea, but through Rails’ insistence that it be a cornerstone of a shared future, it’s today just taken for granted. The same is true for things like the asset pipeline and Spring, the persistent command process. All three of these went through, or are still going through, growing pains, but the obviousness of their value in the long term helped us push through that.</p>
         <p>Progress is ultimately mostly about people and their willingness to push change. This is why there are no lifetime seats in groups like <a href="/community#core">Rails Core</a> or <a href="/community#committers">Rails Committers</a>. Both groups are for those who are actively working on making progress for the framework. For some, their stake in such progress may last just a few years, and we will forever be grateful for their service, and for others it may last decades.</p>
         <p>Likewise, it’s why it’s so important for us to continue to welcome and encourage new members of the community. We need fresh blood and fresh ideas to make better progress.</p>
       </div>
