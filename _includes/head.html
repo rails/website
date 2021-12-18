@@ -15,6 +15,7 @@
 {% endif %}
 
 {% assign image = '/assets/images/opengraph.png' | absolute_url %}
+{% assign url = page.url  | absolute_url %}
 
 <head>
   <title>{{ site.title }} &mdash; {% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}</title>
@@ -28,7 +29,7 @@
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ image }}" />
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:url" content="{{ url }}" />
   <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
 
   <meta name="twitter:title" content="{{ title }}" />
@@ -44,12 +45,12 @@
       "@type": "{% if page.collection == 'posts' %}BlogPosting{% else %}WebPage{% endif %}",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page.url | absolute_url }}"
+        "@id": "{{ url }}"
       },
       "name": "{{ site.title }}",
       "headline": "{{ title }}",
       "description": "{{ description }}",
-      "url": "{{ page.url | absolute_url }}",
+      "url": "{{ url }}",
       "image": "{{ image }}"{% if page.collection == 'posts' %},
       "author": {
         "@type": "Person",
