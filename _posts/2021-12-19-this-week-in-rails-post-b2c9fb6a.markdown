@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "This week in Rails: New releases, bugfixes and more!"
 categories: news
 author: gregmolnar
 published: true
