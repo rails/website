@@ -224,7 +224,7 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.require(:article).permit!(:title, :content)
+      params.require(:article).permit(:title, :content)
     end
 end
 {% endhighlight %}
@@ -232,7 +232,7 @@ end
 
         <div class="example__content common-content">
           <h3>Action Controllers handle all requests.</h3>
-          <p>Controllers expose the domain model to the web, process incoming parameters, set caching headers, and renders templates, responding with either HTML or JSON.</p>
+          <p>Controllers expose the domain model to the web, process incoming parameters, set caching headers, and render templates, responding with either HTML or JSON.</p>
         </div>
       </div>
 
