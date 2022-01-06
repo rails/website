@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This Year in Rails! A summary of 2021 in the Rails world"
+title: Rails 7.0.1 has been released
 categories: releases
 author: rafaelfranca
 published: true
