@@ -14,11 +14,11 @@ are a few notable changes.
 
 First, one feature that was introduced in 7.0.0 was removed, the ability to pass a `service_name` param to
 `DirectUploadsController`. This feature was causing significant issues when upgrading from Rails 6.1, so the Rails
-team decided to remove it while we work in a backward compatible changed. You can read more about the original
+team decided to remove it while we work in a backward compatible change. You can read more about the original
 feature in the [original pull request](https://github.com/rails/rails/pull/38957) and about the problems in the
 [related issue](https://github.com/rails/rails/issues/43971).
-We don't take this decision lightly, and usually don't remove feature after they are released without proper
-deprecation cycle, but at this time we decided to prioritize making easier for people to upgrade.
+We don't take this decision lightly, and usually don't remove features after they are released without a proper
+deprecation cycle, but at this time we decided to prioritize making it easier for people to upgrade.
 
 Finally, with the same goal in mind, Rails 7.0.2 introduced a new feature, [the ability to version the database
 schema based on the Rails version](https://github.com/rails/rails/pull/44286). This new feature will allow existing
