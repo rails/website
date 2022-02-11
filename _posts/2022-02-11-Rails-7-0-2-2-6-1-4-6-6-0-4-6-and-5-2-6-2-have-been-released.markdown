@@ -1,0 +1,92 @@
+---
+layout: post
+title: 'Rails 7.0.2.2, 6.1.4.6, 6.0.4.6, and 5.2.6.2 have been released!'
+categories:
+author: tenderlove
+published: true
+date: 2022-02-11 12:21:12 -08:00
+---
+Hi everyone!!  Rails 7.0.2.2, 6.1.4.6, 6.0.4.6, and 5.2.6.2 have been released!
+
+This release is a security release, and you should upgrade soon!  The releases
+have been made from the last release tag, so hopefully upgrading will go smoothly.
+
+You can read about the security issue [here](https://github.com/rails/rails/security/advisories/GHSA-wh98-p28r-vrc9)
+and [here](https://discuss.rubyonrails.org/t/cve-2022-23633-possible-exposure-of-information-vulnerability-in-action-pack/80016).
+Basically there is an issue where if Rails is used with a buggy webserver or
+buggy middleware, information can leak between requests.  That's not great, so
+please upgrade!
+
+Here are the shas for the released versions:
+
+```
+$ shasum *7.0.2.2*
+3f99b2c9ec4a55f43fa6d414c0309b2f4ec59332  actioncable-7.0.2.2.gem
+8309703cc3d51c1672a28edbc9ba4c30611a538b  actionmailbox-7.0.2.2.gem
+426a92abcfa965af564f2c90d95e72928e55db56  actionmailer-7.0.2.2.gem
+c8edbddb7bd8e505065941bd541c76c72a14377c  actionpack-7.0.2.2.gem
+e08c7858101374cf408f32912f9f6f0ee918711b  actiontext-7.0.2.2.gem
+badccc672fca8d95b3e3206d6b77f3f5f124911b  actionview-7.0.2.2.gem
+43161e49374c63f2e90fb59f76e35c53b936c09f  activejob-7.0.2.2.gem
+dc365c75a1b660c7414e9b3c75cb46e0b05cea78  activemodel-7.0.2.2.gem
+77f4701fdd0fe6a3ad243bd2707dfd82b9b5e822  activerecord-7.0.2.2.gem
+7e106c888e41ea5af7fcd50c987417918f302f5c  activestorage-7.0.2.2.gem
+a093b231a40ab1c912a53e866c9c66f501ca82dc  activesupport-7.0.2.2.gem
+44060dff61a60c7d667eaa0e84ec2898d58c70a4  rails-7.0.2.2.gem
+22119c91c8ea307a38c757dae8728c4c01bbbf7b  railties-7.0.2.2.gem
+```
+
+```
+$ shasum *6.1.4.6*
+78526b0ba637c73f735979ece571100720d83e1a  actioncable-6.1.4.6.gem
+1a705c3c92368188341cec3a3f33a1bdc41f00f5  actionmailbox-6.1.4.6.gem
+a4287068b055c2817d81e3dfbcb77e572169d3a9  actionmailer-6.1.4.6.gem
+b3b500421593282c8a2978f1d3a5fa201cddd5c2  actionpack-6.1.4.6.gem
+b491892c747712e65578f02ebed7f1e47befb313  actiontext-6.1.4.6.gem
+4c481f14d2f90383835e2b31831d73c7eed5bd44  actionview-6.1.4.6.gem
+566883638a917d866718b894dc5884cfb9fe50dc  activejob-6.1.4.6.gem
+d574e87c19b52c9ebdea61f93a24007d3bc74de8  activemodel-6.1.4.6.gem
+052e88c62c3ebaf7e6c26791b3772f07e8dfabed  activerecord-6.1.4.6.gem
+a4d21fac536dd30f3be62cd1760f32b97a0ec0ba  activestorage-6.1.4.6.gem
+11a8dfb9ce812e2e511bdecad8ff86153a77f136  activesupport-6.1.4.6.gem
+3d7b4399497c4bd010c6326b83676d488188dce4  rails-6.1.4.6.gem
+c22f815c9943dd447ac662258f737ad78fd9d5a8  railties-6.1.4.6.gem
+```
+
+```
+$ shasum *6.0.4.6*
+34194eeecc6a89b2da66cbe0959507e64fd525b1  actioncable-6.0.4.6.gem
+db6c4afa40933e15671f0a998399b1f4e4fb1c74  actionmailbox-6.0.4.6.gem
+6d737b0a040f226966886e29c1a1efe39c485b01  actionmailer-6.0.4.6.gem
+8d9f6b74fac04459c14e7eff1cfd913dbc200e65  actionpack-6.0.4.6.gem
+c8335ae0cf3c42b35154d889d955207dc8b6d2b7  actiontext-6.0.4.6.gem
+ff5d39521021cd0566f5c03f0dbce73de73165b1  actionview-6.0.4.6.gem
+374230a7778fe9b612b2bce67b681b21d8599630  activejob-6.0.4.6.gem
+347fe978180c7c711355af744d9337e04812bd65  activemodel-6.0.4.6.gem
+a6f9c150e7c31aba8296f1a4fa779687e30e8a96  activerecord-6.0.4.6.gem
+ed482aa2543bb323b5ff9e098cb0994110aeec57  activestorage-6.0.4.6.gem
+2885e00cd89e7118911fe6fc19dc0ac05c878eaf  activesupport-6.0.4.6.gem
+01c01267e7886f674c0ef5fe9e503a5c92e150d9  rails-6.0.4.6.gem
+a80f0b232b3a417dab8a81484204650621ab84ce  railties-6.0.4.6.gem
+```
+
+```
+$ shasum *5.2.6.2*
+e81d12ee76ed0d07c105244afbd2fbb50ac5e7f7  actioncable-5.2.6.2.gem
+119b07d68a83d45e3ae22dc9ce2f74df94569892  actionmailer-5.2.6.2.gem
+6d0f5ab9e71d6ca21e2ea694e27a164d7a4d8112  actionpack-5.2.6.2.gem
+628c61ab2ea01d9e9e93057f8d678d4c2153242a  actionview-5.2.6.2.gem
+2c5e389a84065b03a4c0630a5abb22094a8f7b38  activejob-5.2.6.2.gem
+4568c7d75d8b5208e85868087c69a65ab4afd766  activemodel-5.2.6.2.gem
+bed409176392ebd163807adb56c05ec244bfce9d  activerecord-5.2.6.2.gem
+1793d94ba6f64666c09e32c851017003f65bdd63  activestorage-5.2.6.2.gem
+9a801b2b6ff6b3199cdfa8bf225ac8de059182e6  activesupport-5.2.6.2.gem
+5df043782c9042e69299cb6ab52a0859ed05a589  rails-5.2.6.2.gem
+b01f4ab5537b1b5a08b6d51efd6fa70d83761a14  railties-5.2.6.2.gem
+```
+
+Sorry about the security release dropping on a Friday, but we wanted to get this
+out ASAP.  But on the bright side, "at least it's Friday!" 😅
+
+-Aaron
+❤️
