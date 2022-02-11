@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Rails 7.0.2.2, 6.1.4.6, 6.0.4.6, and 5.2.6.2 have been released!'
-categories:
+categories: releases
 author: tenderlove
 published: true
 date: 2022-02-11 12:21:12 -08:00
