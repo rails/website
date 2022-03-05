@@ -34,13 +34,6 @@ core:
     handle: rafaelfranca
     image: /assets/images/core-rafael.jpg
 
-  - name: Andrew
-    since: 2012
-    location: UK
-    url: https://twitter.com/pixeltrix
-    handle: pixeltrix
-    image: /assets/images/core-andrew.jpg
-
   - name: Guillermo
     since: 2012
     location: Canada
