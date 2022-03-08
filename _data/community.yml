@@ -55,13 +55,6 @@ core:
     handle: _matthewd
     image: /assets/images/core-matthew.jpg
 
-  - name: Kasper
-    since: 2016
-    location: Denmark
-    url: https://twitter.com/kaspth
-    handle: kaspth
-    image: /assets/images/core-kasper.jpg
-
   - name: Eileen
     since: 2017
     location: USA
