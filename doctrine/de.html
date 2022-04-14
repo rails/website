@@ -99,7 +99,7 @@ redirect_from:
           </li>
           <li><a href="#omakase">Die Speisekarte ist Omakase</a></li>
           <li><a href="#no-one-paradigm">Kein Paradigma</a></li>
-          <li><a href="#beautiful-code">Erhebe schönen Code</a></li>
+          <li><a href="#beautiful-code">Schätze schönen Code</a></li>
           <li>
             <a href="#provide-sharp-knives">Biete scharfe Messer an</a>
           </li>
@@ -151,14 +151,14 @@ redirect_from:
           handeln sollte.
         </p>
         <p>
-          Ruby hat es sich zur Aufgabe gemacht, Programmierervorlieben nicht nur
+          Ruby hat es sich zur Aufgabe gemacht, die Vorlieben der Programmierer nicht nur
           zu erkennen, sondern zu berücksichtigen und zu fördern. Egal ob diese
-          aus Unzulänglichkeit, Laune oder Freude stammen. Matz übersprang
+          aus Unzulänglichkeit, Laune oder Freude stammen. Matz übersprang dabei
           Implementierungshürden von erstaunlicher Komplexität, nur dazu mit dem
           Ziel die Maschine dazu zu bringen, ihren menschlichen Mitverschwörer
           anzulächeln und ihm zu schmeicheln. Ruby steckt voller optischer
           Täuschungen, bei denen das, was für unser geistiges Auge einfach, klar
-          und schön erscheint, in Warheit ein akrobatisches Durcheinander von
+          und schön erscheint, in Wahrheit ein akrobatisches Durcheinander von
           Drähten unter der Motorhaube ist. Diese Entscheidungen waren nicht
           frei (frage die JRuby-Crew nach dem Versuch, diese magische Spieluhr
           zurückzuentwickeln!), genau deshalb sind sie so lobenswert.
@@ -215,9 +215,16 @@ redirect_from:
           erwarten würdest. Das lässt sich leicht mit einem Kontrast zu Python
           beschreiben:
         </p>
-        {% highlight ruby %} $ irb irb(main):001:0> exit $ irb irb(main):001:0>
-        quit $ python >>> exit Use exit() or Ctrl-D (i.e. EOF) to exit {%
-        endhighlight %}
+{% highlight ruby %}
+$ irb
+irb(main):001:0> exit
+$ irb
+irb(main):001:0> quit
+
+$ python
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+{% endhighlight %}
         <p>
           Ruby akzeptiert sowohl quit als auch exit, um dem offensichtlichen
           Wunsch des Programmierers Rechnung zu tragen, seine interaktive
@@ -275,14 +282,14 @@ redirect_from:
           Ein weiteres Beispiel, das weniger Implementierungsaufwand erforderte,
           aber fast ebenso viel Bestürzung auslöste: Array#second through #fifth
           (und #forty_two für eine gute Trolling-Maßnahme). Diese
-          Alias-Zugreifer waren zutiefst beleidigend für eine sehr lautstarke
+          Alias-Accessoren waren zutiefst beleidigend für eine sehr lautstarke
           Wählerschaft, die das Aufblähen (und das nahe Ende der Zivilisation,
           für ein gutes Maß) von dem beklagte, das genauso gut als Array#[1],
           Array#[2] (und Array[ 41]) hätte geschrieben werden können.
         </p>
         <p>
           Aber beide Entscheidungen bringen mich bis heute zum Schmunzeln. Ich
-          genieße es, people.third in einem Testfall oder der Konsole zu
+          genieße es, people.third in einem Test oder der Konsole zu
           schreiben. Nein, das ist nicht logisch. Es ist nicht effizient. Es
           kann sogar pathologisch sein. Aber es bringt mich immer noch zum
           Lächeln, erfüllt damit das Prinzip und bereichert mein Leben, was dazu
@@ -294,7 +301,7 @@ redirect_from:
           schwierig, die Optimierung auf Zufriedenheit zu messen. Das macht es
           zu einem fast von Natur aus unwissenschaftlichen Unterfangen, was es
           für einige weniger wichtig, wenn nicht geradezu frustrierend macht.
-          Programmierern wird beigebracht, über das Messbare zu burteilen und es
+          Programmierern wird beigebracht, über das Messbare zu urteilen und es
           zu bezwingen. Das, was klare Schlussfolgerungen hat und wo für A
           kategorisch gezeigt werden kann, dass es besser ist als B.
         </p>
@@ -326,33 +333,33 @@ redirect_from:
         <h3>Konvention über Konfiguration</h3>
         <p>
           Eines der frühen Produktivitätsmottos von Rails lautete: „Du bist
-          keine schöne und einzigartige Schneeflocke“. Es postulierte, dass du
+          keine schöne und einzigartige Schneeflocke“. Es postulierte, dass wir
           durch das Aufgeben eitler Individualität die Mühsal weltlicher
           Entscheidungen überspringen, und in wirklich wichtigen Bereichen
-          schneller vorankommen kannst.
+          schneller vorankommen können.
         </p>
         <p>
           Wen kümmert es, in welchem Format deine Datenbank-Primärschlüssel
-          beschrieben werden? Ist es wirklich egal, ob es „id“, „postId“,
+          beschrieben werden? Ist es nicht wirklich egal, ob es „id“, „postId“,
           „posts_id“ oder „pid“ ist? Ist das eine Entscheidung, die es wert ist
           immer wieder geprüft zu werden? Nein.
         </p>
         <p>
           Ein Teil der Mission von Rails besteht darin, seine Machete gegen den
           dichten und ständig wachsenden Dschungel wiederkehrender
-          Entscheidungen zu schwingen, denen Entwickler gegenüberstehen, die
+          Entscheidungen zu schwingen, denen Programmierer gegenüberstehen, die
           Informationssysteme für das Internet entwickeln. Es gibt Tausende
           solcher Entscheidungen, die nur einmal getroffen werden müssen, und
           wenn jemand anderes es für dich tun kann, umso besser.
         </p>
         <p>
-          Die Übertragung von Konfiguration auf Konvention befreit uns nicht nur
+          Die Umstellung von Konfiguration auf Konvention befreit uns nicht nur
           von Überlegungen, sondern bietet auch ein fruchtbares Feld für tiefere
           Abstraktionen. Wenn wir uns darauf verlassen können, dass eine
-          Person-Klasse einer Personentabelle zugeordnet wird, können wir
+          person class einer person Tabelle zugeordnet wird, können wir
           dieselbe Beugung verwenden, um eine als has_many :people deklarierte
-          Assoziation zuzuordnen, um nach einer Person-Klasse zu suchen. Die
-          Stärke guter Konventionen liegt darin, dass du sie über ein breites
+          Assoziation zuzuordnen, um nach einer person class zu suchen. Die
+          Stärke guter Konventionen liegt darin, dass sie sich über ein breites
           Anwendungsspektrum hinweg auszahlen.
         </p>
         <p>
@@ -367,15 +374,15 @@ redirect_from:
           Das geht nicht, wenn dein Framework nur ein dickes Lehrbuch und deine
           neue Anwendung ein leeres Blatt Papier ist. Es bedarf immenser
           Anstrengung, um überhaupt herauszufinden, wo und wie man anfangen
-          soll. Um loszulegen besteht die halbe Miete darin, einen Faden zu
+          soll. Beim Loslegen besteht die halbe Miete darin, einen Faden zu
           finden, an dem man ziehen kann.
         </p>
         <p>
           Das Gleiche gilt auch, wenn du bereits verstehst, wie alle Teile
           zusammenpassen. Wenn es für jede Änderung einen offensichtlichen
           nächsten Schritt gibt, können wir die vielen Teile einer Anwendung
-          durchgehen, die mit allen anderen Anwendungen, die ihr vorangegangen
-          sind, identisch oder ihnen sehr ähnlich sind. Ein Ort für alles und
+          durchgehen, die mit allen anderen Anwendungen, die bereits entwickelt wurden,
+          identisch, oder ihnen sehr ähnlich sind. Ein Ort für alles und
           alles hat seinem Platz. Einschränkungen befreien selbst die fähigsten
           Köpfe.
         </p>
@@ -389,13 +396,13 @@ redirect_from:
           sie sind da.
         </p>
         <p>
-          Der schwierige Teil ist zu wissen, wann man von den Konventionen
+          Die Herausforderung besteht darin zu wissen, wann man von den Konventionen
           abweicht. Wann sind die abweichenden Anforderungen gravierend genug,
           um einen Ausflug zu rechtfertigen? Ich behaupte, dass die meisten
           Impulse, eine schöne und einzigartige Schneeflocke zu sein, schlecht
-          durchdacht sind und dass die Kosten, die es kostet, von den Schienen
-          abzuweichen, unterschätzt werden, aber gerade genug davon machen es
-          notwendig, dass du alle sorgfältig abwägen musst.
+          durchdacht sind und dass die Kosten, die entstehen, wenn man von den Schienen
+          abweicht, unterschätzt werden. Aber gerade genug davon machen es
+          notwendig, dass du alle Abweichungen sorgfältig abwägen musst.
         </p>
       </div>
     </div>
@@ -411,18 +418,18 @@ redirect_from:
       <div class="text__content common-content">
         <h3>Die Speisekarte ist Omakase</h3>
         <p>
-          Woher weisst du, was du in einem Restaurant bestellen sollst, wenn du
-          nicht weisst, was gut ist? Nun, wenn du den Koch wählen lässt,
+          Woher weißt du, was du in einem Restaurant bestellen sollst, wenn du
+          nicht weißt, was gut ist? Nun, wenn du den Koch wählen lässt,
           könntest du wahrscheinlich von einem guten Essen ausgehen, noch bevor
-          du weisst, was „gut“ ist. Das ist Omakase. Eine Art, gut zu essen, die
-          nicht erfordert, dass du ein Experte in der Küche, noch mit blindem
+          du weißt, was „gut“ ist. Das ist Omakase. Eine Art, gut zu essen, die
+          nicht erfordert, dass du ein Experte in der Küche, oder mit blindem
           Glück beim wählen im Dunkeln gesegnet bist.
         </p>
         <p>
           Für die Programmierung sind die Vorteile dieser Vorgehensweise, andere
-          Ihren Stack zusammenbauen zu lassen, ähnlich denen, die wir aus
+          ihren Stack zusammenbauen zu lassen, ähnlich denen, die wir aus
           Konvention über Konfiguration ableiten, aber auf einer höheren Ebene.
-          Während sich CoC damit beschäftigt, wie wir einzelne Frameworks am
+          Während sich Convention Over Configuration damit beschäftigt, wie wir einzelne Frameworks am
           besten nutzen, beschäftigt sich Omakase damit,
           <em>welche</em> Frameworks und wie sie zusammenpassen.
         </p>
@@ -447,7 +454,7 @@ redirect_from:
           System zu betrachten.
         </p>
         <p>
-          Also haben wir uns bei Rails entschieden, ein Gut, das individuelle
+          Deshalb haben wir uns bei Rails entschieden, ein Gut, das individuelle
           Privileg eines Programmierers, jedes Werkzeug in seiner Kiste
           auszuwählen, zugunsten eines größeren zu verringern: Eine bessere
           Werkzeugkiste für alle. Die Gewinne und Vorteile sind zahlreich:
@@ -458,7 +465,7 @@ redirect_from:
             Rails auf die gleiche Standardweise verwenden, haben wir eine
             gemeinsame Erfahrung. Diese Gemeinsamkeit macht es viel einfacher,
             Menschen zu unterrichten und ihnen zu helfen. Es bildet eine
-            Dikussionsgrundlage über die Herangehensweise. Wir haben letzte
+            Diskussionsgrundlage über die Herangehensweise. Wir haben letzte
             Nacht um 7 Uhr alle dieselbe Sendung gesehen, damit wir am nächsten
             Tag darüber reden können. Es fördert ein stärkeres
             Gemeinschaftsgefühl.
@@ -484,7 +491,7 @@ redirect_from:
             >
             Obwohl Rails ein Omakase-Stack ist, erlaubt es dir immer noch,
             bestimmte Frameworks oder Bibliotheken durch Alternativen zu
-            ersetzen. Es ist aber nicht erforderlich, dass du es tust. Das
+            ersetzen. Es ist aber nicht erforderlich, dass du das tust. Das
             bedeutet, dass du diese Entscheidungen verschieben kannst, bis du
             eine klare, persönliche Palette entwickelt hast, die gelegentliche
             Unterschiede bevorzugt.
@@ -515,7 +522,7 @@ redirect_from:
           Es hat eine starke emotionale Anziehungskraft, eine einzige zentrale
           Idee auszuwählen und ihr bis zur logischen Schlussfolgerung als deiner
           architektonischen Untermauerung zu folgen. In einer solchen Disziplin
-          liegt eine Klarheit, daher ist offensichtlich, warum Programmierer von
+          liegt eine gewisse Klarheit, daher ist offensichtlich, warum Programmierer von
           Natur aus von diesem hellen Licht angezogen werden.
         </p>
         <p>
@@ -527,15 +534,15 @@ redirect_from:
           Ideen, bei der ein einziger Sieger erklärt werden muss.
         </p>
         <p>
-          Schauen wir die Templates an, mit denen wir die Ansicht in unserer
-          Rails MVC-Torte erstellen. Standardmäßig sind alle Helfer, die es uns
-          ermöglichen, Code aus diesen Vorlagen zu extrahieren, nur ein großer
+          Schauen wir die Templates an, mit denen wir den View in unserem
+          Rails MVC-Kuchen erstellen. Standardmäßig sind alle Helfer, die es uns
+          ermöglichen, Code aus diesen Templates zu extrahieren, nur ein großer
           Topf von Funktionen! Es ist sogar ein einziger Namespace. Oh welcher
-          Schock und welches Grauen, es ist wie eine PHP-Suppe!
+          Schock und welches Grauen, es ist wie eine Suppe wie PHP!
         </p>
         <p>
           Aber ich behaupte, dass PHP es richtig gemacht hat, wenn es darum
-          ging, einzelne Funktionen darzustellen, die selten interagieren
+          ging, einzelne Funktionen darzustellen, die wir selten interagieren
           müssen, wie es bei den zahlreichen Abstraktion in Templates der Fall
           ist. Und für diesen Zweck ist der einzelne Namespace, der große Topf
           an Methoden, nicht nur eine vernünftige, sondern eine großartige Wahl.
@@ -550,7 +557,7 @@ redirect_from:
           selten und nicht als üblich erwiesen.
         </p>
         <p>
-          Im Vergleich dazu behandeln wir das Model in unserer MVC-Schichttorte
+          Im Vergleich dazu behandeln wir das Model in unserer MVC-Torte
           im Allgemeinen als die wichtigste Bastion der objektorientierten
           Tugenden. Genau die richtigen Namen für Objekte zu finden, die
           Kohärenz zu erhöhen und die Abhängigkeiten zu verringern, ist der Spaß
@@ -569,9 +576,9 @@ redirect_from:
           Sogar die Grundlagen des Active-Record-Frameworks stossen einige
           Puristen vor den Kopf. Wir mischen die Logik, die für die direkte
           Anbindung an die Datenbank benötigt wird, mit der Geschäftsdomäne und
-          -logik. Was für eine Gleichsetzung von Grenzen! Ja, denn es hat sich
-          als praktisch erwiesen, bei einer Web-App wo viele Wege nach Rom
-          führen unser Ziel zu erreichen, die praktisch immer mit einer Art
+          -logik. Was für ein Aufweichen von Grenzen! Ja, denn es hat sich
+          als praktisch erwiesen, bei einer Web-App, wo viele Wege nach Rom
+          führen unser Ziel zu erreichen. Denn praktisch wird immer mit einer Art
           Datenbank kommuniziert, um den Zustand des Domänenmodells zu
           speichern.
         </p>
@@ -580,10 +587,10 @@ redirect_from:
           Spektrum an Problemen anzugehen. Die meisten individuellen Paradigmen
           funktionieren innerhalb eines bestimmten Teils des Problemraums sehr
           gut, werden aber unbeholfen oder starr, wenn sie über ihren
-          natürlichen Komfortbereich hinaus angewendet werden. Indem wir viele
+          natürlichen Einsatzbereich hinaus angewendet werden. Indem wir viele
           überlappende Paradigmen anwenden, sichern wir die Flanken und bewachen
           den Nachschub. Das endgültige Framework ist weitaus stärker und
-          leistungsfähiger, als es durch jedes einzelne Paradigma hätte hätte
+          leistungsfähiger, als es durch jedes einzelne Paradigma hätte
           möglich sein können.
         </p>
         <p>
@@ -591,26 +598,26 @@ redirect_from:
           Programmierparadigmen ist konzeptioneller Mehraufwand. Es reicht nicht
           aus, nur objektorientierte Programmierung zu kennen, um eine gute Zeit
           mit Rails zu haben. Es ist wünschenswert, auch mit prozeduralen und
-          funktionalen Erfahrungen vertraut zu sein.
+          funktionalen Herangehensweisen vertraut zu sein.
         </p>
         <p>
           Das gilt auch für die vielen Untersprachen von Rails. Wir versuchen
           nicht, dich so sehr davor zu schützen, dass du beispielsweise
           JavaScript für den View oder SQL für gelegentliche komplizierte
-          Abfragen lernen zu müssen. Zumindest nicht, um die Spitze der
+          Abfragen lernen zu musst. Zumindest nicht, um die Spitze der
           Möglichkeiten zu erreichen.
         </p>
         <p>
-          Die Art und Weise, einen Teil dieser Lernlast zu verringern, besteht
+          Die Art und Weise, mit der wir einen Teil dieses Lernaufwands verringern, besteht
           darin, einfach den Einstieg zu erleichtern und etwas von echtem Wert
-          zu schaffen, bevor du jeden einzelnen Aspekt des Frameworks verstehst.
-          Aus diesem Grund haben wir einen Ansturm auf Hello World. Dein Tisch
-          ist bereits vorbereitet und eine Vorspeise serviert.
+          zu schaffen, noch bevor du jeden einzelnen Aspekt des Frameworks verstehst.
+          Aus diesem Grund haben wir einen Ansturm auf 'Hello World'. Der Tisch
+          ist bereits gedeckt und eine Vorspeise serviert.
         </p>
         <p>
           Die Überlegung ist, dass wir Rails-Praktizierende ermutigen, schnell
           aufzusteigen, indem wir ihnen früh etwas von echtem Wert geben.
-          Akzeptiere du ihre Lernreise als Freude, nicht als Hindernis.
+          Akzeptiere du diese Lernreise als Freude, nicht als Hindernis.
         </p>
       </div>
     </div>
@@ -624,48 +631,59 @@ redirect_from:
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Erhebe schönen Code</h3>
+        <h3>Schätze schönen Code</h3>
         <p>
           Wir schreiben Code nicht nur, um vom Computer oder anderen
           Programmierern verstanden zu werden, sondern um uns im warmen Schein
           seiner Schönheit zu sonnen. Ästhetisch ansprechender Code ist ein Wert
-          für sich und sollte mit Nachdruck verfolgt werden. Das bedeutet nicht,
+          für sich und sollte mit Nachdruck angestrebt werden. Das bedeutet nicht,
           dass schöner Code immer andere Bedenken übertrumpft, aber er sollte
-          einen vollen Platz am Tisch unrerer Prioritäten haben.
+          einen gebührenden Platz am Tisch unserer Prioritäten haben.
         </p>
         <p>
-          Also, was ist schöner Code? In Ruby liegt es oft irgendwo an der
+          Was ist nun schöner Code? In Ruby liegt es oft irgendwo an der
           Schnittstelle zwischen nativen Ruby-Idiomen und der Leistungsfähigkeit
-          einer benutzerdefinierten domänenspezifischen Sprache. Es ist eine
-          unscharfe Linie, aber es lohnt sich, zu versuchen, sie zu treffen.
+          einer benutzerdefinierten, domänenspezifischen Sprache. Es ist eine
+          unscharfe Linie, aber der Versuch lohnt sich, sie zu treffen.
         </p>
-        <p>Hier ist ein einfaches Beispiel von Active Record:</p>
-        {% highlight ruby %} class Project < ApplicationRecord belongs_to
-        :account has_many :participants, class_name: 'Person'
-        validates_presence_of :name end {% endhighlight %}
+        <p>Hier ist ein einfaches Beispiel aus Active Record:</p>
+{% highlight ruby %}
+class Project < ApplicationRecord
+  belongs_to :account
+  has_many :participants, class_name: 'Person'
+  validates_presence_of :name
+end
+{% endhighlight %}
         <p>
-          Das sieht aus wie DSL, ist aber eigentlich nur eine Klassendefinition
+          Das sieht aus wie DSL, es ist aber eigentlich nur eine Klassendefinition
           mit drei Klassenmethodenaufrufen, die Symbole und Optionen
           akzeptieren. Hier ist nichts Besonderes. Aber hübsch ist es auf jeden
           Fall. Es ist ohne Zweifel einfach. Es verleiht diesen wenigen
-          Erklärungen eine immense Kraft und Flexibilität.
+          Anweisungen eine immense Kraft und Flexibilität.
         </p>
         <p>
-          Ein Teil der Schönheit kommt von diesen Aufrufen, die den vorherigen
-          Prinzipien treu bleiben, wie Konvention über Konfiguration. Wenn wir
+          Ein Teil der Schönheit kommt von den Aufrufen, die den vorherigen
+          Prinzipien, wie Konvention über Konfiguration treu bleiben. Wenn wir
           belongs_to :account aufrufen, gehen wir davon aus, dass der
           Fremdschlüssel account_id heißt und sich in der Projekttabelle
-          befindet. Wenn wir den Klassennamen von Person der Rolle der
+          befindet. Wenn wir den Klassennamen von Person der Rolle
           Teilnehmervereinigung zuweisen müssen, benötigen wir nur diese
           Klassennamendefinition. Daraus leiten wir wieder die Fremdschlüssel
           und andere Konfigurationspunkte ab.
         </p>
         <p>Hier ist ein weiteres Beispiel aus dem Datenbankmigrationssystem:</p>
-        {% highlight ruby %} class CreateAccounts < ActiveRecord::Migration def
-        change create_table :accounts do |t| t.integer :queenbee_id t.timestamps
-        end end end {% endhighlight %}
+{% highlight ruby %}
+class CreateAccounts < ActiveRecord::Migration
+  def change
+    create_table :accounts do |t|
+      t.integer :queenbee_id
+      t.timestamps
+    end
+  end
+end
+{% endhighlight %}
         <p>
-          Dies ist die Essenz der Framework-Macht. Der Programmierer deklariert
+          Das ist die Essenz der Framework-Macht. Der Programmierer deklariert
           eine Klasse gemäß einer bestimmten Konvention, wie z. B. eine
           ActiveRecord::Migration-Unterklasse, die #change implementiert, und
           das Framework kann die ganze Detailarbeit erledigen, die damit
@@ -677,22 +695,25 @@ redirect_from:
           db:migrate, um die Datenbank zu aktualisieren, um diese neue Tabelle
           hinzuzufügen, sondern auch den anderen Weg, diese Tabelle mit einem
           anderen Aufruf zu löschen. Das unterscheidet sich stark von einem
-          Programmierer, der all dies ermöglichen muss und den Workflow aus
+          Programmierer, der all dies möglich machen muss und den Workflow aus
           Bibliotheken zusammenfügt, die er selbst wählt.
         </p>
         <p>
           Manchmal ist schöner Code jedoch subtiler. Es geht weniger darum,
-          etwas so kurz oder kraftvoll wie möglich zu machen, sondern mehr
-          darum, einen Rhythmus im Fluss der Anweisungen zu etablieren.
+          etwas so kurz oder mächtig wie möglich zu machen, sondern mehr
+          darum, einen Rhythmus im Flow der Anweisungen zu etablieren.
         </p>
         <p>Diese beiden Anweisungen tun dasselbe:</p>
-        {% highlight ruby %} if people.include? person ... if person.in? people
-        {% endhighlight %}
+{% highlight ruby %}
+if people.include? person
+...
+if person.in? people
+{% endhighlight %}
         <p>
-          Aber der Fluss und der Fokus sind subtil anders. In der ersten
-          Anweisung steht die Collection im Mittelpunkt. Das ist unser Subject.
-          In der zweiten Aussage ist das Subject eindeutig die Person. Es gibt
-          nicht viel Unterschied zwischen den beiden Aussagen in der Länge, aber
+          Aber der Flow und der Fokus sind subtil anders. In der ersten
+          Anweisung steht die Collection im Mittelpunkt. Das ist unser Subjekt.
+          In der zweiten Anweisung ist das Subjekt eindeutig die Person. Es gibt
+          nicht viel Unterschied zwischen den beiden Anweisungen in der Länge, aber
           ich behaupte, dass die zweite viel schöner ist und mich wahrscheinlich
           zum Lächeln bringen wird, wenn sie an einer Stelle verwendet wird, an
           der es um die Person geht.
@@ -718,32 +739,32 @@ redirect_from:
           Diese Macht wurde häufig als einfach zu viel für sterbliche
           Programmierer verspottet. Menschen aus restriktiveren Umgebungen
           stellten sich früher alle möglichen Katastrophen vor, die Ruby zum
-          Verhängnis werden würden, weil die Sprache ihren Sprechern mit dieser
+          Verhängnis werden würden, weil die Sprache ihren Nutzern mit dieser
           Funktion ein immenses Vertrauen entgegenbrachte.
         </p>
         <p>
-          Wenn du etwas ändern kannst, was hält dich davon ab, String#capitalize
+          Wenn du alles ändern kannst, was hält dich davon ab, String#capitalize
           zu überschreiben, sodass „something bold“.capitalize „Something Bold“
-          statt „Something bold“ zurückgibt? Das könnte in deiner lokalen
-          Anwendung funktionieren, aber dann alle möglichen äusseren Code
+          statt „Something bold“ zurückgibt? Das würde in deiner lokalen
+          Anwendung funktionieren, aber dann allen möglichen umliegenden Code
           beschädigen, der von der ursprünglichen Implementierung abhängt.
         </p>
         <p>
           Nichts, ist die Antwort. Es gibt nichts programmatisch in Ruby, das
           dich davon abhält, seine scharfen Messer zu verwenden, um Verbindungen
           mit der Vernunft zu kappen. Wir erzwingen solch einen gesunden
-          Menschenverstand durch Konventionen, durch Anstupser und durch
-          Bildung. Nicht, indem man scharfe Messer aus der Küche verbannt und
-          darauf besteht, dass jeder Löffel benutzt, um Tomaten zu schneiden.
+          Menschenverstand durch Konventionen, durch Hinweise und durch
+          Bildung. Nicht dadurch, indem wir scharfe Messer aus der Küche verbannen und
+          darauf bestehen, dass jeder Löffel benutzt, um Tomaten zu schneiden.
         </p>
         <p>
-          Weil die Kehrseite des Monkey-Patchings die Kraft ist, solche
+          Weil die Kehrseite des Monkey-Patchings die Macht ist, solche
           Wundertaten wie 2.days.ago zu vollbringen (was ein Datum zurückgibt,
           das zwei Tage von der aktuellen zurückliegt). Jetzt könntest du
           denken, dass das ein schlechter Handel ist. Dass du lieber 2.days.ago
           verlieren würdest, wenn es bedeutet, Programmierer daran zu hindern,
           String#capitalize zu überschreiben. Wenn das die Position ist die du
-          vertrittst ist, ist Ruby wahrscheinlich nichts für dich.
+          vertrittst, ist Ruby wahrscheinlich nichts für dich.
         </p>
         <p>
           Es wäre jedoch schwer zu argumentieren – selbst für Leute, die solche
@@ -751,8 +772,8 @@ redirect_from:
           Kernklassen und -methoden zu ändern, Ruby als Sprache zum Scheitern
           verurteilt hat. Im Gegenteil, die Sprache blühte genau deshalb auf,
           weil sie eine andere und radikale Perspektive auf die Rolle des
-          Programmierers bot: Dass ihnen scharfe Messer anvertraut werden
-          konnten.
+          Programmierers bot: Dass ihm scharfe Messer anvertraut werden
+          können.
         </p>
         <p>
           Und nicht nur vertrauenswürdig, sondern auch in der Art und Weise
@@ -776,8 +797,8 @@ redirect_from:
           sind nicht annähernd so scharf wie die mit der Sprache angebotenen,
           aber einige schneiden trotzdem noch sehr scharf. Wir entschuldigen uns
           nicht dafür, solche Werkzeuge als Teil des Kits anzubieten.
-          Tatsächlich sollten wir feiern, genug Vertrauen in die Bestrebungen
-          unserer Programmierkollegen haben, und es wagen, ihnen zu vertrauen.
+          Tatsächlich sollten wir das feiern, genug Vertrauen in die Bestrebungen
+          unserer Kollegen haben, und es wagen, ihnen zu vertrauen.
         </p>
         <p>
           Viele Funktionen in Rails wurden im Laufe der Zeit als „zu viel
@@ -787,7 +808,7 @@ redirect_from:
             href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/concern.rb"
             >Das Feature von Concerns</a
           >
-          . Dies ist eine dünne Schicht aus syntaktischem Zucker um Rubys
+          . Das ist eine dünne Schicht aus syntaktischem Zucker um Rubys
           eingebautes Modul-Feature herum und soll es einer einzelnen Klasse
           ermöglichen, mehrere verwandte, aber unabhängig voneinander
           verständliche Anliegen zu kapseln (daher der Name).
@@ -814,12 +835,12 @@ redirect_from:
           Noch. Ich glaube, dass jeder Programmierer einen Weg, wenn nicht sogar
           ein Recht darauf hat, ein vollwertiger Ruby- und Rails-Programmierer
           zu werden. Und mit fähig meine ich sachkundig genug, um zu wissen,
-          wann und wie sie die verschiedenen und manchmal gefährlichen Werkzeuge
+          wann und wie die verschiedenen und manchmal gefährlichen Werkzeuge
           in den Schubladen entsprechend ihrem Kontext verwenden sollten.
         </p>
         <p>
-          Das entbindet nicht von der Verantwortung, ihnen dabei zu helfen,
-          dorthin zu gelangen. Die Sprache und der Rahmen sollten geduldige
+          Das entbindet uns nicht von der Verantwortung, ihnen dabei zu helfen,
+          dorthin zu gelangen. Die Sprache und ihr Umfeld sollten geduldige
           Tutoren sein, die bereit sind, jedem zu helfen und ihn zum
           Expertenniveau zu führen. Wobei man anerkennt, dass der einzig
           verlässliche Weg dorthin durch das Land der Fehler führt: Falsch
@@ -845,10 +866,10 @@ redirect_from:
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Wertintegrierte Systeme</h3>
+        <h3>Integrierte Systeme</h3>
         <p>
           Rails kann in vielen Zusammenhängen verwendet werden, aber seine erste
-          Liebe gilt der Herstellung integrierter Systeme: Majestätische
+          Liebe gilt der Entwicklung integrierter Systeme: Majestätische
           Monolithen! Ein ganzes System, das ein ganzes Problem angeht. Das
           bedeutet, dass Rails sich um alles kümmert, vom Front-End-JavaScript,
           das für Live-Updates benötigt wird, bis hin zur Migration der
@@ -856,26 +877,26 @@ redirect_from:
         </p>
         <p>
           Das ist ein sehr weiter Bereich, wie wir besprochen haben, aber nicht
-          weiter als es realistisch für eine einzelne Person zu verstehen ist.
+          weiter als es realistisch für eine Person zu verstehen ist.
           Rails ist speziell bestrebt, Generalisten auszustatten, um diese
           vollständigen Systeme zu erstellen. Sein Zweck ist es nicht,
           Spezialisten in kleine Nischen zu gliedern und dann ganze Teams von
-          solchen zu benötigen, um etwas von bleibendem Wert aufzubauen.
+          diesen zu benötigen, um etwas von bleibendem Wert aufzubauen.
         </p>
         <p>
           Es ist dieser Fokus auf die Befähigung des Einzelnen, der auf das
           integrierte System hinweist. In dem integrierten System können wir
           viele unnötige Abstraktionen herausschneiden, die Duplizierung
-          zwischen den verschiedenen Ebenen (wie Vorlagen sowohl auf dem Server
-          als auch auf dem Client) reduzieren und vor allem vermeiden, unser
+          zwischen den verschiedenen Ebenen (wie Templates sowohl auf dem Server
+          als auch auf dem Client) reduzieren und vor allem vermeiden, die Notwendigkeit unser
           System zu verteilen, bevor wir es unbedingt müssen.
         </p>
         <p>
           Ein Großteil der Komplikationen bei der Systementwicklung ergibt sich
-          aus der Einführung neuer Grenzen zwischen den Elementen, die
+          aus der Einführung neuer Grenzen zwischen den Elementen, die uns
           einschränken, wie wir Aufrufe zwischen A und B tätigen.
           Methodenaufrufe zwischen Objekten sind weitaus einfacher als
-          Remoteprozeduraufrufe zwischen Microservices. Es gibt eine ganz neue
+          Remoteprozeduraufrufe zwischen Microservices. Es entsteht eine ganz neue
           Welt voller Schmerzen bei Fehlerzuständen, Latenzproblemen und
           Abhängigkeitsaktualisierungsplänen, die diejenigen erwarten, die sich
           in die Höhle verteilter Systeme wagen.
@@ -883,7 +904,7 @@ redirect_from:
         <p>
           Manchmal ist diese Verteilung einfach notwendig. Wenn du eine API für
           deine Webanwendung erstellen möchtest, die andere Personen über HTTP
-          aufrufen können, dann musst du dich einfach durbeißen und dich mit
+          aufrufen können, dann musst du dich einfach durchbeißen und dich mit
           vielen dieser Probleme befassen (obwohl es viel einfacher ist,
           eingehende Anfragen zu bearbeiten, als sie nach außen zu senden – deine
           Ausfallzeit ist der Fehlerzustand eines anderen!). Aber das ist
@@ -902,19 +923,19 @@ redirect_from:
         <p>
           Es ist durchaus möglich, große Teile der gesamten Anwendung über
           mehrere Apps und Zugriffe hinweg zu verteilen. Zur Verwendung derselben
-          Controller und Ansichten für das Desktop-Web wie auch für die Einbettung in
+          Controller und Ansichten für das Desktop-Web wie auch für das Einbetten in
           native mobile Apps. So viel wie möglich in diesem glorreichen,
           majestätischen Monolithen zu zentralisieren: Das ist das integrierte System.
         </p>
         <p>
           All das, ohne viel, wenn überhaupt, in Bezug auf Geschwindigkeit,
-          Benutzererfahrung oder andere Attribute aufzugeben, die Entwickler
+          Anwenderfreundlichkeit oder andere Eigenschaften aufzugeben, die Entwickler
           fälschlicherweise zu einer vorzeitigen Verteilung verleiten.
         </p>
         <p>
           Das ist das Ideal, nach dem wir suchen: Die ganze Leistung individuell
           abgestimmter und verteilter Anwendungen mit der Benutzerfreundlichkeit
-          und dem Verständnis eines einzigen, integrierten Systems.
+          und der Verständlichkeit eines einzigen, integrierten Systems.
         </p>
       </div>
     </div>
@@ -932,38 +953,38 @@ redirect_from:
           Wenn es Systeme wie Rails schon seit mehr als einem Jahrzehnt gibt,
           tendieren sie von Natur aus zur Verknöcherung. Es gibt eine Million
           Gründe dafür, warum jede Änderung für jemanden irgendwo ein Problem sein könnte,
-          der auf abgelöste Features angewiesen war. Und das sind
+          der auf bereits abgelöste Features angewiesen ist. Und das sind
           auch faire Gründe für den Einzelnen.
         </p>
         <p>
           Aber wenn wir zu genau auf die Stimmen des Konservatismus hören,
           werden wir nie sehen, was auf der anderen Seite ist. Wir müssen es
-          wagen, gelegentlich zu mit Gewohnheiten zu brechen und Dinge zu ändern, wenn wir uns
+          wagen, gelegentlich mit Gewohnheiten zu brechen und Dinge zu ändern, wenn wir uns
           entwickeln und wachsen wollen. Es ist diese Entwicklung, die Rails in
           den kommenden Jahrzehnten überlebensfähig und erfolgreich machen wird.
         </p>
         <p>
-          Das alles ist theoretisch leicht zu verstehen, aber in der Praxis viel
+          Theoretisch ist das alles leicht zu verstehen, aber in der Praxis viel
           schwerer zu verdauen. Vor allem, wenn es deine Anwendung ist, die
           durch eine rückwärtsinkompatible Änderung in einer Hauptversion von
           Rails kaputt geht. In diesen Zeiten müssen wir uns an diesen
           Grundsatz erinnern, dass wir Fortschritt über Stabilität schätzen, um uns
-          die Kraft zu geben, das Kaputte zu debuggen, das Problem zu lösen und mit
+          die Kraft zu geben, das zu debuggen was kaputt ist, das Problem zu lösen und mit
           der Zeit zu gehen.
         </p>
         <p>
           Das ist keine Erlaubnis, um willkürlich unnötigen oder übermäßigen
-          Schaden zuzufügen. Die große Rails-Migration von 2.x nach 3 ist immer
+          Schaden anzurichten. Die große Rails-Migration von 2.x nach 3 ist immer
           noch im Narbengewebe vieler, die sie miterlebt haben. Es war eine harte
           Nuss. Ein ernsthafter Umbruch, der viele für lange Zeit im 2.x-Land
-          zurückgelassen hat, einige davon ließen sich gar nicht überzeugen. Aber im
+          zurückgelassen hat, einige ließen sich gar nicht überzeugen. Aber im
           Großen und Ganzen hat es sich trotzdem gelohnt.
         </p>
         <p>Das ist ein teurer Handel den wir machen müssen. Wird Rails in fünf
         Jahren aufgrund der Änderungen, die wir heute vornehmen, besser dran sein?
-        Wird Rails in den kommenden Jahren besser dran sein, um eine andere Problemdomäne
-        wie Job-Warteschlangen oder WebSockets übernehmen zu können? Wenn ja, dann lass es uns
-        durchziehen und vor der Arbeit nicht zurückschrecken.</p>
+        Wird Rails in den kommenden Jahren besser dastehen, um eine andere Problemdomäne
+        wie Job-Warteschlangen oder WebSockets übernehmen zu können? Wenn ja, dann lasst es uns
+        durchziehen und vor der extra Arbeit nicht zurückschrecken.</p>
         <p>
           Diese Arbeit muss nicht nur in Rails selbst erfolgen, sondern auch in
           der größeren Ruby-Community. Rails sollte an der Grenze zum Neuland stehen, um
@@ -980,7 +1001,7 @@ redirect_from:
           Ruby dient.
         </p>
         <p>
-          Dies gilt auch für die Hilfswerkzeuge des Frameworks. Bundler war einst
+          Das gilt auch für die Hilfswerkzeuge des Frameworks. Bundler war einst
           eine umstrittene Idee, aber durch Rails beharrten wir darauf, dass es ein
           Eckpfeiler einer gemeinsamen Zukunft ist, und wird heute einfach als
           selbstverständlich angesehen. Dasselbe gilt für Dinge wie die
@@ -995,8 +1016,8 @@ redirect_from:
           es in Gruppen wie <a href="/community#core">Rails Core</a> oder
           <a href="/community#committers">Rails Committers</a> keine Lifetime
           Seats. Beide Gruppen sind offen für diejenigen, die aktiv daran arbeiten,
-          Fortschritte für das Framework zu erzielen. Für einige mag ihr Anteil
-          an einem solchen Fortschritt nur wenige Jahre dauern, und wir werden
+          Fortschritte für das Framework zu erzielen. Für einige mag ihr Beitrag
+          zu einem solchen Fortschritt nur wenige Jahre dauern, und wir werden
           für ihren Dienst ewig dankbar sein, und für andere kann es Jahrzehnte
           dauern.
         </p>
@@ -1025,7 +1046,7 @@ redirect_from:
           Wir brauchen Widerspruch. Wir brauchen Dialekte. Wir brauchen Gedanken-
           und Menschenvielfalt. In diesem Schmelztiegel von Ideen werden wir die
           besten Gemeinsamkeiten erhalten, die alle teilen können. Viele Leute leisten
-          ihren Beitrag dazu, in Form von Code oder wohlüberlegten Argumenten.
+          ihren Beitrag dazu, in Form von Code oder wohl überlegten Argumenten.
         </p>
         <p>
           Während diese Doktrin also eine idealisierte Form beschrieben hat, ist
@@ -1038,7 +1059,7 @@ redirect_from:
           Der anhaltende Erfolg von RSpec, einer DSL zum Testen, mit der ich oft
           ernsthaften Unmut geäußert habe, ist ein perfekter Beweis dafür. Ich kann
           schimpfen, bis mir schlecht wird, warum ich glaube, dass es nicht der
-          richtige Weg ist, und RSpec kann immer noch blühen und gedeihen. Dieser
+          richtige Weg ist, und trotzdem kann RSpec kann immer noch blühen und gedeihen. Dieser
           Punkt ist viel wichtiger!
         </p>
         <p>
@@ -1046,7 +1067,7 @@ redirect_from:
           persönlicher Fokus und mein Engagement auf dem integrierten System
           liegt, das auch den View enthält, gibt es zweifellos Raum für Rails, um
           gut mit Leuten zurechtzukommen, die ihre Clients und Server im Voraus
-          verteilen möchten. Wir sollten das insofern annehmen, das es als
+          verteilen möchten. Wir sollten das insofern akzeptieren, das es als
           sekundäre Mission existieren kann, und ich glaube, dass
           das sicherlich möglich ist.
         </p>

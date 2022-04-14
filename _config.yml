@@ -6,7 +6,6 @@ feed_path: /feed.xml
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
