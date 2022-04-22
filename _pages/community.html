@@ -33,15 +33,15 @@ redirect_from:
         {% for member in site.data.community.core %}
           <div class="core__member">
             <div class="core__member__image">
-              <a href="{{ member.url }}">
+              <a href="{{ member.url }}" aria-label="{{ member.name }}">
                 <figure>
-                  <img src="{{ member.image }}" alt="" />
+                  <img src="{{ member.image }}" alt="{{ member.name }}" />
                 </figure>
               </a>
             </div>
 
             <div class="core__member__content">
-              <h3><a href="{{ member.url }}">{{ member.name }}</a></h3>
+              <h3><a href="{{ member.url }}" aria-label="{{ member.name }}">{{ member.name }}</a></h3>
               <h4>{{ member.location }}</h4>
               <h5>Since {{ member.since }}</h5>
             </div>
