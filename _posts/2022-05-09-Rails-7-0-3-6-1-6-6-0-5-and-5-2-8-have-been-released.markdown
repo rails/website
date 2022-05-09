@@ -21,7 +21,14 @@ We recommend upgrading to a newer version as soon as possible.
 Only gems with changes in the CHANGELOGs are listed below. All include a bugfix
 for https://github.com/rails/rails/issues/45014 and https://github.com/rails/rails/issues/44972.
 
-### 7.0.2
+To see a summary of changes, please read the release on GitHub:
+
+* [7.0.3 CHANGELOG](https://github.com/rails/rails/releases/tag/v7.0.3)
+* [6.1.6 CHANGELOG](https://github.com/rails/rails/releases/tag/v6.1.6)
+* [6.0.5 CHANGELOG](https://github.com/rails/rails/releases/tag/v6.0.5)
+* [5.2.8 CHANGELOG](https://github.com/rails/rails/releases/tag/v5.2.8)
+
+### 7.0.3
 
 * [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v7.0.3/actionpack/CHANGELOG.md)
 * [Action View CHANGELOG](https://github.com/rails/rails/blob/v7.0.3/actionview/CHANGELOG.md)
@@ -30,21 +37,14 @@ for https://github.com/rails/rails/issues/45014 and https://github.com/rails/rai
 * [Active Storage CHANGELOG](https://github.com/rails/rails/blob/v7.0.3/activestorage/CHANGELOG.md)
 * [Railties CHANGELOG](https://github.com/rails/rails/blob/v7.0.3/railties/CHANGELOG.md)
 
-### 6.0.5
-
-* [Action View CHANGELOG](https://github.com/rails/rails/blob/v6.0.5/actionview/CHANGELOG.md)
-
-To see a summary of changes, please read the release on GitHub:
-
-[7.0.3 CHANGELOG](https://github.com/rails/rails/releases/tag/v7.0.3)
-[6.1.6 CHANGELOG](https://github.com/rails/rails/releases/tag/v6.1.6)
-[6.0.5 CHANGELOG](https://github.com/rails/rails/releases/tag/v6.0.5)
-[5.2.8 CHANGELOG](https://github.com/rails/rails/releases/tag/v5.2.8)
-
 *Full listing*
 
 To see the full list of changes, [check out all the commits on
 GitHub](https://github.com/rails/rails/compare/v7.0.2...v7.0.3).
+
+### 6.0.5
+
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v6.0.5/actionview/CHANGELOG.md)
 
 ## SHA-256
 
@@ -53,7 +53,7 @@ please use these SHA-256 hashes.
 
 ### Release Checksums
 
-#### 7.0.3:
+#### 7.0.3
 
 ```
 $ shasum -a 256 *-7.0.3.gem
@@ -73,8 +73,6 @@ a9a78271b0f0d0cd0a03ad7ca137f01ae6d84292fcfd19eacd1430d15040d8a8  railties-7.0.3
 ```
 
 #### 6.1.6
-
-Here are the checksums for 6.1.6:
 
 ```
 $ shasum -a 256 *-6.1.6.gem
@@ -112,7 +110,7 @@ e810af40d58ba99ca9fda7e446ed19e93da83da748224dd9277c4c2999556ed7  rails-6.0.5.ge
 17d5ecb2991684a75663d2c52a74c527a3a0fc5a8261e42962d89b0ac991dde3  railties-6.0.5.gem
 ```
 
-#### 5.1.8
+#### 5.2.8
 
 ```
 $ shasum -a 256 *-5.2.8.gem
