@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Rails 7.0.2.4, 6.1.5.1, 6.0.4.8, and 5.2.7.1 have been released!'
+title: 'Rails 7.0.3, 6.1.6, 6.0.5, and 5.2.8 have been released!'
 categories: releases
 author: eileencodes
 published: true
