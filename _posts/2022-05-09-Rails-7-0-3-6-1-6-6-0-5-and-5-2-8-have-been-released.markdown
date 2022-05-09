@@ -112,7 +112,7 @@ e810af40d58ba99ca9fda7e446ed19e93da83da748224dd9277c4c2999556ed7  rails-6.0.5.ge
 17d5ecb2991684a75663d2c52a74c527a3a0fc5a8261e42962d89b0ac991dde3  railties-6.0.5.gem
 ```
 
-#### 5.1.8
+#### 5.2.8
 
 ```
 $ shasum -a 256 *-5.2.8.gem
