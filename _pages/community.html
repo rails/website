@@ -65,6 +65,21 @@ redirect_from:
         </p>
       </div>
 
+      <div class="core__headline core__headline--padding-top common-headline" id="issues">
+        <h3>The Issues team.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p>
+          <strong>The Issues team assists with issues triage, pull request reviews and documentation improvements.</strong>
+          They are often the first interaction of users with the Rails team:
+
+          {% for member in site.data.community.issues %}
+            <a href="https://github.com/{{ member.github }}">{{ member.name }}</a>{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+
       <div class="core__headline core__headline--padding-top common-headline" id="alumni">
         <h3>The Alumni.</h3>
       </div>
