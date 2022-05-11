@@ -19,7 +19,7 @@ We recommend upgrading to a newer version as soon as possible.
 ## CHANGELOGS
 
 Only gems with changes in the CHANGELOGs are listed below. All include a bugfix
-for https://github.com/rails/rails/issues/45014 and https://github.com/rails/rails/issues/44972.
+for [rails#45014](https://github.com/rails/rails/issues/45014) and [rails#44972](https://github.com/rails/rails/issues/44972).
 
 ### 7.0.2
 
