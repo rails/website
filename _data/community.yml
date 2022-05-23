@@ -62,6 +62,27 @@ core:
     handle: eileencodes
     image: /assets/images/core-eileen.jpg
 
+  - name: Ryuta
+    since: 2022
+    location: Japan
+    url: https://blog.kamipo.net
+    handle: kamipo
+    image: /assets/images/core-kamipo.jpg
+
+  - name: Jean
+    since: 2022
+    location: France
+    url: https://github.com/byroot
+    handle: byroot
+    image: /assets/images/core-byroot.jpg
+
+  - name: John
+    since: 2022
+    location: Canada
+    url: https://github.com/jhawthorn
+    handle: jhawthorn
+    image: /assets/images/core-jhawthorn.jpg
+
 committers:
   - name: Akira Matsuda
     url: https://twitter.com/a_matsuda
@@ -72,20 +93,11 @@ committers:
   - name: Gannon McGibbon
     url: https://github.com/gmcgibbon
 
-  - name: Jean Boussier
-    url: https://github.com/byroot
+  - name: Jonathan Hefner
+    url: https://jonathan.hefner.pro
 
-  - name: John Hawthorn
-    url: https://twitter.com/jhawthorn
-
-  - name: Richard Schneeman
-    url: https://twitter.com/schneems
-
-  - name: Ryuta Kamizono
-    url: https://twitter.com/kamipo
-
-  - name: Yuji Yaginuma
-    url: https://twitter.com/y_yagi
+  - name: Yasuo Honda
+    url: https://github.com/yahonda
 
 alumni:
   - name: George Claghorn
