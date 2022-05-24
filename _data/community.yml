@@ -99,6 +99,40 @@ committers:
   - name: Yasuo Honda
     url: https://github.com/yahonda
 
+issues:
+  - name: Adam Hess
+    github: HParker
+  - name: Adrianna Chang
+    github: adrianna-chang-shopify
+  - name: Alex Ghiculescu
+    github: ghiculescu
+  - name: Edouard Chin
+    github: Edouard-chin
+  - name: Haroon Ahmed
+    github: hahmed
+  - name: Hartley McGuire
+    github: SkipKayhil
+  - name: John Crepezzi
+    github: seejohnrun
+  - name: Jorge Manrubia
+    github: jorgemanrubia
+  - name: Keeran Raj Hawoldar
+    github: keeran
+  - name: Leo Correa
+    github: Tonkpils
+  - name: Mike Dalessio
+    github: flavorjones
+  - name: Petrik de Heus
+    github: p8
+  - name: Prem Sichanugrist
+    github: sikachu
+  - name: Robin Dupret
+    github: robin850
+  - name: Vipul A M
+    github: vipulnsward
+  - name: Zak Scott
+    github: zzak
+
 alumni:
   - name: George Claghorn
   - name: Santiago Pastorino

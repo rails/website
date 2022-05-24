@@ -54,7 +54,30 @@ redirect_from:
       </div>
 
       <div class="core__content common-content common-content--size-large">
-        <p><strong>In addition to the Core team,</strong> the Committer team assists with processing pull requests and making changes to the framework, but does not have the keys to make final releases or set policy. All members of the Core team came up through working on this team: {% for member in site.data.community.committers %}{% if member.url %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+        <p>
+          <strong>The Committer team assists with processing pull requests and making changes to the framework</strong>,
+          but does not have the keys to make final releases or set policy. All members of the Core team came up through
+          working on this team:
+
+          {% for member in site.data.community.committers %}
+            <a href="{{ member.url }}">{{ member.name }}</a>{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+
+      <div class="core__headline core__headline--padding-top common-headline" id="issues">
+        <h3>The Issues team.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p>
+          <strong>The Issues team assists with issues triage, pull request reviews and documentation improvements.</strong>
+          They are often the first interaction of users with the Rails team:
+
+          {% for member in site.data.community.issues %}
+            <a href="https://github.com/{{ member.github }}">{{ member.name }}</a>{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+        </p>
       </div>
 
       <div class="core__headline core__headline--padding-top common-headline" id="alumni">
