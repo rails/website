@@ -72,7 +72,7 @@ redirect_from:
       <div class="core__content common-content common-content--size-large">
         <p>
           <strong>The Issues team assists with issues triage, pull request reviews and documentation improvements.</strong>
-          They are often the first interaction of users with the Rails team:
+          They are often the first point of interaction of users with the Rails team:
 
           {% for member in site.data.community.issues %}
             <a href="https://github.com/{{ member.github }}">{{ member.name }}</a>{% if forloop.last != true %}, {% endif %}
@@ -85,7 +85,7 @@ redirect_from:
       </div>
 
       <div class="core__content common-content common-content--size-large">
-        <p><strong>We’d like to extend a special thanks</strong> to the following Rails Core team members, lovingly known as The Alumni: {% for member in site.data.community.alumni %}{{ member.name }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+        <p><strong>We’d like to extend special thanks</strong> to the following Rails Core team members, lovingly known as The Alumni: {% for member in site.data.community.alumni %}{{ member.name }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
       </div>
 
       <div class="core__content core__content--border-top core__content--padding-top common-content">
