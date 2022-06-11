@@ -178,9 +178,9 @@ class Article < ApplicationRecord
   belongs_to :author, default: -> { Current.user }
   has_many   :comments
 
-  has_one_attached :avatar
+  has_one_attached :cover_image
   has_rich_text :content, encrypted: true
-  enum status: [ :drafted, :published ]
+  enum status: %i[ drafted published ]
 
   scope :recent, -> { order(created_at: :desc).limit(25) }
 
@@ -191,7 +191,7 @@ class Article < ApplicationRecord
   end
 
   def deliver_later
-    Article::DeliveryJob.perform_later self
+    Article::DeliveryJob.perform_later(self)
   end
 end
 {% endhighlight %}
@@ -242,7 +242,7 @@ end
 {% highlight ruby %}
 <h1><%= @article.title %></h1>
 
-<%= image_tag @article.creator.avatar.url %>
+<%= image_tag @article.cover_image.url %>
 
 <p><%= @article.content %></p>
 
