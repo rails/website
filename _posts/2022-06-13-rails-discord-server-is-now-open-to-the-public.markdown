@@ -20,7 +20,7 @@ interaction users have with the Rails team.
 Today, we are opening a Discord server to allow contributors to help each other and lower the overhead
 to communicate with new contributors.
 
-This new server is open to the public using [this invite link](https://discord.gg/8N68BCw49),
+This new server is open to the public using [this invite link](https://discord.gg/d8N68BCw49),
 and is a great place to get help with the framework and learn how to contribute to it. This will also complement
 the [GitHub issue tracker](https://github.com/rails/rails/issues) and our
 [Discourse forum](https://discuss.rubyonrails.org/). It will follow the same
