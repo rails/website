@@ -21,9 +21,14 @@ Today, we are opening a Discord server to allow contributors to help each other 
 of communicating with new contributors.
 
 This new server is open to the public using [this invite link](https://discord.gg/d8N68BCw49),
-and is a great place to get help with the framework and learn how to contribute to it. This will also complement
-the [GitHub issue tracker](https://github.com/rails/rails/issues) and our
-[Discourse forum](https://discuss.rubyonrails.org/). It will follow the same
-[Code Of Conduct](https://rubyonrails.org/conduct) as the rest of the Rails official spaces.
+and is a great place to get help on how to contribute to the framework and its related libraries.
+This server will not be a support channel for the framework. For support, we will
+continue to use the [Ruby on Rails talk category](https://discuss.rubyonrails.org/c/rubyonrails-talk/7)
+in the Discourse forum. Complementing those channels, we will have the
+[GitHub issue tracker](https://github.com/rails/rails/issues) for issue and pull requests and our
+[Ruby on Rails Core category](https://discuss.rubyonrails.org/c/rubyonrails-core/5) for larger
+discussions about features and possible contributions.
+
+The Discord server will follow the same [Code Of Conduct](https://rubyonrails.org/conduct) as the rest of the Rails official spaces.
 
 We hope to see you there!
