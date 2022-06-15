@@ -9,8 +9,7 @@ date: 2022-06-13
 
 In the past few weeks, the Rails team has been working on a few changes to lower the barrier for new contributors to the framework.
 
-We started by [disabling the automatic closing of stale PRs](https://github.com/rails/rails/commit/acf48169943011834c4c885b956e29050548fa98). This means that contributors can submit their PRs without
-the fear of a bot closing their worthy contributions before a member of the Rails team has a chance to review them.
+We started by [disabling the automatic closing of stale PRs](https://github.com/rails/rails/commit/acf48169943011834c4c885b956e29050548fa98). While initially this automation helped the project keep the issues tracker under control, nowadays things are better and we prefer to go back to full human interaction.
 
 To make it easier for contributors to recognize all the members of the Rails team, we made public the [list
 of current members of the Issues team](https://rubyonrails.org/community). The Issues team assists with
