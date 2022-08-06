@@ -1,12 +1,11 @@
-layout: post
 ---
+layout: post
 title: "Strict template locals, detecting unused routes and an improved find_or_create_by"
 categories: news
 author: p8
 published: true
 date: 2022-08-05
 ---
-
 Hi, Petrik here with some updates on activities in Rails and associated projects over the last week.
 
 [Allow templates to set strict locals](https://github.com/rails/rails/pull/45727)
@@ -54,7 +53,7 @@ When a _\<turbo-stream\>_ element connects to the document, all included _\<scri
 
 [Preserve \<select\> values in cache](https://github.com/hotwired/turbo/pull/666)
 
-This change will save the values of _\<select\>_s when creating a snapshot so that when you navigate back or forward in history, form fields will not be reset.
+This change will save the values of _\<select\>_ tags when creating a snapshot so that when you navigate back or forward in history, form fields will not be reset.
 
 That's it for this week. Until next time!
 
