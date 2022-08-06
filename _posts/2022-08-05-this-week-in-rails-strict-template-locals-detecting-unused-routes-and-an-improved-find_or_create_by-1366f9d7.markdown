@@ -1,12 +1,11 @@
-layout: post
 ---
+layout: post
 title: "Strict template locals, detecting unused routes and an improved find_or_create_by"
 categories: news
 author: p8
 published: true
 date: 2022-08-05
 ---
-
 Hi, Petrik here with some updates on activities in Rails and associated projects over the last week.
 
 [Allow templates to set strict locals](https://github.com/rails/rails/pull/45727)
