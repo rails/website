@@ -7,7 +7,7 @@ published: true
 date: 2022-08-19
 ---
 
-Cześć! I'm [Emmanuel](https://twitter.com/siaw23), and I have some updates for you from Rails.  
+Cześć! I'm [Emmanuel](https://manny.codes), and I have some updates for you from Rails.  
   
 [Log a warning if ActiveSupport::Cache is given an expiration in the past](https://github.com/rails/rails/pull/45842)  
 Imagine trying to write/fetch to/from a cache and the operation fails silently because `expires_at` is in the past... a debugger's nightmare. This PR helps. You won't get an error raised, instead, you'll get "Cache expiration is in the past" in your logs.  
