@@ -11,11 +11,11 @@ Hi everyone,
 
 I am happy to announce that Rails 7.0.4, 6.1.7, and 6.0.6 have been released.
 
-These fixes are bigfix releases with various enhancements, compatibility fixes, and performance improvements.
+These fixes are bugfix releases with various enhancements, compatibility fixes, and performance improvements.
 
 Please note that the 6.0.x and 6.1.x release series are [no longer supported](https://guides.rubyonrails.org/maintenance_policy.html) for bug fixes. These releases are a best effort, so please upgrade as soon as possible.
 
-Happy friday!
+Happy Friday!
 
 ## CHANGES since 6.0.5
 
