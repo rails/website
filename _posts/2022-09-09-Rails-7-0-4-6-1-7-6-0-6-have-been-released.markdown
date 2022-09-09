@@ -4,7 +4,7 @@ title: 'Rails 7.0.4, 6.1.7, and 6.0.6 have been released!'
 categories: releases
 author: jhawthorn
 published: true
-date: 2022-09-09 11:48:40 -08:00
+date: 2022-09-09 11:48:40 -07:00
 ---
 
 Hi everyone,
