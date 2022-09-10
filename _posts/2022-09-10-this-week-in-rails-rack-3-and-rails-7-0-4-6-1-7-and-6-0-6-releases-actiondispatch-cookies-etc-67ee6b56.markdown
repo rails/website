@@ -31,3 +31,4 @@ If an application reads a Marshall dump, _JSON::ParserError_ is raised without c
   
 That's it. Допобачення!
 
+<p><i><a href="https://world.hey.com/this.week.in.rails">Subscribe</a> to get these updates mailed to you.</i></p>
