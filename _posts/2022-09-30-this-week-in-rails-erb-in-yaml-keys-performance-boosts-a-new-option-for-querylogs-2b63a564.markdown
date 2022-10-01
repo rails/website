@@ -2,7 +2,7 @@
 layout: post
 title: "ERB in YAML keys, performance boosts, a new option for QueryLogs!"
 categories: news
-author: chancancode
+author: siaw23 
 published: true
 date: 2022-09-30
 ---
@@ -10,7 +10,7 @@ date: 2022-09-30
 こんにちは。I'm [Emmanuel](https://manny.codes/), and I've got some updates for you!  
   
  [Avoid double type cast when serialising attributes](https://github.com/rails/rails/pull/44625)  
-_ActiveModel::Attribute#value_ already casts model attributes when persisting models, however some model attribute types try to cast a given value before serialising it. This this means casting is done twice in most cases. This PR fixes that, giving us some performance boost.  
+_ActiveModel::Attribute#value_ already casts model attributes when persisting models, however some model attribute types try to cast a given value before serialising it. This means casting is done twice in most cases. This PR fixes that, giving us some performance boost.  
   
 [Add ability to set the tags\_format for QueryLogs](https://github.com/rails/rails/pull/45081)  
 _ActiveRecord::QueryLogs_ gets a new _tags\_format_ option. This makes it possible to specify if we want to use the default _:legacy_ formatter or _:sqlcommenter_.  

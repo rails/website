@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # Import "This Week in Rails" issue to a blog post
 #
@@ -20,7 +22,7 @@ if url.nil?
 Example:
   _import-this-week-in-rails.rb https://world.hey.com/this.week.in.rails/halloween-edition-zeitwerk-migration-guide-selenium-webdriver-and-some-ruby-3-1-snacks-66c67b91
 "
-  exit -1
+  exit(-1)
 end
 
 require 'uri'
@@ -33,8 +35,7 @@ require 'date'
 post_date = ARGV[1] || Date.today.to_s
 
 class HeyWorldEmail
-  attr_accessor :email
-  attr_accessor :post_date
+  attr_accessor :email, :post_date
 
   def initialize(post_date, raw_email)
     @post_date = post_date
@@ -46,25 +47,37 @@ class HeyWorldEmail
   end
 
   def title
-    email.css("title").text
+    email.css('title').text
   end
 
   # Author is mentioned in the first text block of the email
   def author
-    intro_html = content
-    begin
-      intro_html
-        .xpath("//a[contains(@href, 'twitter.com/') or contains(@href, 'github.com/') and not(contains(@href, 'rails'))]")
-        .first['href']
-        .split('/')
-        .last
-    rescue
-      'chancancode'
+    extract_author_handle
+  rescue StandardError
+    'chancancode'
+  end
+
+  def extract_author_url
+    xpath = <<-XPATH
+    //a[contains(@href, 'twitter.com/') or contains(@href,
+      'github.com/') or contains(@href, 'manny.codes/')
+      and not(contains(@href, 'rails'))]
+    XPATH
+
+    content.xpath(xpath.to_s).first['href']
+  end
+
+  def extract_author_handle
+    case extract_author_url
+    when /manny/
+      'siaw23'
+    else
+      extract_author_url.split('/').last
     end
   end
 
   def content
-    email.css(".trix-content")
+    email.css('.trix-content')
   end
 
   def markdown_render
@@ -74,12 +87,12 @@ class HeyWorldEmail
 end
 
 uri = URI.parse(url)
-path_parts = uri.path.split("/")
+path_parts = uri.path.split('/')
 slug = path_parts.last
 
 hey_world_email = HeyWorldEmail.new(post_date, uri.open.read)
 
-meta = %|---
+meta = %(---
 layout: post
 title: "#{hey_world_email.title}"
 categories: news
@@ -88,7 +101,7 @@ published: true
 date: #{hey_world_email.date}
 ---
 
-|
+)
 
 md = hey_world_email.markdown_render
 
