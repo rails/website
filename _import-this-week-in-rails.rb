@@ -68,11 +68,11 @@ class HeyWorldEmail
   end
 
   def extract_author_handle
-    case extract_author_url
+    case url = extract_author_url
     when /manny/
       'siaw23'
     else
-      extract_author_url.split('/').last
+      url.split('/').last
     end
   end
 
