@@ -2,7 +2,7 @@
 layout: post
 title: "Handling reconnects in Action Cable, no more Coffeescript and a new guide."
 categories: news
-author: four54
+author: petrik
 published: true
 date: 2022-09-17
 ---
