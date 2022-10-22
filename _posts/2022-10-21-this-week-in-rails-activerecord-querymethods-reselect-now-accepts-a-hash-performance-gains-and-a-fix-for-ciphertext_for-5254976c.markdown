@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ActiveRecord::QueryMethods#reselect now accepts a hash! Performance gains and a fix for `ciphertext_for`."
+title: "An Active Record improvement, performance gains and a bugfix!"
 categories: news
 author: siaw23
 published: true
