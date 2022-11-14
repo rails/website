@@ -11,8 +11,11 @@ items:
   - title: Forum
     url: https://discuss.rubyonrails.org
 
-  - title: Contribute
-    url: https://github.com/rails/rails
+  - title: Foundation
+    url: /foundation
 
   - title: Team
     url: /community
+
+  - title: Contribute
+    url: https://github.com/rails/rails

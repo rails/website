@@ -11,13 +11,13 @@
     <div class="nav__options">
       <div>
         <ul>
-          {% for option in site.data.nav.items limit:3 %}
+          {% for option in site.data.nav.items limit:4 %}
             <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
           {% endfor %}
         </ul>
 
         <ul>
-          {% for option in site.data.nav.items limit:3 offset:3 %}
+          {% for option in site.data.nav.items limit:3 offset:4 %}
             <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
           {% endfor %}
         </ul>
