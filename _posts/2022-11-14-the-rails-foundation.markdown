@@ -7,7 +7,7 @@ published: true
 date: 2022-11-14
 ---
 
-Today, we are excited to announce the launch of The Rails Foundation. Its mission is to improve the documentation, education, marketing, and events in our ecosystem to the benefit of all new and existing Rails developers. It's been started by some of the most important companies involved with Rails, and will work to ensure a prosperous ecosystem that continues to improve, and becomes even more attractive to newcomers going forward.
+Today, we are excited to announce the launch of [The Rails Foundation](/foundation). Its mission is to improve the documentation, education, marketing, and events in our ecosystem to the benefit of all new and existing Rails developers. It's been started by some of the most important companies involved with Rails, and will work to ensure a prosperous ecosystem that continues to improve, and becomes even more attractive to newcomers going forward.
 
 
 ### Why was the foundation started?
