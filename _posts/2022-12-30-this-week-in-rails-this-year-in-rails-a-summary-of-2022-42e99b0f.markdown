@@ -19,6 +19,8 @@ In case you missed it, with eight founding members, Rails has started The Rails 
 [Stimulus gets an Outlets API](https://github.com/hotwired/stimulus/pull/576)
 Around Hotwire, this pull request received a warm welcome. I reached out to the author, [Marco Roth](https://twitter.com/marcoroth_), who whipped out a documentation that perfectly summarises the Outlet API:
 
+The Outlets API lets you reference Stimulus Controller instances and their controller element from within another Stimulus Controller by using CSS selectors. The use of Outlets helps with cross-controller communication and coordination as an alternative to dispatching custom events on controller elements.
+
 
 [Allow setting YAML serialization options on a per-attribute basis](https://github.com/rails/rails/pull/45660)
 This pull request adds functionality to allow setting YAML serialization options on a per-attribute basis - along with the current application-wide setting.
