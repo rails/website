@@ -26,7 +26,7 @@ If, however, you need to monitor database, Redis or internal network connections
 to microservices that your application relies on, you will need to implement monitoring yourself.
 
 
-[Run test:prepare beforebin/rails test commands](https://github.com/rails/rails/pull/46664)
+[Run test:prepare before bin/rails test commands](https://github.com/rails/rails/pull/46664)
 This pull request streamlines the process of running all tests in a CI environment by making _bin/rails_ _test_ equivalent to _bin/rake test_ when it comes to preparing tests. This means that running _bin/rails_ _test_ alone will now run all the tests, eliminating the need for the additional _bin/rake test_ command.
 
 However, it's important to note that by default, running _bin/rails test_ alone will not include system tests as they are generally slower. To include system tests as well, you can add an additional step to your CI pipeline that runs _bin/rails test:system_, or you can change your first step to _bin/rails test:all_ which runs all the tests including the system tests.
