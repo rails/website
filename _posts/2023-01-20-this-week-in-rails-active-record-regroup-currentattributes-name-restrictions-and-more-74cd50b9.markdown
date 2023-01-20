@@ -15,7 +15,7 @@ Attribute names like _set_ and _reset_ should not be used with _ActiveSupport::C
 [Add regroup method to Active Record](https://github.com/rails/rails/pull/47010)
 This pull request adds _regroup_ and _regroup!_ methods to Active Record. Here is an example on how to use it:
 
-    Post.group(:title).unscope(:group).group(:author)
+    Post.group(:title).regroup(:author)
 
   
 [Change assert\_emails to return the emails that were sent  
