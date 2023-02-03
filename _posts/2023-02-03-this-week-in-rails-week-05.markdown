@@ -18,17 +18,17 @@ This changes the remaining tasks to use the infinitive form for the verb as well
   
 
 [ActiveRecord::QueryLogs: handle invalid encoding](https://github.com/rails/rails/pull/47214)  
-It can sometimes happen that `sql` is encoded in UTF-8 but contains some invalid binary data of some sort.
-When this happens `strip` end up raising an EncodingError.
+It can sometimes happen that _sql_ is encoded in UTF-8 but contains some invalid binary data of some sort.
+When this happens _strip_ ends up raising an _EncodingError_.
   
 
-[Run `test:prepare` unless exact tests are specified](https://github.com/rails/rails/pull/47210)  
-This PR changes `bin/rails test` to always run `test:prepare` unless exact tests are specified via path arguments (e.g. `bin/rails test path/to/test.rb`) or a name pattern (e.g. `bin/rails test -n test_foo`).
+[Run _test:prepare_ unless exact tests are specified](https://github.com/rails/rails/pull/47210)  
+This PR changes _bin/rails test_ to always run _test:prepare_ unless exact tests are specified via path arguments (e.g. _bin/rails test path/to/test.rb_) or a name pattern (e.g. _bin/rails test -n test_foo_).
   
 
 [Deprecate AbstractController::Helpers::MissingHelperError](https://github.com/rails/rails/pull/47199)  
-This error used to be a wrapper for a LoadError raised when `require_dependency` was used to load helpers for controllers.
-Since Zeitwerk does not use `require_dependency`, the only usage of this error was removed.
+This error used to be a wrapper for a _LoadError_ raised when _require_dependency_ was used to load helpers for controllers.
+Since Zeitwerk does not use _require_dependency_, the only usage of this error was removed.
   
 
 [Deprecate ActionDispatch::IllegalStateError](https://github.com/rails/rails/pull/47091)  
@@ -36,15 +36,15 @@ This error was intended to be a guard to prevent mutating response headers after
 However, it didn't really fulfill this purpose and was removed to make way for Rack 3 support.
   
 
-_A mountain of CLI and help command fixes_  
+**A mountain of CLI and help command fixes**  
 [Jonathan Hefner](https://github.com/jonathanhefner) contributed a bunch
 of great patches for the Rails CLI.
 Including the help text for [secrets](https://github.com/rails/rails/pull/47237),
 [encrypted](https://github.com/rails/rails/pull/47236), and
 [credentials](https://github.com/rails/rails/pull/47235) commands.
-Even all [base](https://github.com/rails/rails/pull/47234)
+Lastly, all [base](https://github.com/rails/rails/pull/47234)
 and [bare namespaced](https://github.com/rails/rails/pull/47211) commands were improved,
-lastly for adding ["Did you mean?"](https://github.com/rails/rails/pull/47208) for unrecognized commands!
+and ["Did you mean?"](https://github.com/rails/rails/pull/47208) was added for unrecognized commands!
 
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2023-01-27%7D...main@%7B2023-02-03%7D)._  
