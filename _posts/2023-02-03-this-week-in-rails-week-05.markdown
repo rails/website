@@ -36,7 +36,7 @@ This error was intended to be a guard to prevent mutating response headers after
 However, it didn't really fulfill this purpose and was removed to make way for Rack 3 support.
   
 
-_A mountain of CLI and help command fixes_  
+**A mountain of CLI and help command fixes**  
 [Jonathan Hefner](https://github.com/jonathanhefner) contributed a bunch
 of great patches for the Rails CLI.
 Including the help text for [secrets](https://github.com/rails/rails/pull/47237),
