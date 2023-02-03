@@ -15,7 +15,7 @@
 #
 # Example:
 #
-# _this-week-in-rails.rb zzak https://twitter.com/__zzak__
+# _this-week-in-rails.rb zzak https://ruby.social/@zzak
 #
 
 author = ARGV[0] || ENV["USER"]
@@ -38,17 +38,17 @@ class Contributors
     @body = fetch
     @total = extract_total
   end
-  
+
   def url
     "https://contributors.rubyonrails.org/contributors/in-time-window/#{@start_date}-#{@end_date}"
   end
-  
+
   def fetch
     uri = URI.parse(url)
     body = uri.open.read
     return Nokogiri::HTML(body)
   end
-  
+
   def extract_total
     xpath = "//span[@class=\"listing-total\"][1]"
     text = @body.xpath(xpath.to_s).first.content
@@ -74,8 +74,8 @@ data["items"].each do |item|
 
   # The two spaces before line-breaks creates a soft-break in the Rails website.
   post_content << <<~POST
-  [#{item["title"]}](#{item["html_url"]})
-  #{summary.squeeze("\n").lstrip.split("\n")[0..2].join("\n  ").lstrip}
+  [#{item["title"]}](#{item["html_url"]})  
+  #{summary.squeeze("\n").lstrip.split("\n")[0..2].join("\n  ").lstrip}  
 
   POST
 end
