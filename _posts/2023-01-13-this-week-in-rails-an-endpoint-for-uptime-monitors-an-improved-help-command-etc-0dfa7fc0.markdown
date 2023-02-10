@@ -21,9 +21,7 @@ This change improves the _delegate_ method by ensuring that the method being def
 [Add a default health controller](https://github.com/rails/rails/pull/46936)
 This pull request introduces a new endpoint for load balancers and uptime monitors by adding a _Rails::HealthController#show_ method and mapping it to the "/up" path in newly generated Rails applications. With this new endpoint, Load balancers and uptime monitors can easily track whether or not an app is up.&nbsp;
 
-If, however, you need to monitor database, Redis or internal network connections
-
-to microservices that your application relies on, you will need to implement monitoring yourself.
+If, however, you need to monitor database, Redis or internal network connections to microservices that your application relies on, you will need to implement monitoring yourself.
 
 
 [Run test:prepare before bin/rails test commands](https://github.com/rails/rails/pull/46664)
