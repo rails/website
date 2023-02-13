@@ -15,8 +15,8 @@ For security reasons, some data need to be filtered before it reaches bad actors
 
     get "/posts?password=test"
      
-      request.full_path # => "/posts?password=test"
-      response.filtered_path # => "/posts?password=[FILTERED]"
+      request.fullpath # => "/posts?password=test"
+      request.filtered_path # => "/posts?password=[FILTERED]"
 
   
 [Guard Stimulus' data-action from multiple escapes](https://github.com/rails/rails/pull/47318)  
