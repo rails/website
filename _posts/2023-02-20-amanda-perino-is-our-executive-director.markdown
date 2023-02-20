@@ -7,7 +7,7 @@ published: true
 date: 2023-02-20
 ---
 
-Since announcing [the formation of The Rails Foundation](/2022/11/14/the-rails-foundation) in November, we've been busy finalizing all the formalities of incorporation, and running a diligent search for the foundation’s executive director. We're thrilled to announce that all those formalities have now been handled, and that we've found our executive director! Please welcome Amanda Perino to the job of leading our mission to improve the documentation, education, marketing, and events in the Rails ecosystem.
+Since announcing [the formation of The Rails Foundation](/2022/11/14/the-rails-foundation) in November, we've been busy finalizing all the formalities of incorporation, and running a diligent search for the foundation’s executive director. We're thrilled to announce that all those formalities have now been handled, and that we've found our executive director! Please welcome <a href="https://www.linkedin.com/in/amandabrookeperino/">Amanda Perino</a> to the job of leading our mission to improve the documentation, education, marketing, and events in the Rails ecosystem.
 
 Amanda joins us after spending years at HashiCorp as a senior manager for events and experiential marketing. Previous to that, she spent twelve years in marketing roles across several industries. In her career, she's organized conferences, led marketing efforts, commissioned film productions, and managed social media campaigns. She has led many efforts that line up exactly with the skills she'll need in the role as executive director of the Rails Foundation. On top of all that, she's a recent graduate of a Rails bootcamp! Just perfect.
 
