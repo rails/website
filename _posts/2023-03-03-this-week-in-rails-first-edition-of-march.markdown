@@ -20,7 +20,6 @@ This adds a new option to configure the digest algorithm in Active Record Encryp
 
 [Add a drop shadow to the boot screen](https://github.com/rails/rails/pull/47550)  
 [This tweet](https://twitter.com/bradgessler/status/1630655637096108032) inspired a long conversation on Discord. A lot of it re-hashed the conversation at [#43802](https://github.com/rails/rails/pull/43802)... but one takeaway was that not everyone realises the Rails logo is also a link.
-
 When you first run the Rails server after `rails new` you are greeted with the bootscreen which shows the Rails logo and current Ruby and Rails versions. This PR adds a drop shadow, which I think makes the logo look a bit more clickable at a glance.
   
 
