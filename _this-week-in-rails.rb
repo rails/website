@@ -56,28 +56,42 @@ class Contributors
   end
 end
 
-url = "https://api.github.com/search/issues?q=is:pr+repo:rails/rails+merged:#{start_date}..#{end_date}"
-uri = URI.parse(url)
-body = uri.open.read
-data = JSON.parse(body)
+def fetch_merged_prs(start_date, end_date, page)
+  url = "https://api.github.com/search/issues?q=is:pr+repo:rails/rails+merged:#{start_date}..#{end_date}&page=#{page}"
+  uri = URI.parse(url)
+  body = uri.open.read
+  JSON.parse(body)
+end
+
 post_content = []
 
 contributors = Contributors.new(start_date, end_date)
 
-data["items"].each do |item|
-  summary = item["body"] ? item["body"] : "no description"
-  summary = summary.gsub(/.*Motivation.*[\/Background]?/, "")
+total_count = fetch_merged_prs(start_date, end_date, 1)["total_count"].to_f
+total_pages = total_count / 30.0
+current_page = 1
 
-  if summary.match?(/Checklist/)
-    summary = summary.gsub(/### Checklist.*/m, "")
+while total_pages >= 0.0
+  data = fetch_merged_prs(start_date, end_date, current_page)
+
+  data["items"].each do |item|
+    summary = item["body"] ? item["body"] : "no description"
+    summary = summary.gsub(/.*Motivation.*[\/Background]?/, "")
+
+    if summary.match?(/Checklist/)
+      summary = summary.gsub(/### Checklist.*/m, "")
+    end
+
+    # The two spaces before line-breaks creates a soft-break in the Rails website.
+    post_content << <<~POST
+      [#{item["title"]}](#{item["html_url"]})  
+      #{summary.squeeze("\n").lstrip.split("\n")[0..2].join("\n  ").lstrip}  
+
+    POST
   end
 
-  # The two spaces before line-breaks creates a soft-break in the Rails website.
-  post_content << <<~POST
-  [#{item["title"]}](#{item["html_url"]})  
-  #{summary.squeeze("\n").lstrip.split("\n")[0..2].join("\n  ").lstrip}  
-
-  POST
+  current_page += 1
+  total_pages -= 1.0
 end
 
 meta = %(---
