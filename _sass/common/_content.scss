@@ -193,7 +193,8 @@
       color: inherit;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-black;
     }
 
@@ -276,7 +277,8 @@
 
         color: $color-black;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: $color-red;
         }
 

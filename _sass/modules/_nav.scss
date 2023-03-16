@@ -33,7 +33,8 @@
       width: 67px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-black;
     }
 
@@ -81,9 +82,12 @@
             transition: background $transition, color $transition;
           }
 
-          &:hover span {
-            background: $color-grey-1;
-            color: $color-red;
+          &:hover,
+          &:focus {
+            span {
+              background: $color-grey-1;
+              color: $color-red;
+            }
           }
 
         }
@@ -191,11 +195,15 @@
 
     }
 
-    &:hover span {
+    &:hover,
+    &:focus {
+      span {
 
-      &:before,
-      &:after {
-        background: $color-red;
+        &:before,
+        &:after {
+          background: $color-red;
+        }
+
       }
 
     }

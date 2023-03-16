@@ -28,7 +28,8 @@
 
       display: block;
 
-      &:hover {
+      &:hover,
+      &:focus {
 
         .card__label h6 {
           background: $color-red;

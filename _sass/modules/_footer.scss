@@ -32,8 +32,13 @@
         width: 90px;
       }
 
-      &:hover:after {
-        filter: $filter-black;
+      &:hover,
+      &:focus {
+
+        &:after {
+          filter: $filter-black;
+        }
+
       }
 
     }
@@ -55,7 +60,8 @@
         color: $color-grey-5;
         display: inline-block;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: $color-black;
           text-decoration: underline;
         }

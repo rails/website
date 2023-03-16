@@ -17,8 +17,13 @@
     width: 15px;
   }
 
-  &:hover:after {
-    filter: $filter-black;
+  &:hover,
+  &:focus {
+
+    &:after {
+      filter: $filter-black;
+    }
+
   }
 
 

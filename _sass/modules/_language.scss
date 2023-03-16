@@ -73,7 +73,8 @@
       width: 7px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-grey-2;
     }
 
@@ -116,9 +117,14 @@
             transition: background $transition, color $transition;
           }
 
-          &:hover span {
-            background: $color-grey-1;
-            color: $color-black;
+          &:hover,
+          &:focus {
+
+            span {
+              background: $color-grey-1;
+              color: $color-black;
+            }
+
           }
 
         }

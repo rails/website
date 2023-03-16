@@ -63,7 +63,8 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-red;
     }
 

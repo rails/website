@@ -102,7 +102,8 @@
           width: 82px;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: $color-red;
         }
 
@@ -128,7 +129,8 @@
           text-decoration: underline;
           text-decoration-thickness: 2px;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: $color-black;
           }
 
@@ -171,7 +173,8 @@
           padding: 4px 12px;
           transition: background $transition, color $transition;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: $color-red;
             color: $color-white;
           }

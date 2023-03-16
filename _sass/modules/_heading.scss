@@ -83,9 +83,13 @@
         transition: background $transition, color $transition;
       }
 
-      &:hover span {
-        background: $color-grey-1;
-        color: $color-red;
+      &:hover,
+      &:focus {
+        span {
+          background: $color-grey-1;
+          color: $color-red;
+        }
+
       }
 
     }

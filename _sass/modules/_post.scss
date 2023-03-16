@@ -74,7 +74,8 @@
           color: $color-red;
           text-decoration: underline;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: $color-black;
           }
 

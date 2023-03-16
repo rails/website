@@ -30,7 +30,8 @@
     vertical-align: middle;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $color-black;
   }
 
@@ -51,7 +52,8 @@
       padding: 0 !important;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-grey-3;
       color: $color-red;
     }
@@ -79,7 +81,8 @@
       text-decoration-thickness: 2px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: none;
       color: $color-red;
     }
@@ -99,8 +102,13 @@
       width: 9px;
     }
 
-    &:hover span:after {
-      filter: $filter-red;
+    &:hover,
+    &:focus {
+
+      span:after {
+        filter: $filter-red;
+      }
+
     }
 
   }
@@ -125,7 +133,8 @@
     background: $color-black;
     color: $color-white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-red;
     }
 
@@ -136,7 +145,8 @@
     background: $color-red;
     color: $color-white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-black;
     }
 

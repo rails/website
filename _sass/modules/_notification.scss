@@ -23,7 +23,8 @@
       font-weight: 600;
       text-decoration: underline;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: rgba($color-white, 0.9);
       }
 
