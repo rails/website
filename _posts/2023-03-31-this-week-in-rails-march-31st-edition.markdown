@@ -19,7 +19,7 @@ This PR makes `has_one` and `has_many` associations automatically infer the `for
   
 
 [Action Cable: _assert_broadcasts_ return the messages that were broadcast](https://github.com/rails/rails/pull/47793)  
-This PR makes Action Cable's `assert_broadcasts` return the messages that were broadast.
+This PR makes Action Cable's `assert_broadcasts` return the messages that were broadcast.
 
 This way you can more easily test them, for example:
   
