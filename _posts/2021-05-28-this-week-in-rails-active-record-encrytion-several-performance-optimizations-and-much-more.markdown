@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Active Record Encrytion, several performance optimizations, and much MORE!"
+title: "Active Record Encryption, several performance optimizations, and much MORE!"
 categories: news
 author: zzak
 published: true
