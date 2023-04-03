@@ -18,7 +18,7 @@ Cedarcode integrates smoothly with companies to collaborate full-time on their d
 In addition to their expertise in Ruby on Rails development, Cedarcode is also committed to giving back to the community. They have organized and participated in numerous community events, have contributed to open-source projects, including the Rails framework itself, as well as created and maintain <a href="https://www.cedarcode.com/open-source">their own open-source projects</a>.
 
 >We are Ruby on Rails lovers and many years ago we decided to invest our careers in this technology. It has helped our company grow and lets us enjoy what we do every day.
-<br><br>When we heard about The Rails Foundation, we knew we wanted to get involved. We believe The Rails Foundation will help the Rails ecosystem evolve and stay strong for the years to come. We are glad to be part of it!
+<br><br>When we heard about the Rails Foundation, we knew we wanted to get involved. We believe the Rails Foundation will help the Rails ecosystem evolve and stay strong for the years to come. We are glad to be part of it!
 ><br><br>*Sebastian Suttner, Cedarcode Co-Founder*
 >
 
