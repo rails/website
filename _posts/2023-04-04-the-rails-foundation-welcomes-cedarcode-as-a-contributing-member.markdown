@@ -15,7 +15,7 @@ First up: The Rails Foundation recently welcomed its first Contributing member: 
 
 Cedarcode integrates smoothly with companies to collaborate full-time on their development projects and help them boost their teams. With many members of the team bringing more than 10 years of Ruby on Rails experience to their work, Cedarcode is well equipped to offer high-quality code, attention to detail, and a passion for performance and security to a wide range of businesses and industries.
 
-In addition to their expertise in Ruby on Rails development, Cedarcode is also committed to giving back to the community. They have organized and participated in numerous community events, have contributed to open-source projects, including the Rails framework itself, as well as created and maintain <a href="https://www.cedarcode.com/open-source_">their own open-source projects</a>.
+In addition to their expertise in Ruby on Rails development, Cedarcode is also committed to giving back to the community. They have organized and participated in numerous community events, have contributed to open-source projects, including the Rails framework itself, as well as created and maintain <a href="https://www.cedarcode.com/open-source">their own open-source projects</a>.
 
 >We are Ruby on Rails lovers and many years ago we decided to invest our careers in this technology. It has helped our company grow and lets us enjoy what we do every day.
 <br><br>When we heard about The Rails Foundation, we knew we wanted to get involved. We believe The Rails Foundation will help the Rails ecosystem evolve and stay strong for the years to come. We are glad to be part of it!
