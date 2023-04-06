@@ -31,4 +31,4 @@ We are working hard to get everything up and running for you, so soon we will la
 
 Stay tuned. We promise to keep you in the loop as planning progresses!
 
-<img src="/assets/images/logo-railsworld.svg" />
+<img src="/assets/images/logo-railsworld.svg" width="400">
