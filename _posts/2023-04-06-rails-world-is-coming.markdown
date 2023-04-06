@@ -2,7 +2,7 @@
 layout: post
 title: "Rails World is coming"
 categories: news
-author: The Rails Foundation
+author: Amanda Perino
 published: true
 date: 2023-04-06
 ---
@@ -31,4 +31,4 @@ We are working hard to get everything up and running for you, so soon we will la
 
 Stay tuned. We promise to keep you in the loop as planning progresses!
 
-<img src="/assets/images/logo-railsworld.svg" width="400">
+<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-railsworld.svg" style="width: 50%"></p>
