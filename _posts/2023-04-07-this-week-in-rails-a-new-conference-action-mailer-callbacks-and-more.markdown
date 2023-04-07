@@ -17,14 +17,14 @@ You can read the announcement [here](https://rubyonrails.org/2023/4/6/rails-worl
 This pull request ensures that the composite primary key is reset when `#dup` is called on an instance of an `ActiveRecord::Base` subclass.
   
 For example:
-  ```ruby
-    class TravelRoute < ActiveRecord::Base
-      self.primary_key = [:origin, :destination]
-    end
+```ruby
+class TravelRoute < ActiveRecord::Base
+  self.primary_key = [:origin, :destination]
+end
 
-    route = TravelRoute.new(origin: "NYC", destination: "LAX")
-    route.dup # => #<TravelRoute origin: nil, destination: nil>
-  ```
+route = TravelRoute.new(origin: "NYC", destination: "LAX")
+route.dup # => #<TravelRoute origin: nil, destination: nil>
+```
 
 [Ensure pre-7.1 migrations use legacy index names when using create_table](https://github.com/rails/rails/pull/47863)  
 A follow-up to [47753](https://github.com/rails/rails/pull/47753) ensures the older versions of Active Record will use the legacy index names rather than the new truncated ones.
