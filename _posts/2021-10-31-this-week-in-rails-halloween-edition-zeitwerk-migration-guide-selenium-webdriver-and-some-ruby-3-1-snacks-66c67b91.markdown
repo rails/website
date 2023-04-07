@@ -55,7 +55,7 @@ You can now effectively use an RFC 4122 compliant string by default in newly gen
 
 [Use the native Class#descendants if available](https://github.com/rails/rails/pull/43481)
 
-With the addition of Class#decendents in Ruby 3.1, we can avoid iterating over every object in ObjectSpace to achieve the same feature. Also, check out #43548 for some additional refactoring of DescendantsTracker.
+With the addition of Class#descendants in Ruby 3.1, we can avoid iterating over every object in ObjectSpace to achieve the same feature. Also, check out #43548 for some additional refactoring of DescendantsTracker.
 
   
 

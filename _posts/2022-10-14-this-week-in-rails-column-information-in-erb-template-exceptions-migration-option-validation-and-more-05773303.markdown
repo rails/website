@@ -10,7 +10,7 @@ date: 2022-10-14
 Hey, this is [Greg](https://twitter.com/gregmolnar) bringing you the latest news from the Rails world.
 
 [Add column information to exceptions inside ERB templates](https://github.com/rails/rails/pull/46171)
-This PR adds column information to exceptions that occured inside ERB templates. There are before and after screenshots of the Rails error page, and a great explanation of the change in the PR description.
+This PR adds column information to exceptions that occurred inside ERB templates. There are before and after screenshots of the Rails error page, and a great explanation of the change in the PR description.
 
 [Validate options when managing columns and tables in migration](https://github.com/rails/rails/pull/46178)
 With this change, when an invalid option is passed to a migration method(_create\_table_ for instance), an error will be raised. The options validation is only applied to newly created migrations, to make it backward compatible.
