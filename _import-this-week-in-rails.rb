@@ -60,7 +60,7 @@ class HeyWorldEmail
   def extract_author_url
     xpath = <<-XPATH
     //a[contains(@href, 'twitter.com/') or contains(@href,
-      'github.com/') or contains(@href, 'manny.codes/')
+      'github.com/') or contains(@href, 'hayford.dev/')
       and not(contains(@href, 'rails'))]
     XPATH
 
@@ -69,7 +69,7 @@ class HeyWorldEmail
 
   def extract_author_handle
     case url = extract_author_url
-    when /manny/
+    when /hayford/
       'siaw23'
     else
       url.split('/').last
