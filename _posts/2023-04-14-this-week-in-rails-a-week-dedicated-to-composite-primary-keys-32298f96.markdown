@@ -9,7 +9,7 @@ date: 2023-04-14
 
 Saluton! That's Esperanto for "Hello!" 😜... [Emmanuel Hayford](https://hayford.dev/) here, let's see what's new in Rails as we gear up for **Composite Primary Keys (CPKs)** support.
 
-But first, here's a fine opportunity for junior Ruby on Rails developers: As part of [preparations for the upcoming Rails World conference in Amsterdam, Holland](https://rubyonrails.org/2023/4/13/attention-junior-devs-want-to-build-the-rails-world-website) this year, The Rails Foundation is presenting an opportunity to junior Ruby on Rails developers. Paired with a mentor, the goal is for the junior developer to build a website to host the event!
+But first, here's a fine opportunity for junior Ruby on Rails developers: As part of [preparations for the upcoming Rails World conference in Amsterdam, Netherlands](https://rubyonrails.org/2023/4/13/attention-junior-devs-want-to-build-the-rails-world-website) this year, The Rails Foundation is presenting an opportunity to junior Ruby on Rails developers. Paired with a mentor, the goal is for the junior developer to build a website to host the event!
 
 [Support deleting records from associations for CPK](https://github.com/rails/rails/pull/47928)
 This PR improves the behaviour around deleting records from associations in composite contexts. Previously, an _ArgumentError_ would raise if one attempted to delete records from associations in composite contexts.
