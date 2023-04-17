@@ -13,7 +13,7 @@ We are thrilled to announce that <a href="https://www.appsignal.com">AppSignal</
 
 AppSignal’s founders have been part of the Rails community since 2005, when they ran their consultancy's customers' production apps in Rails 0.12. With the introduction of ActiveSupport::Notifications, it suddenly became doable for them to build an Application Performance Monitoring platform specifically for Rails. They stopped doing client work and transitioned to working on AppSignal full-time in 2013.
 
-Many thousands of developers now enjoy this straightforward, affordable, and "zero setup" APM and <a href="https://www.appsignal.com/tour/log-management">Logging solution</a> for Ruby on Rails (now including several other languages and frameworks too). AppSignal processes and analyzes petabytes of monthly data in real time.
+Many thousands of developers now enjoy this straightforward, affordable, and "zero setup" APM and Logging solution for Ruby on Rails (now including several other languages and frameworks too). AppSignal processes and analyzes petabytes of monthly data in real time.
 
 Not content to simply build on Rails, the AppSignal founders have also been important evangelists within the community. They have presented over sixty times at international Ruby, Rails, and other web development conferences, served on the RailsConf and Euruko program committees, and sponsored many open-source software projects and community-driven events. If you ever had a stroopwafel at an event, it must have been one of the over 25,000 cookies this Netherlands-based company has shipped.
 
