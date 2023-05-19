@@ -26,10 +26,10 @@ This fix, optimizes the `where` query for a range where begin and end values are
 For example when doing `User.where(id: 2..2)`.
 
 ```sql 
-# before
+# Before
 SELECT `users`.* FROM `users` WHERE `users`.`id` BETWEEN 2 AND 2
 
-# after
+# After
 SELECT `users`.* FROM `users` WHERE `users`.`id`=2
 ```
 
