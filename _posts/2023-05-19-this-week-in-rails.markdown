@@ -14,10 +14,10 @@ This is [Vipul](https://twitter.com/vipulnsward), bringing you this week's chang
 [Rails World Call for Papers now open](https://rubyonrails.org/2023/5/9/rails-world-call-for-papers-now-open)  
 This CFP is open until June 16, with space in the agenda for 26 talks on two tracks, and up to six workshops. Read the full announcement for more details and submit your proposal!
 
-[Introduce ActiveRecord.disconnect_all! to close all connections from pool](https://github.com/rails/rails/pull/48220)  
+[Introduce ActiveRecord.disconnect_all! to close all connections from pool](https://github.com/rails/rails/pull/47856)  
 This change introduces a multi-db aware version of `ActiveRecord::Base.connection.disconnect!`. 
 
-It also avoid connecting to the database if we weren't already.
+It also avoids connecting to the database if we weren't already connected.
 
 This can be useful to reset state in multi-db applications after `establish_connection` has been used.
 
