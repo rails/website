@@ -1,0 +1,61 @@
+.world {
+  text-align: center;
+
+  &__top {
+    height: 50vh; // for browsers that don't support svh
+    height: 50svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    img {
+      width: min(50vw, 300px);
+      cursor: pointer;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      z-index: 1;
+    }
+
+     /* for short screens */
+    @media(max-height: 820px) {
+      img {
+        max-height: 30vh;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+
+  &__bottom {
+    position: relative;
+    height: 100vh; // for browsers that don't support svh
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    img {
+      max-width: 100%;
+      height: 30%;
+      object-fit: cover;
+    }
+
+    @media(min-width: 1024px) {
+      img {
+        object-fit: contain;
+      }
+
+    }
+  }
+
+  @media(min-width: 1024px) {
+    &__button {
+      margin-top: 30px;
+    }
+  }
+}
