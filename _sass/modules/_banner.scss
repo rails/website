@@ -1,0 +1,13 @@
+.banner {
+  padding: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+
+  p {
+    padding-bottom: 10px;
+
+    @media(min-width: 768px) {
+      padding-bottom: 0;
+    }
+  }
+}
