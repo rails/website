@@ -4,7 +4,7 @@ title: Rails 7.0.5 has been released
 categories: releases
 author: rafaelfranca
 published: true
-date: 2023-05-24 15:30:00 -05:00
+date: 2023-05-24 15:30:00 -04:00
 ---
 
 Hi everyone,
