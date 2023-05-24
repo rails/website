@@ -5,6 +5,9 @@
 
 <body>
 {% include notification.html %}
+{% if page.id == 'home' %}
+  {% include banner.html %}
+{% endif %}
 {% include nav.html %}
 
 <div class="layout">
