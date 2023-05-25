@@ -7,7 +7,7 @@ published: true
 date: 2023-04-06
 ---
 
-The Rails Foundation is excited to announce **Rails World**, our first conference. It will take place on October 5 & 6 in the stunning city of Amsterdam, Netherlands.
+The Rails Foundation is excited to announce [**Rails World**](/world), our first conference. It will take place on October 5 & 6 in the stunning city of Amsterdam, Netherlands.
 
 Rails World is a two-day conference featuring technical talks, demos, workshops, networking, and keynotes. You'll hear from the creators and maintainers of Rails on the latest features and best practices in Rails development.  
 
@@ -24,7 +24,7 @@ Whether you're a seasoned Rails developer or just starting out, join hundreds of
 We can't wait to see you there!
 
 We are working hard to get everything up and running for you, so soon we will launch:
-* A full website with venue and hotel information
+* [A full website](/world) with venue and hotel information
 * Early bird tickets
 * A speaker CFP
 * A sponsorship prospectus (email world@rubyonrails.org if you would like to receive the prospectus when it is ready)
