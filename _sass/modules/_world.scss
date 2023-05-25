@@ -13,7 +13,8 @@
       width: min(50vw, 300px);
       cursor: pointer;
       position: fixed;
-      top: 50%;
+      top: 50vh;
+      top: 50svh;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
       z-index: 1;
@@ -25,6 +26,12 @@
         max-height: 30vh;
       }
     }
+
+    @media (max-height: 500px) {
+      .world__ul {
+        padding-bottom: 0;
+      }
+    }
   }
 
   &__button {
@@ -33,8 +40,7 @@
 
   &__bottom {
     position: relative;
-    height: 100vh; // for browsers that don't support svh
-    height: 100svh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: end;
