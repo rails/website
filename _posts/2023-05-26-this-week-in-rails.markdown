@@ -13,7 +13,7 @@ Hey! [zzak](https://github.com/zzak) here with another edition of This Week in R
 Reminder: The [Rails World CFP](https://www.papercall.io/rails-world-2023) is open until June 16.  
 Whether you’re a seasoned veteran or a newcomer to the Rails ecosystem, we encourage you to submit proposals that showcase forward-thinking ideas and push the boundaries of what’s possible with Rails.  
 
-[Rails 7.0.5 has been released](https://rubyonrails.org/2023/5/25/Rails-7-0-5-has-been-released)  
+[Rails 7.0.5 has been released](https://rubyonrails.org/2023/5/24/Rails-7-0-5-has-been-released)  
 In case you missed it, a bugfix release for the 7.0 series of Rails was cut.  
   
 
