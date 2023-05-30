@@ -6,6 +6,7 @@
   src: url('../fonts/IBMPlexMono-Text.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-Text.woff2') format('woff2'),
        url('../fonts/IBMPlexMono-Text.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
   src: url('../fonts/IBMPlexMono-TextItalic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-TextItalic.woff2') format('woff2'),
        url('../fonts/IBMPlexMono-TextItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +28,7 @@
   src: url('../fonts/IBMPlexMono-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-Medium.woff2') format('woff2'),
        url('../fonts/IBMPlexMono-Medium.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -36,6 +39,7 @@
   src: url('../fonts/IBMPlexMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/IBMPlexMono-MediumItalic.woff2') format('woff2'),
        url('../fonts/IBMPlexMono-MediumItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -43,6 +47,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/calibre-regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -50,6 +55,7 @@
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/calibre-regular-italic.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -57,6 +63,7 @@
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/calibre-semibold.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -64,6 +71,7 @@
   font-style: italic;
   font-weight: 600;
   src: url('../fonts/calibre-semibold-italic.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -71,4 +79,5 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/calibre-bold.woff2') format('woff2');
+  font-display: swap;
 }
