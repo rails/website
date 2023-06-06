@@ -1,0 +1,33 @@
+---
+permalink: /world/faq
+title: Frequently Asked Questions
+---
+
+{% assign faqData = site.data.world.faq %} {% assign categories = faqData | map:
+'category' %}
+
+<h1>Frequently Asked Questions</h1>
+
+<nav>
+  <ul>
+    {% for category in categories %}
+      <li>{{ category }}</li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% for faqGroup in faqData %}
+  <section>
+    <h2>{{ faqGroup.category }}</h2>
+    <ul>
+      {% for topic in faqGroup.topics %}
+        <li>
+          <details>
+            <summary>{{ topic.question }}</summary>
+            <p>{{ topic.answer }}</p>
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
