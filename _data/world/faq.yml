@@ -1,0 +1,35 @@
+- category: Ticketing
+  topics:
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolor maiores aspernatur minima tenetur animi, explicabo voluptatem natus ratione exercitationem quos deleniti quidem, quam enim numquam id praesentium unde asperiores.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolor maiores aspernatur minima tenetur animi, explicabo voluptatem natus ratione exercitationem quos deleniti quidem, quam enim numquam id praesentium unde asperiores.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolor maiores aspernatur minima tenetur animi, explicabo voluptatem natus ratione exercitationem quos deleniti quidem, quam enim numquam id praesentium unde asperiores.
+
+- category: Accommodation
+  topics:
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+- category: Venue
+  topics:
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+- category: Other
+  topics:
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    - question: Question
+      answer: Lorem ipsum dolor sit amet consectetur adipisicing elit.
