@@ -19,6 +19,9 @@ collections:
   pages:
     output: true
     permalink: "/:name"
+  world_speakers:
+    output: true
+    permalink: /world/speakers/:name/
 
 defaults:
   - scope:
@@ -32,6 +35,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "world_speakers"
+    values:
+      layout: "world/speaker"
 
 markdown: kramdown
 highlighter: rouge
