@@ -1,0 +1,22 @@
+---
+permalink: /world/speakers
+title: Speakers
+layout: world/default
+---
+
+<h1>Speakers</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum amet architecto tempore voluptate, ipsa possimus sint assumenda, a reprehenderit animi vel voluptates quos temporibus, dolores esse vero qui doloribus.</p>
+
+<div>
+  <ul>
+    {% for speaker in site.world_speakers %}
+    <li>
+      <a href="{{ speaker.url }}">
+      <img src="" alt="{{ speaker.name }}'s Profile Picture">
+      <h2>{{ speaker.name }}</h2>
+      <p>{{ speaker.role }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
