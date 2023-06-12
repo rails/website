@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  background-color: var(--red);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-small) var(--space-xx-large);
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  a {
+    color: var(--white);
+  }
+
+  &__logo {
+    font-size: var(--type-xx-large);
+    letter-spacing: -0.015em;
+    font-weight: 800;
+
+    &--outline {
+      font-style: italic;
+      -webkit-text-stroke: 1px var(--white);
+      color: transparent;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-large);
+    font-style: italic;
+  }
+
+  &__link {
+    font-size: var(--type-medium);
+    font-weight: 700;
+  }
+}
