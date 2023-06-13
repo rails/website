@@ -1,0 +1,29 @@
+.callout {
+  &__banner {
+    background-color: var(--pink-pale);
+    margin-bottom: var(--space-medium);
+
+    flex-container {
+      padding: var(--space-medium) var(--space-small) var(--space-large);
+      gap: var(--space-small);
+      border-top: 1px solid var(--red);
+      margin-left: var(--space-large);
+    }
+
+    right-border {
+      border-right: 1px solid var(--red);
+      display: block;
+      margin-right: var(--space-large);
+      padding-top: var(--space-large);
+    }
+
+    p {
+      color: var(--red);
+      line-height: 1.5em;
+    }
+  }
+
+  p {
+    padding-bottom: var(--space-medium);
+  }
+}
