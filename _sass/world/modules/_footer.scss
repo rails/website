@@ -1,0 +1,30 @@
+footer {
+  text-align: center;
+  padding: 0 var(--space-xx-large);
+  border-top: var(--border-white);
+
+  p {
+    font-size: var(--type-x-small);
+    padding-bottom: var(--space-small)
+  }
+
+  vertical-borders{
+    display: block;
+    padding: var(--space-medium);
+    border-left: var(--border-white);
+    border-right: var(--border-white)
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-small);
+  }
+
+  a {
+    color: var(--white);
+    font-size: var(--type-xx-small);
+    text-decoration: underline;
+  }
+}

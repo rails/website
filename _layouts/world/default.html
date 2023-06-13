@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="en" style="scroll-behavior: smooth">
-{% include world/head.html %}
-{% include world/announcements.html %}
-{% include world/nav.html %}
-<body>
-  <main>{{ content }}</main>
-</body>
-
+  {% include world/head.html %}
+  <body>
+    {% include world/announcements.html %}
+    {% include world/nav.html %}
+    <main>{{ content }}</main>
+    {% include world/footer.html %}
+  </body>
 </html>
