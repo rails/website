@@ -32,4 +32,10 @@ body {
   flex-container {
     display: flex;
   }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 }
