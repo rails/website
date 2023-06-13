@@ -6,4 +6,15 @@ body {
   a {
     text-decoration: none;
   }
+
+  content-container {
+    display: block;
+    margin: 0 var(--space-xx-large);
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+
+    section {
+      background-color: var(--red);
+    }
+  }
 }

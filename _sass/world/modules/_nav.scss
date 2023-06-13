@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-small) var(--space-xx-large);
-  border-top: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+  border-top: var(--border);
+  border-bottom: var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
