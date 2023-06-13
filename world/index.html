@@ -65,5 +65,20 @@ title: Rails World 2023
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque doloribus culpa iste reiciendis incidunt excepturi officia, a debitis cupiditate itaque earum placeat harum voluptatem esse modi nesciunt ab! Ducimus?</p>
       <button class="button button--light"><a href="#">Prospectus PDF</a></button>
     </section>
+
+    <!-- sponsors -->
+    <section class="sponsors">
+      <h1>Our Sponsors</h1>
+      <div class="sponsors__logos">
+        {% for i in (1..5) %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M9 15l6-6"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M13 16l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M8 11l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M19.25 12c0 4-3.25 7.25-7.25 7.25 -4.01 0-7.25-3.25-7.25-7.25 0-4.01 3.24-7.25 7.25-7.25 4 0 7.25 3.24 7.25 7.25Z"></path></svg>
+        {% endfor %}
+      </div>
+      <div class="sponsors__logos sponsors__logos--small">
+        {% for i in (1..20) %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M9 15l6-6"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M13 16l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M8 11l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M19.25 12c0 4-3.25 7.25-7.25 7.25 -4.01 0-7.25-3.25-7.25-7.25 0-4.01 3.24-7.25 7.25-7.25 4 0 7.25 3.24 7.25 7.25Z"></path></svg>
+        {% endfor %}
+      </div>
+    </section>
   </container-large>
 </content-container>
