@@ -27,5 +27,29 @@ title: Rails World 2023
     </div>
   </section>
 
+<!-- about -->
+  <section class="about">
+    <p>Rails World is a two-day, two track conference featuring technical talks, demos, workshops, networking, and keynotes. You’ll hear from the creators and maintainers of Rails on the latest features and best practices in Rails development.</p>
+  </section>
 
+
+  <container-large>
+    <!-- speakers -->
+    <section class="speakers">
+        <div class="speakers__content">
+          <h1>Our Speakers</h1>
+
+          <!-- speaker carousel -->
+          <sl-carousel class="aspect-ratio" style="--aspect-ratio: 4/5;" navigation pagination mouse-dragging slides-per-page="4.5" slides-per-move="4">
+            {% for i in (1..20) %}
+              <sl-carousel-item>{% include world/carousel-card.html %}</sl-carousel-item>
+            {% endfor %}
+            <sl-carousel-item style="background: var(--red);"><a href="/world/speakers">see all speakers</a></sl-carousel-item>
+          </sl-carousel>
+          <button class="button button--light"><a href="/world/speakers">See Full Line-Up</a></button>
+        </div>
+
+    </section>
+
+  </container-large>
 </content-container>

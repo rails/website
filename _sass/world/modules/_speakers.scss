@@ -1,0 +1,65 @@
+.speakers {
+  h1 {
+    font-size: var(--type-xxx-large);
+    font-weight: 800;
+    position: relative;
+  }
+
+  &__content {
+    a {
+      color: var(--text-color)
+    }
+  }
+
+  sl-carousel::part(navigation-button) {
+    color: transparent;
+    background-image: url(/assets/world/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  sl-carousel::part(navigation-button--previous) {
+    transform: rotate(-180deg);
+  }
+
+  carousel-card {
+    display: block;
+    background-color: var(--pink-pale);
+
+    img {
+      margin: auto;
+      padding-bottom: var(--space-x-small)
+    }
+
+    h2 {
+      color: var(--red);
+      font-size: var(--type-x-large);
+      text-align: center;
+      padding-bottom: var(--space-x-small)
+    }
+
+    p {
+      color: var(--purple-dark);
+      font-size: var(--type-xx-small);
+    }
+  }
+
+  vertical-borders {
+    display: block;
+    margin: 0 var(--space-small);
+    padding-top: var(--space-small);
+    border-right: var(--border-red);
+    border-left: var(--border-red);
+    min-height: 11em;
+  }
+
+
+  .carousel-card__content {
+    display: block;
+    border-top: var(--border-red);
+    padding: var(--space-small);
+  }
+
+
+
+}

@@ -2,6 +2,8 @@ body {
   background: var(--red);
   color: var(--text-color);
   box-sizing: border-box;
+  font-style: italic;
+  font-weight: 700;
 
   a {
     text-decoration: none;
@@ -10,11 +12,24 @@ body {
   content-container {
     display: block;
     margin: 0 var(--space-xx-large);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
+    border-left: var(--border-white);
+    border-right: var(--border-white);
 
     section {
       background-color: var(--red);
+      padding-bottom: var(--space-xx-large)
     }
+  }
+
+  container-large {
+    display: block;
+    padding: var(--space-large) var(--space-medium) 0;
+    max-width: 55em;
+    margin: auto;
+    background-color: var(--red);
+  }
+
+  flex-container {
+    display: flex;
   }
 }

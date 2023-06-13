@@ -1,9 +1,9 @@
 .button {
   font-size: var(--type-small);
-  font-style: italic;
   border: 0.7px solid var(--white);
   padding: var(--space-small) var(--space-large);
   cursor: pointer;
+  font-style: italic;
 
   &--light {
     background-color: var(--purple-medium);

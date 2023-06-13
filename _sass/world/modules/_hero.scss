@@ -25,12 +25,12 @@
     h1 {
       font-size: var(--type-xxx-large);
       font-weight: 800;
-      margin-bottom: var(--space-small);
+      padding-bottom: var(--space-small);
       position: relative;
     }
 
     p {
-      margin-bottom: var(--space-x-small);
+      padding-bottom: var(--space-x-small);
     }
 
     &:after {
