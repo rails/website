@@ -23,14 +23,11 @@
     }
 
     h1 {
-      font-size: var(--type-xxx-large);
-      font-weight: 800;
-      margin-bottom: var(--space-small);
       position: relative;
     }
 
     p {
-      margin-bottom: var(--space-x-small);
+      padding-bottom: var(--space-x-small);
     }
 
     &:after {
@@ -54,6 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   &__link {
@@ -61,7 +59,7 @@
     text-decoration: underline
   }
 
-  button {
+  .button {
     margin-top: var(--space-small);
   }
 }

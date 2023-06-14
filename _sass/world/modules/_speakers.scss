@@ -1,0 +1,58 @@
+.speakers {
+  background-color: var(--red);
+  padding-top: var(--space-x-large);
+
+  sl-carousel::part(navigation-button) {
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  sl-carousel::part(navigation-button--next) {
+    background-image: url(/assets/world/next.svg);
+  }
+
+  sl-carousel::part(navigation-button--previous) {
+    background-image: url(/assets/world/previous.svg);
+  }
+
+  sl-carousel::part(scroll-container) {
+    min-height: 15em;
+  }
+
+  .carousel__card--narrow {
+    width: 50%;
+
+    a {
+      color: var(--white);
+    }
+  }
+
+  speaker-card {
+    display: block;
+    background-color: var(--pink-pale);
+
+    img {
+      margin: auto;
+      padding-bottom: var(--space-x-small)
+    }
+
+    h3 {
+      color: var(--red);
+      text-align: center;
+    }
+
+    p {
+      color: var(--purple-dark);
+      font-size: var(--type-xx-small);
+    }
+
+  }
+
+  .speaker-card__content {
+    display: block;
+    border-top: var(--border-red);
+    border-bottom: var(--border-red);
+    padding: var(--space-small);
+  }
+}

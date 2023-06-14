@@ -11,7 +11,7 @@ title: Rails World 2023
       <li><a href="/world/speakers" class="nav__link">Speakers</a></li>
       <li><a href="#" class="nav__link">Agenda</a></li>
       <li><a href="/world/faq" class="nav__link">FAQs</a></li>
-      <li><button class="button button--dark button--small"><a href="#">Tickets</a></button></li>
+      <li><a href="#" class="button button--dark button--small">Tickets</a></li>
     </ul>
   </nav>
 </header>
@@ -23,13 +23,25 @@ title: Rails World 2023
       <h1>Join our first Ruby on Rails Conference!</h1>
       <p>October 5 & 6</p>
       <p class="hero__location">{% include world/icons/pin.html %} <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank" class="hero__link">Amsterdam, Beurs van Berlage</a></p>
-      <button class="button button--dark"><a href="#">Tickets</a></button>
+      <a href="#" class="button button--dark">Tickets</a>
     </div>
   </section>
-
 
 <!-- about -->
   <section class="about">
     <p>Rails World is a two-day, two track conference featuring technical talks, demos, workshops, networking, and keynotes. You’ll hear from the creators and maintainers of Rails on the latest features and best practices in Rails development.</p>
   </section>
+
+    <!-- speakers -->
+    <section class="speakers">
+          <h2>Our Speakers</h2>
+          <!-- speaker carousel -->
+          <sl-carousel class="aspect-ratio scroll-hint" style="--aspect-ratio: 4/5; --scroll-hint: 5%;" navigation pagination mouse-dragging slides-per-page="4" slides-per-move="4">
+            {% for i in (1..25) %}
+              <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
+            {% endfor %}
+            <sl-carousel-item class="carousel__card--narrow" style="background: var(--red);"><a href="/world/speakers">See More Speakers</a></sl-carousel-item>
+          </sl-carousel>
+          <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
+    </section>
 </content-container>

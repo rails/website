@@ -2,6 +2,8 @@ body {
   background: var(--red);
   color: var(--text-color);
   box-sizing: border-box;
+  font-style: italic;
+  font-weight: 700;
 
   a {
     text-decoration: none;
@@ -10,13 +12,31 @@ body {
   content-container {
     display: block;
     margin: 0 var(--space-xx-large);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
+    border-left: var(--border-white);
+    border-right: var(--border-white);
 
     section {
-      background-color: var(--red);
+      padding-bottom: var(--space-xx-large);
+      padding-left: var(--space-medium);
+      padding-right: var(--space-medium);
+      max-width: 55em;
+      margin: auto;
     }
   }
+
+  flex-container {
+    display: flex;
+  }
+
+  bordered-container {
+    display: block;
+    border-left: var(--border-red);
+    border-right: var(--border-red);
+    margin-left: var(--space-small);
+    margin-right: var(--space-small);
+    padding: var(--space-small) 0;
+  }
+
   h1 {
     font-size: var(--type-xxx-large);
     font-weight: 800;

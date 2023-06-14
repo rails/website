@@ -1,10 +1,11 @@
 .about {
   padding: var(--space-small);
-  font-style: italic;
   line-height: 90%;
-  border-top: var(--border);
-  border-bottom: var(--border);
+  border-top: var(--border-white);
+  border-bottom: var(--border-white);
   text-align: center;
+  max-width: unset;
+  background-color: var(--red);
 
   p {
     max-width: 29em;
