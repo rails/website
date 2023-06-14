@@ -60,4 +60,8 @@ title: Rails World 2023
       <a href="#" class="button button--light">Prospectus PDF</a>
     </section>
 
+    <!-- sponsors -->
+    {% if site.data.world.sponsors %}
+      {% include world/sponsors.html %}
+    {% endif %}
 </content-container>
