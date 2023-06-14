@@ -23,6 +23,9 @@ collections:
   world_speakers:
     output: true
     permalink: /world/speakers/:name/
+  world_sessions:
+    output: true
+    permalink: /world/sessions/:path/
 
 defaults:
   - scope:
