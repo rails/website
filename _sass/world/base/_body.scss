@@ -17,4 +17,38 @@ body {
       background-color: var(--red);
     }
   }
+  h1 {
+    font-size: var(--type-xxx-large);
+    font-weight: 800;
+    padding-bottom: var(--space-medium);
+  }
+
+  h2 {
+    font-size: var(--type-xx-large);
+    font-weight: 800;
+    padding-bottom: var(--space-small);
+  }
+
+  h3 {
+    font-size: var(--type-x-large);
+    font-weight: 800;
+    padding-bottom: var(--space-x-small);
+  }
+
+  h4 {
+    font-size: var(--type-large);
+    font-weight: 800;
+    padding-bottom: var(--space-x-small);
+  }
+
+  h5 {
+    font-size: var(--type-medium);
+    padding-bottom: var(--space-x-small);
+  }
+
+  h6 {
+    font-size: var(--type-small);
+    padding-bottom: var(--space-x-small);
+  }
+
 }
