@@ -7,28 +7,35 @@ title: Frequently Asked Questions
 {% assign faqData = site.data.world.faq %} {% assign categories = faqData | map:
 'category' %}
 
-<h1>Frequently Asked Questions</h1>
+<content-container class="faq">
+  <h1>Frequently Asked Questions</h1>
 
-<nav>
-  <ul>
-    {% for category in categories %}
-      <li>{{ category }}</li>
-    {% endfor %}
-  </ul>
-</nav>
-
-{% for faqGroup in faqData %}
-  <section>
-    <h2>{{ faqGroup.category }}</h2>
+  <nav>
     <ul>
-      {% for topic in faqGroup.topics %}
-        <li>
-          <details>
-            <summary>{{ topic.question }}</summary>
-            <p>{{ topic.answer }}</p>
-          </details>
-        </li>
+      {% for category in categories %}
+        <li><a href="#{{ category | downcase }}">{{ category }}</a></li>
       {% endfor %}
     </ul>
-  </section>
-{% endfor %}
+  </nav>
+
+  <div class="faq__content">
+    {% for faqGroup in faqData %}
+      <section id="{{ faqGroup.category | downcase }}">
+        <h2>{{ faqGroup.category }}</h2>
+        <ul>
+          {% for topic in faqGroup.topics %}
+            <li>
+              <details>
+                <summary>
+                  <p class="faq__question">{{ topic.question }}</p>
+                  {% include world/icons/dropdown.html %}
+                </summary>
+                <p class="faq__answer">{{ topic.answer }}</p>
+              </details>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+  </div>
+</content-container>

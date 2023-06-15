@@ -1,0 +1,64 @@
+.faq {
+  padding: var(--space-large);
+
+  nav {
+    display: flex;
+    font-size: var(--type-large);
+    font-weight: 800;
+
+    ul {
+      display: flex;
+      gap: var(--space-large);
+      margin-bottom: var(--space-medium);
+      border-bottom: var(--border-white);
+
+      a {
+        display: inline-block;
+        padding-bottom: var(--space-small);
+        color: var(--white);
+      }
+    }
+  }
+
+  &__content {
+    display: block;
+    background-color: var(--white);
+
+    section {
+      padding: var(--space-medium);
+
+      h2 {
+        color: var(--red);
+      }
+
+      ul {
+        color: var(--purple-dark);
+        padding-bottom: var(--space-medium);
+
+        details {
+          border-bottom: var(--border-red);
+
+          summary {
+            cursor: pointer;
+            padding: var(--space-small) 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+
+           /* Hide arrow glyph in Safari */
+          summary::-webkit-details-marker {
+            display: none;
+          }
+      }
+    }
+  }
+
+}
+
+  &__answer {
+    font-size: var(--type-small);
+    padding-left: var(--space-medium);
+    padding-bottom: var(--space-small);
+  }
+}
