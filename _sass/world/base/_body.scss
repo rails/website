@@ -4,6 +4,17 @@ body {
   box-sizing: border-box;
   font-style: italic;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+    border-left: var(--border-white);
+    border-right: var(--border-white);
+    margin-left: var(--space-xx-large);
+    margin-right: var(--space-xx-large);
+  }
 
   a {
     text-decoration: none;
@@ -11,9 +22,6 @@ body {
 
   content-container {
     display: block;
-    margin: 0 var(--space-xx-large);
-    border-left: var(--border-white);
-    border-right: var(--border-white);
 
     section {
       padding-bottom: var(--space-xx-large);
