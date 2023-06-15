@@ -41,11 +41,13 @@ body {
 
   bordered-container {
     display: block;
-    border-left: var(--border-red);
-    border-right: var(--border-red);
-    margin-left: var(--space-small);
-    margin-right: var(--space-small);
-    padding: var(--space-small) 0;
+    --border-color: var(--border-red);
+    --border-margin: var(--space-small);
+    --border-padding: var(--space-small);
+    border-left: var(--border-color);
+    border-right: var(--border-color);
+    margin: 0 var(--border-margin);
+    padding: var(--border-padding) 0;
   }
 
   h1 {

@@ -4,17 +4,15 @@
     margin-bottom: var(--space-medium);
 
     flex-container {
-      padding: var(--space-medium) var(--space-small) var(--space-large);
+      padding: var(--space-medium) var(--space-small);
       gap: var(--space-small);
-      border-top: 1px solid var(--red);
-      margin-left: var(--space-large);
+      border-top: var(--border-red);
+      border-bottom: var(--border-red);
     }
 
     bordered-container {
-      border-left: none;
-      margin-left: 0;
-      margin-right: var(--space-large);
-      padding-top: var(--space-large);
+      --border-margin: var(--space-medium);
+      --border-padding: var(--space-medium);
     }
 
     p {
