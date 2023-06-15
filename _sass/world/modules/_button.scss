@@ -1,11 +1,11 @@
 .button {
+  display: inline-block;
   font-size: var(--type-small);
+  font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
+  color: var(--white);
   border: 0.7px solid var(--white);
   padding: var(--space-small) var(--space-large);
   cursor: pointer;
-  font-style: italic;
-  color: var(--white);
-  display: inline-block;
 
   &--light {
     background-color: var(--purple-medium);

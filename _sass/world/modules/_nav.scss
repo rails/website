@@ -14,13 +14,12 @@
   &__logo {
     font-size: var(--type-xx-large);
     letter-spacing: -0.015em;
-    font-weight: 800;
-    font-style: normal;
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' 0;
 
     &--outline {
-      font-style: italic;
       -webkit-text-stroke: 1px var(--white);
       color: transparent;
+      font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
     }
   }
 
