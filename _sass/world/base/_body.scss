@@ -21,18 +21,23 @@ body {
 
   a {
     text-decoration: none;
+    color: var(--white);
   }
 
   content-container {
     display: block;
+    max-width: 50em;
+    margin: var(--space-large) auto;
 
     section {
       padding-bottom: var(--space-xx-large);
       padding-left: var(--space-medium);
       padding-right: var(--space-medium);
-      max-width: 55em;
-      margin: auto;
     }
+  }
+
+  content-container.large {
+    max-width: unset;
   }
 
   flex-container {
@@ -49,6 +54,7 @@ body {
     margin: 0 var(--border-margin);
     padding: var(--border-padding) 0;
   }
+
 
   h1 {
     font-size: var(--type-xxx-large);

@@ -1,8 +1,8 @@
 ---
-first_name: John
+first_name: Jenny
 last_name: Smith
 role: Co-Founder
-company: Cool Company 2
+company: Cool Company 4
 bio: John is... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque possimus inventore repellat asperiores rerum tempore, impedit esse obcaecati expedita a modi assumenda fugit totam laboriosam ratione, minima aperiam error voluptas!
 keynote: true
 github: https://github.com/

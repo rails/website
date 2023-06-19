@@ -1,5 +1,5 @@
 ---
-first_name: John
+first_name: Bob
 last_name: Smith
 role: Co-Founder
 company: Cool Company 2

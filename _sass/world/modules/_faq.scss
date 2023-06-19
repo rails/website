@@ -15,7 +15,6 @@
       a {
         display: inline-block;
         padding-bottom: var(--space-small);
-        color: var(--white);
       }
     }
   }
@@ -50,11 +49,10 @@
           summary::-webkit-details-marker {
             display: none;
           }
+        }
       }
     }
   }
-
-}
 
   &__answer {
     font-size: var(--type-small);

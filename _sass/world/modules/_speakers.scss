@@ -1,6 +1,8 @@
 .speakers {
   background-color: var(--red);
   padding-top: var(--space-x-large);
+  max-width: 50em;
+  margin: auto;
 
   sl-carousel::part(navigation-button) {
     color: transparent;
@@ -23,8 +25,6 @@
   .carousel__card--narrow {
     width: 50%;
 
-    a {
-      color: var(--white);
     }
   }
 
@@ -54,4 +54,3 @@
     border-bottom: var(--border-red);
     padding: var(--space-small);
   }
-}

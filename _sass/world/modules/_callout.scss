@@ -1,4 +1,7 @@
 .callout {
+  max-width: 50em;
+  margin: auto;
+
   &__banner {
     background-color: var(--pink-pale);
     margin-bottom: var(--space-medium);

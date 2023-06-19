@@ -2,32 +2,63 @@
 layout: world/default
 ---
 
-<article>
-  <section>
-    <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Profile Picture">
-    <div>
-      <h1>{{ page.name }}</h1>
-      <h2>{{ page.role }}</h2>
-      <p>{{ page.bio }}</p>
+<content-container class="speaker">
+    <breadcrumbs-container>
       <ul>
-        <li>{% include world/icons/github.html %}</li>
-        <li>{% include world/icons/linkedin.html %}</li>
-        <li>{% include world/icons/twitter.html %}</li>
+        <li><a href="/world">World</a> ></li>
+        <li><a href="/world/speakers">Speakers</a> ></li>
+        <li><span>{{ page.first_name }} {{ page.last_name }}</span></li>
       </ul>
-    </div>
-  </section>
+    </breadcrumbs-container>
 
-  <section>
-    <h1>Sessions</h1>
-    <ul>
-      <li>
-        <h2>Session 1</h2>
-        <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
-      </li>
-      <li>
-        <h2>Session 2</h2>
-        <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
-      </li>
-    </ul>
-  </section>
-</article>
+    <content-card>
+      <bordered-container>
+          <article>
+            <section class="speaker__info">
+                <figure><img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Profile Picture"></figure>
+                <div>
+                  <h1>{{ page.first_name}} {{ page.last_name }}</h1>
+                  <p class="speaker__role">{{ page.role }} of {{ page.company }}</p>
+                  <p>{{ page.bio }}</p>
+                  <ul>
+                    <li>
+                      {% if page.github %}
+                        <a href="{{ page.github }}">
+                          {% include world/icons/github.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                    <li>
+                      {% if page.linkedin %}
+                        <a href="{{ page.linkedin }}">
+                          {% include world/icons/linkedin.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                    <li>
+                      {% if page.twitter %}
+                        <a href="{{ page.twitter }}">
+                          {% include world/icons/twitter.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                  </ul>
+                </div>
+            </section>
+            <section class="speaker__sessions">
+              <h2>Sessions</h2>
+              <ul>
+                <li>
+                  <h3>Session 1</h3>
+                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
+                </li>
+                <li>
+                  <h3>Session 2</h3>
+                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
+                </li>
+              </ul>
+            </section>
+          </article>
+      </bordered-container>
+    </content-card>
+</content-container>
