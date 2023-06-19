@@ -4,6 +4,10 @@ permalink: /world
 title: Rails World 2023
 ---
 
+{% assign sorted_speakers = site.world_speakers | sort: 'last_name' %}
+{% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
+{% assign non_keynote_speakers = sorted_speakers | where: 'keynote', false %}
+
 <content-container class="large">
 <!-- hero -->
   <section class="hero">
@@ -25,7 +29,10 @@ title: Rails World 2023
           <h2>Our Speakers</h2>
           <!-- speaker carousel -->
           <sl-carousel class="aspect-ratio scroll-hint" style="--aspect-ratio: 4/5; --scroll-hint: 5%;" navigation pagination mouse-dragging slides-per-page="4" slides-per-move="4">
-            {% for i in (1..25) %}
+            {% for speaker in keynote_speakers %}
+              <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
+            {% endfor %}
+            {% for speaker in non_keynote_speakers %}
               <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
             {% endfor %}
             <sl-carousel-item class="carousel__card--narrow" style="background: var(--red);"><a href="/world/speakers">See More Speakers</a></sl-carousel-item>

@@ -1,10 +1,13 @@
+
+<a href="{{ speaker.url }}">
 <speaker-card>
   <bordered-container>
     <div class="speaker-card__content">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1cHJ-VgGh9t686MqHvbO0ZQiREiEveXe-98z9aOI&s" alt="">
-      <h3>John Doe</h3>
-      <p>Co-Founder of coolcompany.io</p>
-      <p>Cool Company's name</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1cHJ-VgGh9t686MqHvbO0ZQiREiEveXe-98z9aOI&s" alt="{{ speaker.first_name }}'s Avatar" loading="lazy">
+      <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
+      <p>{{ speaker.role }}</p>
+      <p>{{ speaker.company }}</p>
     </div>
   </bordered-container>
 </speaker-card>
+</a>
