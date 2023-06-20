@@ -1,0 +1,37 @@
+content-container {
+  display: block;
+  max-width: 50em;
+  margin: var(--space-large) auto;
+
+  section {
+    padding-bottom: var(--space-xx-large);
+    padding-left: var(--space-medium);
+    padding-right: var(--space-medium);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      padding-bottom: var(--space-large);
+      padding-left: var(--space-small);
+      padding-right: var(--space-small);
+    }
+  }
+}
+
+content-container.large {
+  max-width: unset;
+}
+
+flex-container {
+  display: flex;
+}
+
+bordered-container {
+  display: block;
+  --border-color: var(--border-red);
+  --border-margin: var(--space-small);
+  --border-padding: var(--space-small);
+  border-left: var(--border-color);
+  border-right: var(--border-color);
+  margin: 0 var(--border-margin);
+  padding: var(--border-padding) 0;
+}

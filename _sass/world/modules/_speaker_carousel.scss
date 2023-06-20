@@ -1,0 +1,61 @@
+section.speakers {
+  background-color: var(--red);
+  padding-top: var(--space-x-large);
+  max-width: 50em;
+  margin: auto;
+
+  sl-carousel::part(scroll-container) {
+    --slides-per-page: 3;
+    --slides-per-move: 3;
+
+    /* Tablet devices (680px - 1100px) */
+    @media only screen and (max-width: 1100px) {
+      --slides-per-page: 2;
+      --slides-per-move: 2;
+    }
+
+    /* Extra small devices (phones, 680px and down) */
+    @media only screen and (max-width: 680px) {
+      --slides-per-page: 1;
+      --slides-per-move: 1;
+    }
+  }
+
+  sl-carousel::part(navigation-button) {
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  sl-carousel::part(navigation-button--next) {
+    background-image: url(/assets/world/next.svg);
+  }
+
+  sl-carousel::part(navigation-button--previous) {
+    background-image: url(/assets/world/previous.svg);
+  }
+
+  sl-carousel::part(pagination) {
+    display: none;
+  }
+
+  sl-carousel::part(base) {
+    --scroll-hint: 5%;
+    --aspect-ratio: 3/4;
+    --slide-gap: var(--space-large);
+
+    /*  Small devices (phones, 680px and down) */
+    @media only screen and (min-width: 400px) and (max-width: 680px) {
+      --scroll-hint: 20%;
+    }
+  }
+
+  .see-more-speakers {
+    width: 50%;
+
+    a {
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}

@@ -36,3 +36,17 @@
     }
   }
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.announcements {
+  text-align: center;
+  font-size: var(--type-x-small);
+  padding: var(--space-small);
+  max-width: 35em;
+  margin: auto;
+}

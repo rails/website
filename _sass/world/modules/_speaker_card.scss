@@ -1,0 +1,39 @@
+speaker-card {
+  display: block;
+  background-color: var(--pink-pale);
+  height: 100%;
+  width: 13em;
+
+  bordered-container {
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  img {
+    border-radius: 50%;
+    margin: var(--space-small);
+    padding-bottom: var(--space-x-small);
+  }
+
+  h3 {
+    font-size: var(--type-medium);
+    color: var(--red);
+    text-align: center;
+  }
+
+  p {
+    color: var(--purple-dark);
+    font-size: var(--type-xx-small);
+  }
+
+  .speaker-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: var(--border-red);
+    border-bottom: var(--border-red);
+    padding: var(--space-small);
+    width: 100%;
+  }
+}
