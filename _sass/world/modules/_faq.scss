@@ -5,26 +5,25 @@
     padding: var(--space-small);
   }
 
-  nav {
+  ul.tabs {
     display: flex;
     font-size: var(--type-large);
-    font-weight: 800;
+    margin-bottom: var(--space-medium);
+    overflow: scroll;
 
-    ul {
-      display: flex;
-      gap: var(--space-large);
-      margin-bottom: var(--space-medium);
+    li {
+      flex: 0 0 auto;
+      padding-bottom: var(--space-small);
       border-bottom: var(--border-white);
 
-      /* Extra small devices (phones, 600px and down) */
-      @media only screen and (max-width: 600px) {
-        gap: var(--space-small);
-        font-size: var(--type-x-small);
-      }
-
       a {
-        display: inline-block;
-        padding-bottom: var(--space-small);
+        margin-right: var(--space-medium);
+      }
+    }
+
+    li:last-child {
+      a {
+        margin-right: 0;
       }
     }
   }

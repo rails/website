@@ -9,14 +9,15 @@ title: Frequently Asked Questions
 
 <content-container class="faq">
   <h1>Frequently Asked Questions</h1>
+  <br><br>
 
-  <nav>
-    <ul>
-      {% for category in categories %}
-        <li><a href="#{{ category | downcase }}">{{ category }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <ul class="tabs">
+    {% for category in categories %}
+      <li>
+        <a href="#{{ category | downcase }}">{{ category }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
   <div class="faq__content">
     {% for faqGroup in faqData %}
