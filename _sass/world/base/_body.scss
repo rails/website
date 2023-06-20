@@ -17,6 +17,12 @@ body {
     border-right: var(--border-white);
     margin-left: var(--space-xx-large);
     margin-right: var(--space-xx-large);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 1200px) {
+      border: none;
+      margin: 0;
+    }
   }
 
   a {
@@ -33,7 +39,17 @@ body {
       padding-bottom: var(--space-xx-large);
       padding-left: var(--space-medium);
       padding-right: var(--space-medium);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        padding-bottom: var(--space-large);
+        padding-left: var(--space-small);
+        padding-right: var(--space-small);
+      }
     }
+
+
+
   }
 
   content-container.large {
@@ -60,33 +76,64 @@ body {
     font-size: var(--type-xxx-large);
     font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
     padding-bottom: var(--space-medium);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-xx-large);
+    }
   }
 
   h2 {
     font-size: var(--type-xx-large);
     font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
     padding-bottom: var(--space-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-x-large);
+    }
   }
 
   h3 {
     font-size: var(--type-x-large);
     font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
     padding-bottom: var(--space-x-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-large);
+    }
   }
 
   h4 {
     font-size: var(--type-large);
     padding-bottom: var(--space-x-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-medium);
+    }
   }
 
   h5 {
     font-size: var(--type-medium);
     padding-bottom: var(--space-x-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    font-size: var(--type-small);
+    }
   }
 
   h6 {
     font-size: var(--type-small);
     padding-bottom: var(--space-x-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-x-small);
+    }
+
   }
 
   header {
@@ -97,5 +144,13 @@ body {
 
   p {
     line-height: 150%;
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-small);
+      font-variation-settings: 'wght' 400, 'wdth' 100, 'slnt' -12;
+    }
+
   }
+
 }

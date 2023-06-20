@@ -7,15 +7,32 @@
   border-top: var(--border-white);
   border-bottom: var(--border-white);
 
-  &__logo {
-    font-size: var(--type-xx-large);
-    letter-spacing: -0.015em;
-    font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' 0;
+  @media only screen and (max-width: 1200px) {
+    padding: var(--space-small) var(--space-small);
+  }
 
-    &--outline {
-      -webkit-text-stroke: 1px var(--white);
-      color: transparent;
-      font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
+  @media only screen and (max-width: 920px) {
+    display: inherit;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: var(--space-x-small);
+  }
+
+  &__logo {
+    max-width: 40%;
+
+    img {
+      max-width: 100%;
+      display: inline-block;
+
+      @media only screen and (max-width: 500px) {
+        max-width: 20em;
+      }
+      @media only screen and (min-width: 500px) and (max-width: 920px) {
+        max-width: 25em;
+      }
     }
   }
 
@@ -23,9 +40,25 @@
     display: flex;
     align-items: center;
     gap: var(--space-large);
+
+    @media only screen and (max-width: 1200px) {
+      gap: var(--space-medium);
+    }
+    @media only screen and (max-width: 920px) {
+      gap: var(--space-medium);
+      justify-content: center;
+    }
   }
 
   &__link {
     font-size: var(--type-medium);
+
+    @media only screen and (max-width: 600px) {
+      font-size: var(--type-small);
+    }
+  }
+
+  .tito-widget-button {
+    padding: var(--space-x-small) var(--space-medium);
   }
 }

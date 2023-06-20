@@ -10,12 +10,20 @@
   &--light {
     background-color: var(--purple-medium);
   }
+}
 
-  &--dark {
-    background-color: var(--purple-dark);
-  }
+.tito-widget-button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--type-small);
+  font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
+  color: var(--white);
+  border: 0.7px solid var(--white);
+  padding: var(--space-small) var(--space-large);
+  cursor: pointer;
+  background-color: var(--purple-dark);
 
-  &--small {
-    padding: var(--space-x-small) var(--space-medium);
+  @media only screen and (max-width: 920px) {
+    display: none;
   }
 }

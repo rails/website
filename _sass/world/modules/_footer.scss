@@ -3,6 +3,11 @@ footer {
   padding: 0 var(--space-xx-large);
   border-top: var(--border-white);
 
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    padding: var(--space-x-small) 0 var(--space-small);
+  }
+
   a {
     text-decoration: underline;
   }
@@ -17,6 +22,11 @@ footer {
     border-left: var(--border-white);
     border-right: var(--border-white);
     margin: 0;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+      border: none;
+    }
   }
 
   ul {

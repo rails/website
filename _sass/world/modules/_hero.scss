@@ -43,6 +43,11 @@
       top: 0;
       right: 0;
       transform: translate(70%, -50%);
+
+      /* Tablet devices (900px and down) */
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
     }
   }
 
@@ -51,6 +56,10 @@
     justify-content: center;
     align-items: center;
 
+    svg {
+      width: var(--space-medium);
+      height: var(--space-medium);
+    }
   }
 
   &__link {
