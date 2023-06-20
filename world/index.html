@@ -61,23 +61,24 @@ permalink: /world
     {% endif %}
   </section>
 
-    <!-- callout -->
-    <section class="callout">
-      <div class="callout__banner">
+  <section class="callout">
+    <div class="callout__banner">
       <bordered-container>
-          <flex-container>
-              <img src="#" alt="Rails 20th Anniversary">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus deserunt illum numquam pariatur vel dolore distinctio, suscipit earum enim tenetur eveniet impedit eius perferendis est dicta officia sapiente quae.</p>
-          </flex-container>
+        <flex-container>
+            <img src="#" alt="Rails 20th Anniversary">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus deserunt illum numquam pariatur vel dolore distinctio, suscipit earum enim tenetur eveniet impedit eius perferendis est dicta officia sapiente quae.</p>
+        </flex-container>
       </bordered-container>
-      </div>
+    </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque doloribus culpa iste reiciendis incidunt excepturi officia, a debitis cupiditate itaque earum placeat harum voluptatem esse modi nesciunt ab! Ducimus?</p>
-      <a href="#" class="button button--light">Prospectus PDF</a>
-    </section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque doloribus culpa iste reiciendis incidunt excepturi officia, a debitis cupiditate itaque earum placeat harum voluptatem esse modi nesciunt ab! Ducimus?
+    </p>
 
-    <!-- sponsors -->
-    {% if site.data.world.sponsors %}
-      {% include world/sponsors.html %}
-    {% endif %}
+    <a href="#" class="button button--light">Prospectus PDF</a>
+  </section>
+
+  {% if site.data.world.sponsors %}
+    {% include world/sponsors.html %}
+  {% endif %}
 </content-container>
