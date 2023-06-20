@@ -2,22 +2,14 @@
   display: flex;
   background-color: var(--red);
   align-items: center;
-  justify-content: space-between;
-  padding: var(--space-small) var(--space-xx-large);
+  justify-content: center;
+  padding: var(--space-medium) var(--space-xx-large);
   border-top: var(--border-white);
   border-bottom: var(--border-white);
 
-  @media only screen and (max-width: 1200px) {
-    padding: var(--space-small) var(--space-small);
-  }
-
-  @media only screen and (max-width: 920px) {
-    display: inherit;
-    text-align: center;
-  }
-
-  @media only screen and (max-width: 600px) {
-    padding: var(--space-x-small);
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    gap: var(--space-small);
   }
 
   &__logo img {
@@ -29,26 +21,18 @@
   ul {
     display: flex;
     align-items: center;
-    gap: var(--space-large);
-
-    @media only screen and (max-width: 1200px) {
-      gap: var(--space-medium);
-    }
-    @media only screen and (max-width: 920px) {
-      gap: var(--space-medium);
-      justify-content: center;
-    }
+    gap: var(--space-medium);
   }
 
   &__link {
     font-size: var(--type-medium);
-
-    @media only screen and (max-width: 600px) {
-      font-size: var(--type-small);
-    }
   }
 
   .tito-widget-button {
     padding: var(--space-x-small) var(--space-medium);
+
+    @media only screen and (max-width: 1100px) {
+      display: none;
+    }
   }
 }

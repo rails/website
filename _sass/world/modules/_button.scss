@@ -22,8 +22,4 @@
   padding: var(--space-small) var(--space-large);
   cursor: pointer;
   background-color: var(--purple-dark);
-
-  @media only screen and (max-width: 920px) {
-    display: none;
-  }
 }
