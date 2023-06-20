@@ -39,3 +39,12 @@ a {
 summary::-webkit-details-marker {
   display: none;
 }
+
+:focus {
+  outline: 2px solid blue;
+  outline-offset: 5px;
+}
+
+sl-carousel:focus {
+  outline: none;
+}
