@@ -8,7 +8,9 @@
   background-color: var(--red);
 
   p {
-    max-width: 29em;
+    max-width: 35em;
+    line-height: 1.4;
+    font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
     margin: auto;
   }
 }
