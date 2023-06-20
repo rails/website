@@ -21,11 +21,12 @@ collections:
     output: true
     permalink: "/:name"
   world_speakers:
-    output: true
+    output: false
     permalink: /world/speakers/:name/
   world_sessions:
-    output: true
+    output: false
     permalink: /world/sessions/:path/
+
 
 defaults:
   - scope:

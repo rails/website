@@ -49,11 +49,17 @@ title: Rails World 2023
       {% endfor %}
 
       <sl-carousel-item class="see-more-speakers" style="background: var(--red);">
-        <a href="/world/speakers">See More Speakers</a>
+        {% if false %}
+          <a href="/world/speakers">See More Speakers</a>
+        {% endif %}
+
+        <p>More to be announced!</p>
       </sl-carousel-item>
     </sl-carousel>
 
-    <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
+    {% if false %}
+      <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
+    {% endif %}
   </section>
 
     <!-- callout -->
