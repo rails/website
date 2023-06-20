@@ -1,6 +1,10 @@
 .faq {
   padding: var(--space-large);
 
+  @media only screen and (max-width: 600px) {
+    padding: var(--space-small);
+  }
+
   nav {
     display: flex;
     font-size: var(--type-large);
@@ -11,6 +15,12 @@
       gap: var(--space-large);
       margin-bottom: var(--space-medium);
       border-bottom: var(--border-white);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        gap: var(--space-small);
+        font-size: var(--type-x-small);
+      }
 
       a {
         display: inline-block;
