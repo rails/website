@@ -20,20 +20,10 @@
     padding: var(--space-x-small);
   }
 
-  &__logo {
-    max-width: 40%;
-
-    img {
-      max-width: 100%;
-      display: inline-block;
-
-      @media only screen and (max-width: 500px) {
-        max-width: 20em;
-      }
-      @media only screen and (min-width: 500px) and (max-width: 920px) {
-        max-width: 25em;
-      }
-    }
+  &__logo img {
+    max-width: 25em;
+    width: 80vw;
+    margin: auto;
   }
 
   ul {
