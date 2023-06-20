@@ -11,10 +11,21 @@ title: Rails World 2023
 <content-container class="large">
 <!-- hero -->
   <section class="hero">
-    <div class="hero__content" style="--bubble-content: '20 years of Ruby on Rails'">
+    <div class="hero__content">
+      <p class="hero__content__bubble">
+        <span>20 years of Ruby on Rails</span>
+      </p>
+
       <h1>Join our first Ruby on Rails Conference!</h1>
       <p>October 5 & 6</p>
-      <p class="hero__location">{% include world/icons/pin.html %} <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank" class="hero__link">Amsterdam, Beurs van Berlage</a></p>
+
+      <p class="hero__location">
+        {% include world/icons/pin.html %}
+        <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank" class="hero__link">
+          Amsterdam, Beurs van Berlage
+        </a>
+      </p>
+
       <tito-button event="rails-world/rails-world-2023"></tito-button>
     </div>
   </section>

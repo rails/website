@@ -6,11 +6,11 @@
 
   &__content {
     position: relative;
-    max-width: 29em;
+    max-width: 32em;
     margin: auto;
 
     &:before {
-      width: 100%;
+      width: 90%;
       padding-top: 100%;
       border-radius: 50%;
       background-color: var(--red);
@@ -23,26 +23,29 @@
 
     h1 {
       position: relative;
+      margin-bottom: var(--space-small);
     }
 
     p {
       padding-bottom: var(--space-x-small);
     }
 
-    &:after {
-      content: var(--bubble-content);
+    &__bubble {
       display: flex;
       align-items: center;
       background-color: var(--purple-medium);
-      padding: var(--space-medium) var(--space-small);
-      max-width: 136px;
-      min-height: 60px;
-      font-variation-settings: 'wght' 600, 'wdth' inherit, 'slnt' inherit;
+      width: 120px;
+      min-height: 4em;
+      padding: var(--space-small);
+      font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
       border-radius: 50%;
       position: absolute;
+      line-height: 1.2;
       top: 0;
       right: 0;
       transform: translate(70%, -50%);
+      z-index: 1;
+      box-shadow: 0px 0px 7px 7px var(--purple-medium);
 
       /* Tablet devices (900px and down) */
       @media only screen and (max-width: 900px) {

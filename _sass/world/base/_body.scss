@@ -75,7 +75,6 @@ body {
   h1 {
     font-size: var(--type-xxx-large);
     font-variation-settings: 'wght' 800, 'wdth' 100, 'slnt' -12;
-    padding-bottom: var(--space-medium);
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
