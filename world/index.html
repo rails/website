@@ -9,7 +9,6 @@ title: Rails World 2023
 {% assign non_keynote_speakers = sorted_speakers | where: 'keynote', false %}
 
 <content-container class="large">
-<!-- hero -->
   <section class="hero">
     <div class="hero__content">
       <p class="hero__content__bubble">
@@ -37,21 +36,25 @@ title: Rails World 2023
     </p>
   </section>
 
-    <!-- speakers -->
-    <section class="speakers">
-          <h2>Our Speakers</h2>
-          <!-- speaker carousel -->
-          <sl-carousel class="aspect-ratio scroll-hint" navigation pagination mouse-dragging>
-            {% for speaker in keynote_speakers %}
-              <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
-            {% endfor %}
-            {% for speaker in non_keynote_speakers %}
-              <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
-            {% endfor %}
-            <sl-carousel-item class="carousel__card--narrow" style="background: var(--red);"><a href="/world/speakers">See More Speakers</a></sl-carousel-item>
-          </sl-carousel>
-          <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
-    </section>
+  <section class="speakers">
+    <h2>Our Speakers</h2>
+    <!-- speaker carousel -->
+    <sl-carousel navigation pagination mouse-dragging>
+      {% for speaker in keynote_speakers %}
+        <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
+      {% endfor %}
+
+      {% for speaker in non_keynote_speakers %}
+        <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
+      {% endfor %}
+
+      <sl-carousel-item class="see-more-speakers" style="background: var(--red);">
+        <a href="/world/speakers">See More Speakers</a>
+      </sl-carousel-item>
+    </sl-carousel>
+
+    <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
+  </section>
 
     <!-- callout -->
     <section class="callout">

@@ -5,25 +5,19 @@
   margin: auto;
 
   sl-carousel::part(scroll-container) {
-    --slides-per-page: 4;
-    --slides-per-move: 4;
+    --slides-per-page: 3;
+    --slides-per-move: 3;
+
+    /* Tablet devices (680px - 1100px) */
+    @media only screen and (max-width: 1100px) {
+      --slides-per-page: 2;
+      --slides-per-move: 2;
+    }
 
     /* Extra small devices (phones, 680px and down) */
     @media only screen and (max-width: 680px) {
       --slides-per-page: 1;
       --slides-per-move: 1;
-    }
-
-    /* Tablet devices (680px - 950px) */
-    @media only screen and (min-width: 680px) and (max-width: 950px) {
-      --slides-per-page: 2;
-      --slides-per-move: 2;
-    }
-
-    /* Larger devices (950px - 1200px) */
-    @media only screen and (min-width: 950px) and (max-width: 1200px) {
-      --slides-per-page: 3;
-      --slides-per-move: 3;
     }
   }
 
@@ -41,31 +35,28 @@
     background-image: url(/assets/world/previous.svg);
   }
 
-  sl-carousel::part(base) {
-    padding-bottom: var(--space-large);
-    --scroll-hint: 5%;
-    --aspect-ratio: 2/3;
+  sl-carousel::part(pagination) {
+    display: none;
+  }
 
-    /*  Extra small devices (phones, 400px and down) */
-    @media only screen and (max-width: 400px) {
-      --scroll-hint: 15%;
-    }
+  sl-carousel::part(base) {
+    --scroll-hint: 5%;
+    --aspect-ratio: 3/4;
+    --slide-gap: var(--space-large);
 
     /*  Small devices (phones, 680px and down) */
-
     @media only screen and (min-width: 400px) and (max-width: 680px) {
       --scroll-hint: 20%;
-      --aspect-ratio: 1;
-    }
-
-    /* Tablet devices (680px - 950px) */
-    @media only screen and (min-width: 680px) and (max-width: 950px) {
-      --scroll-hint: 10%;
     }
   }
 
-  .carousel__card--narrow {
+  .see-more-speakers {
     width: 50%;
+
+    a {
+      text-align: center;
+      line-height: 1.5;
+    }
   }
 
   &__index {
@@ -84,19 +75,14 @@
     display: flex;
     gap: var(--space-medium);
     flex-wrap: wrap;
-    justify-content: center;
-
-    /* Large devices (1420px and up) */
-    @media only screen and (min-width: 1420px) {
-      justify-content: unset;
-    }
+    justify-content: space-evenly;
 
     h3 {
       font-size: var(--type-large);
     }
 
     speaker-card {
-      width: 11.5em;
+      width: 14em;
       height: unset;
 
       p {
@@ -112,7 +98,7 @@ speaker-card {
   display: block;
   background-color: var(--pink-pale);
   height: 100%;
-  min-height: 14em;
+  width: 13em;
 
   bordered-container {
     height: 100%;
