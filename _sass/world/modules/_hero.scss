@@ -26,10 +26,6 @@
       margin-bottom: var(--space-small);
     }
 
-    p {
-      padding-bottom: var(--space-x-small);
-    }
-
     &__bubble {
       display: flex;
       align-items: center;
@@ -60,16 +56,14 @@
     align-items: center;
 
     svg {
-      width: var(--space-medium);
-      height: var(--space-medium);
+      --width: 1em;
+      width: var(--width);
+      height: var(--width);
     }
-  }
 
-  &__link {
-    text-decoration: underline
-  }
-
-  .button {
-    margin-top: var(--space-small);
+    a {
+      text-decoration: underline;
+      margin-left: var(--space-small);
+    }
   }
 }
