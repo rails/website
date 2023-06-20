@@ -71,6 +71,12 @@
   &__index {
     padding-left: var(--space-large);
     padding-right: var(--space-large);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 680px) {
+      padding-left: var(--space-small);
+      padding-right: var(--space-small);
+    }
   }
 
   &__gallery {
@@ -78,9 +84,26 @@
     display: flex;
     gap: var(--space-medium);
     flex-wrap: wrap;
+    justify-content: center;
+
+    /* Large devices (1420px and up) */
+    @media only screen and (min-width: 1420px) {
+      justify-content: unset;
+    }
 
     h3 {
       font-size: var(--type-large);
+    }
+
+    speaker-card {
+      width: 11.5em;
+      height: unset;
+
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
   }
 }
