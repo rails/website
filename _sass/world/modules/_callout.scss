@@ -6,10 +6,11 @@
     background-color: var(--pink-pale);
     margin-bottom: var(--space-medium);
 
-    h2 {
+    h3 {
       color: var(--purple-dark);
       width: 60%;
       padding: var(--space-medium);
+      font-size: var(--type-xx-large);
 
       /* Extra small devices (phones, 600px and down) */
       @media only screen and (max-width: 600px) {
