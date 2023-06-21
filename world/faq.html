@@ -31,7 +31,10 @@ title: Frequently Asked Questions
                   <p class="faq__question">{{ topic.question }}</p>
                   {% include world/icons/dropdown.html %}
                 </summary>
-                <p class="faq__answer">{{ topic.answer }}</p>
+
+                <div class="faq__answer">
+                  {{ topic.answer | markdownify }}
+                </div>
               </details>
             </li>
           {% endfor %}
