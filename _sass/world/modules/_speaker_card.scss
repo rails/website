@@ -5,6 +5,8 @@ speaker-card {
   width: 13em;
 
   bordered-container {
+    --border-margin: var(--space-medium);
+    --border-padding: var(--space-medium);
     height: 100%;
     display: flex;
     box-sizing: border-box;
@@ -18,6 +20,7 @@ speaker-card {
 
   h3 {
     font-size: var(--type-medium);
+    padding-bottom: var(--space-small);
     color: var(--red);
     text-align: center;
   }
