@@ -7,6 +7,11 @@ section.speakers {
   sl-carousel::part(scroll-container) {
     --slides-per-page: 3;
     --slides-per-move: 3;
+    padding: var(--space-medium);
+
+    // to get rid of unexpected spacing
+    --slide-size: unset;
+    aspect-ratio: unset;
 
     /* Tablet devices (680px - 1100px) */
     @media only screen and (max-width: 1100px) {
@@ -40,13 +45,11 @@ section.speakers {
   }
 
   sl-carousel::part(base) {
-    --scroll-hint: 5%;
     --aspect-ratio: 3/4;
     --slide-gap: var(--space-large);
 
-    /*  Small devices (phones, 680px and down) */
-    @media only screen and (min-width: 400px) and (max-width: 680px) {
-      --scroll-hint: 20%;
+    @media only screen and (max-width: 680px) {
+      --slide-gap: unset;
     }
   }
 
@@ -56,6 +59,12 @@ section.speakers {
     a {
       text-align: center;
       line-height: 1.5;
+    }
+  }
+
+  speaker-card {
+    @media only screen and (max-width: 350px) {
+      width: 10em;
     }
   }
 }
