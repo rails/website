@@ -14,7 +14,7 @@ permalink: /world
         <span>20 years of Ruby on Rails</span>
       </p>
 
-      <h1>Join our first Ruby on Rails Conference!</h1>
+      <h1>Shaping the future of Ruby on Rails</h1>
       <p>October 5 & 6</p>
 
       <p class="hero__location">
@@ -31,12 +31,12 @@ permalink: /world
 
   <section class="about">
     <p>
-      Rails World is a two-day, two track conference featuring technical talks, demos, workshops, networking, and keynotes. You’ll hear from the creators and maintainers of Rails on the latest features and best practices in Rails development.
+      Rails World is a two-day, two track community conference featuring technical talks, demos, workshops, networking, and keynotes about the latest features and best practices in Rails development. Let’s build a stronger, more vibrant community for generations to come.
     </p>
   </section>
 
   <section class="speakers">
-    <h2>Our Speakers</h2>
+    <h2>First Speakers Confirmed</h2>
     <br>
 
     <!-- speaker carousel -->
@@ -54,32 +54,40 @@ permalink: /world
           <a href="/world/speakers">See More Speakers</a>
         {% endif %}
 
-        <p>More to be announced!</p>
+        <p>More speakers announced soon...</p>
       </sl-carousel-item>
     </sl-carousel>
 
     {% if false %}
-      <a href="/world/speakers" class="button button--light">See Full Line-Up</a>
+      <a href="/world/speakers" class="button button--light">View All Speakers</a>
     {% endif %}
   </section>
 
   <section class="callout">
+    <h2>Become a Sponsor</h2>
+    <br>
     <div class="callout__banner">
       <bordered-container>
         <flex-container>
-            <img src="#" alt="Rails 20th Anniversary">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus deserunt illum numquam pariatur vel dolore distinctio, suscipit earum enim tenetur eveniet impedit eius perferendis est dicta officia sapiente quae.</p>
+            <h2>20 Years of Rails</h2>
+            <div class="callout__description">
+              <p>Celebrate an incredible milestone as Rails turns 20! Join us and help commemorate two decades of groundbreaking innovation. (Yes, there will be cake.)</p>
+              <button class="button button--red">Celebrate with us!</button>
+            </div>
         </flex-container>
       </bordered-container>
     </div>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque doloribus culpa iste reiciendis incidunt excepturi officia, a debitis cupiditate itaque earum placeat harum voluptatem esse modi nesciunt ab! Ducimus?
-    </p>
-
-    <a href="#" class="button button--light">Prospectus PDF</a>
   </section>
 
+  <section class="sponsorship">
+    <h2>Sponsor Rails World</h2>
+    <br>
+    <p>
+      Joining Rails World as a sponsor means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's collaborate and make Rails World an unforgettable experience for all.
+    </p>
+    <br>
+    <a href="#" class="button button--light">View Prospectus</a>
+  </section>
   {% if site.data.world.sponsors %}
     {% include world/sponsors.html %}
   {% endif %}
