@@ -5,6 +5,10 @@
     padding: var(--space-small);
   }
 
+  h2 {
+    padding-bottom: var(--space-small);
+  }
+
   ul.tabs {
     display: flex;
     font-size: var(--type-large);
@@ -43,6 +47,10 @@
         color: var(--purple-dark);
         padding-bottom: var(--space-medium);
 
+        li ~ li {
+          margin-top: var(--space-small);
+        }
+
         details {
           border-bottom: var(--border-red);
 
@@ -60,7 +68,23 @@
 
   &__answer {
     font-size: var(--type-small);
+    font-variation-settings: var(--font-weight-400-normal);
     padding-left: var(--space-medium);
-    padding-bottom: var(--space-small);
+    padding-bottom: var(--space-medium);
+
+    a {
+      color: var(--orange-red);
+    }
+
+    ul {
+      list-style: disc;
+      font-variation-settings: var(--font-weight-400);
+      margin-left: var(--space-large);
+      margin-top: var(--space-small);
+    }
+
+    p ~ p {
+      margin-top: var(--space-small);
+    }
   }
 }
