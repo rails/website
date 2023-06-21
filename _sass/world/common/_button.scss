@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   font-size: var(--type-small);
-  font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
+  font-variation-settings: var(--font-weight-600);
   color: var(--white);
   border: 0.7px solid var(--white);
   padding: var(--space-small) var(--space-large);
@@ -16,7 +16,7 @@
   display: inline-block;
   font-family: inherit;
   font-size: var(--type-small);
-  font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
+  font-variation-settings: var(--font-weight-600);
   color: var(--white);
   border: 0.7px solid var(--white);
   padding: var(--space-small) var(--space-large);

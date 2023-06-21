@@ -10,7 +10,7 @@
   p {
     max-width: 35em;
     line-height: 1.4;
-    font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' -12;
+    font-variation-settings: var(--font-weight-600);
     margin: auto;
   }
 }
