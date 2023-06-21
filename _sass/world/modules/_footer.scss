@@ -10,6 +10,10 @@ footer {
 
   a {
     text-decoration: underline;
+
+    svg {
+      fill: var(--white);
+    }
   }
 
   p {
