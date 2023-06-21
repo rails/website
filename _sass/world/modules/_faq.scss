@@ -68,9 +68,16 @@
 
   &__answer {
     font-size: var(--type-small);
-    font-variation-settings: var(--font-weight-400-normal);
     padding-left: var(--space-medium);
     padding-bottom: var(--space-medium);
+
+    p {
+      font-variation-settings: var(--font-weight-400-normal);
+
+      ~ p {
+        margin-top: var(--space-small);
+      }
+    }
 
     a {
       color: var(--orange-red);
@@ -80,10 +87,6 @@
       list-style: disc;
       font-variation-settings: var(--font-weight-400);
       margin-left: var(--space-large);
-      margin-top: var(--space-small);
-    }
-
-    p ~ p {
       margin-top: var(--space-small);
     }
   }
