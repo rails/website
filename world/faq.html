@@ -11,13 +11,13 @@ title: Frequently Asked Questions
   <h1>Frequently Asked Questions</h1>
   <br><br>
 
-  <ul class="tabs">
+  <menu class="tabs">
     {% for category in categories %}
       <li>
         <a href="#{{ category | downcase }}">{{ category }}</a>
       </li>
     {% endfor %}
-  </ul>
+  </menu>
 
   <div class="faq__content">
     {% for faqGroup in faqData %}
