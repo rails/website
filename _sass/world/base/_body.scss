@@ -16,7 +16,7 @@ flex-spacer {
   flex-grow: 1;
 }
 
-main {
+main, main:focus {
   flex-grow: 1;
   border-left: var(--border-white);
   border-right: var(--border-white);
@@ -47,4 +47,15 @@ summary::-webkit-details-marker {
 
 sl-carousel:focus {
   outline: none;
+}
+
+.skip-navigation {
+  position: absolute;
+  top: 1rem;
+  left: -999em;
+  z-index: 11;
+
+  &:focus {
+    left: 1rem;
+  }
 }

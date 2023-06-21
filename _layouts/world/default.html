@@ -3,9 +3,13 @@
 <html lang="en" style="scroll-behavior: smooth">
   {% include world/head.html %}
   <body>
+    <a href="#main-content" class="button button--light skip-navigation" tabindex="0">
+      Skip to main content
+    </a>
+
     {% include world/announcements.html %}
     {% include world/header.html %}
-    <main>{{ content }}</main>
+    <main id="main-content" tabindex="-1">{{ content }}</main>
     {% include world/footer.html %}
   </body>
 </html>
