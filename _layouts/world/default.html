@@ -9,7 +9,17 @@
 
     {% include world/announcements.html %}
     {% include world/header.html %}
-    <main id="main-content" tabindex="-1">{{ content }}</main>
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
+
+    <back-to-top>
+      <button>
+        {% include world/icons/back-to-top.html %}
+        <span>Back to Top</span>
+      </button>
+    </back-to-top>
+
     {% include world/footer.html %}
   </body>
 </html>
