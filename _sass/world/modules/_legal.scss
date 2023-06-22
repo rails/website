@@ -1,0 +1,41 @@
+.legal {
+  padding: 0 var(--space-small);
+
+  > * {
+    padding-bottom: var(--space-small);
+  }
+
+  h2 {
+    font-size: var(--type-small);
+    padding-top: var(--space-medium);
+    padding-bottom: var(--space-medium);
+    font-variation-settings: var(--font-weight-700);
+  }
+
+  p {
+    font-variation-settings: var(--font-weight-400-normal);
+    font-size: var(--type-x-small);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-type: disc;
+
+    li::marker {
+      font-size: var(--type-x-small);
+    }
+  }
+
+  ol {
+    list-style-type: lower-alpha;
+
+    li::marker {
+      font-size: var(--type-x-small);
+      font-variation-settings: var(--font-weight-400-normal);
+      font-family: inherit;
+    }
+  }
+}
