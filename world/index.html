@@ -92,4 +92,13 @@ permalink: /world
     {% include world/sponsors.html %}
   {% endif %}
 </content-container>
-<script src="/assets/scripts/confetti.min.js"></script>
+
+<script src="/assets/scripts/confetti.min.js" defer></script>
+<script type="text/javascript">
+  let confetti = new Confetti('celebrate');
+
+  confetti.setCount(200);
+  confetti.setSize(2);
+  confetti.setPower(30);
+  confetti.destroyTarget(false);
+</script>
