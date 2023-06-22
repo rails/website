@@ -19,7 +19,7 @@ speaker-card {
   }
 
   h3 {
-    font-size: var(--type-medium);
+    font-size: var(--type-large);
     padding-bottom: var(--space-small);
     color: var(--red);
     text-align: center;
@@ -38,5 +38,6 @@ speaker-card {
     border-bottom: var(--border-red);
     padding: var(--space-small);
     width: 100%;
+    padding-bottom: var(--space-medium);
   }
 }
