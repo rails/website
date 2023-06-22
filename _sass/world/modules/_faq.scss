@@ -59,7 +59,15 @@
             padding: var(--space-small) 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             flex-direction: row;
+
+            svg {
+              flex: 0 0 auto;
+              height: calc(1em + 0.5vw);
+              width: auto;
+              margin-left: var(--space-small);
+            }
           }
         }
       }
