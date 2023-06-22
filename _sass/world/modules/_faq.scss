@@ -68,6 +68,13 @@
               height: calc(1em + 0.5vw);
               width: auto;
               margin-left: var(--space-small);
+              transition: transform 0.2s linear;
+            }
+          }
+
+          &[open] {
+            summary svg {
+              transform: rotate(180deg);
             }
           }
         }
