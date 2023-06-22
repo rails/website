@@ -1,3 +1,12 @@
+button {
+  cursor: pointer;
+
+  &[disabled], &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+}
+
 .button {
   display: inline-block;
   font-size: var(--type-small);

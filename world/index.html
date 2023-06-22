@@ -37,26 +37,38 @@ permalink: /world
 
   <section class="speakers">
     <h2>First Speakers Confirmed</h2>
-    <br>
 
-    <!-- speaker carousel -->
-    <sl-carousel navigation pagination mouse-dragging>
-      {% for speaker in keynote_speakers %}
-        <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
-      {% endfor %}
+    <carousel-component role="region" aria-label="carousel">
+      <carousel-buttons>
+        <button class="previous" aria-label="scroll carousel backward">
+          <img src="/assets/world/previous.svg">
+        </button>
+        <button class="next" aria-label="scroll carousel forward">
+          <img src="/assets/world/next.svg">
+        </button>
+      </carousel-buttons>
 
-      {% for speaker in non_keynote_speakers %}
-        <sl-carousel-item>{% include world/speaker-card.html %}</sl-carousel-item>
-      {% endfor %}
+      <carousel-items scroll-interval="300">
+        {% for speaker in keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            {% include world/speaker-card.html %}
+          </div>
+        {% endfor %}
 
-      <sl-carousel-item class="see-more-speakers" style="background: var(--red);">
-        {% if false %}
-          <a href="/world/speakers">See More Speakers</a>
-        {% endif %}
+        {% for speaker in non_keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            {% include world/speaker-card.html %}
+          </div>
+        {% endfor %}
 
-        <p>More speakers announced soon...</p>
-      </sl-carousel-item>
-    </sl-carousel>
+        <div class="see-more-speakers">
+          {% if false %}
+            <a href="/world/speakers">See More Speakers</a>
+          {% endif %}
+          <p>More to be announced!</p>
+        </div>
+      </carousel-items>
+    </carousel-component>
 
     {% if false %}
       <a href="/world/speakers" class="button button--light">View All Speakers</a>
@@ -93,7 +105,7 @@ permalink: /world
   {% endif %}
 </content-container>
 
-<script src="/assets/world/scripts/confetti.min.js"></script>
+<script src="/assets/world/scripts/confetti.min.js" defer></script>
 <script type="text/javascript">
   let confetti = new Confetti('celebrate');
 

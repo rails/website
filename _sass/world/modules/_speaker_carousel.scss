@@ -4,58 +4,7 @@ section.speakers {
   max-width: 50em;
   margin: auto;
 
-  sl-carousel::part(scroll-container) {
-    --slides-per-page: 3;
-    --slides-per-move: 3;
-    padding: var(--space-medium);
-
-    // to get rid of unexpected spacing
-    --slide-size: unset;
-    aspect-ratio: unset;
-
-    /* Tablet devices (680px - 1100px) */
-    @media only screen and (max-width: 1100px) {
-      --slides-per-page: 2;
-      --slides-per-move: 2;
-    }
-
-    /* Extra small devices (phones, 680px and down) */
-    @media only screen and (max-width: 680px) {
-      --slides-per-page: 1;
-      --slides-per-move: 1;
-    }
-  }
-
-  sl-carousel::part(navigation-button) {
-    color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  sl-carousel::part(navigation-button--next) {
-    background-image: url(/assets/world/next.svg);
-  }
-
-  sl-carousel::part(navigation-button--previous) {
-    background-image: url(/assets/world/previous.svg);
-  }
-
-  sl-carousel::part(pagination) {
-    display: none;
-  }
-
-  sl-carousel::part(base) {
-    --aspect-ratio: 3/4;
-    --slide-gap: var(--space-large);
-
-    @media only screen and (max-width: 680px) {
-      --slide-gap: unset;
-    }
-  }
-
   .see-more-speakers {
-    width: 50%;
-
     a {
       text-align: center;
       line-height: 1.5;
@@ -65,6 +14,50 @@ section.speakers {
   speaker-card {
     @media only screen and (max-width: 350px) {
       width: 10em;
+    }
+  }
+}
+
+carousel-component {
+  display: flex;
+  flex-direction: column;
+
+  carousel-items {
+    display: flex;
+    overflow: scroll;
+    gap: var(--space-medium);
+    align-items: center;
+    padding-bottom: var(--space-medium);
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  }
+
+  carousel-buttons {
+    --height: var(--type-x-small);
+
+    display: flex;
+    gap: var(--space-medium);
+    height: var(--height);
+    align-self: flex-end;
+    margin-bottom: var(--space-medium);
+
+    img {
+      height: var(--height);
+      width: auto;
+    }
+
+    button {
+      background: none;
     }
   }
 }
