@@ -18,8 +18,8 @@
     margin: auto;
   }
 
-  &__logo:hover {
-    transform: none;
+  &__logo:hover, &__link:hover {
+    transform: none !important;
   }
 
   ul {

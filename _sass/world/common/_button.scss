@@ -43,14 +43,11 @@ a {
 
 a:hover:not(.button) {
   text-decoration: underline;
-  text-decoration-thickness: 2px !important;
-  text-decoration-color: var(--white) !important;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--white);
   text-underline-offset: 0.3em;
-
-  &:not(.nav__link) {
-    transform: translate(-2px, -2px);
-    transition: transform 0.05s linear;
-  }
+  transform: translate(-2px, -2px);
+  transition: transform 0.05s linear;
 }
 
 .button:hover, .tito-widget-button:hover {
