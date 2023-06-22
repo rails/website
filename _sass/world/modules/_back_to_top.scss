@@ -17,7 +17,7 @@ back-to-top {
     cursor: pointer;
     font-style: italic;
     max-width: 5em;
-    background: #3B1D6288;
+    background: var(--purple-dark-translucent);
     box-sizing: content-box;
     padding: var(--space-small);
     border: var(--border-white);
