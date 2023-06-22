@@ -36,3 +36,29 @@ button {
   cursor: pointer;
   background-color: var(--purple-dark);
 }
+
+a {
+  display: inline-block;
+}
+
+a:hover:not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px !important;
+  text-decoration-color: var(--white) !important;
+  text-underline-offset: 0.3em;
+
+  &:not(.nav__link) {
+    transform: translate(-2px, -2px);
+    transition: transform 0.05s linear;
+  }
+}
+
+.button:hover, .tito-widget-button:hover {
+  background: var(--orange-red);
+  color: var(--white);
+}
+
+back-to-top button:hover {
+  transform: translate(-2px, -2px);
+  transition: transform 0.05s linear;
+}

@@ -18,6 +18,10 @@
     margin: auto;
   }
 
+  &__logo:hover {
+    transform: none;
+  }
+
   ul {
     display: flex;
     align-items: center;
