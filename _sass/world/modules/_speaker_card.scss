@@ -13,11 +13,14 @@ speaker-card {
   }
 
   img {
+    --size: 8em;
     border-radius: 50%;
     margin: var(--space-small);
     padding-bottom: var(--space-x-small);
-    aspect-ratio: 1/1;
     object-fit: cover;
+    height: var(--size);
+    width: var(--size);
+    align-self: center;
   }
 
   h3 {
