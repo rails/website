@@ -5,7 +5,7 @@ permalink: /world
 
 {% assign sorted_speakers = site.world_speakers | sort: 'last_name' %}
 {% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
-{% assign non_keynote_speakers = sorted_speakers | where: 'keynote', false %}
+{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" %}
 
 <content-container class="large">
   <section class="hero">

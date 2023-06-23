@@ -16,6 +16,8 @@ speaker-card {
     border-radius: 50%;
     margin: var(--space-small);
     padding-bottom: var(--space-x-small);
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 
   h3 {
@@ -33,7 +35,7 @@ speaker-card {
   .speaker-card__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     border-top: var(--border-red);
     border-bottom: var(--border-red);
     padding: var(--space-small);

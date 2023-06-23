@@ -5,6 +5,8 @@ section.speakers {
   margin: auto;
 
   .see-more-speakers {
+    align-self: center;
+
     a {
       text-align: center;
       line-height: 1.5;
@@ -30,6 +32,7 @@ carousel-component {
     padding-bottom: var(--space-medium);
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
+    align-items: stretch;
 
 
     &::-webkit-scrollbar {
