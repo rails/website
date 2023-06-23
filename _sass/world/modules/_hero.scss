@@ -32,7 +32,7 @@
       background-color: var(--purple-medium);
       width: 120px;
       min-height: 4em;
-      padding: var(--space-small);
+      padding: 16px;
       font-variation-settings: var(---font-weight-600);
       border-radius: 50%;
       position: absolute;
@@ -41,7 +41,10 @@
       right: 0;
       transform: translate(85%, -50%);
       z-index: 1;
-      box-shadow: 0px 0px 7px 7px var(--purple-medium);
+
+      span {
+        margin-top: 5px;
+      }
 
       /* Tablet devices (900px and down) */
       @media only screen and (max-width: 900px) {
