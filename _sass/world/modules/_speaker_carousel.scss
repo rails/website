@@ -28,7 +28,6 @@ carousel-component {
     display: flex;
     overflow: scroll;
     gap: var(--space-medium);
-    align-items: center;
     padding-bottom: var(--space-medium);
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
