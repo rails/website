@@ -1,0 +1,16 @@
+.about {
+  padding: var(--space-medium) var(--space-small);
+  line-height: 90%;
+  border-top: var(--border-white);
+  border-bottom: var(--border-white);
+  text-align: center;
+  max-width: unset;
+  background-color: var(--red);
+
+  p {
+    max-width: 35em;
+    line-height: 1.4;
+    font-variation-settings: var(--font-weight-600);
+    margin: auto;
+  }
+}

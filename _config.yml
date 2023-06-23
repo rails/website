@@ -2,6 +2,7 @@ title: Ruby on Rails
 description: A web-app framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
 twitter: rails
 feed_path: /feed.xml
+world_title: Rails World - 2023
 
 plugins:
   - jekyll-feed
@@ -19,6 +20,13 @@ collections:
   pages:
     output: true
     permalink: "/:name"
+  world_speakers:
+    output: false
+    permalink: /world/speakers/:name/
+  world_sessions:
+    output: false
+    permalink: /world/sessions/:path/
+
 
 defaults:
   - scope:
@@ -32,6 +40,15 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "world_speakers"
+    values:
+      layout: "world/speaker"
+  - scope:
+      path: "world"
+    values:
+      description: October 5 & 6 - Beurs van Berlage, Amsterdam, NL
 
 markdown: kramdown
 highlighter: rouge

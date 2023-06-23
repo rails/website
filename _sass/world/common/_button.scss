@@ -1,0 +1,61 @@
+button {
+  cursor: pointer;
+
+  &[disabled], &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+}
+
+.button {
+  display: inline-block;
+  font-size: var(--type-small);
+  font-variation-settings: var(--font-weight-600);
+  color: var(--white);
+  border: 0.7px solid var(--white);
+  padding: var(--space-small) var(--space-large);
+  cursor: pointer;
+
+  &--light {
+    background-color: var(--purple-medium);
+  }
+
+  &--red {
+    background-color: var(--red);
+  }
+}
+
+.tito-widget-button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--type-small);
+  font-variation-settings: var(--font-weight-600);
+  color: var(--white);
+  border: 0.7px solid var(--white);
+  padding: var(--space-small) var(--space-large);
+  cursor: pointer;
+  background-color: var(--purple-dark);
+}
+
+a {
+  display: inline-block;
+}
+
+a:hover:not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--white);
+  text-underline-offset: 0.3em;
+  transform: translate(-2px, -2px);
+  transition: transform 0.05s linear;
+}
+
+.button:hover, .tito-widget-button:hover {
+  background: var(--orange-red);
+  color: var(--white);
+}
+
+back-to-top button:hover {
+  transform: translate(-2px, -2px);
+  transition: transform 0.05s linear;
+}

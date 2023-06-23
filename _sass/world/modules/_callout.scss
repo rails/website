@@ -1,0 +1,69 @@
+.callout {
+  max-width: 50em;
+  margin: auto;
+
+  &__banner {
+    background-color: var(--pink-pale);
+    margin-bottom: var(--space-medium);
+
+    h2 {
+      color: var(--purple-dark);
+      font-size: var(--type-xx-large);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        padding: 0;
+        font-size: var(--type-medium);
+      }
+    }
+
+    flex-container {
+      padding: var(--space-medium) var(--space-small);
+      gap: var(--space-medium);
+      border-top: var(--border-red);
+      border-bottom: var(--border-red);
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      box-sizing: border-box;
+
+      > h2 {
+        text-align: center;
+      }
+
+      > .callout__description p {
+        max-width: 35em;
+      }
+
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    bordered-container {
+      --border-margin: var(--space-medium);
+      --border-padding: var(--space-medium);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        --border-margin: var(--space-small);
+        --border-padding: var(--space-small);
+      }
+    }
+
+    p {
+      color: var(--red);
+      line-height: 1.5em;
+    }
+
+    button {
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    padding-bottom: var(--space-medium);
+  }
+}

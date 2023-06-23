@@ -1,0 +1,48 @@
+back-to-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 1px; // MS Edge requires a nominal dimension
+
+  button, button:focus {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: var(--white);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    cursor: pointer;
+    font-style: italic;
+    max-width: 5em;
+    background: var(--purple-dark-translucent);
+    box-sizing: content-box;
+    padding: var(--space-small);
+    border: var(--border-white);
+
+    span {
+      display: block;
+      margin-top: var(--space-small);
+      font-size: var(--type-x-small);
+
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+
+  svg {
+    display: inline-block;
+    width: 1.5em;
+    height: auto;
+  }
+
+  &.intersecting {
+    button {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

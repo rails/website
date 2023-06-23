@@ -1,0 +1,34 @@
+---
+layout: world/default
+---
+
+<article>
+  <section>
+    <h1>{{ page.session_name }}</h1>
+    <h2>{{ page.session_overview }}</h2>
+    <ul>
+      <li>{{ page.time }}</li>
+      <li>{{ page.location }}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Session Speaker</h2>
+
+    <img
+      src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+      alt="Profile Picture"
+    />
+
+    <div>
+      <h2>Speaker Name</h2>
+      <h3>Speaker Role</h3>
+      <p>Speaker Bio</p>
+      <ul>
+        <li>{% include world/icons/github.html %}</li>
+        <li>{% include world/icons/linkedin.html %}</li>
+        <li>{% include world/icons/twitter.html %}</li>
+      </ul>
+    </div>
+  </section>
+</article>

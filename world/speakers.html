@@ -1,0 +1,23 @@
+---
+permalink: /world/speakers
+title: Speakers
+layout: world/default
+---
+
+{% assign sorted_speakers = site.world_speakers | sort: 'last_name' %}
+{% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
+{% assign non_keynote_speakers = sorted_speakers | where: 'keynote', false %}
+
+<content-container class="speakers__index">
+  <h1>Speakers</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum amet architecto tempore voluptate, ipsa possimus sint assumenda, a reprehenderit animi vel voluptates quos temporibus, dolores esse vero qui doloribus.</p>
+
+  <ul class="speakers__gallery">
+    {% for speaker in keynote_speakers %}
+      <li>{% include world/speaker-card.html %}</li>
+    {% endfor %}
+    {% for speaker in non_keynote_speakers %}
+      <li>{% include world/speaker-card.html %}</li>
+    {% endfor %}
+  </ul>
+</content-container>

@@ -1,28 +1,120 @@
 ---
-layout: world
+layout: world/default
 permalink: /world
-title: Rails World
-description: Rails World - 5 & 6 Oct, 2023 - Beurs van Berlage, Amsterdam, NL
-og_image: '/assets/images/opengraph-world.png'
 ---
 
-<div class="world">
-  <section class="world__top common-background--white">
-    <div class="common-background--grey common-shape--bottom-grey-down-left"></div>
-    <a href="#skyline"><img src="../assets/images/logo-railsworld.svg" alt="Rails World Logo" /></a>
+{% assign sorted_speakers = site.world_speakers | sort: 'last_name' %}
+{% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
+{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
+
+<content-container class="large">
+  <section class="hero">
+    <div class="hero__content">
+
+      <h1>Shaping the future of Ruby on Rails</h1>
+      <p class="hero__content__bubble">
+        <span>20 years of Ruby on Rails</span>
+      </p>
+
+      <p>October 5 & 6</p>
+      <p class="hero__location">
+        {% include world/icons/pin.html %}
+        <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank">
+          Amsterdam, Beurs van Berlage
+        </a>
+      </p>
+
+      <br>
+      <tito-button event="rails-world/rails-world-2023"></tito-button>
+    </div>
   </section>
-  <section class="world__top common-background--grey">
-    <ul class="world__ul common-padding--bottom-small">
-      <li class="common-content"><strong>Dates: </strong>5 & 6 Oct 2023</li>
-      <li class="common-content">
-        <strong>Location: </strong><a href="https://www.google.com/maps/place/Beurs+van+Berlage/@52.3750622,4.8961713,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609c787f17ca7:0xfdc6eede688a772f!8m2!3d52.3750622!4d4.8961713!16zL20vMDNjdmx4" target="_blank">Beurs van Berlage, Amsterdam, NL</a>
-      </li>
-      <a class="common-button world__button common-button--version common-button--color-red" href="https://ti.to/rails-world/rails-world-2023" target="_blank">
-        <span>Tickets available soon</span>
-      </a>
-    </ul>
+
+  <section class="about">
+    <p>
+      Rails World is a two-day, two track community conference featuring technical talks, demos, workshops, networking, and keynotes about the latest features and best practices in Rails development. Let’s build a stronger, more vibrant community for generations to come.
+    </p>
   </section>
-  <section class="world__bottom common-background--grey">
-    <img id="skyline" src="../assets/images/world-amsterdam-skyline.svg" alt="Amsterdam Skyline" />
+
+  <section class="speakers">
+    <h2>First Speakers Confirmed</h2>
+
+    <carousel-component role="region" aria-label="carousel">
+      <carousel-buttons>
+        <button class="previous" aria-label="scroll carousel backward">
+          <img src="/assets/world/previous.svg">
+        </button>
+        <button class="next" aria-label="scroll carousel forward">
+          <img src="/assets/world/next.svg">
+        </button>
+      </carousel-buttons>
+
+      <carousel-items scroll-interval="300">
+        {% for speaker in keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            {% include world/speaker-card.html %}
+          </div>
+        {% endfor %}
+
+        {% for speaker in non_keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            {% include world/speaker-card.html %}
+          </div>
+        {% endfor %}
+
+        <div class="see-more-speakers">
+          {% if false %}
+            <a href="/world/speakers">See More Speakers</a>
+          {% endif %}
+          <p>More to be announced!</p>
+        </div>
+      </carousel-items>
+    </carousel-component>
+
+    {% if false %}
+      <a href="/world/speakers" class="button button--light">View All Speakers</a>
+    {% endif %}
   </section>
-</div>
+
+  <section class="callout">
+    <div class="callout__banner">
+      <bordered-container>
+        <flex-container>
+          <h2>20 Years of Rails</h2>
+          <div class="callout__description">
+            <p>
+              Celebrate an incredible milestone as Rails turns 20! Join us and help commemorate two decades of groundbreaking innovation.
+              <br>
+              (Yes, there will be cake.)
+            </p>
+            <button id="celebrate" class="button button--red">
+              Celebrate with us!
+            </button>
+          </div>
+        </flex-container>
+      </bordered-container>
+    </div>
+  </section>
+
+  <section class="sponsorship">
+    <h2>Sponsor Rails World</h2>
+    <br><br>
+    <p>
+      Joining Rails World as a sponsor means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's collaborate and make Rails World an unforgettable experience for all.
+    </p>
+    <br>
+    <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ" target="_blank" class="button button--light">View Prospectus</a>
+  </section>
+  {% if site.data.world.sponsors %}
+    {% include world/sponsors.html %}
+  {% endif %}
+</content-container>
+
+<script src="/assets/world/scripts/confetti.min.js"></script>
+<script type="text/javascript">
+  let confetti = new Confetti('celebrate');
+
+  confetti.setCount(200);
+  confetti.setSize(2);
+  confetti.setPower(30);
+  confetti.destroyTarget(false);
+</script>

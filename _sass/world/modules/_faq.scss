@@ -1,0 +1,109 @@
+.faq {
+  padding: var(--space-large);
+
+  @media only screen and (max-width: 600px) {
+    padding: var(--space-small);
+  }
+
+  h2 {
+    padding-bottom: var(--space-small);
+  }
+
+  menu.tabs {
+    display: flex;
+    font-size: var(--type-large);
+    margin-bottom: var(--space-medium);
+    overflow: scroll;
+
+    li {
+      flex: 0 0 auto;
+      padding: var(--space-small) var(--space-x-small);
+      border-bottom: var(--border-white);
+
+      a {
+        margin-right: var(--space-medium);
+      }
+    }
+
+    li:last-child {
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__content {
+    display: block;
+    background-color: var(--white);
+
+    section {
+      padding: var(--space-medium);
+
+      h2 {
+        color: var(--red);
+      }
+
+      ul {
+        color: var(--purple-dark);
+        padding-bottom: var(--space-medium);
+
+        li ~ li {
+          margin-top: var(--space-small);
+        }
+
+        details {
+          border-bottom: var(--border-red);
+
+          summary {
+            cursor: pointer;
+            padding: var(--space-small) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            svg {
+              flex: 0 0 auto;
+              height: calc(1em + 0.5vw);
+              min-height: 30px;
+              width: auto;
+              margin-left: var(--space-small);
+              transition: transform 0.2s linear;
+            }
+          }
+
+          &[open] {
+            summary svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__answer {
+    font-size: var(--type-small);
+    padding-left: var(--space-medium);
+    padding-bottom: var(--space-medium);
+
+    p {
+      font-variation-settings: var(--font-weight-400-normal);
+
+      ~ p {
+        margin-top: var(--space-small);
+      }
+    }
+
+    a {
+      color: var(--orange-red);
+    }
+
+    ul {
+      list-style: disc;
+      font-variation-settings: var(--font-weight-400);
+      margin-left: var(--space-large);
+      margin-top: var(--space-small);
+    }
+  }
+}

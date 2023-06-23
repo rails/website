@@ -1,0 +1,35 @@
+.speakers {
+  &__index {
+    padding-left: var(--space-large);
+    padding-right: var(--space-large);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 680px) {
+      padding-left: var(--space-small);
+      padding-right: var(--space-small);
+    }
+  }
+
+  &__gallery {
+    padding-top: var(--space-medium);
+    display: flex;
+    gap: var(--space-medium);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    h3 {
+      font-size: var(--type-large);
+    }
+
+    speaker-card {
+      width: 14em;
+      height: unset;
+
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+section.speakers {
+  background-color: var(--red);
+  padding-top: var(--space-x-large);
+  max-width: 50em;
+  margin: auto;
+
+  .see-more-speakers {
+    align-self: center;
+
+    a {
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  speaker-card {
+    @media only screen and (max-width: 350px) {
+      width: 10em;
+    }
+  }
+}
+
+carousel-component {
+  display: flex;
+  flex-direction: column;
+
+  carousel-items {
+    display: flex;
+    overflow: scroll;
+    gap: var(--space-medium);
+    align-items: center;
+    padding-bottom: var(--space-medium);
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    align-items: stretch;
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  }
+
+  carousel-buttons {
+    --height: var(--type-x-small);
+
+    display: flex;
+    gap: var(--space-medium);
+    height: var(--height);
+    align-self: flex-end;
+    margin-bottom: var(--space-medium);
+
+    img {
+      height: var(--height);
+      width: auto;
+    }
+
+    button {
+      background: none;
+    }
+  }
+}

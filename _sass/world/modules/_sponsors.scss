@@ -1,0 +1,21 @@
+.sponsors {
+  max-width: 50em;
+  margin: auto;
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 40em;
+    padding-bottom: var(--space-large);
+
+    &--small {
+      flex-wrap: wrap;
+
+      > * {
+        max-width: 100px;
+      }
+    }
+  }
+}
