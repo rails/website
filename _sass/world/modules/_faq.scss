@@ -104,6 +104,11 @@
       font-variation-settings: var(--font-weight-400);
       margin-left: var(--space-large);
       margin-top: var(--space-small);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        font-size: var(--type-small);
+      }
     }
   }
 }
