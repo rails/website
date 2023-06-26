@@ -3,6 +3,10 @@
     padding-left: var(--space-large);
     padding-right: var(--space-large);
 
+    h1 {
+      padding-bottom: var(--space-small);
+    }
+
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 680px) {
       padding-left: var(--space-small);
@@ -17,18 +21,30 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    a {
+      display: inline;
+
+      &:hover {
+        text-decoration-color: var(--red);
+      }
+    }
+
     h3 {
       font-size: var(--type-large);
     }
 
     speaker-card {
-      width: 14em;
-      height: unset;
+      width: 11.5em;
+
+      img {
+        --size: 7em;
+      }
 
       p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-size: var(--type-xxx-small);
       }
     }
   }

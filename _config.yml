@@ -21,8 +21,8 @@ collections:
     output: true
     permalink: "/:name"
   world_speakers:
-    output: false
-    permalink: /world/speakers/:name/
+    output: true
+    permalink: "/world/speakers/:name"
   world_sessions:
     output: false
     permalink: /world/sessions/:path/
