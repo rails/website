@@ -42,6 +42,10 @@ carousel-component {
       flex: 0 0 auto;
       scroll-snap-align: start;
     }
+
+    a {
+      display: inline;
+    }
   }
 
   carousel-buttons {
@@ -60,6 +64,14 @@ carousel-component {
 
     button {
       background: none;
+    }
+  }
+
+  a:hover {
+    text-decoration: none !important;
+
+    h3 {
+      text-decoration: underline;
     }
   }
 }
