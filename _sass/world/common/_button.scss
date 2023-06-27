@@ -60,3 +60,7 @@ back-to-top button:hover {
   transform: translate(-2px, -2px);
   transition: transform 0.05s linear;
 }
+
+breadcrumbs-container a:hover {
+  transform: none !important;
+}

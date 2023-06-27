@@ -5,8 +5,8 @@ layout: world/default
 <content-container class="speaker">
     <breadcrumbs-container>
       <ul>
-        <li><a href="/world">World</a> ></li>
-        <li><a href="/world/speakers">Speakers</a> ></li>
+        <li><a href="/world">World</a></li><span>&gt;</span>
+        <li><a href="/world/speakers">Speakers</a></li><span>&gt;</span>
         <li><span>{{ page.first_name }} {{ page.last_name }}</span></li>
       </ul>
     </breadcrumbs-container>
@@ -15,11 +15,11 @@ layout: world/default
       <bordered-container>
           <article>
             <section class="speaker__info">
-                <figure><img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Profile Picture"></figure>
+                <figure><img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture"></figure>
                 <div>
                   <h1>{{ page.first_name}} {{ page.last_name }}</h1>
                   <p class="speaker__role">{{ page.role }} of {{ page.company }}</p>
-                  <p>{{ page.bio }}</p>
+                  {{ content }}
                   <ul>
                     <li>
                       {% if page.github %}

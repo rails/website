@@ -14,10 +14,10 @@ layout: world/default
 
   <ul class="speakers__gallery">
     {% for speaker in keynote_speakers %}
-      <li><a href="/world/speakers/{{ speaker.first_name | split: ' ' | first | downcase }}-{{ speaker.last_name | downcase }}">{% include world/speaker-card.html %}</a></li>
+      <li><a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a></li>
     {% endfor %}
     {% for speaker in non_keynote_speakers %}
-      <li><a href="/world/speakers/{{ speaker.first_name | split: ' ' | first | downcase }}-{{ speaker.last_name | downcase }}">{% include world/speaker-card.html %}</a></li>
+      <li><a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a></li>
     {% endfor %}
   </ul>
 </content-container>

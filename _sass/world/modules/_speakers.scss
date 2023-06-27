@@ -26,6 +26,10 @@
 
       &:hover {
         text-decoration-color: var(--red);
+
+        img {
+          box-shadow: 0px 0px 35.2822px 13.8px var(--orange-brown);
+        }
       }
     }
 
