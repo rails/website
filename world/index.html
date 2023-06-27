@@ -47,13 +47,13 @@ permalink: /world
       <carousel-items scroll-interval="300">
         {% for speaker in keynote_speakers %}
           <div role="group" aria-label="speaker card">
-            {% include world/speaker-card.html %}
+            <a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a>
           </div>
         {% endfor %}
 
         {% for speaker in non_keynote_speakers %}
           <div role="group" aria-label="speaker card">
-            {% include world/speaker-card.html %}
+            <a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a>
           </div>
         {% endfor %}
 
