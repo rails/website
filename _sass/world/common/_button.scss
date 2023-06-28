@@ -4,6 +4,7 @@ button {
   &[disabled], &:disabled {
     opacity: 0.5;
     cursor: auto;
+    pointer-events: none;
   }
 }
 
@@ -25,7 +26,7 @@ button {
   }
 }
 
-.tito-widget-button {
+button.tito {
   display: inline-block;
   font-family: inherit;
   font-size: var(--type-small);
@@ -50,7 +51,7 @@ a:hover:not(.button) {
   transition: transform 0.05s linear;
 }
 
-.button:hover, .tito-widget-button:hover {
+.button:hover, button.tito:hover {
   background: var(--orange-red);
   color: var(--white);
 }

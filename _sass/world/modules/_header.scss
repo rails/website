@@ -32,7 +32,7 @@
     font-size: var(--type-medium);
   }
 
-  .tito-widget-button {
+  button.tito {
     padding: var(--space-x-small) var(--space-medium);
 
     @media only screen and (max-width: 1100px) {
