@@ -2,33 +2,67 @@
 layout: world/default
 ---
 
-<article>
-  <section>
-    <h1>{{ page.session_name }}</h1>
-    <h2>{{ page.session_overview }}</h2>
+{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" %}
+{% assign speaker = filteredSpeakers | first %}
+
+<content-container class="session">
+  <breadcrumbs-container>
     <ul>
-      <li>{{ page.time }}</li>
-      <li>{{ page.location }}</li>
+      <li><a href="/world">World</a></li><span>&gt;</span>
+      <li><a href="/world/agenda">Agenda</a></li><span>&gt;</span>
+      <li><a href="/world/agenda/day1">Day 1</a></li><span>&gt;</span>
+      <li><span>Session: {{ speaker.first_name }} {{ speaker.last_name }}</span></li>
     </ul>
-  </section>
+  </breadcrumbs-container>
 
-  <section>
-    <h2>Session Speaker</h2>
+  <content-card>
+    <bordered-container>
+        <article>
+          <section class="session__info">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+            <ul>
+              <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+              <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
+            </ul>
+          </section>
 
-    <img
-      src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
-      alt="Profile Picture"
-    />
 
-    <div>
-      <h2>Speaker Name</h2>
-      <h3>Speaker Role</h3>
-      <p>Speaker Bio</p>
-      <ul>
-        <li>{% include world/icons/github.html %}</li>
-        <li>{% include world/icons/linkedin.html %}</li>
-        <li>{% include world/icons/twitter.html %}</li>
-      </ul>
-    </div>
-  </section>
-</article>
+          <section class="session__speaker">
+            <div role="group" aria-label="speaker info">
+              <h2>Session Speaker</h2>
+              <a href="{{ speaker.url }}">
+                <h3>{{ speaker.first_name}} {{ speaker.last_name }}</h3>
+              </a>
+              <p class="speaker__role">{{ speaker.role }} of {{ speaker.company }}</p>
+              {{ speaker.content }}
+              <ul>
+                {% if speaker.github %}
+                  <li>
+                    <a href="{{ speaker.github }}">
+                      {% include world/icons/github.html %}
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if speaker.linkedin %}
+                  <li>
+                    <a href="{{ speaker.linkedin }}">
+                      {% include world/icons/linkedin.html %}
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if speaker.twitter %}
+                  <li>
+                    <a href="{{ speaker.twitter }}">
+                      {% include world/icons/twitter.html %}
+                    </a>
+                  </li>
+                  {% endif %}
+              </ul>
+            </div>
+              <figure><img src="{{ speaker.image_path }}" alt="{{ speaker.first_name }}'s Profile Picture"></figure>
+        </section>
+      </article>
+    </bordered-container>
+  </content-card>
+</content-container>
