@@ -1,16 +1,7 @@
 .speakers {
   &__index {
-    padding-left: var(--space-large);
-    padding-right: var(--space-large);
-
     h1 {
       padding-bottom: var(--space-small);
-    }
-
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 680px) {
-      padding-left: var(--space-small);
-      padding-right: var(--space-small);
     }
   }
 
