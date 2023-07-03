@@ -1,0 +1,119 @@
+.agenda {
+  h1 {
+    padding-bottom: var(--space-small);
+  }
+
+  p {
+    padding-bottom: var(--space-large);
+  }
+
+  &__tabs {
+    display: flex;
+    gap: var(--space-large);
+    padding-bottom: var(--space-medium);
+
+    @media only screen and (max-width: 780px) {
+      gap: var(--space-medium);
+    }
+  }
+
+  &__tab {
+    text-align: center;
+    flex-basis: 11em;
+    padding-top: var(--space-x-small);
+    padding-bottom: var(--space-x-small);
+
+    &:hover {
+      background-color: var(--purple-dark);
+      border-bottom: 2px solid var(--white);
+    }
+
+    a:hover {
+        text-decoration: none;
+        transform: none;
+      }
+
+    @media only screen and (max-width: 300px) {
+      padding: 0;
+    }
+
+    h2 {
+      line-height: 150%;
+      font-size: var(--type-medium);
+      font-variation-settings: var(--font-weight-700);
+    }
+
+    p {
+      font-size: var(--type-small);
+      font-variation-settings: var(--font-weight-400);
+      padding-bottom: unset;
+    }
+
+    &--selected {
+      background-color: var(--purple-dark);
+      border-bottom: 2px solid var(--white);
+
+      a:hover {
+        transform: none;
+        cursor: default;
+      }
+    }
+  }
+
+  small {
+    padding-bottom: var(--space-medium);
+    font-size: var(--type-xx-small);
+    font-variation-settings: var(--font-weight-400);
+  }
+
+  &__items {
+    background-color: var(--white);
+    color: var(--purple-dark);
+    margin-top: var(--space-medium);
+
+    a {
+      color: var(--purple-dark);
+
+      &:hover {
+        text-decoration-color: var(--purple-dark);
+        transform: none;
+      }
+    }
+
+    li {
+      border-bottom: var(--border-red);
+      padding-top: var(--space-medium);
+      padding-bottom: var(--space-medium);
+      margin-left: var(--space-medium);
+      margin-right: var(--space-medium);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      grid-gap: 1em;
+
+      h3.session__time {
+        font-size: var(--type-large);
+        text-align: center;
+        padding-bottom: 0;
+
+        @media only screen and (max-width: 768px) {
+          font-size: var(--type-medium);
+        }
+      }
+
+      h3 {
+        font-size: var(--type-medium);
+      }
+
+      p {
+        padding-top: var(--space-small);
+        padding-bottom: 0;
+        font-size: var(--type-x-small);
+      }
+    }
+
+    > li:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

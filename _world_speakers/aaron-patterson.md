@@ -8,8 +8,6 @@ keynote:
 github: https://github.com/
 linkedin: https://linkedin.com/
 twitter: https://twitter.com
-sessions:
-  - session1
 ---
 
 Aaron is..  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!

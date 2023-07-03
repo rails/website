@@ -1,6 +1,7 @@
 ---
 layout: world/default
 ---
+{% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" %}
 
 <content-container class="speaker">
     <breadcrumbs-container>
@@ -18,7 +19,7 @@ layout: world/default
                 <figure><img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture"></figure>
                 <div>
                   <h1>{{ page.first_name}} {{ page.last_name }}</h1>
-                  <p class="speaker__role">{{ page.role }} of {{ page.company }}</p>
+                  <p class="speaker__role">{{ page.role }}, {{ page.company }}</p>
                   {{ content }}
                   <ul>
                     <li>
@@ -48,14 +49,14 @@ layout: world/default
             <section class="speaker__sessions">
               <h2>Sessions</h2>
               <ul>
+              {% for session in filteredSessions %}
                 <li>
-                  <h3>Session 1</h3>
-                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
+                  <a href="{{ session.url }}">
+                    <h3>{{ session.title }}</h3>
+                  </a>
+                  <p>{{ session.content }}</p>
                 </li>
-                <li>
-                  <h3>Session 2</h3>
-                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
-                </li>
+              {% endfor %}
               </ul>
             </section>
           </article>

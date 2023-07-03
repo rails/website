@@ -1,0 +1,13 @@
+<ul class="agenda__items">
+  {% for session in sessions %}
+    <li>
+      <h3 class="session__time">{{ session.time }}</h3>
+      <div>
+        <h3><a href="{{ session.url }}">{{ session.title }}</a></h3>
+        {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains session.speaker" %}
+        {% assign speaker = filteredSpeakers | first %}
+        <p>{{ speaker.first_name }} {{ speaker.last_name }}, {{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{% endif %}</p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
