@@ -1,7 +1,7 @@
 ---
 title: session3
 speaker: eileen-uchitelle.md
-time: 9:00 - 10:30
+time: 09:00 - 10:30
 location: Amsterdam
 ---
 

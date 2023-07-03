@@ -1,0 +1,10 @@
+---
+layout: world/agenda
+permalink: /world/agenda/day-2
+day: day-2
+title: Agenda
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-2/'" | sort: "time" %}
+
+{% include world/agenda/items.html sessions=sessions %}

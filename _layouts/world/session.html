@@ -4,13 +4,15 @@ layout: world/default
 
 {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" %}
 {% assign speaker = filteredSpeakers | first %}
+{% assign day_url = page.url | split: '/' | pop | join: '/' %}
+{% assign day = day_url | slice: -1 | prepend: 'Day ' %}
 
 <content-container class="session">
   <breadcrumbs-container>
     <ul>
       <li><a href="/world">World</a></li><span>&gt;</span>
-      <li><a href="/world/agenda">Agenda</a></li><span>&gt;</span>
-      <li><a href="/world/agenda/day1">Day 1</a></li><span>&gt;</span>
+      <li><a href="/world/agenda/day-1">Agenda</a></li><span>&gt;</span>
+      <li><a href="{{ day_url }}">{{ day }}</a></li><span>&gt;</span>
       <li><span>Session: {{ speaker.first_name }} {{ speaker.last_name }}</span></li>
     </ul>
   </breadcrumbs-container>
@@ -32,7 +34,7 @@ layout: world/default
             <div role="group" aria-label="speaker info">
               <h2>Session Speaker</h2>
               <a href="{{ speaker.url }}">
-                <h3>{{ speaker.first_name}} {{ speaker.last_name }}</h3>
+                <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
               </a>
               <p class="speaker__role">{{ speaker.role }} of {{ speaker.company }}</p>
               {{ speaker.content }}
