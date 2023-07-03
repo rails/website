@@ -1,6 +1,6 @@
 .speaker {
   &__info {
-    padding-bottom: var(--space-large);
+    padding-bottom: var(--space-medium);
 
     figure {
       text-align: center;
@@ -8,7 +8,7 @@
     }
 
     h1 {
-      padding-bottom: 0;
+      padding-bottom: var(--space-x-small);
     }
 
     ul {
@@ -31,6 +31,7 @@
 
   p.speaker__role {
     font-size: var(--type-medium);
+    padding-bottom: var(--space-medium);
   }
 
   &__sessions {
@@ -42,6 +43,15 @@
       @media only screen and (max-width: 1000px) {
         text-align: left;
       }
+    }
+
+    h3 {
+      padding-bottom: var(--space-small);
+    }
+
+    a:hover {
+      text-decoration-color: var(--red);
+      transform: none;
     }
   }
 
