@@ -1,6 +1,19 @@
 .speaker {
+  h1, h2, h3 {
+    color: var(--red)
+  }
+
+  h3 {
+    font-size: var(--type-medium);
+  }
+
+  p {
+    font-size: var(--type-x-small);
+    padding-bottom: var(--space-large);
+  }
+
   &__info {
-    padding-bottom: var(--space-medium);
+    padding-bottom: var(--space-large);
 
     figure {
       text-align: center;
@@ -49,6 +62,10 @@
       padding-bottom: var(--space-small);
     }
 
+    p {
+      padding-bottom: 0;
+    }
+
     a:hover {
       text-decoration-color: var(--red);
       transform: none;
@@ -83,19 +100,6 @@
           align-items: center;
           padding-left: 0;
           padding-right: 0;
-        }
-
-        h1, h2, h3 {
-          color: var(--red)
-        }
-
-        h3 {
-          font-size: var(--type-medium);
-        }
-
-        p {
-          font-size: var(--type-x-small);
-          padding-bottom: var(--space-large);
         }
       }
     }
