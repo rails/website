@@ -11,7 +11,7 @@ layout: world/default
   <breadcrumbs-container>
     <ul>
       <li><a href="/world">World</a></li><span>&gt;</span>
-      <li><a href="/world/agenda/day-1">Agenda</a></li><span>&gt;</span>
+      <li><a href="/world/agenda">Agenda</a></li><span>&gt;</span>
       <li><a href="{{ day_url }}">{{ day }}</a></li><span>&gt;</span>
       <li><span>Session: {{ speaker.first_name }} {{ speaker.last_name }}</span></li>
     </ul>
@@ -22,7 +22,11 @@ layout: world/default
         <article>
           <section class="session__info">
             <h1>{{ page.title }}</h1>
+            <br>
+
             {{ content }}
+
+            <br>
             <ul>
               <li>{% include world/icons/clock.html %} {{ page.time }}</li>
               <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
@@ -31,13 +35,20 @@ layout: world/default
 
 
           <section class="session__speaker">
-            <div role="group" aria-label="speaker info">
+            <div>
               <h2>Session Speaker</h2>
+              <br>
               <a href="{{ speaker.url }}">
                 <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
               </a>
-              <p class="speaker__role">{{ speaker.role }} of {{ speaker.company }}</p>
+              <p class="session__speaker__role">
+                {{ speaker.role }} of {{ speaker.company }}
+              </p>
+              <br>
+
               {{ speaker.content }}
+
+              <br>
               <ul>
                 {% if speaker.github %}
                   <li>
@@ -62,7 +73,12 @@ layout: world/default
                   {% endif %}
               </ul>
             </div>
-              <figure><img src="{{ speaker.image_path }}" alt="{{ speaker.first_name }}'s Profile Picture"></figure>
+
+            <figure>
+              <img
+                src="{{ speaker.image_path }}"
+                alt="{{ speaker.first_name }}'s Profile Picture">
+            </figure>
         </section>
       </article>
     </bordered-container>
