@@ -10,11 +10,6 @@
   &__tabs {
     display: flex;
     gap: var(--space-large);
-    padding-bottom: var(--space-medium);
-
-    @media only screen and (max-width: 780px) {
-      gap: var(--space-medium);
-    }
   }
 
   &__tab {
@@ -22,6 +17,7 @@
     flex-basis: 11em;
     padding-top: var(--space-x-small);
     padding-bottom: var(--space-x-small);
+    border-bottom: 2px solid transparent;
 
     &:hover {
       background-color: var(--purple-dark);
@@ -92,17 +88,14 @@
       grid-gap: 1em;
 
       h3.session__time {
-        font-size: var(--type-large);
+        font-size: var(--type-medium);
         text-align: center;
         padding-bottom: 0;
-
-        @media only screen and (max-width: 768px) {
-          font-size: var(--type-medium);
-        }
       }
 
       h3 {
         font-size: var(--type-medium);
+        line-height: 1.6;
       }
 
       p {
