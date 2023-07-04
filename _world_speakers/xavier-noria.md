@@ -2,8 +2,8 @@
 first_name: Xavier
 last_name: Noria
 image_path: /assets/world/images/speakers/x-noria.jpeg
-role: Rails Core & Independent Consultant
-company:
+role: Rails Core
+company: Independent Consultant
 keynote:
 github: https://github.com/
 linkedin: https://linkedin.com
