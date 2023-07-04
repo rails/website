@@ -1,5 +1,5 @@
 <ul class="agenda__tabs">
-  <li class="agenda__tab {% if current_tab == 'day-1' %}agenda__tab--selected{% endif %}">
+  <li class="agenda__tab {% if page.day == 'day-1' %}agenda__tab--selected{% endif %}">
     <a href="/world/agenda/day-1">
       <hgroup>
         <h2>Day 1</h2>
@@ -8,7 +8,7 @@
     </a>
   </li>
 
-  <li class="agenda__tab {% if current_tab == 'day-1' %}agenda__tab--selected{% endif %}">
+  <li class="agenda__tab {% if page.day == 'day-2' %}agenda__tab--selected{% endif %}">
     <a href="/world/agenda/day-2">
       <hgroup>
         <h2>Day 2</h2>
@@ -17,7 +17,7 @@
     </a>
   </li>
 
-  <li class="agenda__tab {% if current_tab == 'day-3' %}agenda__tab--selected{% endif %}">
+  <li class="agenda__tab {% if page.day == 'day-3' %}agenda__tab--selected{% endif %}">
     <a href="/world/agenda/day-3">
     <hgroup>
       <h2>Day 3</h2>
