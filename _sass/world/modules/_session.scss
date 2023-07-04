@@ -1,17 +1,38 @@
 .session {
-  h1, h2 {
+  h1, h2, h3 {
+    color: var(--red)
+  }
+
+  h1 {
+    font-size: var(--type-xx-large);
+  }
+
+  h2 {
     font-size: var(--type-x-large);
+  }
+
+  p {
+    font-size: var(--type-x-small);
   }
 
   &__info {
     padding-bottom: var(--space-large);
 
-    h1 {
-      padding-bottom: var(--space-small);
-    }
-
     ul {
       font-size: var(--type-x-small);
+
+      li {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: var(--space-small);
+        }
+
+        ~ li {
+          margin-top: var(--space-small);
+        }
+      }
 
       svg {
         display: inline-block;
@@ -23,21 +44,23 @@
   }
 
   &__speaker {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--space-large);
-    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+    align-items: center;
 
-    @media only screen and (max-width: 1000px) {
-        grid-template-columns: 1fr;
+    > div {
+      flex: 1 1 15em;
+    }
+
+    > figure {
+      flex: 0 0 auto;
     }
 
     h3 {
+      font-size: var(--type-large);
+      font-variation-settings: var(--font-weight-600);
       padding-bottom: var(--space-x-small);
-    }
-
-    > div > *:first-child {
-      padding-bottom: var(--space-small);
     }
 
     figure {
@@ -90,26 +113,12 @@
         padding: var(--space-medium);
         display: grid;
         grid-template-rows: auto auto;
+      }
 
-        section {
-          gap: var(--space-medium);
-          align-items: center;
-          padding-left: 0;
-          padding-right: 0;
-        }
-
-        h1, h2, h3 {
-          color: var(--red)
-        }
-
-        h3 {
-          font-size: var(--type-medium);
-        }
-
-        p {
-          font-size: var(--type-x-small);
-          padding-bottom: var(--space-large);
-        }
+      section {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
       }
     }
   }
