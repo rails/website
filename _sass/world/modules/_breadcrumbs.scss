@@ -1,0 +1,18 @@
+breadcrumbs-container {
+  padding-bottom: var(--space-large);
+  display: block;
+
+  ol {
+    display: flex;
+    gap: var(--space-small);
+    flex-wrap: wrap;
+  }
+
+  span {
+    font-variation-settings: var(--font-weight-700-normal);
+  }
+
+  a:hover {
+    transform: none !important;
+  }
+}

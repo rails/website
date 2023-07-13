@@ -4,12 +4,20 @@ layout: world/default
 {% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" %}
 
 <content-container class="speaker">
-    <breadcrumbs-container>
-      <ul>
-        <li><a href="/world">World</a></li><span>&gt;</span>
-        <li><a href="/world/speakers">Speakers</a></li><span>&gt;</span>
-        <li><span>{{ page.first_name }} {{ page.last_name }}</span></li>
-      </ul>
+    <breadcrumbs-container data-turbo="false" aria-label="Breadcrumbs">
+      <ol>
+        <li>
+          <a href="/world">World</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li>
+          <a href="/world/speakers">Speakers</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li aria-current="page">
+          <span>{{ page.first_name }} {{ page.last_name }}</span>
+        </li>
+      </ol>
     </breadcrumbs-container>
 
     <content-card>
