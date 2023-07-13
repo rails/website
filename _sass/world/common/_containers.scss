@@ -45,22 +45,3 @@ bordered-container {
   margin: 0 var(--border-margin);
   padding: var(--border-padding) 0;
 }
-
-breadcrumbs-container {
-  padding-bottom: var(--space-large);
-  display: block;
-
-  ul {
-    display: flex;
-    gap: var(--space-small);
-    flex-wrap: wrap;
-  }
-
-  span {
-    font-variation-settings: var(--font-weight-700-normal);
-  }
-
-  a:hover {
-    transform: none !important;
-  }
-}

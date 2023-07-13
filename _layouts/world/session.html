@@ -8,31 +8,28 @@ layout: world/default
 {% assign day = day_url | slice: -1 | prepend: 'Day ' %}
 
 <content-container class="session">
-  <breadcrumbs-container>
-    <ul>
-      <li><a href="/world">World</a></li><span>&gt;</span>
-      <li><a href="/world/agenda">Agenda</a></li><span>&gt;</span>
-      <li><a href="{{ day_url }}">{{ day }}</a></li><span>&gt;</span>
-      <li><span>Session: {{ speaker.first_name }} {{ speaker.last_name }}</span></li>
-    </ul>
+  <breadcrumbs-container data-turbo="false" aria-label="Breadcrumbs">
+    <ol>
+      <li>
+        <a href="/world">World</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
+
+      <li>
+        <a href="/world/agenda">Agenda</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
+      <li>
+        <a href="{{ day_url }}">{{ day }}</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
+      <li>
+        <span aria-current="page">
+          Session: {{ speaker.first_name }} {{ speaker.last_name }}
+        </span>
+      </li>
+    </ol>
   </breadcrumbs-container>
-
-  <content-card>
-    <bordered-container>
-        <article>
-          <section class="session__info">
-            <h1>{{ page.title }}</h1>
-            <br>
-
-            {{ content }}
-
-            <br>
-            <ul>
-              <li>{% include world/icons/clock.html %} {{ page.time }}</li>
-              <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
-            </ul>
-          </section>
-
 
   <turbo-frame id="session_details">
     <content-card>
