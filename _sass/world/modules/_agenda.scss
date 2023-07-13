@@ -87,13 +87,14 @@
       align-items: center;
       grid-gap: 1em;
 
-      h3.session__time {
+      .session__time {
         font-size: var(--type-medium);
         text-align: center;
         padding-bottom: 0;
+        font-variation-settings: var(--font-weight-800);
       }
 
-      h3 {
+      h3, .session__time {
         font-size: var(--type-medium);
         line-height: 1.6;
       }

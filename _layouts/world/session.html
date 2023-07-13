@@ -34,53 +34,82 @@ layout: world/default
           </section>
 
 
-          <section class="session__speaker">
-            <div>
-              <h2>Session Speaker</h2>
-              <br>
-              <a href="{{ speaker.url }}">
-                <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
-              </a>
-              <p class="session__speaker__role">
-                {{ speaker.role }} of {{ speaker.company }}
-              </p>
+  <turbo-frame id="session_details">
+    <content-card>
+      <bordered-container>
+          <article>
+            <section class="session__info">
+              <h1 id="session_title">{{ page.title }}</h1>
               <br>
 
-              {{ speaker.content }}
+              {{ content }}
 
               <br>
               <ul>
-                {% if speaker.github %}
-                  <li>
-                    <a href="{{ speaker.github }}">
-                      {% include world/icons/github.html %}
-                    </a>
-                  </li>
-                  {% endif %}
-                  {% if speaker.linkedin %}
-                  <li>
-                    <a href="{{ speaker.linkedin }}">
-                      {% include world/icons/linkedin.html %}
-                    </a>
-                  </li>
-                  {% endif %}
-                  {% if speaker.twitter %}
-                  <li>
-                    <a href="{{ speaker.twitter }}">
-                      {% include world/icons/twitter.html %}
-                    </a>
-                  </li>
-                  {% endif %}
+                <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+                <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
               </ul>
-            </div>
+            </section>
 
-            <figure>
-              <img
-                src="{{ speaker.image_path }}"
-                alt="{{ speaker.first_name }}'s Profile Picture">
-            </figure>
-        </section>
-      </article>
-    </bordered-container>
-  </content-card>
+
+            <section class="session__speaker">
+              <div>
+                <h2>Session Speaker</h2>
+                <br>
+                <a href="{{ speaker.url }}">
+                  <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
+                </a>
+                <p class="session__speaker__role">
+                  {{ speaker.role }} of {{ speaker.company }}
+                </p>
+                <br>
+
+                {{ speaker.content }}
+
+                <br>
+                <ul>
+                  {% if speaker.github %}
+                    <li>
+                      <a href="{{ speaker.github }}"
+                        aria-label="{{ speaker.first_name }}'s GitHub">
+                        {% include world/icons/github.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if speaker.linkedin %}
+                    <li>
+                      <a href="{{ speaker.linkedin }}"
+                        aria-label="{{ speaker.first_name }}'s LinkedIn">
+                        {% include world/icons/linkedin.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if speaker.twitter %}
+                    <li>
+                      <a href="{{ speaker.twitter }}"
+                        aria-label="{{ speaker.first_name }}'s Twitter">
+                        {% include world/icons/twitter.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                </ul>
+              </div>
+
+              <figure>
+                <img
+                  src="{{ speaker.image_path }}"
+                  alt="{{ speaker.first_name }}'s Profile Picture">
+              </figure>
+          </section>
+        </article>
+      </bordered-container>
+
+      <button class="close hidden" aria-label="Close speaker dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M2 2L22 22"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22 2L2 22"></path>
+        </svg>
+      </button>
+    </content-card>
+  </turbo-frame>
 </content-container>
