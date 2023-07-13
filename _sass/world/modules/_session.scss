@@ -63,6 +63,10 @@
       padding-bottom: var(--space-x-small);
     }
 
+    p.session__speaker__role {
+      padding-bottom: 0;
+    }
+
     figure {
       text-align: center;
       margin: var(--space-large) auto;
@@ -113,6 +117,7 @@
         padding: var(--space-medium);
         display: grid;
         grid-template-rows: auto auto;
+        gap: var(--space-large);
       }
 
       section {
@@ -121,5 +126,11 @@
         padding-bottom: 0;
       }
     }
+  }
+}
+
+modal-component .session__info {
+  p {
+    padding-bottom: 0;
   }
 }
