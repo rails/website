@@ -6,6 +6,9 @@ layout: world/default
 {% assign speaker = filteredSpeakers | first %}
 {% assign day_url = page.url | split: '/' | pop | join: '/' %}
 {% assign day = day_url | slice: -1 | prepend: 'Day ' %}
+{% assign dayNum = day_url | slice: -1 | plus: 0 %}
+{% assign sessionDate = dayNum | plus: 3 | append: 'th October 2023' %}
+
 
 <content-container class="session">
   <breadcrumbs-container data-turbo="false" aria-label="Breadcrumbs">
@@ -44,6 +47,7 @@ layout: world/default
               <br>
               <ul>
                 <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+                <li>{{ sessionDate }}</li>
                 <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
               </ul>
             </section>
