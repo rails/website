@@ -11,13 +11,36 @@ layout: world/default
 <content-container class="speakers__index">
   <h1>Speakers</h1>
   <p>Get inspired by our industry's brightest speakers as they share their expertise, insights, and success stories this October in Amsterdam.</p>
-
   <ul class="speakers__gallery">
     {% for speaker in keynote_speakers %}
-      <li><a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a></li>
+      <li>
+        <a
+          href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}"
+          data-turbo-frame="speaker_details"
+          data-turbo-action="advance"
+          data-turbo-preserve-focus>
+          {% include world/speaker-card.html %}
+        </a>
+      </li>
     {% endfor %}
     {% for speaker in non_keynote_speakers %}
-      <li><a href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">{% include world/speaker-card.html %}</a></li>
+      <li>
+        <a
+          href="/world/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}"
+          data-turbo-frame="speaker_details"
+          data-turbo-action="advance"
+          data-turbo-preserve-focus>
+          {% include world/speaker-card.html %}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="speaker_details" target="_top" class="speaker"
+    role="dialog" aria-modal="true" aria-labelledby="speaker_name" tabindex="-1">
+  </turbo-frame>
+</modal-component>

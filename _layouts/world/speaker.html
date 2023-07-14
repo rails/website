@@ -20,13 +20,14 @@ layout: world/default
       </ol>
     </breadcrumbs-container>
 
+  <turbo-frame id="speaker_details">
     <content-card>
       <bordered-container>
           <article>
             <section class="speaker__info">
                 <figure><img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture"></figure>
                 <div>
-                  <h1>{{ page.first_name}} {{ page.last_name }}</h1>
+                  <h1 id="speaker_name">{{ page.first_name}} {{ page.last_name }}</h1>
                   <p class="speaker__role">{{ page.role }}, {{ page.company }}</p>
                   {{ content }}
                   <ul>
@@ -71,5 +72,13 @@ layout: world/default
             </section>
           </article>
       </bordered-container>
+
+      <button class="close hidden" aria-label="Close speaker dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M2 2L22 22"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22 2L2 22"></path>
+        </svg>
+      </button>
     </content-card>
+  </turbo-frame>
 </content-container>
