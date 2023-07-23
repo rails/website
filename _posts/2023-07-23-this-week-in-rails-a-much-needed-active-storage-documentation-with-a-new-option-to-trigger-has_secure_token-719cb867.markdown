@@ -15,16 +15,13 @@ If anyone calls a cipher in the console, it will reveal the secret of the encryp
 [Active Record commit transaction on return, break and throw](https://github.com/rails/rails/pull/48600)
 There's a lot of history around this PR. In short Rails 7.1 will get a new configuration option that defines whether **return** , **break** and **throw** inside a transaction block cause the transaction to be committed or rolled back. Let's take this example:
 
-_Model.transaction do_
-
-_&nbsp; model.save_
-
-_&nbsp; return_
-
-_&nbsp; other\_model.save_
-
-_end_
-
+```ruby
+Model.transaction do
+  model.save
+  return
+  other_model.save
+end
+```
 
 With the new **config.active\_record.commit\_transaction\_on\_non\_local\_return** set to **false** , this transaction will rollback upon hitting return, if set to **true** , the transaction will be committed.
 
@@ -35,12 +32,11 @@ When attaching files to a **has\_many\_attached** association, the default behav
 [Specify when to generate has\_secure\_token](https://github.com/rails/rails/pull/47420)
 Rails has a **has\_secure\_token** method that employs **SecureRandom::base58** to generate a 24-character unique token for a model. With this PR, one can specify at what point during the model's life-cycle the token is generated via an **on:** option. This PR ensures we can do something like:
 
-_class User \< ApplicationRecord_
-
-_&nbsp; has\_secure\_token on: :initialize_
-
-_end_
-
+```ruby
+class User < ApplicationRecord
+  has_secure_token on: :initialize
+end
+```
 
 By passing the **_on: :initialize_** , the token is generated in an **after\_initialize** callback as opposed a **before\_\*** callback which is the default behaviour.
 
