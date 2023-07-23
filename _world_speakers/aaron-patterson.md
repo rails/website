@@ -5,9 +5,9 @@ image_path: /assets/world/images/speakers/a-patterson.jpeg
 role: Rails Core & Senior Staff Engineer
 company: Shopify
 keynote:
-github: https://github.com/
-linkedin: https://linkedin.com/
-twitter: https://twitter.com
+github: https://github.com/tenderlove
+linkedin: https://www.linkedin.com/in/tenderlove/
+twitter: https://twitter.com/tenderlove
 ---
 
-Aaron is..  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!
+Aaron is on the Rails core team, the Ruby core team, and is a Senior Staff Engineer working at Shopify. In his free time, he enjoys cooking, playing with cats, and writing weird software.
