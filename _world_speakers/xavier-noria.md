@@ -5,9 +5,9 @@ image_path: /assets/world/images/speakers/x-noria.jpeg
 role: Rails Core
 company: Independent Consultant
 keynote:
-github: https://github.com/
-linkedin: https://linkedin.com
-twitter:
+github: https://github.com/fxn
+linkedin: https://www.linkedin.com/in/xaviernoria/
+twitter: https://twitter.com/fxn
 ---
 
-Xavier is... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque possimus inventore repellat asperiores rerum tempore, impedit esse obcaecati expedita a modi assumenda fugit totam laboriosam ratione, minima aperiam error voluptas!
+Everlasting student · Zeitwerk · Rails Core · Fukuoka Ruby Award · Ruby Hero Award · Freelance · Life lover
