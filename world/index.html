@@ -117,12 +117,10 @@ permalink: /world
   </turbo-frame>
 </modal-component>
 
-<script src="/assets/world/scripts/confetti.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 <script type="text/javascript">
-  let confetti = new Confetti('celebrate');
-
-  confetti.setCount(200);
-  confetti.setSize(2);
-  confetti.setPower(30);
-  confetti.destroyTarget(false);
+  document.confetti = new JSConfetti()
+  document.getElementById("celebrate").addEventListener('click', () => {
+    document.confetti.addConfetti()
+  })
 </script>
