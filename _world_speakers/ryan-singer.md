@@ -2,7 +2,7 @@
 first_name: Ryan
 last_name: Singer
 image_path: /assets/world/images/speakers/r-singer.jpg
-role:
+role: Owner
 company: Felt Presence
 keynote:
 github: https://github.com/rjs
