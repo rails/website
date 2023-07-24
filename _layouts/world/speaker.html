@@ -62,7 +62,9 @@ layout: world/default
               <ul>
               {% for session in filteredSessions %}
                 <li>
-                  <a href="{{ session.url }}">
+                  <a href="{{ session.url }}" data-turbo-frame="session_details"
+                  data-turbo-action="advance"
+                  data-turbo-preserve-focus>
                     <h3>{{ session.title }}</h3>
                   </a>
                   <p>{{ session.content }}</p>
@@ -82,3 +84,11 @@ layout: world/default
     </content-card>
   </turbo-frame>
 </content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="session_details" target="_top" class="session"
+    role="dialog" aria-modal="true" aria-labelledby="session_title" tabindex="-1">
+  </turbo-frame>
+</modal-component>

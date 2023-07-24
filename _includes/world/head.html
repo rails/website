@@ -65,6 +65,15 @@
     import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
   </script>
 
+  <script type="text/javascript">
+    document.addEventListener("turbo:click", (event) => {
+      if (event.srcElement.closest("modal-component")) {
+        event.preventDefault()
+        Turbo.visit(event.detail.url)
+      }
+    })
+  </script>
+
   <link rel="icon" href="/assets/images/favicon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="/assets/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="https://use.typekit.net/lar2lzk.css">
