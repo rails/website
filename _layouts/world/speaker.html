@@ -4,7 +4,7 @@ layout: world/default
 {% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" %}
 
 <content-container class="speaker">
-    <breadcrumbs-container data-turbo="false" aria-label="Breadcrumbs">
+    <breadcrumbs-container aria-label="Breadcrumbs">
       <ol>
         <li>
           <a href="/world">World</a>
