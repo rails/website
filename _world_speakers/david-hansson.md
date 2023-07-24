@@ -1,13 +1,13 @@
 ---
 first_name: David Heinemeier
 last_name: Hansson
-image_path: /assets/world/images/speakers/d-hansson.jpg
-role: Rails Core, Co-Founder & CTO
+image_path: assets/world/images/speakers/d-hansson1.jpg
+role: Rails Core, CTO
 company: 37signals
 keynote:
-github: https://github.com/
-linkedin: https://linkedin.com
-twitter:
+github: https://github.com/dhh
+linkedin: https://www.linkedin.com/in/david-heinemeier-hansson-374b18221/
+twitter: https://twitter.com/dhh
 ---
 
-David is... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque possimus inventore repellat asperiores rerum tempore, impedit esse obcaecati expedita a modi assumenda fugit totam laboriosam ratione, minima aperiam error voluptas!
+Creator of Ruby on Rails.
