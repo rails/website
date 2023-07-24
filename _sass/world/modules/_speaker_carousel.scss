@@ -4,15 +4,6 @@ section.speakers {
   max-width: 50em;
   margin: auto;
 
-  .see-more-speakers {
-    align-self: center;
-
-    a {
-      text-align: center;
-      line-height: 1.5;
-    }
-  }
-
   speaker-card {
     @media only screen and (max-width: 350px) {
       width: 10em;
