@@ -36,7 +36,7 @@
 
       svg {
         display: inline-block;
-        --size: 1em;
+        --size: 1.1em;
         width: var(--size);
         height: var(--size);
       }
@@ -46,8 +46,9 @@
   &__speaker {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-medium);
+    gap: var(--space-large);
     align-items: center;
+    justify-content: center;
 
     > div {
       flex: 1 1 15em;
@@ -58,9 +59,10 @@
     }
 
     h3 {
-      font-size: var(--type-large);
-      font-variation-settings: var(--font-weight-600);
+      font-size: var(--type-medium);
+      font-variation-settings: var(--font-weight-800);
       padding-bottom: var(--space-x-small);
+      color: var(--purple-dark);
     }
 
     p.session__speaker__role {
@@ -68,14 +70,17 @@
     }
 
     figure {
-      text-align: center;
-      margin: var(--space-large) auto;
+      margin: var(--space-large);
     }
 
     ul {
       display: flex;
       gap: var(--space-small);
       font-size: var(--type-large);
+
+      svg {
+        fill: var(--purple-dark);
+      }
     }
 
     img {
@@ -92,6 +97,11 @@
     a:hover {
       text-decoration-color: var(--red);
       transform: none;
+    }
+
+    flex-container {
+      align-items: center;
+      gap: var(--space-small);
     }
   }
 
@@ -117,7 +127,7 @@
         padding: var(--space-medium);
         display: grid;
         grid-template-rows: auto auto;
-        gap: var(--space-large);
+        gap: var(--space-medium);
       }
 
       section {

@@ -58,12 +58,20 @@ layout: world/default
               <div>
                 <h2>Session Speaker</h2>
                 <br>
-                <a href="{{ speaker.url }}">
-                  <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
-                </a>
-                <p class="session__speaker__role">
-                  {{ speaker.role }} of {{ speaker.company }}
-                </p>
+
+                <flex-container>
+                  <a href="{{ speaker.url }}">
+                    {% include world/icons/microphone.html %}
+                  </a>
+                  <div>
+                    <a href="{{ speaker.url }}">
+                      <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
+                    </a>
+                    <p class="session__speaker__role">
+                      {{ speaker.role }} of {{ speaker.company }}
+                    </p>
+                  </div>
+                </flex-container>
                 <br>
 
                 {{ speaker.content }}

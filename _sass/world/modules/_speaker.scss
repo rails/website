@@ -28,6 +28,10 @@
       display: flex;
       gap: var(--space-small);
       font-size: var(--type-large);
+
+      svg {
+        fill: var(--purple-dark);
+      }
     }
 
     img {

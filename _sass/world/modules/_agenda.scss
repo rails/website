@@ -3,13 +3,10 @@
     padding-bottom: var(--space-small);
   }
 
-  p {
-    padding-bottom: var(--space-large);
-  }
-
   &__tabs {
     display: flex;
     gap: var(--space-large);
+    padding-top: var(--space-large)
   }
 
   &__tab {
