@@ -3,6 +3,7 @@ layout: world/agenda
 permalink: /world/agenda/day-2
 day: day-2
 title: Agenda
+published: false
 ---
 
 {% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-2/'" | sort: "time" %}
