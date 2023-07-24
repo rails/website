@@ -21,11 +21,11 @@ collections:
     output: true
     permalink: "/:name"
   world_speakers:
-    output: false
-    permalink: /world/speakers/:name/
+    output: true
+    permalink: "/world/speakers/:name"
   world_sessions:
     output: false
-    permalink: /world/sessions/:path/
+    permalink: "/world/agenda/:path"
 
 
 defaults:
@@ -45,6 +45,11 @@ defaults:
       type: "world_speakers"
     values:
       layout: "world/speaker"
+  - scope:
+      path: ""
+      type: "world_sessions"
+    values:
+      layout: "world/session"
   - scope:
       path: "world"
     values:

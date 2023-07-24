@@ -1,25 +1,35 @@
 ---
 layout: world/default
 ---
+{% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" %}
 
 <content-container class="speaker">
-    <breadcrumbs-container>
-      <ul>
-        <li><a href="/world">World</a> ></li>
-        <li><a href="/world/speakers">Speakers</a> ></li>
-        <li><span>{{ page.first_name }} {{ page.last_name }}</span></li>
-      </ul>
+    <breadcrumbs-container aria-label="Breadcrumbs">
+      <ol>
+        <li>
+          <a href="/world">World</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li>
+          <a href="/world/speakers">Speakers</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li aria-current="page">
+          <span>{{ page.first_name }} {{ page.last_name }}</span>
+        </li>
+      </ol>
     </breadcrumbs-container>
 
+  <turbo-frame id="speaker_details">
     <content-card>
       <bordered-container>
           <article>
             <section class="speaker__info">
-                <figure><img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Profile Picture"></figure>
+                <figure><img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture"></figure>
                 <div>
-                  <h1>{{ page.first_name}} {{ page.last_name }}</h1>
-                  <p class="speaker__role">{{ page.role }} of {{ page.company }}</p>
-                  <p>{{ page.bio }}</p>
+                  <h1 id="speaker_name">{{ page.first_name}} {{ page.last_name }}</h1>
+                  <p class="speaker__role">{{ page.role }}, {{ page.company }}</p>
+                  {{ content }}
                   <ul>
                     <li>
                       {% if page.github %}
@@ -45,20 +55,40 @@ layout: world/default
                   </ul>
                 </div>
             </section>
-            <section class="speaker__sessions">
+
+
+            <section class="speaker__sessions hidden">
               <h2>Sessions</h2>
               <ul>
+              {% for session in filteredSessions %}
                 <li>
-                  <h3>Session 1</h3>
-                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
+                  <a href="{{ session.url }}" data-turbo-frame="session_details"
+                  data-turbo-action="advance"
+                  data-turbo-preserve-focus>
+                    <h3>{{ session.title }}</h3>
+                  </a>
+                  <p>{{ session.content }}</p>
                 </li>
-                <li>
-                  <h3>Session 2</h3>
-                  <p>This session is... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam repellendus itaque fugiat pariatur culpa molestiae velit temporibus officia eius quasi, sed quidem, necessitatibus, tenetur esse similique ratione nostrum rem!</p>
-                </li>
+              {% endfor %}
               </ul>
             </section>
           </article>
       </bordered-container>
+
+      <button class="close hidden" aria-label="Close speaker dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M2 2L22 22"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22 2L2 22"></path>
+        </svg>
+      </button>
     </content-card>
+  </turbo-frame>
 </content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="session_details" target="_top" class="session"
+    role="dialog" aria-modal="true" aria-labelledby="session_title" tabindex="-1">
+  </turbo-frame>
+</modal-component>

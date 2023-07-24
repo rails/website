@@ -1,0 +1,146 @@
+.session {
+  h1, h2, h3 {
+    color: var(--red)
+  }
+
+  h1 {
+    font-size: var(--type-xx-large);
+  }
+
+  h2 {
+    font-size: var(--type-x-large);
+  }
+
+  p {
+    font-size: var(--type-x-small);
+  }
+
+  &__info {
+    padding-bottom: var(--space-large);
+
+    ul {
+      font-size: var(--type-x-small);
+
+      li {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: var(--space-small);
+        }
+
+        ~ li {
+          margin-top: var(--space-small);
+        }
+      }
+
+      svg {
+        display: inline-block;
+        --size: 1.1em;
+        width: var(--size);
+        height: var(--size);
+      }
+    }
+  }
+
+  &__speaker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-large);
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      flex: 1 1 15em;
+    }
+
+    > figure {
+      flex: 0 0 auto;
+    }
+
+    h3 {
+      font-size: var(--type-medium);
+      font-variation-settings: var(--font-weight-800);
+      padding-bottom: var(--space-x-small);
+      color: var(--purple-dark);
+    }
+
+    p.session__speaker__role {
+      padding-bottom: 0;
+    }
+
+    figure {
+      margin: var(--space-large);
+    }
+
+    ul {
+      display: flex;
+      gap: var(--space-small);
+      font-size: var(--type-large);
+
+      svg {
+        fill: var(--purple-dark);
+      }
+    }
+
+    img {
+      --size: 14em;
+      display: inline-block;
+      max-width: 100%;
+      width: var(--size);
+      height: var(--size);
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0px 0px 44.1028px 17.2277px var(--orange-brown);
+    }
+
+    a:hover {
+      text-decoration-color: var(--red);
+      transform: none;
+    }
+
+    flex-container {
+      align-items: center;
+      gap: var(--space-small);
+    }
+  }
+
+  content-card {
+    background-color: var(--white);
+    display: block;
+    color: var(--purple-dark);
+
+    bordered-container {
+      --border-color: var(--border-red);
+      --border-margin: var(--space-large);
+      --border-padding: var(--space-large);
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        --border-margin: var(--space-small);
+        --border-padding: var(--space-small);
+      }
+
+      article {
+        border-top: var(--border-red);
+        border-bottom: var(--border-red);
+        padding: var(--space-medium);
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: var(--space-medium);
+      }
+
+      section {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+modal-component .session__info {
+  p {
+    padding-bottom: 0;
+  }
+}

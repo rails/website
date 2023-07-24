@@ -2,33 +2,140 @@
 layout: world/default
 ---
 
-<article>
-  <section>
-    <h1>{{ page.session_name }}</h1>
-    <h2>{{ page.session_overview }}</h2>
-    <ul>
-      <li>{{ page.time }}</li>
-      <li>{{ page.location }}</li>
-    </ul>
-  </section>
+{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" %}
+{% assign speaker = filteredSpeakers | first %}
+{% assign day_url = page.url | split: '/' | pop | join: '/' %}
+{% assign day = day_url | slice: -1 | prepend: 'Day ' %}
+{% assign dayNum = day_url | slice: -1 | plus: 0 %}
 
-  <section>
-    <h2>Session Speaker</h2>
+<!-- add 3 to the day of conference to obtain the date in october -->
+{% assign sessionDate = dayNum | plus: 3 | append: 'th October 2023' %}
 
-    <img
-      src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
-      alt="Profile Picture"
-    />
+<content-container class="session">
+  <breadcrumbs-container aria-label="Breadcrumbs">
+    <ol>
+      <li>
+        <a href="/world">World</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
 
-    <div>
-      <h2>Speaker Name</h2>
-      <h3>Speaker Role</h3>
-      <p>Speaker Bio</p>
-      <ul>
-        <li>{% include world/icons/github.html %}</li>
-        <li>{% include world/icons/linkedin.html %}</li>
-        <li>{% include world/icons/twitter.html %}</li>
-      </ul>
-    </div>
-  </section>
-</article>
+      <li>
+        <a href="/world/agenda">Agenda</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
+      <li>
+        <a href="{{ day_url }}">{{ day }}</a>
+        <span aria-hidden="true">&nbsp;&gt;</span>
+      </li>
+      <li>
+        <span aria-current="page">
+          Session: {{ speaker.first_name }} {{ speaker.last_name }}
+        </span>
+      </li>
+    </ol>
+  </breadcrumbs-container>
+
+  <turbo-frame id="session_details">
+    <content-card>
+      <bordered-container>
+          <article>
+            <section class="session__info">
+              <h1 id="session_title">{{ page.title }}</h1>
+              <br>
+
+              {{ content }}
+
+              <br>
+              <ul>
+                <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+                <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
+                <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
+              </ul>
+            </section>
+
+
+            <section class="session__speaker">
+              <div>
+                <h2>Session Speaker</h2>
+                <br>
+
+                <flex-container>
+                  <a
+                    href="{{ speaker.url }}"
+                    data-turbo-frame="speaker_details"
+                    data-turbo-action="advance"
+                    data-turbo-preserve-focus>
+                    {% include world/icons/microphone.html %}
+                  </a>
+                  <div>
+                    <a
+                    href="{{ speaker.url }}"
+                    data-turbo-frame="speaker_details"
+                    data-turbo-action="advance"
+                    data-turbo-preserve-focus>
+                    <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
+                  </a>
+                    <p class="session__speaker__role">
+                      {{ speaker.role }} of {{ speaker.company }}
+                    </p>
+                  </div>
+                </flex-container>
+                <br>
+
+                {{ speaker.content }}
+
+                <br>
+                <ul>
+                  {% if speaker.github %}
+                    <li>
+                      <a href="{{ speaker.github }}"
+                        aria-label="{{ speaker.first_name }}'s GitHub">
+                        {% include world/icons/github.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if speaker.linkedin %}
+                    <li>
+                      <a href="{{ speaker.linkedin }}"
+                        aria-label="{{ speaker.first_name }}'s LinkedIn">
+                        {% include world/icons/linkedin.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if speaker.twitter %}
+                    <li>
+                      <a href="{{ speaker.twitter }}"
+                        aria-label="{{ speaker.first_name }}'s Twitter">
+                        {% include world/icons/twitter.html %}
+                      </a>
+                    </li>
+                    {% endif %}
+                </ul>
+              </div>
+
+              <figure>
+                <img
+                  src="{{ speaker.image_path }}"
+                  alt="{{ speaker.first_name }}'s Profile Picture">
+              </figure>
+          </section>
+        </article>
+      </bordered-container>
+
+      <button class="close hidden" aria-label="Close session dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M2 2L22 22"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22 2L2 22"></path>
+        </svg>
+      </button>
+    </content-card>
+  </turbo-frame>
+</content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="speaker_details" target="_top" class="speaker"
+    role="dialog" aria-modal="true" aria-labelledby="speaker_name" tabindex="-1">
+  </turbo-frame>
+</modal-component>

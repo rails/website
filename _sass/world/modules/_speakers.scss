@@ -1,12 +1,7 @@
 .speakers {
   &__index {
-    padding-left: var(--space-large);
-    padding-right: var(--space-large);
-
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 680px) {
-      padding-left: var(--space-small);
-      padding-right: var(--space-small);
+    h1 {
+      padding-bottom: var(--space-small);
     }
   }
 
@@ -17,18 +12,35 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    a {
+      display: inline;
+
+      &:hover {
+        text-decoration-color: var(--red);
+
+        img {
+          box-shadow: 0px 0px 35.2822px 13.8px var(--orange-brown);
+        }
+      }
+    }
+
     h3 {
       font-size: var(--type-large);
+      line-height: 125%;
     }
 
     speaker-card {
-      width: 14em;
-      height: unset;
+      width: 11.5em;
+
+      img {
+        --size: 7em;
+      }
 
       p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-size: var(--type-xxx-small);
       }
     }
   }

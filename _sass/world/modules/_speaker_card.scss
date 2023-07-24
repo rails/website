@@ -16,7 +16,6 @@ speaker-card {
     --size: 8em;
     border-radius: 50%;
     margin: var(--space-small);
-    padding-bottom: var(--space-x-small);
     object-fit: cover;
     height: var(--size);
     width: var(--size);
@@ -25,9 +24,11 @@ speaker-card {
 
   h3 {
     font-size: var(--type-large);
+    padding-top: var(--space-small);
     padding-bottom: var(--space-small);
     color: var(--red);
     text-align: center;
+    line-height: 120%;
   }
 
   p {

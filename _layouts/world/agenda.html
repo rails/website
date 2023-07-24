@@ -1,0 +1,34 @@
+---
+layout: world/default
+---
+
+<content-container class="agenda">
+  <h1>Agenda</h1>
+  <p>Explore two full days of Rails World, featuring keynotes, talks, workshops, sessions and more.</p>
+  <small>(Note: A conference app where you can build and save your schedule will be launched soon.)</small>
+
+  <turbo-frame id="agenda" data-turbo-action="advance">
+    {% include world/agenda/tabs.html %}
+    <br>
+
+    <small>Schedule is in Central European Summer Time (CEST)</small>
+
+    {{ content }}
+  </turbo-frame>
+</content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="session_details" target="_top" class="session"
+    role="dialog" aria-modal="true" aria-labelledby="session_title" tabindex="-1">
+  </turbo-frame>
+</modal-component>
+
+<script type="text/javascript">
+  document.addEventListener("turbo:frame-load", ({ target }) => {
+    if (target.id === "agenda") {
+      target.querySelector("a:not([role='tab'])").focus()
+    }
+  })
+</script>

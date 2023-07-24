@@ -2,6 +2,14 @@ content-container {
   display: block;
   max-width: 50em;
   margin: var(--space-large) auto;
+  padding-left: var(--space-large);
+  padding-right: var(--space-large);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    padding-left: var(--space-small);
+    padding-right: var(--space-small);
+  }
 
   section {
     padding-bottom: var(--space-xx-large);
@@ -19,6 +27,8 @@ content-container {
 
 content-container.large {
   max-width: unset;
+  padding-left: unset;
+  padding-right: unset;
 }
 
 flex-container {
