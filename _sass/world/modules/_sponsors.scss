@@ -4,17 +4,26 @@
 
   &__logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
-    max-width: 40em;
     padding-bottom: var(--space-large);
+    gap: var(--space-large);
+
+    > * {
+      width: 8em;
+      height: 8em;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
     &--small {
-      flex-wrap: wrap;
+      padding-bottom: var(--space-x-large);
 
       > * {
-        max-width: 100px;
+        width: 6em;
+        height: 6em;
       }
     }
   }
