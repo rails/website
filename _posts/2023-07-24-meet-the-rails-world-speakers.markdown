@@ -7,14 +7,14 @@ published: true
 date: 2023-07-24
 ---
 
-We are thrilled to unveil the lineup of speakers for the inaugural edition of [Rails World](/world), taking place on October 5 and 6 in Amsterdam. 
+We are thrilled to unveil the lineup of speakers for the inaugural edition of [Rails World](/world), taking place on October 5 and 6 in Amsterdam.
 
 With the spotlight firmly on shaping the future of Rails, these speakers are coming to Amsterdam this October to share their expertise, insights, and success stories with you.
 
-So, who can you expect to hear at Rails World? 
+So, who can you expect to hear at Rails World?
 In alphabetical order:
 
-- [Aaron Patterson](/world)
+- [Aaron Patterson](/world/speakers/aaron-patterson)
 - [Adam Wathan](/world/speakers/adam-wathan)
 - [Adrianna Chang](/world/speakers/adrianna-chang)
 - [Breno Gazzola](/world/speakers/breno-gazzola)
