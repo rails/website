@@ -210,15 +210,9 @@
 
     - question: Does Rails World provide childcare?
       answer: |-
-        Rails World does not typically provide childcare services
-        directly. However, if you require assistance in finding
-        childcare options during the conference, the organizers
-        may be able to offer recommendations for reliable local
-        services.
+        We are pleased to announce that thanks to the generous support of the James Golick Grant for Women in Computology, funding has been made available to provide childcare services for parents attending Rails World.
 
-        It is advisable to contact the Rails World team
-        in advance to discuss your childcare needs and receive
-        appropriate guidance.
+        The James Golick Grant for Women in Computology aims to remove barriers and promote diversity and inclusion within the tech community. As part of this initiative, the grant has kindly offered funding to support parents' childcare needs during the conference. If you are a parent attending Rails World and require childcare support, please email world@rubyonrails.org.
 
     - question: Does the venue have a single-occupancy or gender neutral bathroom?
       answer: Yes, there will be gender neutral bathrooms.
