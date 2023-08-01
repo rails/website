@@ -27,4 +27,4 @@ __How to apply__
 
 If you're interested in applying for the Podcast program, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLScOFFcyWSXdlV0sZiC_5V6k5YzHsHXzaICFvXsDIjUXQnvXyg/viewform) by August 7. The selected podcasts will be contacted by Buzzsprout on or before August 15, 2023.
 
-Questions? Feel free to reach out to <a href="mailto:world@rubyonrails.org">world@erubyonrails.org</a>.
+Questions? Feel free to reach out to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
