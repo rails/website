@@ -1,12 +1,11 @@
 ---
 layout: world/agenda
 permalink: /world/agenda
-day: day-1
+day: day-0
 title: Agenda
-published: false
 ---
 
-{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-1/'" | sort: "time" %}
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-0/'" | sort: "time" %}
 
 {% include world/agenda/items.html sessions=sessions %}
 
@@ -15,10 +14,10 @@ published: false
   const currentDate = new Date().toDateString()
 
   if (currentDate.match(/Oct 04 2023/)) {
-    window.location = "/world/agenda/day-1"
+    window.location = "/world/agenda/day-0"
   } else if (currentDate.match(/Oct 05 2023/)) {
-    window.location = "/world/agenda/day-2"
+    window.location = "/world/agenda/day-1"
   } else if (currentDate.match(/Oct 06 2023/)) {
-    window.location = "/world/agenda/day-3"
+    window.location = "/world/agenda/day-2"
   }
 </script>

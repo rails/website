@@ -19,7 +19,7 @@
         </h3>
         {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains session.speaker" %}
         {% assign speaker = filteredSpeakers | first %}
-        <p id="{{ details_id }}">{{ speaker.first_name }} {{ speaker.last_name }}, {{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{% endif %}</p>
+        {% if speaker %}<p id="{{ details_id }}">{{ speaker.first_name }} {{ speaker.last_name }}, {{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{% endif %}</p>{% endif %}
       </div>
     </li>
   {% endfor %}
