@@ -13,13 +13,16 @@
   &__tab {
     text-align: center;
     flex-basis: 11em;
-    padding-top: var(--space-medium);
-    padding-bottom: var(--space-medium);
     border-bottom: 2px solid transparent;
 
     &:hover {
       background-color: var(--purple-dark);
       border-bottom: 2px solid var(--white);
+    }
+
+    a {
+      padding-top: var(--space-medium);
+      padding-bottom: var(--space-medium);
     }
 
     a:hover {
