@@ -1,18 +1,23 @@
 <ul class="agenda__tabs" role="tablist">
   <li
+    class="agenda__tab {% if page.day == 'day-0' %}agenda__tab--selected{% endif %}">
+    <a
+      href="/world/agenda/day-0"
+      role="tab"
+      aria-selected="{% if page.day == 'day-0' %}true{% else %}false{% endif %}"
+      aria-labelledby="agenda_day_0_date">
+      <h2 id="agenda_day_0_date" aria-hidden="true">Wednesday, October 4th</h2>
+    </a>
+  </li>
+
+  <li
     class="agenda__tab {% if page.day == 'day-1' %}agenda__tab--selected{% endif %}">
     <a
       href="/world/agenda/day-1"
       role="tab"
       aria-selected="{% if page.day == 'day-1' %}true{% else %}false{% endif %}"
-      aria-labelledby="agenda_day_1"
-      aria-describedby="agenda_day_1_date">
-      <hgroup>
-        <h2
-          id="agenda_day_1"
-          aria-hidden="{% if page.day == 'day-1' %}false{% else %}true{% endif %}">Day 1</h2>
-        <p id="agenda_day_1_date">Wednesday, October 4th</p>
-      </hgroup>
+      aria-labelledby="agenda_day_1_date">
+      <h2 id="agenda_day_1_date" aria-hidden="true">Thursday, October 5th</h2>
     </a>
   </li>
 
@@ -22,31 +27,8 @@
       href="/world/agenda/day-2"
       role="tab"
       aria-selected="{% if page.day == 'day-2' %}true{% else %}false{% endif %}"
-      aria-labelledby="agenda_day_2"
-      aria-describedby="agenda_day_2_date">
-      <hgroup>
-        <h2
-          id="agenda_day_2"
-          aria-hidden="{% if page.day == 'day-2' %}false{% else %}true{% endif %}">Day 2</h2>
-        <p id="agenda_day_2_date">Thursday, October 5th</p>
-      </hgroup>
-    </a>
-  </li>
-
-  <li
-    class="agenda__tab {% if page.day == 'day-3' %}agenda__tab--selected{% endif %}">
-    <a
-      href="/world/agenda/day-3"
-      role="tab"
-      aria-selected="{% if page.day == 'day-3' %}true{% else %}false{% endif %}"
-      aria-labelledby="agenda_day_3"
-      aria-describedby="agenda_day_3_date">
-    <hgroup>
-      <h2
-        id="agenda_day_3"
-        aria-hidden="{% if page.day == 'day-3' %}false{% else %}true{% endif %}">Day 3</h2>
-      <p id="agenda_day_3_date">Friday, October 6th</p>
-    </hgroup>
+      aria-labelledby="agenda_day_2_date">
+      <h2 id="agenda_day_2_date" aria-hidden="true">Friday, October 6th</h2>
     </a>
   </li>
 </ul>

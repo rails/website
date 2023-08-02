@@ -13,10 +13,37 @@
 
   p {
     font-size: var(--type-x-small);
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      font-variation-settings: var(--font-weight-600);
+    }
+  }
+
+  p ~ p {
+    margin-top: var(--space-small);
   }
 
   &__info {
     padding-bottom: var(--space-large);
+
+    p + ul {
+
+      list-style-type: disc;
+      color: var(--purple-dark);
+      font-variation-settings: var(--font-weight-400);
+      margin-left: var(--space-large);
+      margin-top: var(--space-small);
+
+      li {
+        display: revert;
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+          font-size: var(--type-medium);
+        }
+      }
+    }
 
     ul {
       font-size: var(--type-x-small);

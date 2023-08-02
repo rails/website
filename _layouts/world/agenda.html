@@ -8,6 +8,16 @@ layout: world/default
   <small>(Note: A conference app where you can build and save your schedule will be launched soon.)</small>
 
   <turbo-frame id="agenda" data-turbo-action="advance">
+    <h2 class="visually-hidden">
+      {% if page.day == 'day-0' %}
+        Wednesday, October 4th
+      {% elsif page.day == 'day-1' %}
+        Thursday, October 5th
+      {% elsif page.day == 'day-2' %}
+        Friday, October 6th
+      {% endif %}
+    </h2>
+
     {% include world/agenda/tabs.html %}
     <br>
 

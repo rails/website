@@ -5,20 +5,24 @@
 
   &__tabs {
     display: flex;
+    align-items: center;
     gap: var(--space-large);
-    padding-top: var(--space-large)
+    padding-top: var(--space-large);
   }
 
   &__tab {
     text-align: center;
     flex-basis: 11em;
-    padding-top: var(--space-x-small);
-    padding-bottom: var(--space-x-small);
     border-bottom: 2px solid transparent;
 
     &:hover {
       background-color: var(--purple-dark);
       border-bottom: 2px solid var(--white);
+    }
+
+    a {
+      padding-top: var(--space-medium);
+      padding-bottom: var(--space-medium);
     }
 
     a:hover {
@@ -32,7 +36,7 @@
 
     h2 {
       line-height: 150%;
-      font-size: var(--type-medium);
+      font-size: var(--type-small);
       font-variation-settings: var(--font-weight-700);
     }
 
@@ -97,7 +101,6 @@
       }
 
       p {
-        padding-top: var(--space-small);
         padding-bottom: 0;
         font-size: var(--type-x-small);
       }

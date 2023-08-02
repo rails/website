@@ -9,7 +9,10 @@
 
   p {
     font-size: var(--type-x-small);
-    padding-bottom: var(--space-large);
+  }
+
+  p ~ p {
+    margin-top: var(--space-small);
   }
 
   &__info {
@@ -69,6 +72,17 @@
     a:hover {
       text-decoration-color: var(--red);
       transform: none;
+    }
+
+    p {
+      padding-bottom: unset;
+      display: flex;
+      align-items: center;
+      gap: var(--space-small);
+    }
+
+    svg {
+      display: inline-block;
     }
   }
 

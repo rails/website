@@ -8,8 +8,8 @@ layout: world/default
 {% assign day = day_url | slice: -1 | prepend: 'Day ' %}
 {% assign dayNum = day_url | slice: -1 | plus: 0 %}
 
-<!-- add 3 to the day of conference to obtain the date in october -->
-{% assign sessionDate = dayNum | plus: 3 | append: 'th October 2023' %}
+<!-- add 4 to the day of conference to obtain the date in october -->
+{% assign sessionDate = dayNum | plus: 4 | append: 'th October 2023' %}
 
 <content-container class="session">
   <breadcrumbs-container aria-label="Breadcrumbs">
@@ -24,12 +24,12 @@ layout: world/default
         <span aria-hidden="true">&nbsp;&gt;</span>
       </li>
       <li>
-        <a href="{{ day_url }}">{{ day }}</a>
+        <a href="{{ day_url }}">{{ sessionDate }}</a>
         <span aria-hidden="true">&nbsp;&gt;</span>
       </li>
       <li>
         <span aria-current="page">
-          Session: {{ speaker.first_name }} {{ speaker.last_name }}
+          Session: {% if speaker %}{{ speaker.first_name }} {{ speaker.last_name }}{% else %}{{ page.title }}{% endif %}
         </span>
       </li>
     </ol>
@@ -38,22 +38,21 @@ layout: world/default
   <turbo-frame id="session_details">
     <content-card>
       <bordered-container>
-          <article>
-            <section class="session__info">
-              <h1 id="session_title">{{ page.title }}</h1>
-              <br>
+        <article>
+          <section class="session__info">
+            <h1 id="session_title">{{ page.title }}</h1>
+            <br>
 
-              {{ content }}
+            {{ content }}
 
-              <br>
-              <ul>
-                <li>{% include world/icons/clock.html %} {{ page.time }}</li>
-                <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
-                <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
-              </ul>
-            </section>
-
-
+            <br>
+            <ul>
+              <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+              <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
+              <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
+            </ul>
+          </section>
+          {% if speaker %}
             <section class="session__speaker">
               <div>
                 <h2>Session Speaker</h2>
@@ -118,7 +117,8 @@ layout: world/default
                   src="{{ speaker.image_path }}"
                   alt="{{ speaker.first_name }}'s Profile Picture">
               </figure>
-          </section>
+            </section>
+          {% endif %}
         </article>
       </bordered-container>
 

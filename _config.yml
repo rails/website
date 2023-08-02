@@ -24,7 +24,7 @@ collections:
     output: true
     permalink: "/world/speakers/:name"
   world_sessions:
-    output: false
+    output: true
     permalink: "/world/agenda/:path"
 
 

@@ -59,3 +59,12 @@ summary::-webkit-details-marker {
 .hidden {
   display: none !important;
 }
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}

@@ -1,15 +1,33 @@
 <section class="sponsors">
-  <div class="sponsors__logos">
-    {% for i in (1..5) %}
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M9 15l6-6"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M13 16l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M8 11l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M19.25 12c0 4-3.25 7.25-7.25 7.25 -4.01 0-7.25-3.25-7.25-7.25 0-4.01 3.24-7.25 7.25-7.25 4 0 7.25 3.24 7.25 7.25Z"></path></svg>
-    {% endfor %}
-  </div>
-  <div class="sponsors__logos sponsors__logos--small">
-    {% for i in (1..20) %}
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M9 15l6-6"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M13 16l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M8 11l3-3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M19.25 12c0 4-3.25 7.25-7.25 7.25 -4.01 0-7.25-3.25-7.25-7.25 0-4.01 3.24-7.25 7.25-7.25 4 0 7.25 3.24 7.25 7.25Z"></path></svg>
-    {% endfor %}
-  </div>
   <h2>Thank You Sponsors!</h2>
   <br>
   <p>Rails World wouldn't be possible without the generous support of Rails World sponsors and Rails Foundation members. Visit them in the Sponsor Lounge and throughout the event.</p>
+
+  <div class="sponsors__frame">
+    <bordered-container>
+      <flex-container>
+        <ul class="sponsors__logos" role="group" aria-label="Platinum Sponsors">
+          {% for sponsor in site.data.world.sponsors.platinum %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--medium" role="group" aria-label="Gold Sponsors">
+          {% for sponsor in site.data.world.sponsors.gold %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--small" role="group" aria-label="Silver Sponsors">
+          {% for sponsor in site.data.world.sponsors.silver %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+      </flex-container>
+    </bordered-container>
+  </div>
 </section>
