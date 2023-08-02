@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Host Your Podcast at Rails World with Buzzsprout"
+title: "Host your podcast at Rails World with Buzzsprout"
 categories: news
 author: The Rails Foundation
 published: true
