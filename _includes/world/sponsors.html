@@ -1,15 +1,33 @@
 <section class="sponsors">
-  <div class="sponsors__logos">
-    {% for sponsor in site.data.world.sponsors.primary %}
-      <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
-    {% endfor %}
-  </div>
-  <div class="sponsors__logos sponsors__logos--small">
-    {% for sponsor in site.data.world.sponsors.secondary %}
-      <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
-    {% endfor %}
-  </div>
   <h2>Thank You Sponsors!</h2>
   <br>
   <p>Rails World wouldn't be possible without the generous support of Rails World sponsors and Rails Foundation members. Visit them in the Sponsor Lounge and throughout the event.</p>
+
+  <div class="sponsors__frame">
+    <bordered-container>
+      <flex-container>
+        <ul class="sponsors__logos" role="group" aria-label="Platinum Sponsors">
+          {% for sponsor in site.data.world.sponsors.platinum %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--medium" role="group" aria-label="Gold Sponsors">
+          {% for sponsor in site.data.world.sponsors.gold %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--small" role="group" aria-label="Silver Sponsors">
+          {% for sponsor in site.data.world.sponsors.silver %}
+            <li>
+              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+            </li>
+          {% endfor %}
+        </ul>
+      </flex-container>
+    </bordered-container>
+  </div>
 </section>
