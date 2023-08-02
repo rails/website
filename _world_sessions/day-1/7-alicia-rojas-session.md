@@ -3,7 +3,7 @@ title: Building an Offline Experience with a Rails-powered PWA
 speaker: alicia-rojas.md
 time: 14:15 - 14:45
 location: Track 1
-running_order: 12
+running_order: 11
 ---
 
 Rails applications can be easily enhanced with PWA (Progressive Web Applications) functionalities thanks to the latest changes on the way the client-side is managed. This creates a great opportunity to reach non-conventional audiences (i.e.: people that lack a stable internet connection), and generate a positive impact in their lives with creative solutions.

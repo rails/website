@@ -3,7 +3,7 @@ title: Guardrails - Keeping Customer Data Separate in a Multi Tenant System
 speaker: miles-mcguire.md
 time: 14:15 - 14:45
 location: Track 2
-running_order: 13
+running_order: 12
 ---
 
 Many companies are built upon a multitenant architecture. This means that all customers share the same storage and computing resources: databases, caches, search engines, etc. An individual workspace’s data is isolated and made invisible to others at runtime. This is achieved by using logical safeguards, the most common being: query time filtering using a customers’s unique ID.
