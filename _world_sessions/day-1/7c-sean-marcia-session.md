@@ -3,7 +3,7 @@ title: Workshop - AI Driven Development
 speaker: sean-marcia.md
 time: 14:45 - 16:15
 location: Workshop Hall
-running_order: 11
+running_order: 13
 ---
 
 Presented by Cynthia Lo and Sean Marcia. This workshop will be given once per day.
