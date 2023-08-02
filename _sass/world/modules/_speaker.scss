@@ -70,6 +70,17 @@
       text-decoration-color: var(--red);
       transform: none;
     }
+
+    p {
+      padding-bottom: unset;
+      display: flex;
+      align-items: center;
+      gap: var(--space-small);
+    }
+
+    svg {
+      display: inline-block;
+    }
   }
 
   content-card {
