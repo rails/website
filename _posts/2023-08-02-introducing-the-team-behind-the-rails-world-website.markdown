@@ -31,5 +31,5 @@ While there is still work to complete on the Rails World website, this team’s 
 
 __What's next for Rails World:__
 - Stay tuned: in a few days we will publish the full agenda with session abstracts.
-- The Agency of Learning team has started work on a [conference app](/2023/5/30/rails-foundation-and-agency-of-learning-partner-for-event-app\) specially built for Rails World. We will inform all registered attendees how to access the app in September. 
+- The Agency of Learning team has started work on a [conference app](/2023/5/30/rails-foundation-and-agency-of-learning-partner-for-event-app) specially built for Rails World. We will inform all registered attendees how to access the app in September. 
 - <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ">Sponsorship opportunities</a> will remain available for just two more weeks. <a href="mailto:sponsors@rubyonrails.org">Get in touch</a> by August 15 if you would like to discuss how your company can help make Rails World an unforgettable experience.
