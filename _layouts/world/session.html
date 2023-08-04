@@ -40,18 +40,20 @@ layout: world/default
       <bordered-container>
         <article>
           <section class="session__info">
-            <h1 id="session_title">{{ page.title }}</h1>
-            <br>
-
-            {{ content }}
-
-            <br>
-            <ul>
-              <li>{% include world/icons/clock.html %} {{ page.time }}</li>
-              <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
-              <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
-            </ul>
+            <flex-container>
+              <h1 id="session_title">{{ page.title }}</h1>
+              <flex-container>
+                  <div class="session__content">{{ content }}</div>
+                  <column-separator></column-separator>
+                  <ul>
+                    <li>{% include world/icons/clock.html %} {{ page.time }}</li>
+                    <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
+                    <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
+                  </ul>
+              </flex-container>
+            </flex-container>
           </section>
+          <br>
           {% if speaker %}
             <section class="session__speaker">
               <div>
@@ -75,7 +77,7 @@ layout: world/default
                     <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
                   </a>
                     <p class="session__speaker__role">
-                      {{ speaker.role }} of {{ speaker.company }}
+                      {{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{% endif %}
                     </p>
                   </div>
                 </flex-container>
