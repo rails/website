@@ -8,7 +8,7 @@ date: 2023-08-04
 ---
 
 
-Hi! It's [Vipul](https://www.saeloun.com/team/vipul) bringing you the latest from this week's changes in the Rails codebase.
+Hi! This is [Vipul](https://www.saeloun.com/team/vipul) bringing you the latest from this week's changes in the Rails codebase.
 
 [Introduce config.dom_testing_default_html_version and use Rails::Dom::Testing to parse HTML in test helpers](https://github.com/rails/rails/pull/48682)  
 
