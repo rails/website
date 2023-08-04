@@ -83,6 +83,7 @@
 
     a {
       color: var(--purple-dark);
+      overflow-wrap: anywhere;
 
       &:hover {
         text-decoration-color: var(--purple-dark);

@@ -32,6 +32,11 @@
       height: 100%;
     }
 
+    h1 {
+      overflow-wrap: break-word;
+      padding-bottom: var(--space-small);
+    }
+
     p + ul {
 
       list-style-type: disc;
