@@ -21,8 +21,8 @@
     }
 
     a {
-      padding-top: var(--space-medium);
-      padding-bottom: var(--space-medium);
+      padding-top: var(--space-small);
+      padding-bottom: var(--space-small);
     }
 
     a:hover {
@@ -32,6 +32,19 @@
 
     @media only screen and (max-width: 300px) {
       padding: 0;
+    }
+
+    hgroup {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-x-small);
+      flex-direction: column;
+
+      h2:last-child {
+        @media only screen and (max-width: 780px) {
+          display: none;
+        }
+      }
     }
 
     h2 {
