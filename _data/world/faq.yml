@@ -16,8 +16,7 @@
 
     - question: Will Rails World be livestreamed?
       answer: >
-        We hope to be able to offer a livestream for those who are unable to
-        attend in person. More information will be shared soon!
+        Update, August 2023: We will not be livestreaming Rails World this year. We hope to add a livestream to future editions.
 
     - question: Will the talks be recorded/published?
       answer: >
@@ -33,7 +32,8 @@
         comments under sessions for other attendees or speakers.
 
         [Read more here](https://rubyonrails.org/2023/5/30/rails-foundation-and-agency-of-learning-partner-for-event-app).
-        We will also have a Slack channel for updates, announcements, and a means for attendees to connect with each other.
+       
+        We will also have a Slack channel for updates, announcements, and a means for attendees to connect with each other. Registered attendees will be invited to both the Slack and conference app in early September.
 
     - question: Should I stay for the weekend after Rails World?
       answer: >
@@ -99,15 +99,8 @@
 
     - question: Do you have a scholarship or financial support program?
       answer: |-
-        We are currently looking for a sponsor to launch a robust
-        scholarship program, and will share more details soon.
 
-        However, if you are currently unemployed, or find the cost
-        of attending Rails World prohibitive, please get in touch at
-        [world@rubyonrails.org](mailto:world@rubyonrails.org).
-
-        We have set aside a limited number of tickets to assist in situations
-        such as this.
+        Update, August 2023: We are no longer accepting applications for a scholarship to Rails World. Those who have requested funding will receive an answer as soon as possible.
 
 
 - category: Venues & Hotels
@@ -152,6 +145,8 @@
           * Ascending to the first floor where the workshops are held.
           * All other programmed activity will take place on the ground level after you enter through the lobby.
 
+        <a href="https://www.youtube.com/watch?v=vnkTZCWa-Ws">Here is a demo</a> on how the lift at the entry of the venue works. While the video shows an employee assisting with the lift, it was designed to be self-service for users. 
+
     - question: How much walking will be required?
       answer: |-
         While the building is fairly long, most of the program will take
@@ -177,10 +172,6 @@
         the screens for better viewing.
 
         Workshops will not have closed captioning.
-
-    - question: Will the livestream have closed captioning?
-      answer: >
-        This depends on if we offer a livestream. More info coming soon!
 
     - question: Are food and drinks included? Can special dietary requirements be accommodated?
       answer: |-
