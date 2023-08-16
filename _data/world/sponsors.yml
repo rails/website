@@ -1,15 +1,20 @@
 platinum:
   - name: AppSignal
     logo: /assets/world/images/sponsors/RW-platinum-appsignal-logo.png
+    url: https://www.appsignal.com/
 
 gold:
   - name: Shopify
     logo: /assets/world/images/sponsors/RW-gold-logo-shopify.svg
+    url: https://www.shopify.com/
 
 silver:
   - name: Agency of Learning
     logo: /assets/world/images/sponsors/RW-logo-agency-of-learning.png
+    url: https://agencyoflearning.com/
   - name: Cedarcode
     logo: /assets/world/images/sponsors/RW-logo-cedarcode.svg
+    url: https://www.cedarcode.com/
   - name: Buzzsprout
     logo: /assets/world/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
