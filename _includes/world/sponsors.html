@@ -9,21 +9,21 @@
         <ul class="sponsors__logos" role="group" aria-label="Platinum Sponsors">
           {% for sponsor in site.data.world.sponsors.platinum %}
             <li>
-              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
             </li>
           {% endfor %}
         </ul>
         <ul class="sponsors__logos sponsors__logos--medium" role="group" aria-label="Gold Sponsors">
           {% for sponsor in site.data.world.sponsors.gold %}
             <li>
-              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
             </li>
           {% endfor %}
         </ul>
         <ul class="sponsors__logos sponsors__logos--small" role="group" aria-label="Silver Sponsors">
           {% for sponsor in site.data.world.sponsors.silver %}
             <li>
-              <img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}'s Logo">
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
             </li>
           {% endfor %}
         </ul>
