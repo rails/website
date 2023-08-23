@@ -1,5 +1,5 @@
 ---
-title: Sponsored Drinks
+title: Drinks sponsored by Clear Code Wizards
 speaker:
 time: 17:00 - 20:00
 location: TBD
