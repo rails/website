@@ -12,18 +12,30 @@ gold:
     url: https://www.shopify.com/
 
 silver:
+  - name: Crunchy Data
+    logo: /assets/world/images/sponsors/RW-logo-crunchy-data.svg
+    url: https://www.crunchydata.com/
   - name: GitHub
     logo: /assets/world/images/sponsors/RW-logo-github.svg
     url: https://www.github.com/
+  - name: Zilverline
+    logo: /assets/world/images/sponsors/RW-logo-zilverline.svg
+    url: https://www.zilverline.com/
   - name: Agency of Learning
     logo: /assets/world/images/sponsors/RW-logo-agency-of-learning.png
     url: https://agencyoflearning.com/
   - name: Buzzsprout
     logo: /assets/world/images/sponsors/RW-logo-buzzsprout.svg
     url: https://www.buzzsprout.com/
+  - name: LeWagon
+    logo: /assets/world/images/sponsors/RW-logo-lewagon.svg
+    url: https://www.lewagon.com/
   - name: Cedarcode
     logo: /assets/world/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: Rompslomp
+    logo: /assets/world/images/sponsors/RW-logo-rompslomp2.svg
+    url: https://rompslomp.nl/
   - name: ClickFunnels
     logo: /assets/world/images/sponsors/RW-logo-clickfunnels.svg
     url: https://www.clickfunnels.com/
@@ -45,6 +57,9 @@ silver:
   - name: Procore
     logo: /assets/world/images/sponsors/RW-logo-procore.svg
     url: https://procore.com/
+  - name: 37signals
+    logo: /assets/world/images/sponsors/RW-logo-37signals.svg
+    url: https://37signals.com/
   - name: Planet Argon
     logo: /assets/world/images/sponsors/RW-logo-planet-argon.png
     url: https://planetargon.com/
