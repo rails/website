@@ -2,7 +2,7 @@
 first_name: Yaroslav
 last_name: Shmarov
 image_path: /assets/world/images/speakers/y-shmarov.jpg
-role: Owner
+role: Ruby on Rails mentor
 company: SupeRails
 keynote:
 github: https://github.com/yshmarov
