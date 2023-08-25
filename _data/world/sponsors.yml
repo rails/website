@@ -10,6 +10,9 @@ gold:
   - name: Shopify
     logo: /assets/world/images/sponsors/RW-logo-shopify.svg
     url: https://www.shopify.com/
+  - name: ViaEurope
+    logo: /assets/world/images/sponsors/RW-logo-viaeurope.svg
+    url: https://www.viaeurope.com/
 
 silver:
   - name: Crunchy Data
@@ -33,6 +36,9 @@ silver:
   - name: Cedarcode
     logo: /assets/world/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: JetBrains
+    logo: /assets/world/images/sponsors/RW-logo-jetbrains.svg
+    url: https://www.jetbrains.com/
   - name: Rompslomp
     logo: /assets/world/images/sponsors/RW-logo-rompslomp2.svg
     url: https://rompslomp.nl/
