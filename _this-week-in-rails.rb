@@ -20,6 +20,7 @@
 
 author = ARGV[0] || ENV["USER"]
 author_url = ARGV[1] || "https://github.com/#{author}"
+days_ago = ENV["DAYS_AGO"]&.to_i || 7
 
 require 'uri'
 require 'open-uri'
@@ -28,7 +29,7 @@ require 'date'
 require 'nokogiri'
 
 end_date = Date.today
-start_date = end_date - 7
+start_date = end_date - days_ago
 
 class Contributors
   attr_accessor :body, :start_date, :end_date, :total
