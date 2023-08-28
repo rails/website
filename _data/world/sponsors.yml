@@ -21,6 +21,9 @@ silver:
   - name: GitHub
     logo: /assets/world/images/sponsors/RW-logo-github.svg
     url: https://www.github.com/
+  - name: MagmaLabs
+    logo: /assets/world/images/sponsors/RW-logo-magmalabs.svg
+    url: https://www.magmalabs.io/ 
   - name: Zilverline
     logo: /assets/world/images/sponsors/RW-logo-zilverline.svg
     url: https://www.zilverline.com/
