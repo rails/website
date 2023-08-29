@@ -1,7 +1,7 @@
 ---
 title: WNB.rb Breakfast sponsored by Shopify
 speaker: 
-time: 08:00 - 10:00
+time: 08:00 - 9:30
 location: TBD
 ---
 
