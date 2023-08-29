@@ -1,7 +1,7 @@
 ---
 title: Rails 20th Anniversary Celebration
 speaker:
-time: 17:15 - 19:00
+time: 17:30 - 19:00
 location: Sponsor Lounge
 running_order: 18
 ---
