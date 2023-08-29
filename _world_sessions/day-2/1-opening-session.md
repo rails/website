@@ -1,7 +1,7 @@
 ---
 title: Doors Open
 speaker:
-time: 09:00 - 10:00
+time: 09:00 - 9:45
 location: Sponsor Lounge
 running_order: 1
 ---
