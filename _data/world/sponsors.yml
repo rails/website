@@ -24,6 +24,9 @@ silver:
   - name: MagmaLabs
     logo: /assets/world/images/sponsors/RW-logo-magmalabs.svg
     url: https://www.magmalabs.io/ 
+  - name: Wafris
+    logo: /assets/world/images/sponsors/RW-logo-wafris.svg
+    url: https://wafris.org/
   - name: Zilverline
     logo: /assets/world/images/sponsors/RW-logo-zilverline.svg
     url: https://www.zilverline.com/
@@ -36,9 +39,15 @@ silver:
   - name: LeWagon
     logo: /assets/world/images/sponsors/RW-logo-lewagon.svg
     url: https://www.lewagon.com/
+  - name: Dell
+    logo: /assets/world/images/sponsors/RW-logo-dell.svg
+    url: https://www.dell.com/
   - name: Cedarcode
     logo: /assets/world/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: GoRails
+    logo: /assets/world/images/sponsors/RW-logo-gorails.svg
+    url: https://gorails.com/
   - name: JetBrains
     logo: /assets/world/images/sponsors/RW-logo-jetbrains1.svg
     url: https://www.jetbrains.com/
@@ -75,3 +84,6 @@ silver:
   - name: Planet Argon
     logo: /assets/world/images/sponsors/RW-logo-planet-argon.png
     url: https://planetargon.com/
+  - name: BigBinary
+    logo: /assets/world/images/sponsors/RW-logo-bigbinary.svg
+    url: https://www.bigbinary.com/
