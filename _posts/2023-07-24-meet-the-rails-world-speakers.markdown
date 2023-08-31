@@ -17,6 +17,7 @@ In alphabetical order:
 - [Aaron Patterson](/world/speakers/aaron-patterson)
 - [Adam Wathan](/world/speakers/adam-wathan)
 - [Adrianna Chang](/world/speakers/adrianna-chang)
+- [Alicia Rojas](/world/speakers/alicia-rojas)
 - [Breno Gazzola](/world/speakers/breno-gazzola)
 - [Brian Scanlan](/world/speakers/brian-scanlan)
 - [Chris Oliver](/world/speakers/chris-oliver)
