@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Omit webdrivers gem from new apps Gemfile, support for filtering tests by line range and more!"
+title: "Infer primary_key: :id on associations with composite primary key models, add validation option for enum and more!"
 categories: news
 author: vipulnsward
 published: true
