@@ -11,6 +11,7 @@ date: 2023-09-08
 Hi! This is [Vipul](https://www.saeloun.com/team/vipul) bringing you the latest from this week's changes in the Rails codebase.
 
 [Infer primary_key: :id on associations with composite primary key models](https://github.com/rails/rails/pull/49113)
+
 Prior to this change, you'd need to do the following to set up associations for composite primary key models:
 
 ```ruby
@@ -106,12 +107,13 @@ Post.where(id: 1...3).unscope(where: :id).to_sql # "SELECT `posts`.* FROM `posts
 
 This change fixes `change_column` not setting `precision: 6` on `datetime` columns when using 7.0+ Migrations and SQLite.
 
-[Change has_secure_token default to on: :initialize ](https://github.com/rails/rails/pull/48912)
+[Change has_secure_token default to on: :initialize](https://github.com/rails/rails/pull/48912)
 
 With the changes made in [previously](https://github.com/rails/rails/pull/47420), `has_secure_token declarations` can be configured to execute in an `after_initialize` callback. 
 This commit adds a new Rails 7.1 default: generate all `has_secure_token` values when their corresponding models are initialized.
 
-[Fix: simple_format with blank wrapper_tag option returns plain html tag.](https://github.com/rails/rails/pull/49120)
+[Fix: simple_format with blank wrapper_tag option returns plain html tag](https://github.com/rails/rails/pull/49120)
+
 By default `simple_format` method returns the text wrapped with `<p>`. But if we explicitly specify the `wrapper_tag: nil` in the options, it used to return the text wrapped with `<></>` tag.
 This change fixes the behaviour to now wrap it in `<p>` instead.
 
