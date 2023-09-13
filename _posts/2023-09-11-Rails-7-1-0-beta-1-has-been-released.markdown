@@ -4,7 +4,7 @@ title: 'Rails 7.1 Beta 1: Dockerfiles, BYO Authentication, More Async Queries, a
 categories: releases
 author: rafaelfranca
 published: true
-date: 2023-09-11 21:00:00 -04:00
+date: 2023-09-12 20:45:00 -04:00
 ---
 
 [Rails World](https://rubyonrails.org/world) is fast approaching and we're gearing up to celebrate the 20th anniversary of Rails in style with the first beta release of Rails 7.1! There has been [over five thousand commits](https://github.com/rails/rails/compare/v7.0.8...main) made by [over 800 contributors](https://contributors.rubyonrails.org/edge/contributors) since Rails 7.0, so this release is packed with new features and improvements.
@@ -13,7 +13,7 @@ Please help us test all this new stuff, so we can ensure a solid final release o
 
 ## Dockerfiles for new applications
 
-Rails will now generate all the Dockerfiles you need to deploy your application using [Kamal](https://kamal-deploy.org), or any other Docker-based deployment setup, when you run `rails new`. These Dockerfiles are tuned for production use with proper caching layers, multi-stage building to minimize image sizes, and all the dependencies needed whether you use a JavaScript build environment or not. 
+Rails will now generate all the Dockerfiles you need to deploy your application using [Kamal](https://kamal-deploy.org), or any other Docker-based deployment setup, when you run `rails new`. These Dockerfiles are tuned for production use with proper caching layers, multi-stage building to minimize image sizes, and all the dependencies needed whether you use a JavaScript build environment or not.
 
 ## Build your own authentication improvements
 
@@ -78,7 +78,7 @@ user.update(password: "railsGetsEvenBetter", password_challenge: "railsrocks") #
 ## More async queries for Active Record
 
 The [support for asynchronous queries](https://github.com/rails/rails/pull/44446) has been vastly expanded in Active Record.
-This makes it easier to run multiple, slow queries in parallel, especially those focused on calculations, while allowing the handling 
+This makes it easier to run multiple, slow queries in parallel, especially those focused on calculations, while allowing the handling
 of the request to proceed. There are new methods for async aggregates (such as `count`, `sum`, etc.), methods returning a single record, and anything
 other than a `Relation`:
 
@@ -114,6 +114,11 @@ A [new configuration method, `config.autoload_lib(ignore:)`](https://edgeapi.rub
 has been introduced. This method is used to enhance the autoload paths of applications by including the
 `lib` directory, which is not included by default. Also, `config.autoload_lib(ignore: %w(assets tasks))`
 is generated for new applications. (This feature is not available for engines.)
+
+## Support to Bun
+
+You can now generate new applications using [Bun](https://bun.sh/) as your JavaScript runtime. To do so, you can pass
+the `--javascript=bun` option to `rails new`.
 
 ## Celebrating this release and looking towards the next
 
