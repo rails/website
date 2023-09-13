@@ -125,4 +125,4 @@ the `--javascript=bun` option to `rails new`.
 So Rails 7.1 is packed with new features and improvements, but we are already thinking about the next release. We will be sharing some of our ideas at Rails World,
 and we are looking forward to hearing yours as well. Let's celebrate Rails and [work together](https://contributors.rubyonrails.org/contributors/in-time-window/this-year) to make it even better!
 
-In the meantime, please give a try to Rails 7.1.0.beta1, and let us know what you think.
+In the meantime, please give a try to Rails 7.1.0.beta1, [and let us know what you think](https://github.com/rails/rails/issues/new).
