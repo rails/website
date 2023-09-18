@@ -17,7 +17,7 @@ Here are some of the projects that you could be working on:
 - Creating a page of case studies highlighting how companies use and scale with Rails.
 - Creating a navigation bar that works across all Rails web properties.
 - Designing the space where video tutorials could live on rubyonrails.org.
-- Desiging the landing/starting page for all documentation (guides, tutorials, learn, API, etc)
+- Designing the landing/starting page for all documentation (guides, tutorials, learn, API, etc)
 
 So: are you passionate about UX design? Do you have a knack for simplifying complex information? Are you a long-time fan/user of Rails? If so, read on.
 
