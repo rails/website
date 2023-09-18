@@ -67,7 +67,7 @@ Requirements:
 
 __How to Apply:__
 
-To apply for the technical writer position, please submit your resume, portfolio, and a brief cover letter explaining your interest and relevant experience. We will review applications on a rolling basis until Oct 15, 2023. As this is a freelance role, your proven experience will drive our decision, and e will discuss projects, timelines, and request the fees of the shortlisted candidates.
+To apply for the technical writer position, please submit your resume, portfolio, and a brief cover letter explaining your interest and relevant experience. We will review applications on a rolling basis until Oct 15, 2023. As this is a freelance role, your proven experience will drive our decision, and we will discuss projects, timelines, and request the fees of the shortlisted candidates.
 
 <a href="https://rails-foundation.neetoform.com/04c26724b24655648520">Apply as a Technical Writer</a>
 
