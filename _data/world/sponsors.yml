@@ -45,6 +45,9 @@ silver:
   - name: Cedarcode
     logo: /assets/world/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: zapfloor
+    logo: /assets/world/images/sponsors/RW-logo-zapfloor.svg
+    url: https://www.zapfloor.com/
   - name: GoRails
     logo: /assets/world/images/sponsors/RW-logo-gorails.svg
     url: https://gorails.com/
