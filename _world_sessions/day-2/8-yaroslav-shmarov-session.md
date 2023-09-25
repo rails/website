@@ -6,10 +6,13 @@ location: Track 1
 running_order: 13
 ---
 
-During the talk we will:
-- See a list of most common frontend problems that can be solved with Hotwire (pagination, search and filtering, modals, live updates, dynamic forms, drag & drop, live previews, lazy loading & more), and the code overview required to achieve these behaviours;
-- Overview of the large ecosystem of Hotwire tools (turbo streams, turbo frames, StimulusJS, kredis, RequestJS, Turbo Power, Stimulus Use, Stimulus Components, Cubism & more), when to use and how to combine these tools;
+Let’s see how some of the most common frontend problems can be solved with Hotwire!
+
+We will cover:
+- Pagination, search and filtering, modals, live updates, dynamic forms, inline editing, drag & drop, live previews, lazy loading & more
+- How to achieve more by combining tools (Frames + Streams, StimulusJS, RequestJS, Kredis & more)
 - What are the limits of Hotwire?
 - How to write readable and maintainable Hotwire code?
+- Bad practices
 
 By the end of the talk you will have an understanding of the range of problems that Hotwire and it’s ecosystem can solve to deliver a seamless frontend experience.
