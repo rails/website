@@ -35,7 +35,7 @@ As a Rails World attendee, I pledge to:
 
 * Be considerate and patient when offering or seeking assistance.
 
-* Immediately contact Rails World staff if I see appropriate or harassing behavior amongst other attendees.
+* Immediately contact Rails World staff if I see inappropriate or harassing behavior amongst other attendees.
 <br>
 
 ## Enforcement ##
