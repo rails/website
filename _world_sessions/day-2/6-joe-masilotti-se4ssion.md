@@ -10,4 +10,4 @@ Turbo Native gives Rails developers superpowers. It enables us to launch low mai
 
 The framework renders your existing mobile web HTML inside of a native “shell.” But getting started isn’t easy. You still have to write some native Swift code in Xcode. And there isn’t much documentation available about the right way to do things.
 
-During this talk I’ll walk you through all of that. You’ll learn how to build a Turbo Native iOS app from scratch along with the benefits and pain points that come with it. We’ll dive into ways to make the app feel more native, how to handle authentication, and how to integrate with native Swift SDKs.
+During this talk I’ll walk you through all of that. You’ll learn how to build a Turbo Native iOS app from scratch along with the benefits and pain points that come with it. We’ll dive into ways to make the app feel more native, how to integrate with native Swift SDKs, and more.
