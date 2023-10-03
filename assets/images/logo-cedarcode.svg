@@ -1,42 +1,42 @@
-<svg width="270" height="41" viewBox="0 0 270 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg fill="#000" width="190" height="70" viewBox="0 0 270 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>medium-logo-v2</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(-10160 -258)">
 <clipPath id="clip-0" clip-rule="evenodd">
-<path d="M 10160 258L 10430 258L 10430 299L 10160 299L 10160 258Z" fill="#FFFFFF"/>
+<path d="M 10160 258L 10430 258L 10430 299L 10160 299L 10160 258Z" fill="#000"/>
 </clipPath>
 <g id="medium-logo-v2" clip-path="url(#clip-0)">
 <g id="g4615">
 <g id="path4583">
-<use xlink:href="#path0_fill" transform="matrix(0.694743 0 0 0.694743 10160 258)" fill="#222222"/>
+<use xlink:href="#path0_fill" transform="matrix(0.694743 0 0 0.694743 10160 258)" fill="#000"/>
 </g>
 <g id="g4613">
 <g id="path4593">
-<use xlink:href="#path1_fill" transform="matrix(3.3146 0 0 3.3146 10216.3 269.46)" fill="#222222"/>
+<use xlink:href="#path1_fill" transform="matrix(3.3146 0 0 3.3146 10216.3 269.46)" fill="#000"/>
 </g>
 <g id="path4595">
-<use xlink:href="#path2_fill" transform="matrix(3.3146 0 0 3.3146 10240.1 269.459)" fill="#222222"/>
+<use xlink:href="#path2_fill" transform="matrix(3.3146 0 0 3.3146 10240.1 269.459)" fill="#000"/>
 </g>
 <g id="path4597">
-<use xlink:href="#path3_fill" transform="matrix(3.3146 0 0 3.3146 10263.8 260.423)" fill="#222222"/>
+<use xlink:href="#path3_fill" transform="matrix(3.3146 0 0 3.3146 10263.8 260.423)" fill="#000"/>
 </g>
 <g id="path4599">
-<use xlink:href="#path4_fill" transform="matrix(3.3146 0 0 3.3146 10290.5 269.46)" fill="#222222"/>
+<use xlink:href="#path4_fill" transform="matrix(3.3146 0 0 3.3146 10290.5 269.46)" fill="#000"/>
 </g>
 <g id="path4601">
-<use xlink:href="#path5_fill" transform="matrix(3.3146 0 0 3.3146 10315.9 269.658)" fill="#222222"/>
+<use xlink:href="#path5_fill" transform="matrix(3.3146 0 0 3.3146 10315.9 269.658)" fill="#000"/>
 </g>
 <g id="path4603">
-<use xlink:href="#path6_fill" transform="matrix(3.3146 0 0 3.3146 10358 269.46)" fill="#222222"/>
+<use xlink:href="#path6_fill" transform="matrix(3.3146 0 0 3.3146 10358 269.46)" fill="#000"/>
 </g>
 <g id="path4605">
-<use xlink:href="#path7_fill" transform="matrix(3.3146 0 0 3.3146 10383 260.423)" fill="#222222"/>
+<use xlink:href="#path7_fill" transform="matrix(3.3146 0 0 3.3146 10383 260.423)" fill="#000"/>
 </g>
 <g id="path4607">
-<use xlink:href="#path8_fill" transform="matrix(3.3146 0 0 3.3146 10334.2 269.46)" fill="#222222"/>
+<use xlink:href="#path8_fill" transform="matrix(3.3146 0 0 3.3146 10334.2 269.46)" fill="#000"/>
 </g>
 <g id="path4609">
-<use xlink:href="#path9_fill" transform="matrix(3.3146 0 0 3.3146 10409 269.457)" fill="#222222"/>
+<use xlink:href="#path9_fill" transform="matrix(3.3146 0 0 3.3146 10409 269.457)" fill="#000"/>
 </g>
 </g>
 </g>
