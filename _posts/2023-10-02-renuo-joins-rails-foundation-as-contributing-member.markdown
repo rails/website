@@ -13,7 +13,7 @@ We are happy to give a warm welcome to <a href="https://www.renuo.ch/">Renuo</a>
 
 Renuo is a web agency based in Zurich, Switzerland, that has worked with Ruby on Rails since its foundation in 2011, focusing mostly on the Swiss market. They are the first Swiss company to join the Rails Foundation, and we are excited to have them!
 
-With solid roots in open source, Renuo has a company culture focused on giving back to the open-source community. They support events such as the Railshöck meetup in Zürich and <a href="https://helvetic-ruby.ch/">Heveltic Ruby</a>, and several Renuo employees teach at Le Wagon's coding bootcamp. They also donate 10% of their annual profit to charities and open-source projects, all of which the company decides on together.
+With solid roots in open source, Renuo has a company culture focused on giving back to the open-source community. They support events such as the Railshöck meetup in Zürich and <a href="https://helvetic-ruby.ch/">Helvetic Ruby</a>, and several Renuo employees teach at Le Wagon's coding bootcamp. They also donate 10% of their annual profit to charities and open-source projects, all of which the company decides on together.
 
 In addition to the financial support of <a href="https://github.com/orgs/renuo/sponsoring">numerous projects</a> each year, Renuo also maintains well-known libraries such as <a href="https://github.com/CanCanCommunity/cancancan">cancancan</a>. A lot of their <a href="https://github.com/renuo">own work</a>, their <a href="https://www.renuo.ch/blog/the-renuo-flow-or-our-definition-of-done">internal workflow</a>, and their <a href="https://github.com/renuo/applications-setup-guide">Applications Setup Guide</a> are also open-sourced. 
 
