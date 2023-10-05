@@ -89,6 +89,7 @@ other than a `Relation`:
 - `async_average`
 - `async_pluck`
 - `async_pick`
+- `async_ids`
 - `async_find_by_sql`
 - `async_count_by_sql`
 
