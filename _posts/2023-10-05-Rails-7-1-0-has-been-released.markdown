@@ -117,7 +117,7 @@ has been introduced. This method is used to enhance the autoload paths of applic
 `lib` directory, which is not included by default. Also, `config.autoload_lib(ignore: %w(assets tasks))`
 is generated for new applications. (This feature is not available for engines.)
 
-## Support to Bun
+## Support for Bun
 
 You can now generate new applications using [Bun](https://bun.sh/) as your JavaScript runtime. To do so, you can pass
 the `--javascript=bun` option to `rails new`.
