@@ -10,7 +10,7 @@ date: 2023-10-05 10:10:00 +02:00
 [Rails World](https://rubyonrails.org/world) just started and we are getting together with the community in person
 to celebrate of the 20th anniversary of Rails and the release of Rails 7.1.
 
-There has been [over five thousand commits](https://github.com/rails/rails/compare/v7.0.8...main) made by [over 800 contributors](https://contributors.rubyonrails.org/edge/contributors) since Rails 7.0, so this release is packed with new features and improvements.
+In this release there has been [over five thousand commits](https://github.com/rails/rails/compare/v7.0.8...7-1-stable) made by [over 800 contributors](https://contributors.rubyonrails.org/releases/7-1-0/contributors) since Rails 7.0, so it is packed with new features and improvements.
 
 ## Dockerfiles for new applications
 
@@ -123,6 +123,6 @@ the `--javascript=bun` option to `rails new`.
 
 ## Celebrating this release and looking towards the next
 
-Rails 7.1 is released but we are already thinking about the next release. We will be sharing some of our ideas at Rails World, and we are going to be engaging with the community in person to discuss ideas and collect some feedback.
+Rails 7.1 is out, but we are already thinking about the next release. We will be sharing some of our ideas at Rails World, and we are going to be engaging with the community in person to discuss ideas and collect some feedback.
 
 We are looking forward to what is coming next, and we hope you are too!
