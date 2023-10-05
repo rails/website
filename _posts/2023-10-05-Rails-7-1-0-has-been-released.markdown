@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Rails 7.1 Beta 1: Dockerfiles, BYO Authentication, More Async Queries, and more!'
+title: 'Rails 7.1: Dockerfiles, BYO Authentication, More Async Queries, and more!'
 categories: releases
 author: rafaelfranca
 published: true
-date: 2023-10-05 9:30:00 +02:00
+date: 2023-10-05 10:10:00 +02:00
 ---
 
 [Rails World](https://rubyonrails.org/world) just started and we are getting together with the community in person
