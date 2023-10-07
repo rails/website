@@ -90,3 +90,6 @@ silver:
   - name: BigBinary
     logo: /assets/world/images/sponsors/RW-logo-bigbinary.svg
     url: https://www.bigbinary.com/
+  - name: Renuo
+    logo: /assets/images/logo-renuo.svg
+    url: https://www.renuo.ch/
