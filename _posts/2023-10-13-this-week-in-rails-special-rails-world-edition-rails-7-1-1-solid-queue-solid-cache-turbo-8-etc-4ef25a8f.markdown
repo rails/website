@@ -4,7 +4,7 @@ title: "Special Rails World Edition: Rails 7.1.1, Solid Queue, Solid Cache, Turb
 categories: news
 author: siaw23
 published: true
-date: 2023-10-14
+date: 2023-10-13
 ---
 
 Rails World concluded last week, and calling it a success would be an understatement. With 29 exceptional speakers and a diverse audience of over 700 attendees representing various corners of the globe, Rails Foundation, under the leadership of Executive Director [Amanda Perino](https://twitter.com/AmandaBPerino), executed an inaugural Rails conference that exuded the maturity and excellence of an event in its 100th iteration.
