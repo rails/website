@@ -40,11 +40,11 @@ In case you missed it, here are some of the other highlights:
 
 **Opening & Closing Keynotes**
 
-**DHH** delivered the Opening Keynote and covered a lot of ground, including introducing 7 major tools in support of The One Person Framework: Propshaft, Turbo 8, Strada, Solid Cache, Solid Queue, Mission Control, and Kamal. Watch it <a href="">here</a>.
+**DHH** delivered the Opening Keynote and covered a lot of ground, including introducing 7 major tools in support of The One Person Framework: Propshaft, Turbo 8, Strada, Solid Cache, Solid Queue, Mission Control, and Kamal. Watch it <a href="https://www.youtube.com/watch?v=iqXjGiQ_D-A&t=67s">here</a>.
 
-**Eileen Uchitelle** delivered the first Closing Keynote on the philosophy behind Rails - a sprinkling of magic, but also a good dose of common patterns to build agnostic and beautiful interfaces. Watch it <a href="">here</a>.
+**Eileen Uchitelle** delivered the first Closing Keynote on the philosophy behind Rails - a sprinkling of magic, but also a good dose of common patterns to build agnostic and beautiful interfaces. Watch it <a href="https://www.youtube.com/watch?v=nvuPisDQ1hI">here</a>.
 
-**Aaron Patterson** closed Rails World with a keynote where took a look at how language servers work, how we can improve language server support in Rails, and how this will increase our productivity as Rails developers. Find it online <a href="">here</a>.
+**Aaron Patterson** closed Rails World with a keynote where he took a look at how language servers work, how we can improve language server support in Rails, and how this will increase our productivity as Rails developers. Find it online <a href="https://www.youtube.com/watch?v=GnqRMQ0iQTg&t=2659s">here</a>.
 
 <img src="/assets/images/RailsWorld2023-eileen.jpg" style="width: 50%"><img src="/assets/images/RailsWorld2023-Aaron.jpg" style="width: 50%">
 
@@ -53,6 +53,8 @@ In case you missed it, here are some of the other highlights:
 Ten of the current 12 Rails Core members sat down with Planet Argon founder and CEO **Robby Russell** to answer questions submitted by the Rails World audience, such as: _How do they decide on which features to add? How should Rails evolve in the future? What does it take to join the Core team?_
 
 Rails Core members present were: **Aaron Patterson**, **Carlos Antonio Da Silva**, **David Heinemeier Hansson**, **Eileen Uchitelle**, **Jean Boussier**, **Jeremy Daer**, **John Hawthorne**, **Matthew Draper**, **Rafael França**, and **Xavier Noria**. 
+
+Watch the full AMA <a href="https://www.youtube.com/watch?v=9GzYoUFIkwE&t=1872s">here</a>.
 
 <img src="/assets/images/RailsWorld2023-CoraAMA.jpg" style="width: 50%"><img src="/assets/images/RailsWorld2023-coreAMA2.jpg" style="width: 50%">
 
