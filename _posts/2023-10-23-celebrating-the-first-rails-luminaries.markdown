@@ -35,11 +35,11 @@ Here are some more thoughts from those who nominated Chris:
 
 >Chris's work with GoRails and his contributions to other critical gems has directly impacted my nearly 5 year long career as a Rails developer. I can directly associate my success and most of my career to the work he did in writing both content, and the community he built around GoRails.
 
-**Rails Lifetime Award 2023: Tobias Lutke**
+**Rails Lifetime Award 2023: Tobias Lütke**
 
 We also introduced a second award category at Rails World: the Rails Lifetime Award, acknowledging individuals whose long-term dedication and impact on the Rails ecosystem have been nothing short of legendary. 
 
-DHH presented this first Rails Lifetime Award to <a href="https://twitter.com/tobi">Tobias Lutke</a>, CEO of <a href="https://www.shopify.com/">Shopify</a> and early Rails Core member.
+DHH presented this first Rails Lifetime Award to <a href="https://twitter.com/tobi">Tobias Lütke</a>, CEO of <a href="https://www.shopify.com/">Shopify</a> and early Rails Core member.
 
 >Tobi exemplifies all the aspirations of Ruby on Rails. The power to pursue a dream as a single developer in the beginning, and taking that dream all the way from Hello World to IPO. The strive for mastery through his tenure on Rails Core, as well as material contributions to the state of our art with Liquid Templates and Delayed Job. 
 >
@@ -60,6 +60,6 @@ Watch the first Rails Luminary Award presentation at Rails World in full here:
 </div>
 <br>
 
-The Rails Foundation extends its heartfelt appreciation and congratulations to both Chris Oliver and Tobias Lutke for their exceptional contributions to the Rails ecosystem. They represent the very essence of what it means to be a part of this community.
+The Rails Foundation extends its heartfelt appreciation and congratulations to both Chris Oliver and Tobias Lütke for their exceptional contributions to the Rails ecosystem. They represent the very essence of what it means to be a part of this community.
 
 And finally, thank you to everyone who submitted nominations. Stay tuned - we will reopen nominations for next year’s Luminary nominations in the coming months.
