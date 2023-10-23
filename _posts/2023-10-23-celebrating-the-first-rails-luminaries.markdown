@@ -4,7 +4,7 @@ title: "Celebrating the first Rails Luminaries: Chris Oliver & Tobias Lütke"
 categories: news
 author: Rails Foundation
 published: true
-date: 2023-10-19
+date: 2023-10-23
 ---
 
 We are thrilled to announce the inaugural winners of the [Rails Luminary Award](/2023/8/8/introducing-rails-luminaries), a new tradition established by the Rails Foundation to honor those who have made outstanding contributions to the Rails ecosystem and have been a positive force in our community. Two awards were presented this year.
