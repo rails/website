@@ -26,7 +26,7 @@ button {
   }
 }
 
-button.tito {
+.button.prime {
   display: inline-block;
   font-family: inherit;
   font-size: var(--type-small);
@@ -51,7 +51,7 @@ a:hover:not(.button) {
   transition: transform 0.05s linear;
 }
 
-.button:hover, button.tito:hover {
+.button:hover, .button.prime:hover {
   background: var(--orange-red);
   color: var(--white);
 }
