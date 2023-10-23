@@ -45,7 +45,7 @@ DHH presented this first Rails Lifetime Award to <a href="https://twitter.com/to
 >
 >In addition, Tobi has proven that Rails is not just a great starting point for the single developer, but also an amazing platform for a multi-billion dollar e-commerce empire operating at Web Scale with thousands of developers. And he continues to lead Shopify's investments into both Ruby and Rails with framework extractions, core member employment, fundamental advances in the language, and foundation support.
 >
->We owe Tobi so much in the Ruby on Rails ecosystem, and I'm thrilled to recognize this with the Rails Lifetime Award."
+>We owe Tobi so much in the Ruby on Rails ecosystem, and I'm thrilled to recognize this with the Rails Lifetime Award.
 >
 >-_DHH_
 
