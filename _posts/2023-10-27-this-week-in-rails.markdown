@@ -4,7 +4,7 @@ title: "Reduce memory used by ActiveSupport::Callbacks, non-column-backed attrib
 categories: news
 author: vipulnsward
 published: true
-date: 2023-09-08
+date: 2023-10-27
 ---
 
 
