@@ -33,11 +33,11 @@ end
 This Pull Request adds support for `number_to_human_size` to handle negative numbers-
 
 ```ruby
-# Old behaviour
+# Before
 helper.number_to_human_size(-1234567)
 # => "-1234567 Bytes"
 
-# New behaviour
+# After
 helper.number_to_human_size(-1234567)
 # => "-1.18 MB"
 ```
