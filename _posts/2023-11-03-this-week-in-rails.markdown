@@ -16,8 +16,8 @@ You can read more about this feature in the official [MariaDB docs](https://mari
 
 
 [Simplify attr_internal_define](https://github.com/rails/rails/pull/49864)  
-Using `attr_internal` to define attribute accessors with the "@" prefix is now deprecated in favor of an underscore ("_").  
-You can read the API from the [Module](https://edgeapi.rubyonrails.org/classes/Module.html) extension.  
+This PR optimizes the internals of [Module.attr_internal_naming_format=](https://edgeapi.rubyonrails.org/classes/Module.html#method-c-attr_internal_naming_format-3D) to eagerly strip the "@" prefix from the given format.  
+Providing a "@" prefix to this method is no longer accepted and will raise a deprecation warning.  
 
 [Accept service as a Proc with "has_one_attached" and "has_many_attached"](https://github.com/rails/rails/pull/49863)  
 Now you can specify the service as a callable Proc to make specialized attachment associations even more flexible in Active Storage.
