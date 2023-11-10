@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Rails 7.1.0 has been released!'
+title: 'Rails 7.1.2 has been released!'
 categories: releases
 author: rafaelfranca
 published: true
