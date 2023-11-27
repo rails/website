@@ -2,7 +2,7 @@
 layout: post
 title: "The official Rails job board is live"
 categories: news
-author: Rails Founation
+author: Rails Foundation
 published: true
 date: 2023-11-27
 ---
