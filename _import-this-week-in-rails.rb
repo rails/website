@@ -97,6 +97,7 @@ layout: post
 title: "#{hey_world_email.title}"
 categories: news
 author: #{hey_world_email.author}
+og_image: assets/images/this-week-in-rails.png
 published: true
 date: #{hey_world_email.date}
 ---
