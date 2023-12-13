@@ -22,10 +22,10 @@ collections:
     permalink: "/:name"
   world_speakers:
     output: true
-    permalink: "/world/speakers/:name"
+    permalink: "/world/:path"
   world_sessions:
     output: true
-    permalink: "/world/agenda/:path"
+    permalink: "/world/:path"
 
 
 defaults:
