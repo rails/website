@@ -1,7 +1,7 @@
 ---
 layout: world/default
 ---
-{% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" %}
+{% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" | where_exp: 'item', 'item.path contains "2023"'%}
 
 <content-container class="speaker">
     <breadcrumbs-container aria-label="Breadcrumbs">

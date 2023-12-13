@@ -1,4 +1,5 @@
 ---
+layout: world/speaker
 first_name: Aaron
 last_name: Patterson
 image_path: /assets/world/2023/images/speakers/a-patterson.jpeg

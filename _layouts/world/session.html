@@ -2,7 +2,7 @@
 layout: world/default
 ---
 
-{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" %}
+{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" | where_exp: 'item', 'item.path contains "2023"'%}
 {% assign speaker = filteredSpeakers | first %}
 {% assign day_url = page.url | split: '/' | pop | join: '/' %}
 {% assign day = day_url | slice: -1 | prepend: 'Day ' %}
