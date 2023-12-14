@@ -51,7 +51,7 @@ defaults:
     values:
       layout: "world/session"
   - scope:
-      path: "world"
+      path: "world/2023"
     values:
       description: October 5 & 6 - Beurs van Berlage, Amsterdam, NL
 
