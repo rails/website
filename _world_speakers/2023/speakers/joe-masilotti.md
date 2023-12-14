@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/joe-masilotti
 first_name: Joe
 last_name: Masilotti
 image_path: /assets/world/2023/images/speakers/j-masilotti.jpeg

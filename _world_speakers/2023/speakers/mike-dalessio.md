@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/mike-dalessio
 first_name: Mike
 last_name: Dalessio
 image_path: /assets/world/2023/images/speakers/m-dalessio.jpeg

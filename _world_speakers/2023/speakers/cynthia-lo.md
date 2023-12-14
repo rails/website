@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/cynthia-lo
 first_name: Cynthia
 last_name: Lo
 image_path: /assets/world/2023/images/speakers/c-lo.jpeg

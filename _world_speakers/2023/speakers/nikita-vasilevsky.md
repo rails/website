@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/nikita-vasilevsky
 first_name: Nikita
 last_name: Vasilevsky
 image_path: /assets/world/2023/images/speakers/n-vasilevsky.jpeg

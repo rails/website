@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/xavier-noria
 first_name: Xavier
 last_name: Noria
 image_path: /assets/world/2023/images/speakers/x-noria.jpeg

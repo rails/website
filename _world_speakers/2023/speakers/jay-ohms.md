@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/jay-ohms
 first_name: Jay
 last_name: Ohms
 image_path: /assets/world/2023/images/speakers/j-ohms.jpeg

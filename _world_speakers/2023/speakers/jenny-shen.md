@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/jenny-shen
 first_name: Jenny
 last_name: Shen
 image_path: /assets/world/2023/images/speakers/j-shen.jpeg

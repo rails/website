@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/eileen-uchitelle
 first_name: Eileen
 last_name: Uchitelle
 image_path: /assets/world/2023/images/speakers/e-uchitelle.jpg

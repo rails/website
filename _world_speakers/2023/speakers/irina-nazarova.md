@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/irina-nazarova
 first_name: Irina
 last_name: Nazarova
 image_path: /assets/world/2023/images/speakers/i-nazarova.jpeg

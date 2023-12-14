@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/david-hansson
 first_name: David Heinemeier
 last_name: Hansson
 image_path: /assets/world/2023/images/speakers/d-hansson.jpg

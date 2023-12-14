@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/marco-roth
 first_name: Marco
 last_name: Roth
 image_path: /assets/world/2023/images/speakers/m-roth.jpeg

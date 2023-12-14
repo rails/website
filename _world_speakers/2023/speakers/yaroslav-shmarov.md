@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/yaroslav-shmarov
 first_name: Yaroslav
 last_name: Shmarov
 image_path: /assets/world/2023/images/speakers/y-shmarov.jpg

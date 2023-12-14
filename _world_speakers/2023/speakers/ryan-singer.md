@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/ryan-singer
 first_name: Ryan
 last_name: Singer
 image_path: /assets/world/2023/images/speakers/r-singer.jpg

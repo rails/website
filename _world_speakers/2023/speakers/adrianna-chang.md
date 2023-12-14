@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/adrianna-chang
 first_name: Adrianna
 last_name: Chang
 image_path: /assets/world/2023/images/speakers/a-chang.jpeg

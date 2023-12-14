@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/donal-mcbreen
 first_name: Donal
 last_name: McBreen
 image_path: /assets/world/2023/images/speakers/d-mcbreen.jpeg

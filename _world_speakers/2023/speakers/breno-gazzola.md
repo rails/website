@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/breno-gazzola
 first_name: Breno
 last_name: Gazzola
 image_path: /assets/world/2023/images/speakers/b-gazzola.jpeg

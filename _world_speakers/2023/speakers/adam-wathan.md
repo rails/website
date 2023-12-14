@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/adam-wathan
 first_name: Adam
 last_name: Wathan
 image_path: /assets/world/2023/images/speakers/a-wathan.jpeg

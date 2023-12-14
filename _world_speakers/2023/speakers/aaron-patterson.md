@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/aaron-patterson
 first_name: Aaron
 last_name: Patterson
 image_path: /assets/world/2023/images/speakers/a-patterson.jpeg

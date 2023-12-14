@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/julia-lopez
 first_name: Julia
 last_name: López
 image_path: /assets/world/2023/images/speakers/j-lopez.jpeg

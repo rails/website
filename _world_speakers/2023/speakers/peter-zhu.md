@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/peter-zhu
 first_name: Peter
 last_name: Zhu
 image_path: /assets/world/2023/images/speakers/p-zhu.jpeg

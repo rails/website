@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/miles-mcguire
 first_name: Miles
 last_name: McGuire
 image_path: /assets/world/2023/images/speakers/m-mcguire.jpeg

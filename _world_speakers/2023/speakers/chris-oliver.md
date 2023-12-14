@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/chris-oliver
 first_name: Chris
 last_name: Oliver
 image_path: /assets/world/2023/images/speakers/c-oliver.jpg

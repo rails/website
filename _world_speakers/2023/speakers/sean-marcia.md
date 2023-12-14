@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/sean-marcia
 first_name: Sean
 last_name: Marcia
 image_path: /assets/world/2023/images/speakers/s-marcia.jpeg

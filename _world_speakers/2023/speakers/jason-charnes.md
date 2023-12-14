@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/jason-charnes
 first_name: Jason
 last_name: Charnes
 image_path: /assets/world/2023/images/speakers/j-charnes.jpeg

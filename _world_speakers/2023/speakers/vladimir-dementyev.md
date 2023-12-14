@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/vladimir-dementyev
 first_name: Vladimir
 last_name: Dementyev
 image_path: /assets/world/2023/images/speakers/v-dementyev.jpeg

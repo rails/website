@@ -1,5 +1,6 @@
 ---
 layout: world/2023/speaker
+redirect_from: /world/speakers/christian-bruckmayer
 first_name: Christian
 last_name: Bruckmayer
 image_path: /assets/world/2023/images/speakers/c-bruckmeyer.jpeg
