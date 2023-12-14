@@ -17,7 +17,7 @@
             {{ session.title }}
           </a>
         </h3>
-        {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains session.speaker" %}
+        {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains session.speaker" | where_exp: 'item', 'item.path contains "2023"' |  %}
         {% assign speaker = filteredSpeakers | first %}
         {% if speaker %}<p id="{{ details_id }}">{{ speaker.first_name }} {{ speaker.last_name }}, {{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{% endif %}</p>{% endif %}
       </div>

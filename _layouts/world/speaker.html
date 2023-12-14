@@ -35,21 +35,21 @@ layout: world/default
                     <li>
                       {% if page.github %}
                         <a href="{{ page.github }}">
-                          {% include world/icons/github.html %}
+                          {% include world/2023/icons/github.html %}
                         </a>
                       {% endif %}
                     </li>
                     <li>
                       {% if page.linkedin %}
                         <a href="{{ page.linkedin }}">
-                          {% include world/icons/linkedin.html %}
+                          {% include world/2023/icons/linkedin.html %}
                         </a>
                       {% endif %}
                     </li>
                     <li>
                       {% if page.twitter %}
                         <a href="{{ page.twitter }}">
-                          {% include world/icons/twitter.html %}
+                          {% include world/2023/icons/twitter.html %}
                         </a>
                       {% endif %}
                     </li>
@@ -72,9 +72,9 @@ layout: world/default
                   data-turbo-preserve-focus>
                     <h3>{{ session.title }}</h3>
                   </a>
-                  <p>{% include world/icons/clock.html %} {{ session.time }}</p>
-                  <p>{% include world/icons/calendar.html %} {{ sessionDate }}</p>
-                  <p>{% include world/icons/pin-purple.html %} {{ session.location }}</p>
+                  <p>{% include world/2023/icons/clock.html %} {{ session.time }}</p>
+                  <p>{% include world/2023/icons/calendar.html %} {{ sessionDate }}</p>
+                  <p>{% include world/2023/icons/pin-purple.html %} {{ session.location }}</p>
                 </li>
               {% endfor %}
               </ul>

@@ -15,7 +15,7 @@ permalink: /world/2023
       <h1>That's a wrap!</h1>
       <p>October 5 & 6</p>
       <p class="hero__location">
-        {% include world/icons/pin.html %}
+        {% include world/2023/icons/pin.html %}
         <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank">
           Amsterdam, Beurs van Berlage
         </a>
@@ -58,7 +58,7 @@ permalink: /world/2023
               data-turbo-frame="speaker_details"
               data-turbo-action="advance"
               data-turbo-preserve-focus>
-              {% include world/speaker-card.html %}
+              {% include world/2023/speaker-card.html %}
             </a>
           </div>
         {% endfor %}
@@ -70,7 +70,7 @@ permalink: /world/2023
               data-turbo-frame="speaker_details"
               data-turbo-action="advance"
               data-turbo-preserve-focus>
-              {% include world/speaker-card.html %}
+              {% include world/2023/speaker-card.html %}
             </a>
           </div>
         {% endfor %}
@@ -111,7 +111,7 @@ permalink: /world/2023
     <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ" target="_blank" class="button button--light">View Prospectus</a>
   </section> -->
   {% if site.data.world['2023'].sponsors %}
-    {% include world/sponsors.html %}
+    {% include world/2023/sponsors.html %}
   {% endif %}
 </content-container>
 

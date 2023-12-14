@@ -7,7 +7,7 @@ title: Agenda
 
 {% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-0/'" | sort: "time" %}
 
-{% include world/agenda/items.html sessions=sessions %}
+{% include world/2023/agenda/items.html sessions=sessions %}
 
 
 <script type="text/javascript">

@@ -15,14 +15,14 @@ layout: world/default
     {% for speaker in keynote_speakers %}
       <li>
         <a href="/world/2023/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">
-          {% include world/speaker-card.html %}
+          {% include world/2023/speaker-card.html %}
         </a>
       </li>
     {% endfor %}
     {% for speaker in non_keynote_speakers %}
       <li>
         <a href="/world/2023/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}">
-          {% include world/speaker-card.html %}
+          {% include world/2023/speaker-card.html %}
         </a>
       </li>
     {% endfor %}

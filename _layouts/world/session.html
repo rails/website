@@ -46,9 +46,9 @@ layout: world/default
                   <div class="session__content">{{ content }}</div>
                   <column-separator></column-separator>
                   <ul>
-                    <li>{% include world/icons/clock.html %} {{ page.time }}</li>
-                    <li>{% include world/icons/calendar.html %} {{ sessionDate }}</li>
-                    <li>{% include world/icons/pin-purple.html %} {{ page.location }}</li>
+                    <li>{% include world/2023/icons/clock.html %} {{ page.time }}</li>
+                    <li>{% include world/2023/icons/calendar.html %} {{ sessionDate }}</li>
+                    <li>{% include world/2023/icons/pin-purple.html %} {{ page.location }}</li>
                   </ul>
               </flex-container>
             </flex-container>
@@ -66,7 +66,7 @@ layout: world/default
                     data-turbo-frame="speaker_details"
                     data-turbo-action="advance"
                     data-turbo-preserve-focus>
-                    {% include world/icons/microphone.html %}
+                    {% include world/2023/icons/microphone.html %}
                   </a>
                   <div>
                     <a
@@ -91,7 +91,7 @@ layout: world/default
                     <li>
                       <a href="{{ speaker.github }}"
                         aria-label="{{ speaker.first_name }}'s GitHub">
-                        {% include world/icons/github.html %}
+                        {% include world/2023/icons/github.html %}
                       </a>
                     </li>
                     {% endif %}
@@ -99,7 +99,7 @@ layout: world/default
                     <li>
                       <a href="{{ speaker.linkedin }}"
                         aria-label="{{ speaker.first_name }}'s LinkedIn">
-                        {% include world/icons/linkedin.html %}
+                        {% include world/2023/icons/linkedin.html %}
                       </a>
                     </li>
                     {% endif %}
@@ -107,7 +107,7 @@ layout: world/default
                     <li>
                       <a href="{{ speaker.twitter }}"
                         aria-label="{{ speaker.first_name }}'s Twitter">
-                        {% include world/icons/twitter.html %}
+                        {% include world/2023/icons/twitter.html %}
                       </a>
                     </li>
                     {% endif %}
