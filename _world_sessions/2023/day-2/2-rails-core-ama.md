@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Rails Core AMA
 speaker:
 time: 09:45 - 11:00

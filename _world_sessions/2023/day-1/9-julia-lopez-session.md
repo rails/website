@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Using Multiple Databases with Active Record
 speaker: julia-lopez.md
 time: 15:45 - 16:15

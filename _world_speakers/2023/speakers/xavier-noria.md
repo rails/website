@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Xavier
 last_name: Noria
 image_path: /assets/world/2023/images/speakers/x-noria.jpeg

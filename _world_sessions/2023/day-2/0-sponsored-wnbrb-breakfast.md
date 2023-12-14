@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: WNB.rb Breakfast sponsored by Shopify
 speaker:
 time: 08:00 - 9:30

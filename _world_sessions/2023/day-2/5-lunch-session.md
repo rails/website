@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Lunch
 speaker:
 time: 12:30 - 13:30

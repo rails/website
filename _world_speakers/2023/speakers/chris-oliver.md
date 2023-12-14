@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Chris
 last_name: Oliver
 image_path: /assets/world/2023/images/speakers/c-oliver.jpg

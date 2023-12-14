@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Cynthia
 last_name: Lo
 image_path: /assets/world/2023/images/speakers/c-lo.jpeg

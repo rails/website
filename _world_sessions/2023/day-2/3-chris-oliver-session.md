@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Powerful Rails Features You Might Not Know
 speaker: chris-oliver.md
 time: 11:00 - 11:40

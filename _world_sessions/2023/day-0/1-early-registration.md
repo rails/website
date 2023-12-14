@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Early registration
 speaker:
 time: 16:00 - 19:00

@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Alicia
 last_name: Rojas
 image_path: /assets/world/2023/images/speakers/a-rojas.jpg

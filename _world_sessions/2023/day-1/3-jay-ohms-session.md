@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Strada - Bridging the Web and Native Worlds
 speaker: jay-ohms.md
 time: 11:00 - 11:40

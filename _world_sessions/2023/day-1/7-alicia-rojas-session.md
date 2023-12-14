@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Building an Offline Experience with a Rails-powered PWA
 speaker: alicia-rojas.md
 time: 14:15 - 14:45

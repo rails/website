@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Joe
 last_name: Masilotti
 image_path: /assets/world/2023/images/speakers/j-masilotti.jpeg

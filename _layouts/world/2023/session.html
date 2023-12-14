@@ -1,5 +1,5 @@
 ---
-layout: world/default
+layout: world/2023/default
 ---
 
 {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" | where_exp: 'item', 'item.path contains "2023"'%}

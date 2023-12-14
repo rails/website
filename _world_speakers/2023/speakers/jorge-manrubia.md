@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Jorge
 last_name: Manrubia
 image_path: /assets/world/2023/images/speakers/j-manrubia.jpeg

@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Guardrails - Keeping Customer Data Separate in a Multi Tenant System
 speaker: miles-mcguire.md
 time: 14:15 - 14:45

@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Brian
 last_name: Scanlan
 image_path: /assets/world/2023/images/speakers/b-scanlan.jpeg

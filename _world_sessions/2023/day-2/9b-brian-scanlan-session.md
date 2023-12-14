@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Monolith-ifying perfectly good microservices
 speaker: brian-scanlan.md
 time: 15:45 - 16:15

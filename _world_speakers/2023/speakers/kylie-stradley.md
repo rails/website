@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Kylie
 last_name: Stradley
 image_path: /assets/world/2023/images/speakers/k-stradley.jpeg

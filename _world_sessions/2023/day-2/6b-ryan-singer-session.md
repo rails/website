@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Applying Shape Up in the Real World
 speaker: ryan-singer.md
 time: 13:30 - 14:00

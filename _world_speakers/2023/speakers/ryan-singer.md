@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Ryan
 last_name: Singer
 image_path: /assets/world/2023/images/speakers/r-singer.jpg

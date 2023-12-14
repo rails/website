@@ -1,12 +1,12 @@
 ---
+layout: world/2023/default
 permalink: /world/2023/speakers
 title: Speakers
-layout: world/default
 ---
 
 {% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2023"' | sort: 'last_name' %}
 {% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
-{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" %}
+{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
 
 <content-container class="speakers__index">
   <h1>Speakers</h1>

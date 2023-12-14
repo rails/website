@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Julia
 last_name: López
 image_path: /assets/world/2023/images/speakers/j-lopez.jpeg

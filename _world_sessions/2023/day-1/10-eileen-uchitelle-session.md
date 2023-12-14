@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Day 1 Closing Keynote - The Magic of Rails
 speaker: eileen-uchitelle.md
 time: 16:30 - 17:15

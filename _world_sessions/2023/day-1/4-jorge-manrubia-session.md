@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Making a Difference with Turbo
 speaker: jorge-manrubia.md
 time: 11:45 - 12:25

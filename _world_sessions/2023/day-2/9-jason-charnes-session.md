@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Don't Call It a Comeback
 speaker: jason-charnes.md
 time: 15:45 - 16:15

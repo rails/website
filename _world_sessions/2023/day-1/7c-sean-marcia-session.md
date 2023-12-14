@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Workshop - AI Driven Development
 speaker: sean-marcia.md
 time: 14:45 - 16:15

@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Jay
 last_name: Ohms
 image_path: /assets/world/2023/images/speakers/j-ohms.jpeg

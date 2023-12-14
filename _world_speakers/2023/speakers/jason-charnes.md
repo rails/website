@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Jason
 last_name: Charnes
 image_path: /assets/world/2023/images/speakers/j-charnes.jpeg

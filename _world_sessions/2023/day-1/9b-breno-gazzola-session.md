@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Propshaft and the Modern Asset Pipeline
 speaker: breno-gazzola.md
 time: 15:45 - 16:15

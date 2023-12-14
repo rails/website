@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Wildest Dreams of Making Profit on Open Source
 speaker: irina-nazarova.md
 time: 15:00 - 15:30

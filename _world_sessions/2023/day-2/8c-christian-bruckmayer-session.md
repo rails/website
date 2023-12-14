@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Workshop - Test Smarter, Not Harder - Crafting a Test Selection Framework from Scratch
 speaker: christian-bruckmayer.md
 time: 15:00 - 16:00

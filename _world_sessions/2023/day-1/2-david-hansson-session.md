@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Rails World Opening Keynote
 speaker: david-hansson.md
 time: 10:00 - 11:00

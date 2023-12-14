@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Sean
 last_name: Marcia
 image_path: /assets/world/2023/images/speakers/s-marcia.jpeg

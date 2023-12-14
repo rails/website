@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Vladimir
 last_name: Dementyev
 image_path: /assets/world/2023/images/speakers/v-dementyev.jpeg

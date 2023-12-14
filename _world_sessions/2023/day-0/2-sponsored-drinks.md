@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Drinks sponsored by Clear Code Wizards
 speaker:
 time: 17:00 - 20:00

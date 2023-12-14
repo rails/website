@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Rails 20th Anniversary Celebration
 speaker:
 time: 17:30 - 19:00

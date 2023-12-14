@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Rails::HTML5 - the Strange and Remarkable Three-Year Journey
 speaker: mike-dalessio.md
 time: 11:45 - 12:15

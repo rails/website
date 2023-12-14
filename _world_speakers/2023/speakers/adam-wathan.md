@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Adam
 last_name: Wathan
 image_path: /assets/world/2023/images/speakers/a-wathan.jpeg

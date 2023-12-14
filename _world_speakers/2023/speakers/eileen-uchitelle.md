@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Eileen
 last_name: Uchitelle
 image_path: /assets/world/2023/images/speakers/e-uchitelle.jpg

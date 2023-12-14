@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Zeitwerk Internals
 speaker: xavier-noria.md
 time: 15:00 - 15:30

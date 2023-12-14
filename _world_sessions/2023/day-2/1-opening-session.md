@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Doors Open
 speaker:
 time: 09:00 - 9:45

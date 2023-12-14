@@ -1,4 +1,5 @@
 ---
+layout: world/2023/session
 title: Tailwind CSS&#58; It looks awful, and it works.
 speaker: adam-wathan.md
 time: 14:15 - 14:45

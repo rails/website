@@ -1,4 +1,5 @@
 ---
+layout: world/2023/speaker
 first_name: Christian
 last_name: Bruckmayer
 image_path: /assets/world/2023/images/speakers/c-bruckmeyer.jpeg
