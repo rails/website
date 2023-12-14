@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: SolidCache - A Disk Backed Rails Cache
+redirect_from: world/day-1/3b-donal-mcbreen-session
 speaker: donal-mcbreen.md
 time: 11:00 - 11:30
 location: Track 2

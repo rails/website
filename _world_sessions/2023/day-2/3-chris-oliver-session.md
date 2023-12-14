@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Powerful Rails Features You Might Not Know
+redirect_from: world/day-2/3-chris-oliver-session
 speaker: chris-oliver.md
 time: 11:00 - 11:40
 location: Track 1

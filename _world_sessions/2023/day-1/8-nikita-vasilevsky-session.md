@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Implementing Native Composite primary Key Support in Rails 7.1
+redirect_from: world/day-1/8-nikita-vasilevsky-session
 speaker: nikita-vasilevsky.md
 time: 15:00 - 15:30
 location: Track 1

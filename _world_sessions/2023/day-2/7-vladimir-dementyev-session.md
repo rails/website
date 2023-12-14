@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Untangling Cables and Demystifying Twisted Transistors
+redirect_from: world/day-2/7-vladimir-dementyev-session
 speaker: vladimir-dementyev.md
 time: 14:15 - 14:45
 location: Track 1

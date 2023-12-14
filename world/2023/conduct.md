@@ -1,6 +1,8 @@
 ---
 layout: world/2023/legal
 title: Code of Conduct
+redirect_from: /world/conduct
+
 ---
 
 

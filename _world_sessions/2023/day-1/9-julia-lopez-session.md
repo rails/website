@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Using Multiple Databases with Active Record
+redirect_from: world/day-1/9-julia-lopez-session
 speaker: julia-lopez.md
 time: 15:45 - 16:15
 location: Track 1

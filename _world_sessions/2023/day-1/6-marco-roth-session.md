@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: The Future of Rails as a Full-stack Framework Powered by Hotwire
+redirect_from: world/day-1/6-marco-roth-session
 speaker: marco-roth.md
 time: 13:30 - 14:00
 location: Track 1

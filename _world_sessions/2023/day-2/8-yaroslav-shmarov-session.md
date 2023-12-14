@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Hotwire Cookbook - Common Use Cases, Essential Patterns and Best Practices
+redirect_from: world/day-2/8-yaroslav-shmarov-session
 speaker: yaroslav-shmarov.md
 time: 15:00 - 15:30
 location: Track 1

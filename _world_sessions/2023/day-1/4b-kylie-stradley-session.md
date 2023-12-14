@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Everything We Learned While Implementing ActiveRecord::Encryption
+redirect_from: world/day-1/4b-kylie-stradley-session
 speaker: kylie-stradley.md
 time: 11:45 - 12:15
 location: Track 2

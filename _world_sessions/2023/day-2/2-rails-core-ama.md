@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Rails Core AMA
+redirect_from: world/day-2/2-rails-core-ama
 speaker:
 time: 09:45 - 11:00
 location: Track 1

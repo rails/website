@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Workshop - AI Driven Development
+redirect_from: world/day-2/6c-cynthia-lo-session
 speaker: cynthia-lo.md
 time: 13:30 - 15:00
 location: Workshop Hall

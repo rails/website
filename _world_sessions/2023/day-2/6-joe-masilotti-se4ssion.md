@@ -1,6 +1,7 @@
 ---
 layout: world/2023/session
 title: Just Enough Turbo Native to Be Dangerous
+redirect_from: world/day-2/6-joe-masilotti-se4ssion
 speaker: joe-masilotti.md
 time: 13:30 - 14:00
 location: Track 1
