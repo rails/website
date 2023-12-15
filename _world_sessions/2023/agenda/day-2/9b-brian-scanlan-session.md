@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Monolith-ifying perfectly good microservices
-redirect_from: world/day-2/9b-brian-scanlan-session
+redirect_from: world/agenda/day-2/9b-brian-scanlan-session
 speaker: brian-scanlan.md
 time: 15:45 - 16:15
 location: Track 2

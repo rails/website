@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Migrating Shopify’s Core Rails Monolith to Trilogy
-redirect_from: world/day-1/6b-adrianna-chang-session
+redirect_from: world/agenda/day-1/6b-adrianna-chang-session
 speaker: adrianna-chang.md
 time: 13:30 - 14:00
 location: Track 2

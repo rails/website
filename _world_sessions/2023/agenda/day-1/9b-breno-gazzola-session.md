@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Propshaft and the Modern Asset Pipeline
-redirect_from: world/day-1/9b-breno-gazzola-session
+redirect_from: world/agenda/day-1/9b-breno-gazzola-session
 speaker: breno-gazzola.md
 time: 15:45 - 16:15
 location: Track 2

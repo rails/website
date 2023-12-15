@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Rails and the Ruby Garbage Collector - How to Speed Up Your Rails App
-redirect_from: world/day-2/3b-peter-zhu-session
+redirect_from: world/agenda/day-2/3b-peter-zhu-session
 speaker: peter-zhu.md
 time: 11:00 - 11:30
 location: Track 2

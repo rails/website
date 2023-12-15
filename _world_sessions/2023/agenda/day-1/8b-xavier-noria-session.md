@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Zeitwerk Internals
-redirect_from: world/day-1/8b-xavier-noria-session
+redirect_from: world/agenda/day-1/8b-xavier-noria-session
 speaker: xavier-noria.md
 time: 15:00 - 15:30
 location: Track 2

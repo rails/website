@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Drinks sponsored by Clear Code Wizards
-redirect_from: world/day-0/2-sponsored-drinks
+redirect_from: world/agenda/day-0/2-sponsored-drinks
 speaker:
 time: 17:00 - 20:00
 location: TBD

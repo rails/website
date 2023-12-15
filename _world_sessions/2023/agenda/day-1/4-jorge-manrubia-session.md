@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Making a Difference with Turbo
-redirect_from: world/day-1/4-jorge-manrubia-session
+redirect_from: world/agenda/day-1/4-jorge-manrubia-session
 speaker: jorge-manrubia.md
 time: 11:45 - 12:25
 location: Track 1

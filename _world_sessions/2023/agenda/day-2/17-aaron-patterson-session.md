@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Closing Keynote - Future of Developer Acceleration with Rails
-redirect_from: world/day-2/17-aaron-patterson-session
+redirect_from: world/agenda/day-2/17-aaron-patterson-session
 speaker: aaron-patterson.md
 time: 16:30 - 17:30
 location: Track 1

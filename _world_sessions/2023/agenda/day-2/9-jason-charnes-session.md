@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Don't Call It a Comeback
-redirect_from: world/day-2/9-jason-charnes-session
+redirect_from: world/agenda/day-2/9-jason-charnes-session
 speaker: jason-charnes.md
 time: 15:45 - 16:15
 location: Track 1

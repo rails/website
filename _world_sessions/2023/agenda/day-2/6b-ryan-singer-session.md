@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Applying Shape Up in the Real World
-redirect_from: world/day-2/6b-ryan-singer-session
+redirect_from: world/agenda/day-2/6b-ryan-singer-session
 speaker: ryan-singer.md
 time: 13:30 - 14:00
 location: Track 2

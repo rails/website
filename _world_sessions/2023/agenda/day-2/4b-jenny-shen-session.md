@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Demystifying the Ruby package ecosystem
-redirect_from: world/day-2/4b-jenny-shen-session
+redirect_from: world/agenda/day-2/4b-jenny-shen-session
 speaker: jenny-shen.md
 time: 11:45 - 12:15
 location: Track 2

@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Tailwind CSS&#58; It looks awful, and it works.
-redirect_from: world/day-2/7b-adam-wathan-session
+redirect_from: world/agenda/day-2/7b-adam-wathan-session
 speaker: adam-wathan.md
 time: 14:15 - 14:45
 location: Track 2

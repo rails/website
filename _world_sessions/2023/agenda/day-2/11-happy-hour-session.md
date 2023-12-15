@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Rails 20th Anniversary Celebration
-redirect_from: world/day-2/11-happy-hour-session
+redirect_from: world/agenda/day-2/11-happy-hour-session
 speaker:
 time: 17:30 - 19:00
 location: Sponsor Lounge

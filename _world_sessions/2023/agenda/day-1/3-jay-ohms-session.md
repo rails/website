@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: Strada - Bridging the Web and Native Worlds
-redirect_from: world/day-1/3-jay-ohms-session
+redirect_from: world/agenda/day-1/3-jay-ohms-session
 speaker: jay-ohms.md
 time: 11:00 - 11:40
 location: Track 1

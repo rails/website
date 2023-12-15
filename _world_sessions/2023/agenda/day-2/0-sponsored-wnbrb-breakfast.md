@@ -1,7 +1,7 @@
 ---
 layout: world/2023/session
 title: WNB.rb Breakfast sponsored by Shopify
-redirect_from: world/day-2/0-sponsored-wnbrb-breakfast
+redirect_from: world/agenda/day-2/0-sponsored-wnbrb-breakfast
 speaker:
 time: 08:00 - 9:30
 location: TBD
