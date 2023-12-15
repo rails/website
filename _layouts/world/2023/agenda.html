@@ -1,0 +1,43 @@
+---
+layout: world/2023/default
+---
+
+<content-container class="agenda">
+  <h1>Agenda</h1>
+  <p>Rails World featured two full days of keynotes, talks, workshops, sessions and more. All sessions on the two main stages were recorded and will be shared soon.</p>
+
+  <turbo-frame id="agenda" data-turbo-action="advance">
+    <h2 class="visually-hidden">
+      {% if page.day == 'day-0' %}
+        Wednesday, October 4th
+      {% elsif page.day == 'day-1' %}
+        Thursday, October 5th
+      {% elsif page.day == 'day-2' %}
+        Friday, October 6th
+      {% endif %}
+    </h2>
+
+    {% include world/2023/agenda/tabs.html %}
+    <br>
+
+    <small>Schedule is in Central European Summer Time (CEST)</small>
+
+    {{ content }}
+  </turbo-frame>
+</content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="session_details" target="_top" class="session"
+    role="dialog" aria-modal="true" aria-labelledby="session_title" tabindex="-1">
+  </turbo-frame>
+</modal-component>
+
+<script type="text/javascript">
+  document.addEventListener("turbo:frame-load", ({ target }) => {
+    if (target.id === "agenda") {
+      target.querySelector("a:not([role='tab'])").focus()
+    }
+  })
+</script>

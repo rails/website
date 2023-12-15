@@ -1,0 +1,102 @@
+---
+layout: world/2023/default
+
+---
+{% assign filteredSessions = site.world_sessions | where_exp:"session", "page.path contains session.speaker" | where_exp: 'item', 'item.path contains "2023"'%}
+
+<content-container class="speaker">
+    <breadcrumbs-container aria-label="Breadcrumbs">
+      <ol>
+        <li>
+          <a href="/world/2023">World</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li>
+          <a href="/world/2023/speakers">Speakers</a>
+          <span aria-hidden="true">&nbsp;&gt;</span>
+        </li>
+        <li aria-current="page">
+          <span>{{ page.first_name }} {{ page.last_name }}</span>
+        </li>
+      </ol>
+    </breadcrumbs-container>
+
+  <turbo-frame id="speaker_details">
+    <content-card>
+      <bordered-container>
+          <article>
+            <section class="speaker__info">
+                <figure><img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture"></figure>
+                <div>
+                  <h1 id="speaker_name">{{ page.first_name}} {{ page.last_name }}</h1>
+                  <p class="speaker__role">{{ page.role }}, {{ page.company }}</p>
+                  {{ content }}
+                  <br>
+                  <ul>
+                    <li>
+                      {% if page.github %}
+                        <a href="{{ page.github }}">
+                          {% include world/2023/icons/github.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                    <li>
+                      {% if page.linkedin %}
+                        <a href="{{ page.linkedin }}">
+                          {% include world/2023/icons/linkedin.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                    <li>
+                      {% if page.twitter %}
+                        <a href="{{ page.twitter }}">
+                          {% include world/2023/icons/twitter.html %}
+                        </a>
+                      {% endif %}
+                    </li>
+                  </ul>
+                </div>
+            </section>
+
+            <section class="speaker__sessions">
+              <h2>Sessions</h2>
+              <ul>
+              {% for session in filteredSessions %}
+                {% assign parts = session.url | split: "/" %}
+                {% assign dayPart = parts[3] %}
+                {% assign dayNum = dayPart | split: "-" | last %}
+                <!-- add 4 to the day of conference to obtain the date in october -->
+                {% assign sessionDate = dayNum | plus: 4 | append: 'th October 2023' %}
+                <li>
+                  <a href="{{ session.url }}" data-turbo-frame="session_details"
+                  data-turbo-action="advance"
+                  data-turbo-preserve-focus>
+                    <h3>{{ session.title }}</h3>
+                  </a>
+                  <p>{% include world/2023/icons/clock.html %} {{ session.time }}</p>
+                  <p>{% include world/2023/icons/calendar.html %} {{ sessionDate }}</p>
+                  <p>{% include world/2023/icons/pin-purple.html %} {{ session.location }}</p>
+                </li>
+              {% endfor %}
+              </ul>
+            </section>
+          </article>
+      </bordered-container>
+
+      <button class="close hidden" aria-label="Close speaker dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M2 2L22 22"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22 2L2 22"></path>
+        </svg>
+      </button>
+    </content-card>
+  </turbo-frame>
+</content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="session_details" target="_top" class="session"
+    role="dialog" aria-modal="true" aria-labelledby="session_title" tabindex="-1">
+  </turbo-frame>
+</modal-component>

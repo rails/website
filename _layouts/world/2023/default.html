@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en" style="scroll-behavior: smooth">
+  {% include world/2023/head.html %}
+  <body>
+    <a href="#main-content" class="button button--light skip-navigation" tabindex="0">
+      Skip to main content
+    </a>
+
+    {% include world/2023/announcements.html %}
+    {% include world/2023/header.html %}
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
+
+    {% include world/2023/footer.html %}
+
+    <back-to-top>
+      <button aria-label="Back to top">
+        {% include world/2023/icons/back-to-top.html %}
+        <span>Back to top</span>
+      </button>
+    </back-to-top>
+  </body>
+</html>

@@ -1,8 +1,0 @@
-{% assign announcements = site.data.world.announcements %}
-{% if announcements %}
-  <div class="announcements">
-    {% for announcement in announcements %}
-      <p>{{ announcement.content }}</p>
-    {% endfor %}
-  </div>
-{% endif %}

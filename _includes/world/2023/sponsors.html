@@ -1,0 +1,33 @@
+<section class="sponsors">
+  <h2>Thank You Sponsors!</h2>
+  <br>
+  <p>Rails World could not have been possible without the generous support of Rails World sponsors and Rails Foundation members.</p>
+
+  <div class="sponsors__frame">
+    <bordered-container>
+      <flex-container>
+        <ul class="sponsors__logos" role="group" aria-label="Platinum Sponsors">
+          {% for sponsor in site.data.world['2023'].sponsors.platinum %}
+            <li>
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--medium" role="group" aria-label="Gold Sponsors">
+          {% for sponsor in site.data.world['2023'].sponsors.gold %}
+            <li>
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="sponsors__logos sponsors__logos--small" role="group" aria-label="Silver Sponsors">
+          {% for sponsor in site.data.world['2023'].sponsors.silver %}
+            <li>
+              <a href="{{ sponsor.url }}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}'s Logo"></a>
+            </li>
+          {% endfor %}
+        </ul>
+      </flex-container>
+    </bordered-container>
+  </div>
+</section>

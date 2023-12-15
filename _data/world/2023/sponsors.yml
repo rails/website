@@ -1,0 +1,95 @@
+platinum:
+  - name: AppSignal
+    logo: /assets/world/2023/images/sponsors/RW-logo-appsignal.svg
+    url: https://www.appsignal.com/
+
+gold:
+  - name: Babbel
+    logo: /assets/world/2023/images/sponsors/RW-logo-babbel.svg
+    url: https://www.babbel.com/
+  - name: Shopify
+    logo: /assets/world/2023/images/sponsors/RW-logo-shopify.svg
+    url: https://www.shopify.com/
+  - name: ViaEurope
+    logo: /assets/world/2023/images/sponsors/RW-logo-viaeurope.svg
+    url: https://www.viaeurope.com/
+
+silver:
+  - name: Crunchy Data
+    logo: /assets/world/2023/images/sponsors/RW-logo-crunchydata.svg
+    url: https://www.crunchydata.com/
+  - name: GitHub
+    logo: /assets/world/2023/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: MagmaLabs
+    logo: /assets/world/2023/images/sponsors/RW-logo-magmalabs.svg
+    url: https://www.magmalabs.io/
+  - name: Wafris
+    logo: /assets/world/2023/images/sponsors/RW-logo-wafris.svg
+    url: https://wafris.org/
+  - name: Zilverline
+    logo: /assets/world/2023/images/sponsors/RW-logo-zilverline.svg
+    url: https://www.zilverline.com/
+  - name: Agency of Learning
+    logo: /assets/world/2023/images/sponsors/RW-logo-agency-of-learning.png
+    url: https://agencyoflearning.com/
+  - name: Buzzsprout
+    logo: /assets/world/2023/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
+  - name: LeWagon
+    logo: /assets/world/2023/images/sponsors/RW-logo-lewagon.svg
+    url: https://www.lewagon.com/
+  - name: Dell
+    logo: /assets/world/2023/images/sponsors/RW-logo-dell.svg
+    url: https://www.dell.com/
+  - name: Cedarcode
+    logo: /assets/world/2023/images/sponsors/RW-logo-cedarcode.svg
+    url: https://www.cedarcode.com/
+  - name: zapfloor
+    logo: /assets/world/2023/images/sponsors/RW-logo-zapfloor.svg
+    url: https://www.zapfloor.com/
+  - name: GoRails
+    logo: /assets/world/2023/images/sponsors/RW-logo-gorails.svg
+    url: https://gorails.com/
+  - name: JetBrains
+    logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
+    url: https://www.jetbrains.com/
+  - name: Rompslomp
+    logo: /assets/world/2023/images/sponsors/RW-logo-rompslomp2.svg
+    url: https://rompslomp.nl/
+  - name: ClickFunnels
+    logo: /assets/world/2023/images/sponsors/RW-logo-clickfunnels.svg
+    url: https://www.clickfunnels.com/
+  - name: Clear Code Wizards
+    logo: /assets/world/2023/images/sponsors/RW-logo-clear-code-wizards.svg
+    url: https://clearcodewizards.com
+  - name: Gleam
+    logo: /assets/world/2023/images/sponsors/RW-logo-gleam.svg
+    url: https://gleam.io/
+  - name: Cookpad
+    logo: /assets/world/2023/images/sponsors/RW-logo-cookpad.svg
+    url: https://cookpad.com/
+  - name: Doximity
+    logo: /assets/world/2023/images/sponsors/RW-logo-doximity.svg
+    url: https://www.doximity.com/
+  - name: Fleetio
+    logo: /assets/world/2023/images/sponsors/RW-logo-fleetio.svg
+    url: https://www.fleetio.com/
+  - name: Intercom
+    logo: /assets/world/2023/images/sponsors/RW-logo-intercom.svg
+    url: https://www.intercom.com/
+  - name: Procore
+    logo: /assets/world/2023/images/sponsors/RW-logo-procore.svg
+    url: https://procore.com/
+  - name: 37signals
+    logo: /assets/world/2023/images/sponsors/RW-logo-37signals.svg
+    url: https://37signals.com/
+  - name: Planet Argon
+    logo: /assets/world/2023/images/sponsors/RW-logo-planet-argon.png
+    url: https://www.planetargon.com/
+  - name: BigBinary
+    logo: /assets/world/2023/images/sponsors/RW-logo-bigbinary.svg
+    url: https://www.bigbinary.com/
+  - name: Renuo
+    logo: /assets/images/logo-renuo.svg
+    url: https://www.renuo.ch/

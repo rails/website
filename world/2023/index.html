@@ -1,0 +1,131 @@
+---
+layout: world/2023/default
+permalink: /world/2023
+---
+
+{% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2023"' | sort: 'last_name' %}
+{% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
+{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
+
+<content-container class="large">
+  <section class="hero">
+    <div class="hero__content">
+
+      <h1>That's a wrap!</h1>
+      <p>October 5 & 6</p>
+      <p class="hero__location">
+        {% include world/2023/icons/pin.html %}
+        <a href="https://goo.gl/maps/HFbht8c3Yo8ZEpi77" target="_blank">
+          Amsterdam, Beurs van Berlage
+        </a>
+      </p>
+
+      <br>
+      <a
+        class="button prime"
+        href="https://www.youtube.com/playlist?list=PLHFP2OPUpCeY9IX3Ht727dwu5ZJ2BBbZP"
+        target="_blank">
+        View all videos
+      </a>
+    </div>
+  </section>
+
+  <section class="about">
+    <p>
+      Rails World was a two-day, two track community conference featuring technical talks, demos, workshops, networking, and keynotes about the latest features and best practices in Rails development. There were 700+ Rails developers in attendance, 29 speakers, and one big birthday celebration.
+    </p>
+  </section>
+
+  <section class="speakers">
+    <h2>The Speakers</h2>
+
+    <carousel-component role="region" aria-label="carousel">
+      <carousel-buttons>
+        <button class="previous" aria-label="scroll carousel backward">
+          <img src="/assets/world/2023/previous.svg">
+        </button>
+        <button class="next" aria-label="scroll carousel forward">
+          <img src="/assets/world/2023/next.svg">
+        </button>
+      </carousel-buttons>
+
+      <carousel-items scroll-interval="300">
+        {% for speaker in keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            <a
+              href="/world/2023/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}"
+              data-turbo-frame="speaker_details"
+              data-turbo-action="advance"
+              data-turbo-preserve-focus>
+              {% include world/2023/speaker-card.html %}
+            </a>
+          </div>
+        {% endfor %}
+
+        {% for speaker in non_keynote_speakers %}
+          <div role="group" aria-label="speaker card">
+            <a
+              href="/world/2023/speakers/{{ speaker.path | split: '/' | last | remove_first: '.md' }}"
+              data-turbo-frame="speaker_details"
+              data-turbo-action="advance"
+              data-turbo-preserve-focus>
+              {% include world/2023/speaker-card.html %}
+            </a>
+          </div>
+        {% endfor %}
+
+      </carousel-items>
+    </carousel-component>
+
+    <a href="/world/2023/speakers" class="button button--light">View All Speakers</a>
+  </section>
+
+  <section class="callout">
+    <div class="callout__banner">
+      <bordered-container>
+        <flex-container>
+          <h2>20 Years of Rails</h2>
+          <div class="callout__description">
+            <p>
+              We celebrated an incredible milestone together - Rails turned 20! With an amazing first 20 years under our belt, we now look forward to what the next 20 will bring.
+              <br>
+              (Yes, there was cake.)
+            </p>
+            <button id="celebrate" class="button button--red">
+              Click here.
+            </button>
+          </div>
+        </flex-container>
+      </bordered-container>
+    </div>
+  </section>
+
+<!--   <section class="sponsorship">
+    <h2>Sponsor Rails World</h2>
+    <br>
+    <p>
+      Joining Rails World as a sponsor means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's collaborate and make Rails World an unforgettable experience for all.
+    </p>
+    <br>
+    <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ" target="_blank" class="button button--light">View Prospectus</a>
+  </section> -->
+  {% if site.data.world['2023'].sponsors %}
+    {% include world/2023/sponsors.html %}
+  {% endif %}
+</content-container>
+
+<modal-component>
+  <modal-mask></modal-mask>
+  <turbo-frame
+    id="speaker_details" target="_top" class="speaker"
+    role="dialog" aria-modal="true" aria-labelledby="speaker_name" tabindex="-1">
+  </turbo-frame>
+</modal-component>
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script type="text/javascript">
+  document.confetti = new JSConfetti()
+  document.getElementById("celebrate").addEventListener('click', () => {
+    document.confetti.addConfetti()
+  })
+</script>

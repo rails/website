@@ -1,0 +1,11 @@
+---
+layout: world/2023/agenda
+permalink: /world/2023/agenda/day-0
+redirect_from: /world/agenda/day-0
+day: day-0
+title: Agenda
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-0/'" | sort: "running_order" %}
+
+{% include world/2023/agenda/items.html sessions=sessions %}
