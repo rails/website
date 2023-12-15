@@ -27,7 +27,6 @@ collections:
     output: true
     permalink: "/world/:path"
 
-
 defaults:
   - scope:
       path: ""
