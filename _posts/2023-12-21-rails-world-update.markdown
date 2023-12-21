@@ -15,7 +15,7 @@ We have been getting a lot of questions about Rails World 2024 in Toronto, so he
 
 Join us as a Rails World sponsor to connect with the Rails community, showcase your brand or product, and help shape the future of Rails. 
 
-<a href="https://public.3.basecamp.com/p/xuZrxDiHj7vQbFzATqz8U8gc">Download the prospectus here,</a> and let's make Rails World 2023 an event to remember! 
+<a href="https://public.3.basecamp.com/p/xuZrxDiHj7vQbFzATqz8U8gc">Download the prospectus here,</a> and let's make Rails World 2024 an event to remember! 
 
 **The venue.**
 
