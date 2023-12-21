@@ -19,7 +19,9 @@ Join us as a Rails World sponsor to connect with the Rails community, showcase y
 
 **The venue.**
 
-We have secured a fantastic venue: <a href="https://www.evergreen.ca/evergreen-brick-works/">Evergreen Brickworks</a>. It is a former brick factory with a lot of character and surrounded by nature. Evergreen Brickworks is run by a non-profit, and proceeds from events help fund their sustainability work in the surrounding community and across Canada.
+We have secured a fantastic venue: <a href="https://www.evergreen.ca/evergreen-brick-works/">Evergreen Brickworks</a>. 
+
+Evergreen Brickworks is a former brick factory with a lot of character surrounded by nature. It is run by a non-profit, and proceeds from events like Rails World help fund their sustainability work in the surrounding community and across Canada.
 
 We are excited to transform such an amazing space into the next Rails World for you. 
 
