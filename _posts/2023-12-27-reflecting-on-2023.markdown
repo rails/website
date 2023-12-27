@@ -1,0 +1,81 @@
+---
+layout: post
+title: "Reflecting on 2023: Rails Foundation's Inaugural Year"
+categories: news
+author: Amanda Perino
+published: true
+date: 2023-12-27
+---
+
+As 2023 winds to a close, it’s time to reflect on the first year of the Rails Foundation. Work on the mission began in earnest in February, and we accomplished a great deal these past ten months. 
+
+And still, many times throughout the year - when it felt like things weren’t moving fast enough - we had to remind ourselves that this is Year One. This is not a sprint to accomplish everything in the first year, nor is it a marathon with a finish line in sight. 
+
+We are laying groundwork, having discussions, and setting up initiatives that are intended to see Rails and the Rails community through the coming decades. And after 20 solid years, Rails isn’t going anywhere. 
+
+So we can take a moment to appreciate what we have built so far before we launch into another year of driving our mission to support the Rails community through improved documentation, education, marketing, and events. 
+
+Here is a look back on the initiatives we set up in 2023 in support of that mission. This is only the beginning.
+
+**Rails World** (*Events - Marketing - Education - Community*)
+
+The [first edition](/2023/10/19/rails-world-2023-recap) of Rails World took place in [Amsterdam](/world/2023) this October, where we welcomed 700 attendees, 21 sponsors, and [30 speakers](/2023/7/24/meet-the-rails-world-speakers) to two days of keynotes, talks, and workshops. 
+
+Launched for the 20th anniversary of the Rails framework, Rails World packed a lot into two days: we saw the much-anticipated release of Rails 7.1, the introduction and immediate availability of Solid Cache, Strada, Kamal 1.0, previews of Turbo 8, Solid Queue, and Mission Control, a Rails Core AMA with ten of the current 12 Core team members, and a birthday celebration marking 20 years of Rails. 
+
+We also launched a financial sponsor pairing program, which meant that 7 extra attendees were able to attend who might otherwise not have had the opportunity, and we welcomed a handful of volunteers to Amsterdam who helped make the event a success.
+
+Rails World will continue to be tech-forward and future-thinking - the best conference to attend for the latest features and best practices in Rails development. We hope you can join us next year in [Toronto](/2023/12/21/rails-world-update) Sept 26 & 27, 2024. If your company is interested in <a href="https://public.3.basecamp.com/p/xuZrxDiHj7vQbFzATqz8U8gc">sponsoring</a>, now is the time to get in touch.
+
+**Related Programs** (*Community - Marketing*)
+
+We launched several programs to give community members the chance to significantly contribute to Rails World in unique ways before, during, and after the event, such as:
+
+- A paid opportunity for junior developers to create the [Rails World website](/2023/8/2/introducing-the-team-behind-the-rails-world-website)
+- A partnership with the Agency of Learning to create the [Rails World app](/2023/5/30/rails-foundation-and-agency-of-learning-partner-for-event-app)
+- A partnership with Le Wagon to sponsor our [Rails World emcees](/2023/8/28/calling-recent-le-wagon-grads-be-the-face-of-rails-world-as-an-emcee)
+- A [podcast partnership](/2023/8/1/host-your-podcast-at-rails-world-with-buzzsprout) with Buzzsprout, resulting in 16 recorded podcast episodes 
+
+**Rails Luminary Awards** (*Community*)
+
+Rails would not be the success it is without the people who build with it and champion it every day, so this year we started a new tradition to honor those who have been a positive force in our community: the [Rails Luminaries](/2023/8/8/introducing-rails-luminaries).
+
+[Two awards](/2023/10/23/celebrating-the-first-rails-luminaries) were presented at Rails World this year: Chris Oliver received the Rails Luminary Award, and Tobias Lütke received the Rails Lifetime Award. Thank you to everyone who nominated community members. Keep an eye on the blog for when nominations open for the 2024 Luminaries.
+
+Also related: the Rails Foundation presented the Rails Core with their own awards, recognising the tireless work this team puts in to continually advance the Rails framework. The community is grateful for all that you do!
+
+**Rails Job Board** (*Marketing - Community*)
+
+Last month, we launched the official <a href="https://jobs.rubyonrails.org/">Rails Job Board</a>, a place where Rails developers can find their next role (and companies can find their next Rails developer).
+
+The Job Board lives here on the official Ruby on Rails website, which sees upwards of 110k unique visitors a month, so it truly is one of the best places to advertise a role for a Rails developer. In one month we have already seen more than 50 roles posted from companies around the world. One hundred percent of the proceeds from this job board will be used to further our mission next year.
+
+If you are currently looking for your next role, be sure to sign up for the newsletter to receive all of the week’s new jobs in your inbox.
+
+**Social media** (*Marketing*)
+
+And finally, we created two more social media channels to reach new and existing Rails users:
+
+Follow Rails on <a href="https://www.linkedin.com/company/ruby-on-rails-org">LinkedIn</a> for news and featured jobs from the Rails Job Board and a series of Rails tips and best practices.
+
+Follow the official <a href="https://www.youtube.com/@railsofficial">Rails YouTube channel</a> for more video content in the coming months. The <a href="https://www.youtube.com/watch?v=9RZVdXyzwCw&list=PLHFP2OPUpCeY9IX3Ht727dwu5ZJ2BBbZP">Rails World playlist</a> has already amassed more than 182,000 views. Not bad for the first two months!
+
+**Thank you to our Core and Contributing members**
+
+All of this work was made possible by the eight Core members of the Rails Foundation: <a href="https://cookpad.com/">Cookpad</a>, <a href="https://www.doximity.com">Doximity</a>, <a href="https://www.fleetio.com">Fleetio</a>, <a href="https://github.com">GitHub</a>, <a href="https://www.intercom.com">Intercom</a>, <a href="https://www.procore.com">Procore</a>, <a href="https://www.shopify.com">Shopify</a>, and <a href="https://37signals.com">37signals</a>, and the five Contributing members who joined us this year: <a href="https://www.cedarcode.com">Cedarcode</a>, <a href="https://www.planetargon.com">Planet Argon</a>, <a href="https://www.appsignal.com">AppSignal</a>, <a href="https://www.bigbinary.com">BigBinary</a>, and <a href="https://www.renuo.ch/">Renuo</a>. 
+
+These companies have consistently shown their commitment to the Rails community this year, and we are grateful for their ongoing support! 
+
+**Up next in 2024**
+
+With nearly a year of operations under our belt, we are now ready to carry this momentum into 2024. In addition to activity around [Rails World in Toronto](/2023/12/21/rails-world-update), you will begin to see updates and improvements to the Rails documentation thanks to a team of freelancers, as well as a brand new tutorial, a series of Rails tips and best practices on social media, more video content on YouTube, an educational grant, and - if all goes well - a Rails merch store.
+
+Stay tuned for all of that and more in 2024. As always, our <a href="https://app.todohelpers.com/forms/4758b5b0-d6f9-4f41-8041-992cc9b748fb">suggestion box</a> is open.
+
+**But first...**
+
+Here's wishing everyone in the Rails community a fantastic end to 2023! 
+
+Thank you for all of the enthusiasm and energy you bring - you have kept the ecosystem thriving throughout another year. Let's continue to support and lift each other up and make next year just as great - or even better - than this one.
+
+Happy holidays, and see you all in 2024!
