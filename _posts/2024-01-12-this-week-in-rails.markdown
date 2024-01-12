@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Updated Puma configuration, Object#with_block, and more!"
+title: "Updated Puma configuration, Object#with block support, and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
