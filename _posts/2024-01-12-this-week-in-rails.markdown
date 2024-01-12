@@ -62,7 +62,7 @@ end
 ``` 
 
 [Add oven-sh/setup-bun to GitHub CI when generating an app with bun](https://github.com/rails/rails/pull/50636)  
-This is a follow-up change for (adding GitHub CI workflow by default to new applications)[https://github.com/rails/rails/issues/50502].
+This is a follow-up change for [adding GitHub CI workflow by default to new applications](https://github.com/rails/rails/issues/50502).
 It adds `oven-sh/setup-bun` to GitHub CI when generating an app with bun, for proper CI env setup.
 
 [Prevent unnecessary application reloads in development](https://github.com/rails/rails/pull/50708)  
