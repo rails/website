@@ -18,7 +18,7 @@ Lets dive into some of these changes!
 [Update the default Puma configuration](https://github.com/rails/rails/pull/50669)  
 There was an extensive discussion in this issue about - [setting a new default for the Puma thread count](https://github.com/rails/rails/issues/50450), over the last few days. 
 Give it a read to get some insights from different members in community sharing details about latency vs throughput tradeoffs wrt to the number of threads in Puma config.
-Based on this discussion, the default number of threads in Puma config has now been updated to 5 from 3.
+Based on this discussion, the default number of threads in Puma config has now been updated from 5 to 3.
 
 [Yield instance to Object#with block](https://github.com/rails/rails/pull/50470)  
 The introduction of the block argument means that `Object#with` can now achieve something like below:
@@ -27,6 +27,17 @@ The introduction of the block argument means that `Object#with` can now achieve 
 client.with(timeout: 5_000) do |c|
   c.get("/commits")
 end
+```
+
+[Add explain support for methods like last, pluck and count](https://github.com/rails/rails/pull/50482)  
+The object returned by `explain` now responds to `pluck`, `first`, `last`, `average`, `count`, `maximum`, `minimum`, and `sum`. Those new methods run `EXPLAIN` on the corresponding queries, ex:
+
+```ruby
+User.all.explain.count
+# EXPLAIN SELECT COUNT(*) FROM `users`
+
+User.all.explain.maximum(:id)
+# EXPLAIN SELECT MAX(`users`.`id`) FROM `users`
 ```
 
 [Do not generate server pidfile in production environments](https://github.com/rails/rails/pull/50644)  
