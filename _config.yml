@@ -3,6 +3,7 @@ description: A web-app framework that includes everything needed to create datab
 twitter: rails
 feed_path: /feed.xml
 world23_title: Rails World - 2023
+world24_title: Rails World - 2024
 
 plugins:
   - jekyll-feed
@@ -43,6 +44,10 @@ defaults:
       path: "world/2023"
     values:
       description: October 5 & 6 - Beurs van Berlage, Amsterdam, NL
+  - scope:
+      path: "world/2024"
+    values:
+      description: September 26 & 27 - Toronto, CA
 
 markdown: kramdown
 highlighter: rouge

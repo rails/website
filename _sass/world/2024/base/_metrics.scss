@@ -1,0 +1,30 @@
+:root {
+    /* Spaces modular scale */
+  --space-x-small: 0.25em;
+  --space-small: 0.5em;
+  --space-medium: 1em;
+  --space-large: 2em;
+  --space-x-large: 3em;
+  --space-xx-large: 4em;
+  --space-xxx-large: 6em;
+
+  /* Font size modular scale */
+  --type-base: calc(1.6em + 0.5vw);
+  --type-xxx-small: 55%;
+  --type-xx-small: 65%;
+  --type-x-small: 75%;
+  --type-small: 85%;
+  --type-medium: 100%;
+  --type-large: 125%;
+  --type-x-large: 150%;
+  --type-xx-large: 200%;
+  --type-xxx-large: 300%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: var(--type-base);
+}
