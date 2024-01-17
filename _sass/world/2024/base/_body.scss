@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+#main-content {
+  display: flex;
+  justify-content: center;
+}
+
 #logo {
   width: 50rem;
   max-width: 90vw;
@@ -38,10 +43,16 @@ body {
 .buttons {
   background-color: white;
   color: #cb0c1c;
-  border-radius: 25px;
+  border-radius: 6pt;
   padding: 1rem;
   text-decoration: none;
   max-width: 30rem;
+  position: relative;
+}
+
+.buttons:hover {
+  background-color: #e3dadc;
+  top: -1px;
 }
 
 .small-text {
@@ -52,9 +63,6 @@ footer {
   color: white;
   position: fixed;
   bottom: 0;
-  right: 0;
-  text-align: center;
-  margin-right: 2.5px;
 }
 
 footer a:visited {
