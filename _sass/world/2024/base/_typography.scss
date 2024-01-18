@@ -1,0 +1,85 @@
+:root {
+  --font-weight-800: 'wght' 800, 'wdth' 100, 'slnt' -12;
+  --font-weight-700: 'wght' 700, 'wdth' 100, 'slnt' -12;
+  --font-weight-600: 'wght' 600, 'wdth' 100, 'slnt' -12;
+  --font-weight-500: 'wght' 500, 'wdth' 100, 'slnt' -12;
+  --font-weight-400: 'wght' 400, 'wdth' 100, 'slnt' -12;
+  --font-weight-400-normal: 'wght' 400, 'wdth' 100, 'slnt' 0;
+  --font-weight-700-normal: 'wght' 700, 'wdth' 100, 'slnt' 0;
+}
+
+h1 {
+  font-size: var(--type-xxx-large);
+  font-variation-settings: var(--font-weight-800);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-xx-large);
+  }
+}
+
+h2 {
+  font-size: var(--type-xx-large);
+  font-variation-settings: var(--font-weight-800);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-x-large);
+  }
+}
+
+h3 {
+  font-size: var(--type-x-large);
+  font-variation-settings: var(--font-weight-800);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-large);
+  }
+}
+
+h4 {
+  font-size: var(--type-large);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-medium);
+  }
+}
+
+h5 {
+  font-size: var(--type-medium);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  font-size: var(--type-small);
+  }
+}
+
+h6 {
+  font-size: var(--type-small);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-x-small);
+  }
+}
+
+p {
+  line-height: 150%;
+  font-variation-settings: var(--font-weight-600);
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    font-size: var(--type-small);
+    font-variation-settings: var(--font-weight-400);
+  }
+}
+
+strong {
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}
