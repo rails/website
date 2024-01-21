@@ -1,7 +1,7 @@
 core:
   - name: David
     since: 2003
-    location: Denmark
+    location: USA
     url: https://dhh.dk
     handle: dhh
     image: /assets/images/core-david.jpg
