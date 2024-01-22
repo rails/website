@@ -21,7 +21,16 @@
     filter: $filter-black;
   }
 
+  &--youtube {
 
+    padding-left: 26px;
+
+    &:after {
+      background-image: url(../images/icon-youtube.svg);
+      width: 22px;
+    }
+
+  }
 
   &--twitter {
 
@@ -41,7 +50,5 @@
     }
 
   }
-
-
 
 }
