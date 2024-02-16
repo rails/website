@@ -21,11 +21,6 @@ This change generates a `.devcontainer` folder and its contents when creating a 
 The `.devcontainer` folder includes everything needed to [boot the app and do development in a remote container](https://containers.dev/).
 These files can be skipped using the `--skip-devcontainer` option.
 
-[Use ruby file: ".ruby-version" in Gemfile for new apps](https://github.com/rails/rails/pull/49360)  
-Previously, new apps would have a Ruby version set in both the Gemfile and the `.ruby-version` file.
-This duplication made it more difficult to quickly change an application's ruby version as users must remember to update multiple files.
-This change updates the app generator's Gemfile to read the Ruby version from the `.ruby-version` file.
-
 [Add `ActiveRecord::Base.with_connection` as a shortcut for leasing a connection for a short duration](https://github.com/rails/rails/pull/51083)  
 This change adds `ActiveRecord::Base.with_connection` as a shortcut for leasing a connection for a short duration.
 The leased connection is yielded, and for the duration of the block, any call to `ActiveRecord::Base.connection` will yield that same connection.
