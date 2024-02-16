@@ -45,7 +45,7 @@ Continuing on support for [puma-dev](https://github.com/puma/puma-dev) this chan
 
 
 
-_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-02-10%7D...main@%7B2024-02-16%7D)._
+_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-02-10%7D...main@%7B2024-02-16%7D)._  
 _We had [30 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20240110-20240116) to the Rails codebase this past week!_
 
 Until next time!
