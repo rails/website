@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Rails Versions 6.1.7.7, 7.0.8.2, and 7.1.3.2 have been released!'
+title: 'Rails Versions 6.1.7.7, 7.0.8.1, and 7.1.3.2 have been released!'
 categories: releases
 author: tenderlove
 published: true
