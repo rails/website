@@ -21,6 +21,12 @@ Here is a list of security issues that these releases address:
 * [CVE-2024-26142 Possible ReDoS vulnerability in Accept header parsing in Action Dispatch](https://discuss.rubyonrails.org/t/possible-redos-vulnerability-in-accept-header-parsing-in-action-dispatch/84946), fixed in 7.1.3.1 and 7.1.3.2
 * [CVE-2024-26144 Possible Sensitive Session Information Leak in Active Storage](https://discuss.rubyonrails.org/t/possible-sensitive-session-information-leak-in-active-storage/84945), fixed in 7.0.8.1 and 6.1.7.7 (does not impact Rails versions >= 7.1.0)
 
+Additionally there have been new releases of Rack to address DoS vulnerabilities.
+
+[CVE-2024-25126 Denial of Service Vulnerability in Rack Content-Type Parsing](https://discuss.rubyonrails.org/t/denial-of-service-vulnerability-in-rack-content-type-parsing/84941)
+[CVE-2024-26141 Possible DoS Vulnerability with Range Header in Rack](https://discuss.rubyonrails.org/t/possible-dos-vulnerability-with-range-header-in-rack/84944)
+[CVE-2024-26146 Possible Denial of Service Vulnerability in Rack Header Parsing](https://discuss.rubyonrails.org/t/possible-denial-of-service-vulnerability-in-rack-header-parsing/84942)
+
 Here are the shasums for the released gems:
 
 ```
