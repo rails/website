@@ -2,7 +2,7 @@
 layout: post
 title: "Logging, raising and rescuing errors and a fix for a query method."
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2022-08-19
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "A week dedicated to composite primary keys 😎"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-04-14
 ---

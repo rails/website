@@ -2,7 +2,7 @@
 layout: post
 title: "Rack 3 and Rails 7.0.4, 6.1.7, and 6.0.6 releases, ActionDispatch::Cookies, etc"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2022-09-10
 ---

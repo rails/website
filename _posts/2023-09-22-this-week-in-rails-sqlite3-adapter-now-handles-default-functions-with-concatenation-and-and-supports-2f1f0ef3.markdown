@@ -2,7 +2,7 @@
 layout: post
 title: "SQLite3 adapter now handles default functions with concatenation and supports supports_insert_returning?"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-09-22
 ---

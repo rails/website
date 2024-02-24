@@ -2,7 +2,7 @@
 layout: post
 title: "An endpoint for uptime monitors, an improved help command, etc"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-01-13
 ---

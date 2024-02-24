@@ -2,7 +2,7 @@
 layout: post
 title: "Parameter filtering and an improved ActionView::Helpers::TagHelper#token_list"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-02-10
 ---
