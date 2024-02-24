@@ -2,7 +2,7 @@
 layout: post
 title: "ERB in YAML keys, performance boosts, a new option for QueryLogs!"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2022-09-30
 ---

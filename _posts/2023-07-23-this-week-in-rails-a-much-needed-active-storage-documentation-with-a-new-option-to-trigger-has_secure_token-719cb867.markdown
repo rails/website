@@ -2,7 +2,7 @@
 layout: post
 title: "A much needed Active Storage documentation with a new option to trigger has_secure_token "
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-07-23
 ---

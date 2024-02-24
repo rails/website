@@ -2,7 +2,7 @@
 layout: post
 title: "Cache invalidation via ActiveStorage::Blob, Conditionally executing has_secure_password, etc"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2022-07-29
 ---

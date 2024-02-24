@@ -2,7 +2,7 @@
 layout: post
 title: "Special Rails World Edition: Rails 7.1.1, Solid Queue, Solid Cache, Turbo 8, etc."
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-10-13
 ---

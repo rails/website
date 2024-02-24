@@ -2,7 +2,7 @@
 layout: post
 title: "TestFixtures#fixture_path deprecation, FinderMethods#find support for composite primary key values, etc."
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2023-03-18
 ---

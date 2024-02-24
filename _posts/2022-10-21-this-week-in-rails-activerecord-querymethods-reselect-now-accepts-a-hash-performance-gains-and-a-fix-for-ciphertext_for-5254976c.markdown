@@ -2,7 +2,7 @@
 layout: post
 title: "An Active Record improvement, performance gains and a bugfix!"
 categories: news
-author: siaw23
+author: Emmanuel Hayford
 published: true
 date: 2022-10-21
 ---
