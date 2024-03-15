@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Active Record Basics Guide Refresh, Encrypted Attributes Re-Optimization, and more.."
+title: "Active Record Basics Guide Refresh, Encrypted Attributes Re-Optimization, and more..."
 categories: news
 author: zzak
 og_image: assets/images/this-week-in-rails.png
