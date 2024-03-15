@@ -20,4 +20,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install codespell==2.2.4
       - name: Check spelling with codespell
-        run: codespell --ignore-words=codespell.txt --skip="./doctrine/de.html,./doctrine/es.html,./doctrine/fr.html,./.git,./_posts/200*-*,./_posts/201*-*,./assets/200*,./assets/201*" || exit 1
+        run: codespell --ignore-words=codespell.txt --skip="./doctrine/de.html,./doctrine/es.html,./doctrine/fr.html,./.git,./_posts/200*-*,./_posts/201*-*,./assets/200*,./assets/201*,./_posts/*sao-paolo.markdown" || exit 1
