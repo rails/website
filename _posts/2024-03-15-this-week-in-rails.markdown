@@ -11,6 +11,9 @@ date: 2024-03-15
 
 Hi, it's [zzak](https://github.com/zzak). Let's explore this week's changes in the Rails codebase.
 
+The [Rails World CFP](https://sessionize.com/rails-world/) will close in just one week on March 21.  
+Submit your talk in time!
+
 [Active Record Basics Guide](https://github.com/rails/rails/pull/51226)  
 This PR refreshes the guide covering the basics of Active Record.
 
