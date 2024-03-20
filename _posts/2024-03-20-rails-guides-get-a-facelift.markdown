@@ -4,7 +4,7 @@ title: "Rails Guides get a facelift"
 categories: news
 author: Rails Foundation
 published: true
-date: 2024-03-18
+date: 2024-03-20
 ---
 
 When [Rails 7.0](/2021/12/15/Rails-7-fulfilling-a-vision) landed in December 2021, it came with a fresh new homepage and a new boot screen. The design of the guides, however, has remained largely untouched since 2009 - a point which hasn’t gone unnoticed (we heard your feedback).
