@@ -13,7 +13,7 @@ With all of the work right now going into removing complexity from the Rails fra
 
 We worked with UX designer <a href=“https://meticulous.com/“>John Athayde</a> to take the look and feel of the homepage and transfer that over to the Rails Guide to make it clean, sleek, and up-to-date.
 
-The layout will remain the same, but from today you will see the following changes reflected in the Edge Guides:
+The layout will remain the same, but from today you will see the following changes reflected in the <a href="https://edgeguides.rubyonrails.org/">Edge Guides</a>:
 
 - Cleaner, less busy design.
 - Fonts, color scheme, and logo more consistent with the home page.
