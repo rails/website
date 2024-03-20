@@ -11,7 +11,7 @@ When [Rails 7.0](/2021/12/15/Rails-7-fulfilling-a-vision) landed in December 202
 
 With all of the work right now going into removing complexity from the Rails framework and making the [documentation](/2024/2/6/documentation-update-work-has-begun) consistent, clear, and up-to-date, it was time to tackle the design of the guides and make them equally modern, simple, and fresh.
 
-We worked with UX designer <a href=“https://meticulous.com/“>John Athayde</a> to take the look and feel of the homepage and transfer that over to the Rails Guide to make it clean, sleek, and up-to-date.
+We worked with UX designer <a href="https://meticulous.com/">John Athayde</a> to take the look and feel of the homepage and transfer that over to the Rails Guide to make it clean, sleek, and up-to-date.
 
 The layout will remain the same, but from today you will see the following changes reflected in the <a href="https://edgeguides.rubyonrails.org/">Edge Guides</a>:
 
