@@ -30,7 +30,7 @@ The layout will remain the same, but from today you will see the following chang
 
 <img src="/assets/images/guide-update 6.png" style="width: 50%"><img src="/assets/images/guide-update 5.png" style="width: 50%">
 
-For now, this refresh is still a work in progress, so it is only reflected in the <a href="https://edgeguides.rubyonrails.org/">Edge Guides</a> while we make the final adjustments. Once we are happy with it, we will update the guides for stable Rails 7 guides. This design will then render for all new guides from the next release onwards.
+For now, this refresh is still a work in progress, so it is only reflected in the <a href="https://edgeguides.rubyonrails.org/">Edge Guides</a> while we make the final adjustments. Once we are happy with it, we will update the guides for stable Rails 7 versions. This design will then render for all new guides from the next release onwards.
 
 **Feedback**
 
