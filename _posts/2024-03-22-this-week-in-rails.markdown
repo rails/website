@@ -10,7 +10,7 @@ date: 2024-03-22
 
 
 Hey everyone, Happy Weekend!  
-[Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Lets dive in.
+[Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in.
 
 [Rails guides gets a facelift](https://rubyonrails.org/2024/3/20/rails-guides-get-a-facelift)   
 Rails guides has a received a big design update!  
@@ -19,7 +19,7 @@ If you find a bug or wish to submit a suggestion, you can open a discussion on [
 This also marks the beginning of trying out GitHub discussions, alongside the current [Forum](https://discuss.rubyonrails.org/)
 
 
-[Two new official new gems](https://twitter.com/dhh/status/1770590629149786189)  
+[Two new official gems](https://twitter.com/dhh/status/1770590629149786189)  
 [Solid Queue](https://github.com/rails/solid_queue), a DB-based queuing backend for Active Job, has graduated to an official [Rails gem](https://twitter.com/dhh/status/1770590629149786189).
 
 [Same](https://twitter.com/dhh/status/1770590866492809229) for [Mission Control — Jobs](https://github.com/rails/mission_control-jobs), 
