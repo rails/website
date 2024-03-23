@@ -16,8 +16,6 @@ Hey everyone, Happy Weekend!
 Rails guides has a received a big design update!  
 Check out the [Edge Guides](https://edgeguides.rubyonrails.org/) to see these changes.
 If you find a bug or wish to submit a suggestion, you can open a discussion on [GitHub](https://github.com/rails/rails/discussions).
-This also marks the beginning of trying out GitHub discussions, alongside the current [Forum](https://discuss.rubyonrails.org/)
-
 
 [Two new official gems](https://twitter.com/dhh/status/1770590629149786189)  
 [Solid Queue](https://github.com/rails/solid_queue), a DB-based queuing backend for Active Job, has graduated to an official [Rails gem](https://twitter.com/dhh/status/1770590629149786189).
