@@ -34,7 +34,7 @@ were still attempting to queue a job to process the preview image anyways.
 As part of moving towards adding a [new `config.active_record.permanent_connection_checkout` setting](https://github.com/rails/rails/pull/51349), 
 this change eliminates the remaining uses of `lease_connection` inside Active Record API. 
 
-[Do not build View watcher until the first updated? check](https://github.com/rails/rails/pull/51308)  
+[Do not build View Watcher until the first updated? check](https://github.com/rails/rails/pull/51308)  
 Currently initialization of every `Rails::Engine` leads to the creation of a new View watcher when the engine prepends its paths.
 This contributes to the time it takes to perform the first cold request on a lazy loaded application.
 This change delays the initialization of the View watcher until its first usage to only have one initialization of the watcher.
