@@ -34,7 +34,7 @@ For now, this refresh is still a work in progress, so it is only reflected in th
 
 **Feedback**
 
-If you find a bug or wish to submit a suggestion*, please <a href="[https://github.com/rails/rails/issues](https://github.com/rails/rails/discussions/categories/docs)">open a discussion on GitHub</a>, and feel free to tag <a href="https://github.com/AmandaPerino">Amanda</a> for visibility.
+If you find a bug or wish to submit a suggestion*, please <a href="https://github.com/rails/rails/discussions/categories/docs">open a discussion on GitHub</a>, and feel free to tag <a href="https://github.com/AmandaPerino">Amanda</a> for visibility.
 
 Hope you like the changes, and we look forward to your feedback!
 
