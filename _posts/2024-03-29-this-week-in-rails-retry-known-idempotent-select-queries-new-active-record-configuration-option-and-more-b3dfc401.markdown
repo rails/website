@@ -34,19 +34,21 @@ Previously, duplication still resulted in shared internal silencers and filters 
 Noting the typo in _:through_, take the following code sample as an example:
 
 
-_class User \< ApplicationRecord
-&nbsp; has\_many :courses
-&nbsp; has\_many :assignments, trough: :courses
-end_
+```ruby
+class User < ApplicationRecord
+    has_many :courses
+    has_many :assignments, trough: :courses
+end
+```
 
 
 You'd get a misleading error along the lines of
 
-_"Unknown key: :trough. Valid keys are: :class\_name, :anonymous\_class, :primary\_key, ..., :index\_errors (ArgumentError)",_
+"Unknown key: :trough. Valid keys are: :class\_name, :anonymous\_class, :primary\_key, ..., :index\_errors (ArgumentError)",
 
 with this pull request, you'll now get a clearer message, more like:
 
-_"Unknown key: :trough. Valid keys are: :class\_name, :anonymous\_class, :primary\_key, ..., :index\_errors, :through (ArgumentError)"._
+"Unknown key: :trough. Valid keys are: :class\_name, :anonymous\_class, :primary\_key, ..., :index\_errors, :through (ArgumentError)".
 
 Note that in the second error message _:through_ is included in the list of valid options.
 
@@ -55,7 +57,7 @@ Implements a mechanism to automatically retry _SELECT_ queries that are known to
 
 Queries constructed through Arel tree traversal or based on known model attributes are inherently idempotent and can be safely retried upon encountering a connection error. Previously, certain adapters like _TrilogyAdapter_ would raise _ActiveRecord::ConnectionFailed: Trilogy::EOFError_ when faced with a connection error during a request.
 
-_We had_ [_22 contributors_](https://contributors.rubyonrails.org/contributors/in-time-window/20240322-20240329) _to the Rails codebase this past week!_
+We had [22 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20240322-20240329) to the Rails codebase this past week!
 
 
 Take care.
