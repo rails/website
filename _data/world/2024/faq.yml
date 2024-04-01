@@ -32,7 +32,7 @@
         Staying longer in Toronto is a great idea - there is definitely plenty to do, and with 1,000 other attendees coming from around the world to attend Rails World, it's likely that you will have plenty of people to hang around with after the event!
 
     - question: What are the starting and ending times and dates so I can book my travel?
-      answer: >
+      answer: |-
         Sept 25, 4pm: Pre-registration and badge pickup.
         Sept 26, 9am: Day one, doors open at 9am at the venue.
         Sept 27, 8pm: Day two, closing party ends. 
@@ -51,7 +51,7 @@
         We are working hard to release tickets in April. Please sign up for <a href="https://scattergun.email/public/mailing_lists/dqkHv7uGVfIj5kgJ/subscribe">the Rails Foundation Event mailing list</a> to be informed when a definitive date and time is chosen.
 
     - question: I need a letter with the event code to obtain a visa from the Canadian government.
-      answer: >
+      answer: |-
         Please read about <a href="https://ircc.canada.ca/english/visit/visas.asp">Canadian Visa Requirements here</a>. 
         
         Most foreign nationals need a temporary resident visa (TRV) or an Electronic Travel Authorization (ETA) to travel to Canada. 
@@ -59,7 +59,7 @@
         ETAs are easy and take minutes to request, however if you need a TRV, the process can be considerably longer. Please reach out at [world@rubyonrails.org](mailto:world@rubyonrails.org) so we can help you get the process started.
     
     - question: What is the refund policy?
-      answer: >
+      answer: |-
         If you need to cancel your registration for Rails World,
         please let us know as soon as possible by emailing [world@rubyonrails.org](mailto:world@rubyonrails.org).
 
@@ -83,7 +83,7 @@
         after booking. Badges will be pre-printed 14 days before the event, so no changes or transfers will be honored after that date.
 
     - question: What is the covid/mask policy?
-      answer: >
+      answer: |-
         As of now (April 2024), Canada does not require testing, proof of vaccination, or masks at events, and so they will not be required for Rails World. Any changes in this policy will be communicated to attendees as soon as they are known.
 
         Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
@@ -92,20 +92,19 @@
 
     - question: Do you have a scholarship or financial support program?
       answer: >
-
-      If you are currently unemployed, or find the cost of attending Rails World prohibitive, please get in touch at <a href="maito:world@rubyonrails.org">world@rubyonrails.org</a>. We will work to find you a sponsor.
+        If you are currently unemployed, or find the cost of attending Rails World prohibitive, please get in touch at <a href="maito:world@rubyonrails.org">world@rubyonrails.org</a>. We will work to find you a sponsor.
 
 
 - category: Venues & Hotels
   topics:
     - question: Where is the event taking place?
-      answer: >
+      answer: |-
         Rails World will be held at the Evergreen Brick Works in Toronto. This historic building used to be the former brick factory and quarry which produced the bricks that built some of Toronto’s most iconic buildings. 
         
         We can't wait for you to see this raw, industrial, beautiful space.
 
     - question: Where should I stay?
-      answer: >
+      answer: |-
         We have secured event rates at 3 hotels in the city, chosen for: price, ease of access to the venue, and a decent hotel bar for after hours. 
         
         Ticket holders will be sent details on how you can book these rates in your confirmation.
@@ -129,13 +128,13 @@
         Most of the program will take place on two tracks and in the Sponsor Garden, all of which are all located closely together, so walking can be kept to a minimum if need be, and there will be plenty of seating throughout the space to relax.
 
     - question: Will the talks have closed captioning?
-      answer: >
+      answer: |-
         Closed captioning will be provided on the two main tracks to accommodate those with hearing impairments, as well as those who speak English as a second language and prefer to read spoken content. Screens will be set up next to the stage to display these captions, so attendees who wish to make use of the captions are advised to sit close to the screens for better viewing.
 
         Lightning talks will not have closed captioning.
 
     - question: Are food and drinks included? Can special dietary requirements be accommodated?
-      answer: >
+      answer: |-
         Rails World will provide lunch and food breaks, and light food and drinks at any official networking event. 
         
         Efforts are made to accommodate special dietary requirements, such as vegetarian, vegan, gluten-free, or other specific dietary restrictions. 
@@ -154,10 +153,8 @@
 
     - question: Does Rails World provide childcare?
       answer: >
-      
         Rails World does not typically provide childcare services directly. However, if you require assistance in finding childcare options during the conference, the organizers may be able to offer recommendations for reliable local services. It is advisable to contact the Rails World team in advance to discuss your childcare needs and receive appropriate guidance.
 
     - question: Does the venue have a single-occupancy or gender neutral bathroom?
       answer: >
-
         The bathrooms at Evergreen Brick Works are all gender neutral.
