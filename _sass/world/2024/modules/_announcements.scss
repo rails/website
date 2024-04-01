@@ -1,0 +1,15 @@
+.announcements {
+    background-color: var(--red);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: var(--border-style);
+
+    p {
+        color: var(--white);
+        font-size: var(--type-xx-small);
+    }
+}

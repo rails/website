@@ -15,7 +15,7 @@ title: Frequently Asked Questions
   <menu class="tabs">
     {% for category in categories %}
       <li>
-        <a href="#{{ category | downcase }}">{{ category }}</a>
+        <a class="categoryButton" href="#{{ category | downcase }}">{{ category }}</a>
       </li>
     {% endfor %}
   </menu>
@@ -44,3 +44,5 @@ title: Frequently Asked Questions
     {% endfor %}
   </div>
 </content-container>
+
+
