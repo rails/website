@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="en" style="scroll-behavior: smooth">
-{% include world/2024/head.html %}
+  {% include world/2024/head.html %}
+  <body>
+    {% include world/2024/announcements.html %}
+    {% include world/2024/header.html %}
 
-<body>
-  <main id="main-content" tabindex="-1">
-    {{ content }}
-  </main>
-</body>
-
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
+    
+    {% include world/2024/footer.html %}
+  </body>
 </html>

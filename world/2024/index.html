@@ -3,24 +3,54 @@ layout: world/2024/default
 permalink: /world/2024
 ---
 
-<div>
-    <img id="logo" src="/assets/world/2024/rails-world-logo-with-date.svg" />
+<div class="landing-page">
+    <section class="content-container top-information-card">
+        <img class="topLogo" alt="Rails World 2024 logo"
+            src="/assets/world/2024/images/rails_logos/railsred-mono-logo-square-dated-location.svg" />
 
-    <section class="text-container">
+    </section>
+    <div class="half-container common-shape--top-purple-down-left">
+        <section class="content-container top-information-card">
+            <h3 class="joinText">
+                Shaping the future of Ruby on Rails
+            </h3>
+
+            <a role="link" aria-disabled="true" aria-label="Tickets" class="button main disabled large">
+                Coming Soon
+            </a>
+        </section>
+    </div>
+
+    <section class="content-container top-information-text">
         <p>
-            Full site coming soon.
+            Rails World is a two-day, two track community conference featuring technical
+            talks, demos, networking, and keynotes about the latest features and best
+            practices in Rails development.
         </p>
     </section>
-    <section class="link-container">
+
+    <section class="content-container sponsor-information-text">
+        <h3>Sponsors</h3>
         <p>
-            <a class="buttons strong em" href="https://sessionize.com/rails-world/">Apply to Speak</a>
+            Sponsoring Rails World means showcasing your brand
+            to a global audience of Rails enthusiasts, developers,
+            and industry leaders. Let's make Rails World an
+            unforgettable experience for all. 
         </p>
-        <p>
-            <a class="buttons strong em" href="https://public.3.basecamp.com/p/xuZrxDiHj7vQbFzATqz8U8gc">Sponsor
-                Prospectus</a>
-        </p>
+        <a href="https://public.3.basecamp.com/p/xuZrxDiHj7vQbFzATqz8U8gc" aria-label="View prospectus" target="_blank"
+            class="button main large">VIEW PROSPECTUS</a>
+    </section>
+
+    <section class="content-container video-card">
+        <div class="textContainer">
+            <h3>Join us in Toronto</h3>
+            <p>
+                Explore one of the coolest venues in Toronto - Evergreen Brick Works -
+                located on the historic site of the former brick works and quarry and
+                surrounded by a beautiful nature park.
+            </p>
+        </div>
+
+        {% include world/2024/slideshow.html %}
     </section>
 </div>
-<footer>
-    <p class="small-text">Landing page created by <a href="https://github.com/whatnotery">Jos O'shea</a></p>
-</footer>
