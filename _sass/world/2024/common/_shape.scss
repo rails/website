@@ -1,30 +1,16 @@
 .common-shape {
   &--top-purple-down-left {
-    &:after {
-      filter: $filter-purple;
-    }
-
     &:before {
-      filter: $filter-purple;
-    }
-  }
-
-  &--top-purple-down-left {
-    &:before {
+      background-image: url('../../../../assets/world/2024/images/purple-top-down-left.svg');
       background-position: left top;
       background-repeat: no-repeat;
       background-size: 100% 100%;
       content: '';
       height: 10vw;
       left: 0;
-      max-height: 160px;
       position: absolute;
       top: -1px;
       width: 100%;
     }
-  }
-
-  &--top-purple-down-left:before {
-    background-image: url(../images/shape-top-down-left.svg);
   }
 }
