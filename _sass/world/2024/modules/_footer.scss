@@ -133,6 +133,21 @@ footer {
                 gap: 15px;
             }
         }
+
+        // Actual phone size
+        @media only screen and (max-width: 500px) {
+            .textContainer {
+                .my-button {
+                    white-space: nowrap;
+                }
+            }
+
+            .footerLegalContainer {
+                a {
+                    font-size: 0.7rem;
+                }
+            }
+        }
     }
 
     @media only screen and (max-width: 800px) {

@@ -1,5 +1,11 @@
+// Get rid of Safari default arrow
+details summary::-webkit-details-marker {
+    display: none;
+}
+
 .faqContainer {
     width: 100%;
+    overflow-x: hidden;
 
     .titleContainer {
         display: flex;
@@ -10,6 +16,11 @@
 
         h2 {
             color: var(--text-color);
+
+            // Actual phone size
+            @media screen and (max-width: 500px){
+                font-size: var(--type-x-large);
+            }
         }
     }
 
@@ -30,6 +41,8 @@
         }
 
         ul {
+            list-style-type: none;
+
             li~li {
                 margin-top: var(--space-small);
             }
@@ -42,6 +55,7 @@
                 }
 
                 summary {
+                    //get rid of webkit-details-marker
                     cursor: pointer;
                     border: var(--border-style);
                     border-radius: 5px;
@@ -76,7 +90,7 @@
                     font-size: var(--type-x-small);
                     padding: var(--space-medium);
                     gap: 5px;
-                    
+
                     a {
                         color: var(--purple);
                     }
@@ -107,15 +121,20 @@
 }
 
 .sectionNav {
+    // background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     border: var(--border-style);
     border-left: 0;
     border-right: 0;
     padding: var(--desktop-padding);
     padding-top: var(--space-small);
     padding-bottom: var(--space-small);
+
+
+
 
     @media screen and (max-width: 800px) {
         padding: var(--mobile-padding);
@@ -125,9 +144,23 @@
 
     // Actual phone size
     @media only screen and (max-width: 500px) {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 10px;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
         padding: var(--mobile-padding);
+
+        .categoryButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            min-width: 100px;
+            white-space: nowrap;   
+            margin-right: 50px;         
+        }
+
+        .categoryButton:first-child {
+            margin-right: 20px;
+        }
     }
 }

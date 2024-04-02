@@ -21,8 +21,12 @@
     gap: 20px;
     padding-top: -2rem;
 
-    .topLogo {
-        width: 80%;
+    svg {
+        image-rendering: crisp-edges;
+        --webkit-image-rendering: crisp-edges;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: unset !important;
+        width: 75%;
         max-width: 560px;
         min-width: 500px;
     }
@@ -33,10 +37,14 @@
         padding-bottom: 60px;
         gap: 40px;
 
-        .topLogo {
+        svg {
             display: none;
         }
     }
+
+    @media only screen and (min-width: 1400px) {
+        margin-bottom: 20px;
+     }
 }
 
 .half-container {
@@ -60,7 +68,8 @@
     }
 
     @media only screen and (min-width: 1400px) {
-        padding-bottom: 10px;
+       margin-top: -40px;
+       padding-bottom: 20px;
     }
 }
 
