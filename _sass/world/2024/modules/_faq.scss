@@ -121,20 +121,15 @@ details summary::-webkit-details-marker {
 }
 
 .sectionNav {
-    // background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border: var(--border-style);
     border-left: 0;
     border-right: 0;
     padding: var(--desktop-padding);
     padding-top: var(--space-small);
     padding-bottom: var(--space-small);
-
-
-
 
     @media screen and (max-width: 800px) {
         padding: var(--mobile-padding);
