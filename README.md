@@ -11,5 +11,5 @@ We do not, however, take pull requests for updating the list of highlighted Rail
 ## Development
 
 1. `bundle install`
-2. `bundle exec jekyll serve`
+2. `bundle exec jekyll serve --livereload`
 3. Go to `http://localhost:4000/`
