@@ -1,5 +1,5 @@
 html {
-  overflow-x: hidden;
+  scroll-padding-top: 85px;
 }
 
 // Fonts are only able to be udpated here for some reason.
@@ -51,4 +51,5 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow-x: hidden;
 }

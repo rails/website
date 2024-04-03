@@ -67,6 +67,7 @@
     border-radius: 50%;
     background-color: var(--white);
     opacity: 0.8;
+    touch-action: manipulation;
 
     &.active {
         background-color: var(--red);
@@ -87,6 +88,7 @@
     background-color: var(--red);
     color: var(--white);
     opacity: 0.8;
+    touch-action: manipulation;
 
     .arrowSvg {
         width: 40%;

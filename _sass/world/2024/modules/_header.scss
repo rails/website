@@ -1,9 +1,9 @@
 $headerHeight: 80px;
 
 header {
-    position: sticky;
+    position: sticky !important;
     top: 0;
-    z-index: 10;
+    z-index: 900 !important;
     width: 100%;
 
     #desktopHeader {

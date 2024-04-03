@@ -131,6 +131,17 @@ footer {
                 width: 80%;
                 justify-content: center;
                 gap: 15px;
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                a {
+                    white-space: nowrap;
+                    font-size: 0.7rem;
+                }
             }
         }
 

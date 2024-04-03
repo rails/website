@@ -32,9 +32,8 @@ details summary::-webkit-details-marker {
 
         .categoryContainer {
             display: flex;
+            gap: 5px;
             flex-direction: column;
-            gap: var(--space-small);
-            padding-top: 10px;
         }
 
         h2 {
@@ -80,6 +79,7 @@ details summary::-webkit-details-marker {
 
                     .summaryQuestion {
                         font-size: var(--type-medium);
+                        line-height: 1.15;
                     }
                 }
 
@@ -93,9 +93,14 @@ details summary::-webkit-details-marker {
                     padding: var(--space-small) var(--space-medium);
                     gap: 5px;
 
+                    //Desktop size
                     a {
                         font-style: normal;
                         color: var(--purple);
+                    }
+
+                    @media screen and (min-width: 800px) {
+                        font-size: var(--type-x-small);
                     }
                 }
 
@@ -143,6 +148,8 @@ details summary::-webkit-details-marker {
     padding: var(--desktop-padding);
     padding-top: var(--space-small);
     padding-bottom: var(--space-small);
+    z-index: 100;
+    position: relative;
 
     @media screen and (max-width: 800px) {
         padding: var(--mobile-padding);
@@ -155,7 +162,8 @@ details summary::-webkit-details-marker {
         display: flex;
         justify-content: start;
         overflow-x: scroll;
-        padding: var(--mobile-padding);
+        padding: var(--smaller-mobile-padding);
+        padding-left: 2px;
 
         .categoryButton {
             display: flex;

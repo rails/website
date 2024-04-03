@@ -1,35 +1,27 @@
-<div class="slideshowContainer">
+<div aria-controls="carousel" class="slideshowContainer">
     <div class="slide">
-        <img 
-            src="/assets/world/2024/images/locationSlideshow1.jpg" 
-            alt="Evergreen Brick Works - picture of inside building" 
-            class="slideImage"
-        >
+        <img loading="lazy" src="/assets/world/2024/images/locationSlideshow1.jpg"
+            alt="Evergreen Brick Works - picture of inside building" class="slideImage">
     </div>
     <div class="slide">
-        <img 
-            src="/assets/world/2024/images/locationSlideshow2.jpg" 
-            alt="Evergreen Brick Works - picture of inside building hallway" 
-            class="slideImage"
-        >
+        <img loading="lazy" src="/assets/world/2024/images/locationSlideshow2.jpg"
+            alt="Evergreen Brick Works - picture of inside building hallway" class="slideImage">
     </div>
     <div class="slide">
-        <img 
-            src="/assets/world/2024/images/locationSlideshow3.jpg" 
-            alt="Evergreen Brick Works - different angle of inside building" 
-            class="slideImage"
-        >
+        <!-- lazy load these images -->
+        <img loading="lazy" src="/assets/world/2024/images/locationSlideshow3.jpg"
+            alt="Evergreen Brick Works - different angle of inside building" class="slideImage">
     </div>
 
-    <div class="dotsContainer">
+    <div aria-label="carousel buttons" class="dotsContainer">
         <!-- We generate the dots here -->
     </div>
 
-    <div class="buttonsContainer">
-        <button class="button slideShow left" onclick="backwardSlide()">
+    <div aria-label="carousel buttons" class="buttonsContainer">
+        <button aria-label="previous" class="button slideShow left" onclick="backwardSlide()">
             <img class="arrowSvg" src="/assets/world/2024/images/arrow.svg" alt="arrow">
         </button>
-        <button class="button slideShow" onclick="forwardSlide()">
+        <button aria-label="next" class="button slideShow" onclick="forwardSlide()">
             <img class="arrowSvg" src="/assets/world/2024/images/arrow.svg" alt="arrow">
         </button>
     </div>
@@ -47,6 +39,7 @@
             const dot = document.createElement("button");
             dot.classList.add("button")
             dot.classList.add("dot")
+            dot.ariaLabel = `Slide ${i + 1}`
 
             dot.onclick = () => {
                 currentSlideIndex = i + 1;

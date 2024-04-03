@@ -1,6 +1,7 @@
 .landing-page {
     width: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 .content-container {
@@ -124,10 +125,6 @@
             align-items: center;
             justify-content: space-between;
             width: 105%;
-
-            @media only screen and (max-width: 800px) {
-                width: 100%;
-            }
         }
 
         .slide {
