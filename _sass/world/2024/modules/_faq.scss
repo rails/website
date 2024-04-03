@@ -34,6 +34,7 @@ details summary::-webkit-details-marker {
             display: flex;
             flex-direction: column;
             gap: var(--space-small);
+            padding-top: 10px;
         }
 
         h2 {
@@ -50,16 +51,12 @@ details summary::-webkit-details-marker {
             details {
                 transition: all 0.15s ease-in;
 
-                svg {
-                    width: 100px;
-                }
-
                 summary {
                     cursor: pointer;
                     border: var(--border-style);
                     border-radius: 5px;
                     color: var(--white);
-                    padding: var(--space-small);
+                    padding: var(--space-x-small) var(--space-small);
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -73,10 +70,16 @@ details summary::-webkit-details-marker {
                         filter: invert(1);
                         transform: rotate(90deg);
                         transition: transform 0.2s linear;
+
+                        @media screen and (max-width: 800px) {
+                            width: 20px;
+                            min-width: 20px;
+                            max-width: 20px;
+                        }
                     }
 
                     .summaryQuestion {
-                        font-size: var(--type-large);
+                        font-size: var(--type-medium);
                     }
                 }
 
@@ -86,11 +89,12 @@ details summary::-webkit-details-marker {
                     color: var(--black);
                     background-color: var(--white);
                     border-radius: 0 0 5px 5px;
-                    font-size: var(--type-x-small);
-                    padding: var(--space-medium);
+                    font-size: var(--type-small);
+                    padding: var(--space-small) var(--space-medium);
                     gap: 5px;
 
                     a {
+                        font-style: normal;
                         color: var(--purple);
                     }
                 }
@@ -115,6 +119,16 @@ details summary::-webkit-details-marker {
 
         @media only screen and (max-width: 800px) {
             padding: var(--mobile-padding);
+        }
+    
+        // Actual phone
+        @media only screen and (max-width: 500px) {
+            padding: var(--smaller-mobile-padding);
+        }
+    
+        // Larger Desktop 
+        @media only screen and (min-width: 1550px) {
+            padding: var(--larger-desktop-padding);
         }
     }
 }

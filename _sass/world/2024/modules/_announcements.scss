@@ -1,19 +1,33 @@
 .announcements {
     background-color: var(--red);
+    // background-color: green;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 0;
     border-bottom: var(--border-style);
 
-    p {
-        color: var(--white);
-        font-size: var(--type-xx-small);
+    .textContainer {
+        // background-color: cyan;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: var(--white);
+            font-size: var(--type-x-small);
+
+            @media screen and (max-width: 500px){
+                font-size: var(--type-xxx-small);
+            }
+        }
     }
 
     a {
+        font-style: normal;
         color: var(--white);
     }
 }

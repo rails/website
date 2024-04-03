@@ -2,7 +2,9 @@
 {% if announcements %}
   <div class="announcements">
     {% for announcement in announcements %}
-      <p>{{ announcement.content }}</p>
+      <div class="textContainer">
+        <p>{{ announcement.content }}</p>
+      </div>
     {% endfor %}
   </div>
 {% endif %}

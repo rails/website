@@ -1,7 +1,7 @@
 ---
 layout: world/2024/default
 permalink: /world/2024/faq
-<!-- redirect_from: /world/faq -->
+redirect_from: /world/faq
 title: Frequently Asked Questions
 ---
 
@@ -53,24 +53,14 @@ assign faqData = site.data.world['2024'].faq %} {% assign categories = faqData |
 
 </div>
 
-<!-- Script to adjust the scrollTo based of header height -->
+<!-- Script to focus category after clicking -->
 <script>
     const allATags = document.getElementsByClassName('categoryButton');
 
     for (let i = 0; i < allATags.length; i++) {
         allATags[i].addEventListener('click', function (event) {
-            event.preventDefault();
-
             const targetId = allATags[i].getAttribute('href');
             const targetElement = document.querySelector(targetId);
-
-            const headerHeight = document.getElementById('header-2024').offsetHeight;
-            const targetPosition = targetElement.offsetTop - headerHeight - 5;
-
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
 
             // Set focus for accessibility users
             targetElement.focus();

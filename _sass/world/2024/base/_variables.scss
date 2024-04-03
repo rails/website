@@ -1,6 +1,8 @@
 :root {
+    --larger-desktop-padding: var(--space-large) var(--space-xxxx-large);
     --desktop-padding: var(--space-large) var(--space-xxx-large);
     --mobile-padding:  var(--space-medium) var(--space-large);
+    --smaller-mobile-padding: var(--space-medium) var(--space-medium);
 }
 
 $filter-dark-purple: brightness(0) saturate(100%) invert(17%) sepia(34%) saturate(1978%) hue-rotate(238deg) brightness(95%) contrast(98%);
