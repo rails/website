@@ -6,7 +6,6 @@
     cursor: pointer;
     text-decoration: none;
     transition: box-shadow 0.15s ease;
-    // font-style: normal;
     transition: all 0.15s ease;
 
     &:hover {
@@ -22,7 +21,6 @@
 .button.main {
     background: var(--red);
     color: var(--white);
-    // font-weight: var(--font-weight-400);
     text-transform: uppercase;
 
     &:hover {
