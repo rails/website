@@ -80,6 +80,7 @@ details summary::-webkit-details-marker {
                     .summaryQuestion {
                         font-size: var(--type-medium);
                         line-height: 1.15;
+                        font-weight: 500;
                     }
                 }
 
@@ -151,8 +152,22 @@ details summary::-webkit-details-marker {
     z-index: 100;
     position: relative;
 
-    @media screen and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         padding: var(--mobile-padding);
+        padding-top: var(--space-x-small);
+        padding-bottom: var(--space-x-small);
+    }
+
+    // Actual phone
+    @media only screen and (max-width: 500px) {
+        padding: var(--smaller-mobile-padding);
+        padding-top: var(--space-x-small);
+        padding-bottom: var(--space-x-small);
+    }
+
+    // Larger Desktop 
+    @media only screen and (min-width: 1550px) {
+        padding: var(--larger-desktop-padding);
         padding-top: var(--space-x-small);
         padding-bottom: var(--space-x-small);
     }
