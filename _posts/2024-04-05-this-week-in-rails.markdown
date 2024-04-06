@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Defering jobs enqueuening to after the transaction commit, queries count in rendering logs and more"
+title: "Deferring jobs enqueueing to after the transaction commit, queries count in rendering logs and more"
 categories: news
 author: Wojtek
 og_image: assets/images/this-week-in-rails.png
@@ -56,10 +56,10 @@ end
 
 Now Active Job will automatically defer the enqueuing to after the transaction is committed, and drop the job if the transaction is rolled back.
 
-Various queue implementations can chose to disable this behavior, and users can disable it, or force it on a per job basis:
+Various queue implementations can choose to disable this behavior, and users can disable it, or force it on a per job basis:
 ```ruby
 class NewTopicNotificationJob < ApplicationJob
-  self.enqueue_after_transaction_commit = false
+  self.enqueue_after_transaction_commit = :never # or :always or :default
 end
 ```
 
