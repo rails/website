@@ -34,7 +34,7 @@ end
 
 Add *ActiveRecord.after_all_transactions_commit* callback.
 
-Useful for code that may run either inside or outside a transaction and need to perform works after the state changes have been properly peristed.
+Useful for code that may run either inside or outside a transaction and needs to perform work after the state changes have been properly persisted.
 ```ruby
 def publish_article(article)
   article.update(published: true)
