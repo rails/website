@@ -5,10 +5,7 @@
     color: var(--black);
     cursor: pointer;
     text-decoration: none;
-    font-weight: var(--font-weight-800);
-    font-size: var(--type-medium);
     transition: box-shadow 0.15s ease;
-    font-style: normal;
     transition: all 0.15s ease;
 
     &:hover {
@@ -24,7 +21,6 @@
 .button.main {
     background: var(--red);
     color: var(--white);
-    font-weight: var(--font-weight-400);
     text-transform: uppercase;
 
     &:hover {
@@ -69,6 +65,7 @@
     border-radius: 50%;
     background-color: var(--white);
     opacity: 0.8;
+    touch-action: manipulation;
 
     &.active {
         background-color: var(--red);
@@ -89,6 +86,7 @@
     background-color: var(--red);
     color: var(--white);
     opacity: 0.8;
+    touch-action: manipulation;
 
     .arrowSvg {
         width: 40%;

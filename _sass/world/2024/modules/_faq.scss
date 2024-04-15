@@ -32,8 +32,8 @@ details summary::-webkit-details-marker {
 
         .categoryContainer {
             display: flex;
+            gap: 5px;
             flex-direction: column;
-            gap: var(--space-small);
         }
 
         h2 {
@@ -49,10 +49,6 @@ details summary::-webkit-details-marker {
 
             details {
                 transition: all 0.15s ease-in;
-
-                svg {
-                    width: 100px;
-                }
 
                 summary {
                     cursor: pointer;
@@ -73,10 +69,18 @@ details summary::-webkit-details-marker {
                         filter: invert(1);
                         transform: rotate(90deg);
                         transition: transform 0.2s linear;
+
+                        @media screen and (max-width: 800px) {
+                            width: 20px;
+                            min-width: 20px;
+                            max-width: 20px;
+                        }
                     }
 
                     .summaryQuestion {
-                        font-size: var(--type-large);
+                        font-size: var(--type-medium);
+                        line-height: 1.15;
+                        font-weight: 500;
                     }
                 }
 
@@ -86,12 +90,18 @@ details summary::-webkit-details-marker {
                     color: var(--black);
                     background-color: var(--white);
                     border-radius: 0 0 5px 5px;
-                    font-size: var(--type-x-small);
-                    padding: var(--space-medium);
+                    font-size: var(--type-small);
+                    padding: var(--space-small) var(--space-medium);
                     gap: 5px;
 
+                    //Desktop size
                     a {
+                        font-style: normal;
                         color: var(--purple);
+                    }
+
+                    @media screen and (min-width: 800px) {
+                        font-size: var(--type-x-small);
                     }
                 }
 
@@ -116,6 +126,16 @@ details summary::-webkit-details-marker {
         @media only screen and (max-width: 800px) {
             padding: var(--mobile-padding);
         }
+    
+        // Actual phone
+        @media only screen and (max-width: 500px) {
+            padding: var(--smaller-mobile-padding);
+        }
+    
+        // Larger Desktop 
+        @media only screen and (min-width: 1550px) {
+            padding: var(--larger-desktop-padding);
+        }
     }
 }
 
@@ -129,9 +149,25 @@ details summary::-webkit-details-marker {
     padding: var(--desktop-padding);
     padding-top: var(--space-small);
     padding-bottom: var(--space-small);
+    z-index: 100;
+    position: relative;
 
-    @media screen and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         padding: var(--mobile-padding);
+        padding-top: var(--space-x-small);
+        padding-bottom: var(--space-x-small);
+    }
+
+    // Actual phone
+    @media only screen and (max-width: 500px) {
+        padding: var(--smaller-mobile-padding);
+        padding-top: var(--space-x-small);
+        padding-bottom: var(--space-x-small);
+    }
+
+    // Larger Desktop 
+    @media only screen and (min-width: 1550px) {
+        padding: var(--larger-desktop-padding);
         padding-top: var(--space-x-small);
         padding-bottom: var(--space-x-small);
     }
@@ -141,7 +177,8 @@ details summary::-webkit-details-marker {
         display: flex;
         justify-content: start;
         overflow-x: scroll;
-        padding: var(--mobile-padding);
+        padding: var(--smaller-mobile-padding);
+        padding-left: 2px;
 
         .categoryButton {
             display: flex;
