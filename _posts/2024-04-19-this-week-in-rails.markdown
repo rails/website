@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ActiveRecord::Base#pluck, devcontainers improvements and more!"
+title: "ActiveRecord::Base#pluck accepts hash values, devcontainers improvements and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
