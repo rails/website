@@ -56,7 +56,7 @@
 
     @media only screen and (min-width: 1400px) {
         margin-bottom: 20px;
-     }
+    }
 }
 
 .half-container {
@@ -80,8 +80,8 @@
     }
 
     @media only screen and (min-width: 1400px) {
-       margin-top: -40px;
-       padding-bottom: 20px;
+        margin-top: -40px;
+        padding-bottom: 20px;
     }
 }
 
@@ -102,7 +102,7 @@
     .textContainer {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: var(--header-and-paragraph-padding);
     }
 
     .slideshowContainer {
@@ -162,16 +162,6 @@
             justify-content: flex-end;
         }
     }
-}
-
-.sponsor-information-text {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: start;
-    background-color: rgba(255, 255, 255, 5%);
-    gap: 15px;
-    border-bottom: var(--border-style);
 }
 
 .link-container {

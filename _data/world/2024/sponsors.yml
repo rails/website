@@ -1,0 +1,27 @@
+platinum:
+  - name: AppSignal
+    logo: /assets/world/2023/images/sponsors/RW-logo-appsignal.svg
+    url: https://www.appsignal.com/
+  - name: Babbel
+    logo: /assets/world/2023/images/sponsors/RW-logo-babbel.svg
+    url: https://www.babbel.com/
+  - name: Shopify
+    logo: /assets/world/2023/images/sponsors/RW-logo-shopify.svg
+    url: https://www.shopify.com/
+
+gold:
+  - name: ViaEurope
+    logo: /assets/world/2023/images/sponsors/RW-logo-viaeurope.svg
+    url: https://www.viaeurope.com/
+  - name: Crunchy Data
+    logo: /assets/world/2023/images/sponsors/RW-logo-crunchydata.svg
+    url: https://www.crunchydata.com/
+  - name: GitHub
+    logo: /assets/world/2023/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: MagmaLabs
+    logo: /assets/world/2023/images/sponsors/RW-logo-magmalabs.svg
+    url: https://www.magmalabs.io/
+  - name: Wafris
+    logo: /assets/world/2023/images/sponsors/RW-logo-wafris.svg
+    url: https://wafris.org/

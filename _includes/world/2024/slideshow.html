@@ -1,4 +1,4 @@
-<div aria-controls="carousel" class="slideshowContainer">
+<div class="slideshowContainer" aria-label="Image slideshow" role="region">
     <div class="slide">
         <img loading="lazy" src="/assets/world/2024/images/locationSlideshow1.jpg"
             alt="Evergreen Brick Works - picture of inside building" class="slideImage">
@@ -59,6 +59,7 @@
         }
 
         for (let i = 0; i < slides.length; i++) {
+            slides[i].ariaHidden = true;
             slides[i].style.display = "none";
         }
 
@@ -69,6 +70,7 @@
         }
 
         slides[currentSlideIndex - 1].style.display = "flex";
+        slides[currentSlideIndex - 1].ariaHidden = false;
         dots[currentSlideIndex - 1].classList.add("active")
     }
 
