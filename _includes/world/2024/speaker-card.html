@@ -1,0 +1,21 @@
+<div class="speakerCard">
+    <div class="cardBackground">
+        <div class="line"></div>
+    </div>
+
+    <div class="contentContainer">
+        <div class="photoContainer">
+            <div class="speakerPhoto">
+                <img src="{{ include.photo }}" alt="{{ include.first_name }} {{ include.last_name }}'s photo" loading="lazy">
+            </div>
+        </div>
+
+        <div class="nameContainer">
+            <h4 class="name">
+                {{ include.first_name }} {{ include.last_name }}
+            </h4>
+
+            <p class="role">{{ include.role }}, {{ include.company }}</p>
+        </div>
+    </div>
+</div>
