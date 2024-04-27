@@ -79,5 +79,9 @@
         scroll-snap-points-x: repeat(100%);
         scroll-snap-stop: always;
         -webkit-overflow-scrolling: touch;
+
+        @media screen and (min-width: 650px) {
+          justify-content: center;
+        }
     }
 }
