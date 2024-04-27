@@ -232,14 +232,11 @@
     margin-top: 7px;
     max-width: 100%;
     overflow-x: auto;
-    padding: 22px 30px;
     white-space: pre;
-
     code {
-      background: none;
-      padding: 0;
+      padding: 22px 30px;
+      min-width: 100%;
     }
-
   }
 
   code {
@@ -343,7 +340,16 @@
     }
 
   }
+}
 
+@media (prefers-color-scheme: dark) {
+  pre, code {
+    background-color: none;
+    color: #fff;
+  } // pre, code
 
-
+  p code, ul code, li code {
+    background-color: $color-grey-2;
+    color: $color-white;
+  }
 }
