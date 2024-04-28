@@ -81,6 +81,7 @@
         -webkit-overflow-scrolling: touch;
     }
 
+    // Centering for four speakers (need to change if speakers change)
     @media screen and (min-width: 1350px) {
         .headerContainer {
             justify-content: center;
