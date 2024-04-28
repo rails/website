@@ -8,7 +8,7 @@
     .headerContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
 
         .textContainer {
             display: flex;
@@ -79,9 +79,5 @@
         scroll-snap-points-x: repeat(100%);
         scroll-snap-stop: always;
         -webkit-overflow-scrolling: touch;
-
-        @media screen and (min-width: 650px) {
-          justify-content: center;
-        }
     }
 }
