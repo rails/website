@@ -54,8 +54,9 @@
         }
     }
 
+    // Push down to avoid the circle svg cutting off border
     @media only screen and (min-width: 1400px) {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 }
 
