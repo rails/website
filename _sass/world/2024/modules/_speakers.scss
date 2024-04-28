@@ -80,4 +80,24 @@
         scroll-snap-stop: always;
         -webkit-overflow-scrolling: touch;
     }
+
+    @media screen and (min-width: 1350px) {
+        .headerContainer {
+            justify-content: center;
+
+            .textContainer {
+                align-items: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .cardsContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
