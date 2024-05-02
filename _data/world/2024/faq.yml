@@ -46,17 +46,13 @@
 - category: Tickets & Visas
   topics:
 
-    - question: When will tickets be released?
-      answer: >
-        We are working hard to release tickets in April. Please sign up for <a href="https://scattergun.email/public/mailing_lists/dqkHv7uGVfIj5kgJ/subscribe">the Rails Foundation Event mailing list</a> to be informed when a definitive date and time is chosen.
-
     - question: I need a letter with the event code to obtain a visa from the Canadian government.
       answer: |-
         Please read about <a href="https://ircc.canada.ca/english/visit/visas.asp">Canadian Visa Requirements here</a>. 
         
         Most foreign nationals need a temporary resident visa (TRV) or an Electronic Travel Authorization (ETA) to travel to Canada. 
         
-        ETAs are easy and take minutes to request, however if you need a TRV, the process can be considerably longer. Please reach out at [world@rubyonrails.org](mailto:world@rubyonrails.org) so we can help you get the process started.
+        ETAs are easy and take minutes to request, however if you need a TRV, the process can be considerably longer. Registered attendees have recieved information about visas and requesting a letter of invitation in their ticket confirmation.
     
     - question: What is the refund policy?
       answer: |-
@@ -92,7 +88,8 @@
 
     - question: Do you have a scholarship or financial support program?
       answer: >
-        If you are currently unemployed, or find the cost of attending Rails World prohibitive, please get in touch at <a href="maito:world@rubyonrails.org">world@rubyonrails.org</a>. We will work to find you a sponsor.
+
+      The financial support program is currently maxed out while we find sponsors for the current applicants. We will not be taking any further applicants at this time.
 
 
 - category: Venues & Hotels
