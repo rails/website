@@ -15,6 +15,9 @@ Hi, [Wojtek](https://twitter.com/morgoth85) here. Let's explore this week's chan
 Your input is invaluable and will help the team at Planet Argon gather insight on the current state of the Rails community. [Fill in the survey here](https://railsdeveloper.com/survey/). (And feel free to share with your teams).
 The survey will remain open until August 2nd, 2024, and the findings released shortly thereafter.
 
+[A New Era for Ruby Central Events](https://rubycentral.org/news/anewearforrubycentralevents/)  
+Ruby Central announced that 2025 will be the last year of *RailsConf* and they are inviting the community to vote on where the last edition should be held. [Read the full announcement here](https://rubycentral.org/news/anewearforrubycentralevents/), and cast your vote.
+
 [Fix index_errors and provide :nested_attributes_order mode](https://github.com/rails/rails/pull/48727)  
 This indexes the association validation errors based on the order received by nested attributes setter, and respects the *reject_if* configuration.
 This enables API to provide enough information to the frontend to map the validation errors back to their respective form fields.
