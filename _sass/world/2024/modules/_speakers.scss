@@ -1,3 +1,4 @@
+// Replace existing code with // ! code - when more than 4 speakers
 .speaker-cards {
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
     .headerContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
 
         .textContainer {
             display: flex;
@@ -16,19 +17,24 @@
             align-items: flex-start;
             justify-content: center;
             gap: var(--header-and-paragraph-padding);
-            width: 85%;
+
+            width: 100%;
+            // ! width: 85%;
 
             p {
                 text-align: start;
             }
 
-            @media screen and (max-width: 650px) {
-                width: 80%;
-            }
+          
+            // ! @media screen and (max-width: 650px) {
+            // !     width: 80%;
+            // ! }
         }
 
         .buttonsContainer {
-            display: flex;
+            display: none;
+            // ! display: flex;
+
             align-items: flex-end;
             justify-content: flex-end;
             gap: 15px;
@@ -79,5 +85,27 @@
         scroll-snap-points-x: repeat(100%);
         scroll-snap-stop: always;
         -webkit-overflow-scrolling: touch;
+    }
+
+    // ! Centering for four speakers
+    // ! Remove this whole media query when more than 4 speakers
+    @media screen and (min-width: 1350px) {
+        .headerContainer {
+            justify-content: center;
+
+            .textContainer {
+                align-items: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .cardsContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

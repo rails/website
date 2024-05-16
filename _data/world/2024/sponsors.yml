@@ -1,27 +1,57 @@
 platinum:
-  - name: AppSignal
-    logo: /assets/world/2023/images/sponsors/RW-logo-appsignal.svg
-    url: https://www.appsignal.com/
-  - name: Babbel
-    logo: /assets/world/2023/images/sponsors/RW-logo-babbel.svg
-    url: https://www.babbel.com/
   - name: Shopify
-    logo: /assets/world/2023/images/sponsors/RW-logo-shopify.svg
+    logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
     url: https://www.shopify.com/
+  - name: GitHub
+    logo: /assets/world/2024/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: AppSignal
+    logo: /assets/world/2024/images/sponsors/RW-logo-appsignal.svg
+    url: https://www.appsignal.com/
 
 gold:
-  - name: ViaEurope
-    logo: /assets/world/2023/images/sponsors/RW-logo-viaeurope.svg
-    url: https://www.viaeurope.com/
+  - name: Huntress
+    logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
+    url: https://www.huntress.com/
   - name: Crunchy Data
-    logo: /assets/world/2023/images/sponsors/RW-logo-crunchydata.svg
+    logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
-  - name: GitHub
-    logo: /assets/world/2023/images/sponsors/RW-logo-github.svg
-    url: https://www.github.com/
-  - name: MagmaLabs
-    logo: /assets/world/2023/images/sponsors/RW-logo-magmalabs.svg
-    url: https://www.magmalabs.io/
-  - name: Wafris
-    logo: /assets/world/2023/images/sponsors/RW-logo-wafris.svg
-    url: https://wafris.org/
+  - name: Fullscript
+    logo: /assets/world/2024/images/sponsors/RW-logo-fullscript.png
+    url: https://fullscript.com/
+  - name: Cedarcode
+    logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
+    url: https://www.cedarcode.com/
+  - name: ODDS
+    logo: /assets/world/2024/images/sponsors/RW-logo-odds.svg
+    url: https://odds.team/
+  - name: Cookpad
+    logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
+    url: https://cookpad.com/uk
+  - name: Doximity
+    logo: /assets/world/2024/images/sponsors/RW-logo-doximity.svg
+    url: https://www.doximity.com/
+  - name: Fleetio
+    logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
+    url: https://www.fleetio.com/
+  - name: Intercom
+    logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
+    url: https://www.intercom.com/
+  - name: Procore
+    logo: /assets/world/2024/images/sponsors/RW-logo-procore.svg
+    url: https://procore.com/
+  - name: 37signals
+    logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
+    url: https://37signals.com/
+  - name: BigBinary
+    logo: /assets/world/2024/images/sponsors/RW-logo-bigbinary.svg
+    url: https://www.bigbinary.com/
+  - name: makandra
+    logo: /assets/world/2024/images/sponsors/RW-logo-makandra.svg
+    url: https://makandra.de/
+  - name: Planet Argon
+    logo: /assets/world/2024/images/sponsors/RW-logo-planet-argon.png
+    url: https://www.planetargon.com/
+  - name: Renuo
+    logo: /assets/world/2024/images/sponsors/RW-logo-renuo.svg
+    url: https://www.renuo.ch/

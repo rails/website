@@ -2,13 +2,14 @@
 {% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
 {% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
 
+
 <section class="content-container speaker-cards">
     <div class="headerContainer">
         <div class="textContainer">
-            <h3>Speakers</h3>
+            <h3>Keynote Speakers</h3>
             <p>
-                Our industry's brightest speakers gathered in Toronto to share their expertise, insights, and success
-                stories.
+                Gain invaluable insights from our four keynote speakers on the present landscape of Rails and where
+                Rails is headed tomorrow and beyond. More speakers announced soon.
             </p>
         </div>
         <div class="buttonsContainer">
@@ -24,7 +25,7 @@
         {% for speaker in keynote_speakers %}
             {%
             include world/2024/speaker-card.html
-            first_name=speaker.first_name 
+            first_name=speaker.first_name
             last_name=speaker.last_name
             role=speaker.role
             company=speaker.company
@@ -34,7 +35,7 @@
         {% for speaker in non_keynote_speakers %}
             {%
             include world/2024/speaker-card.html
-            first_name=speaker.first_name 
+            first_name=speaker.first_name
             last_name=speaker.last_name
             role=speaker.role
             company=speaker.company
