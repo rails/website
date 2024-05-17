@@ -20,7 +20,7 @@ This week marks the official start of Rails 8.0 development. Stay tuned for more
 
 [Add Kamal by default to Rails 8 ](https://github.com/rails/rails/pull/51798)  
 This PR adds Kamal for deployment by default, which includes generating a Rails-specific `config/deploy.yml`.
-This can be skipped using  `--skip-kamal`. Check more about Kamal on its [official site](https://kamal-deploy.org/). 
+This can be skipped using  `--skip-kamal`. Check out more about Kamal on its [official site](https://kamal-deploy.org/). 
 
 [Add support for :if_not_exists and :force options to create_schema](https://github.com/rails/rails/pull/51790)  
 This change adds missing support for `:if_not_exists` and `:force` options to `create_schema`.
