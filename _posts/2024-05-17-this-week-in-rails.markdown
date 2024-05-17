@@ -13,7 +13,7 @@ Hey everyone, Happy Friday!
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in.
 
 
-[Development of Rails 8.0 starts now](https://github.com/rails/rails/commit/37fd0e7fe4990c4e5db10813bae3bba10c8be479)
+[Development of Rails 8.0 starts now 🎉](https://github.com/rails/rails/commit/37fd0e7fe4990c4e5db10813bae3bba10c8be479)
 This week marks the official start of Rails 8.0 development. Stay tuned for more updates on Rails 8.0 features and changes ahead 🎉.
 
 [Rails 8 will target Ruby 3.3+ only for new apps](https://github.com/rails/rails/commit/dc96d29d2bd64948c444c76e5aabc641da6f7aa0)
@@ -46,12 +46,12 @@ end
 User.touch_all(:updated_at)
 ```
 
-then ActiveRecord would not resolve `updated_at` to its alias correctly and result to a query that updates the same column twice.
+then ActiveRecord would not resolve `updated_at` to its alias correctly and resulted to a query that updates the same column twice.
 This PR fixes the behavior to correctly resolve the alias.
 
 [Support duration in ActiveSupport::XmlMini ](https://github.com/rails/rails/pull/51651)
 
-Before this change `ActiveSupport::XmlMini` could not handle duration type in XML, which is one of primitive data type. This PR adds support for duration type using `ActiveSupport::Duration`.    
+Before this change `ActiveSupport::XmlMini` could not handle duration type in XML, which is one of the primitive data type. This PR adds support for duration type using `ActiveSupport::Duration`.    
 
 [Support touch_all in batches](https://github.com/rails/rails/pull/51785)
 This change adds support for `touch_all` in batches.  This is similarly supported for update_all/delete_all/etc)
