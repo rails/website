@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start of Rails 8 development, Kamal by default, and lots more!"
+title: "Start of Rails 8 development, 7.0.8.2 & 7.1.3.3 released, Kamal by default, and lots more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
