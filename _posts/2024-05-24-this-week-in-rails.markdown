@@ -21,13 +21,13 @@ Because it can cause a lot of hard to detect issues, `automatically_invert_plura
 [Make devcontainers opt in and create a devcontainer command](https://github.com/rails/rails/pull/51880)   
 This pull request has been created because dev containers will be an opt in feature in Rails 7.2. So, new apps will only get a devcontainer if you pass the `--devcontainer` flag to `rails new`. Additionally, you will be able to generate a devcontainer for an existing app with `bin/rails devcontainer`.
 
-[Make public method for _schema_cache_ignored_tables?_](https://github.com/rails/rails/pull/51878)  
+[Make public method for _schema_cache_ignored_table?_](https://github.com/rails/rails/pull/51878)  
 This pull request adds a public method for checking if a table is ignored by the schema cache.  
 Previously, an application would need to reimplement `ignored_table?` from the schema cache class to check if a table was set to be ignored. This change adds a public method to support this and updates the schema cache to use that directly.
 
 ```ruby
-ActiveRecord.schema_cache_ignored_tables = ["developers"]
-ActiveRecord.schema_cache_ignored_tables?("developers")
+ActiveRecord.schema_cache_ignored_table = ["developers"]
+ActiveRecord.schema_cache_ignored_table?("developers")
 => true
 ```
 
