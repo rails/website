@@ -18,6 +18,19 @@ $mobileWidth: 570px;
         background-color: var(--white);
         min-height: 0px;
         border-radius: 10px;
+
+        .soldOutContainer {
+            padding: 15px;
+
+            p {
+                color: black;
+                font-size: var(--type-medium);
+
+                @media screen and (max-width: 650px) {
+                    font-size: var(--type-large);
+                }
+            }
+        }
     }
 }
 

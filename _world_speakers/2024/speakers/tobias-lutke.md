@@ -1,5 +1,5 @@
 ---
-#layout: world/2024/speaker
+layout: world/2024/speaker
 first_name: Tobias
 last_name: Lütke
 image_path: /assets/world/2024/images/speakers/t-lutke.jpg

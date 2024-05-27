@@ -13,4 +13,19 @@
       width: 100%;
     }
   }
+
+  &--top-blue-down-left {
+    &:before {
+      background-image: url('../../../../assets/world/2024/images/blue-top-down-left.svg');
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      content: '';
+      height: 10vw;
+      left: 0;
+      position: absolute;
+      top: -1px;
+      width: 100%;
+    }
+  }
 }

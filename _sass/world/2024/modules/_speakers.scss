@@ -2,6 +2,7 @@
 .speaker-cards {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     background-color: var(--blue);
     border-bottom: var(--border-style);
     overflow-y: visible;
@@ -18,22 +19,20 @@
             justify-content: center;
             gap: var(--header-and-paragraph-padding);
 
-            width: 100%;
-            // ! width: 85%;
+            width: 85%;
 
             p {
                 text-align: start;
             }
 
-          
-            // ! @media screen and (max-width: 650px) {
-            // !     width: 80%;
-            // ! }
+
+            @media screen and (max-width: 650px) {
+              width: 80%;
+            }
         }
 
         .buttonsContainer {
-            display: none;
-            // ! display: flex;
+            display: flex;
 
             align-items: flex-end;
             justify-content: flex-end;
@@ -87,25 +86,7 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    // ! Centering for four speakers
-    // ! Remove this whole media query when more than 4 speakers
-    @media screen and (min-width: 1350px) {
-        .headerContainer {
-            justify-content: center;
-
-            .textContainer {
-                align-items: center;
-
-                p {
-                    text-align: center;
-                }
-            }
-        }
-
-        .cardsContainer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .viewAllSpeakers {
+        margin-left: 1px;
     }
 }

@@ -49,7 +49,10 @@ body {
 
 #main-content {
   display: flex;
+  position: relative;
+  height: 100%;
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
+  flex: 1;
 }
