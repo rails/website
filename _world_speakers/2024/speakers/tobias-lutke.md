@@ -9,6 +9,7 @@ keynote: true
 github: https://github.com/tobi
 linkedin: https://www.linkedin.com/in/tobiaslutke/
 twitter: https://twitter.com/tobi
+specific_order: 3
 ---
 
 Shopify CEO by day, Dad in evening, hacker at night.

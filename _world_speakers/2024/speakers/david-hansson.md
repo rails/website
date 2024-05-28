@@ -9,6 +9,7 @@ keynote: true
 github: https://github.com/dhh
 linkedin: https://www.linkedin.com/in/david-heinemeier-hansson-374b18221/
 twitter: https://twitter.com/dhh
+specific_order: 1
 ---
 
 Creator of Ruby on Rails.

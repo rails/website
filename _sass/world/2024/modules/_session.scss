@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 45px 0px;
     width: 100%;
     height: 100%;
     flex: 1;
@@ -11,7 +11,7 @@
         position: relative;
         background-color: var(--white);
         width: 85%;
-        max-width: 1700px;
+        max-width: 1300px;
         display: flex;
         border-radius: 15px;
         flex-direction: column;
@@ -20,7 +20,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            margin-top: -40px;
+            margin-top: -41px;
             height: 40px;
             display: flex;
             align-items: center;
@@ -58,15 +58,16 @@
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
-            gap: 15px;
+            gap: 10px;
             padding: 25px 25px;
 
             .sessionTitle {
                 color: var(--red);
             }
 
-            .description {}
-
+            p {
+                line-height: 1.4;
+            }
 
             .informationContainer {
                 display: flex;
@@ -218,6 +219,8 @@
                             height: 300px;
                             will-change: box-shadow;
                             transition: 0.4s ease;
+                            object-fit: cover;
+                            object-position: center;
 
                             // desktop 
                             @media screen and (max-width: 950px) {
