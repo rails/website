@@ -1,0 +1,107 @@
+---
+layout: world/2024/default
+---
+
+{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" |
+where_exp: 'item', 'item.path contains "2024"'%}
+{% assign speaker = filteredSpeakers | first %}
+{% assign speakerUrl = speaker.path | split: '/' | last | remove_first: '.md' %}
+
+<div class="sessionPage">
+    <div class="sessionContainer">
+        <div class="breadCrumbsContainer">
+            <a href="/world/2024" class="link">
+                World
+            </a>
+            <p>></p>
+            <a href="/world/2024/speakers" class="link">
+                Speakers
+            </a>
+            <p>></p>
+            <a href="/world/2024/speakers/{{ speakerUrl }}" class="link">
+                {{ speaker.first_name }} {{ speaker.last_name }}
+            </a>
+            <p>></p>
+            <p>{{ page.title }}</p>
+        </div>
+        <div class="topContainer">
+            <h2 class="sessionTitle">
+                {{ page.title }}
+            </h2>
+            <p class="description">
+                {{ content }}
+            </p>
+            <div class="informationContainer">
+                {% if page.sponsor %}
+                <div class="sessionTimeContainer">
+                    {% include world/2024/icons/clock.html %}
+
+                    <p>{{ page.time }}</p>
+                </div>
+                {% else %}
+                <div class="placeHolderContainer">
+                    
+                </div>
+                {% endif %}
+                {% if page.session_date %}
+                <div class="sessionDateContainer">
+                    {% include world/2024/icons/calendar.html %}
+
+                    <p>{{ page.session_date }}</p>
+                </div>
+                {% else %}
+                <div class="placeHolderContainer">
+                    
+                </div>
+                {% endif %}
+                {% if page.location %}
+                <div class="sessionLocationContainer">
+                    {% include world/2024/icons/location.html %}
+
+                    <p>{{ page.location }}</p>
+                </div>
+                {% else %}
+                <div class="placeHolderContainer">
+
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="bottomContainer common-shape--top-white-down-left">
+            <div class="speakerContainer">
+                <div class="theLine"></div>
+                <div class="speakerContent">
+                    <div class="left">
+                        <img src="{{ speaker.image_path }}" alt="{{ speaker.first_name }}'s Profile Picture">
+                    </div>
+                    <div class="rightSession">
+                        <a class="speakersTag" href="/world/2024/speakers/{{ speakerUrl }}">
+                            <p class="speakerName">{{ speaker.first_name }} {{ speaker.last_name }}</p>
+                            <p class="speakerRole">{{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{%
+                                endif %}</p>
+                        </a>
+                        <p class="speakerDesc">{{ speaker.content }}</p>
+                        <div class="socialLinksSession">
+                            {% if speaker.github %}
+                            <a href="{{ speaker.github }}">
+                                {% include world/2023/icons/github.html %}
+                            </a>
+                            {% endif %}
+                            {% if speaker.linkedin %}
+                            <a href="{{ speaker.linkedin }}">
+                                {% include world/2023/icons/linkedin.html %}
+                            </a>
+                            {% endif %}
+                            {% if speaker.twitter %}
+                            <a href="{{ speaker.twitter }}">
+                                {% include world/2023/icons/twitter.html %}
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 {% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2024"' | sort: 'last_name' %}
 {% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
-{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
+{% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name"
+%}
 
 
 <section class="content-container speaker-cards">
@@ -23,26 +24,32 @@
     </div>
     <div class="cardsContainer">
         {% for speaker in keynote_speakers %}
-            {%
-            include world/2024/speaker-card.html
-            first_name=speaker.first_name
-            last_name=speaker.last_name
-            role=speaker.role
-            company=speaker.company
-            photo=speaker.image_path
-            %}
+        {%
+        include world/2024/speaker-card.html
+        first_name=speaker.first_name
+        last_name=speaker.last_name
+        role=speaker.role
+        company=speaker.company
+        photo=speaker.image_path
+        path=speaker.path
+        %}
         {% endfor %}
         {% for speaker in non_keynote_speakers %}
-            {%
-            include world/2024/speaker-card.html
-            first_name=speaker.first_name
-            last_name=speaker.last_name
-            role=speaker.role
-            company=speaker.company
-            photo=speaker.image_path
-            %}
+        {%
+        include world/2024/speaker-card.html
+        first_name=speaker.first_name
+        last_name=speaker.last_name
+        role=speaker.role
+        company=speaker.company
+        photo=speaker.image_path
+        path=speaker.path
+        %}
         {% endfor %}
     </div>
+    <a class="button main large viewAllSpeakers" href="/world/2024/speakers" aria-label="View all speakers"
+        target="_blank">
+        View All Speakers
+    </a>
 </section>
 <script>
     const container = document.querySelector('.cardsContainer');

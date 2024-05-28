@@ -1,0 +1,130 @@
+---
+layout: world/2024/default
+---
+
+{% assign speaker_id = page.path | split: '/' | last %}
+{% assign filteredSessions = site.world_sessions | where_exp: 'item', 'item.path contains "2024"'%}
+{% assign speakerSessions = filteredSessions | where: 'speaker', speaker_id %}
+
+<div class="speakerPage">
+    <div class="speakerSwooshContainer">
+        <div class="swooshContainer common-shape--top-blue-down-left">
+        </div>
+    </div>
+    <div class="speakerCardBackground">
+        <div class="theLine"></div>
+        <div class="speakerCardContainer">
+            <div class="topSection">
+                <div class="left">
+                    <img src="{{ page.image_path }}" alt="{{ page.first_name }}'s Profile Picture" class="speakerImage">
+                </div>
+                <div class="right">
+                    <div>
+                        <h2 class="speakerName">{{ page.first_name}} {{ page.last_name }}</h1>
+                            <p class="speakerRole">{{ page.role }}, {{ page.company }}</p>
+                    </div>
+                    {{ content }}
+
+                    <div class="socialLinks">
+                        {% if page.github %}
+                        <a href="{{ page.github }}">
+                            {% include world/2023/icons/github.html %}
+                        </a>
+                        {% endif %}
+                        {% if page.linkedin %}
+                        <a href="{{ page.linkedin }}">
+                            {% include world/2023/icons/linkedin.html %}
+                        </a>
+                        {% endif %}
+                        {% if page.twitter %}
+                        <a href="{{ page.twitter }}">
+                            {% include world/2023/icons/twitter.html %}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="bottomSpeakersPage">
+                <div class="leftPage">
+                    <div class="sessionsSection">
+                        <h3>Session</h3>
+                        {% for session in speakerSessions %}
+                        {% assign sessionUrl = session.path | split: '/' | last | remove_first: '.md' %}
+                        {% assign hasInfo = session.time != blank and session.session_date != blank and session.location != blank %}
+                        {% if hasInfo %}
+                            {% assign className = "sessionCard" %}
+                        {% else %}
+                            {% assign className = "sessionCard noInfo" %}
+                        {% endif %}                        
+                        <div class="{{ className }}" href="" role="button" tabindex="0" title="{{ session.title }}"
+                            aria-label="Go to {{ session.title }} session page" onclick="openWindow(
+                                '/world/2024/session/{{ sessionUrl }}'
+                                )
+                            " onkeydown="
+                                handleEnterOrSpaceWindowOpen(
+                                    event, 
+                                    '/world/2024/{{ sessionUrl }}'
+                                )
+                            ">
+                            <p class="sessionName">{{ session.title }} {{hasInfo}} </p>
+                            {% if session.time %}
+                            <div class="sessionTimeContainer">
+                                {% include world/2024/icons/clock.html %}
+
+                                <p>"{{ session.time }}"</p>
+                            </div>
+                            {% endif %}
+                            {% if session.session_date %}
+                            <div class="sessionDateContainer">
+                                {% include world/2024/icons/calendar.html %}
+
+                                <p>{{ session.session_date }}</p>
+                            </div>
+                            {% endif %}
+                            {% if session.location %}
+                            <div class="sessionLocationContainer">
+                                {% include world/2024/icons/location.html %}
+
+                                <p>{{ session.location }}</p>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="socialLinks">
+                        {% if page.github %}
+                        <a href="{{ page.github }}">
+                            {% include world/2023/icons/github.html %}
+                        </a>
+                        {% endif %}
+                        {% if page.linkedin %}
+                        <a href="{{ page.linkedin }}">
+                            {% include world/2023/icons/linkedin.html %}
+                        </a>
+                        {% endif %}
+                        {% if page.twitter %}
+                        <a href="{{ page.twitter }}">
+                            {% include world/2023/icons/twitter.html %}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function openWindow(url, openTab = false) {
+        const openType = openTab ? '_blank' : '_self';
+
+        window.open(url, openType);
+    }
+
+    function handleEnterOrSpaceWindowOpen(e, url) {
+        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+            openWindow(url);
+        }
+    }
+</script>

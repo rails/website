@@ -43,6 +43,7 @@ header {
         border-right: var(--border-style);
 
         &.right {
+            gap: 5px;
             border-left: var(--border-style);
             border-right: 0;
         }
@@ -51,6 +52,18 @@ header {
             text-align: center;
             font-size: 1.7rem;
             line-height: 20px;
+        }
+
+        @media screen and (max-width: 450px) {
+            a {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            a {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -73,6 +86,7 @@ header {
         align-items: center;
         justify-content: center;
         height: 100%;
+        gap: 30px;
 
         h4,
         h5 {

@@ -12,9 +12,12 @@
     scroll-snap-align: start;
     z-index: 100;
     overflow-y: visible;
+    cursor: pointer;
+    transition: all 0.25s ease;
 
     &.active {
-        box-shadow: 0px 0px 5px 1px var(--purple);
+        box-shadow: 0px 0px 0px 1px var(--red), 0px 4px 7px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
     }
 
     .cardBackground {
@@ -89,16 +92,24 @@
             .name {
                 font-size: 1.95rem;
                 color: var(--red);
+                text-align: center;
+                font-weight: 500;
             }
 
             .role {
-                text-transform: uppercase;
-                font-weight: 600;
+                // text-transform: uppercase;
+                font-weight: 300;
                 word-spacing: 1px;
                 line-height: 0.9;
-                font-size: 1.25rem;
+                font-size: 1.23rem;
+                text-align: center;
             }
         }
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
     }
 
     // Desktop size

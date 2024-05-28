@@ -144,13 +144,17 @@
             }
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (min-width: 1800px) {
+            width: 700px;
+        }
+
+        @media screen and (max-width: 950px) {
             width: 100%;
         }
     }
 
     // Desktop slideShow view
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 950px) {
         flex-direction: row;
 
         .textContainer {

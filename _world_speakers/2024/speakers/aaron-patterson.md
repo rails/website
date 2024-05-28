@@ -1,5 +1,5 @@
 ---
-#layout: world/2024/speaker
+layout: world/2024/speaker
 first_name: Aaron
 last_name: Patterson
 image_path: /assets/world/2024/images/speakers/a-patterson.jpg
