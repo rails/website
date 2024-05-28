@@ -9,6 +9,7 @@ keynote: false
 github: https://github.com/rafaelfranca
 linkedin: https://www.linkedin.com/in/rafaelmfranca/
 twitter: https://twitter.com/rafaelfranca
+specific_order: 4
 ---
 
 Rails Core member and technical leader in the Ruby and Rails infrastructure team at Shopify.

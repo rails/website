@@ -50,12 +50,17 @@ layout: world/2024/default
                         <h3>Session</h3>
                         {% for session in speakerSessions %}
                         {% assign sessionUrl = session.path | split: '/' | last | remove_first: '.md' %}
-                        {% assign hasInfo = session.time != blank and session.session_date != blank and session.location != blank %}
+                        {% if session.time != blank and session.session_date != blank and session.location != blank %}
+                            {% assign hasInfo = true %}
+                        {% else %}
+                            {% assign hasInfo = false %}
+                        {% endif %}
+
                         {% if hasInfo %}
                             {% assign className = "sessionCard" %}
                         {% else %}
                             {% assign className = "sessionCard noInfo" %}
-                        {% endif %}                        
+                        {% endif %}
                         <div class="{{ className }}" href="" role="button" tabindex="0" title="{{ session.title }}"
                             aria-label="Go to {{ session.title }} session page" onclick="openWindow(
                                 '/world/2024/session/{{ sessionUrl }}'
