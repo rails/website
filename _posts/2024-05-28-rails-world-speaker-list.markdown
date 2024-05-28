@@ -38,7 +38,7 @@ __Sessions:__
 - [Ridhwana Khan](/world/2024/speakers/ridhwana-khan)
 - [Rosa Gutierrez](/world/2024/speakers/rosa-gutierrez)
 - [Robby Russell](/world/2024/speakers/robby-russell)
-- [Stehen Margheim](/world/2024/speakers/stephen-margheim)
+- [Stephen Margheim](/world/2024/speakers/stephen-margheim)
 
 Stay tuned for the full Rails World schedule coming later in August.
 
