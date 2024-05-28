@@ -2,11 +2,12 @@
     <h3 class="ticketTitle">Tickets</h3>
     <div class="iframeContainer">
         <div id="tito-widget"></div>
-        <div class="soldOutContainer">
+        <!-- Bring back after no more sale -->
+        <!-- <div class="soldOutContainer">
             <p>
                 Sold out. If tickets are returned or released we will release another batch later this year.
             </p>
-        </div>
+        </div> -->
     </div>
 </div>
 <script>
@@ -15,7 +16,6 @@
         ? "ultimateconf/2013"
         : "rails-world/rails-world-2024";
 
-    // Add this back if tickets go back on sale
-    // window.tito = window.tito || function () { (tito.q = tito.q || []).push(arguments); };
-    // tito("widget.mount", { el: "#tito-widget", event })
+    window.tito = window.tito || function () { (tito.q = tito.q || []).push(arguments); };
+    tito("widget.mount", { el: "#tito-widget", event })
 </script>
