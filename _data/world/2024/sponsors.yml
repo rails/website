@@ -16,6 +16,9 @@ gold:
   - name: Crunchy Data
     logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
+  - name: Test Double
+    logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
+    url: https://link.testdouble.com/bp8
   - name: Fullscript
     logo: /assets/world/2024/images/sponsors/RW-logo-fullscript.png
     url: https://fullscript.com/
@@ -55,3 +58,6 @@ gold:
   - name: Renuo
     logo: /assets/world/2024/images/sponsors/RW-logo-renuo.svg
     url: https://www.renuo.ch/
+  - name: TableCheck
+    logo: /assets/world/2024/images/sponsors/RW-logo-tablecheck.svg
+    url: https://www.tablecheck.com/en/japan
