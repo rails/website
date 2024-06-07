@@ -15,7 +15,7 @@ Hi, [Wojtek](https://x.com/morgoth85) here. Let's explore this week's changes in
 Rails Versions 6.1.7.8, 7.0.8.4, 7.1.3.4, and 7.2.0.beta2 have been released with a security issue fix.
 
 [The CFP for RubyConf is open](https://sessionize.com/rubyconf-2024)  
-There will be a *Ruby Web Framework* theme and they are open to Rails related submissions.
+There will be a *Ruby Web Framework* theme, so get your Rails related submissions ready!
 
 [Allow to set strict_loading_mode globally](https://github.com/rails/rails/pull/51339)  
 Sets the mode via *config.active_record.strict_loading_mode* in which strict loading is reported. Defaults to *:all*. It can be changed to *:n_plus_one_only* to only report when loading associations that will lead to an "N + 1 query". This can be set globally or within a model.
