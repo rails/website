@@ -7,6 +7,12 @@ where_exp: 'item', 'item.path contains "2024"'%}
 {% assign speaker = filteredSpeakers | first %}
 {% assign speakerUrl = speaker.path | split: '/' | last | remove_first: '.md' %}
 
+{% assign allSessions = site.world_sessions | where_exp: 'session', 'session.path contains "2024"' %}
+{% assign matchingSessions = allSessions | where: "multiple_speakers", true %}
+{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description | where_exp: "session", "session.url != page.url" %}
+
+
+
 <div class="sessionPage">
     <div class="sessionContainer">
         <div class="breadCrumbsContainer">
@@ -40,7 +46,7 @@ where_exp: 'item', 'item.path contains "2024"'%}
                 </div>
                 {% else %}
                 <div class="placeHolderContainer">
-                    
+
                 </div>
                 {% endif %}
                 {% if page.session_date %}
@@ -51,7 +57,7 @@ where_exp: 'item', 'item.path contains "2024"'%}
                 </div>
                 {% else %}
                 <div class="placeHolderContainer">
-                    
+
                 </div>
                 {% endif %}
                 {% if page.location %}
@@ -69,39 +75,16 @@ where_exp: 'item', 'item.path contains "2024"'%}
         </div>
 
         <div class="bottomContainer common-shape--top-white-down-left">
-            <div class="speakerContainer">
-                <div class="theLine"></div>
-                <div class="speakerContent">
-                    <div class="left">
-                        <img src="{{ speaker.image_path }}" alt="{{ speaker.first_name }}'s Profile Picture">
-                    </div>
-                    <div class="rightSession">
-                        <a class="speakersTag" href="/world/2024/speakers/{{ speakerUrl }}">
-                            <p class="speakerName">{{ speaker.first_name }} {{ speaker.last_name }}</p>
-                            <p class="speakerRole">{{ speaker.role }}{% if speaker.company %}, {{ speaker.company }}{%
-                                endif %}</p>
-                        </a>
-                        <p class="speakerDesc">{{ speaker.content }}</p>
-                        <div class="socialLinksSession">
-                            {% if speaker.github %}
-                            <a href="{{ speaker.github }}">
-                                {% include world/2023/icons/github.html %}
-                            </a>
-                            {% endif %}
-                            {% if speaker.linkedin %}
-                            <a href="{{ speaker.linkedin }}">
-                                {% include world/2023/icons/linkedin.html %}
-                            </a>
-                            {% endif %}
-                            {% if speaker.twitter %}
-                            <a href="{{ speaker.twitter }}">
-                                {% include world/2023/icons/twitter.html %}
-                            </a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% include world/2024/session-speaker-card.html speaker=speaker %}
+            
+            {% for session in duplicateSessions %}
+                {% assign speakerId = session.speaker | split: '/' | last %}
+                {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId" |
+                where_exp: 'item', 'item.path contains "2024"'%}
+                {% assign newSpeaker = speakerObjs | first %}
+                
+                {% include world/2024/session-speaker-card.html speaker=newSpeaker %}
+            {% endfor %}
         </div>
     </div>
 </div>

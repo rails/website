@@ -61,3 +61,15 @@ gold:
   - name: TableCheck
     logo: /assets/world/2024/images/sponsors/RW-logo-tablecheck.svg
     url: https://www.tablecheck.com/en/join/
+  - name: Saeloun 
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: https://www.saeloun.com/
+  - name: Clio 
+    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    url: https://www.clio.com/
+  - name: Sentry
+    logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
+    url: https://sentry.io/
+  - name: Buzzsprout
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
