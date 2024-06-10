@@ -59,7 +59,7 @@
             justify-content: center;
             flex-direction: column;
             gap: 10px;
-            padding: 25px 25px;
+            padding: 25px 45px;
 
             .sessionTitle {
                 color: var(--red);
@@ -119,8 +119,8 @@
             }
 
             @media screen and (max-width: 900px) {
-                padding-left: 15px;
-                padding-right: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
                 padding-bottom: 30px;
             }
 

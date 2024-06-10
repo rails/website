@@ -10,12 +10,21 @@ platinum:
     url: https://www.appsignal.com/
 
 gold:
+- name: Clio 
+    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    url: https://www.clio.com/
   - name: Huntress
     logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
     url: https://www.huntress.com/
+- name: Buzzsprout
+   logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+   url: https://www.buzzsprout.com/
   - name: Crunchy Data
     logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
+- name: Sentry
+    logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
+    url: https://sentry.io/
   - name: Test Double
     logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
     url: https://link.testdouble.com/bp8
@@ -28,6 +37,9 @@ gold:
   - name: ODDS
     logo: /assets/world/2024/images/sponsors/RW-logo-odds.svg
     url: https://odds.team/
+  - name: Saeloun 
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: https://www.saeloun.com/
   - name: Cookpad
     logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
     url: https://cookpad.com/uk
@@ -61,15 +73,3 @@ gold:
   - name: TableCheck
     logo: /assets/world/2024/images/sponsors/RW-logo-tablecheck.svg
     url: https://www.tablecheck.com/en/join/
-  - name: Saeloun 
-    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
-    url: https://www.saeloun.com/
-  - name: Clio 
-    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
-    url: https://www.clio.com/
-  - name: Sentry
-    logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
-    url: https://sentry.io/
-  - name: Buzzsprout
-    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
-    url: https://www.buzzsprout.com/
