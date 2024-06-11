@@ -29,7 +29,9 @@
             color: white;
             font-size: 1.7rem;
             text-wrap: nowrap;
-            overflow: scroll;
+            overflow: auto;
+            max-width: 100%;
+            min-width: max-content;
 
             p {
                 font-weight: 800;
