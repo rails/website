@@ -1,0 +1,35 @@
+{% assign speakerUrl = include.speaker.path | split: '/' | last | remove_first: '.md' %}
+
+<div class="speakerContainer">
+    <div class="theLine"></div>
+    <div class="speakerContent">
+        <div class="left">
+            <img src="{{ include.speaker.image_path }}" alt="{{ include.speaker.first_name }}'s Profile Picture">
+        </div>
+        <div class="rightSession">
+            <a class="speakersTag" href="/world/2024/speakers/{{ speakerUrl }}">
+                <p class="speakerName">{{ include.speaker.first_name }} {{ include.speaker.last_name }}</p>
+                <p class="speakerRole">{{ include.speaker.role }}{% if include.speaker.company %}, {{ include.speaker.company }}{%
+                    endif %}</p>
+            </a>
+            <p class="speakerDesc">{{ include.speaker.content }}</p>
+            <div class="socialLinksSession">
+                {% if include.speaker.github %}
+                <a href="{{ include.speaker.github }}">
+                    {% include world/2023/icons/github.html %}
+                </a>
+                {% endif %}
+                {% if include.speaker.linkedin %}
+                <a href="{{ include.speaker.linkedin }}">
+                    {% include world/2023/icons/linkedin.html %}
+                </a>
+                {% endif %}
+                {% if include.speaker.twitter %}
+                <a href="{{ include.speaker.twitter }}">
+                    {% include world/2023/icons/twitter.html %}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
