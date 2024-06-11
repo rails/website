@@ -58,8 +58,9 @@
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
-            gap: 10px;
-            padding: 25px 45px;
+            gap: 15px;
+            padding: 25px 75px;
+            padding-top: 45px;
 
             .sessionTitle {
                 color: var(--red);
@@ -67,6 +68,18 @@
 
             p {
                 line-height: 1.4;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    line-height: 1.4;
+                }
             }
 
             .informationContainer {

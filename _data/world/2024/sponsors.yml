@@ -10,19 +10,19 @@ platinum:
     url: https://www.appsignal.com/
 
 gold:
-- name: Clio 
+  - name: Clio 
     logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
     url: https://www.clio.com/
   - name: Huntress
     logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
     url: https://www.huntress.com/
-- name: Buzzsprout
-   logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
-   url: https://www.buzzsprout.com/
+  - name: Buzzsprout
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
   - name: Crunchy Data
     logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
-- name: Sentry
+  - name: Sentry
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/
   - name: Test Double
