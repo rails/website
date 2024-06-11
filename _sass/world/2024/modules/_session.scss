@@ -78,7 +78,11 @@
                 gap: 10px;
 
                 li {
-                    line-height: 1.4;
+                    line-height: 1.3;
+                    font-size: var(--type-medium);
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
                 }
             }
 
