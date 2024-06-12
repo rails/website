@@ -9,7 +9,7 @@ date: 2024-06-13
 
 Amid the work taking place to improve the Rails documentation and prepare for Rails World, we are happy to take a break and introduce the newest Contributing member of the Rails Foundation: <a href="https://tablecheck.com/en/join">TableCheck</a>.
 
-<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-makandra.svg" style="width: 50%"></p>
+<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-tablecheck.svg" style="width: 50%"></p>
 
 TableCheck is a restaurant booking and guest experience platform serving over 10,000 venues across 35 countries, including many of the world’s largest hospitality brands. Headquartered in Tokyo, Japan, TableCheck helps restaurants reduce their reliance on paid booking channels by converting first-time diners into repeat guests—and repeat guests into loyal fans.
 
