@@ -22,16 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
         .then((data) => {
           const parser = new DOMParser();
           const doc = parser.parseFromString(data, 'text/html');
-          const newPosts = doc.querySelector('#blogPosts').innerHTML;
+          const newPostsContainer = doc.querySelector('#blogPosts');
           const newNextPageLink = doc.querySelector('#loadMorePosts');
 
-          // Append new posts
-          document
-            .getElementById('blogPosts')
-            .insertAdjacentHTML('beforeend', newPosts);
+          // Check if newPostsContainer exists
+          if (newPostsContainer) {
+            const newPosts = newPostsContainer.innerHTML;
+
+            // Append new posts
+            document
+              .getElementById('blogPosts')
+              .insertAdjacentHTML('beforeend', newPosts);
+          } else {
+            throw new Error('New posts container not found.');
+          }
 
           // Update the URL using history.pushState
-          history.pushState(null, '', `${nextPage}/`);
+          history.pushState(
+            null,
+            '',
+            nextPage.endsWith('/') ? nextPage : nextPage + '/'
+          );
 
           // Update next page link or remove it if no more pages
           if (newNextPageLink) {
