@@ -12,10 +12,10 @@ date: 2024-06-14
 Hi, it's [Greg](https://greg.molnar.io). Let's explore this week's changes in the Rails codebase.
 
 [Only sanitize _content_ attribute when present in attachments](https://github.com/rails/rails/pull/52093)  
-As a recent security fix introduced sanitizing the `content` attribute
-of `ActionText::Attachable::ContentAttachment` and as a side effect, it always
-sets the attribute, and when attribute is set for Action Text attachments, Trix shows this
-content instead of the image preview. This pull request fixes that issue. 
+A recent security fix introduced sanitizing the `content` attribute
+of `ActionText::Attachable::ContentAttachment`. As a side effect it always
+sets the attribute, even when it's missing, causing Trix to not show
+the image preview. This pull request fixes that issue. 
 
 [Bring back _puma.rb_ to target of _app:update_](https://github.com/rails/rails/pull/52086)  
 Because Rails has improved `puma.rb` in the past a few times, `rails app:update`
