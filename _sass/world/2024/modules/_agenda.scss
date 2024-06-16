@@ -1,0 +1,104 @@
+.dayContainer {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+    justify-content: center;
+    width: 100%;
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        max-width: 1600px;
+
+        .dayTabs {
+            width: 100%;
+            display: flex;
+
+            .tabContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10px 50px;
+                color: var(--white);
+                cursor: pointer;
+                border: 2px solid var(--white);
+
+                .dayText {
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+
+                .dateText {
+                    font-size: 1.3rem;
+                    margin-top: -3px;
+                }
+
+                &.active {
+                    background-color: white;
+                    color: black;
+
+                    &:hover {
+                        background-color: rgb(242, 242, 242);
+                    }
+                }
+
+                &.inactive {
+                    &:hover {
+                        background-color: rgba(white, 0.4);
+                        color: rgb(48, 48, 48);
+                    }
+                }
+            }
+        }
+
+        .agendaContainer {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--white);
+            border-radius: 0 10px 10px 10px;
+            width: 100%;
+
+            .sessionRow {
+                display: flex;
+                border-bottom: 2px solid var(--purple);
+                padding: 10px 20px;
+                min-height: 100px;
+                cursor: pointer;
+
+                .left {
+                    display: flex;
+                    // background-color: red;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid var(--purple);
+                    padding-right: 25px;
+                    width: 130px;
+
+                    .timeText {
+                        font-weight: 600;
+                        color: var(--purple);
+                        font-size: 2.1rem;
+                    }
+                }
+
+                .right {
+                    flex: 1;
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+                &:hover {
+                    background-color: rgba(black, 0.03);
+                }
+            }
+        }
+    }
+}

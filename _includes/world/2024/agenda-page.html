@@ -1,0 +1,90 @@
+{% assign pageDay = include.day %}
+
+
+{% if pageDay == 0 %}
+{% assign dayOneActive = 'active' %}
+{% else %}
+{% assign dayOneActive = 'inactive' %}
+{% endif %}
+
+{% if pageDay == 1 %}
+{% assign dayTwoActive = 'active' %}
+{% else %}
+{% assign dayTwoActive = 'inactive' %}
+{% endif %}
+
+
+<div class="dayContainer">
+    <div class="mainContainer">
+        <div class="dayTabs">
+            <div class="tabContainer {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
+                aria-label="View day ones agenda" onclick="openWindow(
+                '/world/2024/agenda/day-0'
+                )
+            " onkeydown="
+                handleEnterOrSpaceWindowOpen(
+                    event, 
+                    '/world/2024/agenda/day-0'
+                )
+            ">
+                <p class="dayText">Thursday</p>
+                <p class="dateText">Sept 26</p>
+            </div>
+            <div class="tabContainer {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
+                aria-label="View day two's agenda" onclick="openWindow(
+                '/world/2024/agenda/day-1'
+                )
+            " onkeydown="
+                handleEnterOrSpaceWindowOpen(
+                    event, 
+                    '/world/2024/agenda/day-1'
+                )
+            ">
+                <p class="dayText">Friday</p>
+                <p class="dateText">Sept 27</p>
+            </div>
+        </div>
+        <div class="agendaContainer">
+            {% for session in include.sessions %}
+                {% assign session_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
+                <div class="sessionRow" role="button" tabindex="0" title="{{ session.title }}"
+                    aria-label="Go to {{ session.title }} session page" onclick="openWindow(
+                        '/world/2024{{ session_path }}'
+                        )
+                    " onkeydown="
+                        handleEnterOrSpaceWindowOpen(
+                            event, 
+                            '/world/2024/{{ session_path }}'
+                        )
+                    ">
+                    <div class="left">
+                        <p class="timeText">{{ session.time }}</p>
+                    </div>
+                    <div class="right">
+                        <p class="title">{{ session.title }}</h2>
+                        <p class="speakerName">{{ session.speaker }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function openWindow(url, openTab = false) {
+        const openType = openTab ? '_blank' : '_self';
+
+        if (openTab) {
+            window.open(url, openType);
+        } else {
+            window.location.href = url;
+        }
+    }
+
+    function handleEnterOrSpaceWindowOpen(e, url) {
+        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+            openWindow(url);
+        }
+    }
+</script>

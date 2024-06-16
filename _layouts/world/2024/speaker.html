@@ -61,14 +61,16 @@ layout: world/2024/default
                         {% else %}
                             {% assign className = "sessionCard noInfo" %}
                         {% endif %}
+
+                        {% assign clean_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
                         <div class="{{ className }}" href="" role="button" tabindex="0" title="{{ session.title }}"
                             aria-label="Go to {{ session.title }} session page" onclick="openWindow(
-                                '/world/2024/session/{{ sessionUrl }}'
+                                '/world/2024{{ clean_path }}'
                                 )
                             " onkeydown="
                                 handleEnterOrSpaceWindowOpen(
                                     event, 
-                                    '/world/2024/{{ sessionUrl }}'
+                                    '/world/2024/{{ clean_path }}'
                                 )
                             ">
                             <p class="sessionName">{{ session.title }}</p>
@@ -124,7 +126,11 @@ layout: world/2024/default
     function openWindow(url, openTab = false) {
         const openType = openTab ? '_blank' : '_self';
 
-        window.open(url, openType);
+        if (openTab) {
+            window.open(url, openType);
+        } else {
+            window.location.href = url;
+        }
     }
 
     function handleEnterOrSpaceWindowOpen(e, url) {
