@@ -10,7 +10,7 @@ running_order: 14
 
 Get ready to dive into the world of composite primary keys with the upcoming Rails 7.1 release! This talk will provide a thorough understanding of composite primary keys, the significance of the “ID” concept in Rails, and the crucial role of the “query constraints” feature in making this powerful feature work seamlessly.
 
-We’ll cover the following topics:
+We'll cover the following topics:
 
 The fundamentals of composite primary keys from the database schema perspective
 What composite primary keys and tenant-based sharding have in common.

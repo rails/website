@@ -12,4 +12,4 @@ linkedin: https://www.linkedin.com/in/scanlanb/
 twitter: https://twitter.com/brian_scanlan
 ---
 
-Brian is a Senior Principal Systems Engineer in Intercom’s Dublin office. He fixes problems, builds things and grows people.
+Brian is a Senior Principal Systems Engineer in Intercom's Dublin office. He fixes problems, builds things and grows people.

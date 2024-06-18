@@ -1,19 +1,19 @@
 <!doctype html>
 
 <html lang="en">
-{% include head.html %}
+  {% include head.html %}
 
-<body>
-{% include notification.html %}
-{% if page.id == 'home' %}
-  {% include banner.html %}
-{% endif %}
-{% include nav.html %}
+  <body>
+    {% include notification.html %}
+    {% if page.id == 'home' %}
+      {% include banner.html %}
+    {% endif %}
+    {% include nav.html %}
 
-<div class="layout">
-  {{ content }}
-</div>
+    <div class="layout">
+      {{ content }}
+    </div>
 
-{% include footer.html %}
-</body>
+    {% include footer.html %}
+  </body>
 </html>

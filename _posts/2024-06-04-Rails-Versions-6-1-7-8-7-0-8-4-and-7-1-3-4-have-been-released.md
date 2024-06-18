@@ -15,8 +15,8 @@ These are security releases, so please upgrade at your earliest convenience.
 
 Here is a list of security issues that these releases address:
 
-* [CVE-2024-32464 ActionText ContentAttachment’s can Contain Unsanitized HTML](https://discuss.rubyonrails.org/t/cve-2024-32464-actiontext-contentattachments-can-contain-unsanitized-html/85949)
-* [CVE-2024-28103 Permissions-Policy is Only Served on HTML Content-Type](https://discuss.rubyonrails.org/t/cve-2024-28103-permissions-policy-is-only-served-on-html-content-type/85948)
+- [CVE-2024-32464 ActionText ContentAttachment's can Contain Unsanitized HTML](https://discuss.rubyonrails.org/t/cve-2024-32464-actiontext-contentattachments-can-contain-unsanitized-html/85949)
+- [CVE-2024-28103 Permissions-Policy is Only Served on HTML Content-Type](https://discuss.rubyonrails.org/t/cve-2024-28103-permissions-policy-is-only-served-on-html-content-type/85948)
 
 Here are the shasums for the released gems:
 

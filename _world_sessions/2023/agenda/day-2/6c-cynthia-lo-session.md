@@ -10,9 +10,9 @@ running_order: 10
 
 Presented by Cynthia Lo and Sean Marcia. This workshop will be given once per day.
 
-Are you intrigued by all the chatter around AI-powered tools like ChatGPT and CoPilot? Then our workshop is the perfect place for you to learn and understand these tools hands-on. We’ll walk through practical applications of these tools and you’ll be using them to add features, tests, and fix bugs in a real-world application – no contrived demos here!
+Are you intrigued by all the chatter around AI-powered tools like ChatGPT and CoPilot? Then our workshop is the perfect place for you to learn and understand these tools hands-on. We'll walk through practical applications of these tools and you'll be using them to add features, tests, and fix bugs in a real-world application – no contrived demos here!
 
-Don’t forget to bring your laptop to this workshop, as there is no better way to learn than by doing. And you’ll definitely be doing!
+Don't forget to bring your laptop to this workshop, as there is no better way to learn than by doing. And you'll definitely be doing!
 
 Note: Registration for this workshop will open in September, and space is limited.
 

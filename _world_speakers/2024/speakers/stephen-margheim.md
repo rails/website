@@ -11,4 +11,4 @@ linkedin: https://www.linkedin.com/in/stephen-margheim-5aa25bb8/
 twitter: https://twitter.com/fractaledmind
 ---
 
-Hey, I’m Stephen. I'm an American expat living in Berlin with my wife and two dogs. I am a contributor to Rails and the sqlite3-ruby gem as well as the maintainer of a handful of gems aimed at making Ruby and Rails the absolute best platforms in the world to run SQLite projects.
+Hey, I'm Stephen. I'm an American expat living in Berlin with my wife and two dogs. I am a contributor to Rails and the sqlite3-ruby gem as well as the maintainer of a handful of gems aimed at making Ruby and Rails the absolute best platforms in the world to run SQLite projects.

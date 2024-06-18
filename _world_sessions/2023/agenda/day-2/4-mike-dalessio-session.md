@@ -8,7 +8,7 @@ location: Track 1
 running_order: 5
 ---
 
-Rails 7.1 improved Rails’s security posture and made Rails more friendly with modern browsers by shipping HTML5-compliant sanitizers by default.
+Rails 7.1 improved Rails's security posture and made Rails more friendly with modern browsers by shipping HTML5-compliant sanitizers by default.
 
 This is the story of planning and executing a complex migration task on a major open-source project, a multi-year journey that started in 2015 with a security vulnerability and ended after coordinating major changes to Action View, Rails::HTML::Sanitizer, Loofah, and Nokogiri, and taking over maintenance of libgumbo.
 

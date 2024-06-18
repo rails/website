@@ -12,4 +12,4 @@ linkedin: https://www.linkedin.com/in/jenny-shen-/
 twitter: https://twitter.com/jenshenny
 ---
 
-Jenny is a Senior Developer at Shopify based in Toronto, Canada. As a RubyGems.org maintainer, she works to help secure Ruby’s dependency ecosystem and is passionate about open source. When she isn’t at her laptop, she enjoys biking, climbing, jamming out to K-pop, and exploring new food spots in the city.
+Jenny is a Senior Developer at Shopify based in Toronto, Canada. As a RubyGems.org maintainer, she works to help secure Ruby's dependency ecosystem and is passionate about open source. When she isn't at her laptop, she enjoys biking, climbing, jamming out to K-pop, and exploring new food spots in the city.

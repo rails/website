@@ -4,8 +4,7 @@ permalink: /world/2023/faq
 title: Frequently Asked Questions
 ---
 
-{% assign faqData = site.data.world['2023'].faq %} {% assign categories = faqData | map:
-'category' %}
+{% assign faqData = site.data.world['2023'].faq %} {% assign categories = faqData | map: 'category' %}
 
 <content-container class="faq">
   <h1>Frequently Asked Questions</h1>
@@ -31,7 +30,6 @@ title: Frequently Asked Questions
                   <p class="faq__question">{{ topic.question }}</p>
                   {% include world/2023/icons/dropdown.html %}
                 </summary>
-
                 <div class="faq__answer">
                   {{ topic.answer | markdownify }}
                 </div>
@@ -43,5 +41,3 @@ title: Frequently Asked Questions
     {% endfor %}
   </div>
 </content-container>
-
-

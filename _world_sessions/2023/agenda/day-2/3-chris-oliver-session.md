@@ -8,9 +8,9 @@ location: Track 1
 running_order: 3
 ---
 
-An unbelievable amount of features are packed into Rails making it one of the most powerful web frameworks you can use. So let’s take a look at some little known, underused, and new things in Rails 7.
+An unbelievable amount of features are packed into Rails making it one of the most powerful web frameworks you can use. So let's take a look at some little known, underused, and new things in Rails 7.
 
-A few of the topics we’ll cover:
+A few of the topics we'll cover:
 
 - ActiveRecord features like “excluding”, strict_loading, virtual columns, with_options, attr_readonly, etc
 - ActiveStorage named variants
@@ -21,4 +21,4 @@ A few of the topics we’ll cover:
 - Custom Turbo Stream Actions with Hotwire
 - Turbo Native authentication with your Rails backend
 - ActiveSupport features like truncate_words
-- Rails 7.1’s new features: authentication, normalizes, logging background enqueue callers, and more.
+- Rails 7.1's new features: authentication, normalizes, logging background enqueue callers, and more.

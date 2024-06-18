@@ -14,4 +14,4 @@ twitter: https://twitter.com/bruckmayer
 
 Christian Bruckmayer is originally from Nuremberg, Germany, although now calls the South West of England home. In his day job, he makes commerce better for everyone at Shopify. For more than a decade, he has been an avid open source contributor hacking for instance on JRuby, openSUSE Linux or various (Ruby) gems.
 
-If he’s not hacking Ruby, he loves spending quality time with his family, including his daughter.
+If he's not hacking Ruby, he loves spending quality time with his family, including his daughter.

@@ -16,6 +16,6 @@ However, the introduction of multiple gems that seem to have overlapping feature
 
 You want to make sure that when you create your next app, or update an existing one, you are making the correct choice and will not have to go back and redo a large part of your frontend.
 
-I’m a contributor to some of these gems and deployed most of them to production and I can tell you it’s actually simpler than it looks. It all comes down to a single decision.
+I'm a contributor to some of these gems and deployed most of them to production and I can tell you it's actually simpler than it looks. It all comes down to a single decision.
 
 But to make that decision we have to understand what makes the new asset pipeline so different from the previous one.

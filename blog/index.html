@@ -29,7 +29,9 @@ description:
 
     {% if paginator.next_page %}
       <div class="blog__pagination">
-        <a href="{{ paginator.next_page_path }}" class="common-button common-button--color-red"><span>See more posts&hellip;</span></a>
+        <a href="{{ paginator.next_page_path }}" class="common-button common-button--color-red">
+          <span>See more posts&hellip;</span>
+        </a>
       </div>
     {% endif %}
   </div>

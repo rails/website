@@ -8,7 +8,7 @@ date: 2021-03-26 18:24:00 +00:00
 ---
 
 Hey everyone! Rails versions 5.2.5, 6.0.3.6 and 6.1.3.1 have been released. These versions upgrade
-Active Storage’s [Marcel](https://github.com/rails/marcel) dependency to version 1.0.0.
+Active Storage's [Marcel](https://github.com/rails/marcel) dependency to version 1.0.0.
 
 Before 1.0.0, Marcel—which is distributed under the terms of the MIT License, like Rails—indirectly
 depended on MIME type data released under the incompatible GNU General Public License. Marcel 1.0.0

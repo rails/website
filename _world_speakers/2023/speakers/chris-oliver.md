@@ -12,4 +12,4 @@ linkedin: https://www.linkedin.com/in/excid3/
 twitter: https://twitter.com/excid3
 ---
 
-Chris is the founder of GoRails, host of the Remote Ruby podcast, and creator of Jumpstart and Hatchbox.io. He loves building tools to make developers’ lives easier and helping people learn to code.
+Chris is the founder of GoRails, host of the Remote Ruby podcast, and creator of Jumpstart and Hatchbox.io. He loves building tools to make developers' lives easier and helping people learn to code.

@@ -7,7 +7,7 @@ permalink: /world/2023
 {% assign keynote_speakers = sorted_speakers | where: 'keynote', true %}
 {% assign non_keynote_speakers = sorted_speakers | where_exp: "speaker", "speaker.keynote != true" | sort: "first_name" %}
 
-<content-container class="large">
+  <content-container class="large">
   <section class="hero">
     <div class="hero__content">
 
@@ -100,15 +100,7 @@ permalink: /world/2023
     </div>
   </section>
 
-<!--   <section class="sponsorship">
-    <h2>Sponsor Rails World</h2>
-    <br>
-    <p>
-      Joining Rails World as a sponsor means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's collaborate and make Rails World an unforgettable experience for all.
-    </p>
-    <br>
-    <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ" target="_blank" class="button button--light">View Prospectus</a>
-  </section> -->
+  <!-- <section class="sponsorship">    <h2>Sponsor Rails World</h2>    <br>    <p>      Joining Rails World as a sponsor means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's collaborate and make Rails World an unforgettable experience for all.    </p>    <br>    <a href="https://public.3.basecamp.com/p/C7HPYMpM77kVYjfnFsoSJkrJ" target="_blank" class="button button--light">View Prospectus</a>  </section> -->
   {% if site.data.world['2023'].sponsors %}
     {% include world/2023/sponsors.html %}
   {% endif %}
@@ -117,9 +109,13 @@ permalink: /world/2023
 <modal-component>
   <modal-mask></modal-mask>
   <turbo-frame
-    id="speaker_details" target="_top" class="speaker"
-    role="dialog" aria-modal="true" aria-labelledby="speaker_name" tabindex="-1">
-  </turbo-frame>
+    id="speaker_details"
+    target="_top"
+    class="speaker"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="speaker_name"
+    tabindex="-1"></turbo-frame>
 </modal-component>
 
 <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>

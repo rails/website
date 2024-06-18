@@ -20,13 +20,9 @@ redirect_from:
 <div class="blog common-padding--bottom">
   <div class="container">
     <div class="blog__posts">
-
-{% for post in site.categories[page.category] %}
-
-    {% include post.html %}
-
-{% endfor %}
-
+      {% for post in site.categories[page.category] %}
+        {% include post.html %}
+      {% endfor %}
     </div>
   </div>
 </div>

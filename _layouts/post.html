@@ -1,28 +1,28 @@
 <!doctype html>
 <html lang="en">
-{% include head.html %}
+  {% include head.html %}
 
-<body>
-{% include notification.html %}
-{% include nav.html %}
+  <body>
+    {% include notification.html %}
+    {% include nav.html %}
 
-<div class="layout">
-  <div class="post common-padding--bottom common-padding--top-small">
-    <div class="container">
-      <div class="post__headline common-headline">
-        <h5>{{ page.date | date: '%A, %B %-d, %Y' }}</h5>
-        <h2>{{ page.title | strip_html }}</h2>
-{% if page.author %}
-        <h6>Posted by {{ page.author }}</h6>
-{% endif %}
-      </div>
-      <div class="post__content common-content common-content--post">
-        {{ content }}
+    <div class="layout">
+      <div class="post common-padding--bottom common-padding--top-small">
+        <div class="container">
+          <div class="post__headline common-headline">
+            <h5>{{ page.date | date: '%A, %B %-d, %Y' }}</h5>
+            <h2>{{ page.title | strip_html }}</h2>
+            {% if page.author %}
+              <h6>Posted by {{ page.author }}</h6>
+            {% endif %}
+          </div>
+          <div class="post__content common-content common-content--post">
+            {{ content }}
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-{% include footer.html %}
-</body>
+    {% include footer.html %}
+  </body>
 </html>
