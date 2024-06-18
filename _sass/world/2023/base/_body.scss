@@ -1,5 +1,5 @@
 html {
-  font-family: "acumin-variable",sans-serif;
+  font-family: 'acumin-variable', sans-serif;
   font-variation-settings: var(--font-weight-700);
 }
 
@@ -16,7 +16,8 @@ flex-spacer {
   flex-grow: 1;
 }
 
-main, main:focus {
+main,
+main:focus {
   flex-grow: 1;
   border-left: var(--border-white);
   border-right: var(--border-white);
@@ -62,9 +63,9 @@ summary::-webkit-details-marker {
 
 .visually-hidden {
   position: absolute;
-  left:     -10000px;
-  top:      auto;
-  width:    1px;
-  height:   1px;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
 }

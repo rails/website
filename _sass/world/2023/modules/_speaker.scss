@@ -1,6 +1,8 @@
 .speaker {
-  h1, h2, h3 {
-    color: var(--red)
+  h1,
+  h2,
+  h3 {
+    color: var(--red);
   }
 
   h3 {
@@ -128,6 +130,6 @@
   grid-gap: var(--space-large);
 
   @media only screen and (max-width: 1000px) {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }

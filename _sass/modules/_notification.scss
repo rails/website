@@ -1,13 +1,11 @@
 .notification {
-
   background: $color-white;
   position: relative;
   text-align: center;
 
   p {
-
     display: inline-block;
-    background: $color-red;
+    background: $color-green;
     border-radius: 6px;
     color: $color-white;
     font-size: 17px;
@@ -18,7 +16,6 @@
     width: calc(100% - 100px);
 
     a {
-
       color: $color-white;
       font-weight: 600;
       text-decoration: underline;
@@ -26,23 +23,14 @@
       &:hover {
         color: rgba($color-white, 0.9);
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     p {
       margin-left: 60px;
       margin-right: 60px;
       width: calc(100% - 160px);
     }
-
   }
-
-
-
 }

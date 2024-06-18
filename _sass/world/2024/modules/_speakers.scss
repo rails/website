@@ -1,92 +1,91 @@
 // Replace existing code with // ! code - when more than 4 speakers
 .speaker-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: var(--blue);
-    border-bottom: var(--border-style);
-    overflow-y: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--blue);
+  border-bottom: var(--border-style);
+  overflow-y: visible;
 
-    .headerContainer {
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: var(--header-and-paragraph-padding);
+
+      width: 85%;
+
+      p {
+        text-align: start;
+      }
+
+      @media screen and (max-width: 650px) {
+        width: 80%;
+      }
+    }
+
+    .buttonsContainer {
+      display: flex;
+
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 15px;
+      width: 15%;
+
+      button {
+        cursor: pointer;
+        opacity: 0.8;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+        background-color: transparent;
+        transition: 0.2s ease-in;
+        user-select: none;
+        touch-action: manipulation;
 
-        .textContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            gap: var(--header-and-paragraph-padding);
-
-            width: 85%;
-
-            p {
-                text-align: start;
-            }
-
-
-            @media screen and (max-width: 650px) {
-              width: 80%;
-            }
+        img {
+          height: 30px;
+          width: 30px;
         }
 
-        .buttonsContainer {
-            display: flex;
-
-            align-items: flex-end;
-            justify-content: flex-end;
-            gap: 15px;
-            width: 15%;
-
-            button {
-                cursor: pointer;
-                opacity: 0.8;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: transparent;
-                transition: 0.2s ease-in;
-                user-select: none;
-                touch-action: manipulation;
-
-                img {
-                    height: 30px;
-                    width: 30px;
-                }
-
-                &:hover {
-                    opacity: 1;
-                }
-
-                &:active {
-                    transform: scale(0.9);
-                }
-            }
-
-            @media screen and (max-width: 650px) {
-                width: 20%;
-            }
+        &:hover {
+          opacity: 1;
         }
-    }
 
-    .cardsContainer {
-        margin-top: 15px;
-        width: 100%;
-        display: flex;
-        gap: 10px;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        padding: 3px;
-        padding-bottom: 15px;
+        &:active {
+          transform: scale(0.9);
+        }
+      }
 
-        // Define the snap points
-        scroll-snap-points-x: repeat(100%);
-        scroll-snap-stop: always;
-        -webkit-overflow-scrolling: touch;
+      @media screen and (max-width: 650px) {
+        width: 20%;
+      }
     }
+  }
 
-    .viewAllSpeakers {
-        margin-left: 1px;
-    }
+  .cardsContainer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 3px;
+    padding-bottom: 15px;
+
+    // Define the snap points
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .viewAllSpeakers {
+    margin-left: 1px;
+  }
 }

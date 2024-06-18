@@ -1,6 +1,5 @@
 .common-button {
-
-  background: $color-red;
+  background: $color-green;
   border: none;
   border-radius: 20px;
   box-sizing: border-box;
@@ -34,10 +33,7 @@
     background: $color-black;
   }
 
-
-
   &--version {
-
     background: $color-grey-1;
     border-radius: 6px !important;
     color: $color-black;
@@ -53,13 +49,11 @@
 
     &:hover {
       background: $color-grey-3;
-      color: $color-red;
+      color: $color-green;
     }
-
   }
 
   &--text {
-
     background: none;
     border-radius: 0 !important;
     color: $color-black;
@@ -81,13 +75,11 @@
 
     &:hover {
       background: none;
-      color: $color-red;
+      color: $color-green;
     }
-
   }
 
   &--icon-arrow {
-
     span:after {
       background: url(../images/icon-button.svg) center center no-repeat;
       content: '';
@@ -102,11 +94,9 @@
     &:hover span:after {
       filter: $filter-red;
     }
-
   }
 
   &--size-large {
-
     border-radius: 22px;
     height: 44px;
     line-height: 44px;
@@ -117,35 +107,27 @@
       margin-left: 22px;
       margin-right: 22px;
     }
-
   }
 
   &--color-black {
-
     background: $color-black;
     color: $color-white;
 
     &:hover {
-      background: $color-red;
+      background: $color-green;
     }
-
   }
 
   &--color-red {
-
-    background: $color-red;
+    background: $color-green;
     color: $color-white;
 
     &:hover {
       background: $color-black;
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     border-radius: 22px;
     height: 44px;
     line-height: 44px;
@@ -158,18 +140,15 @@
     }
 
     &--version {
-
       span {
         font-size: 23px;
         line-height: 27px;
         margin: 8px 20px 9px 20px;
         padding: 0;
       }
-
     }
 
     &--text {
-
       margin-bottom: -7px;
       margin-top: -8px;
 
@@ -177,19 +156,15 @@
         font-size: 31px;
         line-height: 34px;
       }
-
     }
 
     &--icon-arrow {
-
       span:after {
         margin: 0 0 0 9px;
       }
-
     }
 
     &--size-large {
-
       border-radius: 30px;
       height: 59px;
       line-height: 59px;
@@ -200,11 +175,6 @@
         margin-left: 32px;
         margin-right: 32px;
       }
-
     }
-
   }
-
-
-
 }

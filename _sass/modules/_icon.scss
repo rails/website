@@ -1,5 +1,4 @@
 .icon {
-
   display: inline-block;
   padding-left: 19px;
   position: relative;
@@ -22,33 +21,26 @@
   }
 
   &--youtube {
-
     padding-left: 26px;
 
     &:after {
       background-image: url(../images/icon-youtube.svg);
       width: 22px;
     }
-
   }
 
   &--twitter {
-
     padding-left: 23px;
 
     &:after {
       background-image: url(../images/icon-twitter.svg);
       width: 19px;
     }
-
   }
 
   &--world {
-
     &:after {
       background-image: url(../images/icon-world.svg);
     }
-
   }
-
 }

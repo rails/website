@@ -1,6 +1,8 @@
 .session {
-  h1, h2, h3 {
-    color: var(--red)
+  h1,
+  h2,
+  h3 {
+    color: var(--red);
   }
 
   h1 {
@@ -38,7 +40,6 @@
     }
 
     p + ul {
-
       list-style-type: disc;
       color: var(--purple-dark);
       font-variation-settings: var(--font-weight-400);
@@ -79,7 +80,7 @@
       }
     }
 
-    #session_title ~ flex-container{
+    #session_title ~ flex-container {
       gap: var(--space-medium);
       align-items: center;
 

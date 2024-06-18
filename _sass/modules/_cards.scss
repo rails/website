@@ -1,5 +1,4 @@
 .cards {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -16,7 +15,6 @@
   }
 
   .card {
-
     position: relative;
 
     a,
@@ -25,26 +23,22 @@
     }
 
     a {
-
       display: block;
 
       &:hover {
-
         .card__label h6 {
-          background: $color-red;
+          background: $color-green;
         }
 
         .card__body {
-          box-shadow: 0 3px 15px 2px rgba($color-black, 0.05), 0 1px 1px rgba($color-black, 0.02), 0 0 0 3px $color-red;
+          box-shadow: 0 3px 15px 2px rgba($color-black, 0.05),
+            0 1px 1px rgba($color-black, 0.02), 0 0 0 3px $color-green;
           transform: translateY(-3px);
         }
-
       }
-
     }
 
     &__label {
-
       position: absolute;
       text-align: center;
       top: -15px;
@@ -52,8 +46,7 @@
       z-index: 1;
 
       h6 {
-
-        background: $color-red;
+        background: $color-green;
         border-radius: 3px;
         color: $color-white;
         display: inline-block;
@@ -76,20 +69,20 @@
           top: 9px;
           width: 6px;
         }
-
       }
-
     }
 
     &__body {
       align-items: center;
       background: $color-white;
       border-radius: 8px;
-      box-shadow: 0 3px 15px 2px rgba($color-black, 0.05), 0 1px 1px rgba($color-black, 0.02), 0 0 0 3px rgba($color-black, 0.1);
+      box-shadow: 0 3px 15px 2px rgba($color-black, 0.05),
+        0 1px 1px rgba($color-black, 0.02), 0 0 0 3px rgba($color-black, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: background $transition, box-shadow $transition, transform $transition;
+      transition: background $transition, box-shadow $transition,
+        transform $transition;
     }
 
     &__headline,
@@ -100,7 +93,6 @@
     }
 
     &__headline {
-
       padding-bottom: 6px;
       padding-top: 32px;
 
@@ -117,11 +109,9 @@
         text-decoration-thickness: 2px;
         transition: color $transition;
       }
-
     }
 
     &__content {
-
       padding-bottom: 35px;
 
       p {
@@ -133,22 +123,16 @@
         margin-right: auto;
         transition: color $transition;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 768px) {
-
+  @media (min-width: 768px) {
     &__container {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
 
     .card {
-
       height: 30vw;
       max-height: 150px;
 
@@ -157,23 +141,14 @@
         height: 100%;
         position: absolute;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__container {
       grid-template-columns: repeat(3, 1fr);
       margin-left: 60px;
       margin-right: 60px;
     }
-
   }
-
-
-
 }

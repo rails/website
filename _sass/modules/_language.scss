@@ -1,5 +1,4 @@
 .language {
-
   display: inline-block;
   height: 41px;
   margin-top: 30px;
@@ -17,7 +16,6 @@
   }
 
   &__checkbox {
-
     appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -26,28 +24,23 @@
     background: none;
 
     &:checked {
-
       & ~ .language__options {
-
         transform: translate(0, 10px);
 
         ul {
-          box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+          box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+            0 1px 1px rgba($color-black, 0.04);
           height: 256px;
         }
-
       }
 
       & ~ .language__toggle {
         background: $color-white;
       }
-
     }
-
   }
 
   &__toggle {
-
     background: $color-grey-1;
     border-radius: 6px;
     color: $color-black;
@@ -76,17 +69,14 @@
     &:hover {
       background: $color-grey-2;
     }
-
   }
 
   &__options {
-
     position: relative;
     transition: transform $transition;
     z-index: 1;
 
     ul {
-
       background: $color-white;
       border-radius: 6px;
       height: 0;
@@ -98,9 +88,7 @@
       width: 100%;
 
       li {
-
         a {
-
           display: block;
 
           span {
@@ -120,7 +108,6 @@
             background: $color-grey-1;
             color: $color-black;
           }
-
         }
 
         &:first-child {
@@ -130,11 +117,7 @@
         &:last-child {
           padding-bottom: 15px;
         }
-
       }
-
     }
-
   }
-
 }

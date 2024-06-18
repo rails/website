@@ -1,5 +1,4 @@
 .trusted {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -17,22 +16,21 @@
   }
 
   &__block {
-
     display: inline-block;
     margin: 5px;
     position: relative;
     width: calc(50% - 10px);
 
     a {
-
       background: $color-grey-1;
       border-radius: 8px;
-      box-shadow: 0 0 0 3px rgba($color-red, 0);
+      box-shadow: 0 0 0 3px rgba($color-green, 0);
       display: block;
       padding: 10px;
       position: relative;
       text-align: center;
-      transition: background $transition, box-shadow $transition, transform $transition;
+      transition: background $transition, box-shadow $transition,
+        transform $transition;
 
       img {
         filter: $filter-black;
@@ -41,28 +39,19 @@
 
       &:hover {
         background: $color-white;
-        box-shadow: 0 0 0 3px $color-red;
+        box-shadow: 0 0 0 3px $color-green;
         transform: translateY(-3px);
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 667px) {
-
+  @media (min-width: 667px) {
     &__block {
       width: calc(33.33% - 10px);
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__blocks {
       margin: -10px 60px;
       width: calc(100% - 120px);
@@ -72,9 +61,5 @@
       margin: 10px;
       width: calc(25% - 20px);
     }
-
   }
-
-
-
 }

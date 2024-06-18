@@ -1,5 +1,4 @@
 .common-padding {
-
   &--bottom {
     padding-bottom: 60px;
   }
@@ -24,10 +23,7 @@
     padding-top: 60px;
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &--bottom {
       padding-bottom: 80px;
     }
@@ -51,9 +47,5 @@
     &--top-large {
       padding-top: 120px;
     }
-
   }
-
-
-
 }

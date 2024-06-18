@@ -1,5 +1,4 @@
 .example {
-
   font-size: 0;
   line-height: 0;
   overflow: hidden;
@@ -25,7 +24,8 @@
 
   &__arrow {
     bottom: -15px;
-    filter: invert(41%) sepia(100%) saturate(3911%) hue-rotate(340deg) brightness(104%) contrast(100%);
+    filter: invert(41%) sepia(100%) saturate(3911%) hue-rotate(340deg)
+      brightness(104%) contrast(100%);
     height: 66px;
     position: absolute;
     right: -116px;
@@ -35,10 +35,7 @@
     z-index: 1;
   }
 
-
-
-  @media(min-width: 768px) {
-
+  @media (min-width: 768px) {
     &__body {
       gap: 60px 30px;
       grid-template-columns: repeat(2, 1fr);
@@ -56,20 +53,12 @@
       transform: none;
       transform-origin: center right;
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__body {
       margin-left: 60px;
       margin-right: 60px;
     }
-
   }
-
-
-
 }

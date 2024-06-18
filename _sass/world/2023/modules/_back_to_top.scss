@@ -5,7 +5,8 @@ back-to-top {
   height: 100vh;
   width: 1px; // MS Edge requires a nominal dimension
 
-  button, button:focus {
+  button,
+  button:focus {
     position: fixed;
     bottom: 1rem;
     right: 1.5rem;

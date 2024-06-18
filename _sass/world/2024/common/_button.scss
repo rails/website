@@ -1,121 +1,121 @@
 .button {
-    background-color: var(--white);
-    padding: 1rem 3rem;
-    border-radius: 8px;
-    color: var(--black);
-    cursor: pointer;
-    text-decoration: none;
-    transition: box-shadow 0.15s ease;
-    transition: all 0.15s ease;
+  background-color: var(--white);
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  color: var(--black);
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease;
+  transition: all 0.15s ease;
 
-    &:hover {
-        box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.3);
-    }
+  &:hover {
+    box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 .button.large {
-    padding: 1.5rem 3.25rem;
-    font-size: var(--type-small);
+  padding: 1.5rem 3.25rem;
+  font-size: var(--type-small);
 }
 
 .button.main {
-    background: var(--red);
-    color: var(--white);
-    text-transform: uppercase;
+  background: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
 
-    &:hover {
-        background: var(--red);
-        transform: translateY(-1px);
-    }
+  &:hover {
+    background: var(--red);
+    transform: translateY(-1px);
+  }
 }
 
 .button.main.disabled {
-    opacity: 0.7;
-    cursor: default;
+  opacity: 0.7;
+  cursor: default;
 
-    &:hover {
-        transform: none;
-        box-shadow: none;
-    }
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 .button.x-small {
-    padding: 0.35rem 0.5rem;
-    font-size: var(--type-x-small);
-    background-image: none;
-    padding-right: 0.28rem;
-    border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+  font-size: var(--type-x-small);
+  background-image: none;
+  padding-right: 0.28rem;
+  border-radius: 4px;
 
-    &:hover {
-        color: var(--white);
-    }
+  &:hover {
+    color: var(--white);
+  }
 }
 
 .button.my-button {
-    &:hover {
-        background-color: rgb(19, 19, 19);
-        color: rgb(246, 245, 240);
-    }
+  &:hover {
+    background-color: rgb(19, 19, 19);
+    color: rgb(246, 245, 240);
+  }
 }
 
 .button.dot {
-    width: 9px;
-    height: 9px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--white);
-    opacity: 0.8;
-    touch-action: manipulation;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.8;
+  touch-action: manipulation;
 
-    &.active {
-        background-color: var(--red);
-    }
+  &.active {
+    background-color: var(--red);
+  }
 
-    &:hover {
-        opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .button.slideShow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    padding: 0;
-    height: 40px;
-    background-color: var(--red);
-    color: var(--white);
-    opacity: 0.8;
-    touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  background-color: var(--red);
+  color: var(--white);
+  opacity: 0.8;
+  touch-action: manipulation;
 
+  .arrowSvg {
+    width: 40%;
+    filter: invert(100%);
+  }
+
+  &.left {
     .arrowSvg {
-        width: 40%;
-        filter: invert(100%);
+      transform: rotate(180deg);
     }
+  }
 
-    &.left {
-        .arrowSvg {
-            transform: rotate(180deg);
-        }
-    }
-
-    &:hover {
-        opacity: 0.95;
-    }
+  &:hover {
+    opacity: 0.95;
+  }
 }
 
 .link {
-    color: var(--white);
-    transition: all 0.2s ease;
-    text-decoration: none;
+  color: var(--white);
+  transition: all 0.2s ease;
+  text-decoration: none;
 
-    &:hover {
-        color: var(--purple-pale);
-        transform: translateY(-1px);
-        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
-    }
+  &:hover {
+    color: var(--purple-pale);
+    transform: translateY(-1px);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .link.small {
-    font-size: var(--type-xxx-small);
+  font-size: var(--type-xxx-small);
 }

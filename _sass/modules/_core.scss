@@ -1,5 +1,4 @@
 .core {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -11,7 +10,8 @@
   &__body {
     background: $color-white;
     border-radius: 12px;
-    box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+    box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+      0 1px 1px rgba($color-black, 0.04);
     margin-left: 30px;
     margin-right: 30px;
     padding-bottom: 40px;
@@ -29,18 +29,15 @@
   }
 
   &__headline {
-
     margin-bottom: -6px;
     margin-top: -8px;
 
     &--padding-top {
       margin-top: 52px;
     }
-
   }
 
   &__content {
-
     margin-bottom: -33px;
     margin-top: 23px;
 
@@ -54,7 +51,6 @@
     }
 
     &--border-top {
-
       margin-top: 60px;
       padding-top: 61px;
 
@@ -67,9 +63,7 @@
         top: 0;
         width: 60%;
       }
-
     }
-
   }
 
   &__members {
@@ -77,16 +71,13 @@
   }
 
   &__member {
-
     display: inline-block;
     margin: 0 15px 40px 15px;
     max-width: 105px;
     width: calc(100% - 30px);
 
     &__image {
-
       a {
-
         border: 2px solid rgba($color-black, 0.15);
         border-radius: 100%;
         display: inline-block;
@@ -103,37 +94,30 @@
         }
 
         &:hover {
-          border-color: $color-red;
+          border-color: $color-green;
         }
-
       }
-
     }
 
     &__content {
-
       margin-top: 9px;
 
       h3 {
-
-        color: $color-red;
+        color: $color-green;
         font-size: 26px;
         font-weight: 700;
         letter-spacing: -0.01em;
         line-height: 27px;
 
         a {
-
-          color: $color-red;
+          color: $color-green;
           text-decoration: underline;
           text-decoration-thickness: 2px;
 
           &:hover {
             color: $color-black;
           }
-
         }
-
       }
 
       h4 {
@@ -155,7 +139,6 @@
       }
 
       h6 {
-
         @include plex();
         font-size: 13px;
         font-weight: 700;
@@ -163,7 +146,6 @@
         margin-top: 11px;
 
         a {
-
           background: $color-grey-2;
           border-radius: 13px;
           color: $color-grey-5;
@@ -172,22 +154,15 @@
           transition: background $transition, color $transition;
 
           &:hover {
-            background: $color-red;
+            background: $color-green;
             color: $color-white;
           }
-
         }
-
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__body {
       padding-bottom: 80px;
       padding-top: 80px;
@@ -209,9 +184,5 @@
     &__member {
       max-width: 120px;
     }
-
   }
-
-
-
 }

@@ -1,5 +1,4 @@
 .post {
-
   font-size: 0;
   line-height: 0;
 
@@ -8,7 +7,6 @@
   }
 
   &__headline {
-
     margin: -7px 30px -6px 30px;
     text-align: center;
 
@@ -20,11 +18,9 @@
       font-weight: 400;
       margin-top: 17px;
     }
-
   }
 
   &__content {
-
     border-top: 3px solid rgba($color-black, 0.1);
     margin: 60px 30px -33px 30px;
     padding-top: 33px;
@@ -35,24 +31,19 @@
     h4,
     h5,
     h6 {
-
       a {
         font-weight: inherit;
       }
-
     }
-
   }
 
   &__pagination {
-
     border-top: 3px solid rgba($color-black, 0.1);
     margin: 40px 30px -5px 30px;
     padding-top: 33px;
     text-align: center;
 
     dl {
-
       dt {
         color: $color-black;
         font-size: 21px;
@@ -62,34 +53,25 @@
       }
 
       dd {
-
-        color: $color-red;
+        color: $color-green;
         font-size: 36px;
         font-weight: 700;
         letter-spacing: -0.01em;
         line-height: 34px;
 
         a {
-
-          color: $color-red;
+          color: $color-green;
           text-decoration: underline;
 
           &:hover {
             color: $color-black;
           }
-
         }
-
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__headline,
     &__content,
     &__pagination {
@@ -98,7 +80,6 @@
     }
 
     &__headline {
-
       margin-bottom: -7px;
 
       h5 {
@@ -109,7 +90,6 @@
         margin-top: 16px;
         padding-bottom: 1px;
       }
-
     }
 
     &__content {
@@ -118,7 +98,6 @@
     }
 
     &__pagination {
-
       margin-top: 60px;
       padding-top: 53px;
 
@@ -126,11 +105,6 @@
         font-size: 42px;
         line-height: 38px;
       }
-
     }
-
   }
-
-
-
 }

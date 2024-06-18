@@ -1,51 +1,51 @@
 .sponsor-information-text {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  background-color: var(--blue);
+  gap: var(--header-and-paragraph-padding);
+
+  .titleContainer {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    text-align: start;
-    background-color: var(--blue);
+    justify-content: flex-start;
     gap: var(--header-and-paragraph-padding);
 
-    .titleContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: var(--header-and-paragraph-padding);
+    @media screen and (max-width: 800px) {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
 
-        @media screen and (max-width: 800px) {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+  .sponsorCardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 5px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
     }
 
-    .sponsorCardsContainer {
-        display: flex;
+    .platinumRow {
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 1150px) {
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 5px;
-
-        .row {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-
-        .platinumRow {
-            align-items: center;
-            justify-content: center;
-            
-            @media screen and (max-width: 1150px) {
-                flex-direction: column;
-            }
-        }
-
-        .goldRow {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
+      }
     }
+
+    .goldRow {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
 }

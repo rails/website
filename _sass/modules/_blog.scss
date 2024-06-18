@@ -1,5 +1,4 @@
 .blog {
-
   position: relative;
 
   .container {
@@ -15,7 +14,6 @@
   }
 
   &__post {
-
     border-top: 3px solid rgba($color-black, 0.1);
     padding-top: 30px;
 
@@ -28,12 +26,10 @@
     }
 
     dl {
-
       margin-bottom: -6px;
       margin-top: 1px;
 
       dt {
-
         color: $color-black;
         font-size: 31px;
         font-weight: 700;
@@ -41,44 +37,35 @@
         line-height: 34px;
 
         a {
-
-          color: $color-red;
+          color: $color-green;
           text-decoration: underline;
 
           &:hover {
             color: $color-black;
           }
-
         }
-
       }
 
       dd {
-
         color: $color-grey-5;
         font-size: 21px;
         line-height: 26px;
         margin-top: 16px;
 
         a {
-
-          color: $color-red;
+          color: $color-green;
           text-decoration: underline;
 
           &:hover {
             color: $color-black;
           }
-
         }
-
       }
-
     }
 
     &:not(:last-child) {
       padding-bottom: 30px;
     }
-
   }
 
   &__pagination {
@@ -88,10 +75,7 @@
     text-align: center;
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__posts,
     &__pagination {
       margin-left: 60px;
@@ -100,7 +84,6 @@
     }
 
     &__post {
-
       display: flex;
       gap: 30px;
       padding-top: 40px;
@@ -118,11 +101,6 @@
       &:not(:last-child) {
         padding-bottom: 40px;
       }
-
     }
-
   }
-
-
-
 }

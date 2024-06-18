@@ -1,5 +1,4 @@
 .nav {
-
   background: $color-white;
   font-size: 0;
   height: 106px;
@@ -8,8 +7,7 @@
   z-index: 1000;
 
   &__logo {
-
-    background: $color-red;
+    background: $color-green;
     border-radius: 100%;
     height: 86px;
     left: calc(50% - 43px);
@@ -20,27 +18,27 @@
     z-index: 2;
 
     &:after {
-      background-image: url(../images/logo.svg);
+      background-image: url(../images/g10.svg);
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: contain; // Ensures the entire image fits within its container
       content: '';
       filter: $filter-white;
-      height: 24px;
-      left: 9px;
+      height: 100%;
+      left: 0;
       position: absolute;
-      top: 26px;
-      width: 67px;
+      top: 0;
+      width: 100%;
+      transform: scale(2); // Adjust scale as needed
+      transform-origin: center;
     }
 
     &:hover {
       background: $color-black;
     }
-
   }
 
   &__options {
-
     position: relative;
     transform: translate(0, -10px);
     transition: transform $transition;
@@ -59,13 +57,10 @@
     }
 
     ul {
-
       li {
-
         text-align: center;
 
         a {
-
           display: inline-block;
 
           span {
@@ -83,11 +78,9 @@
 
           &:hover span {
             background: $color-grey-1;
-            color: $color-red;
+            color: $color-green;
           }
-
         }
-
       }
 
       &:first-child {
@@ -97,9 +90,7 @@
       &:last-child {
         padding-bottom: 15px;
       }
-
     }
-
   }
 
   &__checkbox,
@@ -113,7 +104,6 @@
   }
 
   &__checkbox {
-
     appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -122,20 +112,17 @@
     background: none;
 
     &:checked {
-
       & ~ .nav__options {
-
         transform: translate(0, 0);
 
         div {
-          box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+          box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+            0 1px 1px rgba($color-black, 0.04);
           height: 385px;
         }
-
       }
 
       & ~ .nav__toggle span {
-
         transform: rotate(180deg) scale(0.9);
 
         &:before,
@@ -150,19 +137,14 @@
         &:after {
           transform: rotate(-45deg);
         }
-
       }
-
     }
-
   }
 
   &__toggle {
-
     cursor: pointer;
 
     span {
-
       display: block;
       height: 24px;
       margin: 18px;
@@ -177,7 +159,8 @@
         height: 2px;
         left: 0;
         position: absolute;
-        transition: background $transition, top $transition, transform $transition;
+        transition: background $transition, top $transition,
+          transform $transition;
         width: 100%;
       }
 
@@ -188,26 +171,18 @@
       &:after {
         top: 15px;
       }
-
     }
 
     &:hover span {
-
       &:before,
       &:after {
-        background: $color-red;
+        background: $color-green;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 768px) {
-
+  @media (min-width: 768px) {
     &__options {
-
       transform: none;
       transition: none;
 
@@ -223,12 +198,10 @@
       }
 
       ul {
-
         position: absolute;
         top: 47px;
 
         li {
-
           display: inline-block;
 
           a span {
@@ -236,7 +209,6 @@
             line-height: 32px;
             padding: 0 15px;
           }
-
         }
 
         &:first-child {
@@ -248,9 +220,7 @@
           left: calc(50% + 63px);
           padding-bottom: 0;
         }
-
       }
-
     }
 
     &__checkbox,
@@ -259,26 +229,19 @@
     }
 
     &__checkbox:checked ~ .nav__options {
-
       transform: none;
 
       div {
         box-shadow: none;
         height: auto;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     height: 132px;
 
     &__logo {
-
       height: 112px;
       left: calc(50% - 56px);
       width: 112px;
@@ -289,13 +252,10 @@
         top: 33px;
         width: 90px;
       }
-
     }
 
     &__options {
-
       ul {
-
         top: 54px;
 
         li a span {
@@ -311,13 +271,7 @@
         &:last-child {
           left: calc(50% + 76px);
         }
-
       }
-
     }
-
   }
-
-
-
 }

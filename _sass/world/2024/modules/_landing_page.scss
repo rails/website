@@ -1,181 +1,181 @@
 .landing-page {
-    width: 100%;
-    position: relative;
-    overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .content-container {
-    display: flex;
-    color: var(--text-color);
-    text-align: center;
-    padding: var(--desktop-padding);
+  display: flex;
+  color: var(--text-color);
+  text-align: center;
+  padding: var(--desktop-padding);
 
-    @media only screen and (max-width: 800px) {
-        padding: var(--mobile-padding);
-    }
+  @media only screen and (max-width: 800px) {
+    padding: var(--mobile-padding);
+  }
 
-    // Actual phone
-    @media only screen and (max-width: 500px) {
-        padding: var(--smaller-mobile-padding);
-    }
+  // Actual phone
+  @media only screen and (max-width: 500px) {
+    padding: var(--smaller-mobile-padding);
+  }
 
-    // Larger Desktop 
-    @media only screen and (min-width: 1550px) {
-        padding: var(--larger-desktop-padding);
-    }
+  // Larger Desktop
+  @media only screen and (min-width: 1550px) {
+    padding: var(--larger-desktop-padding);
+  }
 }
 
 .top-information-card {
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding-top: -2rem;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: -2rem;
+
+  .logoSvg {
+    image-rendering: crisp-edges;
+    --webkit-image-rendering: crisp-edges;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: unset !important;
+    width: 75%;
+    max-width: 560px;
+    min-width: 500px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: -1rem;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    gap: 40px;
 
     .logoSvg {
-        image-rendering: crisp-edges;
-        --webkit-image-rendering: crisp-edges;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: unset !important;
-        width: 75%;
-        max-width: 560px;
-        min-width: 500px;
+      display: none;
     }
+  }
 
-    @media only screen and (max-width: 800px) {
-        margin-top: -1rem;
-        padding-top: 30px;
-        padding-bottom: 60px;
-        gap: 40px;
-
-        .logoSvg {
-            display: none;
-        }
-    }
-
-    // Push down to avoid the circle svg cutting off border
-    @media only screen and (min-width: 1400px) {
-        margin-bottom: 35px;
-    }
+  // Push down to avoid the circle svg cutting off border
+  @media only screen and (min-width: 1400px) {
+    margin-bottom: 35px;
+  }
 }
 
 .half-container {
-    padding-top: var(--space-small);
-    background-color: var(--purple-dark);
-    width: 100%;
-    position: relative;
+  padding-top: var(--space-small);
+  background-color: var(--purple-dark);
+  width: 100%;
+  position: relative;
 
+  .joinText {
+    position: absolute;
+    top: 0;
+    margin-top: -30px;
+  }
+
+  @media only screen and (max-width: 800px) {
     .joinText {
-        position: absolute;
-        top: 0;
-        margin-top: -30px;
+      position: relative;
+      font-size: var(--type-xx-large);
+      margin-top: 0;
     }
+  }
 
-    @media only screen and (max-width: 800px) {
-        .joinText {
-            position: relative;
-            font-size: var(--type-xx-large);
-            margin-top: 0;
-        }
-    }
-
-    @media only screen and (min-width: 1400px) {
-        margin-top: -40px;
-        padding-bottom: 20px;
-    }
+  @media only screen and (min-width: 1400px) {
+    margin-top: -40px;
+    padding-bottom: 20px;
+  }
 }
 
 .top-information-text {
-    border: var(--border-style);
-    border-left: 0;
-    border-right: 0;
-    background-color: var(--purple-dark);
+  border: var(--border-style);
+  border-left: 0;
+  border-right: 0;
+  background-color: var(--purple-dark);
 }
 
 .video-card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--border-style);
+  gap: 15px;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--header-and-paragraph-padding);
+  }
+
+  .slideshowContainer {
+    position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: var(--border-style);
-    gap: 15px;
+    justify-content: center;
+    width: 500px;
+    gap: 10px;
+
+    .dotsContainer {
+      display: flex;
+      gap: 5px;
+    }
+
+    .buttonsContainer {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: space-between;
+      width: 105%;
+    }
+
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-shadow: 6px 6px 2px var(--purple-dark);
+
+      .slideImage {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+      }
+    }
+
+    @media screen and (min-width: 1800px) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: 950px) {
+      width: 100%;
+    }
+  }
+
+  // Desktop slideShow view
+  @media only screen and (min-width: 950px) {
+    flex-direction: row;
 
     .textContainer {
-        display: flex;
-        flex-direction: column;
-        gap: var(--header-and-paragraph-padding);
+      width: 40%;
+      text-align: start;
     }
 
-    .slideshowContainer {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 500px;
-        gap: 10px;
-
-        .dotsContainer {
-            display: flex;
-            gap: 5px;
-        }
-
-        .buttonsContainer {
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: space-between;
-            width: 105%;
-        }
-
-        .slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            box-shadow: 6px 6px 2px var(--purple-dark);
-
-            .slideImage {
-                width: 100%;
-                height: 100%;
-                aspect-ratio: 16/9;
-            }
-        }
-
-        @media screen and (min-width: 1800px) {
-            width: 700px;
-        }
-
-        @media screen and (max-width: 950px) {
-            width: 100%;
-        }
+    .slideShowContainer {
+      width: 60%;
+      justify-content: flex-end;
     }
-
-    // Desktop slideShow view
-    @media only screen and (min-width: 950px) {
-        flex-direction: row;
-
-        .textContainer {
-            width: 40%;
-            text-align: start;
-        }
-
-        .slideShowContainer {
-            width: 60%;
-            justify-content: flex-end;
-        }
-    }
+  }
 }
 
 .link-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2.5rem;
-    max-width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+  max-width: 90vw;
 }
 
 .small-text {
-    font-size: 1rem;
+  font-size: 1rem;
 }

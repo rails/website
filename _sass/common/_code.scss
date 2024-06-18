@@ -1,5 +1,4 @@
 .common-code {
-
   background: rgba($color-black, 0.9);
   border-radius: 8px;
   box-sizing: border-box;
@@ -7,7 +6,11 @@
   text-align: left;
 
   h6 {
-    background: linear-gradient(0deg, rgba($color-black, 0.5), rgba($color-black, 0));
+    background: linear-gradient(
+      0deg,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0)
+    );
     border-bottom: 1px solid rgba($color-black, 0.9);
     border-radius: 8px 8px 0 0;
     box-sizing: border-box;
@@ -30,5 +33,4 @@
     padding: 22px 30px;
     white-space: pre;
   }
-
 }

@@ -1,5 +1,4 @@
 .heading {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -18,7 +17,6 @@
   }
 
   &__headline {
-
     margin-bottom: -6px;
     margin-top: -8px;
 
@@ -31,7 +29,6 @@
     }
 
     &--no-h1 {
-
       h3 {
         padding-top: 7px;
       }
@@ -39,13 +36,10 @@
       h4 {
         padding-top: 3px;
       }
-
     }
-
   }
 
   &__content {
-
     color: $color-grey-5;
     margin-bottom: -33px;
     margin-top: -7px;
@@ -53,7 +47,6 @@
     &--has-headline {
       margin-top: 33px;
     }
-
   }
 
   &__button {
@@ -61,12 +54,10 @@
   }
 
   &__buttons {
-
     font-size: 0;
     line-height: 0;
 
     ul li a {
-
       display: inline-block;
       text-decoration: none;
 
@@ -85,26 +76,19 @@
 
       &:hover span {
         background: $color-grey-1;
-        color: $color-red;
+        color: $color-green;
       }
-
     }
-
   }
 
-
-
   &--align-left {
-
     .heading__body {
       text-align: left;
     }
-
   }
 
   &--frame-grey,
   &--frame-white {
-
     .heading__body {
       border-radius: 12px;
       margin-left: 30px;
@@ -112,44 +96,31 @@
       padding: 40px 30px;
       width: calc(100% - 120px);
     }
-
   }
 
   &--frame-grey {
-
     .heading__body {
       background: $color-grey-2;
     }
-
   }
 
   &--frame-white {
-
     .heading__body {
       background: $color-white;
-      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+        0 1px 1px rgba($color-black, 0.04);
     }
-
   }
 
-
-
-  @media(min-width: 375px) {
-
+  @media (min-width: 375px) {
     &__buttons {
-
       ul li {
         display: inline-block;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__body {
       margin-left: 60px;
       margin-right: 60px;
@@ -157,7 +128,6 @@
     }
 
     &__headline {
-
       margin-bottom: -9px;
       margin-top: -15px;
 
@@ -169,7 +139,6 @@
       h4 {
         padding-top: 20px;
       }
-
     }
 
     &__button {
@@ -177,18 +146,15 @@
     }
 
     &__buttons {
-
       ul li a span {
         font-size: 23px;
         line-height: 42px;
         padding: 0 20px 2px 20px;
       }
-
     }
 
     &--frame-grey,
     &--frame-white {
-
       .container {
         max-width: 1320px;
       }
@@ -199,11 +165,6 @@
         padding: 80px 120px;
         width: calc(100% - 360px);
       }
-
     }
-
   }
-
-
-
 }

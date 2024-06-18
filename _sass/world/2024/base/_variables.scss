@@ -1,10 +1,12 @@
 :root {
-    --larger-desktop-padding: var(--space-large) var(--space-xxxx-large);
-    --desktop-padding: var(--space-large) var(--space-xxx-large);
-    --mobile-padding:  var(--space-medium) var(--space-large);
-    --smaller-mobile-padding: var(--space-medium) var(--space-medium);
-    --header-and-paragraph-padding: 15px;
+  --larger-desktop-padding: var(--space-large) var(--space-xxxx-large);
+  --desktop-padding: var(--space-large) var(--space-xxx-large);
+  --mobile-padding: var(--space-medium) var(--space-large);
+  --smaller-mobile-padding: var(--space-medium) var(--space-medium);
+  --header-and-paragraph-padding: 15px;
 }
 
-$filter-dark-purple: brightness(0) saturate(100%) invert(17%) sepia(34%) saturate(1978%) hue-rotate(238deg) brightness(95%) contrast(98%);
-$filter-purple: brightness(0) saturate(100%) invert(18%) sepia(74%) saturate(757%) hue-rotate(229deg) brightness(94%) contrast(96%);
+$filter-dark-purple: brightness(0) saturate(100%) invert(17%) sepia(34%)
+  saturate(1978%) hue-rotate(238deg) brightness(95%) contrast(98%);
+$filter-purple: brightness(0) saturate(100%) invert(18%) sepia(74%)
+  saturate(757%) hue-rotate(229deg) brightness(94%) contrast(96%);

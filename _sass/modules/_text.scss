@@ -1,5 +1,4 @@
 .text {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -24,26 +23,19 @@
     margin-top: 50px;
   }
 
-
-
   &--align-center {
-
     text-align: center;
 
     .text__content {
-
       ul {
         display: inline-block;
         list-style-position: inside;
       }
-
     }
-
   }
 
   &--frame-grey,
   &--frame-white {
-
     .text__body {
       border-radius: 8px;
       padding: 30px;
@@ -51,30 +43,23 @@
       margin-right: 30px;
       z-index: 1;
     }
-
   }
 
   &--frame-grey {
-
     .text__body {
       background: $color-grey-2;
     }
-
   }
 
   &--frame-white {
-
     .text__body {
       background: $color-white;
-      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+        0 1px 1px rgba($color-black, 0.04);
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__body {
       margin-left: 60px;
       margin-right: 60px;
@@ -82,7 +67,6 @@
 
     &--frame-grey,
     &--frame-white {
-
       .container {
         max-width: 960px;
       }
@@ -92,11 +76,6 @@
         margin-left: 60px;
         margin-right: 60px;
       }
-
     }
-
   }
-
-
-
 }

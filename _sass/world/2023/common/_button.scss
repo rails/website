@@ -1,7 +1,8 @@
 button {
   cursor: pointer;
 
-  &[disabled], &:disabled {
+  &[disabled],
+  &:disabled {
     opacity: 0.5;
     cursor: auto;
     pointer-events: none;
@@ -51,7 +52,8 @@ a:hover:not(.button) {
   transition: transform 0.05s linear;
 }
 
-.button:hover, .button.prime:hover {
+.button:hover,
+.button.prime:hover {
   background: var(--orange-red);
   color: var(--white);
 }

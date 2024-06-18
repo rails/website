@@ -1,5 +1,4 @@
 .video {
-
   font-size: 0;
   line-height: 0;
   position: relative;
@@ -9,7 +8,6 @@
   }
 
   &__embed {
-
     margin-left: 30px;
     margin-right: 30px;
     position: relative;
@@ -18,26 +16,19 @@
     video {
       background: $color-white;
       border-radius: 8px;
-      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+      box-shadow: 0 15px 70px 5px rgba($color-black, 0.15),
+        0 1px 1px rgba($color-black, 0.04);
       display: block;
       height: auto;
       max-width: 100%;
       overflow: hidden;
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__embed {
       margin-left: 60px;
       margin-right: 60px;
     }
-
   }
-
-
-
 }

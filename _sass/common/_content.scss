@@ -22,13 +22,13 @@
   }
 
   h2 {
-    color: $color-red;
+    color: $color-green;
     font-size: 39px;
     line-height: 36px;
   }
 
   h3 {
-    color: $color-red;
+    color: $color-green;
     font-size: 36px;
     line-height: 34px;
   }
@@ -184,7 +184,7 @@
 
   a {
 
-    color: $color-red;
+    color: $color-green;
     font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -274,7 +274,7 @@
         color: $color-black;
 
         &:hover {
-          color: $color-red;
+          color: $color-green;
         }
 
       }

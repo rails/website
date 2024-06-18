@@ -1,5 +1,4 @@
 .common-shape {
-
   &--bottom-grey-down-left,
   &--bottom-grey-down-right,
   &--bottom-grey-up-left,
@@ -8,7 +7,6 @@
   &--top-grey-down-right,
   &--top-grey-up-left,
   &--top-grey-up-right {
-
     &:after {
       filter: $filter-grey;
     }
@@ -16,7 +14,6 @@
     &:before {
       filter: $filter-grey;
     }
-
   }
 
   &--bottom-white-down-left,
@@ -27,7 +24,6 @@
   &--top-white-down-right,
   &--top-white-up-left,
   &--top-white-up-right {
-
     &:after {
       filter: $filter-white;
     }
@@ -35,7 +31,6 @@
     &:before {
       filter: $filter-white;
     }
-
   }
 
   &--bottom-grey-down-left,
@@ -46,7 +41,6 @@
   &--bottom-white-down-right,
   &--bottom-white-up-left,
   &--bottom-white-up-right {
-
     &:after {
       background-position: left top;
       background-repeat: no-repeat;
@@ -59,7 +53,6 @@
       position: absolute;
       width: 100%;
     }
-
   }
 
   &--bottom-grey-down-left:after,
@@ -90,7 +83,6 @@
   &--top-white-down-right,
   &--top-white-up-left,
   &--top-white-up-right {
-
     &:before {
       background-position: left top;
       background-repeat: no-repeat;
@@ -103,7 +95,6 @@
       top: -1px;
       width: 100%;
     }
-
   }
 
   &--top-grey-down-left:before,
@@ -125,5 +116,4 @@
   &--top-white-up-right:before {
     background-image: url(../images/shape-top-up-right.svg);
   }
-
 }

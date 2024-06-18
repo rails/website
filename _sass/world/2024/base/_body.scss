@@ -8,24 +8,24 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "acumin-variable", sans-serif;
+  font-family: 'acumin-variable', sans-serif;
   font-variation-settings: var(--font-weight-700);
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 a,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: italic;
   letter-spacing: 1px;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     letter-spacing: 0.5px;
   }
 }
