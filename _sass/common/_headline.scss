@@ -1,70 +1,66 @@
 .common-headline {
-
   color: $color-black;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 
   h1 {
     color: $color-green;
-    font-size: 47px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.01em;
-    line-height: 43px;
+    line-height: 36px;
   }
 
   h2 {
     color: $color-green;
-    font-size: 39px;
-    @media (max-width: 800px) {
-      font-size: 32px;
-    }
-    @media (max-width: 600px) {
-      font-size: 28px;
-    }
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.01em;
-    line-height: 38px;
+    line-height: 32px;
+    @media (max-width: 800px) {
+      font-size: 26px;
+    }
+    @media (max-width: 600px) {
+      font-size: 22px;
+    }
   }
 
   h3 {
     color: $color-green;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.01em;
-    line-height: 34px;
+    line-height: 28px;
   }
 
   h4 {
-
     color: $color-black;
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: -0.006em;
-    line-height: 29px;
+    line-height: 24px;
 
     a {
       font-weight: 700;
     }
-
   }
 
   h5 {
     color: $color-black;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.006em;
-    line-height: 26px;
+    line-height: 20px;
   }
 
   h6 {
     color: $color-grey-4;
-    font-size: 21px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: -0.006em;
-    line-height: 26px;
+    line-height: 18px;
   }
 
   a {
-
     color: $color-black;
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -72,7 +68,6 @@
     &:hover {
       color: $color-green;
     }
-
   }
 
   b,
@@ -88,36 +83,29 @@
     font-weight: 600;
   }
 
-
-
-  @media(min-width: 1024px) {
-
-    font-size: 21px;
-    line-height: 26px;
+  @media (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 20px;
 
     h1 {
-      font-size: 78px;
-      line-height: 72px;
+      font-size: 56px;
+      line-height: 60px;
     }
 
     h2 {
-      font-size: 55px;
-      line-height: 52px;
-    }
-
-    h3 {
-      font-size: 47px;
-      line-height: 43px;
-    }
-
-    h4 {
-      font-size: 39px;
-      letter-spacing: -0.01em;
+      font-size: 40px;
       line-height: 44px;
     }
 
+    h3 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    h4 {
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      line-height: 24px;
+    }
   }
-
-
-
 }

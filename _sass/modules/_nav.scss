@@ -21,7 +21,7 @@
       background-image: url(../images/g10.svg);
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: contain; // Ensures the entire image fits within its container
+      background-size: contain;
       content: '';
       filter: $filter-white;
       height: 100%;
@@ -29,7 +29,7 @@
       position: absolute;
       top: 0;
       width: 100%;
-      transform: scale(2); // Adjust scale as needed
+      transform: scale(0.6);
       transform-origin: center;
     }
 
@@ -251,6 +251,7 @@
         left: 11px;
         top: 33px;
         width: 90px;
+        transform: scale(2.3);
       }
     }
 

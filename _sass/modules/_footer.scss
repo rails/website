@@ -19,14 +19,16 @@
       width: 90px;
 
       &:after {
-        background: url(../images/logo.svg) center center no-repeat;
+        background: url(../images/horizontal-logo-small.svg) center center
+          no-repeat;
         content: '';
-        filter: $filter-red;
-        height: 32px;
-        left: 0;
+        filter: $filter-green;
+        height: 45px;
+        left: -24px;
         position: absolute;
         top: 0;
-        width: 90px;
+        width: 135px;
+        scale: 1;
       }
 
       &:hover:after {

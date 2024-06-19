@@ -1,15 +1,9 @@
 items:
-  - title: Conduct
-    url: /conduct
+  - title: Katahula © 2024
+    url: /about
 
-  - title: Maintenance
-    url: /maintenance
+  - title: Privacy & Legal
+    url: /legal
 
-  - title: Security
-    url: /security
-
-  - title: Trademarks
-    url: /trademarks
-
-  - title: License
-    url: https://opensource.org/licenses/MIT
+  - title: Contact
+    url: /contact

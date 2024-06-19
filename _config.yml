@@ -1,9 +1,8 @@
-title: Ruby on Rails
-description: A web-app framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
+title: Katahula
+description: Find the perfect place to live.
 twitter: rails
 feed_path: /feed.xml
-world23_title: Rails World - 2023
-world24_title: Rails World - 2024
+
 
 plugins:
   - jekyll-feed
@@ -21,12 +20,6 @@ collections:
   pages:
     output: true
     permalink: "/:name"
-  world_speakers:
-    output: true
-    permalink: "/world/:path"
-  world_sessions:
-    output: true
-    permalink: "/world/:path"
 
 defaults:
   - scope:
@@ -40,14 +33,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-  - scope:
-      path: "world/2023"
-    values:
-      description: October 5 & 6 - Beurs van Berlage, Amsterdam, NL
-  - scope:
-      path: "world/2024"
-    values:
-      description: September 26 & 27 - Toronto, CA
 
 markdown: kramdown
 highlighter: rouge

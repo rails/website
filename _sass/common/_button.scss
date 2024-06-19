@@ -92,7 +92,24 @@
     }
 
     &:hover span:after {
-      filter: $filter-red;
+      filter: $filter-orange;
+    }
+  }
+
+  &--icon-arrow-white {
+    span:after {
+      background: url(../images/icon-button.svg) center center no-repeat;
+      content: '';
+      display: inline-block;
+      filter: $filter-white;
+      height: 14px;
+      margin: 0 0 -1px 7px;
+      transition: filter $transition;
+      width: 9px;
+    }
+
+    &:hover span:after {
+      filter: $filter-orange;
     }
   }
 
@@ -118,7 +135,7 @@
     }
   }
 
-  &--color-red {
+  &--color-green {
     background: $color-green;
     color: $color-white;
 

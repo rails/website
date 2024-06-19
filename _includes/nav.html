@@ -19,7 +19,7 @@
     <div class="nav__options">
       <div>
         <ul>
-          {% for option in site.data.nav.items limit: 4 %}
+          {% for option in site.data.nav.items limit: 2 %}
             <li>
               <a href="{{ option.url }}">
                 <span>{{ option.title }}</span>
@@ -29,7 +29,7 @@
         </ul>
 
         <ul>
-          {% for option in site.data.nav.items limit: 4 offset: 4 %}
+          {% for option in site.data.nav.items limit: 2 offset: 2 %}
             <li>
               <a href="{{ option.url }}">
                 <span>{{ option.title }}</span>
