@@ -1,0 +1,60 @@
+---
+title: Team
+description:
+permalink: /team
+---
+
+<div class="heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>We make relocating easier.</h1>
+        <h4>Our company helps people relocate by providing comprehensive information on jobs, schools, neighborhoods, 
+          and housing. Our dedicated team of experts is building novel tools to ensure you have all the data you need to
+          find the perfect place to live. Whether you're moving across town or across the country, we're here to make
+          your relocation experience smooth and stress-free.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="core common-background--grey common-shape--bottom-white-up-left common-shape--top-white-down-right">
+  <div class="container">
+    <div class="core__body">
+      <div class="core__headline common-headline" id="core">
+        <h3>Meet the Core team.</h3>
+      </div>
+
+      <div class="core__content common-content common-content--size-large">
+        <p>
+          <strong>The direction of Katahula is stewarded by the Katahula Core Team.</strong>
+        </p>
+        <p>
+          This group is dedicated to making the relocation process as smooth as possible for everyone involved.
+        </p>
+      </div>
+
+      <div class="core__members">
+        {% for member in site.data.team.core %}
+          <div class="core__member">
+            <div class="core__member__image">
+              <a href="{{ member.url }}" aria-label="{{ member.name }}">
+                <figure>
+                  <img src="{{ member.image }}" alt="{{ member.name }}" />
+                </figure>
+              </a>
+            </div>
+
+            <div class="core__member__content">
+              <h3>
+                <a href="{{ member.url }}" aria-label="{{ member.name }}">{{ member.name }}</a>
+              </h3>
+              <h4>{{ member.location }}</h4>
+              <h5>{{ member.position }}</h5>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

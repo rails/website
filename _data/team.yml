@@ -1,0 +1,21 @@
+core:
+  - name: Tony
+    position: CEO | CTO
+    location: USA
+    url: https://tonygaeta.com
+    handle: dhh
+    image: /assets/images/core-tony.jpg
+
+  - name: Bernadette
+    position: President
+    location: USA
+    url: https://bgaeta.com
+    handle: bitsweat
+    image: /assets/images/core-bernadette.jpg
+
+  - name: Joe
+    position: Head of Sales
+    location: USA
+    url: https://www.linkedin.com/in/joe-gaeta-9465348/
+    handle: tenderlove
+    image: /assets/images/core-joe.jpg

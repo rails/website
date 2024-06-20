@@ -1,13 +1,13 @@
 .icon {
   display: inline-block;
-  padding-left: 19px;
+  padding-left: 16px;
   position: relative;
 
   &:after {
     background-position: center center;
     background-repeat: no-repeat;
     content: '';
-    filter: $filter-red;
+    filter: $filter-black;
     height: 100%;
     left: 0;
     position: absolute;
@@ -17,7 +17,7 @@
   }
 
   &:hover:after {
-    filter: $filter-black;
+    filter: $filter-green;
   }
 
   &--youtube {
@@ -33,8 +33,10 @@
     padding-left: 23px;
 
     &:after {
-      background-image: url(../images/icon-twitter.svg);
-      width: 19px;
+      background-image: url(../images/icon-x.svg);
+      width: 32px;
+      left: -6px;
+      top: 4px;
     }
   }
 

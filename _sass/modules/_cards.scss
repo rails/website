@@ -93,8 +93,8 @@
     }
 
     &__headline {
-      padding-bottom: 6px;
-      padding-top: 32px;
+      padding-bottom: 8px;
+      padding-top: 48px;
 
       h3 {
         clear: both;
@@ -105,8 +105,6 @@
         line-height: 31px;
         margin-left: auto;
         margin-right: auto;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
         transition: color $transition;
       }
     }
