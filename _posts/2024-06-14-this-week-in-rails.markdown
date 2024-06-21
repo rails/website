@@ -29,7 +29,7 @@ when a transaction has been started. This event complements
 [Add _filter_ option on _in_order_of_](https://github.com/rails/rails/pull/51761)  
 This pull request adds a `filter` option to `in_order_of` in Active Record to
 prioritize certain values in the sorting without filtering the results by these
-values. The same change was done to Enumarable as well in
+values. The same change was done to Enumerable as well in
 [52072](https://github.com/rails/rails/pull/52072).
 
 [Add an internal route for bin/rails notes](https://github.com/rails/rails/pull/49240)  
