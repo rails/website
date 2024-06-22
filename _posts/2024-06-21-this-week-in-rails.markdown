@@ -10,9 +10,9 @@ date: 2024-06-21
 
 Hey everyone, Happy Friday! [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in.
 
-[Improved Active Record Migration Documentation](https://github.com/rails/rails/pull/51928)  
-The Rails Foundation documentation team continues on improving different areas of the Guides. 
-This Pull Request updates the Active Record Migration Documentation to receive various additions, improvements and more.
+[Improved Active Record Migration documentation](https://github.com/rails/rails/pull/51928)  
+The Rails Foundation documentation team continues on improving different areas of the Guides.
+This Pull Request updates the Active Record Migration documentation to receive various additions, improvements and more.
 
 [Add .shard_keys, .sharded?, & .connected_to_all_shards methods to ActiveRecord::Base](https://github.com/rails/rails/pull/51009)  
 This change adds `.shard_keys`, `.sharded?`, & `.connected_to_all_shards` methods to start returning sharding information for a model.  
@@ -35,7 +35,7 @@ ShardedModel.sharded? => true
 ShardedBase.connected_to_all_shards { ShardedModel.current_shard } => [:shard_one, :shard_two]    
 ```
 
-[Expire caching when a download fail while proxying in ActiveStorage ](https://github.com/rails/rails/pull/51288)       
+[Expire caching when a download fail while proxying in Active Storage](https://github.com/rails/rails/pull/51288)       
 The Proxy controllers in Active Storage set the caching headers early before streaming.
 In some instances, it was possible for the file download to fail before we send the first byte to the client.
 In those instances, this change would invalidate the cache and return a better response status before closing the stream.
@@ -45,8 +45,8 @@ Minitest supports passing the failure message as a callable, which allow us to d
 Some of these failure messages can be a bit costly to generate, particularly when inspecting very large objects or when accessing the AST of procs.
 This change, now defers the generation of the failure message by passing it in a callable instead.
 
-[Make "g scaffold" with no field produce rubocop compliant code](https://github.com/rails/rails/pull/52161)  
-When there are no fields and we use `rails g scaffold`, the generated code is not rubocop compliant. 
+[Make "rails g scaffold" with no field produce RuboCop compliant code](https://github.com/rails/rails/pull/52161)  
+When there are no fields and we use `rails g scaffold`, the generated code is not RuboCop compliant. 
 
 This change makes it compliant by:
 
