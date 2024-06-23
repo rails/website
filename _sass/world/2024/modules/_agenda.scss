@@ -1,17 +1,39 @@
 .dayContainer {
     display: flex;
-    align-items: flex-start;
-    padding-top: 20px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     width: 100%;
+    padding: 20px 0px;
+    gap: 10px;
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        // padding: var(--desktop-padding);
+        width: 85%;
+        max-width: 1300px;
+        text-align: center;
+        color: var(--white);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 
     .mainContainer {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 85%;
+        max-width: 1300px;
         align-items: center;
         justify-content: center;
-        max-width: 1600px;
+
+        @media screen and (max-width: 900px) {
+            width: 95%;
+        }
 
         .dayTabs {
             width: 100%;
@@ -22,7 +44,9 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                padding: 10px 50px;
+                padding: 10px 0;
+                width: 50%;
+                // max-width: 250px;
                 color: var(--white);
                 cursor: pointer;
                 border: 2px solid var(--white);
@@ -35,6 +59,18 @@
                 .dateText {
                     font-size: 1.3rem;
                     margin-top: -3px;
+                }
+
+                &.one {
+                    border-radius: 10px 0 0 0;
+                    border-right: 0;
+                    border-bottom: 0;
+                }
+
+                &.two {
+                    border-radius: 0 10px 0 0;
+                    border-left: 0;
+                    border-bottom: 0;
                 }
 
                 &.active {
@@ -59,29 +95,40 @@
             display: flex;
             flex-direction: column;
             background-color: var(--white);
-            border-radius: 0 10px 10px 10px;
+            border-radius: 0 0px 10px 10px;
             width: 100%;
+            padding-bottom: 10px;
 
             .sessionRow {
                 display: flex;
                 border-bottom: 2px solid var(--purple);
-                padding: 10px 20px;
+                // padding: 5px 15px;
                 min-height: 100px;
                 cursor: pointer;
 
                 .left {
                     display: flex;
-                    // background-color: red;
                     align-items: center;
                     justify-content: center;
-                    border-right: 1px solid var(--purple);
-                    padding-right: 25px;
-                    width: 130px;
+                    padding-left: 25px;
+                    gap: 25px;
 
                     .timeText {
                         font-weight: 600;
                         color: var(--purple);
-                        font-size: 2.1rem;
+                        font-size: var(--type-small);
+                        // font-size: 2.1rem;
+                    }
+
+                    .seperator {
+                        height: 70%;
+                        width: 1px;
+                        background-color: var(--purple);
+                    }
+
+                    @media screen and (max-width: 800px) {
+                        padding-left: 10px;
+                        gap: 10px;
                     }
                 }
 
@@ -92,12 +139,34 @@
                     flex-direction: column;
                     align-items: start;
                     justify-content: center;
-                    gap: 10px;
+                    gap: 5px;
+
+                    .title {
+                        font-weight: 600;
+                        color: var(--purple);
+                    }
+
+                    .speakersContainer {
+                        display: flex;
+
+                        .speakerName {
+                            font-size: var(--type-small);
+                        }
+
+                    }
+
+                    @media screen and (max-width: 800px) {
+                        padding: 0 10px;
+                    }
                 }
 
                 &:hover {
-                    background-color: rgba(black, 0.03);
+                    background-color: rgb(242, 242, 242);
                 }
+            }
+
+            .sessionRow:last-child {
+                border-bottom: none;
             }
         }
     }

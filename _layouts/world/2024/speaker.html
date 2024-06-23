@@ -5,6 +5,7 @@ layout: world/2024/default
 {% assign speaker_id = page.path | split: '/' | last %}
 {% assign filteredSessions = site.world_sessions | where_exp: 'item', 'item.path contains "2024"'%}
 {% assign speakerSessions = filteredSessions | where: 'speaker', speaker_id %}
+{% assign secondarySessions = filteredSessions | where: 'second_speaker', speaker_id %}
 
 <div class="speakerPage">
     <div class="speakerSwooshContainer">
@@ -49,53 +50,10 @@ layout: world/2024/default
                     <div class="sessionsSection">
                         <h3>Session</h3>
                         {% for session in speakerSessions %}
-                        {% assign sessionUrl = session.path | split: '/' | last | remove_first: '.md' %}
-                        {% if session.time != blank and session.session_date != blank and session.location != blank %}
-                            {% assign hasInfo = true %}
-                        {% else %}
-                            {% assign hasInfo = false %}
-                        {% endif %}
-
-                        {% if hasInfo %}
-                            {% assign className = "sessionCard" %}
-                        {% else %}
-                            {% assign className = "sessionCard noInfo" %}
-                        {% endif %}
-
-                        {% assign clean_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
-                        <div class="{{ className }}" href="" role="button" tabindex="0" title="{{ session.title }}"
-                            aria-label="Go to {{ session.title }} session page" onclick="openWindow(
-                                '/world/2024{{ clean_path }}'
-                                )
-                            " onkeydown="
-                                handleEnterOrSpaceWindowOpen(
-                                    event, 
-                                    '/world/2024/{{ clean_path }}'
-                                )
-                            ">
-                            <p class="sessionName">{{ session.title }}</p>
-                            {% if session.time %}
-                            <div class="sessionTimeContainer">
-                                {% include world/2024/icons/clock.html %}
-
-                                <p>"{{ session.time }}"</p>
-                            </div>
-                            {% endif %}
-                            {% if session.session_date %}
-                            <div class="sessionDateContainer">
-                                {% include world/2024/icons/calendar.html %}
-
-                                <p>{{ session.session_date }}</p>
-                            </div>
-                            {% endif %}
-                            {% if session.location %}
-                            <div class="sessionLocationContainer">
-                                {% include world/2024/icons/location.html %}
-
-                                <p>{{ session.location }}</p>
-                            </div>
-                            {% endif %}
-                        </div>
+                            {% include world/2024/speaker-session-card.html session=session %}
+                        {% endfor %}
+                        {% for session in secondarySessions %}
+                            {% include world/2024/speaker-session-card.html session=session %}
                         {% endfor %}
                     </div>
                 </div>

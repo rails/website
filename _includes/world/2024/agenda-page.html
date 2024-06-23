@@ -13,11 +13,22 @@
 {% assign dayTwoActive = 'inactive' %}
 {% endif %}
 
+<!-- TODO - make this work for the multiple speaker sesssions/find the duplicate in the includes -->
+{% assign sessions = include.sessions %}
+{% assign matchingSessions = sessions | where: "multiple_speakers", true %}
+{% assign normalSessions = sessions | where_exp: "session", "session.multiple_speakers != true" %}
+{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description |
+where_exp: "session", "session.url != page.url" %}
 
 <div class="dayContainer">
+    <div class="titleContainer">
+        <h2>Agenda</h2>
+        <p>Rails World featured two full days of keynotes, talks, workshops, sessions and more. All sessions on the two
+            main stages were recorded and will be shared soon.</p>
+    </div>
     <div class="mainContainer">
         <div class="dayTabs">
-            <div class="tabContainer {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
+            <div class="tabContainer one {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
                 aria-label="View day ones agenda" onclick="openWindow(
                 '/world/2024/agenda/day-0'
                 )
@@ -30,7 +41,7 @@
                 <p class="dayText">Thursday</p>
                 <p class="dateText">Sept 26</p>
             </div>
-            <div class="tabContainer {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
+            <div class="tabContainer two {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
                 aria-label="View day two's agenda" onclick="openWindow(
                 '/world/2024/agenda/day-1'
                 )
@@ -46,9 +57,9 @@
         </div>
         <div class="agendaContainer">
             {% for session in include.sessions %}
-                {% assign session_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
-                <div class="sessionRow" role="button" tabindex="0" title="{{ session.title }}"
-                    aria-label="Go to {{ session.title }} session page" onclick="openWindow(
+            {% assign session_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
+            <div class="sessionRow" role="button" tabindex="0" title="{{ session.title }}"
+                aria-label="Go to {{ session.title }} session page" onclick="openWindow(
                         '/world/2024{{ session_path }}'
                         )
                     " onkeydown="
@@ -57,14 +68,30 @@
                             '/world/2024/{{ session_path }}'
                         )
                     ">
-                    <div class="left">
-                        <p class="timeText">{{ session.time }}</p>
-                    </div>
-                    <div class="right">
-                        <p class="title">{{ session.title }}</h2>
-                        <p class="speakerName">{{ session.speaker }}</p>
+                <div class="left">
+                    <p class="timeText">{{ session.time }}</p>
+                    <div class="seperator"></div>
+                </div>
+                <div class="right">
+                    {% assign speakerId = session.speaker | split: '/' | last %}
+                    {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId"
+                    | where_exp: 'item', 'item.path contains "2024"'%}
+                    {% assign newSpeaker = speakerObjs | first %}
+                    {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
+                    {% assign secondSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
+                    secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"'%}
+                    {% assign secondarySpeaker = secondSpeakerObjs | first %}
+
+                    <p class="title">{{ session.title }}</h2>
+                    <div class="speakersContainer">
+                        <p class="speakerName">{{ newSpeaker.first_name }} {{ newSpeaker.last_name }}</p>
+
+                        {% if secondarySpeaker %}
+                        <p class="speakerName">, & {{ secondarySpeaker.first_name }} {{ secondarySpeaker.last_name }}</p>
+                        {% endif %}
                     </div>
                 </div>
+            </div>
             {% endfor %}
         </div>
     </div>

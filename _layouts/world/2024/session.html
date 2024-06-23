@@ -7,6 +7,10 @@ where_exp: 'item', 'item.path contains "2024"'%}
 {% assign speaker = filteredSpeakers | first %}
 {% assign speakerUrl = speaker.path | split: '/' | last | remove_first: '.md' %}
 
+{% assign filteredSpeakersSecondary = site.world_speakers | where_exp:"speaker", "speaker.path contains page.second_speaker" | where_exp: 'item', 'item.path contains "2024"' %}
+{% assign speakerSecondary = filteredSpeakersSecondary | first %}
+{% assign speakerUrlSecondary = speakerSecondary.path | split: '/' | last | remove_first: '.md' %}
+
 {% assign allSessions = site.world_sessions | where_exp: 'session', 'session.path contains "2024"' %}
 {% assign matchingSessions = allSessions | where: "multiple_speakers", true %}
 {% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description | where_exp: "session", "session.url != page.url" %}
@@ -71,15 +75,10 @@ where_exp: 'item', 'item.path contains "2024"'%}
 
         <div class="bottomContainer common-shape--top-white-down-left">
             {% include world/2024/session-speaker-card.html speaker=speaker %}
-            
-            {% for session in duplicateSessions %}
-                {% assign speakerId = session.speaker | split: '/' | last %}
-                {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId" |
-                where_exp: 'item', 'item.path contains "2024"'%}
-                {% assign newSpeaker = speakerObjs | first %}
-                
-                {% include world/2024/session-speaker-card.html speaker=newSpeaker %}
-            {% endfor %}
+
+            {% if speakerSecondary %}
+                {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
+            {% endif %}
         </div>
     </div>
 </div>
