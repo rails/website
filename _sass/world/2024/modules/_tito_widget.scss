@@ -15,12 +15,12 @@ $mobileWidth: 570px;
 
     .iframeContainer {
         width: 100%;
-        background-color: var(--white);
         min-height: 0px;
         border-radius: 10px;
+        height: 10px;
 
         .soldOutContainer {
-            padding: 15px;
+            padding: 25px;
 
             p {
                 color: black;

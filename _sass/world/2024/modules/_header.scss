@@ -46,6 +46,14 @@ header {
             gap: 5px;
             border-left: var(--border-style);
             border-right: 0;
+
+            a {
+                font-size: var(--type-small);
+
+                @media screen and (max-width: 700px) {
+                    font-size: var(--type-x-small);
+                }
+            }
         }
 
         .headerDateText {
