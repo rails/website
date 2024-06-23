@@ -13,12 +13,7 @@
 {% assign dayTwoActive = 'inactive' %}
 {% endif %}
 
-<!-- TODO - make this work for the multiple speaker sesssions/find the duplicate in the includes -->
 {% assign sessions = include.sessions %}
-{% assign matchingSessions = sessions | where: "multiple_speakers", true %}
-{% assign normalSessions = sessions | where_exp: "session", "session.multiple_speakers != true" %}
-{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description |
-where_exp: "session", "session.url != page.url" %}
 
 <div class="dayContainer">
     <div class="titleContainer">
