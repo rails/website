@@ -2,12 +2,18 @@
 
 
 {% if pageDay == 0 %}
+{% assign dayZeroActive = 'active' %}
+{% else %}
+{% assign dayZeroActive = 'inactive' %}
+{% endif %}
+
+{% if pageDay == 1 %}
 {% assign dayOneActive = 'active' %}
 {% else %}
 {% assign dayOneActive = 'inactive' %}
 {% endif %}
 
-{% if pageDay == 1 %}
+{% if pageDay == 2 %}
 {% assign dayTwoActive = 'active' %}
 {% else %}
 {% assign dayTwoActive = 'inactive' %}
@@ -23,27 +29,40 @@
     </div>
     <div class="mainContainer">
         <div class="dayTabs">
-            <div class="tabContainer one {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
-                aria-label="View day ones agenda" onclick="openWindow(
+            <div class="tabContainer zero {{ dayZeroActive }}" role="button" tabindex="0" title="Day One"
+            aria-label="View day ones agenda" onclick="openWindow(
+            '/world/2024/agenda/day-0'
+            )
+        " onkeydown="
+            handleEnterOrSpaceWindowOpen(
+                event, 
                 '/world/2024/agenda/day-0'
-                )
-            " onkeydown="
-                handleEnterOrSpaceWindowOpen(
-                    event, 
-                    '/world/2024/agenda/day-0'
-                )
-            ">
-                <p class="dayText">Thursday</p>
-                <p class="dateText">Sept 26</p>
-            </div>
-            <div class="tabContainer two {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
-                aria-label="View day two's agenda" onclick="openWindow(
+            )
+        ">
+            <p class="dayText">Wensday</p>
+            <p class="dateText">Sept 25</p>
+        </div>
+            <div class="tabContainer one {{ dayOneActive }}" role="button" tabindex="1" title="Day One"
+                aria-label="View day ones agenda" onclick="openWindow(
                 '/world/2024/agenda/day-1'
                 )
             " onkeydown="
                 handleEnterOrSpaceWindowOpen(
                     event, 
                     '/world/2024/agenda/day-1'
+                )
+            ">
+                <p class="dayText">Thursday</p>
+                <p class="dateText">Sept 26</p>
+            </div>
+            <div class="tabContainer two {{ dayTwoActive }}" role="button" tabindex="2" title="Day Two"
+                aria-label="View day two's agenda" onclick="openWindow(
+                '/world/2024/agenda/day-2'
+                )
+            " onkeydown="
+                handleEnterOrSpaceWindowOpen(
+                    event, 
+                    '/world/2024/agenda/day-2'
                 )
             ">
                 <p class="dayText">Friday</p>

@@ -3,7 +3,6 @@ layout: world/2024/session
 title: Making accessible web apps with Rails and Hotwire
 speaker: bruno-prieto.md # name of md speaker file
 time: 20:00 - 22:00
-session_date: 
 location: 
 running_order: 2
 ---

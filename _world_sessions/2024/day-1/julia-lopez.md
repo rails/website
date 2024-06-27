@@ -3,7 +3,6 @@ layout: world/2024/session
 title: Testing Integrations - The Good, the Bad, and the Ugly
 speaker: julia-lopez.md # name of md speaker file
 time: 16:00 - 19:00
-session_date: 
 location: 
 running_order: 0
 ---

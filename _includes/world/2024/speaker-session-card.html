@@ -13,6 +13,15 @@
 {% assign className = "sessionCard noInfo" %}
 {% endif %}
 
+{% assign url_segments = include.session.url | split: '/' %}
+{% assign day_segment = "" %}
+
+{% for segment in url_segments %}
+{% if segment contains "day-" %}
+{% assign day_segment = segment %}
+{% endif %}
+{% endfor %}
+
 {% assign clean_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
 <div class="{{ className }}" href="" role="button" tabindex="0" title="{{ session.title }}"
     aria-label="Go to {{ session.title }} session page" onclick="openWindow(
@@ -29,14 +38,18 @@
     <div class="sessionTimeContainer">
         {% include world/2024/icons/clock.html %}
 
-        <p>"{{ session.time }}"</p>
+        <p>{{ session.time }}</p>
     </div>
     {% endif %}
-    {% if session.session_date %}
+    {% if day_segment != "" %}
     <div class="sessionDateContainer">
         {% include world/2024/icons/calendar.html %}
 
-        <p>{{ session.session_date }}</p>
+        {% if day_segment == "day-0" %}
+        <p>September 26th</p>
+        {% elsif day_segment == "day-1" %}
+        <p>September 27th</p>
+        {% endif %}
     </div>
     {% endif %}
     {% if session.location %}

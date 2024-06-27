@@ -3,7 +3,6 @@ layout: world/2024/session
 title: Introducing Kamal Proxy
 speaker: kevin-mcconnell.md # name of md speaker file
 time: 20:00 - 20:30
-session_date: 
 location: 
 running_order: 2
 ---

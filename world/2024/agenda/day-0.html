@@ -6,7 +6,7 @@ day: day-0
 title: Agenda
 ---
 
-<!-- TODO - updated 2023's to only look for 2023 -->
 {% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '2024/day-0'" %}
+{% assign sortedSessions = sessions | sort: "running_order" %}
 
-{% include world/2024/agenda-page.html sessions=sessions day=0 %}
+{% include world/2024/agenda-page.html sessions=sortedSessions day=0 %}

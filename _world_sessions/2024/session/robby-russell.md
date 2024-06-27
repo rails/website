@@ -3,8 +3,8 @@ layout: world/2024/session
 title: Prepare to tack - Steering Rails apps out of technical debt
 speaker: robby-russell.md # name of md speaker file
 time: 
-session_date: 
 location: 
+running_order: 
 ---
 
 Spoiler alert: we've been wrong about tech debt.

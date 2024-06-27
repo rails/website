@@ -3,8 +3,8 @@ layout: world/2024/session
 title: Progressive Web Apps for Rails developers
 speaker: emmanuel-hayford.md # name of md speaker file
 time: 
-session_date: 
 location: 
+running_order: 
 ---
 
 Explore the evolving world of Progressive Web Apps (PWAs), built with familiar Rails technologies and designed for seamless use in all compatible browsers. Rails 8 promises to simplify PWA development, offering innovative methods to swiftly generate essential PWA scaffolding.

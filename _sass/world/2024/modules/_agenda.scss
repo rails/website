@@ -5,7 +5,7 @@
     justify-content: start;
     width: 100%;
     padding: 20px 0px;
-    gap: 10px;
+    gap: 20px;
 
     .titleContainer {
         display: flex;
@@ -61,7 +61,7 @@
                     margin-top: -3px;
                 }
 
-                &.one {
+                &.zero {
                     border-radius: 10px 0 0 0;
                     border-right: 0;
                     border-bottom: 0;

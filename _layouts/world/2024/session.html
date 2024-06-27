@@ -7,13 +7,24 @@ where_exp: 'item', 'item.path contains "2024"'%}
 {% assign speaker = filteredSpeakers | first %}
 {% assign speakerUrl = speaker.path | split: '/' | last | remove_first: '.md' %}
 
-{% assign filteredSpeakersSecondary = site.world_speakers | where_exp:"speaker", "speaker.path contains page.second_speaker" | where_exp: 'item', 'item.path contains "2024"' %}
+{% assign filteredSpeakersSecondary = site.world_speakers | where_exp:"speaker", "speaker.path contains
+page.second_speaker" | where_exp: 'item', 'item.path contains "2024"' %}
 {% assign speakerSecondary = filteredSpeakersSecondary | first %}
 {% assign speakerUrlSecondary = speakerSecondary.path | split: '/' | last | remove_first: '.md' %}
 
 {% assign allSessions = site.world_sessions | where_exp: 'session', 'session.path contains "2024"' %}
 {% assign matchingSessions = allSessions | where: "multiple_speakers", true %}
-{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description | where_exp: "session", "session.url != page.url" %}
+{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description |
+where_exp: "session", "session.url != page.url" %}
+
+{% assign url_segments = page.url | split: '/' %}
+{% assign day_segment = "" %}
+
+{% for segment in url_segments %}
+    {% if segment contains "day-" %}
+        {% assign day_segment = segment %}
+    {% endif %}
+{% endfor %}
 
 <div class="sessionPage">
     <div class="sessionContainer">
@@ -22,13 +33,15 @@ where_exp: 'item', 'item.path contains "2024"'%}
                 World
             </a>
             <p>></p>
-            <a href="/world/2024/speakers" class="link">
-                Speakers
-            </a>
-            <p>></p>
-            <a href="/world/2024/speakers/{{ speakerUrl }}" class="link">
-                {{ speaker.first_name }} {{ speaker.last_name }}
-            </a>
+            {% if day_segment == "day-0" %}
+            <a href="/world/2024/agenda/day-0" class="link">Agenda - Day One</a>
+            {% elsif day_segment == "day-1" %}
+            <a href="/world/2024/agenda/day-1" class="link">Agenda - Day Two</a>
+            {% elsif day_segment == "day-2" %}
+            <a href="/world/2024/agenda/day-2" class="link">Agenda - Day Three</a>
+            {% else %}
+            <a href="/world/2024/agenda/day-0" class="link">Agenda</a>
+            {% endif %}
             <p>></p>
             <p>{{ page.title }}</p>
         </div>
@@ -40,7 +53,7 @@ where_exp: 'item', 'item.path contains "2024"'%}
                 {{ content }}
             </p>
             <div class="informationContainer">
-                {% if page.sponsor %}
+                {% if page.time %}
                 <div class="sessionTimeContainer">
                     {% include world/2024/icons/clock.html %}
 
@@ -50,11 +63,17 @@ where_exp: 'item', 'item.path contains "2024"'%}
                 <div class="placeHolderContainer">
                 </div>
                 {% endif %}
-                {% if page.session_date %}
+                {% if day_segment != "" %}
                 <div class="sessionDateContainer">
                     {% include world/2024/icons/calendar.html %}
 
-                    <p>{{ page.session_date }}</p>
+                    {% if day_segment == "day-0" %}
+                    <p>September 25th</p>
+                    {% elsif day_segment == "day-1" %}
+                    <p>September 26th</p>
+                    {% elsif day_segment == "day-2" %}
+                    <p>September 27th</p>
+                    {% endif %}
                 </div>
                 {% else %}
                 <div class="placeHolderContainer">
@@ -77,7 +96,7 @@ where_exp: 'item', 'item.path contains "2024"'%}
             {% include world/2024/session-speaker-card.html speaker=speaker %}
 
             {% if speakerSecondary %}
-                {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
+            {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
             {% endif %}
         </div>
     </div>
