@@ -45,7 +45,7 @@ Previously, it was very easy to accidentally leak a database password in product
 
 
 [Use Thor for built-in stats task](https://github.com/rails/rails/pull/47713)  
-Currently, we use both Thor and Rake for `bin/rails` commands. We eventually want to get all the built-ins task promoted to Thor Commands. This migrates the `stats` task to Thor. Also, we want to prevent people from using this Rake task directly, or depending on the internal `STATS_DIRECTORIES` constant, so it became deprecated.
+Currently, we use both Thor and Rake for `bin/rails` commands. We eventually want to get all the built-ins task promoted to Thor Commands. This migrates the `stats` task to Thor and deprecates the use of `bin/rake stats` directly.
 
 
 
