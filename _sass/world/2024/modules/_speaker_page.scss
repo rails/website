@@ -55,7 +55,7 @@
         position: relative;
         background-color: white;
         width: 85%;
-        max-width: 1700px;
+        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -201,6 +201,11 @@
                             position: relative;
                             padding: 0px 10px;
                             cursor: pointer;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+                            align-items: flex-start;
+                            justify-content: center;
 
                             &.noInfo {
                                 padding: 10px 20px
@@ -210,6 +215,7 @@
                                 color: var(--red);
                                 font-size: var(--type-large);
                                 font-weight: 600;
+                                line-height: 1.1;
                             }
 
                             .placeholderContainer {

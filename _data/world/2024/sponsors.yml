@@ -22,6 +22,9 @@ gold:
   - name: Crunchy Data
     logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
+  - name: Framework
+    logo: /assets/world/2024/images/sponsors/RW-logo-framework.png
+    url: https://frame.work/
   - name: Sentry
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/

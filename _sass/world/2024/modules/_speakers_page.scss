@@ -32,9 +32,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         padding: var(--desktop-padding);
         text-align: center;
+
+        h2 {
+            @media screen and (max-width: 500px){
+                font-size: var(--type-x-large);
+            }
+        }
 
         @media only screen and (max-width: 800px) {
             padding: var(--mobile-padding);

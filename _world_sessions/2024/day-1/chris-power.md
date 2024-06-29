@@ -1,9 +1,10 @@
 ---
 layout: world/2024/session
 title: The Modern Pro­gram­mer’s Guide to Neovim and Zel­lij
-speaker: robert-beene.md
-time: 
-session_date: 
+speaker: chris-power.md
+second_speaker: robert-beene.md
+time: 20:30 - 21:30
+running_order: 3
 location: 
 multiple_speakers: true 
 ---

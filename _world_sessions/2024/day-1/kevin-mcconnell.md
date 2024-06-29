@@ -2,9 +2,9 @@
 layout: world/2024/session
 title: Introducing Kamal Proxy
 speaker: kevin-mcconnell.md # name of md speaker file
-time: 
-session_date: 
+time: 20:00 - 20:30
 location: 
+running_order: 2
 ---
 
 Kamal Proxy is a new, purpose-built HTTP proxy service that powers Kamal 2.0. It's designed to make zero-downtime deployments simpler, and comes with additional features to make your Rails applications faster and easier to operate.

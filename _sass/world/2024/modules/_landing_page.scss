@@ -53,10 +53,9 @@
             display: none;
         }
     }
-
     // Push down to avoid the circle svg cutting off border
-    @media only screen and (min-width: 1400px) {
-        margin-bottom: 35px;
+    @media only screen and (min-width: 950px) {
+        margin-bottom: 55px;
     }
 }
 
@@ -80,10 +79,15 @@
         }
     }
 
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width: 950px) {
         margin-top: -40px;
         padding-bottom: 20px;
     }
+
+    // @media only screen and (min-width: 1400px) {
+    //     margin-top: -40px;
+    //     padding-bottom: 20px;
+    // }
 }
 
 .top-information-text {
