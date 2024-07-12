@@ -2,9 +2,9 @@
 layout: world/2024/session
 title: Demystifying some of the magic behind Rails
 speaker: ridhwana-khan.md # name of md speaker file
-time: 
-location: 
-running_order: 
+time: 11:15 - 11:45
+location: Track 2
+running_order: 3
 ---
 
 Rails is renowned for its elegance, productivity, and "magic" that simplifies web development. As a recent technical writer for the official Ruby on Rails guides, I've had the opportunity to dive into the "magic" of Rails to enhance my understanding of the source code and provide clear explanations in the guides.

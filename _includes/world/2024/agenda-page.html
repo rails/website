@@ -22,110 +22,104 @@
 {% assign sessions = include.sessions %}
 
 <div class="dayContainer">
-    <div class="titleContainer">
-        <h2>Agenda</h2>
-        <p>Rails World featured two full days of keynotes, talks, workshops, sessions and more. All sessions on the two
-            main stages were recorded and will be shared soon.</p>
-    </div>
-    <div class="mainContainer">
-        <div class="dayTabs">
-            <div class="tabContainer zero {{ dayZeroActive }}" role="button" tabindex="0" title="Day One"
-            aria-label="View day ones agenda" onclick="openWindow(
-            '/world/2024/agenda/day-0'
-            )
+  <div class="titleContainer">
+    <h2>Agenda</h2>
+    <p>Rails World featured two full days of keynotes, talks, workshops, sessions and more. All sessions on the two
+      main stages were recorded and will be shared soon.</p>
+  </div>
+  <div class="mainContainer">
+    <div class="dayTabs">
+      <div class="tabContainer zero {{ dayZeroActive }}" role="button" tabindex="0" title="Day One"
+        aria-label="View day ones agenda" onclick="openWindow('/world/2024/agenda/day-0')" onkeydown="handleEnterOrSpaceWindowOpen(
+          event, 
+          '/world/2024/agenda/day-0'
+        )
+      ">
+        <p class="dayText">Wednesday</p>
+        <p class="dateText">Sept 25</p>
+      </div>
+      <div class="tabContainer one {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
+        aria-label="View day two's agenda" onclick="openWindow(
+        '/world/2024/agenda/day-1'
+      )" onkeydown="
+          handleEnterOrSpaceWindowOpen(
+              event, 
+              '/world/2024/agenda/day-1'
+          )
+        ">
+        <p class="dayText">Thursday</p>
+        <p class="dateText">Sept 26</p>
+      </div>
+      <div class="tabContainer two {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
+        aria-label="View day three's agenda" onclick="openWindow(
+          '/world/2024/agenda/day-2'
+          )
         " onkeydown="
             handleEnterOrSpaceWindowOpen(
                 event, 
-                '/world/2024/agenda/day-0'
+                '/world/2024/agenda/day-2'
             )
         ">
-            <p class="dayText">Wednesday</p>
-            <p class="dateText">Sept 25</p>
-        </div>
-            <div class="tabContainer one {{ dayOneActive }}" role="button" tabindex="0" title="Day One"
-                aria-label="View day two's agenda" onclick="openWindow(
-                '/world/2024/agenda/day-1'
-                )
-            " onkeydown="
-                handleEnterOrSpaceWindowOpen(
-                    event, 
-                    '/world/2024/agenda/day-1'
-                )
-            ">
-                <p class="dayText">Thursday</p>
-                <p class="dateText">Sept 26</p>
-            </div>
-            <div class="tabContainer two {{ dayTwoActive }}" role="button" tabindex="0" title="Day Two"
-                aria-label="View day three's agenda" onclick="openWindow(
-                '/world/2024/agenda/day-2'
-                )
-            " onkeydown="
-                handleEnterOrSpaceWindowOpen(
-                    event, 
-                    '/world/2024/agenda/day-2'
-                )
-            ">
-                <p class="dayText">Friday</p>
-                <p class="dateText">Sept 27</p>
-            </div>
-        </div>
-        <div class="agendaContainer">
-            {% for session in include.sessions %}
-            {% assign session_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
-            <div class="sessionRow" role="button" tabindex="0" title="{{ session.title }}"
-                aria-label="Go to {{ session.title }} session page" onclick="openWindow(
-                        '/world/2024{{ session_path }}'
-                        )
-                    " onkeydown="
-                        handleEnterOrSpaceWindowOpen(
-                            event, 
-                            '/world/2024/{{ session_path }}'
-                        )
-                    ">
-                <div class="left">
-                    <p class="timeText">{{ session.time }}</p>
-                    <div class="seperator"></div>
-                </div>
-                <div class="right">
-                    {% assign speakerId = session.speaker | split: '/' | last %}
-                    {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId"
-                    | where_exp: 'item', 'item.path contains "2024"'%}
-                    {% assign newSpeaker = speakerObjs | first %}
-                    {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
-                    {% assign secondSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
-                    secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"'%}
-                    {% assign secondarySpeaker = secondSpeakerObjs | first %}
-
-                    <p class="title">{{ session.title }}</h2>
-                    <div class="speakersContainer">
-                        <p class="speakerName">{{ newSpeaker.first_name }} {{ newSpeaker.last_name }}</p>
-
-                        {% if secondarySpeaker %}
-                        <p class="speakerName">, & {{ secondarySpeaker.first_name }} {{ secondarySpeaker.last_name }}</p>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+        <p class="dayText">Friday</p>
+        <p class="dateText">Sept 27</p>
+      </div>
     </div>
+    <div class="agendaContainer">
+      {% for session in include.sessions %}
+      {% assign session_path = session.path | replace: '_world_sessions/2024', '' | replace: '.md', '' %}
+      <div class="sessionRow" role="button" tabindex="0" title="{{ session.title }}"
+        aria-label="Go to {{ session.title }} session page" onclick="openWindow(
+                  '/world/2024{{ session_path }}'
+                  )
+              " onkeydown="
+                  handleEnterOrSpaceWindowOpen(
+                      event, 
+                      '/world/2024/{{ session_path }}'
+                  )
+              ">
+        <div class="left">
+          <p class="timeText">{{ session.time }}</p>
+          <div class="seperator"></div>
+        </div>
+        <div class="right">
+          {% assign speakerId = session.speaker | split: '/' | last %}
+          {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId" | where_exp: 'item', 'item.path contains "2024"'%}
+          {% assign newSpeaker = speakerObjs | first %}
+          {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
+          {% assign secondSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
+          secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"'%}
+          {% assign secondarySpeaker = secondSpeakerObjs | first %}
+
+          <p class="title">{{ session.title }}</h2>
+          <div class="speakersContainer">
+            <p class="speakerName">{{ newSpeaker.first_name }} {{ newSpeaker.last_name }}</p>
+
+            {% if secondarySpeaker %}
+            <p class="speakerName">, & {{ secondarySpeaker.first_name }} {{ secondarySpeaker.last_name }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 
 </div>
 
 <script>
-    function openWindow(url, openTab = false) {
-        const openType = openTab ? '_blank' : '_self';
+  function openWindow(url, openTab = false) {
+    const openType = openTab ? '_blank' : '_self';
 
-        if (openTab) {
-            window.open(url, openType);
-        } else {
-            window.location.href = url;
-        }
+    if (openTab) {
+      window.open(url, openType);
+    } else {
+      window.location.href = url;
     }
+  }
 
-    function handleEnterOrSpaceWindowOpen(e, url) {
-        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
-            openWindow(url);
-        }
+  function handleEnterOrSpaceWindowOpen(e, url) {
+    if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+      openWindow(url);
     }
+  }
 </script>
