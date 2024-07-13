@@ -1,177 +1,171 @@
 .dayContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 85%;
+  max-width: 1300px;
+  text-align: center;
+  color: var(--white);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    width: 95%;
+  }
+}
+
+.dayTabs {
+  width: 100%;
+  display: flex;
+}
+
+.tabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  width: 50%;
+  color: var(--white);
+  cursor: pointer;
+  border: 2px solid var(--white);
+}
+
+.dayText {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.dateText {
+  font-size: 1.3rem;
+  margin-top: -3px;
+}
+
+.tabContainer {
+  &.zero {
+    border-radius: 10px 0 0 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  &.one {
+    border-bottom: 0;
+  }
+
+  &.two {
+    border-radius: 0 10px 0 0;
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
+  &.inactive:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(48, 48, 48);
+  }
+}
+
+.agendaContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 0 0px 10px 10px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.sessionRow {
+  display: flex;
+  border-bottom: 2px solid var(--purple);
+  min-height: 100px;
+  cursor: pointer;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    gap: 25px;
+
+    .timeText {
+      font-weight: 600;
+      color: var(--purple);
+      font-size: var(--type-small);
+    }
+
+    .separator {
+      height: 70%;
+      width: 1px;
+      background-color: var(--purple);
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    padding: 20px 0px;
-    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
 
-    .titleContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        // padding: var(--desktop-padding);
-        width: 85%;
-        max-width: 1300px;
-        text-align: center;
-        color: var(--white);
-        padding-top: 0;
-        padding-bottom: 0;
+    .title {
+      font-weight: 600;
+      color: var(--purple);
     }
 
+    .speakersContainer {
+      display: flex;
 
-    .mainContainer {
-        display: flex;
-        flex-direction: column;
-        width: 85%;
-        max-width: 1300px;
-        align-items: center;
-        justify-content: center;
-
-        @media screen and (max-width: 900px) {
-            width: 95%;
-        }
-
-        .dayTabs {
-            width: 100%;
-            display: flex;
-
-            .tabContainer {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                padding: 10px 0;
-                width: 50%;
-                // max-width: 250px;
-                color: var(--white);
-                cursor: pointer;
-                border: 2px solid var(--white);
-
-                .dayText {
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                }
-
-                .dateText {
-                    font-size: 1.3rem;
-                    margin-top: -3px;
-                }
-
-                &.zero {
-                    border-radius: 10px 0 0 0;
-                    border-right: 0;
-                    border-bottom: 0;
-                }
-
-                &.one {
-                    border-bottom: 0;
-                }
-
-                &.two {
-                    border-radius: 0 10px 0 0;
-                    border-left: 0;
-                    border-bottom: 0;
-                }
-
-                &.active {
-                    background-color: white;
-                    color: black;
-
-                    &:hover {
-                        background-color: rgb(242, 242, 242);
-                    }
-                }
-
-                &.inactive {
-                    &:hover {
-                        background-color: rgba(white, 0.4);
-                        color: rgb(48, 48, 48);
-                    }
-                }
-            }
-        }
-
-        .agendaContainer {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--white);
-            border-radius: 0 0px 10px 10px;
-            width: 100%;
-            padding-bottom: 10px;
-
-            .sessionRow {
-                display: flex;
-                border-bottom: 2px solid var(--purple);
-                // padding: 5px 15px;
-                min-height: 100px;
-                cursor: pointer;
-
-                .left {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-left: 25px;
-                    gap: 25px;
-
-                    .timeText {
-                        font-weight: 600;
-                        color: var(--purple);
-                        font-size: var(--type-small);
-                        // font-size: 2.1rem;
-                    }
-
-                    .seperator {
-                        height: 70%;
-                        width: 1px;
-                        background-color: var(--purple);
-                    }
-
-                    @media screen and (max-width: 800px) {
-                        padding-left: 10px;
-                        gap: 10px;
-                    }
-                }
-
-                .right {
-                    flex: 1;
-                    padding: 0 20px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: center;
-                    gap: 5px;
-
-                    .title {
-                        font-weight: 600;
-                        color: var(--purple);
-                    }
-
-                    .speakersContainer {
-                        display: flex;
-
-                        .speakerName {
-                            font-size: var(--type-small);
-                        }
-
-                    }
-
-                    @media screen and (max-width: 800px) {
-                        padding: 0 10px;
-                    }
-                }
-
-                &:hover {
-                    background-color: rgb(242, 242, 242);
-                }
-            }
-
-            .sessionRow:last-child {
-                border-bottom: none;
-            }
-        }
+      .speakerName {
+        font-size: var(--type-small);
+      }
     }
+  }
+}
+
+.sessionRow:last-child {
+  border-bottom: none;
+}
+
+.sessionRow:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.trackContainer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  .trackTitle {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
 }

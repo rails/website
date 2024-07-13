@@ -21,83 +21,84 @@ where_exp: "session", "session.url != page.url" %}
 {% assign day_segment = "" %}
 
 {% for segment in url_segments %}
-    {% if segment contains "day-" %}
-        {% assign day_segment = segment %}
-    {% endif %}
+{% if segment contains "day-" %}
+{% assign day_segment = segment %}
+{% endif %}
 {% endfor %}
 
 <div class="sessionPage">
-    <div class="sessionContainer">
-        <div class="breadCrumbsContainer">
-            <a href="/world/2024" class="link">
-                World
-            </a>
-            <p>></p>
-            {% if day_segment == "day-0" %}
-            <a href="/world/2024/agenda/day-0" class="link">Agenda - Day One</a>
-            {% elsif day_segment == "day-1" %}
-            <a href="/world/2024/agenda/day-1" class="link">Agenda - Day Two</a>
-            {% elsif day_segment == "day-2" %}
-            <a href="/world/2024/agenda/day-2" class="link">Agenda - Day Three</a>
-            {% else %}
-            <a href="/world/2024/agenda/day-0" class="link">Agenda</a>
-            {% endif %}
-            <p>></p>
-            <p>{{ page.title }}</p>
-        </div>
-        <div class="topContainer">
-            <h2 class="sessionTitle">
-                {{ page.title }}
-            </h2>
-            <p class="description">
-                {{ content }}
-            </p>
-            <div class="informationContainer">
-                {% if page.time %}
-                <div class="sessionTimeContainer">
-                    {% include world/2024/icons/clock.html %}
-
-                    <p>{{ page.time }}</p>
-                </div>
-                {% else %}
-                <div class="placeHolderContainer">
-                </div>
-                {% endif %}
-                {% if day_segment != "" %}
-                <div class="sessionDateContainer">
-                    {% include world/2024/icons/calendar.html %}
-
-                    {% if day_segment == "day-0" %}
-                    <p>September 25th</p>
-                    {% elsif day_segment == "day-1" %}
-                    <p>September 26th</p>
-                    {% elsif day_segment == "day-2" %}
-                    <p>September 27th</p>
-                    {% endif %}
-                </div>
-                {% else %}
-                <div class="placeHolderContainer">
-                </div>
-                {% endif %}
-                {% if page.location %}
-                <div class="sessionLocationContainer">
-                    {% include world/2024/icons/location.html %}
-
-                    <p>{{ page.location }}</p>
-                </div>
-                {% else %}
-                <div class="placeHolderContainer">
-                </div>
-                {% endif %}
-            </div>
-        </div>
-
-        <div class="bottomContainer common-shape--top-white-down-left">
-            {% include world/2024/session-speaker-card.html speaker=speaker %}
-
-            {% if speakerSecondary %}
-            {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
-            {% endif %}
-        </div>
+  <div class="sessionContainer">
+    <div class="breadCrumbsContainer">
+      <a href="/world/2024" class="link">
+        World
+      </a>
+      <p>></p>
+      {% if day_segment == "day-0" %}
+      <a href="/world/2024/agenda/day-0" class="link">Agenda - Day One</a>
+      {% elsif day_segment == "day-1" %}
+      <a href="/world/2024/agenda/day-1" class="link">Agenda - Day Two</a>
+      {% elsif day_segment == "day-2" %}
+      <a href="/world/2024/agenda/day-2" class="link">Agenda - Day Three</a>
+      {% else %}
+      <a href="/world/2024/agenda/day-0" class="link">Agenda</a>
+      {% endif %}
+      <p>></p>
+      <p>{{ page.title }}</p>
     </div>
+    <div class="topContainer">
+      <h2 class="sessionTitle">
+        {{ page.title }}
+      </h2>
+      <p class="description">
+        {{ content }}
+      </p>
+      <div class="informationContainer">
+        {% if page.time %}
+        <div class="sessionTimeContainer">
+          {% include world/2024/icons/clock.html %}
+
+          <p>{{ page.time }}</p>
+        </div>
+        {% else %}
+        <div class="placeHolderContainer">
+        </div>
+        {% endif %}
+        {% if day_segment != "" %}
+        <div class="sessionDateContainer">
+          {% include world/2024/icons/calendar.html %}
+
+          {% if day_segment == "day-0" %}
+          <p>September 25th</p>
+          {% elsif day_segment == "day-1" %}
+          <p>September 26th</p>
+          {% elsif day_segment == "day-2" %}
+          <p>September 27th</p>
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="placeHolderContainer">
+        </div>
+        {% endif %}
+        {% if page.location %}
+        <div class="sessionLocationContainer">
+          {% include world/2024/icons/location.html %}
+
+          <p>{{ page.location }}</p>
+        </div>
+        {% else %}
+        <div class="placeHolderContainer">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="bottomContainer common-shape--top-white-down-left">
+      {% if speaker %}
+      {% include world/2024/session-speaker-card.html speaker=speaker %}
+      {% endif %}
+      {% if speakerSecondary %}
+      {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
+      {% endif %}
+    </div>
+  </div>
 </div>

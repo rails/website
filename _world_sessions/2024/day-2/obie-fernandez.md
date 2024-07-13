@@ -2,9 +2,9 @@
 layout: world/2024/session
 title: Empowering the Individual - Rails on AI
 speaker: obie-fernandez.md # name of md speaker file
-time: 
-location: 
-running_order: 
+time: 15:45 - 16:15
+location: Track 1
+running_order: 10
 ---
 
 The dream of the "One Person Framework" is more tangible than ever. Integrating AI with Ruby on Rails can transform a solo developer's workflow into an incredibly potent force, capable of competing at an unprecedented scale.
