@@ -19,11 +19,12 @@
 {% endif %}
 
 {% assign sessions = include.sessions %}
+{% assign tracks = sessions | map: 'location' | uniq %}
 
 <div class="dayContainer">
   <div class="titleContainer">
     <h2>Agenda</h2>
-    <p>Rails World featured two full days of keynotes, talks, workshops, sessions and more. All sessions on the two
+    <p>Rails World featured two full days of keynotes, talks, workshops, sessions, and more. All sessions on the two
       main stages were recorded and will be shared soon.</p>
   </div>
   <div class="mainContainer">
