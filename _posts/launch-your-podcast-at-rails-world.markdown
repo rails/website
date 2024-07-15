@@ -13,7 +13,7 @@ If you've always wanted to have your own podcast, now is the time. Buzzsprout, t
 
 With 1,000 attendees from around the world, and a lineup of some of our industry’s [best speakers](/world/2024/speakers), it is a unique opportunity for podcasters to meet, interview, and connect with other community members at Rails World - all under one roof.
 
-<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-buzzsprout.svg" style="width: 50%"></p>
+<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-buzzsprout-new.svg" style="width: 50%"></p>
 
 __What does the winning would-be podcast receive?__
 - One free ticket to Rails World
