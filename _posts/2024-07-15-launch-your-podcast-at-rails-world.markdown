@@ -9,7 +9,7 @@ date: 2024-07-15
 
 The Rails Foundation has exciting news: After last year's success <a href="https://www.buzzsprout.com">Buzzsprout</a> is once again sponsoring the [Rails World](/world) Podcast program - only this year we are adding a fun new element. 
 
-If you've always wanted to have your own podcast, now is the time. Buzzsprout, the world's largest premium podcast hosting platform built on Rails, wants to help you one lucky would-be pocaster launch their podcast at Rails World.
+If you've always wanted to have your own podcast, now is the time. Buzzsprout, the world's largest premium podcast hosting platform built on Rails, wants to help you one lucky would-be podcaster launch their podcast at Rails World.
 
 With 1,000 attendees from around the world, and a lineup of some of our industry’s [best speakers](/world/2024/speakers), it is a unique opportunity for podcasters to meet, interview, and connect with other community members at Rails World - all under one roof.
 
