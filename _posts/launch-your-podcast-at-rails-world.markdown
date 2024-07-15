@@ -4,7 +4,7 @@ title: "Launch your podcast at Rails World with Buzzsprout"
 categories: news
 author: The Rails Foundation
 published: true
-date: 2024-06-15
+date: 2024-07-15
 ---
 
 The Rails Foundation has exciting news: After last year's success <a href="https://www.buzzsprout.com">Buzzsprout</a> is once again sponsoring the [Rails World](/world) Podcast program - only this year we are adding a fun new element. 
