@@ -41,7 +41,7 @@ rails generate script my_script
 We can also specify a folder, when generating scripts:
 
 ```ruby
-bin/rails generate script cleanup/my_script
+rails generate script cleanup/my_script
 ```
 
 We can then run the generated scripts using:
