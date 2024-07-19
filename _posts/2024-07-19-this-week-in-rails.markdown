@@ -33,7 +33,7 @@ This change makes it easier to provide programmatic access to details about requ
 The new `ConnectionNotDefined` exception provides connection name, shard and role accessors indicating the details of the connection that was requested.
 
 [Remove channels from default app/ structure](https://github.com/rails/rails/pull/52344)    
-Now that Hotwire is the default in Rails 8, this change drops the `channels` folder from default `app/` structure. 
+Now that Hotwire is the default in Rails, this change drops the `channels` folder from default `app/` structure. 
 It still gets created via the `channel` generator if needed.
 
 [Drop default permissions policy initialize](https://github.com/rails/rails/pull/52341)  
