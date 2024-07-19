@@ -54,7 +54,7 @@ ruby script/my_script.rb
 Now that Hotwire is the default in Rails, this change drops the `channels` folder from default `app/` structure. 
 The folder still gets created when using the `channel` generator if needed.
 
-[Drop default permissions policy initialize](https://github.com/rails/rails/pull/52341)  
+[Drop default permissions policy initializer](https://github.com/rails/rails/pull/52341)  
 This change drops the rarely used default `permissions_policy` configuration files. 
 The configuration can be added back as needed referring to the documentation of `permissions_policy` instead.  
 
