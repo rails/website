@@ -29,3 +29,6 @@ By the end of this 75-minute work­shop, you will:
 
 **Why At­tend?**
 This work­shop is per­fect for de­vel­op­ers of all lev­els (with some fa­mil­iar­i­ty with Vim) who are look­ing to op­ti­mize their work­flow and em­brace a light­weight, pow­er­ful, and high­ly cus­tomizable ed­i­tor. Whether you’re new to Neovim or look­ing to deep­en your un­der­stand­ing, this ses­sion will pro­vide you with prac­ti­cal skills and in­sights that you can ap­ply im­me­di­ate­ly.
+
+**Thank you Coder!**
+This workshop is brought to you by <a href="https://coder.com/">Coder</a>, and will be repeated on both days. It will be first-come, first-served.
