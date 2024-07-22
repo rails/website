@@ -7,4 +7,4 @@ location: Sponsor Lounge
 running_order: 0
 ---
 
-Rails World attendees are welcome to register, enter, and get breakfast before the keynote begins.
+Rails World attendees are welcome to register, enter, and grab a coffee before the keynote begins.
