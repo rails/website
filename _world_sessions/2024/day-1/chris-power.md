@@ -5,7 +5,7 @@ speaker: chris-power.md
 second_speaker: robert-beene.md
 time: 13:00 - 14:15
 running_order: 5
-location: Hallway Track TBD
+location: Lightning Track
 multiple_speakers: true 
 ---
 
