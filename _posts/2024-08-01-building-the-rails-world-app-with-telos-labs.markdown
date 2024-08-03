@@ -23,7 +23,7 @@ Thank you, Telos Labs, for this awesome gift!
 
 __Follow along__
 
-Telos Labs is sticking to the Rails way in their development process, creating a PWA using a full-stack pattern with __Stimulus__, __Turbo__, __Solid Queue__, and __Kamal__ for deployments. Where possible, dependencies will also be built on Rails, with <a href="https://stimulus.hotwired.dev/">AvoHQ</a> for the admin dashboard, <a href="https://stimulus.hotwired.dev/">MailPace</a> for transactional emails, and <a href="https://stimulus.hotwired.dev/">AppSignal</a> for monitoring (AppSignal is a Platinum sponsor again at Rails World this year, and they have generously provided free monitoring for this project).
+Telos Labs is sticking to the Rails way in their development process, creating a PWA using a full-stack pattern with __Stimulus__, __Turbo__, __Solid Queue__, and __Kamal__ for deployments. Where possible, dependencies will also be built on Rails, with <a href="https://avohq.io">AvoHQ</a> for the admin dashboard, <a href="https://mailpace.com">MailPace</a> for transactional emails, and <a href="https://www.appsignal.com">AppSignal</a> for monitoring (AppSignal is a Platinum sponsor again at Rails World this year, and they have generously provided free monitoring for this project).
 
 For the next few weeks, they will be building in public and you are invited to follow along as things progress. Even if you are not attending Rails World this year, we'd love your feedback and suggestions. 
 
