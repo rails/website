@@ -4,7 +4,7 @@ title: What to do in the breaks
 speaker:  
 time: 11:45 - 13:00
 location: Sponsor Garden, Shopify Lounge, Lightning Track, Kilns, Pavilions
-running_order: 4
+running_order: 5
 ---
 
 During lunch and breaks between sessions on both days, attendees can: 
