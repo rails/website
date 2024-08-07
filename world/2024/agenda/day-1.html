@@ -1,0 +1,12 @@
+---
+layout: world/2024/agenda
+permalink: /world/2024/agenda/day-1
+redirect_from: /world/agenda/day-1
+day: day-1
+title: Agenda
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '2024/day-1'" %}
+{% assign sortedSessions = sessions | sort: "running_order" %}
+
+{% include world/2024/agenda-page.html sessions=sortedSessions day=1 %}

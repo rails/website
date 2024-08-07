@@ -1,7 +1,7 @@
 ---
 layout: world/2024/legal
 title: Terms and Conditions
-# redirect_from: world/terms
+redirect_from: world/terms
 ---
 
 ## Registration and Attendance: ##

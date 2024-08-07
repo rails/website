@@ -1,0 +1,24 @@
+---
+layout: world/2024/default
+permalink: /world/2024/agenda
+redirect_from: /world/agenda
+title: Agenda
+day: day-0
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '2024/day-0'" %}
+{% assign sortedSessions = sessions | sort: "running_order" %}
+
+{% include world/2024/agenda-page.html sessions=sortedSessions day=0 %}
+
+<script type="text/javascript">
+  const currentDate = new Date().toDateString()
+
+  if (currentDate.match(/Sep 25 2024/)) {
+    window.location = "/world/2024/agenda/day-0"
+  } else if (currentDate.match(/Sep 26 2024/)) {
+    window.location = "/world/2024/agenda/day-1"
+  } else if (currentDate.match(/Sep 27 2024/)) {
+    window.location = "/world/2024/agenda/day-2"
+  }
+</script>
