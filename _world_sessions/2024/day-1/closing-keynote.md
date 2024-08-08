@@ -3,6 +3,7 @@ layout: world/2024/session
 title: Matz & DHH Fireside chat, hosted by Tobias Lütke
 speaker: yukihiro-matz.md
 second_speaker: david-hansson.md
+third_speaker: tobias-lutke.md
 time: 16:30 - 17:30
 running_order: 14
 location: Track 1

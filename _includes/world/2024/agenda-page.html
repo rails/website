@@ -63,9 +63,13 @@
           where_exp: 'item', 'item.path contains "2024"' %}
           {% assign primarySpeaker = speakerObjs | first %}
           {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
+          {% assign thirdSpeakerId = session.third_speaker | split: '/' | last %}
           {% assign secondSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
           secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
           {% assign secondarySpeaker = secondSpeakerObjs | first %}
+          {% assign thirdSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
+          thirdSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
+          {% assign thirdSpeaker = thirdSpeakerObjs | first %}
 
           <p class="title">{{ session.title }}</p>
           <div class="speakersContainer">
@@ -76,6 +80,10 @@
             {% if secondarySpeaker %}
             <p class="speakerName">, & {{ secondarySpeaker.first_name }} {{ secondarySpeaker.last_name }}, {{
               secondarySpeaker.role }}{% if secondarySpeaker.company %}, {{ secondarySpeaker.company }}{% endif %}</p>
+            {% endif %}
+            {% if thirdSpeaker %}
+            <p class="speakerName">, & {{ thirdSpeaker.first_name }} {{ thirdSpeaker.last_name }}, {{
+              thirdSpeaker.role }}{% if thirdSpeaker.company %}, {{ thirdSpeaker.company }}{% endif %}</p>
             {% endif %}
           </div>
         </div>

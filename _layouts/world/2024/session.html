@@ -12,6 +12,11 @@ page.second_speaker" | where_exp: 'item', 'item.path contains "2024"' %}
 {% assign speakerSecondary = filteredSpeakersSecondary | first %}
 {% assign speakerUrlSecondary = speakerSecondary.path | split: '/' | last | remove_first: '.md' %}
 
+{% assign filteredSpeakersThird = site.world_speakers | where_exp:"speaker", "speaker.path contains page.third_speaker" |
+where_exp: 'item', 'item.path contains "2024"' %}
+{% assign speakerThird = filteredSpeakersThird | first %}
+{% assign speakerUrlThird = speakerThird.path | split: '/' | last | remove_first: '.md' %}
+
 {% assign allSessions = site.world_sessions | where_exp: 'session', 'session.path contains "2024"' %}
 {% assign matchingSessions = allSessions | where: "multiple_speakers", true %}
 {% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description |
@@ -98,6 +103,9 @@ where_exp: "session", "session.url != page.url" %}
       {% endif %}
       {% if speakerSecondary %}
       {% include world/2024/session-speaker-card.html speaker=speakerSecondary %}
+      {% endif %}
+      {% if speakerThird %}
+      {% include world/2024/session-speaker-card.html speaker=speakerThird %}
       {% endif %}
     </div>
   </div>

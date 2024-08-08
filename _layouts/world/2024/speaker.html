@@ -6,6 +6,7 @@ layout: world/2024/default
 {% assign filteredSessions = site.world_sessions | where_exp: 'item', 'item.path contains "2024"'%}
 {% assign speakerSessions = filteredSessions | where: 'speaker', speaker_id %}
 {% assign secondarySessions = filteredSessions | where: 'second_speaker', speaker_id %}
+{% assign thirdSessions = filteredSessions | where: 'third_speaker', speaker_id %}
 
 <div class="speakerPage">
     <div class="speakerSwooshContainer">
@@ -53,6 +54,9 @@ layout: world/2024/default
                         {% include world/2024/speaker-session-card.html session=session %}
                         {% endfor %}
                         {% for session in secondarySessions %}
+                        {% include world/2024/speaker-session-card.html session=session %}
+                        {% endfor %}
+                        {% for session in thirdSessions %}
                         {% include world/2024/speaker-session-card.html session=session %}
                         {% endfor %}
                     </div>
