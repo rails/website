@@ -16,18 +16,30 @@ gold:
   - name: Huntress
     logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
     url: https://www.huntress.com/
-  - name: Buzzsprout
-    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
-    url: https://www.buzzsprout.com/
+  - name: Valkey
+    logo: /assets/world/2024/images/sponsors/RW-logo-valkey.svg
+    url: https://valkey.io/
   - name: Crunchy Data
     logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
     url: https://www.crunchydata.com/
   - name: Framework
     logo: /assets/world/2024/images/sponsors/RW-logo-framework.png
     url: https://frame.work/
+  - name: Happy Scribe
+    logo: /assets/world/2024/images/sponsors/RW-logo-happyscribe.svg
+    url: https://www.happyscribe.com/
+  - name: MongoDB
+    logo: /assets/world/2024/images/sponsors/RW-logo-mongodb.svg
+    url: https://www.mongodb.com/
+  - name: Paraxial
+    logo: /assets/world/2024/images/sponsors/RW-logo-paraxial.svg
+    url: https://paraxial.io/
   - name: Sentry
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/
+  - name: Buzzsprout
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
   - name: Test Double
     logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
     url: https://link.testdouble.com/bp8
