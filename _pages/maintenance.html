@@ -11,7 +11,7 @@ redirect_from:
     <div class="heading__body">
       <div class="heading__headline common-headline">
         <h1>Maintenance policy.</h1>
-        <h4><strong>Support is divided into four groups:</strong> new features, bug fixes, security issues, and severe security issues.</h4>
+        <h4><strong>Support is divided into three groups:</strong> new features, bug fixes, and security issues, and severe security issues.</h4>
       </div>
     </div>
   </div>
@@ -21,25 +21,39 @@ redirect_from:
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>XYZ Formatting</h3>
+        <h3 id="new_features">New Features</h3>
+        <p>We aim to release a version containing new features every six months. In the rare case where
+          no release was made in one year, we will extend the support period for the previous release
+          until the next release is made.</p>
+        <hr class="divider" />
+        <h3 id="bug_fixes">Bug Fixes</h3>
+        <p>Minor releases will receive bug fixes for one year after the first release in
+          its series. For example, if a theoretical 1.1.0 is released on January 1, 2023, it
+          will receive bug fixes until January 1, 2024. After that, it will be considered
+          unsupported.</p>
+        <h6>List of currently supported releases</h6>
         <ul>
-          <li><strong>Major X: </strong> New features, will likely contain API changes. The difference between Rails’ minor and major releases is the magnitude of breaking changes, and usually reserved for special occasions.</li>
-          <li><strong>Minor Y: </strong> New features, may contain API changes. Breaking changes are paired with deprecation notices in the previous minor or major release.</li>
-          <li><strong>Patch Z: </strong> Only bug fixes, no API changes, no new features. Except as necessary for security fixes.</li>
+          <li><strong>7.2.x</strong> - Supported until August 9, 2025</li>
+          <li><strong>7.1.x</strong> - Supported until October 1, 2024</li>
+          </li>
         </ul>
         <hr class="divider" />
-        <h3>New Features</h3>
-        <p>Only added to the main branch and will not be made available in patch releases.</p>
+        <h3 id="security">Security Issues</h3>
+        <p>
+          Minor releases will receive security fixes for two years after the first release in
+          its series. For example, if a theoretical 1.1.0 is released on January 1, 2023, it
+          will receive security fixes until January 1, 2025. After that, it will reach its
+          end-of-life.
+        </p>
+        <h6>List of currently supported releases</h6>
+        <ul>
+          <li><strong>7.2.x</strong> - Supported until August 9, 2026</li>
+          <li><strong>7.1.x</strong> - Supported until October 1, 2025</li>
+          <li><strong>7.0.x</strong> - Supported until April 1, 2025</li>
+          <li><strong>6.1.x</strong> - Supported until October 1, 2024</li>
+        </ul>
         <hr class="divider" />
-        <h3>Bug Fixes</h3>
-        <p>Only the latest release series will receive bug fixes. Bug fixes are typically added to the main branch, and backported to the x-y-stable branch of the latest release series if there is sufficient need. When enough bugs fixes have been added to an x-y-stable branch, a new patch release is built from it. For example, a theoretical 1.2.2 patch release would be built from the 1-2-stable branch.</p>
-        <p>In special situations, where someone from the <a href="/community#core">Rails core team</a> agrees to support more series, they are included in the list of supported series.</p>
-        <p><strong>Currently included series:</strong> 7.0.Z.</p>
-        <hr class="divider" />
-        <h3>Security Issues</h3>
-        <p>See the <a href="/security">Security policy</a> for more details.</p>
-        <hr class="divider" />
-        <h3>Unsupported Release Series</h3>
+        <h3 id="unsupported">Unsupported Release Series</h3>
         <p>When a release series is no longer supported, it’s your own responsibility to deal with bugs and security issues. We may provide backports of the fixes and publish them to git, however there will be no new versions released. If you are not comfortable maintaining your own versions, you should upgrade to a supported version.</p>
       </div>
     </div>
