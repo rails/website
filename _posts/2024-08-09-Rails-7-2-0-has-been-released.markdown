@@ -8,7 +8,7 @@ date: 2024-08-09 21:30:00 -03:00
 ---
 
 We are happy to announce the release of Rails 7.2!
-There has been [close to 2,500 commits](https://github.com/rails/rails/compare/v7.1.0...7-2-stable) made by [over 400 contributors](https://contributors.rubyonrails.org/edge/contributors) since Rails 7.1, so this release is packed with new features and improvements.
+There has been [close to 2,500 commits](https://github.com/rails/rails/compare/v7.1.0...7-2-stable) made by [over 400 contributors](https://contributors.rubyonrails.org/releases/7-2-0/contributors) since Rails 7.1, so this release is packed with new features and improvements.
 
 ## Better production defaults
 
