@@ -12,4 +12,4 @@ twitter: https://x.com/yukihiro_matz
 specific_order: 2
 ---
 
-Creator of Ruby.
+Matz is the creator and chief designer of the Ruby programming language.
