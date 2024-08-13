@@ -5,6 +5,6 @@ day: day-1
 title: Agenda
 ---
 
-{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/day-1/'" | sort: "running_order" %}
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '/2023/agenda/day-1/'" | sort: "running_order" %}
 
 {% include world/2023/agenda/items.html sessions=sessions %}
