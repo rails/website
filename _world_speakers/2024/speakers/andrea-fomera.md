@@ -11,4 +11,4 @@ linkedin: https://www.linkedin.com/in/afomera/
 twitter: https://twitter.com/afomera
 ---
 
-Andrea Fomera is a Senior Software Developer at Podia who finds enjoyment in updating dependencies and crafting high quality, robust and maintainable code. She enjoys sharing what she knows through courses and screencasts. 
+Andrea Fomera is a Senior Software Developer who finds enjoyment in updating dependencies and crafting high quality, robust and maintainable code. She enjoys sharing what she knows through courses and screencasts. 
