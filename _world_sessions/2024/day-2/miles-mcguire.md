@@ -4,7 +4,7 @@ title: Making the best of a bad situation - Lessons from one of Intercom’s mos
 speaker: miles-mcguire.md # name of md speaker file
 time: 13:00 - 13:30
 location: Track 1
-running_order: 4
+running_order: 6
 ---
 	
 On 22 Feb 2024 Intercom had one of its most painful outages in recent memory. The root cause? A 32-bit foreign key referencing a 64-bit primary key.
