@@ -1,4 +1,4 @@
----
+ ---
 layout: world/2024/session
 title: What to do in the breaks
 speaker:  
@@ -11,7 +11,6 @@ During lunch and breaks between sessions on both days, attendees can:
 - Catch 10-15 min Community talks on the Lightning Track (sponsored by Shopify)
 - Chat with our sponsors in the Sponsor Garden
 - Hang out in the Shopify Lounge
-- Follow a workshop (sponsored by Coder)
 - Drop by the Test Double Office Hours for pair programming and career advice
 - Explore the historic venue
 - Take a walk in the nature park located behind the venue
