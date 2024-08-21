@@ -4,7 +4,7 @@ first_name: Stephen
 last_name: Margheim
 image_path: /assets/world/2024/images/speakers/s-margheim.png
 role: Rubyist, Web Developer, and Engineering Manager
-company: Test IO
+company: Prevail
 keynote: false
 github: https://github.com/fractaledmind
 linkedin: https://www.linkedin.com/in/stephen-margheim-5aa25bb8/
