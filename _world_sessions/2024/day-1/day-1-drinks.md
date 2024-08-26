@@ -2,7 +2,7 @@
 layout: world/2024/session
 title: Toronto Ruby drinks sponsored by Clio
 speaker: 
-time: 19:00 - 22:30
+time: 18:30 - 23:00
 location: TBD (will be shared with registered attendees)
 running_order: 15
 ---
