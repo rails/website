@@ -9,7 +9,7 @@ redirect_from:
   <div class="container">
     <div class="heading__body">
       <div class="heading__headline common-headline">
-        <h1>The Rails Doctrine.</h1>
+        <h1>หลักการของ Rails</h1>
       </div>
       <div class="heading__content heading__content--has-headline common-content">
         <dl>
@@ -41,19 +41,28 @@ redirect_from:
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <p>Ruby on Rails’ phenomenal rise to prominence owed much of its lift-off to novel technology and timing. But technological advantages erode over time, and good timing doesn’t sustain movements alone over the long term. So a broader explanation of how Rails has continued to not only stay relevant but to grow its impact and community is needed. I propose that the enduring enabler has been and remains its controversial doctrine.</p>
-        <p>This doctrine has evolved over the past decade, but most of its strongest pillars are also the founding ones. I make no claim to the fundamental originality of these ideas. The chief accomplishment of Rails was to unite and cultivate a strong tribe around a wide set of heretical thoughts about the nature of programming and programmers.</p>
-        <p>With all that ado, here follows the nine most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
+        <p>
+          การขึ้นสู่ความโดดเด่นของ Ruby on Rails เกิดจากการผสมผสานระหว่างเทคโนโลยีใหม่และจังหวะเวลาที่เหมาะสม
+          ข้อได้เปรียบทางเทคโนโลยีมักจะเสื่อมถอยตามกาลเวลา และจังหวะที่ดีเพียงอย่างเดียวไม่สามารถรักษาความเคลื่อนไหวในระยะยาวได้
+          ดังนั้นจึงจำเป็นต้องมีการอธิบายที่กว้างขึ้นว่า Rails ยังคงรักษาความเกี่ยวข้องและขยายผลกระทบและชุมชนของมันได้อย่างไร
+          ฉันเสนอว่า ปัจจัยที่ทำให้ Rails ยืนหยัดและยังคงเป็นตัวขับเคลื่อนหลักคือหลักการที่ขัดแย้งกันนี้เอง
+        </p>
+        <p>
+          หลักการนี้ได้พัฒนาไปในช่วงทศวรรษที่ผ่านมา แต่เสาหลักส่วนใหญ่ของมันก็ยังคงเป็นเสาหลักดั้งเดิม
+          ฉันไม่ได้อ้างว่าความคิดเหล่านี้เป็นของใหม่อย่างแท้จริง ความสำเร็จหลักของ Rails คือการรวมตัวและสร้างชุมชนที่แข็งแกร่งรอบ ๆ
+          ความคิดที่ท้าทายเกี่ยวกับธรรมชาติของการเขียนโปรแกรมและโปรแกรมเมอร์
+        </p>
+        <p>และต่อไปนี้คือเสาหลักทั้งเก้าที่สำคัญที่สุดของหลักการ Rails ตามความเห็นของฉันเอง</p>
         <ol>
-          <li><a href="#optimize-for-programmer-happiness">Optimize for programmer happiness</a></li>
-          <li><a href="#convention-over-configuration">Convention over Configuration</a></li>
-          <li><a href="#omakase">The menu is omakase</a></li>
-          <li><a href="#no-one-paradigm">No one paradigm</a></li>
-          <li><a href="#beautiful-code">Exalt beautiful code</a></li>
-          <li><a href="#provide-sharp-knives">Provide sharp knives</a></li>
-          <li><a href="#integrated-systems">Value integrated systems</a></li>
-          <li><a href="#progress-over-stability">Progress over stability</a></li>
-          <li><a href="#big-tent">Push up a big tent</a></li>
+          <li><a href="#optimize-for-programmer-happiness">เพิ่มประสิทธิภาพเพื่อความสุขของโปรแกรมเมอร์</a></li>
+          <li><a href="#convention-over-configuration">การตั้งค่ามาตรฐานเหนือการกำหนดค่า</a></li>
+          <li><a href="#omakase">เมนูเป็นแบบโอมะกะเสะ</a></li>
+          <li><a href="#no-one-paradigm">ไม่มีแนวคิดเดียวที่ครอบคลุมทั้งหมด</a></li>
+          <li><a href="#beautiful-code">ยกย่องโค้ดที่สวยงาม</a></li>
+          <li><a href="#provide-sharp-knives">จัดเตรียมเครื่องมือที่คม</a></li>
+          <li><a href="#integrated-systems">ให้คุณค่ากับระบบที่บูรณาการ</a></li>
+          <li><a href="#progress-over-stability">ความก้าวหน้าสำคัญกว่าความเสถียร</a></li>
+          <li><a href="#big-tent">ยอมรับความหลากหลาย</a></li>
         </ol>
       </div>
     </div>
@@ -64,7 +73,7 @@ redirect_from:
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Optimize for programmer happiness</h3>
+        <h3>เพิ่มประสิทธิภาพเพื่อความสุขของโปรแกรมเมอร์</h3>
         <p>There would be no Rails without Ruby, so it’s only fitting that the first doctrinal pillar is lifted straight from the core motivation for creating Ruby.</p>
         <p>Ruby’s original heresy was indeed to place the happiness of the programmer on a pedestal. Above many other competing and valid concerns that had driven programming languages and ecosystems before it.</p>
         <p>Where Python might boast that there’s “one and preferably only one way to do something”, Ruby relished expressiveness and subtlety. Where Java championed forcefully protecting programmers from themselves, Ruby included a set of sharp knives in the welcome kit. Where Smalltalk drilled a purity of message passing, Ruby accumulated keywords and constructs with an almost gluttonous appetite.</p>
@@ -104,7 +113,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Convention over Configuration</h3>
+        <h3>การตั้งค่ามาตรฐานเหนือการกำหนดค่า</h3>
         <p>One of the early productivity mottos of Rails went: “You’re not a beautiful and unique snowflake”. It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.</p>
         <p>Who cares what format your database primary keys are described by? Does it really matter whether it’s “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of  recurrent deliberation? No.</p>
         <p>Part of the Rails’ mission is to swing its machete at the thick, and ever growing, jungle of recurring decisions that face developers creating information systems for the web. There are thousands of such decisions that just need to be made once, and if someone else can do it for you, all the better.</p>
@@ -123,7 +132,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>The menu is omakase</h3>
+        <h3>เมนูเป็นแบบโอมะกะเสะ</h3>
         <p>How do you know what to order in a restaurant when you don’t know what’s good? Well, if you let the chef choose, you can probably assume a good meal, even before you know what “good” is. That is omakase. A way to eat well that requires you neither be an expert in the cuisine nor blessed with blind luck at picking in the dark.
         <p>For programming, the benefits of this practice, letting others assemble your stack, is similar to those we derive from Convention over Configuration, but at a higher level. Where CoC is occupied with how we best use individual frameworks, omakase is concerned with <em>which</em> frameworks, and how they fit together.
         <p>This is at odds with the revered programming tradition of presenting available tools as individual choices, and to bestow the individual programmer privilege (and burden!) of deciding.
@@ -145,7 +154,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>No one paradigm</h3>
+        <h3>ไม่มีแนวคิดเดียวที่ครอบคลุมทั้งหมด</h3>
         <p>There’s a strong emotional appeal to picking a single central idea and following it to the logical conclusion as your architectural underpinning. There’s a purity in such discipline, so it’s clear why programmers are naturally attracted to this bright light.</p>
         <p>Rails isn’t like that. It isn’t a single, perfect cut of cloth. It’s a quilt. A composite of many different ideas and even paradigms. Many that would usually be seen in conflict, if contrasted alone and one by one. But that’s not what we’re trying to do. It isn’t a single championship of superior ideas where a sole winner must be declared.</p>
         <p>Take the templates we build the view in our Rails MVC pie with. By default, all the helpers that allow us to extract code from these templates are just a big pot of functions! It’s a single namespace even. Oh the shock and the horror, it’s like PHP soup!</p>
@@ -168,7 +177,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Exalt beautiful code</h3>
+        <h3>ยกย่องโค้ดที่สวยงาม</h3>
         <p>We write code not just to be understood by the computer or other programmers, but to bask in the warm glow of beauty. Aesthetically pleasing code is a value unto itself and should be pursued with vigor. That doesn’t mean that beautiful code always trumps other concerns, but it should have a full seat at the table of priorities.</p>
         <p>So what is beautiful code? In Ruby, it’s often somewhere at the intersection between native Ruby idioms and the power of a custom domain-specific language. It’s a fuzzy line, but one well worth trying to dance.</p>
         <p>Here’s a simple example from Active Record:</p>
@@ -211,7 +220,7 @@ if person.in? people
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Provide sharp knives</h3>
+        <h3>จัดเตรียมเครื่องมือที่คม</h3>
         <p>Ruby includes a lot of sharp knives in its drawer of features. Not by accident, but by design. The most famous is monkey patching: The power to change existing classes and methods.</p>
         <p>This power has frequently been derided as simply too much for mere mortal programmers to handle. People from more restrictive environments used to imagine all sorts of calamities that would doom Ruby because of the immense trust the language showed its speakers with this feature.</p>
         <p>If you can change anything, what is there to stop you from overwriting String#capitalize so that “something bold”.capitalize returns “Something Bold” rather than “Something bold”? That might work in your local application, but then break all sorts of auxiliary code that depend on the original implementation.</p>
@@ -236,7 +245,7 @@ if person.in? people
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Value integrated systems</h3>
+        <h3>ให้คุณค่ากับระบบที่บูรณาการ</h3>
         <p>Rails can be used in many contexts, but its first love is the making of integrated systems: Majestic monoliths! A whole system that addresses an entire problem. This means Rails is concerned  with everything from the front-end JavaScript needed to make live updates to how the database is migrated from one version to another in production.</p>
         <p>That’s a very broad scope, as we’ve discussed, but no broader than to be realistic to understand for a single person. Rails specifically seeks to equip generalist individuals to make these full systems. Its purpose is not to segregate specialists into small niches and then require whole teams of such in order to build anything of enduring value.</p>
         <p>It is this focus on empowering the individual that points to the integrated system. It’s in the integrated system we can cut out many needless abstractions, reduce the duplication between layers (like templates on both the server and the client), and, above all, avoid distributing our system before we absolutely, positively have to.</p>
@@ -255,7 +264,7 @@ if person.in? people
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Progress over stability</h3>
+        <h3>ความก้าวหน้าสำคัญกว่าความเสถียร</h3>
         <p>When systems have been around for more than a decade, like Rails has, their natural tendency is towards ossification. There are a million reasons why every change might be an issue for someone, somewhere who depended on past behavior. And fair reasons those are too, for the individual.</p>
         <p>But if we listen too closely to the voices of conservatism, we’ll never see what’s on the other side. We have to dare occasionally break and change how things are to evolve and grow. It is this evolution that’ll keep Rails fit for survival and prosperity in the decade(s?) to come.</p>
         <p>This is all easy to understand in theory, but much harder to swallow in practice. Especially when it’s your application that breaks from a backwards-incompatible change in a major version of Rails. It’s at those times we need to remember this value, that we cherish progress over stability, to give us the strength to debug the busted, figure it out, and move with the times.</p>
@@ -275,7 +284,7 @@ if person.in? people
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>Push up a big tent</h3>
+        <h3>ยอมรับความหลากหลาย</h3>
         <p>With so many controversial ideas to its credit, Rails could quickly become an insular group of ideological hermits, if we required everyone to exhibit complete deference to all tenets, all the time. So we don’t!</p>
         <p>We need disagreement. We need dialects. We need diversity of thought and people. It’s in this melting pot of ideas we’ll get the best commons for all to share. Lots of people chipping in their two cents, in code or considered argument.</p>
         <p>So while this doctrine has described an idealized form, the everyday reality is much more nuanced (and interesting). Rails is capable of supporting such a large community under one tent exactly because there are so few if any litmus tests. </p>
