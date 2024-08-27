@@ -20,7 +20,7 @@ AppSignal has long been one of the biggest supporters of events and meetups in t
 **Now back to Rails World:**
 If you attended Rails World last year, you'll know that AppSignal's booth was a highlight. While AppSignal as a company takes performance monitoring very seriously, as a brand and as a group of people, they also like to have a lot of fun. Anyone who stopped by their booth last year to enjoy a game of “sjoelen” knows that, and this year their presence at Rails World will be no different.
 
-<img src="/assets/images/RW-Appsignal-booth.jpg">
+<img src="/assets/images/RW-Appsignal-booth.png">
 
 This year Rails World attendees can visit the AppSignal booth for stroopwafels, to grab a free t-shirt or a Developer Dilemmas card game, to chat with the team, or to play "sjoelen" to win _a year's supply_ of stroopwafels. (A year's worth. We're going to let that sink in for a moment.)
 
@@ -30,7 +30,7 @@ As part of their Platinum sponsorship, AppSignal will also be hosting Track 2, o
 ><br><br>*Roy Tomeij, AppSignal Co-Founder*
 >
 
-<img src="/assets/images/RW-Appsignal-booth.png">
+<img src="/assets/images/RW24-MC-Jim-Remsik.png">
 
 Once again, we’re incredibly grateful for AppSignal’s continued support and can’t wait to see what they have in store for us this year. Make sure to visit their booth, and check out the sessions and games on Track 2.
 
