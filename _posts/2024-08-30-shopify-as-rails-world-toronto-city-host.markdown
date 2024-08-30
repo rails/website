@@ -7,7 +7,7 @@ published: true
 date: 2024-08-30
 ---
 
-Once we announced Toronto as this year’s [Rails World 2024](/world/2024) location, Shopify's one wish was that everyone attending Rails World would experience the best of what their city has to offer, before, during, and to close out the event. With the event taking place in their backyard, it was only fitting that they become the official Toronto Rails World City Host.
+Once we announced Toronto as this year’s [Rails World 2024](/world/2024) location, <a href="shopify.com">Shopify</a> had one wish: that everyone attending Rails World would experience the best of what their city has to offer, before, during, and to close out the event. With the event taking place in their backyard, it was only fitting that they become the official **Toronto Rails World City Host**.
 
 <img src="/assets/images/RW24-Shopify-city-host.png">
 
