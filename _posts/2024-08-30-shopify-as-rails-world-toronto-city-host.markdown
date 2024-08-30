@@ -17,7 +17,7 @@ Here’s how:
 
 **Pre-Registration, September 25th** - If you are already in town on the 25th, grab your badge early, have a welcome drink courtesy of Shopify, and meet up with other Rails World attendees. From here you can go out and explore Toronto’s Yorkville neighborhood just steps away. 
 
-**WNB.rb Meetup, September 25th** - Shopify is also proud to sponsor the <a href="[http://WNB.rb](https://www.wnb-rb.dev/)">WNB.rb</a> meetup, an event dedicated to supporting women and non-binary individuals in the Ruby community. For this meetup, Shopify is inviting WNB.rb members to the 14th floor of the Shopify port for a drink, a bite, and to connect with other women and non-binary Rails World attendees before we officially kick off. (Just wait until you see the views up there!)
+**WNB.rb Meetup, September 25th** - Shopify is also proud to sponsor the <a href="https://www.wnb-rb.dev/">WNB.rb</a> meetup, an event dedicated to supporting women and non-binary individuals in the Ruby community. For this meetup, Shopify is inviting WNB.rb members to the 14th floor of the Shopify port for a drink, a bite, and to connect with other women and non-binary Rails World attendees before we officially kick off. (Just wait until you see the views up there!)
 
 **The Shopify Lounge & Rails merch store** - In the Shopify Lounge at Rails World you’ll find the Shopify booth, pair programming, and plenty of additional space to hang out, grab a snack, and recharge. In the booth, you can meet with the Shopify Engineering team, or dive deep into technical problem solving at one of their four pair programming stations.
 
