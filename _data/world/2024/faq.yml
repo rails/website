@@ -25,7 +25,8 @@
       answer: >
         We will be using a Campfire instance for Rails World this year for updates, announcements, and a means for attendees to connect with each other.
         Registered attendees will be invited to Campfire in September.
-        TBD on the conference app.
+        
+        The Rails World conference app is developed by Telos Labs. Attendees can see a more detailed agenda, build their schedule, receive notifications of upcoming sessions, and share their profile for networking. Telos Labs has <a href="https://www.teloslabs.co/post/rails-world-2024-conference-app">open sourced this app</a>, and it is our hope that the (many) events in our space will also use it for their own events.
 
     - question: Should I stay for the weekend after Rails World?
       answer: >
@@ -101,7 +102,7 @@
 
     - question: Where should I stay?
       answer: |-
-        The largest room block which still has availability is the Chelsea Hotel, a centrally located 3-star hotel. A night is $240 usd plus tax. Ticket holders will be sent details on how you can book these rates in your confirmation.
+        The Chelsea Hotel is a centrally located 3-star hotel where many attendees are staying. The event room block is currently full, but the hotel still has availability at $410 CAD ($305 USD) plus taxes. If you want to book this rate please reach out to [info@magnifycommunications.com](mailto:info@magnifycommunications.com) and we will do our best to assist.
 
 - category: Accessibility
   topics:
