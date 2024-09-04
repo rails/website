@@ -1,6 +1,6 @@
 ---
 layout: world/2024/session
-title: Opening Keynote: The Myth of the Modular Monolith
+title: Opening Keynote - The Myth of the Modular Monolith
 speaker: eileen-uchitelle.md
 time: 10:00 - 11:00
 location: Track 1
