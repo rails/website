@@ -4,7 +4,7 @@ title: Prepare to tack - Steering Rails apps out of technical debt
 speaker: robby-russell.md # name of md speaker file
 time: 13:45 - 14:15
 location: Track 2
-running_order: 7
+running_order: 9
 ---
 
 Spoiler alert: we've been wrong about tech debt.
