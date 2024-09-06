@@ -21,6 +21,6 @@ Rails World attendees can find GitHub at their booth in the Sponsor Garden - be 
 
 As part of their sponsorship, GitHub will be hosting Track 1, one of the two main stages at Rails World 2024 where you’ll also find the day’s opening and closing keynotes and fireside chat, and the daily giveaways.
 
-To host their track, GitHub nominated Rebecca Miller-Webster, Director of Software Engineering for Codespaces/CoPilot Workspace. Having organized the Write/Speak/Code events for 9 years and the GoRuCo conference (RIP) for 2 years, Rebecca brings a wealth of event expertise and is excited to chat with the Rails community in the breaks on Track 1, so be sure to say hi. 
+To host their track, GitHub nominated Rebecca Miller-Webster, Director of Software Engineering for Codespaces/Copilot Workspace. Having organized the Write/Speak/Code events for 9 years and the GoRuCo conference (RIP) for 2 years, Rebecca brings a wealth of event expertise and is excited to chat with the Rails community in the breaks on Track 1, so be sure to say hi.
 
 <img src="/assets/images/RW24-MC-Rebecca.png">
