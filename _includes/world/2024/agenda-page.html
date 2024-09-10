@@ -90,30 +90,27 @@
                     {% assign speakerDetails = speaker | split: "," %}
                 
                     {% unless firstSpeaker %}
-                      {% assign speakerList = speakerList | append: ", " %}
+                      {% assign speakerList = speakerList | append: " - " %}
                     {% endunless %}
                     
-                    {% if forloop.index0 == lastIndex %}
-                      {% if totalSpeakers > 1 %}
-                        {% assign speakerList = speakerList | append: " & " %}
-                      {% endif %}
-                    {% endif %}
+                 
                 
                     {% assign firstSpeaker = false %}
 
-                    {% assign speakerList = speakerList | append: "<span class='name'>" | append: speakerDetails[0] | append: "</span>" %}
+                    {% assign speakerList = speakerList | append: "<span class='name'>" | append: speakerDetails[0] | append: "</span>" | append: "," %}
                 
                     {% if speakerDetails[1] != "" %}
                       {% assign speakerList = speakerList | append: " " | append: speakerDetails[1] %}
                     {% endif %}
-                
-                    {% if speakerDetails[2] != "" %}
-                      {% if speakerDetails[1] != "" %}
-                        {% assign speakerList = speakerList %}
-                      {% endif %}
-                      {% if speakerDetails[1] == "" %}
-                        {% assign speakerList = speakerList | append: " " %}
-                      {% endif %}
+
+                    {% if speakerDetails[2] == "" or speakerDetails[2] == "false" %}
+                      {% assign speakerList = speakerList | append: "" %}
+                    {% else %}
+                      {% assign speakerList = speakerList | append: ", " %}
+                    {% endif %}
+
+                    {% if speakerDetails[2] != "" and speakerDetails[2] != "false" %}
+                      {% assign speakerList = speakerList %}
                       
                       {% assign speakerList = speakerList | append: speakerDetails[2] %}
                     {% endif %}
