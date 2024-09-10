@@ -23,10 +23,7 @@
 <div class="dayContainer">
   <div class="titleContainer">
     <h2>Agenda</h2>
-    <p>Rails World is two full days of keynotes, technical sessions, workshops, food, and fun. The Rails World app is
-      being developed by Telos Labs and will be released soon so that attendees can build their schedule. All sessions
-      on the two
-      main stages will be recorded and will be shared shortly after the event.</p>
+    <p>Rails World is two full days of keynotes, technical sessions, workshops, food, and fun. The Rails World app is being developed by Telos Labs and will be released soon so that attendees can build their schedule. All sessions on the two</p>
   </div>
   <div class="mainContainer">
     <div class="dayTabs">
@@ -60,21 +57,6 @@
           <div class="separator"></div>
         </div>
         <div class="right">
-          {% assign primarySpeakerId = session.speaker | split: '/' | last %}
-          {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
-          {% assign thirdSpeakerId = session.third_speaker | split: '/' | last %}
-
-          {% assign primarySpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
-          primarySpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
-          {% assign secondarySpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
-          secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
-          {% assign thirdSpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
-          thirdSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
-
-          {% assign primarySpeaker = primarySpeakerObjs | first %}
-          {% assign secondarySpeaker = secondarySpeakerObjs | first %}
-          {% assign thirdSpeaker = thirdSpeakerObjs | first %}
-
           {% assign speakerIds =
           session.speaker | split: '/' | last | append: "," |
           append: session.second_speaker | split: '/' | last | append: "," |
