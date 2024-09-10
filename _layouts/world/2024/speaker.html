@@ -23,7 +23,7 @@ layout: world/2024/default
                 <div class="right">
                     <div>
                         <h2 class="speakerName">{{ page.first_name}} {{ page.last_name }}</h1>
-                            <p class="speakerRole">{{ page.role }}, {{ page.company }}</p>
+                            <p class="speakerRole">{{ page.role }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}</p>
                     </div>
                     {{ content }}
 

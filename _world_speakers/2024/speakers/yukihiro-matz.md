@@ -4,7 +4,7 @@ first_name: Yukihiro "Matz"
 last_name: Matsumoto
 image_path: /assets/world/2024/images/speakers/m-matsumoto.jpg
 role: Creator of Ruby
-company: 
+company: false
 keynote: true
 github: https://github.com/matz
 linkedin:  
