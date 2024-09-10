@@ -33,8 +33,9 @@
             <h4 class="name">
                 {{ include.first_name }} {{ include.last_name }}
             </h4>
-
-            <p class="role">{{ include.role }}, {{ include.company }}</p>
+            <p>
+                {{ include.role }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}
+            </p>
         </div>
     </div>
 </div>
