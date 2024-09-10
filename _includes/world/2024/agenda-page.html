@@ -23,7 +23,9 @@
 <div class="dayContainer">
   <div class="titleContainer">
     <h2>Agenda</h2>
-    <p>Rails World is two full days of keynotes, technical sessions, workshops, food, and fun. The Rails World app is being developed by Telos Labs and will be released soon so that attendees can build their schedule. All sessions on the two
+    <p>Rails World is two full days of keynotes, technical sessions, workshops, food, and fun. The Rails World app is
+      being developed by Telos Labs and will be released soon so that attendees can build their schedule. All sessions
+      on the two
       main stages will be recorded and will be shared shortly after the event.</p>
   </div>
   <div class="mainContainer">
@@ -58,34 +60,88 @@
           <div class="separator"></div>
         </div>
         <div class="right">
-          {% assign speakerId = session.speaker | split: '/' | last %}
-          {% assign speakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains speakerId" |
-          where_exp: 'item', 'item.path contains "2024"' %}
-          {% assign primarySpeaker = speakerObjs | first %}
+          {% assign primarySpeakerId = session.speaker | split: '/' | last %}
           {% assign secondSpeakerId = session.second_speaker | split: '/' | last %}
           {% assign thirdSpeakerId = session.third_speaker | split: '/' | last %}
-          {% assign secondSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
+
+          {% assign primarySpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
+          primarySpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
+          {% assign secondarySpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
           secondSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
-          {% assign secondarySpeaker = secondSpeakerObjs | first %}
-          {% assign thirdSpeakerObjs = site.world_speakers | where_exp:"speaker", "speaker.path contains
+          {% assign thirdSpeakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains
           thirdSpeakerId" | where_exp: 'item', 'item.path contains "2024"' %}
+
+          {% assign primarySpeaker = primarySpeakerObjs | first %}
+          {% assign secondarySpeaker = secondarySpeakerObjs | first %}
           {% assign thirdSpeaker = thirdSpeakerObjs | first %}
 
+          {% assign speakerIds =
+          session.speaker | split: '/' | last | append: "," |
+          append: session.second_speaker | split: '/' | last | append: "," |
+          append: session.third_speaker | split: '/' | last | split: "," %}
+
+          {% assign speakers = "" %}
+          {% for id in speakerIds %}
+          {% assign speakerObjs = site.world_speakers | where_exp: "speaker", "speaker.path contains id" | where_exp:
+          'item', 'item.path contains "2024"' %}
+          {% assign speaker = speakerObjs | first %}
+          {% if speaker %}
+          {% assign speakers = speakers | append: speaker.first_name | append: " " | append: speaker.last_name | append:
+          "," | append: speaker.role | append: "," | append: speaker.company | append: "|" %}
+          {% endif %}
+          {% endfor %}
+
+          {% assign speakerArray = speakers | split: "|" %}
+          {% assign totalSpeakers = speakerArray | size %}
+          {% assign speakerList = "" %}
+
           <p class="title">{{ session.title }}</p>
-          <div class="speakersContainer">
-            {% if primarySpeaker %}
-            <p class="speakerName">{{ primarySpeaker.first_name }} {{ primarySpeaker.last_name }}, {{
-              primarySpeaker.role }}{% if primarySpeaker.company %}, {{ primarySpeaker.company }}{% endif %}</p>
-            {% endif %}
-            {% if secondarySpeaker %}
-            <p class="speakerName">, {{ secondarySpeaker.first_name }} {{ secondarySpeaker.last_name }}, {{
-              secondarySpeaker.role }}{% if secondarySpeaker.company %}, {{ secondarySpeaker.company }}{% endif %}</p>
-            {% endif %}
-            {% if thirdSpeaker %}
-            <p class="speakerName">, {{ thirdSpeaker.first_name }} {{ thirdSpeaker.last_name }}, {{
-              thirdSpeaker.role }}{% if thirdSpeaker.company %}, {{ thirdSpeaker.company }}{% endif %}</p>
-            {% endif %}
-          </div>
+          {% if totalSpeakers > 0 %}
+            <div class="speakersContainer">
+              <p class="speakerNames">
+                {% assign speakerList = "" %}
+                {% assign firstSpeaker = true %}
+                {% assign lastIndex = totalSpeakers | minus: 1 %}
+
+                {% for speaker in speakerArray %}
+                  {% if speaker != "" %}
+                    {% assign speakerDetails = speaker | split: "," %}
+                
+                    {% unless firstSpeaker %}
+                      {% assign speakerList = speakerList | append: ", " %}
+                    {% endunless %}
+                    
+                    {% if forloop.index0 == lastIndex %}
+                      {% if totalSpeakers > 1 %}
+                        {% assign speakerList = speakerList | append: " & " %}
+                      {% endif %}
+                    {% endif %}
+                
+                    {% assign firstSpeaker = false %}
+
+                    {% assign speakerList = speakerList | append: "<span class='name'>" | append: speakerDetails[0] | append: "</span>" %}
+                
+                    {% if speakerDetails[1] != "" %}
+                      {% assign speakerList = speakerList | append: " " | append: speakerDetails[1] %}
+                    {% endif %}
+                
+                    {% if speakerDetails[2] != "" %}
+                      {% if speakerDetails[1] != "" %}
+                        {% assign speakerList = speakerList %}
+                      {% endif %}
+                      {% if speakerDetails[1] == "" %}
+                        {% assign speakerList = speakerList | append: " " %}
+                      {% endif %}
+                      
+                      {% assign speakerList = speakerList | append: speakerDetails[2] %}
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+
+                {{ speakerList | raw }}
+              </p>
+            </div>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
