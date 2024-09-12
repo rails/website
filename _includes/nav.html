@@ -1,35 +1,33 @@
 <nav class="nav">
   <a class="nav__logo" href="/" aria-label="Ruby on Rails"></a>
 
-  <!-- {% if page.id == 'home' %} -->
-    <input class="nav__checkbox" id="nav__checkbox" type="checkbox" role="button" aria-label="menu" />
+  <input class="nav__checkbox" id="nav__checkbox" type="checkbox" role="button" aria-label="menu" />
 
-    <label class="nav__toggle" for="nav__checkbox">
-      <span></span>
-    </label>
+  <label class="nav__toggle" for="nav__checkbox">
+    <span></span>
+  </label>
 
-    <div class="nav__options">
-      <div>
-        <ul>
-          {% for option in site.data.nav.items limit:4 %}
-            {% if page.url == option.url %}
-              <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
-            {% else %}
-              <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+  <div class="nav__options">
+    <div>
+      <ul>
+        {% for option in site.data.nav.items limit:4 %}
+          {% if page.url == option.url %}
+            <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+          {% else %}
+            <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
 
-        <ul>
-          {% for option in site.data.nav.items limit:4 offset:4 %}
-            {% if page.url == option.url %}
-              <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
-            {% else %}
-              <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
+      <ul>
+        {% for option in site.data.nav.items limit:4 offset:4 %}
+          {% if page.url == option.url %}
+            <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+          {% else %}
+            <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
-  <!-- {% endif %} -->
+  </div>
 </nav>
