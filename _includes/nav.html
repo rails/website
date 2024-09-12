@@ -12,13 +12,21 @@
       <div>
         <ul>
           {% for option in site.data.nav.items limit:4 %}
-            <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% if page.url == option.url %}
+              <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% else %}
+              <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% endif %}
           {% endfor %}
         </ul>
 
         <ul>
           {% for option in site.data.nav.items limit:4 offset:4 %}
-            <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% if page.url == option.url %}
+              <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% else %}
+              <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>

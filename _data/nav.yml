@@ -13,13 +13,13 @@ items:
     url: /news # formerly /blog
 
   - title: Events
-    url: /events
+    url: /world
 
   - title: Jobs
     url: https://jobs.rubyonrails.org
 
   - title: Merch
-    url: /merch
+    url: https://merch.rubyonrails.org
 
   - title: Foundation
     url: /foundation

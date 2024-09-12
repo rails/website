@@ -88,6 +88,14 @@
 
         }
 
+        &:active {
+
+          a span {
+            color: $color-red;
+          }
+          
+        }
+
       }
 
       &:first-child {
