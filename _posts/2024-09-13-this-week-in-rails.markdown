@@ -41,7 +41,7 @@ More details can be found [here](https://dev.mysql.com/doc/refman/8.0/en/numeric
 Some Logger implementations may want extend the logging interface to provide optional information via keyword argument.
 This change enhances `BroadcastLogger` to allow the same.
 
-[Fix travel_to to set usec 0 when with_usec is false and the given argument String or DateTime](https://github.com/rails/rails/pull/52533)  
+[Fix travel_to to set usec 0 when with_usec is false and the given argument is String or DateTime](https://github.com/rails/rails/pull/52533)  
 Before this change `travel_to` did not set `usec` to `0` depending on the argument (`String` or `DateTime`).
 This PR fixes this behavior to make it uniform.
 
@@ -52,7 +52,7 @@ the same child association but different parents does not join all parents.
 Previously, using `.left_outer_joins` with the same child association would only join one of the parents. After this fix it now correctly joins both parents.
 
 [alias_attribute: handle user defined source methods](https://github.com/rails/rails/pull/52842)  
-Before this change, when using `alias_attribute` and trying to alias user defined source methods would error, for example-
+Before this change, when using `alias_attribute` and trying to alias user defined source methods would error, for example:
 
 ```ruby
 class Person
