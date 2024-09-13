@@ -2,7 +2,7 @@
 layout: world/2024/session
 title: Doors Open
 speaker:
-time: 09:00 - 09:45
+time: 08:30 - 09:45
 location: Sponsor Garden
 running_order: 0
 ---
