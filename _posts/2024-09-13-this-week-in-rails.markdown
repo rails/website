@@ -42,7 +42,7 @@ Some Logger implementations may want extend the logging interface to provide opt
 This change enhances `BroadcastLogger` to allow the same.
 
 [Fix travel_to to set usec 0 when with_usec is false and the given argument String or DateTime](https://github.com/rails/rails/pull/52533)  
-Before this change travel_to did not set usec to 0 depending on the argument (`String` or `DateTime`).
+Before this change `travel_to` did not set `usec` to `0` depending on the argument (`String` or `DateTime`).
 This PR fixes this behavior to make it uniform.
 
 [Fix .left_outer_joins when multiple associations have the same child](https://github.com/rails/rails/pull/52850)  
