@@ -2,7 +2,7 @@
 layout: world/2024/session
 title: Doors Open
 speaker:
-time: 09:00 - 10:00
+time: 08:30 - 10:00
 location: Sponsor Lounge
 running_order: 0
 ---
