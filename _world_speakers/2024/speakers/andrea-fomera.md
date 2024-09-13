@@ -4,7 +4,7 @@ first_name: Andrea
 last_name: Fomera
 image_path: /assets/world/2024/images/speakers/a-fomera.png
 role: Senior Software Developer
-company: Hire me!
+company: Soundstripe
 keynote: false
 github: https://github.com/afomera
 linkedin: https://www.linkedin.com/in/afomera/
