@@ -2,7 +2,7 @@
 layout: world/2024/session
 title: Shopify Closing Party
 speaker:
-time: 19:00 - 22:00
+time: 18:30 - 22:00
 location: Shopify Port
 running_order: 13
 ---
