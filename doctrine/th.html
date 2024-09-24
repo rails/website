@@ -1,8 +1,6 @@
 ---
 title: The Rails Doctrine
 permalink: /doctrine/th
-redirect_from:
-  - /doctrine/th/
 ---
 
 <div class="heading common-padding--bottom common-padding--top common-shape--bottom-grey-down-left">
@@ -56,7 +54,7 @@ redirect_from:
         <ol>
           <li><a href="#optimize-for-programmer-happiness">เพิ่มประสิทธิภาพเพื่อความสุขของโปรแกรมเมอร์</a></li>
           <li><a href="#convention-over-configuration">การตั้งค่ามาตรฐานเหนือการกำหนดค่า</a></li>
-          <li><a href="#omakase">เมนูเป็นแบบโอมะกะเสะ</a></li>
+          <li><a href="#omakase">เมนูแบบโอมากาเสะ</a></li>
           <li><a href="#no-one-paradigm">ไม่มีแนวคิดเดียวที่ครอบคลุมทั้งหมด</a></li>
           <li><a href="#beautiful-code">ยกย่องโค้ดที่สวยงาม</a></li>
           <li><a href="#provide-sharp-knives">จัดเตรียมเครื่องมือที่คม</a></li>
@@ -132,19 +130,19 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
   <div class="container">
     <div class="text__body">
       <div class="text__content common-content">
-        <h3>เมนูเป็นแบบโอมะกะเสะ</h3>
-        <p>How do you know what to order in a restaurant when you don’t know what’s good? Well, if you let the chef choose, you can probably assume a good meal, even before you know what “good” is. That is omakase. A way to eat well that requires you neither be an expert in the cuisine nor blessed with blind luck at picking in the dark.
-        <p>For programming, the benefits of this practice, letting others assemble your stack, is similar to those we derive from Convention over Configuration, but at a higher level. Where CoC is occupied with how we best use individual frameworks, omakase is concerned with <em>which</em> frameworks, and how they fit together.
-        <p>This is at odds with the revered programming tradition of presenting available tools as individual choices, and to bestow the individual programmer privilege (and burden!) of deciding.
-        <p>You’ve surely heard, and probably nodded to, “use the best tool for the job”. It sounds so elementary as to be beyond debate, but being able to pick the “best tool” depends on a foundation that allows “best” to be determined with confidence. This is much harder than it seems.
-        <p>It is a problem similar to that of the diner in a restaurant. And like picking each course in an eight-set meal, picking each individual library or framework is not a job done in isolation. The objective in both cases is to consider the whole evening or system.
-        <p>So with Rails we decided to diminish one good, a programmer’s individual privilege to choose each tool in their box, for a greater one: A better tool box for all. The dividends are legion:
+        <h3>เมนูแบบโอมากาเสะ</h3>
+        <p>คุณจะรู้ได้อย่างไรว่าควรสั่งอะไรในร้านอาหารเมื่อคุณไม่รู้ว่าอะไรดี? ถ้าคุณปล่อยให้เชฟเลือกให้ คุณก็สามารถคาดหวังได้ว่าจะได้รับมื้ออาหารที่ดีได้ แม้ว่าคุณจะยังไม่รู้ว่า "ดี" คืออะไร นั่นคือการ "โอมากาเสะ" ซึ่งเป็นวิธีการรับประทานอาหารที่ดี โดยที่คุณไม่จำเป็นต้องเป็นผู้เชี่ยวชาญในด้านอาหารหรือพึ่งพาดวงในการเลือกอาหาร</p>
+        <p>สำหรับการเขียนโปรแกรม ประโยชน์ของการปฏิบัตินี้ (การให้ผู้อื่นเลือก stack ให้คุณ) คล้ายกับที่เราได้รับจากหลักการ Convention over Configuration แต่ในระดับที่สูงขึ้น โดยที่ CoC เน้นที่วิธีการที่เราจะใช้เฟรมเวิร์กแต่ละตัวได้ดีที่สุด ในขณะที่โอมากาเสะมุ่งเน้นไปที่การเลือกเฟรมเวิร์ก และวิธีที่เฟรมเวิร์กเหล่านั้นจะทำงานร่วมกันได้</p>
+        <p>สิ่งนี้ขัดแย้งกับประเพณีที่เคารพนับถือในการเขียนโปรแกรม ซึ่งมักนำเสนอเครื่องมือต่าง ๆ ให้เป็นตัวเลือกแบบแยกส่วน และมอบสิทธิพิเศษ (และภาระ!) ให้กับโปรแกรมเมอร์แต่ละคนในการตัดสินใจเลือกเครื่องมือเอง</p>
+        <p>คุณคงเคยได้ยิน และอาจจะเห็นด้วยกับคำว่า "ใช้เครื่องมือที่ดีที่สุดสำหรับงาน" ฟังดูเหมือนเป็นหลักการพื้นฐานที่ไม่น่าจะมีข้อโต้แย้งอะไร แต่การเลือก "เครื่องมือที่ดีที่สุด" นั้นขึ้นอยู่กับพื้นฐานที่ช่วยให้เราตัดสินใจได้อย่างมั่นใจว่าอะไรคือ "ดีที่สุด" ซึ่งจริง ๆ แล้วมันยากกว่าที่คิดไว้</p>
+        <p>มันเป็นปัญหาที่คล้ายกับการเลือกอาหารในร้านอาหาร และเช่นเดียวกับการเลือกแต่ละคอร์สในมื้ออาหารแบบแปดคอร์ส การเลือกไลบรารี่หรือเฟรมเวิร์กแต่ละตัวไม่ใช่งานที่ทำแยกออกจากกัน เป้าหมายในทั้งสองกรณีคือการพิจารณาทั้งคืนหรือทั้งระบบโดยรวม</p>
+        <p>ดังนั้นกับ Rails เราจึงตัดสินใจลดทอนสิ่งที่ดีอย่างหนึ่งลง นั่นคือสิทธิพิเศษของโปรแกรมเมอร์ในการเลือกเครื่องมือแต่ละชิ้นในกล่องของพวกเขา เพื่อสิ่งที่ดียิ่งกว่า: กล่องเครื่องมือที่ดีกว่าสำหรับทุกคน ซึ่งผลลัพธ์ที่ได้ก็มากมาย:</p>
         <ol>
-          <li><strong>There’s safety in numbers:</strong> When most people are using Rails in the same default ways, we have a shared experience. This common ground makes it much easier to teach and help people. It lays a foundation for debate on approach. We all watched the same show last night at 7, so we can talk about it the next day. It fosters a stronger sense of community.</li>
-          <li><strong>People are perfecting the same, basic tool box:</strong> As a full-stack framework, Rails has a lot of moving parts, and how those work together is as important as what they do in isolation. Much of the pain in software comes not from the individual components, but from their interaction. When we all work on alleviating shared pain from components that are configured and fail in the same ways, then we all experience less pain.</li>
-          <li><strong>Substitutions are still possible, but not required:</strong> While Rails is an omakase stack, it still allows you to replace certain frameworks or libraries with alternatives. It just doesn’t require you to. Which means you can delay those decisions until you’ve developed a clear, personal palate that may prefer the occasional difference.</li>
+          <li><strong>ยิ่งมีคนใช้มากก็ยิ่งปลอดภัย:</strong> เมื่อคนส่วนใหญ่ใช้ Rails ในวิธีการเริ่มต้นแบบเดียวกัน เราจะมีประสบการณ์ร่วมกัน พื้นฐานนี้ทำให้การสอนและช่วยเหลือผู้อื่นง่ายขึ้นมาก มันสร้างพื้นฐานสำหรับการถกเถียงเรื่องแนวทางการทำงาน เปรียบเสมือนเราทุกคนดูรายการเดียวกันเมื่อคืนเวลา 7 โมง ดังนั้นเราจึงสามารถพูดคุยเกี่ยวกับมันในวันถัดไปได้ สิ่งนี้ช่วยสร้างความรู้สึกของชุมชนที่แข็งแกร่งขึ้น</li>
+          <li><strong>ผู้คนกำลังปรับปรุงกล่องเครื่องมือจากพื้นฐานเดียวกัน:</strong> ในฐานะเฟรมเวิร์กแบบเต็มสแต็ก Rails มีหลายส่วนที่ทำงานร่วมกัน และวิธีที่ส่วนต่างๆ ทำงานร่วมกันนั้นสำคัญพอๆ กับการทำงานแยกกัน ความเจ็บปวดในซอฟต์แวร์ส่วนใหญ่มักไม่ได้มาจากส่วนประกอบแต่ละชิ้น แต่มาจากการทำงานร่วมกันของพวกมัน เมื่อเราทุกคนทำงานเพื่อบรรเทาปัญหาร่วมกันจากส่วนประกอบที่ถูกกำหนดค่าและเกิดความล้มเหลวในลักษณะเดียวกัน เราทุกคนก็จะเจอกับปัญหาน้อยลง</li>
+          <li><strong>การเปลี่ยนแปลงยังสามารถทำได้ แต่ไม่จำเป็น:</strong> แม้ว่า Rails จะเป็นสแต็กแบบโอมากาเสะ แต่ก็ยังอนุญาตให้คุณแทนที่เฟรมเวิร์กหรือไลบรารีบางตัวด้วยทางเลือกอื่นได้ เพียงแต่มันไม่ได้บังคับให้คุณทำ ซึ่งหมายความว่าคุณสามารถเลื่อนการตัดสินใจเหล่านั้นออกไปจนกว่าคุณจะพัฒนารสนิยมที่ชัดเจนและเป็นส่วนตัว ซึ่งอาจจะชอบความแตกต่างในบางครั้ง</li>
         </ol>
-        <p>Because even the most learned and skilled programmers who come to and stay in Rails aren’t likely opposed to all matters of the menu. (If they were, they probably wouldn’t have stuck with Rails.) So they pick their substitutions with diligence, and then go on to enjoy the rest of the curated, shared stack alongside everyone else.</p>
+        <p>เพราะแม้แต่โปรแกรมเมอร์ที่มีความรู้และทักษะมากที่สุดที่เข้ามาและยังคงอยู่ใน Rails ก็ไม่น่าจะต่อต้านทุกเรื่องในเมนู (ถ้าพวกเขาต่อต้าน พวกเขาก็คงไม่อยู่กับ Rails) ดังนั้นพวกเขาจึงเลือกการเปลี่ยนแปลงด้วยความระมัดระวัง และจากนั้นก็ไปเพลิดเพลินกับส่วนที่เหลือของสแต็กที่ถูกจัดเตรียมและแชร์ร่วมกับคนอื่น ๆ ต่อไป</p>
       </div>
     </div>
   </div>
