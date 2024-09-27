@@ -31,7 +31,7 @@ His work spans critical areas like Ruby compatibility and Active Record improvem
 ><br><br>*Zavier Noria, Rails Core*
 >
 
-<img src="/assets/images/RW24-Akira-Rails-Luminary.jpg.jpg">
+<img src="/assets/images/RW24-Akira-Rails-Luminary.jpg">
 
 Both Akira and Matz represent the best of what it means to be a Rails Luminary: a passion for open source, prolific work on the code we use every day, and an unwavering dedication to inspiring others and helping them succeed.
 
