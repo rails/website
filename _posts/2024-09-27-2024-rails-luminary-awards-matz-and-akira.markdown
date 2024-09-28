@@ -28,7 +28,7 @@ Akira Matsuda, the recipient of the 2024 Rails Luminary Award, has been a Rails 
 His work spans critical areas like Ruby compatibility and Active Record improvements, alongside creating widely-used gems like kaminari, active_decorator, routes_lazy_routes, traceroute, and html5_validators. His influence extends far beyond code, too. Akira is a key organizer in the global Ruby community, notably as the driving force behind RubyKaigi and Asakusa.rb.
 
 >Akira is a Rails committer, a Ruby committer, and has contributed to their ecosystems steadily for so long! We can see the breadth of his OSS work in many places: contributions to the framework, gems that we use, documentation, conferences, and more. He is the perfect person to win this year’s award.
-><br><br>*Zavier Noria, Rails Core*
+><br><br>*Xavier Noria, Rails Core*
 >
 
 <img src="/assets/images/RW24-Akira-Rails-Luminary.jpg">
