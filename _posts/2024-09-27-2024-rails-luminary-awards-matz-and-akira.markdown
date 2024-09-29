@@ -35,7 +35,10 @@ His work spans critical areas like Ruby compatibility and Active Record improvem
 
 Both Akira and Matz represent the best of what it means to be a Rails Luminary: a passion for open source, prolific work on the code we use every day, and an unwavering dedication to inspiring others and helping them succeed.
 
-Watch an interview with both award winners <a href="https://www.youtube.com/watch?v=gRSBBTA-AlY">here</a>.
+Watch an interview with both award winners here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gRSBBTA-AlY?si=RnYwKSUUv5TyTpVx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Thank you and congratulations to both!
 
