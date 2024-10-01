@@ -1,0 +1,130 @@
+.docs {
+  &.heading {
+    h1 {
+      line-height: 0.8em;
+      position: relative;
+      left: -0.5em;
+
+      span {
+        display: block;
+
+        &.need {
+          text-indent: 1.25em;
+        }
+
+        &.build {
+          text-indent: 1em;
+        }
+      } // span
+    } // h1
+  } // &.heading
+
+  &.text {
+    .container.wide {
+      max-width: 1100px;
+    }
+    .common-content {
+      h2.thin {
+        font-weight: 200;
+      } // h2
+
+      h2.how {
+        font-size: 3em;
+        text-align: center;
+      }
+
+      h4 {
+        font-size: 21px;
+        font-weight: bold;
+      }
+
+      p.how-leadin {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        text-align: center;
+      }
+    } // .common-content
+  } // &.text
+
+  // UL/LIs here are for cards, no bullets actually used. 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1em;
+    } // li
+
+    &.learning-cards, &.use-rails, &.case-studies {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li {
+        width: 100%;
+        margin-bottom: 0;
+      } // li
+    } // &.learning-cards
+    
+    &.learning-cards {
+      li img, li h4 {
+        margin-bottom: 0.5em;
+        padding: 0;
+      }
+    } // &.learning-cards
+
+    &.use-rails, &.case-studies {
+      flex-direction: row;
+      li {
+        flex-basis: 48%;
+        width: 48%;
+      } // li
+    }
+
+    &.case-studies {
+      justify-content: space-around;
+      margin-bottom: 2em;
+
+      li {
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 0;
+      }
+    }
+  } // ul
+
+} // .docs
+
+@media (min-width: 1024px) {
+  .docs {
+    &.heading { 
+      h1 {
+        left: 0;
+      } // h1
+    } // &.heading
+  } // .docs
+  .text {
+    ul {
+      &.learning-cards, &.use-rails, &.case-studies {
+        display: flex; 
+        flex-direction: row;
+      }
+
+      &.learning-cards, &.case-studies {
+        li {
+          flex-basis: 32%;
+          width: 32%;
+        }
+      }
+
+      &.use-rails {
+        li {
+          flex-basis: 19%;
+          width: 19%;
+        }
+      }
+    }
+  }
+} // @media
