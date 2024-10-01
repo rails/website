@@ -4,7 +4,7 @@ title: Making accessible web apps with Rails and Hotwire
 speaker: bruno-prieto.md # name of md speaker file
 time: 13:45 - 14:15
 location: Track 1
-running_order: 6
+running_order: 8
 ---
 
 Nowadays, there is a lot of talk about accessibility, but is your web app accessible? In this session, I will share my perspective as a blind developer on how to build accessible web apps with real-world examples, beyond saying it's important and the need to use ARIA.
