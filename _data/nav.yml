@@ -10,7 +10,7 @@ items:
     url: /community
 
   - title: News
-    url: /news # formerly /blog
+    url: /blog
 
   - title: Events
     url: /world
