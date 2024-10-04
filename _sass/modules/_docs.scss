@@ -1,21 +1,9 @@
 .docs {
   &.heading {
     h1 {
-      line-height: 0.8em;
-      position: relative;
-      left: -0.5em;
-
-      span {
-        display: block;
-
-        &.need {
-          text-indent: 1.25em;
-        }
-
-        &.build {
-          text-indent: 1em;
-        }
-      } // span
+      br {
+        display: none;
+      }
     } // h1
   } // &.heading
 
@@ -69,7 +57,49 @@
     } // &.learning-cards
     
     &.learning-cards {
-      li img, li h4 {
+      li {
+        img {
+          display: none;
+        }
+
+        h4 {
+          background-repeat: no-repeat;
+          background-position: right top;
+          background-size: contain;
+        }
+        
+        &#install h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-installation.svg");
+        }
+
+        &#tutorial h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-tutorial.svg");
+        }
+
+        &#guides h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-guides.svg");
+        }
+
+        &#api h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-api.svg");
+        }
+
+        &#forum h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-forum.svg");
+        }
+
+        &#contribute h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-contribute.svg");
+        }
+      }
+      
+      li h4 {
         margin-bottom: 0.5em;
         padding: 0;
       }
@@ -103,7 +133,9 @@
   .docs {
     &.heading { 
       h1 {
-        left: 0;
+        br {
+          display: block;
+        }
       } // h1
     } // &.heading
   } // .docs
@@ -120,6 +152,19 @@
           width: 32%;
         }
       }
+
+      &.learning-cards {
+        li {
+          img {
+            display: block;
+            margin-bottom: 0.5em;
+            padding: 0;
+          }
+          h4 {
+            background-image: none !important;
+          }
+        }
+      } // &.learning-cards
 
       &.use-rails {
         li {
