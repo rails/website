@@ -1,25 +1,25 @@
 items:
 
-  - title: Guides
-    url: https://guides.rubyonrails.org
-
-  - title: API
-    url: https://api.rubyonrails.org/
-
-  - title: Forum
-    url: https://discuss.rubyonrails.org
-
-  - title: Contribute
+  - title: Source
     url: https://github.com/rails/rails
 
-  - title: Foundation
-    url: /foundation
+  - title: Docs
+    url: /docs
 
-  - title: Team
+  - title: Community
     url: /community
 
-  - title: Blog
+  - title: News
     url: /blog
+
+  - title: Events
+    url: /world
 
   - title: Jobs
     url: https://jobs.rubyonrails.org
+
+  - title: Merch
+    url: https://merch.rubyonrails.org
+
+  - title: Foundation
+    url: /foundation
