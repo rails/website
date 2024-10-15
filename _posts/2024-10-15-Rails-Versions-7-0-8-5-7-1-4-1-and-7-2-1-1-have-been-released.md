@@ -4,7 +4,7 @@ title: 'Rails Versions 6.1.7.9, 7.0.8.5, 7.1.4.1, and 7.2.1.1 have been released
 categories: releases
 author: jhawthorn
 published: true
-date: 2024-10-15
+date: 2024-10-15 14:45:00 -07:00
 ---
 
 Hi everyone!
