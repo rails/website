@@ -119,7 +119,7 @@
     counter-reset: item;
     list-style: none;
 
-    li {
+    > li {
 
       counter-increment: item;
       padding-left: 40px;
