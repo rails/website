@@ -1,5 +1,6 @@
 .docs {
   &.heading {
+    padding-bottom: 0;
     h1 {
       br {
         display: none;
@@ -33,6 +34,22 @@
       }
     } // .common-content
   } // &.text
+
+  h2.thin {
+    @extend h4;
+    color: $color-red;
+    font-size: 3rem !important;
+    font-weight: 200;
+    font-variation-settings: var(--font-weight-200);
+    line-height: 1.4em;
+    display: block;
+    margin: 1em auto 0.5em;
+    text-align: center;
+  } // h2
+
+  .card {
+    max-height: 200px !important;
+  }
 
   // UL/LIs here are for cards, no bullets actually used. 
   ul {
