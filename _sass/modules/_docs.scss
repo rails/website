@@ -1,5 +1,6 @@
 .docs {
   &.heading {
+    padding-bottom: 0;
     h1 {
       br {
         display: none;
@@ -35,13 +36,14 @@
   } // &.text
 
   h2.thin {
+    @extend h4;
     color: $color-red;
-    font-size: 2rem !important;
+    font-size: 3rem !important;
     font-weight: 200;
     font-variation-settings: var(--font-weight-200);
     line-height: 1.4em;
     display: block;
-    margin: 2em auto 1em;
+    margin: 1em auto 0.5em;
     text-align: center;
   } // h2
 
