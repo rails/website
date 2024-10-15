@@ -68,5 +68,3 @@ We remain committed to providing a stable and secure framework for all our users
 For unsupported release series, it becomes the responsibility of the user to deal with bugs and security issues. While we may provide backports of fixes and publish them to git, no new versions will be released for unsupported series.
 
 We appreciate your continued support and understanding as we work to keep Ruby on Rails at the forefront of web development frameworks.
-
-Thank you for being part of the Rails community!
