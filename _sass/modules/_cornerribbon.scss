@@ -1,0 +1,77 @@
+/* The ribbons */
+
+$alpha: .8;
+
+.corner-ribbon{
+  background: rgba($color-red, $alpha);
+  color: #f0f0f0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  padding: 5px;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 200px;
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 7px;
+  left: -75px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left{
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right{
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Colors */
+
+.corner-ribbon.white {background: #f0f0f0; color: #555;}
+.corner-ribbon.black {background: #333;}
+.corner-ribbon.grey {background: rgba($color-grey-5, $alpha);}
+.corner-ribbon.blue{background: rgb(36, 106, 153);}
+.corner-ribbon.blue-fade {background: rgba(36, 106, 153,0.6);}
+.corner-ribbon.green{background: #2c7;}
+.corner-ribbon.turquoise{background: #1b9;}
+.corner-ribbon.purple{background: #95b;}
+.corner-ribbon.red {background: rgba($color-red, $alpha);}
+.corner-ribbon.orange{background: #e82;}
+.corner-ribbon.yellow{background: #ec0;}
