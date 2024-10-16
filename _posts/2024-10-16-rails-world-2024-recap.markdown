@@ -70,7 +70,7 @@ Financial Support Sponsor: **ODDS**, **Saeluon**
 
 **What's next**
 
-Save the date - **Rails World 2024** will take place in **Amsterdam** in early September! We’ll share a blogpost soon about the decision to return to Amsterdam, but until then, we hope you enjoy catching up with this year’s talks online!
+Save the date - **Rails World 2025** will take place in **Amsterdam** in early September! We’ll share a blogpost soon about the decision to return to Amsterdam, but until then, we hope you enjoy catching up with this year’s talks online!
 
 See you next year!
 Amanda
