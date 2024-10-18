@@ -8,7 +8,7 @@ published: true
 date: 2024-10-18
 ---
 
-Hey everyone, Happy Friday everyone! 
+Hey everyone, Happy Friday! 
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
 
