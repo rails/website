@@ -43,7 +43,7 @@ Cheers!
 
 ## SHA-256
 
-If you'd like to verify that your gems is the same as the ones we've uploaded,
+If you'd like to verify that your gems are the same as the ones we've uploaded,
 please use these SHA-256 hashes.
 
 ```
