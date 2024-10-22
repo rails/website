@@ -47,7 +47,7 @@ Solid Cable has been created by Nick Pezza from [Working Not Working](https://wo
 
 ### Solid Cache
 
-[Solid Cache](https://github.com/rails/solid_cache) replaces the need for either Redis or Memcached for storing HTML fragment caches in particular. In addition to getting rid of the accessory service dependency, it also always for a vastly larger and cheaper cache thanks to its use of disk storage rather than RAM storage. This means your cache can live longer and cover even more requests out the plank of the 95th or 99th percentile. Additionally, this cache can be encrypted _and_ managed by an explicit retention limit (like 30 or 60 days). Making it easier to live up to modern privacy policies and expectations.
+[Solid Cache](https://github.com/rails/solid_cache) replaces the need for either Redis or Memcached for storing HTML fragment caches in particular. In addition to getting rid of the accessory service dependency, it also allows for a vastly larger and cheaper cache thanks to its use of disk storage rather than RAM storage. This means your cache can live longer and cover even more requests out the plank of the 95th or 99th percentile. Additionally, this cache can be encrypted _and_ managed by an explicit retention limit (like 30 or 60 days). Making it easier to live up to modern privacy policies and expectations.
 
 Solid Cache has been in production at Basecamp for well over a year where it stores 10 terabytes of data, enables a full 60-day retention window, and cut the P95 render times in half after it's introduction.
 
