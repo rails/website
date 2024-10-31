@@ -11,7 +11,7 @@ Hi friends!
 
 I'm happy to announce that Rails 7.1.5 and 7.2.2 have been released. These are regular bugfix releases.
 
-This is likely to be the last set of bug fixes for the 7.1 series, which will continue receiving security patches [until October 1, 2025](https://rubyonrails.org/maintenance#security). 7.2 will continue to receive bug fix releases like this [until August 9, 2025](https://rubyonrails.org/maintenance#bug-fixes).
+This is likely to be the last set of bug fixes for the 7.1 series, which will continue receiving security patches [until October 1, 2025](https://rubyonrails.org/maintenance#security). 7.2 will continue to receive bug fix releases like this [until August 9, 2025](https://rubyonrails.org/maintenance#bug-fixes) followed by another year of security patches.
 
 For those excited for Rails 8.0, we also published a second release candidate yesterday: 8.0.0.rc2. Thanks to everyone who helped us with testing the beta and first release candidate ❤️.
 
