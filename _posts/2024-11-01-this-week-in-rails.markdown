@@ -29,7 +29,7 @@ method of Active Record.
 
 [Fix bundle install for vendored gems](https://github.com/rails/rails/pull/53466)  
 This change fixes an issue with the generated Dockerfile to copy the
-`vendor` folder to the image, otherwise vendored gems throw an error due to not
+`vendor` folder to the image, otherwise vendored gems threw an error due to not
 being on the filesystem.
 
 [Improve accessibility of Rails Guides](https://github.com/rails/rails/pull/51499)  
