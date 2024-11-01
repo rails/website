@@ -4,7 +4,7 @@ title: 'Rails Versions 7.1.5 and 7.2.2 have been released!'
 categories: releases
 author: jhawthorn
 published: true
-date: 2024-10-30 18:40:00 -07:00
+date: 2024-10-30 18:40:00
 ---
 
 Hi friends!
