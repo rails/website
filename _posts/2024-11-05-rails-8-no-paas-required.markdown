@@ -4,10 +4,10 @@ title: 'Rails 8.0: No PaaS Required'
 categories: releases
 author: dhh
 published: true
-date: 2024-11-05 5:30:00 -07:00
+date: 2024-11-07 14:00:00 -08:00
 ---
 
-Deploying modern web apps -- with all the provisions needed to be fast and secure while easily updateable -- has become so hard that many developers don't dare do it without a PaaS (platform-as-a-service). But that's ridiculous. Nobody should have to pay orders of magnitude more for basic computing just to make deployment friendly and usable. That's a job for open source, and Rails is ready to solve it. That was the premise of my [keynote here at Rails World](https://www.youtube.com/watch?v=-cEn_83zRFw), and it's the mission for Rails 8.
+Deploying modern web apps -- with all the provisions needed to be fast and secure while easily updateable -- has become so hard that many developers don't dare do it without a PaaS (platform-as-a-service). But that's ridiculous. Nobody should have to pay orders of magnitude more for basic computing just to make deployment friendly and usable. That's a job for open source, and Rails 8 is ready to solve it. So it's with great pleasure that we are now ready with the final version of Rails 8.0, after a successful beta release and several release candidates!
 
 Here are all the major new bits in box:
 
