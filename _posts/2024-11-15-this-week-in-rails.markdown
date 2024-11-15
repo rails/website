@@ -67,7 +67,7 @@ This commit only sets autocomplete="off" if another autocomplete value isn't pro
 Parallel tests with `:number_of_processors` uses cgroups-aware usable processor count which is now correctly available for use via `Concurrent.available_processor_count`.
 
 [Ensure normalized attribute queries are consistent for nil and normalized nil](https://github.com/rails/rails/pull/53580)  
-This change ensure that normalized attribute queries are consistent for `nil` and normalized `nil`. Ex:
+This change ensures that normalized attribute queries are consistent for `nil` and normalized `nil`. Ex:
 
 ```
 class Aircraft < ApplicationRecord
