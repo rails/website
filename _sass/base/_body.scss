@@ -31,6 +31,14 @@ body {
     width: 100%;
   }
 
+  video::cue {
+    @include calibre();
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+
 
 
   @media(min-width: 1024px) {
