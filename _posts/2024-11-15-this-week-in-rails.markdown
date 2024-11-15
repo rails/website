@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails World re-edited videos, Rails 8 demo, NotificationAssertions and more!"
+title: "Rails 8 demo, Rails World re-edited videos, NotificationAssertions and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
