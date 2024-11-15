@@ -8,7 +8,7 @@ published: true
 date: 2024-11-15
 ---
 
-Hey everyone, Happy Friday from [RubyConf](https://rubyconf.org/) 👋
+Hey everyone, Happy Friday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
 
