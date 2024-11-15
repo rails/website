@@ -16,8 +16,7 @@ Hey everyone, Happy Friday from [RubyConf](https://rubyconf.org/) 👋
 All Rails World videos have been re-edited and are up on [YouTube](https://www.youtube.com/watch?v=-cEn_83zRFw&list=PLHFP2OPUpCeb182aDN5cKZTuyjn3Tdbqx)! They also now have Japanese, Brazilian Portuguese, and Spanish subtitles thanks to [Happy Scribe](https://www.happyscribe.com/) (a transcription platform built on Rails).
 
 [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ)  
-In case you missed it, [Rails 8](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required) was released last week.
-A new demo from DHH, is now up [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ) showcasing its usage. 
+In case you missed it, [Rails 8](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required) was released last week. A new demo from DHH is now up [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ) showcasing its usage. 
 The video covers getting started with Rails 8 by building a basic blog, adding a WYSIWYG editor, putting it behind authentication, making it available as PWA, and deploying to production.
 In just 30 minutes!
 
@@ -82,7 +81,7 @@ end
 
 [Fix regression when calling sum with a grouped calculation](https://github.com/rails/rails/pull/53625)  
 This change fixes a regression with `sum` when performing a grouped calculation. 
-Ex, `User.group(:friendly).sum` no longer worked, which is now fixed. 
+For example `User.group(:friendly).sum` no longer worked, which is now fixed. 
 
 [Don't add bin/thrust if thruster is not in Gemfile](https://github.com/rails/rails/pull/53556)  
 Running `app:update` after upgrading to Rails 8.0.0 results in `bin/thrust` being added even though `thruster` is not in the Gemfile.
