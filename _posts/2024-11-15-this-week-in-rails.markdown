@@ -12,13 +12,13 @@ Hey everyone, Happy Friday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
 
-[Rails World re-edited videos!](https://www.youtube.com/watch?v=-cEn_83zRFw&list=PLHFP2OPUpCeb182aDN5cKZTuyjn3Tdbqx)  
-All Rails World videos have been re-edited and are up on [YouTube](https://www.youtube.com/watch?v=-cEn_83zRFw&list=PLHFP2OPUpCeb182aDN5cKZTuyjn3Tdbqx)! They also now have Japanese, Brazilian Portuguese, and Spanish subtitles thanks to [Happy Scribe](https://www.happyscribe.com/) (a transcription platform built on Rails).
-
 [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ)  
-In case you missed it, [Rails 8](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required) was released last week. A new demo from DHH is now up [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ) showcasing its usage. 
+In case you missed it, [Rails 8](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required) was released last week. A new demo from DHH is now up [Rails 8: The Demo](https://www.youtube.com/watch?v=X_Hw9P1iZfQ) showcasing its usage.
 The video covers getting started with Rails 8 by building a basic blog, adding a WYSIWYG editor, putting it behind authentication, making it available as PWA, and deploying to production.
 In just 30 minutes!
+
+[Rails World re-edited videos!](https://www.youtube.com/watch?v=-cEn_83zRFw&list=PLHFP2OPUpCeb182aDN5cKZTuyjn3Tdbqx)  
+All Rails World videos have been re-edited and are up on [YouTube](https://www.youtube.com/watch?v=-cEn_83zRFw&list=PLHFP2OPUpCeb182aDN5cKZTuyjn3Tdbqx)! They also now have Japanese, Brazilian Portuguese, and Spanish subtitles thanks to [Happy Scribe](https://www.happyscribe.com/) (a transcription platform built on Rails).
 
 [Add ActiveSupport::Testing::NotificationAssertions test helper module](https://github.com/rails/rails/pull/53065)  
 With this addition, we can now use various test helper methods for notification assertions:
