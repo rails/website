@@ -15,7 +15,7 @@ Hi, it's [zzak](https://github.com/zzak). Let's explore this week's changes in t
 This PR has been created because it's currently cumbersome to test that a certain code block/action triggers an `ActiveSupport::Notifications::Event` to be emitted. It would be ideal to have some helpers to `assert` against such event emission. Have heard such helpers could be helpful internal to Rails as well.  
 
 [Add "affected_rows" to "sql.active_record" event](https://github.com/rails/rails/pull/53277)  
-The [recently added][1] `row_count` value is very useful for identifying cases where a query would return a large result set as large results can end up using a lot of memory or even be blocked by databases like Vitess.
+The [recently added][50887] `row_count` value is very useful for identifying cases where a query would return a large result set as large results can end up using a lot of memory or even be blocked by databases like Vitess.  
 However, somewhere that `row_count` falls short is for queries that do not necessarily return their results back to the client. These queries that affect too many rows can lead to their own set of problems, such as overwhelming replication and causing replication lag.
 
 [Allow "hidden_field" tag to accept a custom autocomplete value](https://github.com/rails/rails/pull/53512)  
@@ -66,3 +66,5 @@ _We had [26 contributors](https://contributors.rubyonrails.org/contributors/in-t
 Until next time!
 
 _[Subscribe](https://world.hey.com/this.week.in.rails) to get these updates mailed to you._
+
+[50887]: https://github.com/rails/rails/pull/50887
