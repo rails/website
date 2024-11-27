@@ -21,7 +21,7 @@ You might be wondering why we’ve chosen to return to Amsterdam and the same ve
 
 The answer is simple: by working with a familiar space and trusted vendors, we can build on the foundation we created last year rather than starting from scratch with new logistics in a new city. This will allow us to focus energy into the program and content, and elevating the overall experience.
 
-But don’t worry - this decision doesn’t mean Amsterdam is our permanent home. The Rails Foundation board is unanimous in wanting Rails World to change cities every year. This year, however, it simply made logistical (and financial!) success to stick with what we know works.
+But don’t worry - this decision doesn’t mean Amsterdam is our permanent home. The Rails Foundation board is unanimous in wanting Rails World to change cities every year. This year, however, it simply made logistical (and financial!) sense to stick with what we know works.
 
 So if you missed Rails World 2023, this will likely be your last chance to join us in Amsterdam - at least for the foreseeable future! 
 
