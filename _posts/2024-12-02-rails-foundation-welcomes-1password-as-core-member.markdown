@@ -15,7 +15,7 @@ Expanding Core membership means a stronger foundation with more long-term growth
 
 With that news, we are happy to announce that our first new Core member is none other than **<a href="https://1password.com/">1Password</a>**.
 
-<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-1passwoprd.svg" style="width: 50%"></p>
+<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-1password.svg" style="width: 50%"></p>
 
 1Password has a strong connection with Rails, leveraging the framework to build Kolide, its Device Trust product <a href="https://www.kolide.com/blog/1password-acquires-kolide">acquired earlier this year</a> and now integrated into <a href="https://1password.com/extended-access-management">1Password’s Extended Access Management (XAM) platform</a>. Kolide ensures that devices meet strict security criteria before accessing critical applications. This Rails-powered application handles thousands of web requests per second, authorizes millions of authentication attempts, processes billions of asynchronous jobs each month, and consistently delivers four nines of annual uptime for customers such as Databricks, Discord, Anduril, Robinhood, Hugging Face, Asana, and many others.
 
