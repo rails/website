@@ -1,23 +1,15 @@
 ---
 layout: post
-title: 'Rails 8.0 Beta 1: No PaaS Required'
+title: 'Rails 8.0: No PaaS Required'
 categories: releases
 author: dhh
 published: true
-date: 2024-09-27 5:30:00 -07:00
+date: 2024-11-07 14:00:00 -08:00
 ---
 
-Deploying modern web apps -- with all the provisions needed to be fast and secure while easily updateable -- has become so hard that many developers don't dare do it without a PaaS (platform-as-a-service). But that's ridiculous. Nobody should have to pay orders of magnitude more for basic computing just to make deployment friendly and usable. That's a job for open source, and Rails is ready to solve it.
+Deploying modern web apps -- with all the provisions needed to be fast and secure while easily updateable -- has become so hard that many developers don't dare do it without a PaaS (platform-as-a-service). But that's ridiculous. Nobody should have to pay orders of magnitude more for basic computing just to make deployment friendly and usable. That's a job for open source, and Rails 8 is ready to solve it. So it's with great pleasure that we are now ready with the final version of Rails 8.0, after a successful beta release and several release candidates!
 
-That was the premise of my [keynote here at Rails World](https://www.youtube.com/watch?v=-cEn_83zRFw), and it's the mission for Rails 8. So we are thrilled to release the first beta release of this new version in celebration with Rails World here in Toronto.
-
-Despite being a beta release, the vast majority of everything that's included has already been thoroughly battle-tested. Rails is uniquely blessed to have huge applications like [Shopify](https://shopify.com) and [GitHub](https://github.com), along with plenty of other apps of all sizes, run right on the bleeding edge of the framework to ensure that issues are caught early.
-
-Furthermore, all the new deployment tools, as well as Solid Cache and Solid Queue, have been driving [our cloud exit at 37signals](https://basecamp.com/cloud-exit) for over 18 months in applications like Basecamp and HEY.
-
-Still, there's always going to be some issues with new stuff, and we'd be grateful if you'd help us find it by upgrading your applications to Rails 8 ahead of the final release. Let's make this release as SOLID as can be!
-
-Here're all the major new bits in box:
+Here are all the major new bits in box:
 
 ## Enter Kamal 2 + Thruster
 
