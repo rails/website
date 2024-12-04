@@ -1,6 +1,7 @@
 ---
 title: The Rails Foundation
 description:
+category: foundation
 permalink: /foundation
 redirect_from:
   - /foundation/
@@ -30,6 +31,21 @@ redirect_from:
         <p>The foundation will commission freelancers and firms to work on better written documentation, more compelling screencasts, exciting events, and much more. We've only just gotten started, so more detailed plans are still to follow.</p>
 
         <p>We will also be administering <a href="/trademarks">the Rails trademarks</a> through an exclusive license from the trademark owner.</p>
+        
+        <hr class="divider" />
+
+        <h3>Our Posts.</h3>
+        <div class="container">
+          
+            {% for post in site.categories[page.category] %}
+            <h6 style="font-size: 21px; color: #5A5153; font-weight: 400">
+              {{ post.date | date: '%b %-d, %Y' }} - 
+              <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
+            </h6>
+            {% endfor %}
+          
+      
+        </div>
 
         <hr class="divider" />
 
@@ -174,6 +190,25 @@ redirect_from:
 
         <hr class="divider" />
         <p><a href="/privacy">Rails Foundation Privacy Policy</a>
+      </div>
+      <div class="heading common-padding--bottom common-padding--top">
+        <div class="container">
+          <div class="heading__body">
+            <div class="heading__headline common-headline">
+              <h2>You can make it better.</h2>
+      
+              <h4>Not only is Rails free to use, you can also help make it better. <a href="http://contributors.rubyonrails.org">More than 6,000 people</a> have already contributed.</h4>
+            </div>
+      
+            <div class="heading__button">
+              <a href="https://discord.gg/d8N68BCw49" class="common-button common-button--text common-button--icon-arrow"><span>Discuss your contributions with the team</span></a>
+            </div>
+      
+            <div class="heading__button">
+              <a href="https://github.com/rails/rails" class="common-button common-button--size-large common-button--color-red"><span>Contribute on GitHub</span></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
