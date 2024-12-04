@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails Luminary nominations open, new maintenance policy and more!"
-categories: news
+categories: news, foundation
 author: Greg
 og_image: assets/images/this-week-in-rails.png
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Special Rails World session: Matz & DHH Fireside Chat"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2024-08-07
