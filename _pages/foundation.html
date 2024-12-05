@@ -31,19 +31,20 @@ redirect_from:
         <p>The foundation will commission freelancers and firms to work on better written documentation, more compelling screencasts, exciting events, and much more. We've only just gotten started, so more detailed plans are still to follow.</p>
 
         <p>We will also be administering <a href="/trademarks">the Rails trademarks</a> through an exclusive license from the trademark owner.</p>
+        <p>Here are some of our recent announcements:</p>
         
-        <hr class="divider" />
-
-        <h3>Our Posts.</h3>
+        
         <div class="container">
           
           {% assign sorted_posts = site.categories[page.category] | sort: 'date' | reverse %}
           {% assign limited_posts = sorted_posts | slice: 0, 8 %}
           {% for post in limited_posts %}
-            <h6 style="font-size: 21px; color: #5A5153; font-weight: 400">
-              {{ post.date | date: '%b %-d, %Y' }} - 
+            <p style="font-size: 18px; color: #5A5153; font-weight: 400">
+              <span>
+                {{ post.date | date: '%b %-d, %Y' }} -
+              </span>
               <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
-            </h6>
+            </p>
           {% endfor %}
           
       
