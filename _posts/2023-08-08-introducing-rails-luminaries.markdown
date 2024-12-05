@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing the Rails Luminary Awards: Nominations Now Open"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-08-08
