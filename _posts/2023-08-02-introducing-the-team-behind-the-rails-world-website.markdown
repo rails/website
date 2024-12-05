@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing the team behind the Rails World website"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-08-02
