@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meet the Rails World Speakers"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-07-24
