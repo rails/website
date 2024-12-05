@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Calling recent Le Wagon grads: Be the face of Rails World as an emcee!"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-08-28
