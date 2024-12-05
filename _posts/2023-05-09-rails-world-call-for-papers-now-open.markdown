@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World Call for Papers now open"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-05-09
