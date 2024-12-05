@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2024 videos re-edited and localized in 3 languages"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2024-11-12

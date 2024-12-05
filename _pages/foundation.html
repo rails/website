@@ -1,6 +1,7 @@
 ---
 title: The Rails Foundation
 description:
+category: foundation
 permalink: /foundation
 redirect_from:
   - /foundation/
@@ -30,6 +31,22 @@ redirect_from:
         <p>The foundation will commission freelancers and firms to work on better written documentation, more compelling screencasts, exciting events, and much more. We've only just gotten started, so more detailed plans are still to follow.</p>
 
         <p>We will also be administering <a href="/trademarks">the Rails trademarks</a> through an exclusive license from the trademark owner.</p>
+        <p>Here are some of our recent announcements:</p>
+        
+        <ul style="padding-left: 0;">
+          {% assign sorted_posts = site.categories[page.category] | sort: 'date' | reverse %}
+          {% assign limited_posts = sorted_posts | slice: 0, 8 %}
+          {% for post in limited_posts %}
+            <li style="display: flex; gap: 2rem; margin-top: 1rem;">
+              <div style="white-space: nowrap; flex-shrink: 0; width: 6rem;">
+                {{ post.date | date: '%b %-d, %Y' }}
+              </div>
+              <div>
+                <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
 
         <hr class="divider" />
 
@@ -130,6 +147,12 @@ redirect_from:
         </div>
 
         <p>The foundation is always open to new Contributing members. Please apply for membership by writing to <a href="mailto:foundation@rubyonrails.org">foundation@rubyonrails.org</a> for more details. If your company has been benefiting from Rails over the years, but not sure how it might give back to the ecosystem, now there's a clear and obvious choice.</p>
+        
+        <div class="container" style="display: flex; justify-content: center; padding: 20px">
+          <a href="https://public.3.basecamp.com/p/7ymKZrwbdPoZhwCzhH2SZkLH" class="common-button common-button--size-medium common-button--color-red" style="color: #FFF"><span>Download the membership deck</span></a>
+        </div>
+
+
         <hr class="divider" />
 
         <h3>Our Board.</h3>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the 2024 Rails Luminary Winners: Akira Matsuda & Yukihiro Matsumoto"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-09-27
