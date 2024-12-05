@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Attention junior devs: Want to build the Rails World website?"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-04-13
