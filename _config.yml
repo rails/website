@@ -8,7 +8,7 @@ world24_title: Rails World - 2024
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  # - jekyll-redirect-from
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
