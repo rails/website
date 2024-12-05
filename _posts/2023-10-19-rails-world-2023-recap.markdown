@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2023: A Recap of Two Days of Rails"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-10-19
