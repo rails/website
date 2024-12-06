@@ -8,7 +8,7 @@ world24_title: Rails World - 2024
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
+  # - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
@@ -19,6 +19,9 @@ exclude:
   - bin
 
 collections:
+  case_studies:
+    output: true
+    permalink: "/docs/case-studies/:path"
   pages:
     output: true
     permalink: "/:name"
@@ -39,6 +42,11 @@ defaults:
   - scope:
       path: ""
       type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: docs/case-studies"
+      type: "case-studies"
     values:
       layout: "default"
   - scope:
