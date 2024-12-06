@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Rails Foundation welcomes Cedarcode as a Contributing member"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-04-03

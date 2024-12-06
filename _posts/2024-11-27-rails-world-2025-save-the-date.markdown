@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2025: Save the date - September 4 & 5, Amsterdam"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-11-27

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nominations open for the 2024 Rails Luminary Awards"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2024-08-02

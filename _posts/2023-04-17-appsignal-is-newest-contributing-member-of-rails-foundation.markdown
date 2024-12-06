@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AppSignal is newest Contributing member of Rails Foundation"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-04-17

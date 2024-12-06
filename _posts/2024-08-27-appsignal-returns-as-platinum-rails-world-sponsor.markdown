@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AppSignal returns as a Platinum Sponsor at this year’s Rails World"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-08-27

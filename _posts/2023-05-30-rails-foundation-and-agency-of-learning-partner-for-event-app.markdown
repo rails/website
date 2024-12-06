@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails Foundation and Agency of Learning partner to develop Rails World app"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-05-30

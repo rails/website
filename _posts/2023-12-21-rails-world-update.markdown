@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2024 update: venue, sponsorships, CFP, and cost"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2023-12-21

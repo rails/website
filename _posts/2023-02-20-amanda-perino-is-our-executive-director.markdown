@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Amanda Perino is our new executive director for The Rails Foundation"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-02-20

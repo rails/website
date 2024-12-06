@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Host your podcast at Rails World with Buzzsprout"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2023-08-01

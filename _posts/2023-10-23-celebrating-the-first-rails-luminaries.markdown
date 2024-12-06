@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Celebrating the first Rails Luminaries: Chris Oliver & Tobias Lütke"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2023-10-23

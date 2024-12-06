@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Rails Foundation kicks off with one million dollars"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2022-11-14

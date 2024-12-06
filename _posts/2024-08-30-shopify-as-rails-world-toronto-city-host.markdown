@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shopify is the official Toronto City Host for Rails World 2024"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-08-30

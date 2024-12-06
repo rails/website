@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World is coming"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-04-06

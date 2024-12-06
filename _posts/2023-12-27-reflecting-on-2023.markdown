@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reflecting on 2023: Rails Foundation's Inaugural Year"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2023-12-27

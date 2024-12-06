@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitHub joins Rails World 2024 as Platinum Sponsor and Track 1 Host"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-09-05
