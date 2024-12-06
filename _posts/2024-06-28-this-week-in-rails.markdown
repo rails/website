@@ -37,7 +37,7 @@ When using Active Support's `to_time` method on a TimeWithZone object, you can n
 
 
 [Improve performance of Active Storage Mirror Service](https://github.com/rails/rails/pull/51740)  
-This started as a `FIXME` in the original Active Storage implemenation for Mirror Service, but now methods being called across all services are done using threads. This should improve the performance for uploads, especially if there are multiple mirrors, however you should be aware that the underlying service must be thread-safe.
+This started as a `FIXME` in the original Active Storage implementation for Mirror Service, but now methods being called across all services are done using threads. This should improve the performance for uploads, especially if there are multiple mirrors, however you should be aware that the underlying service must be thread-safe.
 
 
 [Add condensed #inspect for Pool, Adapter, Config](https://github.com/rails/rails/pull/50405)  
