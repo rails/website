@@ -1,0 +1,374 @@
+.docs {
+  &.heading {
+    padding-bottom: 0;
+    h1 {
+      br {
+        display: none;
+      }
+    } // h1
+  } // &.heading
+
+  &.casestudy.heading {
+    padding-bottom: 60px;
+  }
+
+  &.text {
+    .container.wide {
+      max-width: 1100px;
+    }
+    .common-content {
+      h2.thin {
+        font-weight: 200;
+      } // h2
+
+      h2.how {
+        font-size: 3em;
+        text-align: center;
+      }
+
+      h4 {
+        font-size: 21px;
+        font-weight: bold;
+      }
+
+      p.how-leadin {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        text-align: center;
+      }
+    } // .common-content
+  } // &.text
+
+  h2.thin {
+    @extend h4;
+    color: $color-red;
+    font-size: 3rem !important;
+    font-weight: 200;
+    font-variation-settings: var(--font-weight-200);
+    line-height: 1.4em;
+    display: block;
+    margin: 1em auto 0.5em;
+    text-align: center;
+  } // h2
+
+  .card {
+    max-height: 200px !important;
+  }
+
+  // UL/LIs here are for cards, no bullets actually used. 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1em;
+    } // li
+
+    &.learning-cards, &.use-rails, &.case-studies {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li {
+        width: 100%;
+        margin-bottom: 0;
+      } // li
+    } // &.learning-cards
+    
+    &.learning-cards {
+      li {
+        img {
+          display: none;
+        }
+
+        h4 {
+          background-repeat: no-repeat;
+          background-position: right top;
+          background-size: contain;
+        }
+        
+        &#install h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-installation.svg");
+        }
+
+        &#tutorial h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-tutorial.svg");
+        }
+
+        &#guides h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-guides.svg");
+        }
+
+        &#api h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-api.svg");
+        }
+
+        &#forum h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-forum.svg");
+        }
+
+        &#contribute h4 {
+          background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%), 
+                    url("/assets/images/docs-banner-contribute.svg");
+        }
+      }
+      
+      li h4 {
+        margin-bottom: 0.5em;
+        padding: 0;
+      }
+    } // &.learning-cards
+
+    &.use-rails, &.case-studies {
+      flex-direction: row;
+      li {
+        flex-basis: 48%;
+        width: 48%;
+      } // li
+    }
+
+    &.case-studies {
+      justify-content: space-around;
+      margin-bottom: 2em;
+
+      li {
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  } // ul
+
+  &.casestudy {
+    overflow: hidden;
+
+    .container {
+      max-width: 1240px;
+    } // .container
+
+    blockquote {
+      font-size: 24px;
+      line-height: 30px;
+
+      &.inline-quote {
+        border: none;
+        font-style: italic;
+        padding: 20px;
+        text-align: center;
+      }
+
+      b {
+        font-weight: bold;
+      } // b
+      
+      cite {
+        display: block;
+        font-size: 18px;
+
+      } // cite
+    } // blockquote
+
+    .casestudy__floater {
+      background: $color-white;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+      display: flex;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    } // .casestudy__floater
+
+    .casestudy__image {
+      overflow: hidden;
+      height: 320px;
+
+      img {
+        object-fit: cover;
+      } // img
+    } // .casestudy__image
+
+    .casestudy__quote {
+      flex-direction: column; 
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+
+      img {
+        align-self: top;
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 1em;
+        max-width: 160px;
+      } // img
+    } // /casestudy__quote
+
+    &.keytakeaways {
+      .text__body {
+        background-color: #F1F3F5;
+        border: 1px solid #cc0000;
+        border-radius: 12px;
+        padding: 40px;
+        p {
+          font-size: 24px;
+        } // p
+      } // .text__body
+    } // &.keytakeaways
+
+    &.cta {
+      text-align: center;
+
+      p {
+        font-size: 26px;
+        line-height: 29px;
+        margin: 0 auto 1em;
+        max-width: 550px;
+
+        &.notes {
+          font-style: italic;
+          font-size: 18px;
+          max-width: 100%;
+        } // &.notes
+      } // p
+
+      .button {
+        background-color: #c00;
+        border-radius: 24px;
+        color: white;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 1em;
+        padding: 5px 20px;
+        text-decoration: none;
+      } // .button
+    } // &.cta
+  } // &.casestudy
+} // .docs
+
+@media (min-width: 1024px) {
+  .docs {
+    &.heading { 
+      h1 {
+        br {
+          display: block;
+        }
+      } // h1
+    } // &.heading
+
+    &.casestudy {
+      overflow: visible; 
+      
+      &.text {
+        max-width: 840px;
+        margin: 0 auto;
+      }
+
+      blockquote {
+
+        &.inline-quote {
+          
+          &.float-left {
+            float: left;
+            margin: 0 1em 0 -150px;
+            width: 300px;
+          } // &.float-left
+
+          &.float-right {
+            float: right;
+            margin: 0 -150px 0 1em;
+            width: 300px;
+          } // &.float-right
+        } // &.inline-quote
+
+        cite {
+          font-size: 24px;
+          text-align: right;
+
+          br { display: none;}
+        } // cite
+      } // blockquote
+
+      .casestudy__quote {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+  
+        img {
+          margin-right: 1em;
+        }
+  
+        blockquote {
+          flex-basis: auto;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: left;
+        } // blockquote
+      } // .casestudy__quote
+
+      &.keytakeaways {
+        .text__body {
+          p {
+            font-size: 26px;
+          } // p
+        } // .text__body
+      } // &.keytakeaways
+
+      &.cta {
+        .button {
+          padding: 5px 100px;
+        } // .button
+      } // &.cta
+    } // .casestudy
+  } // .docs
+
+  .text {
+    ul {
+      &.learning-cards, &.use-rails, &.case-studies {
+        display: flex; 
+        flex-direction: row;
+      } // &.learning-cards, &.use-rails, &.case-studies
+
+      &.learning-cards, &.case-studies {
+        li {
+          flex-basis: 32%;
+          width: 32%;
+        } // li
+      } // &.learning-cards, &.case-studies
+
+      &.learning-cards {
+        li {
+          img {
+            display: block;
+            margin-bottom: 0.5em;
+            padding: 0;
+          } // img
+
+          h4 {
+            background-image: none !important;
+          } // h4
+        } // li
+      } // &.learning-cards
+
+      &.use-rails {
+        li {
+          flex-basis: 19%;
+          width: 19%;
+        } // li
+      } // &.use-rails
+    } // ul
+  } // .text
+} // @media

@@ -1,0 +1,236 @@
+---
+layout: default
+title: Doximity Case Study
+description:
+permalink: /docs/case-studies/doximity
+redirect_from:
+  - /docs/case-studies/doximity/
+---
+
+<div class="docs casestudy heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>
+          Fast, Flexible, and Scalable: How Rails Powers Doximity's Healthcare Platform.
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p><b>Doximity set out to help doctors save time and focus on what matters most: their patients.</b> Over the past 15 years, they've built tools for communication, workflow, and telehealth that are now trusted by over two million healthcare professionals, including 80% of U.S. doctors. These tools make a real difference in the lives of both physicians and patients.</p>
+
+        <p>But like many startups, Doximity began with a small team and a big challenge: how to build something fast enough to find its footing in the market.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__quote">
+      <img src="/assets/images/case-doximity-bruno-miranda.png" alt="Bruno Miranda, Doximity">
+      <blockquote>
+        &ldquo;We set out to build the largest professional network of healthcare professionals in the United States. We weren't exactly sure at that time which product of features would resonate the most with physicians, but we knew we needed to build for them, in hopes we could improve the quality of patient care for all.&rdquo;
+        <cite> &mdash; <b>Bruno Miranda</b>, <br>SVP Engineering</cite>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>They chose to build on Rails because its speed, flexibility, and developer-friendly features were useful for Doximity's small team. The expressive syntax let them write clean, maintainable code quickly, while Rails' built-in conventions and rich ecosystem helped them launch features, gather feedback, and iterate rapidly.</p>
+
+        <h2>Rapid Prototyping</h2>
+        
+        <p>In Doximity's early days, Rails' focus on productivity allowed their developers to work quickly and efficiently. Rails allowed the Doximity team to prototype new features, test ideas, and respond to user feedback. Even with a small team, Rails' built-in testing tools made it easier to ensure code quality without the need for a dedicated QA team.</p>
+        
+        <p>The Doximity team also leans into Rails' "convention over configuration" philosophy, and Rails' familiar Model-View-Controller (MVC) structure makes onboarding new engineers as smooth as possible. With over 150 developers across a wide array of teams pushing code to production 80+ times a day, this consistency ensures systems stay easy to understand and scale. Developers can jump in, make an impact, and keep moving forward.</p>
+        
+        <p>The ability to experiment and iterate quickly paid off. What started as an initial 2010 Rails prototype app grew into the leading digital platform for U.S. medical professionals.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img src="/assets/images/case-doximity-hero-privacy.webp" alt="A man looking at the Doximity app on a cell phone">
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Scaling Fast Under Pressure</h2>
+        
+        <p>When the pandemic hit in early 2020, doctors and healthcare professionals were forced to shift to remote care solutions.</p>
+        
+        <p>One of Doximity's standout patient-facing tools is Doximity Dialer, which lets doctors call or text patients from their own devices without exposing personal phone numbers. Patients receive an SMS link from their doctor and, upon clicking, are instantly connected - no native app installation required.</p>
+
+        <blockquote class="inline-quote float-right">
+          “Between April 2020 and March 2021, Doximity supported over <b>63 million</b> telehealth visits.”
+        </blockquote>
+        
+        <p>Dialer's use skyrocketed, but overnight, doctors needed an additional secure telemedicine video application that would allow doctors and patients to meet virtually, all while Dialer handled millions of clinicians' calls.</p>
+
+        <p>Scaling an application to handle a sudden surge in traffic is a challenging
+          task, especially under tight deadlines, but Doximity's engineering team
+          faced the urgent task of scaling Dialer and adding this new feature *in just 
+         a few weeks*.</p>
+
+        <p>Doximity grew the Dialer-focused team from 3 engineers to 16, all working in parallel on 
+          scaling their Telehealth product while maintaining a great user experience. Because of 
+          the familiarity of MVC and Doximity adherence to Rails' “convention over configuration” philosophy, everyone dove right in, easily finding their way around the familiar architecture, which was essential given the rapid scaling they faced.</p>
+
+          <blockquote class="inline-quote float-left">
+            "During peak times, <b>every 10 minutes of downtime</b> could mean an <b>entire month of missed patient care</b> for a single doctor."
+  
+            <cite>&mdash; <b>Jordan Hiltunen</b>, eEad Software Engineer</cite>
+          </blockquote>
+
+        <p>Tools like Rails' Active Job helped handle background tasks, keeping the
+          system smooth even at peak traffic under heavy load, and Rails' built-in 
+          caching tools and modular architecture helped Doximity optimize 
+          performance and integrate new features without reinventing the wheel or 
+          disrupting existing services. This approach let the team stay focused on 
+          solving real problems for doctors rather than getting bogged down by 
+          infrastructure.</p>
+
+        <p>Within weeks, they launched a HIPAA-compliant telehealth video 
+          solution, helping doctors deliver care remotely during a critical time.</p>
+
+        <p>During the pandemic, Doximity continued iterating and 
+          experimenting with features without adopting complex new patterns 
+          despite databases growing to hundreds of millions of rows. Tools like 
+          Large Hadron Migrator (LHM) and Departure enabled zero-downtime migrations on massive tables, while background jobs handled data processing efficiently.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img src="/assets/images/case-doximity-hero-doximity-stickies.webp" alt="Doximity engineers and designers working with stickies on wall">
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Scaling Fast Under Pressure</h2>
+        
+        <p>One of the factors contributing to Doximity's success has been Ruby's widespread adoption in the developer community. Most third-party vendors provide SDKs for Ruby, making integrations easy and fast. Instead of spending time coding low-level HTTP requests to vendor APIs, Doximity's team could focus on building meaningful features for their users.</p>
+
+        <p>Debugging also became smoother thanks to Ruby's dynamic nature and tools like the Rails console. The ability to test code in staging or even production environments made troubleshooting third-party integrations much more manageable - a significant advantage when vendor documentation was lacking.</p>
+          
+        <p>As Doximity's systems evolved, Rails' polymorphism features helped the team adapt their data models without large-scale rewrites. For instance, the Doximity Dialer initially supported only legacy PSTN calls. To improve resiliency, the team introduced support for VoIP calls by creating distinct models (PSTNCall and VOIPCall) that dynamically routed traffic based on network conditions and outages. This incremental evolution, enabled by Rails' robust ORM ActiveRecord, avoided disruption while supporting growing complexity.</p>
+          
+        <p>The combination of these Rails tools and features allowed Doximity to scale rapidly while remaining agile and flexible. From a simple video client prototype to becoming a leading telehealth provider, Rails proved its reliability in mission-critical applications and supported Doximity's successful response to an unprecedented global health crisis. Since then, Dialer has earned the Best in KLAS Award three years in a row for excellence in telehealth communication.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img src="/assets/images/case-doximity-hero-2020-compensation-specialty-report-background.webp" alt="Three healthcare workers walking down the hallway looking at a tablet device while talking">
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Sticking with What Works</h2>
+        
+        <p>Fifteen years later, Doximity's original Rails app is still going strong. Updated from Rails 2.3.5, their monolith now runs on Rails 7. After over 30,000 commits from hundreds of contributors, it still powers Doximity.com for over 80% of all doctors, 90% of medical students, and 60% of nurse practitioners and physician assistants. Moreover, as of March 31, 2024, 17 of the top 20 hospitals use Doximity's enterprise IT platforms.</p>
+
+      <p>The decision to stick with Rails for the long haul has allowed the team to avoid costly rewrites and focus on shipping new features quickly.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__quote">
+      <img src="/assets/images/case-doximity-jordan.png" alt="Bruno Miranda, Doximity">
+      <blockquote>
+        &ldquo;Instead of chasing the latest shiny tools, Doximity has kept a laser focus on shipping new features and adapting to doctors' needs, thanks to the rock-solid foundation Rails provides. It gives us the stability to do that without getting bogged down in unnecessary churn.&rdquo;
+        <cite> &mdash; <b>Bruno Miranda</b>, <br>SVP Engineering</cite>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>Rails continues to allow Doximity's developers to experiment, build fast, and maintain high-quality code. And their engineers are not just using Rails - they're giving back. Doximity has open-sourced over 20 tools, like Funneler, a gem for managing user workflows, and Rake UI, a Rails engine for running rake tasks via a user-friendly interface.</p>
+
+        <p>Rails' combination of productivity, flexibility, and scalability has helped Doximity grow into the largest digital platform for U.S. medical professionals. For developers, their journey also highlights a simple truth: with the right foundation, you can scale fast, iterate quickly, and deliver meaningful results - all without unnecessary complexity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img src="/assets/images/case-doximity-hero-security.webp" alt="a close up view of the Doximity app showing a lock and talking about secure HIPPA video calls">
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy keytakeaways text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Key Takeaways</h2>
+
+        <p><b>Rails accelerates development:</b> Doximity's team rapidly iterates on new products and features, helping doctors save time and focus on patient care.</p>
+
+        <p><b>Rails ensures long-term stability:</b> By maintaining and evolving their 15-year-old monolith, Doximity avoids rewrites.</p>
+
+        <p><b>Rails scales with success:</b> As Doximity grows, Rails helps optimize the performance of 45+ applications and handle increasing traffic with ease.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy cta text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>
+          Experience the power Rails can bring to your engineering efforts firsthand. Download Rails and see how you can take your idea from Startup to IPO.
+        </p>
+
+        <a class="button" href="https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails" aria-label="Download Rails" target="_blank">Download Rails</a>
+
+        <p class="notes">This case study was written in collaboration with members of Doximity's engineering leadership.</p>
+      </div>
+    </div>
+  </div>
+</div>
