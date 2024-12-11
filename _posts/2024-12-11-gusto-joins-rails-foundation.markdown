@@ -4,7 +4,7 @@ title: "Gusto joins the Rails Foundation as a Contributing member"
 categories: news, foundation
 author: Amanda Perino
 published: true
-date: 2024-12-12
+date: 2024-12-11
 ---
 
 In a week full of great news, we have more: <a href="https://gusto.com/">Gusto</a>, a leading provider of HR, payroll, and benefits solutions, and a big supporter of the Rails community, has joined the Rails Foundation as its newest Contributing member! 
