@@ -7,7 +7,7 @@ published: true
 date: 2024-12-11
 ---
 
-In a week full of great news, we have more: <a href="https://gusto.com/">Gusto</a>, a leading provider of HR, payroll, and benefits solutions, and a big supporter of the Rails community, has joined the Rails Foundation as its newest Contributing member! 
+We have a lot of good news coming this week, and this is just the start: <a href="https://gusto.com/">Gusto</a>, a leading provider of HR, payroll, and benefits solutions, and a big supporter of the Rails community, has joined the Rails Foundation as its newest Contributing member! 
 
 <p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-gusto.svg" style="width: 50%"></p>
 
