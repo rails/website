@@ -211,6 +211,10 @@
         margin-bottom: 1em;
         max-width: 160px;
       } // img
+        
+      &.no_image blockquote {
+        text-align: center;
+      }
     } // /casestudy__quote
 
     &.keytakeaways {
