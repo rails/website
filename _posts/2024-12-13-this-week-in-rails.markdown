@@ -17,10 +17,10 @@ Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released!
 These are security patches addressing one new issue where using the `content_security_policy` helper with untrusted user input could lead to a bypass of the browser Content Security Policy.
 
 [All new Getting Started Guide for Rails 8!](https://github.com/rails/rails/pull/53846/files)  
-This Pull Request adds a new Rails 8 Getting Started guide. 
+This Pull Request adds a new [Rails 8 Getting Started guide.](https://edgeguides.rubyonrails.org/getting_started.html) 
 It showcases Rails and provides many introductory points to learn more about all the various features Rails includes like caching, I18n, deploying with Kamal, etc.
 
-This PR also includes an Install Ruby on Rails guide that walks through the basics of installing Ruby with a version manager, arguably one of the biggest barriers to newcomers.
+It also includes an [Install Ruby on Rails guide](https://edgeguides.rubyonrails.org/install_ruby_on_rails.html) that walks through the basics of installing Ruby with a version manager, arguably one of the biggest barriers to newcomers.
 
 [Rails 8 Authentication generator guide](https://github.com/rails/rails/pull/53802)  
 The security guide has now been updated to include a "How to use the built-in authentication generator" section, to over over its details.
