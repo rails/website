@@ -23,23 +23,17 @@ It showcases Rails and provides many introductory points to learn more about all
 It also includes an [Install Ruby on Rails guide](https://edgeguides.rubyonrails.org/install_ruby_on_rails.html) that walks through the basics of installing Ruby with a version manager, arguably one of the biggest barriers to newcomers.
 
 [Rails 8 Authentication generator guide](https://github.com/rails/rails/pull/53802)  
-The security guide has now been updated to include a "How to use the built-in authentication generator" section, to over over its details.
+The security guide has now been updated to include a "How to use the built-in authentication generator" section, to go over its details.
 
 [Accept a block for `ActiveJob::ConfiguredJob#perform_later`](https://github.com/rails/rails/pull/53859)  
-This pull request added support for accepting a block for `ActiveJob::ConfiguredJob#perform_later`. 
-This was inconsistent with a regular `ActiveJob::Base#perform_later`.
-
-[Don't wrap redis in `ConnectionPool` if already given one for `ActiveSupport::Cache::RedisCacheStore`](https://github.com/rails/rails/pull/53845)  
-This change adds an improvements to avoid wrapping redis in a `ConnectionPool` when using `ActiveSupport::Cache::RedisCacheStore` if the `:redis` option is already a `ConnectionPool`.
-
-[Handle setting of nested through records for new records](https://github.com/rails/rails/pull/53869)  
-Updates the logic for setting the through record(s) for new records to account for nested through records by iterating over the reflection chain instead of simply grabbing the through target off of the first middle target.
+This pull request adds support for accepting a block for `ActiveJob::ConfiguredJob#perform_later`. 
+This was perviously inconsistent with a regular `ActiveJob::Base#perform_later`.
 
 [Fix `if_exists`/`if_not_exists` for foreign keys addition and removal](https://github.com/rails/rails/pull/53863)  
 This PR addresses a few improvements with foreign keys additions/removals and `if_exists/if_not_exists`:
-- If there is a foreign key on a custom column and `add_foreign_key` on a default column with `if_not_exists` is used, an error is raised.
-- When adding a foreign key with `if_not_exists`, `:primary_key` is not considered. 
-- When removing a foreign key with `if_exists`, custom column is not considered. So if there is a standard foreign key (on a default column) and we use `remove_foreign_key ..., column: :my_custom_column, if_exists: true`, `foreign_key_exists?` just returns true because there is any foreign key and then raises afterwards.
+- If there is a foreign key on a custom column and `add_foreign_key` on a default column with `if_not_exists` is used, an error was raised.
+- When adding a foreign key with `if_not_exists`, `:primary_key` was not considered. 
+- When removing a foreign key with `if_exists`, custom column was not being considered.
 
 [Changing column nullability does not change default function](https://github.com/rails/rails/pull/53838)  
 This Pull Requests fixes `MySQL` default functions getting dropped when changing a column's nullability.
@@ -65,10 +59,13 @@ user.email # => "cruise-control@example.com"
 ```
 
 [Change `ActionText::RichText#embeds` assignment to `before_validation`](https://github.com/rails/rails/pull/53847)  
-Prior to this change, assignment to the `embeds` association happens *after* validation callbacks, so it wasn't possible to incorporate Rich Text-related file validation.
+Prior to this change, assignment to the `embeds` association happened **after** validation callbacks, so it wasn't possible to incorporate Rich Text-related file validation.
 
 [SQLite3: Use default function as default insert value](https://github.com/rails/rails/pull/53882)  
-Previously, if a column defined a function as its default value, the function would never be called during fixture insertion, which now works as expected with this addition. 
+Previously, if a column defined a function as its default value, the function would never be called during fixture insertion. It now works as expected with this addition. 
+
+[Don't wrap redis in `ConnectionPool` if already given one for `ActiveSupport::Cache::RedisCacheStore`](https://github.com/rails/rails/pull/53845)  
+This change adds an improvements to avoid wrapping redis in a `ConnectionPool` when using `ActiveSupport::Cache::RedisCacheStore` if the `:redis` option is already a `ConnectionPool`.
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-12-07%7D...main@%7B2024-12-13%7D)._
 _We had [32 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20241207-20241213) to the Rails codebase this past week!_
