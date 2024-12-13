@@ -26,7 +26,7 @@ This tutorial is beginner-friendly yet comprehensive, designed to make Rails acc
 
 **Note**: The <a href="https://guides.rubyonrails.org/install_ruby_on_rails.html">Installation Guide</a> is now separate from the Getting Started Guide, making it easier to find.
 
-Special thanks to **Chris Oliver** of <a href="https://gorails.com/">GoRails</a> for writing this tutorial, with help from Rafael França, Xavier Noria, Jeremy Daer, Matthew Draper, Colin Jilbert, Kent Crutchfield, Harriet Oughton, Julian Duss, Santiago Rodriguez, Gianlo Occhipinti, Kim Perino, and all the reviewers on GitHub.
+Special thanks to **Chris Oliver** of <a href="https://gorails.com/">GoRails</a> for writing this tutorial, with help from Rafael França, Xavier Noria, Jeremy Daer, Matthew Draper, Collin Jilbert, Kent Crutchfield, Harriet Oughton, Julian Duss, Santiago Rodriguez, Gianlo Occhipinti, Kim Perino, and all the reviewers on GitHub.
 
 **Rails 8 Unpacked with Typecraft**
 
