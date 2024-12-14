@@ -5,10 +5,10 @@ categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
 published: true
-date: 2024-12-13
+date: 2024-12-14
 ---
 
-Hey everyone, Happy Friday the 13 👻!
+Hey everyone, Happy Saturday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
 
