@@ -21,8 +21,7 @@ and updated Rails Guides.
 The [Installation Guide](https://edgeguides.rubyonrails.org/install_ruby_on_rails.html) has also been decoupled so it is easier to find, 
 and includes the basics of installing Ruby with a version manager - arguably one of the biggest barriers to newcomers.
 
-[Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released!](https://rubyonrails.org/2024/12/10/Rails-Versions-8-0-0-1-7-2-2-1-7-1-5-1-7-0-8-7-have-been-released)  
-Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released! 
+[Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released!](https://rubyonrails.org/2024/12/10/Rails-Versions-8-0-0-1-7-2-2-1-7-1-5-1-7-0-8-7-have-been-released)   
 These are security patches addressing one new issue where using the `content_security_policy` helper with untrusted user input could lead to a bypass of the browser Content Security Policy.
 
 [Rails Version 8.0.1 has been released!](https://rubyonrails.org/2024/12/13/Rails-Version-8-0-1-has-been-released)  
