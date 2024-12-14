@@ -37,7 +37,7 @@ Here are some Highlights from the study:
 
 [Accept a block for `ActiveJob::ConfiguredJob#perform_later`](https://github.com/rails/rails/pull/53859)  
 This pull request adds support for accepting a block for `ActiveJob::ConfiguredJob#perform_later`. 
-This was perviously inconsistent with a regular `ActiveJob::Base#perform_later`.
+This was previously inconsistent with a regular `ActiveJob::Base#perform_later`.
 
 [Fix `if_exists`/`if_not_exists` for foreign keys addition and removal](https://github.com/rails/rails/pull/53863)  
 This PR addresses a few improvements with foreign keys additions/removals and `if_exists/if_not_exists`:
