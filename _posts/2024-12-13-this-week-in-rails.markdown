@@ -16,6 +16,9 @@ Hey everyone, Happy Friday the 13 👻!
 Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released! 
 These are security patches addressing one new issue where using the `content_security_policy` helper with untrusted user input could lead to a bypass of the browser Content Security Policy.
 
+[Rails Version 8.0.1 has been released!](https://rubyonrails.org/2024/12/13/Rails-Version-8-0-1-has-been-released)  
+A new minor release - 8.0.1, is also out! Head over the [CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.1), to check the full set of changes in this release.
+
 [All new Getting Started Guide for Rails 8!](https://github.com/rails/rails/pull/53846/files)  
 This Pull Request adds a new [Rails 8 Getting Started guide.](https://edgeguides.rubyonrails.org/getting_started.html) 
 It showcases Rails and provides many introductory points to learn more about all the various features Rails includes like caching, I18n, deploying with Kamal, etc.
@@ -63,9 +66,6 @@ Prior to this change, assignment to the `embeds` association happened **after** 
 
 [SQLite3: Use default function as default insert value](https://github.com/rails/rails/pull/53882)  
 Previously, if a column defined a function as its default value, the function would never be called during fixture insertion. It now works as expected with this addition. 
-
-[Don't wrap redis in `ConnectionPool` if already given one for `ActiveSupport::Cache::RedisCacheStore`](https://github.com/rails/rails/pull/53845)  
-This change adds an improvements to avoid wrapping redis in a `ConnectionPool` when using `ActiveSupport::Cache::RedisCacheStore` if the `:redis` option is already a `ConnectionPool`.
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-12-07%7D...main@%7B2024-12-13%7D)._
 _We had [32 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20241207-20241213) to the Rails codebase this past week!_
