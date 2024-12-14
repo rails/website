@@ -12,6 +12,15 @@ Hey everyone, Happy Saturday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
 
+This week, the Rails Foundation released a series of updated resources to help you learn the new Rails 8 defaults, 
+including a brand new [Getting Started Tutorial](https://guides.rubyonrails.org/getting_started.html), 
+a [9-part video series on YouTube](https://www.youtube.com/watch?v=Qw_Um-tMiYI&list=PLHFP2OPUpCebdA4-xR07SPpoBWVERkHR6), 
+and updated Rails Guides. 
+
+[Read the announcement here](https://rubyonrails.org/2024/12/13/learn-Rails-8-tutorial-and-unpacked-videos).
+The [Installation Guide](https://edgeguides.rubyonrails.org/install_ruby_on_rails.html) has also been decoupled so it is easier to find, 
+and includes the basics of installing Ruby with a version manager - arguably one of the biggest barriers to newcomers.
+
 [Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released!](https://rubyonrails.org/2024/12/10/Rails-Versions-8-0-0-1-7-2-2-1-7-1-5-1-7-0-8-7-have-been-released)  
 Rails Versions 7.0.8.7, 7.1.5.1, 7.2.2.1, and 8.0.0.1 have been released! 
 These are security patches addressing one new issue where using the `content_security_policy` helper with untrusted user input could lead to a bypass of the browser Content Security Policy.
@@ -19,11 +28,13 @@ These are security patches addressing one new issue where using the `content_sec
 [Rails Version 8.0.1 has been released!](https://rubyonrails.org/2024/12/13/Rails-Version-8-0-1-has-been-released)  
 A new minor release - 8.0.1, is also out! Head over the [CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.1), to check the full set of changes in this release.
 
-[All new Getting Started Guide for Rails 8!](https://github.com/rails/rails/pull/53846/files)  
-This Pull Request adds a new [Rails 8 Getting Started guide.](https://edgeguides.rubyonrails.org/getting_started.html) 
-It showcases Rails and provides many introductory points to learn more about all the various features Rails includes like caching, I18n, deploying with Kamal, etc.
+[Doximity Case Study - Fast, Flexible, and Scalable](https://rubyonrails.org/docs/case-studies/doximity)  
+We also have a new official case study in! Check out how Rails powers Doximity's Healthcare Platform.
+Here are some Highlights from the study:
 
-It also includes an [Install Ruby on Rails guide](https://edgeguides.rubyonrails.org/install_ruby_on_rails.html) that walks through the basics of installing Ruby with a version manager, arguably one of the biggest barriers to newcomers.
+- How Rails accelerates development: Doximity's team rapidly iterates on new products and features, helping doctors save time and focus on patient care.
+- How Rails ensures long-term stability: By maintaining and evolving their 15-year-old monolith, Doximity avoids rewrites.
+- How Rails scales with success: As Doximity grows, Rails helps optimize the performance of 45+ applications and handle increasing traffic with ease.
 
 [Rails 8 Authentication generator guide](https://github.com/rails/rails/pull/53802)  
 The security guide has now been updated to include a "How to use the built-in authentication generator" section, to go over its details.
