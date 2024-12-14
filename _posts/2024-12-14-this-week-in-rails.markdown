@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New Rails Tutorial and Rails Unpacked videos, new Rails releases, ActiveModel::Attributes::Normalization and more!"
+title: "New Rails Tutorial and Unpacked Videos, Releases, ActiveModel::Attributes::Normalization and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
