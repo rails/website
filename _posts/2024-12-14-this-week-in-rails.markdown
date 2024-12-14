@@ -32,9 +32,9 @@ A new minor release - 8.0.1, is also out! Head over the [CHANGELOG](https://gith
 We also have a new official case study in! Check out how Rails powers Doximity's Healthcare Platform.
 Here are some Highlights from the study:
 
-- How Rails accelerates development: Doximity's team rapidly iterates on new products and features, helping doctors save time and focus on patient care.
-- How Rails ensures long-term stability: By maintaining and evolving their 15-year-old monolith, Doximity avoids rewrites.
-- How Rails scales with success: As Doximity grows, Rails helps optimize the performance of 45+ applications and handle increasing traffic with ease.
+- Rails accelerates development: Doximity's team rapidly iterates on new products and features, helping doctors save time and focus on patient care.
+- Rails ensures long-term stability: By maintaining and evolving their 15-year-old monolith, Doximity avoids rewrites.
+- Rails scales with success: As Doximity grows, Rails helps optimize the performance of 45+ applications and handle increasing traffic with ease.
 
 [Rails 8 Authentication generator guide](https://github.com/rails/rails/pull/53802)  
 The security guide has now been updated to include a "How to use the built-in authentication generator" section, to go over its details.
