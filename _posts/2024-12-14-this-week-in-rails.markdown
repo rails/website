@@ -75,7 +75,7 @@ Prior to this change, assignment to the `embeds` association happened **after** 
 Previously, if a column defined a function as its default value, the function would never be called during fixture insertion. It now works as expected with this addition. 
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-12-07%7D...main@%7B2024-12-13%7D)._
-_We had [32 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20241207-20241213) to the Rails codebase this past week!_
+_We had [41 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20241207-20241213) to the Rails codebase this past week!_
 
 Until next time!
 
