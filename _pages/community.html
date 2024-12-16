@@ -35,7 +35,7 @@ redirect_from:
             <div class="core__member__image">
               <a href="{{ member.url }}" aria-label="{{ member.name }}">
                 <figure>
-                  <img src="{{ member.image }}" alt="{{ member.name }}" />
+                  <img src="/assets/images/members/{{ member.image }}" alt="{{ member.name }}" />
                 </figure>
               </a>
             </div>
@@ -60,7 +60,20 @@ redirect_from:
           working on this team:
 
           {% for member in site.data.community.committers %}
-            <a href="{{ member.url }}">{{ member.name }}</a>{% if forloop.last != true %}, {% endif %}
+            <div class="core__member">
+              <div class="core__member__image">
+                <a href="{{ member.url }}" aria-label="{{ member.name }}">
+                  <figure>
+                    <img src="/assets/images/members/{{ member.image }}" alt="{{ member.name }}" />
+                  </figure>
+                </a>
+              </div>
+
+              <div class="core__member__content">
+                <h3><a href="{{ member.url }}" aria-label="{{ member.name }}">{{ member.name }}</a></h3>
+                <h4>{{ member.location }}</h4>
+              </div>
+            </div>
           {% endfor %}
         </p>
       </div>
