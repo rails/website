@@ -90,6 +90,9 @@ committers:
   - name: Eugene Kenny
     url: https://twitter.com/eugeneius
 
+  - name: Dima Fatko
+    url: https://github.com/fatkodima
+
   - name: Gannon McGibbon
     url: https://github.com/gmcgibbon
 
@@ -110,8 +113,6 @@ issues:
     github: akhilgkrishnan
   - name: Alex Ghiculescu
     github: ghiculescu
-  - name: Dima Fatko
-    github: fatkodima
   - name: Edouard Chin
     github: Edouard-chin
   - name: Haroon Ahmed
