@@ -4,103 +4,115 @@ core:
     location: USA
     url: https://dhh.dk
     handle: dhh
-    image: /assets/images/core-david.jpg
+    image: david.jpg
 
   - name: Jeremy
     since: 2005
     location: USA
     url: https://twitter.com/bitsweat
     handle: bitsweat
-    image: /assets/images/core-jeremy.jpg
+    image: jeremy.jpg
 
   - name: Aaron
     since: 2011
     location: USA
     url: https://twitter.com/tenderlove
     handle: tenderlove
-    image: /assets/images/core-aaron.jpg
+    image: aaron.jpg
 
   - name: Xavier
     since: 2011
     location: Catalonia
     url: https://hashref.com
     handle: fxn
-    image: /assets/images/core-xavier.jpg
+    image: xavier.jpg
 
   - name: Rafael
     since: 2012
     location: Canada
     url: https://twitter.com/rafaelfranca
     handle: rafaelfranca
-    image: /assets/images/core-rafael.jpg
+    image: rafael.jpg
 
   - name: Guillermo
     since: 2012
     location: Canada
     url: https://twitter.com/guilleiguaran
     handle: guilleiguaran
-    image: /assets/images/core-guillermo.jpg
+    image: guillermo.jpg
 
   - name: Carlos
     since: 2012
     location: Brazil
     url: https://twitter.com/cantoniodasilva
     handle: cantoniodasilva
-    image: /assets/images/core-carlos.jpg
+    image: carlos.jpg
 
   - name: Matthew
     since: 2015
     location: Australia
     url: https://twitter.com/_matthewd
     handle: _matthewd
-    image: /assets/images/core-matthew.jpg
+    image: matthew.jpg
 
   - name: Eileen
     since: 2017
     location: USA
     url: https://twitter.com/eileencodes
     handle: eileencodes
-    image: /assets/images/core-eileen.jpg
+    image: eileen.jpg
 
   - name: Ryuta
     since: 2022
     location: Japan
     url: https://blog.kamipo.net
     handle: kamipo
-    image: /assets/images/core-kamipo.jpg
+    image: kamipo.jpg
 
   - name: Jean
     since: 2022
     location: France
     url: https://github.com/byroot
     handle: byroot
-    image: /assets/images/core-byroot.jpg
+    image: byroot.jpg
 
   - name: John
     since: 2022
     location: Canada
     url: https://github.com/jhawthorn
     handle: jhawthorn
-    image: /assets/images/core-jhawthorn.jpg
+    image: jhawthorn.jpg
 
 committers:
-  - name: Akira Matsuda
+  - name: Akira
     url: https://twitter.com/a_matsuda
+    location: Japan
+    image: amatsuda.jpg
 
-  - name: Eugene Kenny
+  - name: Eugene
     url: https://twitter.com/eugeneius
+    location: Ireland
+    image: eugeneius.jpg
 
-  - name: Dima Fatko
+  - name: Dima
     url: https://github.com/fatkodima
+    location: Ukraine
+    image: fatkodima.jpg
 
-  - name: Gannon McGibbon
+  - name: Gannon
     url: https://github.com/gmcgibbon
+    location: Canada
+    image: gmcgibbon.jpg
 
-  - name: Jonathan Hefner
+  - name: Jonathan
     url: https://jonathan.hefner.pro
+    location: USA
+    image: jonathanhefner.jpg
 
-  - name: Yasuo Honda
+  - name: Yasuo
     url: https://github.com/yahonda
+    location: Japan
+    image: yahonda.jpg
 
 issues:
   - name: Adam Hess
