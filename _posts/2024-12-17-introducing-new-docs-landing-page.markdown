@@ -38,4 +38,4 @@ These changes aim to make the Rails website more welcoming and friendly-to-navig
 
 [Take a look at the new Docs page](/docs) and let us know what you think!
 
-_The Docs landing page was designed and shipped by <a href="https://www.meticulous.com/">John Athayde</a> with feedback and direction from the **Rails Core**, **Issues**, and **Committers** teams, and made possible by the support of the **members of the Rails Foundation**. Thank you to everyone involved for your input!_
+The Docs landing page was designed and shipped by <a href="https://www.meticulous.com/">John Athayde</a> with feedback and direction from the **Rails Core**, **Issues**, and **Committers** teams, and made possible by the support of the **members of the Rails Foundation**. Thank you to everyone involved for your input!
