@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "makandra joins the Rails Foundation"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-04-23
