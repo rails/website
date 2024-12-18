@@ -55,11 +55,11 @@ The previous design of the Rails Guides served its purpose well for nearly 15 ye
 
 What better way to demonstrate that Rails is the ideal choice for building fast, flexible, and scalable applications than with [case studies](/2024/12/12/introducing-doximity-case-study) showcasing how companies like [Doximity](/docs/case-studies/doximity) have successfully done so?
 
-The Rails community is rich with stories of successful companies of all sizes, building with Rails and delivering big results - it's time to start sharig these stories with the world.
+The Rails community is rich with stories of successful companies of all sizes, building with Rails and delivering big results - it's time to start sharing these stories with the world.
 
 **We shipped a brand new flagship Getting Started tutorial.** (*Education*)
 
-With Rails 8, the framework is better than ever, making it the perfect time to introduce a new flagship Getting Started tutorial that highlights everything Rails can do.
+With Rails 8, the framework is better than ever, making it the perfect time to introduce a new flagship Getting Started tutorial that showcases everything Rails can do.
 
 The revamped [Getting Started Guide](https://guides.rubyonrails.org/getting_started.html) now walks you through building an e-commerce app and is the most up-to-date, comprehensive Rails 8 tutorial to be found, introducing Rails fundamentals and the latest Rails 8 defaults. 
 
@@ -71,11 +71,15 @@ Special thanks to **Chris Oliver** for his work on this tutorial, with help from
 
 To create space for tutorials and case studies, and to make the Rails website more welcoming and beginner-friendly to navigate, [we introduced Docs](/2024/12/17/introducing-new-docs-landing-page), the starting point for everything you need to install Rails, learn it, get better at it, and get involved. From [one convenient page](/docs), you can now access the Installation Guide, Tutorials, Guides, API Docs, Case Studies, the Forum, and the Contributing Guide.
 
+**John Athayde** designed and shipped this new page with input and direction from all three Rails teams.
+
 **We collaborated with Typecraft on the Rails 8 Unpacked video series.** (*Education - Marketing*)
 
-DHH recorded a new Rails 8 demo for the website which is a fantastic upgrade on the previous demo - now showing how easy it is to take an app from `rails new` all the way through to deployment - all within 30 minutes. 
+DHH recorded a new Rails 8 [demo](https://youtu.be/X_Hw9P1iZfQ) for the website which is a fantastic upgrade on the previous demo - now showing how easy it is to take an app from `rails new` all the way through to deployment - all within 30 minutes. 
 
-But we wanted to dive deeper. We wanted videos that answered the questions you probably had: what was introduced as default or new in Rails 8, what does that change, and why does it matter? But who could tell the story in a compelling, engaging way?
+But we wanted to dive deeper. We wanted videos that answered the questions you probably had: what was introduced as default or new in Rails 8, what does that change, and why does it matter? 
+
+But who could tell the story in a compelling, engaging way?
 
 The answer came to us at Rails World when I found myself seated next to Chris Power of the popular YouTube channel Typecraft after the Opening Keynote. "Hey," he said, "This Rails 8 stuff is so cool. Who do I speak to about creating content for Rails?".
 
@@ -142,9 +146,9 @@ Next year, all of it continues: more tutorials, more videos, more supporting wha
 
 By the way, we have added a [Foundation category](https://rubyonrails.org/category/foundation) to the blog feed. Drop in any time throughout the year to see what we are working on. (Thank you **Beatriz Mitre** for adding that functionality.) Our <a href="https://app.todohelpers.com/forms/4758b5b0-d6f9-4f41-8041-992cc9b748fb">suggestion box</a> is also always open if you have ideas on how we can support you.
 
-**Thank you.**
+**To close, one more thing.**
 
-Thank you all for your enthusiasm and energy. Not only does it make our work fun and exciting working for such a community, but over the past year, I've heard from countless developers from other communities and languages who recognize that something special is happening in Rails. That’s a testament to the Rail community's genuine passion and excitement for the future. It's enough positivity and pride to make others sit up and notice, and that's powerful stuff.
+Thank you all for your enthusiasm and energy. Not only does it make working for this community fun and exciting, but over the past year, I've heard from countless developers from other communities and languages who recognize that something **special is happening in Rails**. That’s a testament to the Rail community's genuine passion and excitement for the future. It's enough positivity and pride to make others sit up and notice, and that's powerful stuff.
 
 So let’s keep the momentum going in 2025. Let’s continue making waves and showing the tech world what Rails is all about.
 
