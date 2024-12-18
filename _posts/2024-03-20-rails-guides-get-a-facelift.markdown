@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails Guides get a facelift"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2024-03-20
