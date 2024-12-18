@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2024 Recap - All talks now online!"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2024-10-15
