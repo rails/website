@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Rails World 2024 speaker list is live"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-05-28
