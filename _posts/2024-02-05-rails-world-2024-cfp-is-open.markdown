@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Apply to speak at Rails World 2024 in Toronto - CFP open until March 21"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2024-02-05

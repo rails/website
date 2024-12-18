@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building the Rails World app with Telos Labs"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2024-08-01

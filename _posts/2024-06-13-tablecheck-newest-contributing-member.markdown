@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meet TableCheck, the newest Contributing member of the Rails Foundation"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-06-13
