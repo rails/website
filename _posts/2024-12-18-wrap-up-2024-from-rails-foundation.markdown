@@ -148,7 +148,7 @@ By the way, we have added a [Foundation category](https://rubyonrails.org/catego
 
 **To close, one more thing.**
 
-Thank you all for your enthusiasm and energy. Not only does it make working for this community fun and exciting, but over the past year, I've heard from countless developers from other communities and languages who recognize that something **special is happening in Rails**. That’s a testament to the Rail community's genuine passion and excitement for the future. It's enough positivity and pride to make others sit up and notice, and that's powerful stuff.
+Thank you all for your enthusiasm and energy. Not only does it make working for this community fun and exciting, but over the past year, I've heard from countless developers from other communities and languages who recognize that something **special is happening in Rails**. That’s a testament to the Rails community's genuine passion and excitement for the future. It's enough positivity and pride to make others sit up and notice, and that's powerful stuff.
 
 So let’s keep the momentum going in 2025. Let’s continue making waves and showing the tech world what Rails is all about.
 
