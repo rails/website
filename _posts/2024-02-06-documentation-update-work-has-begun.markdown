@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Documentation update: work has begun"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2024-02-06
