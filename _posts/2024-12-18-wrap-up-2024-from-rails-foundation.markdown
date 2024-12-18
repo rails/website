@@ -25,7 +25,7 @@ Before we sprint forward, I'd like to share all that we accomplished this year i
 
 **But first: the Rails Foundation grew this year.**
 
-The Rails Foundation expanded this year when [**1Password** joined as a brand new Core member](/2024/12/2/rails-foundation-welcomes-1password-as-core-member). This is huge news for the Rails community that such a well-known SaaS company (and beloved tool) is so enthusiastic about Rails that they are contributing at our highest tier of membership. And not a Rails shop _by origin_, I might add, but rather a Rails-shop _by acquisition_. That speaks _volumes_ about Rails.
+The Rails Foundation expanded this year when [**1Password** joined as a brand new Core member](/2024/12/2/rails-foundation-welcomes-1password-as-core-member). This is huge news for the Rails community that such a well-known SaaS company (and beloved tool) is so enthusiastic about Rails that they are contributing at our highest tier of membership. And not a Rails shop _by origin_, I might add, but rather a Rails shop _by acquisition_. That speaks _volumes_ about Rails.
 
 VP of Product at 1Password **Jason Meller** joined the Rails Foundation board as a director. On the Remote Ruby podcast recently, he shared more about how this all came to be when his company Kollide was acquired by 1Password, and how joining the foundation took little convincing internally: "_It felt like the right time for 1Password to step in and start getting formally involved in the community. It was a no-brainer. **Instantly everybody saw the value.**_" (It's a great episode, listen to it <a href="https://www.remoteruby.com/2260490/episodes/16235279-jason-meller-on-1password-joining-the-rails-foundation">here</a>.)
 
@@ -57,6 +57,8 @@ What better way to demonstrate that Rails is the ideal choice for building fast,
 
 The Rails community is rich with stories of successful companies of all sizes, building with Rails and delivering big results - it's time to start sharing these stories with the world.
 
+This case study was a collaboration made possible by **Robby Russell** from Planet Argon, **Bruno Miranda** from Doximity, and the **Doximity leadership team**.
+
 **We shipped a brand new flagship Getting Started tutorial.** (*Education*)
 
 With Rails 8, the framework is better than ever, making it the perfect time to introduce a new flagship Getting Started tutorial that showcases everything Rails can do.
@@ -85,7 +87,7 @@ The answer came to us at Rails World when I found myself seated next to Chris Po
 
 _Bingo._
 
-<a href="https://www.youtube.com/playlist?list=PLHFP2OPUpCebdA4-xR07SPpoBWVERkHR6">Rails 8 Unpacked with Typecraft</a> is a 9-part video series exploring Rails 8’s default features through the lens of a demo task management demo app. It's told with the right blend humor, panache, and expertise befitting the Ruby community, and we hope you like it.
+<a href="https://www.youtube.com/playlist?list=PLHFP2OPUpCebdA4-xR07SPpoBWVERkHR6">Rails 8 Unpacked with Typecraft</a> is a 9-part video series exploring Rails 8’s default features through the lens of a demo task management app. It's told with the right blend humor, panache, and expertise befitting the Ruby community, and we hope you like it.
 
 Thanks to **Chris Power** and **Robert Beene** from Typecraft for pulling this series together in record time after Rails 8 was launched, with help from reviewers **Rosa Gutiérrez**, **Donal McBreen**, **Breno Gazzola**, **Miles Woodroffe**, **Bruno Miranda**, and the **Rails Core** team.
 
