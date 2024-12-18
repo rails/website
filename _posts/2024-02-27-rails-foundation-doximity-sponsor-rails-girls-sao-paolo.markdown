@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails Foundation and Doximity to Sponsor Rails Girls São Paulo 2024"
-categories: news
+categories: news, foundation
 author: Rails Foundation
 published: true
 date: 2024-02-27
