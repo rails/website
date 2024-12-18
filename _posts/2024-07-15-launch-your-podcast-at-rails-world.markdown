@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Launch your podcast at Rails World with Buzzsprout"
-categories: news
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2024-07-15
