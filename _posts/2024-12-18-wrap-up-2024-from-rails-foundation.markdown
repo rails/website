@@ -11,7 +11,7 @@ It's amazing how quickly a year flies by.
 
 It's a total cliché, but it feels like only a few days ago that I sat by my Christmas tree and wrote [last year's](/2023/12/27/reflecting-on-2023) final reflection post. 
 
-Back then, I was excited for all of the plans the Rails Foundation had in the works for 2024. Rails 7.2 was just released and already Rails 8 was on the horizon. There was so much to do! _Documentation! Tutorial! Videos! Toronto! Merch store! Case studies!_ I couldn't wait to hit the ground running and start assembling the teams to make all this happen.
+Back then, I was excited for all of the plans the Rails Foundation had in the works for 2024. Rails 7.1 was just released and already Rails 8 was on the horizon. There was so much to do! _Documentation! Tutorial! Videos! Toronto! Merch store! Case studies!_ I couldn't wait to hit the ground running and start assembling the teams to make all this happen.
 
 ...Then the motherboard in my new laptop died and I was forced to take the next week off until Apple provided a new one. I'm sure there was a 'blessing in disguise' lesson in there somewhere, but at the time I was too annoyed to see it. 
 
@@ -123,7 +123,7 @@ There's a lot that comes together during an event; this is just some of what wen
 
 - The **Rails Core** team had their second ever offsite - meeting all day to discuss the direction of the framework, and enjoying a private dinner together at night before Rails World activity kicked off. This year 11 of the 12 members were in attendance.
 - Shopify CEO **Tobi Lütke** invited **DHH** and **Matz** to a fireside chat on Ruby, Rails, and the joy of working with both.
-- DHH surprised **Matz** with his first-ever award - the Rails Lifetime Award, and Xavier Noria awarded **Akira Matsuda** from the Rails Issues team with the 2024 Rails Luminary Award. Read about both award winners [here](/2024/9/27/2024-rails-luminary-awards-matz-and-akira).
+- DHH surprised **Matz** with his first-ever award - the Rails Lifetime Award, and Xavier Noria awarded **Akira Matsuda** from the Rails Committers team with the 2024 Rails Luminary Award. Read about both award winners [here](/2024/9/27/2024-rails-luminary-awards-matz-and-akira).
 - **Clio** and the **Toronto Ruby** meetup group co-hosted an awesome Day 1 party.
 - **Shopify** hosted the a Lightning Track, allowing 14 attendees to give quick talks on topics from gaming to Hotwire Native.
 - **Buzzsprout** hosted the podcast booth once again, allowing 6 podcasts in our community to record as many interviews as they could and take advantage of having 1,000 Rails devs all in one space.
