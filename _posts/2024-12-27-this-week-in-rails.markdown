@@ -9,7 +9,7 @@ date: 2024-12-27
 ---
 
 
-This is Greg, Vipul, Wojciech, and Zzak, bringing you the summary of what happened with Rails in the past year. It was a busy year with close to [4000 commits](https://github.com/rails/rails/compare/@%47B2023-01-01%7D...main@%7B2024-12-31%7D) from [555 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20230101-20231231) and 50 releases, including Rails 8!
+This is Greg, Vipul, Wojciech, and Zzak, bringing you the summary of what happened with Rails in the past year. It was a busy year with close to [4000 commits](https://github.com/rails/rails/compare/@%7B2024-01-01%7D...main@%7B2024-12-31%7D) from [555 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20240101-20241231) and 50 releases, including Rails 8!
 
 For this year end issue, as a team we each hand-picked some of our favorite pull requests from the year.
 
@@ -145,7 +145,7 @@ end
 ```
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2024-01-01%7D...main@%7B2024-12-31%7D)._
-_We had [555 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20241220-20241227) to the Rails codebase this year!_
+_We had [555 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20240101-20241231) to the Rails codebase this year!_
 
 Merry Christmas and a happy New Year! Until next time!
 
