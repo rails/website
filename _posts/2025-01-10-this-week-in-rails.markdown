@@ -20,7 +20,7 @@ On non-standard environments (like staging), the prompt is not colored. With thi
 This change fixes a regression, where the individual `app:update` commands (like `app:update:configs` or `app:update:bin`) could no longer be run on their own, 
 as they require the app to be loaded and it no longer was.
 
-[ArgumentErrors raised during template rendering](https://github.com/rails/rails/pull/54133)  
+[Fix backtrace of ArgumentErrors raised during template rendering](https://github.com/rails/rails/pull/54133)  
 Before this fix, any argument error in a template with strict locals would be swallowed and be replaced by an exception with unrelated backtrace, 
 which made debugging templates difficult.
 With this change, any `ArgumentError` unrelated to strict locals is re-raised, preserving the original backtrace for developers.
@@ -65,7 +65,7 @@ The existing CI templates do not work as expected if custom credentials are util
 This change introduce `RAILS_MASTER_KEY` placeholder in generated `ci.yml` files, to address this issue.
 
 [Don't load ActiveStorage::Blob when validating the service](https://github.com/rails/rails/pull/54142)  
-For tasks like `assets:precompile` that don't need it, we should not be loading the entire Active Storage, and instead just relevant parts.
+For tasks like `assets:precompile` that don't need it, we should not be loading the entire ActiveStorage code, and instead just relevant parts.
 
 [Use the given form in html_options for the hidden field in collection_check_boxes](https://github.com/rails/rails/pull/51746)  
 Respect `html_options[:form]` when `collection_checkboxes` generates the hidden `<input>`.
