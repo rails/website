@@ -12,7 +12,7 @@ Hey everyone, Happy Friday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. 
 
-Before we start, a small update- I am happy to share that my team at Saeloun is joining the Rails Foundation as a contributing member.
+Before we start, a small update - I am happy to share that my team at Saeloun is joining the Rails Foundation as a contributing member.
 Read more about the reasons why we decided to join [here](https://rubyonrails.org/2025/1/10/saeloun-joins-rails-foundation), and why you should too!
 
 [Colorize console prompt on non standard environments](https://github.com/rails/rails/pull/53027)  
@@ -39,7 +39,7 @@ Previously they'd be sorted by creation order, which can cause merge conflicts w
 [Update NotificationAssertions's assert_notifcation to match against payload subsets and return matched notification](https://github.com/rails/rails/pull/54126)  
 `ActiveSupport::Testing::NotificationAssertions`'s `assert_notification` now matches against payload subsets by default.
 
-Previously the following assertion would fail due to excess key values in the notification payload. Now with payload subset matching, it will pass-
+Previously the following assertion would fail due to excess key values in the notification payload. Now with payload subset matching, it will pass.
 
 ```ruby
 assert_notification("post.submitted", title: "Cool Post") do
@@ -65,7 +65,7 @@ logs instead of those errors being immediately visible on boot.
 
 [Introduce RAILS_MASTER_KEY placeholder to CI template](https://github.com/rails/rails/pull/52230)  
 The existing CI templates do not work as expected if custom credentials are utilized, or if `config.require_master_key` is enabled.
-This change introduce `RAILS_MASTER_KEY` placeholder in generated `ci.yml` files, to address this issue.
+This change introduces `RAILS_MASTER_KEY` placeholder in generated `ci.yml` files, to address this issue.
 
 [Don't load ActiveStorage::Blob when validating the service](https://github.com/rails/rails/pull/54142)  
 For tasks like `assets:precompile` that don't need it, we should not be loading the entire ActiveStorage code, and instead just relevant parts.
