@@ -14,8 +14,7 @@ Hey everyone, Happy Friday!
 
 [Colorize console prompt on non standard environments](https://github.com/rails/rails/pull/53027)  
 Currently, the Rails console prompt is colored according to the following rules: blue for dev and test, red of prod.
-On non-standard environments (like staging), the prompt is not colored.  
-With this change, it will now be set to Magenta, for these environments.
+On non-standard environments (like staging), the prompt is not colored. With this change, it will now be set to Magenta, for these environments.
 
 [Fix running individual app:update commands](https://github.com/rails/rails/pull/54098)  
 This change fixes a regression, where the individual `app:update` commands (like `app:update:configs` or `app:update:bin`) could no longer be run on their own, 
