@@ -10,7 +10,10 @@ date: 2025-01-10
 
 Hey everyone, Happy Friday!
 
-[Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. Let's dive in!
+[Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. 
+
+Before we start, a small update- I am happy to share that my team at Saeloun is joining the Rails Foundation as a contributing member.
+Read more about the reasons why we decided to join [here](https://rubyonrails.org/2025/1/10/saeloun-joins-rails-foundation), and why you should too!
 
 [Colorize console prompt on non standard environments](https://github.com/rails/rails/pull/53027)  
 Currently, the Rails console prompt is colored according to the following rules: blue for dev and test, red of prod.
