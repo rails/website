@@ -9,7 +9,7 @@ date: 2025-01-24
 ---
 
 
-Hi, it's [Greg](greg.molnar.io). Let's explore this week's changes in the Rails codebase.
+Hi, it's [Greg](https://greg.molnar.io). Let's explore this week's changes in the Rails codebase.
 
 [Eliminate queries loading dumped model schema on Postgres](https://github.com/rails/rails/pull/54333)  
 This pull request improves resiliency by avoiding the need to open a database connection to load the type map, while defining attribute methods at boot, when a schema cache file is configured on PostgreSQL databases.
