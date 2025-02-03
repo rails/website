@@ -16,8 +16,8 @@ Today, Clio’s product suite is the largest and most sophisticated Rails-based 
 
 From the very beginning, the Ruby and Rails community’s commitment to learning and open-source innovation has aligned with Clio’s own mission: to transform the legal industry for all. This is largely what attracted Clio to the Rails Foundation’s mission - particularly the focus on education and documentation - both efforts to ensure that Rails will remain accessible to developers of all skill levels. 
 
->Rails has been at the core of Clio’s success, and joining the Rails Foundation is our way of giving back to a community that has given us so much. We’re proud to be a home for Rails developers, a part of the thriving ecosystem of companies built on Rails, and an active contributor to its future." 
-><br><br>*Jonathan Watson, Clio Chief Technology Officer*
+>Rails has been at the core of Clio’s success, and joining the Rails Foundation is our way of giving back to a community that has given us so much. We’re proud to be a home for Rails developers, a part of the thriving ecosystem of companies built on Rails, and an active contributor to its future.
+><br><br>*Jonathan Watson, CTO*
 >
 
 Clio’s engineering team has now grown to over 300 developers, building and maintaining a sophisticated ecosystem powered by multiple Rails monoliths. These monoliths form the backbone of Clio’s product suite: Grow, Manage, Payments, and Accounting. (And, yes - <a href="https://www.clio.com/about/careers/search/?teams=engineering&locations=all_locations">they are hiring</a>!)
