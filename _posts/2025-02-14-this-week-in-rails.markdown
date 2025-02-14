@@ -15,8 +15,7 @@ Hey everyone, Happy Friday!
 This week saw several improvements in Routes lookup. Below are a few notable changes- 
 
 [Speed up GTG Simulator by reducing slices/matches](https://github.com/rails/rails/pull/54491)  
-This change improves the performance of routing by 10-20% in simple cases by removing the duplication and preventing excess string allocations. 
-The improvement is larger for routes deeper in the tree.
+This change improves the performance of routing by 10-20% in simple cases by removing the duplication and preventing excess string allocations.
 
 [Micro-Optimize Router#find_routes](https://github.com/rails/rails/pull/54517)  
 This PR slightly improves the routes finding process by removing overheads and speeds up the route look up process by 2-2.5x faster compared to Rails 8.0.
