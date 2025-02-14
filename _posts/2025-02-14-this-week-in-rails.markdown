@@ -12,10 +12,10 @@ Hey everyone, Happy Friday!
 
 [Vipul](https://www.saeloun.com/team/vipul) here with the latest updates for This Week in Rails. 
 
-This week saw several improvements in Routes lookup. Below are a few notable changes- 
+This week, several improvements were made to Routes lookup. Below are a few notable changes- 
 
 [Speed up GTG Simulator by reducing slices/matches](https://github.com/rails/rails/pull/54491)  
-This change improves the performance of routing by 10-20% in simple cases by removing the duplication and preventing excess string allocations.
+This change improves routing performance by 10-20% in simple cases by removing duplication and preventing excess string allocations.
 
 [Micro-Optimize Router#find_routes](https://github.com/rails/rails/pull/54517)  
 This PR slightly improves the routes finding process by removing overheads and speeds up the route look up process by 2-2.5x faster compared to Rails 8.0.
@@ -45,7 +45,7 @@ With the use of forward argument `(...)` PostgreSQL adapter table definition met
 This change lays essential groundwork for `validate_constraint` and `validate_check_constraint` to start accepting keyword arguments.
 
 [Further restrict which contradicted queries need to be run](https://github.com/rails/rails/pull/54430)  
-This change ensure that only fully matching queries trigger aggregation, ignoring mismatches and certain ARel values to avoid some additional queries.
+This change ensures that only fully matching queries trigger aggregation, ignoring mismatches and certain ARel values to avoid some additional queries.
 
 [Allow to skip HashWithIndifferentAccess value conversion](https://github.com/rails/rails/pull/54437)  
 This PR addresses an inefficiency in ActiveModel’s handling of attribute changes, specifically when working with HashWithIndifferentAccess in serialized attributes.
