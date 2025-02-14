@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Routes Lookup Optimizations, PG Alter Table improvements and lots of more!"
+title: "Routes Lookup Optimizations, PostgreSQL Alter Table improvements and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
