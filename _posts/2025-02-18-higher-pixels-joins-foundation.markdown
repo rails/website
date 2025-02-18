@@ -15,7 +15,7 @@ Higher Pixels has been building with Rails since 2005, and since then has launch
 
 >In the history of our company, nothing has impacted our ability to build and scale product ideas like Ruby on Rails - the framework, the doctrine, and the community. Rails has given us the foundation to turn ideas into successful products, enabling us to move fast while keeping our code elegant and maintainable. It has shaped not just how we build software, but how we think about development as a craft.
 >Beyond the technology, the Rails community has been an incredible source of knowledge, support, and inspiration. The openness and generosity of Rails developers have helped us grow, and we’re excited to give back by joining the Rails Foundation. We believe in supporting the community that has given us so much, ensuring it continues to thrive for years to come.
-><br><br>*Tom Rossi, Principal*
+><br><br>*Tom Rossi, Co-Founder & Principal*
 >
 
 Higher Pixels has already been a supporter of the work we do at the Rails Foundation from day one - they sponsored both <a href="https://rubyonrails.org/2023/8/1/host-your-podcast-at-rails-world-with-buzzsprout">Rails World 2023</a> and <a href="https://rubyonrails.org/2024/7/15/launch-your-podcast-at-rails-world">2024</a>, and will be at Rails World 2025 again with their on-site podcast studio. So we are happy that they have taken this extra step to be a yearlong partner. 
