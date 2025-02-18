@@ -17,7 +17,7 @@ We’re looking for developers who love Rails and would benefit from being part 
 
 **
 
-A Rails Foundation fez parceria com a <a href="https://www.doximity.com/">Doximity</a>, a <a href="https://37signals.com/">37signals</a> e o Tropical on Rails para distribuir 20 ingressos gratuitos para desenvolvedores Rails que vivem no Brasil.
+A Rails Foundation fez parceria com a <a href="https://www.doximity.com/">Doximity</a>, a <a href="https://www.planetargon.com/">Planet Argon</a>, a <a href="https://37signals.com/">37signals</a> e o Tropical on Rails para distribuir 20 ingressos gratuitos para desenvolvedores Rails que vivem no Brasil.
 
 O Tropical on Rails acontece nos dias 3 e 4 de abril, em São Paulo e é a maior conferência de Rails da América do Sul, onde o calor da comunidade Ruby encontra a energia e a cultura vibrante da hospitalidade brasileira. O evento contará com uma lista incrível de <a href="https://www.tropicalonrails.com/en/#palestrantes">palestrantes</a> brasileiros e internacionais.
 
