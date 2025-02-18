@@ -7,7 +7,7 @@ published: true
 date: 2025-02-14
 ---
 
-The Rails Foundation has partnered with <a href="https://www.doximity.com/">Doximity</a>, <a href="https://www.planetargon.com/">Planet Argon</a>, <a href="https://37signals.com/">37signals</a>, and Tropical on Rails to give away **20 free tickets** to <a href="https://www.tropicalonrails.com/en/">Tropical on Rails</a> to Rails developers based in **Brazil**.
+The Rails Foundation has partnered with <a href="https://www.doximity.com/">Doximity</a>, <a href="https://www.planetargon.com/">Planet Argon</a>, <a href="https://37signals.com/">37signals</a>, and Tropical on Rails to give away **22 free tickets** to <a href="https://www.tropicalonrails.com/en/">Tropical on Rails</a> to Rails developers based in **Brazil**.
 
 Tropical on Rails takes place April 3 & 4 in São Paulo Brazil and is the largest Rails conference in South America, where the warmth of the Ruby community meets the energy of Brazilian hospitality and culture. They’ve lined up a great list of Brazilian and international <a href="https://www.tropicalonrails.com/en/#palestrantes">speakers</a>.
 
@@ -17,7 +17,7 @@ We’re looking for developers who love Rails and would benefit from being part 
 
 **
 
-A Rails Foundation fez parceria com a <a href="https://www.doximity.com/">Doximity</a>, a <a href="https://www.planetargon.com/">Planet Argon</a>, a <a href="https://37signals.com/">37signals</a> e o Tropical on Rails para distribuir 20 ingressos gratuitos para desenvolvedores Rails que vivem no Brasil.
+A Rails Foundation fez parceria com a <a href="https://www.doximity.com/">Doximity</a>, a <a href="https://www.planetargon.com/">Planet Argon</a>, a <a href="https://37signals.com/">37signals</a> e o Tropical on Rails para distribuir 22 ingressos gratuitos para desenvolvedores Rails que vivem no Brasil.
 
 O Tropical on Rails acontece nos dias 3 e 4 de abril, em São Paulo e é a maior conferência de Rails da América do Sul, onde o calor da comunidade Ruby encontra a energia e a cultura vibrante da hospitalidade brasileira. O evento contará com uma lista incrível de <a href="https://www.tropicalonrails.com/en/#palestrantes">palestrantes</a> brasileiros e internacionais.
 
