@@ -1,0 +1,18 @@
+.landing-page {
+  box-sizing: border-box;
+  text-align: center;
+
+  img {
+    margin: auto;
+
+    @media only screen and (max-width: 600px) {
+      width: 400px
+    }
+  }
+}
+
+.line {
+  border: 1px solid white;
+  width: 25%;
+  margin: 40px auto;
+}

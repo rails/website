@@ -1,0 +1,41 @@
+$font-weight-900: 'wght' 800, 'wdth' 100, 'slnt' -12;
+
+$xxx-large: 62px;
+$xx-large: 35px;
+$x-large: 42px;
+$large: 30px;
+
+h1 {
+  color: white;
+  font-size: $xxx-large;
+  font-variation-settings: $font-weight-900;
+  font-style: italic;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  color: white;
+  font-size: $x-large;
+  font-variation-settings: $font-weight-900;
+  font-style: italic;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 23px;
+  }
+}
+
+p {
+  color: white;
+  font-size: $large;
+  font-variation-settings: $font-weight-900;
+  font-style: italic;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.uppercase { text-transform: uppercase; }
