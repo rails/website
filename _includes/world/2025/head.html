@@ -1,7 +1,7 @@
 {% if page.title %}
-{% assign title = site.world24_title | append: ' &mdash; ' | append: page.title %}
+{% assign title = site.world25_title | append: ' &mdash; ' | append: page.title %}
 {% else %}
-{% assign title = site.world24_title %}
+{% assign title = site.world25_title %}
 {% endif %}
 
 {% if page.description %}
@@ -26,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ description }}" />
 
-  <meta property="og:site_name" content="{{ site.world24_title }}" />
+  <meta property="og:site_name" content="{{ site.world25_title }}" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ image }}" />
@@ -38,7 +38,7 @@
   <meta name="twitter:image" content="{{ image }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />
-  <meta name="twitter:image:alt" content="{{ site.world24_title }}" />
+  <meta name="twitter:image:alt" content="{{ site.world25_title }}" />
 
   <script type="application/ld+json">
     {
@@ -48,7 +48,7 @@
         "@type": "WebPage",
         "@id": "{{ url }}"
       },
-      "name": "{{ site.world24_title }}",
+      "name": "{{ site.world25_title }}",
       "headline": "{{ title }}",
       "description": "{{ description }}",
       "url": "{{ url }}",
@@ -56,6 +56,10 @@
     }
   </script>
   <script defer data-domain="rubyonrails.org" src="https://plausible.io/js/script.js"></script>
+
+  <script src="/assets/world/2023/scripts/back_to_top.js" defer></script>
+  <script src="/assets/world/2023/scripts/carousel.js" defer></script>
+  <script src="/assets/world/2023/scripts/modal_component.js" defer></script>
 
   <script type="module">
     import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';

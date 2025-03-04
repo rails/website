@@ -1,18 +1,37 @@
 .landing-page {
   box-sizing: border-box;
   text-align: center;
+}
 
-  img {
-    margin: auto;
+#logo-world-2025 {
+  margin: auto;
 
-    @media only screen and (max-width: 600px) {
-      width: 400px
-    }
+  @media only screen and (max-width: 600px) {
+    width: 350px
   }
 }
 
-.line {
+.landing-page .line {
   border: 1px solid white;
   width: 25%;
-  margin: 40px auto;
+  margin: 30px auto;
+}
+
+.landing-page .cta-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @media only screen and (max-width: 600px) {
+    gap: 10px;
+  }
+
+  .icon {
+    width: 20px;
+
+    @media only screen and (max-width: 600px) {
+      width: 15px
+    }
+  }
 }
