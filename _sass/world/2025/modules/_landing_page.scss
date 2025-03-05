@@ -1,14 +1,18 @@
 .landing-page {
+  min-height: 100vh;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #logo-world-2025 {
   margin: auto;
-  width: 450px;
+  width: 350px;
 
   @media only screen and (max-width: 600px) {
-    width: 350px
+    width: 300px
   }
 }
 
@@ -20,6 +24,7 @@
 
 .landing-page .cta-with-icon {
   margin-top: 10px;
+  margin-bottom: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -32,5 +37,23 @@
     @media only screen and (max-width: 600px) {
       width: 15px
     }
+  }
+
+  p { font-variation-settings: $font-weight-600; }
+}
+
+.landing-page .footer {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+
+  p, a {
+    color: white;
+    font-size: $small;
+    line-height: 18px;
+    font-variation-settings: $font-weight-200;
   }
 }
