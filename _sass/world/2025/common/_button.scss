@@ -1,19 +1,22 @@
 .button-primary {
   display: inline-block;
   background-color: white;
+  border: 2px solid white;
   border-radius: 100px;
   color: $dark-purple;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s ease-out, border 0.5s ease-out, color 0.5s ease-out;
 
   &.large {
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     font-size: $xx-large;
     font-variation-settings: $font-weight-900;
     margin-top: 50px;
 
     @media only screen and (max-width: 600px) {
+      margin-top: 25px;
       width: 90%;
       font-size: 25px;
     }
@@ -22,6 +25,5 @@
   &:hover {
     background-color: transparent;
     color: white;
-    border: 2px solid white;
   }
 }

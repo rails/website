@@ -1,25 +1,28 @@
 $font-weight-900: 'wght' 900, 'wdth' 100, 'slnt' -12;
 
-$xxx-large: 62px;
-$xx-large: 38px;
-$x-large: 36px;
-$large: 30px;
-$medium: 20px;
+$xxx-large: 52px;
+$xx-large: 29px;
+$x-large: 24px;
+$large: 20px;
+$medium: 16px;
+$small: 12px;
 
 h1 {
   color: white;
   font-size: $xxx-large;
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
+  line-height: 65px;
 
   @media only screen and (max-width: 600px) {
+    line-height: 40px;
     font-size: $xx-large;
   }
 }
 
 h2 {
   color: white;
-  font-size: $x-large;
+  font-size: $xx-large;
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
 
@@ -35,7 +38,7 @@ p {
   letter-spacing: 1px;
 
   @media only screen and (max-width: 600px) {
-    font-size: $medium;
+    font-size: $large;
   }
 }
 
