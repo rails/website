@@ -19,14 +19,12 @@
 }
 
 .landing-page .cta-with-icon {
+  margin-top: 10px;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-
-  @media only screen and (max-width: 600px) {
-    gap: 10px;
-  }
+  gap: 10px;
 
   .icon {
     width: 20px;

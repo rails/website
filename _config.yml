@@ -4,7 +4,7 @@ twitter: rails
 feed_path: /feed.xml
 world23_title: Rails World - 2023
 world24_title: Rails World - 2024
-world25_title: Rails World - 2025
+world25_title: Rails World 2025 - Amsterdam, NL
 
 plugins:
   - jekyll-feed
