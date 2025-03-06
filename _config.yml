@@ -58,6 +58,10 @@ defaults:
       path: "world/2024"
     values:
       description: September 26 & 27 - Toronto, CA
+  - scope:
+      path: "world/2025"
+    values:
+      description: September 4 & 5 - Beurs van Berlage, Amsterdam, NL
 
 markdown: kramdown
 highlighter: rouge
