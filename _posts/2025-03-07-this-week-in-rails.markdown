@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails World CPF, YJIT configuration and more!"
+title: "Rails World CFP, YJIT configuration and more!"
 categories: news
 author: Greg
 og_image: assets/images/this-week-in-rails.png
