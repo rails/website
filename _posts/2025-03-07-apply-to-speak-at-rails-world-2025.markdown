@@ -4,7 +4,7 @@ title: "Apply to speak at Rails World 2025"
 categories: news, foundation
 author: The Rails Foundation
 published: true
-date: 2025-03-11
+date: 2025-03-07
 ---
 
 <p style="text-align: center"><img src="/assets/images/RW25-cfp-banner.png"></p>
