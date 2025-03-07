@@ -7,7 +7,7 @@ published: true
 date: 2025-03-11
 ---
 
-<img src="/assets/images/RW25-cfp-banner.png">
+<p style="text-align: center"><img src="/assets/images/RW25-cfp-banner.png"></p>
 
 **CFP is open until April 10th**  
 
