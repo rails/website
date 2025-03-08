@@ -14,7 +14,7 @@ Let's explore this week’s changes in the Rails codebase.
 
 [Extend --minimal option](https://github.com/rails/rails/pull/54313)  
 `rails new --minimal` allows to create a basic Rails app, but recent additions to Rails were still included.
-Moving forward, this option will also skip Brakeman, CI, Docker, Kamal, Rubocop, Solid trifecta, and Thruster.
+Moving forward, this option will also skip Brakeman, CI, Docker, Kamal, RuboCop, Solid trifecta, and Thruster.
 
 [Add reply_to_address to Mail::Message](https://github.com/rails/rails/pull/53513)  
 When using Action Mailer you can now specify a `reply_to:` email address in addition to the `to:` recipient.
