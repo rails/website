@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<div class="company-profile">
+  <div class="company-header">
+    <h1>{{ page.name }}</h1>
+    {% if page.logo %}
+      <img src="{{ page.logo }}" alt="{{ page.name }} logo" class="company-logo">
+    {% endif %}
+  </div>
+
+  <div class="company-intro">
+    {{ page.intro | markdownify }}
+  </div>
+
+  <div class="company-details">
+    <ul>
+      {% if page.url %}
+        <li><strong>Website:</strong> <a href="{{ page.url }}">{{ page.url }}</a></li>
+      {% endif %}
+      
+      {% if page.company_type %}
+        <li>
+          <strong>Type:</strong> {{ page.company_type }}
+          {% if page.stock_ticker %}
+            ({{ page.stock_ticker }})
+          {% endif %}
+        </li>
+      {% endif %}
+      
+      {% if page.founded_date %}
+        <li><strong>Founded:</strong> {{ page.founded_date }}</li>
+      {% endif %}
+      
+      {% if page.headquarters %}
+        <li><strong>Headquarters:</strong> {{ page.headquarters | markdownify }}</li>
+      {% endif %}
+      
+      {% if page.employees_range %}
+        <li><strong>Employees:</strong> {{ page.employees_range }}</li>
+      {% endif %}
+      
+      {% if page.rails_engineers_range %}
+        <li><strong>Rails Engineers:</strong> {{ page.rails_engineers_range }}</li>
+      {% endif %}
+    </ul>
+  </div>
+
+  {% if page.rails_usage %}
+    <div class="rails-usage">
+      <h2>How They Use Rails</h2>
+      {{ page.rails_usage | markdownify }}
+    </div>
+  {% endif %}
+
+  {% if page.pull_quote %}
+    <div class="pull-quote">
+      <blockquote>
+        {{ page.pull_quote }}
+        {% if page.quote_author %}
+          <cite>
+            {{ page.quote_author }}
+            {% if page.quote_title %}
+              <span class="title">{{ page.quote_title }}</span>
+            {% endif %}
+          </cite>
+        {% endif %}
+      </blockquote>
+    </div>
+  {% endif %}
+
+  {% if page.member_status %}
+    <div class="member-status">
+      <h2>Rails Foundation Membership</h2>
+      <p>{{ page.member_status }}</p>
+    </div>
+  {% endif %}
+
+  {% if page.github_contributions %}
+    <div class="github-contributions">
+      <h2>Open Source Contributions</h2>
+      <ul>
+        {% for contribution in page.github_contributions %}
+          <li>
+            <a href="{{ contribution.url }}">{{ contribution.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if page.community %}
+    <div class="community-involvement">
+      <h2>Community Involvement</h2>
+      {{ page.community | markdownify }}
+    </div>
+  {% endif %}
+
+  {% if page.case_study_url %}
+    <div class="case-study-link">
+      <a href="{{ page.case_study_url }}" class="button">Read Full Case Study</a>
+    </div>
+  {% endif %}
+</div>
