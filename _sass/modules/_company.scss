@@ -1,0 +1,205 @@
+.company-profile {
+  p {
+    font-size: 26px;
+    line-height: 1.2em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    max-width: 1000px;
+  }
+
+  .common-padding--bottom-small {
+    padding-bottom: 20px;
+  }
+
+  header.company-header {
+    p {
+      font-size: 24px;
+      font-weight: 200;
+      letter-spacing: 0.2em;
+      margin-bottom: 0.25em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      height: auto;
+      text-align: left;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  aside {
+    background: $color-white;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+    font-size: 18px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 1em;
+
+    p.website {
+      background-color: #F8F9FA;
+      background-image: url("/assets/images/chicklet_website.svg");
+      background-repeat: no-repeat;
+      background-position: 5px 5px;
+      border-radius: 8px;
+      box-sizing: border-box;
+      flex-basis: 49%;
+      font-size: 20px;
+      line-height: 1.75em;
+      margin: 0.25em 0;
+      padding: 0.4em 0.4em 0.4em 55px;
+      
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .people-counts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      margin-top: 20px;
+
+      p {
+        font-size: 18px;
+        text-align: center;
+
+        b {
+          display: block;
+          font-size: 30px;
+          line-height: 1em;
+        }
+      }
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      grid-column-gap: 10px;
+      font-size: 18px;
+
+      dt {
+        font-weight: normal
+      }
+
+      dd {
+        font-weight: bold;
+
+        span {
+          font-weight: normal;
+        }
+
+        &:has(p) {
+          font-weight: normal;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  blockquote {
+
+    p {
+      font-style: italic;
+      font-size: 26px;
+      text-align: center;
+  
+      &::before {
+        content: "“";
+      }
+  
+      &::after {
+        content: "”";
+      }  
+    }
+
+    cite {
+      display: block;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 0.75em;
+      text-align: center;
+
+      &::before {
+        content: "—";
+      }
+
+      span.title {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .member-status {
+    p {
+      font-size: 32px;
+      line-height: 1.1em;
+      text-align: center;
+    }
+  }
+
+  .contributions {
+    background: $color-white;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
+    font-size: 18px;
+    margin-bottom: 2em;
+    padding: 1em;
+
+    h2 {
+      font-size: 36px;
+      line-height: 1;
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      li {
+        background-color: #F8F9FA;
+        background-image: url("/assets/images/chicklet_github.svg");
+        background-repeat: no-repeat;
+        background-position: 5px 5px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        flex-basis: 49%;
+        margin: 0.25em 0;
+        padding: 0.4em 0.4em 0.4em 55px;
+
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1em;
+
+          a {
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .community-involvement {
+  }
+
+  @media (min-width: 1024px) {
+    .common-padding--bottom-small {
+      padding-bottom: 30px;
+    }
+  }
+}

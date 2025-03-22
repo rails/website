@@ -25,7 +25,7 @@ collections:
     permalink: "/docs/case-studies/:path"
   companies:
     output: true
-    permalink: "/foundation/:name"
+    permalink: "/foundation/:path"
   pages:
     output: true
     permalink: "/:name"
