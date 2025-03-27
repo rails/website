@@ -1,14 +1,18 @@
 .company-profile {
+  box-sizing: border-box;
+  padding: auto 1em 2em 1em;
+  max-width: 100%;
+
   p {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.2em;
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 50px;
-    max-width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
   }
 
   .common-padding--bottom-small {
@@ -39,8 +43,7 @@
     border-radius: 12px;
     box-shadow: 0 15px 40px 5px rgba($color-black, 0.15), 0 1px 1px rgba($color-black, 0.04);
     font-size: 18px;
-    margin-top: 100px;
-    margin-bottom: auto;
+    margin-bottom: 100px;
     padding: 1em;
 
     p.website {
@@ -111,7 +114,7 @@
 
     p {
       font-style: italic;
-      font-size: 26px;
+      font-size: 18px;
       text-align: center;
   
       &::before {
@@ -142,7 +145,7 @@
 
   .member-status {
     p {
-      font-size: 32px;
+      font-size: 24px;
       line-height: 1.1em;
       text-align: center;
     }
@@ -157,15 +160,13 @@
     padding: 1em;
 
     h2 {
-      font-size: 36px;
       line-height: 1;
       margin: 0 0 10px 0;
     }
 
     ul {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: space-between;
       
       li {
@@ -175,7 +176,7 @@
         background-position: 5px 5px;
         border-radius: 8px;
         box-sizing: border-box;
-        flex-basis: 49%;
+        flex-basis: 100%;
         margin: 0.25em 0;
         padding: 0.4em 0.4em 0.4em 55px;
 
@@ -198,8 +199,55 @@
   }
 
   @media (min-width: 1024px) {
+    padding: 0; 
+
+    aside {
+      margin-top: 100px;
+      margin-bottom: auto;
+    }
+
+    p {
+      font-size: 26px;
+    }
+
+    .member-status {
+      p {
+        font-size: 32px;
+      }
+    }
+
+    blockquote {
+      p {
+        font-size: 26px;
+      }
+    }
+
     .common-padding--bottom-small {
       padding-bottom: 30px;
     }
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 50px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .contributions {
+      h2 {
+        font-size: 36px;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        li {
+          flex-basis: 49%;
+        }
+      }
+    }
+
   }
 }
