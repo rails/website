@@ -42,9 +42,10 @@ layout: default
         </section>
       {% endif %}
 
-      {% if page.github_contributions %}
+      {% if page.github_contributions or page.contribution_string %}
         <section class="contributions common-padding--bottom-small">
           <h2>Open Source Contributions</h2>
+          {% if page.github_contributions %}
           <ul>
             {% for contribution in page.github_contributions %}
               <li>
@@ -53,6 +54,12 @@ layout: default
               </li>
             {% endfor %}
           </ul>
+          {% endif %}
+          
+          {% if page.contribution_string %}
+            <p class="contrib-string">{{ page.contribution_string }}</p>
+          {% endif %}
+
         </section>
       {% endif %}
 
@@ -67,9 +74,8 @@ layout: default
         <section class="case-study-link common-padding--bottom-small">
           {{ page.case_study_blurb }}
           <a href="{{ page.case_study_url }}" class="button">Read Full Case Study</a>
-        </seciton>
+        </section>
       {% endif %}
-      </section>
     </div>
 
     <aside class="company-details">
@@ -89,6 +95,11 @@ layout: default
               <span>({{ page.stock_ticker }})</span>
             {% endif %}
           </dd>
+        {% endif %}
+
+        {% if page.valuation %}
+          <dt>Valuation:</dt>
+          <dd>{{ page.valuation }}</dd>
         {% endif %}
 
         {% if page.founded_date %}
