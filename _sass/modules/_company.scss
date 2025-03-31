@@ -58,6 +58,9 @@
       line-height: 1.75em;
       margin: 0.25em 0;
       padding: 0.4em 0.4em 0.4em 55px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       
       a {
         text-decoration: none;
@@ -184,11 +187,17 @@
           font-size: 18px;
           font-weight: bold;
           line-height: 1em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           a {
             font-size: 14px;
             font-weight: normal;
             text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
       }
