@@ -2,9 +2,9 @@
 layout: company
 name: makandra
 intro: |
-  makandra is a Rails consultancy based in Germany. Since 2009, it has delivered over 200 custom web applications across the full software lifecycle — from requirements and UI/UX to development, operations, and maintenance. Clients range from small businesses to global enterprises. Notable projects include Siemens SiESTA (cybersecurity testing), JustClaims (air passenger claims), Audi MediaCenter (press hub), GREENZERO (LCA platform), JUUUPORT (online youth counseling), and Studyflix (video learning platform).
-
-  makandra often maintains applications long-term — some since 2010 are still in active use. From this commitment emerged Rails LTS, a service providing security patches for legacy Rails versions, compatible with modern Ruby. On the infrastructure side, a dedicated DevOps team hosts and manages Rails apps on makandra-owned hardware in a German data center.
+  makandra is a Rails consultancy based in Germany. Since 2009, it has delivered over 200 custom web applications across the full software lifecycle — from requirements and UI/UX to development, operations, and maintenance. Clients range from small businesses to global enterprises. Notable projects include [Siemens SiESTA](https://makandra.de/en/siemens-38) (cybersecurity testing), [JustClaims](https://makandra.de/en/justclaims-34) (air passenger claims), [Audi MediaCenter](https://makandra.de/en/audi-mediacenter-31) (press hub), [GREENZERO](https://makandra.de/en/greenzero-179) (LCA platform), [JUUUPORT](https://makandra.de/en/juuuport-368) (online youth counseling), and [Studyflix](https://makandra.de/en/studyflix-39) (video learning platform).
+  <br><br>
+  makandra often maintains applications long-term — some since 2010 are still in active use. From this commitment emerged [Rails LTS](https://railslts.com/), a service providing security patches for legacy Rails versions, compatible with modern Ruby. On the infrastructure side, a dedicated DevOps team hosts and manages Rails apps on makandra-owned hardware in a German data center.
 logo: /assets/images/logo-makandra.svg
 exturl: https://makandra.de
 company_type: Private
@@ -13,30 +13,46 @@ headquarters: "**Augsburg, Germany**"
 employees_range: "50-75"
 rails_engineers_range: "25-50"
 rails_usage: |
-  Around 95% of customer applications developed by makandra are built using Ruby on Rails. In addition, makandra maintains a significant number of internal Rails applications that support daily operations — including tools for CVE tracking, project management, billing, hot desking, lunch booking, secret sharing, knowledge management, private LLM chat, and more.
-
-  Technology choices
-  * Most applications follow a monolithic architecture, structured through heavy namespacing.
-  * For a consultancy, tests are essential to ensure continuity and preserve knowledge over decades of iteration. makandra mostly uses RSpec, with some islands of Minitest. Great effort has gone into making system tests work reliably — the internally developed capybara-lockstep gem has proven very effective in reducing test flakiness.
-  * PostgreSQL is the default for everything: relational data, full-text search, and job queues. Only when the limits of PostgreSQL are reached does makandra adopt more specialized tools such as Redis or Elasticsearch.
-  * Frontend: In the 2010s, makandra adopted AngularJS to replace jQuery-based code. When Angular 2 was introduced as a rewrite, a retrospective showed mixed results: some apps benefited from SPAs, but many suffered from complexity, dependencies, and boilerplate. This led makandra to revisit progressive enhancement. makandra developed Unpoly, a framework that simplifies AJAX and DOM work. Inspired by Turbolinks and unobtrusive JavaScript, Unpoly is now used in most projects. That said, makandra remains pragmatic: React or modern Angular are used when needed, but the default remains a server-rendered majestic monolith.
-  * Deployment: Most applications are deployed on Linux VMs using Capistrano. Since developer machines and production servers both run Ubuntu LTS, there is usually no strong need for containerization. The in-house hosting platform OpsComplete provides Rails-specific automation for provisioning and deployment.
-
-  Recruiting
-
-  Recruiting Ruby developers has historically been a challenge, especially in a smaller city like Augsburg. makandra addressed this by creating a trainee program where university graduates learn Ruby on Rails and related technologies over a nine-month period before joining client projects. Combined with a strong culture of mentorship and continuous learning, this program has helped build a large team of experienced engineers over the years.
-
+  Around 95% of customer applications developed by makandra are built using Ruby on Rails. 
+  <br><br>
+  Most makandra applications follow a monolithic architecture with heavy namespacing, using mostly RSpec and capybara-lockstep for testing and PostgreSQL as the default database. Frontend development prioritizes progressive enhancement with Unpoly, though React and Angular are used when needed. Deployments rely on Linux VMs with Capistrano, leveraging OpsComplete, their in-house hosting platform, provides Rails-specific automation for provisioning and deployment.
+  <br><br>
+  In addition, makandra maintains a significant number of internal Rails applications that support daily operations — including tools for CVE tracking, project management, billing, hot desking, lunch booking, secret sharing, knowledge management, private LLM chat, and more.
 pull_quote: "Joining the Rails Foundation was a huge milestone for us and shows that we are fully behind Ruby on Rails. We are proud to be part of this community and we are determined to do our part to further develop and strengthen the framework."
 quote_author: "Thomas Eisenbarth"
 quote_title: "makandra CEO and Founder"
 member_status: "In 2024, Company became a **contributing member** of the Rails Foundation."
 github_contributions:
-  - name: "rails"
-    url: "https://github.com/rails/rails"
+  - name: "active_type"
+    url: "https://github.com/makandra/active_type"
+  - name: "unpoly"
+    url: "https://unpoly.com/"
+  - name: "unpoly-rails"
+    url: "https://github.com/unpoly/unpoly-rails"
+  - name: "capybara-lockstep"
+    url: "https://github.com/makandra/capybara-lockstep"
+  - name: "consul"
+    url: "https://github.com/makandra/consul"
 community: |
-  [Item to link](https://www.com) - Description of contribution
-case_study_blurb: "Check out the case study of how company delivers incredible value to its customers with Rails"
-case_study_url: /docs/case-studies/company
+  **Conferences:**
+  - [Ruby on Ice 2018](https://2018.rubyonice.com/) co-organizer & sponsor 
+  - [Ruby on Ice 2019](https://rubyonice.com/) co-organizer & sponsor
+  - [Ruby Unconf](https://2023.rubyunconf.eu/) sponsor 2023
+  - [Rails World](https://rubyonrails.org/2024/11/27/rails-world-2025-save-the-date) sponsor 2025
+  <br><br>
+  **Frequent talks at Ruby meetups and conferences, e.g.:**
+  - [We’re breaking up with JavaScript frontends](https://triskweline.de/unpoly-rugb/) (talk at RubyShift Munich, Ruby User Group Berlin)
+  - [Why I’m closing your GitHub issue](https://www.youtube.com/watch?v=9haaAtjWVy0) (talk at RailsConf)
+  - [Fixing Flaky E2E Tests in Ruby](https://www.youtube.com/watch?v=LaCwiFDm2Vs) (talk at Full Stack Hour)
+  - [Solving bizarre authorization requirements with Rails](https://bizarre-authorization.talks.makandra.com/) (talk at RubyShift Munich)
+  <br><br>
+  **Teaching:**
+  - [Growing Rails Applications in Practice](https://pragprog.com/titles/d-kegrap/growing-rails-applications-in-practice/): Book about scaling monolithic Rails applications. Published by the Pragmatic Bookshelf.
+  - We [open-sourced our knowledge base](https://makandracards.com/makandra) with > 4000 guides for Ruby, Rails and web development.
+  <br><br>
+  **Recruiting**
+  - Recruiting Ruby developers has historically been a challenge, especially in a smaller city like Augsburg. makandra addressed this by creating a [trainee program](https://makandra.de/en/trainee-program-84) where university graduates learn Ruby on Rails and related technologies over a nine-month period before joining client projects. Combined with a strong culture of mentorship and continuous learning, this program has helped build a large team of experienced engineers over the years.
+
 ---
 
 
