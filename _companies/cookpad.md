@@ -11,7 +11,6 @@ valuation: "$100M"
 founded_date: 1997
 headquarters: "**Tokyo, Japan & Bristol, UK**"
 employees_range: "120"
-rails_engineers_range: ""
 rails_usage: |
   The Cookpad platform is a Rails monolith and having moved to Rails early in 2007 has a long history of growing along with the framework, scaling to serve 100M monthly active users. The Cookpad website, internal tools, and API’s that power the native apps are all powered by Rails. We love Hotwire and are embracing Turbo and Stimulus on the front end.
 pull_quote: "Cookpad has been powered by the Ruby on Rails framework to help make every day cooking fun for the last decade and a half, and we were delighted to support the Rails Foundation as a founding core member to help the ecosystem prosper for many years to come"
