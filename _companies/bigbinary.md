@@ -4,7 +4,7 @@ name: BigBinary
 intro: |
   BigBinary is a development firm with over 13 years of experience specializing in Ruby on Rails. BigBinary has a track record of building high-quality software and was an early adopter of Ruby on Rails due to its exceptional productivity. Over the years, clients like **Gumroad**, **MLB**, **AngelList**, **Rootly**, **AtoB**, and **Healthicity** have worked with them to build robust, scalable software. In addition to client work, BigBinary is also building Neeto — a suite of productivity tools — entirely using Ruby on Rails.
 logo: /assets/images/logo-bigbinary.svg
-exturl: [https://company.com](https://www.bigbinary.com/)
+exturl: https://www.bigbinary.com/
 company_type: Private
 founded_date: 2011
 headquarters: "**Miami, USA; Pune, India**"
