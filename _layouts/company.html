@@ -2,9 +2,9 @@
 layout: default
 ---
 <section class="company-profile">
-  <div class="container common-headline">
+  <div class="container common-content">
     <div id="leftcol">
-      <header class="company-header heading common-padding--bottom-small common-padding--top-small">
+      <header class="common-headline company-header heading common-padding--bottom-small common-padding--top-small">
         <p>MEMBERS »</p>
         <h1>{{ page.name }}</h1>
       </header>
@@ -15,7 +15,7 @@ layout: default
 
       {% if page.rails_usage %}
         <section class="rails-usage common-padding--bottom-small">
-          <h2>How They Use Rails</h2>
+          <h3>How They Use Rails</h3>
           {{ page.rails_usage | markdownify }}
         </section>
       {% endif %}
@@ -44,7 +44,7 @@ layout: default
 
       {% if page.github_contributions or page.contribution_string %}
         <section class="contributions common-padding--bottom-small">
-          <h2>Open Source Contributions</h2>
+          <h3>Open Source Contributions</h3>
           {% if page.github_contributions %}
           <ul>
             {% for contribution in page.github_contributions %}
@@ -65,7 +65,7 @@ layout: default
 
       {% if page.community %}
         <section class="community-involvement common-padding--bottom-small">
-          <h2>Community Involvement</h2>
+          <h3>Community Involvement</h3>
           {{ page.community | markdownify }}
         </section>
       {% endif %}
