@@ -23,6 +23,9 @@ collections:
   case_studies:
     output: true
     permalink: "/docs/case-studies/:path"
+  companies:
+    output: true
+    permalink: "/foundation/:path"
   pages:
     output: true
     permalink: "/:name"
