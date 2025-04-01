@@ -12,9 +12,6 @@ employees_range: "60"
 rails_engineers_range: "10"
 rails_usage: |
   37signals built Basecamp and HEY on Rails, and the 37signals team often builds and tests new features in-house before contributing them back to the framework. Examples include Hotwire (Turbo & Stimulus) for server-driven UI, Propshaft for asset management, and Solid Queue for background job processing. They’ve also shifted toward self-hosting, deploying with Kamal, their Docker-based deployment tool.
-pull_quote: "Rails is awesome."
-quote_author: "Sam Spade"
-quote_title: "Chief Casablanca Officer"
 member_status: "In 2022, 37signals became a **founding Core member** of the Rails Foundation. David Heinemeier Hansson, 37signals co-founder and CTO and creator of Ruby on Rails, is the chairman of the foundation."
 github_contributions:
   - name: "Rails"
