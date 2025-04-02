@@ -4,8 +4,8 @@
   max-width: 100%;
 
   p {
-    font-size: 20px;
-    line-height: 1.2em;
+    // font-size: 20px;
+    // line-height: 1.2em;
   }
 
   .container {
@@ -25,16 +25,18 @@
       font-weight: 200;
       letter-spacing: 0.2em;
       margin-bottom: 0.25em;
+      padding-bottom: 0;
       text-transform: uppercase;
     }
 
     h1 {
       height: auto;
+      line-height: 1;
       text-align: left;
     }
   }
 
-  h2 {
+  h3 {
     margin-bottom: 0.5em;
   }
 
@@ -219,18 +221,18 @@
     }
 
     p {
-      font-size: 26px;
+      // font-size: 26px;
     }
 
     .member-status {
       p {
-        font-size: 32px;
+        font-size: 26px;
       }
     }
 
     blockquote {
       p {
-        font-size: 26px;
+        // font-size: 26px;
       }
     }
 
@@ -247,7 +249,7 @@
 
     .contributions {
       h2 {
-        font-size: 36px;
+        // font-size: 36px;
       }
       ul {
         display: flex;
