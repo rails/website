@@ -22,7 +22,7 @@ layout: default
 
       {% if page.member_status %}
         <section class="member-status common-padding--bottom-small">
-          <p>{{ page.member_status | markdownify }}</p>
+          {{ page.member_status | markdownify }}
         </section>
       {% endif %}
 
