@@ -12,6 +12,7 @@ Hi, it's [Vipul](https://www.saeloun.com/team/vipul). Let's explore this week's 
 
 [Last Week for Rails World 2025 Call for Papers](https://rubyonrails.org/2025/3/7/apply-to-speak-at-rails-world-2025)  
 This is the last week for The CFP for Rails World 2025! 
+
 [Submit your talk until April 10th.](https://sessionize.com/rails-world-2025/)
 
 [Add must-understand directive according to RFC 9111](https://github.com/rails/rails/pull/54833)  
@@ -45,8 +46,8 @@ Rails.cache.read_counter("foo") # => 2
 ```
 
 [Change redirect status code in SessionsController#destroy template from 302 to 303](https://github.com/rails/rails/pull/54849)  
-The new Authentication generator (introduced in Rails 8.0) creates a `SessionsController` that returns a 302 Redirect response in its destroy action.
-With this change it will now issue a 303 (See Other) status code instead of 302 (Found) when redirecting after logout, to comply with the [9110 spec](https://www.rfc-editor.org/rfc/rfc9110#status.302)
+The new Authentication generator introduced in Rails 8.0, creates a `SessionsController` that returns a 302 Redirect response in its destroy action.
+With this change it will now issue a 303(See Other) status code instead of 302(Found) when redirecting after logout, to comply with the [9110 spec](https://www.rfc-editor.org/rfc/rfc9110#status.302)
 
 [Include cookie name in length calculation](https://github.com/rails/rails/pull/54843)  
 This change updates Rails to include the cookie name's length when validating that a cookie stays within the 4KB limit, 
@@ -73,8 +74,8 @@ end
 When using postgres adapter and the `structure_load_flags` options, the extra flags were appended instead of prepended to the default ones, causing the `psql` command to ignore some of the extra flags.
 Now, the default arguments `args` are appended to the `extra_flags` instead of the opposite.
 
-_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-03-29%7D...main@%7B2025-04-04%7D)._
-_We had [15 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20250329-20250404) to the Rails codebase this past week!_
+_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-03-29%7D...main@%7B2025-04-04%7D)._  
+_We had [15 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20250329-20250404) to the Rails codebase this past week!_  
 
 Until next time!
 
