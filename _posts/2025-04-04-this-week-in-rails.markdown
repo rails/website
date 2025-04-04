@@ -70,7 +70,7 @@ end
 # forces all controllers that subclass from ApiV2Controller to start getting new isolation level
 ```
 
-[With postgres adapter, prepend `structure_load_flags` instead of appending them.](https://github.com/rails/rails/pull/54813)
+[With postgres adapter, prepend `structure_load_flags` instead of appending them](https://github.com/rails/rails/pull/54813)
 When using postgres adapter and the `structure_load_flags` options, the extra flags were appended instead of prepended to the default ones, causing the `psql` command to ignore some of the extra flags.
 Now, the default arguments `args` are appended to the `extra_flags` instead of the opposite.
 
