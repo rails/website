@@ -1,0 +1,14 @@
+{% assign data = site.data.world['2025'].faq %}
+{% assign filtered = data | where_exp: "item", "item.category != 'Rails at Scale'" %}
+{% assign categories = filtered | map: 'category' %}
+
+<div class="faq-tabs-scroll">
+  <div class="faq-tabs">
+    {% for category in categories %}
+      {% assign category_id = category | split: " " | first | downcase %}
+      <div class="tab">
+        <a href="/world/2025/faq/{{ category_id | url_encode }}">{{ category }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
