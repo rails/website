@@ -8,9 +8,9 @@ platinum:
   - name: AppSignal
     logo: /assets/world/2024/images/sponsors/RW-logo-appsignal.svg
     url: https://www.appsignal.com/
-  - name: Clio
-    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
-    url: https://www.clio.com/
+  # - name: Clio
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+  #   url: https://www.clio.com/
   # - name: Huntress
   #   logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
   #   url: https://www.huntress.com/

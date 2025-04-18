@@ -54,6 +54,15 @@ p {
     font-size: 18px;
     line-height: 25px;
   }
+
+  &.larger {
+    font-size: $xx-large;
+
+    @include media(MobileScreens) {
+      font-size: $large;
+      line-height: 25px;
+    }
+  }
 }
 
 ul {

@@ -17,10 +17,21 @@
   }
 
   &.platinum {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
 
     img {
       width: 300px;
+
+      @include media(MobileScreens) {
+        height: 100px;
+        width: 200px;
+      }
+    }
+
+    @include media(MobileScreens) {
+      flex-direction: column;
+      gap: 0;
     }
   }
 
@@ -28,25 +39,34 @@
     width: 90%;
     grid-template-columns: repeat(4, 1fr);
 
+    @include media(MobileScreens) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     img {
       width: 220px;
+
+      @include media(MobileScreens) {
+        width: 120px;
+      }
     }
+
   }
 
   &.silver {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     width: 90%;
 
     img {
       width: 150px;
-    }
-  }
 
-  @include media(MobileScreens) {
-    display: flex;
-    flex-direction: column;
+      @include media(MobileScreens) {
+        width: 100px;
+      }
+    }
   }
 }

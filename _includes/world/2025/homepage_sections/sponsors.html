@@ -2,7 +2,7 @@
   <h2 class="large-title">Sponsor Rails World</h2>
 
   <div class="text-container content-right">
-    <p>
+    <p class="larger">
       Sponsoring Rails World means showcasing your brand to a  <span class="bold">global audience of Rails enthusiasts</span>, developers, and industry leaders.
       Let's make Rails World an unforgettable experience for all.
     </p>
@@ -10,44 +10,41 @@
   </div>
 </div>
 
-<div class="section">
-  <div class="logos-grid platinum">
-    {% for sponsor in site.data.world['2025'].sponsors.platinum %}
-      <a href="{{ sponsor.url }}">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
+
+<div class="logos-grid platinum">
+  {% for sponsor in site.data.world['2025'].sponsors.platinum %}
+    <a href="{{ sponsor.url }}">
+      <img
+        src="{{ sponsor.logo }}"
+        alt="{{ sponsor.name }}"
+        loading="lazy"
+      >
+    </a>
+  {% endfor %}
 </div>
 
-<div class="section">
-  <div class="logos-grid gold">
-    {% for sponsor in site.data.world['2025'].sponsors.gold %}
-      <a href="{{ sponsor.url }}">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
+
+<div class="logos-grid gold">
+  {% for sponsor in site.data.world['2025'].sponsors.gold %}
+    <a href="{{ sponsor.url }}">
+      <img
+        src="{{ sponsor.logo }}"
+        alt="{{ sponsor.name }}"
+        loading="lazy"
+      >
+    </a>
+  {% endfor %}
 </div>
 
-<div class="section">
-  <div class="logos-grid silver">
-    {% for sponsor in site.data.world['2025'].sponsors.silver %}
-      <a href="{{ sponsor.url }}">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
+
+<div class="logos-grid silver">
+  {% for sponsor in site.data.world['2025'].sponsors.silver %}
+    <a href="{{ sponsor.url }}">
+      <img
+        src="{{ sponsor.logo }}"
+        alt="{{ sponsor.name }}"
+        loading="lazy"
+      >
+    </a>
+  {% endfor %}
 </div>

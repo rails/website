@@ -2,6 +2,12 @@
   position: relative;
   overflow: hidden;
   height: 80vh;
+  display: flex;
+  align-items: center;
+
+  @include media(MobileScreens) {
+    height: 50vh;
+  }
 }
 
 .scroll-carousel {
@@ -10,11 +16,14 @@
   height: 80vh;
   display: flex;
   align-items: center;
-  gap: 2rem;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
+
+  @include media(MobileScreens) {
+    height: 50vh;
+  }
 }
 
 .scroll-carousel::-webkit-scrollbar {
@@ -22,9 +31,13 @@
 }
 
 .scroll-carousel img {
-  max-height: 60vh;
+  height: 60vh;
   flex-shrink: 0;
   object-fit: cover;
-  pointer-events: none; /* prevents accidental click-drag interference */
+  pointer-events: none;
   user-select: none;
+
+  @include media(MobileScreens) {
+    height: 30vh;
+  }
 }

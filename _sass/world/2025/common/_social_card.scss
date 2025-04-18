@@ -21,4 +21,9 @@
   &:hover {
     background-image: linear-gradient(0deg, #880C51 35%, #3B1D62 100%);
   }
+
+  @include media(MobileScreens) {
+    width: 120px;
+    margin: auto;
+  }
 }

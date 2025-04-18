@@ -1,6 +1,5 @@
 .hero-banner {
   position: relative;
-  overflow-x: hidden;
   height: calc(100vh - 100px);
   box-sizing: border-box;
   text-align: center;
@@ -11,6 +10,7 @@
 
   @include media(MobileScreens) {
     height: 80vh;
+    overflow-x: hidden;
   }
 }
 
@@ -26,7 +26,7 @@
 .hero-banner {
   .polygon-top-left {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 5%;
 
     @include media(MobileScreens) {
@@ -69,7 +69,7 @@
 
   .polygon-bottom-left {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 15%;
 
     @include media(MobileScreens) {
