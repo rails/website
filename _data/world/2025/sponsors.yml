@@ -1,0 +1,89 @@
+platinum:
+  - name: Shopify
+    logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
+    url: https://www.shopify.com/
+  - name: GitHub
+    logo: /assets/world/2024/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: AppSignal
+    logo: /assets/world/2024/images/sponsors/RW-logo-appsignal.svg
+    url: https://www.appsignal.com/
+  - name: Clio
+    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    url: https://www.clio.com/
+  # - name: Huntress
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
+  #   url: https://www.huntress.com/
+  # - name: Valkey
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-valkey.svg
+  #   url: https://valkey.io/
+  # - name: Crunchy Data
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-crunchydata.svg
+  #   url: https://www.crunchydata.com/
+  # - name: Framework
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-framework.png
+  #   url: https://frame.work/
+  # - name: Happy Scribe
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-happyscribe.svg
+  #   url: https://www.happyscribe.com/
+  # - name: MongoDB
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-mongodb.svg
+  #   url: https://www.mongodb.com/
+  # - name: Paraxial
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-paraxial.svg
+  #   url: https://paraxial.io/
+  # - name: Sentry
+  #   logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
+  #   url: https://sentry.io/
+
+gold:
+  - name: Buzzsprout
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
+  - name: Test Double
+    logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
+    url: https://link.testdouble.com/bp8
+  - name: Fullscript
+    logo: /assets/world/2024/images/sponsors/RW-logo-fullscript.png
+    url: https://fullscript.com/
+  - name: Cedarcode
+    logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
+    url: https://www.cedarcode.com/
+  - name: Telos Labs
+    logo: /assets/world/2024/images/sponsors/RW-logo-teloslabs.svg
+    url: https://hi.teloslabs.co/
+  - name: ODDS
+    logo: /assets/world/2024/images/sponsors/RW-logo-odds.svg
+    url: https://odds.team/
+  - name: Saeloun
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: https://www.saeloun.com/
+  - name: Coder
+    logo: /assets/world/2024/images/sponsors/RW-logo-coder.svg
+    url: https://coder.com/
+
+silver:
+  - name: 37signals
+    logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
+    url: https://37signals.com/
+  - name: Cookpad
+    logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
+    url: https://cookpad.com/uk
+  - name: Doximity
+    logo: /assets/world/2024/images/sponsors/RW-logo-doximity.svg
+    url: https://www.doximity.com/
+  - name: Fleetio
+    logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
+    url: https://www.fleetio.com/
+  - name: Happy Scribe
+    logo: /assets/world/2024/images/sponsors/RW-logo-happyscribe.svg
+    url: https://www.happyscribe.com/
+  - name: MongoDB
+    logo: /assets/world/2024/images/sponsors/RW-logo-mongodb.svg
+    url: https://www.mongodb.com/
+  - name: Paraxial
+    logo: /assets/world/2024/images/sponsors/RW-logo-paraxial.svg
+    url: https://paraxial.io/
+  - name: Sentry
+    logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
+    url: https://sentry.io/

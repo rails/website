@@ -1,0 +1,30 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.scroll-carousel {
+  position: sticky;
+  top: 0;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scroll-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.scroll-carousel img {
+  max-height: 60vh;
+  flex-shrink: 0;
+  object-fit: cover;
+  pointer-events: none; /* prevents accidental click-drag interference */
+  user-select: none;
+}

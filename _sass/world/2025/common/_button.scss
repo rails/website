@@ -1,29 +1,70 @@
-.button-primary {
+.button-text-gradient {
   display: inline-block;
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 100px;
-  color: $dark-purple;
-  cursor: pointer;
+  width: fit-content;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transform: translate(0);
+  padding: 20px 40px;
+  border-radius: 10px;
+  position: relative;
   transition: background-color 0.5s ease-out, border 0.5s ease-out, color 0.5s ease-out;
+  z-index: 1;
 
-  &.large {
-    width: 100%;
-    padding: 1rem 0;
+  background-image: $text-gradient;
+
+  span {
     font-size: $xx-large;
-    font-variation-settings: $font-weight-900;
-    margin-top: 30px;
+    font-variation-settings: 'wght' 700, 'wdth' 100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: $text-gradient;
+    position: relative;
+    z-index: 2;
 
-    @media only screen and (max-width: 600px) {
-      margin-top: 25px;
-      width: 90%;
-      font-size: 25px;
+    @include media(MobileScreens) {
+      font-size: $medium;
     }
   }
 
+  // White background behind the text
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  // Border on hover using before
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: $gradient-purple-to-red;
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
   &:hover {
-    background-color: transparent;
-    color: white;
+    background-image: none;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  @include media(MobileScreens) {
+    padding: 15px 20px;;
   }
 }

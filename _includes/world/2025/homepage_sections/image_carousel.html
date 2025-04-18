@@ -1,0 +1,57 @@
+<div class="carousel-container">
+  <div class="scroll-carousel">
+    <img src="/assets/world/2025/images/carousel/carousel1.png" alt="Image 1" />
+    <img src="/assets/world/2025/images/carousel/carousel2.png" alt="Image 1" />
+    <img src="/assets/world/2025/images/carousel/carousel1.png" alt="Image 1" />
+    <img src="/assets/world/2025/images/carousel/carousel2.png" alt="Image 1" />
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".scroll-carousel");
+
+    let isDragging = false;
+    let startX = 0;
+    let initialScroll = 0;
+
+    const startDrag = (e) => {
+      isDragging = true;
+      startX = e.pageX;
+      initialScroll = carousel.scrollLeft;
+      carousel.classList.add("grabbing");
+    };
+
+    const stopDrag = () => {
+      isDragging = false;
+      carousel.classList.remove("grabbing");
+    };
+
+    const onDrag = (e) => {
+      if (!isDragging) return;
+      const deltaX = e.pageX - startX;
+      carousel.scrollLeft = initialScroll - deltaX * 3;
+    };
+
+    carousel.addEventListener("mousedown", startDrag);
+    carousel.addEventListener("mouseup", stopDrag);
+    carousel.addEventListener("mouseleave", stopDrag);
+    carousel.addEventListener("mousemove", onDrag);
+  });
+</script>
+
+<!-- auto scroll  -->
+<!-- <script>
+  document.addEventListener("scroll", () => {
+    const container = document.querySelector(".carousel-container");
+    console.log('scrolling!');
+    const carousel = document.querySelector(".scroll-carousel");
+    const scrollY = window.scrollY;
+    const offsetTop = container.offsetTop;
+    const scrollRange = container.offsetHeight;
+    if (scrollY >= offsetTop && scrollY <= offsetTop + scrollRange) {
+      const scrollOffset = scrollY - offsetTop;
+      carousel.style.transform = translateX(-${scrollOffset + 200}px);
+    }
+  });
+</script> -->

@@ -1,0 +1,73 @@
+body {
+  font-family: "acumin-variable", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
+
+  &.purple-gradient-background {
+    background: $purple-gradient;
+    background-size: 200% 200%;
+    animation: gradient-dissolve 5s ease infinite;
+  }
+  &.red-gradient-background {
+    background: $red-gradient;
+    background-size: 200% 200%;
+    animation: gradient-dissolve 5s ease infinite;
+  }
+}
+
+.section {
+  margin: 50px 0;
+
+  h2, h3 {
+    margin-bottom: 35px;
+  }
+
+  &.title-center {
+    h1, h2, h3 { text-align: center; }
+  }
+
+  &.description-center {
+    p {
+      text-align: center;
+      width: 60%;
+      margin: 25px auto 0 auto;
+    }
+  }
+}
+
+.text-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: left;
+
+  @include media(MobileScreens) {
+    width: 100%;
+    gap: 30px;
+  }
+}
+
+.text-with-image-container {
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .illustration {
+    width: 700px;
+
+    @include media(MobileScreens) {
+      display: none;
+    }
+  }
+
+  @include media(MobileScreens) {
+    padding: 0 20px;
+  }
+}

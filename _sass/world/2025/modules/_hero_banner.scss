@@ -1,0 +1,113 @@
+.hero-banner {
+  position: relative;
+  overflow-x: hidden;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media(MobileScreens) {
+    height: 80vh;
+  }
+}
+
+#logo-world-2025 {
+  width: 500px;
+
+  @include media(MobileScreens){
+    width: 300px
+  }
+}
+
+// Floating images position
+.hero-banner {
+  .polygon-top-left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+    @include media(MobileScreens) {
+      top: 10%;
+    }
+
+    .polygon-frame {
+      width: 350px;
+      height: 400px;
+      opacity: 75%;
+
+      @include media(MobileScreens) {
+        width: 100px;
+        height: 120px;
+      }
+    }
+  }
+
+  .polygon-top-right {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+
+    @include media(MobileScreens) {
+      top: 10%;
+      right: -20%
+    }
+
+    .polygon-frame {
+      width: 300px;
+      height: 350px;
+      opacity: 65%;
+
+      @include media(MobileScreens) {
+        width: 200px;
+        height: 220px;
+      }
+    }
+  }
+
+  .polygon-bottom-left {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+
+    @include media(MobileScreens) {
+      top: 50%;
+      left: -20%
+    }
+
+    .polygon-frame {
+      width: 250px;
+      height: 300px;
+      opacity: 50%;
+
+      @include media(MobileScreens) {
+        width: 150px;
+        height: 170px;
+      }
+    }
+  }
+
+  .polygon-bottom-right {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+
+    @include media(MobileScreens) {
+      top: 65%;
+      right: -20%
+    }
+
+    .polygon-frame {
+      width: 200px;
+      height: 250px;
+
+      opacity: 50%;
+      @include media(MobileScreens) {
+        width: 150px;
+        height: 170px;
+      }
+    }
+  }
+}
