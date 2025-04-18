@@ -15,7 +15,8 @@ Hi, it's [Greg](greg.molnar.io). Let's explore this week's changes in the Rails 
 If Google Cloud Memorystore or another platform that blocks the command `CLIENT SETNAME` in Redis, previously you needed to overwrite the Redis connection factory. With this change, you can set the `id` of the connection to `nil` in the configuration.
 
 [Improve leap years counting performance in _distance_of_time_in_words_](https://github.com/rails/rails/pull/54923)
-Before this change, he `distance_of_time_in_words` method could've lead to a denial of service if the given `from_time` and `to_time` arguments are far apart. This pull request replaced the concerning code with a constant calculation.
+Before this change, the `distance_of_time_in_words` method could've lead to a denial of service if the given `from_time` and `to_time` arguments are far apart. This pull request replaced the concerning code with a constant calculation.
+
 
 [Allow to configure maximum cache key sizes](https://github.com/rails/rails/pull/54915)
 This pull request adds the possibility to configure the maximum size for cache
