@@ -21,7 +21,7 @@
     justify-content: center;
 
     img {
-      width: 300px;
+      width: 400px;
 
       @include media(MobileScreens) {
         height: 100px;
@@ -44,7 +44,7 @@
     }
 
     img {
-      width: 220px;
+      width: 250px;
 
       @include media(MobileScreens) {
         width: 120px;

@@ -1,81 +1,92 @@
 .hero-banner {
-  position: relative;
-  height: calc(100vh - 100px);
-  box-sizing: border-box;
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
 
-  @include media(MobileScreens) {
-    height: 80vh;
-    overflow-x: hidden;
-  }
-}
+  .floating-polygons-container {
+    width: 25%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    flex: 0 0 auto;
+    padding: 0 50px;
 
-#logo-world-2025 {
-  width: 550px;
-  z-index: 100;
-
-  @include media(MobileScreens){
-    width: 250px
-  }
-}
-
-// Floating images position
-.hero-banner {
-  .polygon-top-left {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-
-    @include media(MobileScreens) {
-      top: 10%;
+    @include media(MobileAndTabletScreens) {
+      width:  40%;
+      height: 100%;
+      padding: 0;
     }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    z-index: 2;
+
+    #logo-world-2025 {
+      width: clamp(300px, 40vw, 550px);
+    }
+
+    .button-primary {
+      @include media(MobileAndTabletScreens) {
+        position: absolute;
+        bottom: 15%;
+      }
+    }
+  }
+
+  .left-side {
+    margin-top: 100px;
+
+    @include media(MobileAndTabletScreens) {
+      margin-top: 50px;
+    }
+  }
+
+  .right-side {
+    margin-top: -100px;
+
+    @include media(MobileAndTabletScreens) {
+      margin-top: 0;
+    }
+  }
+
+  // position floating polygons within their containers
+  .polygon-top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .polygon-frame {
       width: 350px;
       height: 400px;
       opacity: 75%;
 
-      @include media(MobileScreens) {
+      @include media(MobileAndTabletScreens) {
         width: 100px;
         height: 120px;
       }
-    }
-  }
 
-  .polygon-top-right {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-
-    @include media(MobileScreens) {
-      top: 5%;
-      right: -5%
-    }
-
-    .polygon-frame {
-      width: 300px;
-      height: 350px;
-      opacity: 65%;
-
-      @include media(MobileScreens) {
-        width: 120px;
-        height: 140px;
+      @include media(TabletScreens) {
+        width: 200px;
+        height: 220px;
       }
     }
-  }
+    }
 
   .polygon-bottom-left {
-    position: absolute;
-    top: 80%;
-    left: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
-    @include media(MobileScreens) {
-      top: 50%;
-      left: -20%
+    @include media(MobileAndTabletScreens) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: -70px;
     }
 
     .polygon-frame {
@@ -83,31 +94,67 @@
       height: 270px;
       opacity: 50%;
 
-      @include media(MobileScreens) {
+      @include media(MobileAndTabletScreens) {
         width: 130px;
         height: 150px;
+      }
+
+      @include media(TabletScreens) {
+        width: 230px;
+        height: 250px;
+      }
+    }
+  }
+
+  .polygon-top-right {
+    display: flex;
+    align-items: flex-start;
+
+    @include media(MobileAndTabletScreens) {
+      align-items: center;
+    }
+
+    .polygon-frame {
+      width: 300px;
+      height: 350px;
+      opacity: 65%;
+
+      @include media(MobileAndTabletScreens) {
+        width: 200px;
+        height: 180px;
+      }
+
+      @include media(TabletScreens) {
+        width: 220px;
+        height: 240px;
       }
     }
   }
 
   .polygon-bottom-right {
-    position: absolute;
-    top: 65%;
-    right: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
-    @include media(MobileScreens) {
-      top: 45%;
-      right: -15%
+    @include media(MobileAndTabletScreens) {
+      align-items: flex-start;
+      justify-content: flex-end;
+      margin-right: -60px;
     }
 
     .polygon-frame {
       width: 200px;
       height: 220px;
-
       opacity: 50%;
-      @include media(MobileScreens) {
+
+      @include media(MobileAndTabletScreens) {
         width: 120px;
         height: 140px;
+      }
+
+      @include media(TabletScreens) {
+        width: 220px;
+        height: 240px;
       }
     }
   }

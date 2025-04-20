@@ -21,7 +21,13 @@ body {
 }
 
 .section {
-  margin: 50px 0;
+
+  &.full-height {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   @include media(MobileScreens) { margin: 10px 0; }
 
@@ -39,43 +45,5 @@ body {
       width: 60%;
       margin: 25px auto 0 auto;
     }
-  }
-}
-
-.text-container {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  text-align: left;
-
-  p {
-    width: 75%;
-
-    @include media(MobileScreens) { width: 100%; }
-  }
-
-  @include media(MobileScreens) {
-    width: 100%;
-    gap: 30px;
-  }
-}
-
-.text-with-image-container {
-  padding-left: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .illustration {
-    width: 900px;
-
-    @include media(MobileScreens) {
-      display: none;
-    }
-  }
-
-  @include media(MobileScreens) {
-    padding: 0 20px;
   }
 }

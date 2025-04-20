@@ -3,7 +3,11 @@
     @media (max-width: 700px) { @content; }
   }
 
-  @if $query == TabletScreens {
+  @if $query == MobileAndTabletScreens {
     @media (max-width: 1200px) { @content; }
+  }
+
+  @if $query == TabletScreens {
+    @media (min-width: 700px) and (max-width: 1200px) { @content; }
   }
 }

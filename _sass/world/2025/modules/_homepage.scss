@@ -1,5 +1,42 @@
+.homepage .intro-container {
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .illustration {
+    height: 100%;
+
+    @include media(MobileScreens) {
+      display: none;
+    }
+  }
+
+  @include media(MobileScreens) {
+    padding: 0 20px;
+  }
+
+  .content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: left;
+
+    p {
+      width: 75%;
+
+      @include media(MobileScreens) { width: 100%; }
+    }
+
+    @include media(MobileScreens) {
+      width: 100%;
+      gap: 30px;
+    }
+  }
+}
+
 .homepage .sponsor-intro-container {
-  height: 600px;
   background-image: url("/assets/world/2025/images/shape.png");
   background-repeat: no-repeat;
 
@@ -12,28 +49,21 @@
     }
   }
 
-  .text-container {
-    width: 65%;
+  .button-secondary { margin-top: 4rem }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px 100px;
+
 
     @include media(MobileScreens) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
       width: 100%;
     }
-  }
-
-  .content-right {
-    margin-top: 80px;
-    margin-left: 45%;
-
-    @include media(MobileScreens){
-      margin: 0;
-    }
-  }
-
-  @include media(MobileScreens) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px
   }
 }
 
