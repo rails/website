@@ -30,7 +30,7 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    padding: 1px; // border thickness
+    padding: 2px; // border thickness
 
     // transparent background
     background: $fushia-to-red-gradient;
@@ -42,7 +42,7 @@
     transition: opacity 0.5s ease-in-out;
   }
 
-  // For the white background
+  // For the gradient background
   &:after {
     content: '';
     position: absolute;
@@ -64,6 +64,69 @@
       -webkit-background-clip: initial;
       -webkit-text-fill-color: initial;
     }
+  }
+
+  @include media(MobileScreens) {
+    padding: 15px 20px;
+  }
+}
+
+.button-secondary {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 20px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+
+  span {
+    font-size: $xx-large;
+    font-variation-settings: $font-weight-700;
+    color: white;
+    position: relative;
+    z-index: 2;
+
+    @include media(MobileScreens) {
+      font-size: $medium;
+    }
+  }
+
+  // For the gradient border on hover
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px; // border thickness
+
+    // transparent background
+    background: $button-secondary-gradient;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  // For the gradient background
+  &:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid $red;
+    background: $button-secondary-gradient;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
+  &:hover {
+    &:before { opacity: 1; }
+    &:after { background: none; border: none;}
   }
 
   @include media(MobileScreens) {
