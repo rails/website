@@ -1,25 +1,21 @@
-.button-text-gradient {
+.button-primary {
   display: inline-block;
   width: fit-content;
   text-decoration: none;
-  border: none;
   cursor: pointer;
-  outline: none;
-  transform: translate(0);
   padding: 20px 40px;
   border-radius: 10px;
   position: relative;
-  transition: background-color 0.5s ease-out, border 0.5s ease-out, color 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
   z-index: 1;
-
-  background-image: $text-gradient;
 
   span {
     font-size: $xx-large;
-    font-variation-settings: 'wght' 700, 'wdth' 100;
+    font-variation-settings: $font-weight-700;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: $text-gradient;
+    background-image: $button-gradient;
     position: relative;
     z-index: 2;
 
@@ -28,43 +24,49 @@
     }
   }
 
-  // White background behind the text
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    border-radius: 10px;
-    z-index: 0;
-  }
-
-  // Border on hover using before
+  // For the gradient border on hover
   &:before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: $gradient-purple-to-red;
-    border-radius: 12px;
-    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px; // border thickness
+
+    // transparent background
+    background: $fushia-to-red-gradient;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  // For the white background
+  &:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: white;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
   }
 
   &:hover {
-    background-image: none;
+    &:before { opacity: 1; }
+    &:after { background: none; }
 
-    &:before {
-      opacity: 1;
+    span {
+      color: white;
+      background: none;
+      background-clip: initial;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
     }
   }
 
   @include media(MobileScreens) {
-    padding: 15px 20px;;
+    padding: 15px 20px;
   }
 }
