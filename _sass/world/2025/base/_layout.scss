@@ -21,12 +21,17 @@ body {
 }
 
 .section {
-
   &.full-height {
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &.half-height-mobile {
+    @include media(MobileAndTabletScreens) {
+      height: 50vh;
+    }
   }
 
   @include media(MobileScreens) { margin: 10px 0; }

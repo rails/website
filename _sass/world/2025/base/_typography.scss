@@ -31,14 +31,14 @@ h2 {
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
 
-  @media only screen and (max-width: 600px) {
+  @include media(MobileScreens) {
     font-size: $medium;
   }
 
   &.large-title {
     font-size: $xxxx-large;
 
-    @include media(MobileScreens) { font-size: $xxx-large; }
+    @include media(MobileScreens) { font-size: 55px; }
   }
 }
 

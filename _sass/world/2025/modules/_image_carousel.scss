@@ -4,10 +4,6 @@
   height: 80vh;
   display: flex;
   align-items: center;
-
-  @include media(MobileScreens) {
-    height: 50vh;
-  }
 }
 
 .scroll-carousel {
@@ -20,10 +16,6 @@
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
-
-  @include media(MobileScreens) {
-    height: 50vh;
-  }
 }
 
 .scroll-carousel::-webkit-scrollbar {

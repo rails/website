@@ -1,11 +1,11 @@
 .logos-grid {
-  width: 80%;
   display: grid;
   row-gap: 30px;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
   padding: 20px;
+  margin: 50px 0;
 
   img {
     filter: brightness(0) invert(1);
@@ -20,6 +20,11 @@
     display: flex;
     justify-content: center;
 
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column;
+      gap: 0;
+    }
+
     img {
       width: 400px;
 
@@ -28,15 +33,9 @@
         width: 200px;
       }
     }
-
-    @include media(MobileScreens) {
-      flex-direction: column;
-      gap: 0;
-    }
   }
 
   &.gold {
-    width: 90%;
     grid-template-columns: repeat(4, 1fr);
 
     @include media(MobileScreens) {
@@ -49,6 +48,10 @@
       @include media(MobileScreens) {
         width: 120px;
       }
+
+      @include media(TabletScreens) {
+        width: 200px;
+      }
     }
 
   }
@@ -59,12 +62,11 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 90%;
 
     img {
       width: 150px;
 
-      @include media(MobileScreens) {
+      @include media(MobileAndTabletScreens) {
         width: 100px;
       }
     }
