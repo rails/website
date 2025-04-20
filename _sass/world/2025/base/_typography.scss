@@ -1,10 +1,13 @@
 $font-weight-200: 'wght' 200, 'wdth' 100;
+$font-weight-400: 'wght' 400, 'wdth' 100;
 $font-weight-600: 'wght' 600, 'wdth' 100, 'slnt' -12;
-$font-weight-700: 'wght' 600, 'wdth' 100;
+$font-weight-700: 'wght' 700, 'wdth' 100;
+$font-weight-800: 'wght' 800, 'wdth' 100;
 $font-weight-900: 'wght' 900, 'wdth' 100, 'slnt' -12;
+$font-weight-900-basic: 'wght' 900, 'wdth' 100;
 
-$xxxx-large: 70px;
-$xxx-large: 60px;
+$xxxx-large: 90px;
+$xxx-large: 70px;
 $xx-large: 30px;
 $x-large: 24px;
 $large: 20px;
@@ -12,14 +15,14 @@ $medium: 16px;
 $small: 12px;
 
 h1 {
-  font-size: $xxxx-large;
+  font-size: $xxx-large;
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
   line-height: 65px;
 
   @include media(MobileScreens) {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
@@ -34,6 +37,8 @@ h2 {
 
   &.large-title {
     font-size: $xxxx-large;
+
+    @include media(MobileScreens) { font-size: $xxx-large; }
   }
 }
 
@@ -46,7 +51,7 @@ h3, h4 {
 
 p {
   font-size: $x-large;
-  font-variation-settings: $font-weight-200;
+  font-variation-settings: $font-weight-400;
   letter-spacing: 1px;
   line-height: 45px;
 
@@ -73,7 +78,7 @@ ul {
 }
 
 .uppercase { text-transform: uppercase; }
-.bold { font-variation-settings: $font-weight-600; }
+.bold { font-variation-settings: $font-weight-900-basic; }
 .italic { font-style: italic; }
 .text-pink { color: $pink; }
 

@@ -15,10 +15,11 @@
 }
 
 #logo-world-2025 {
-  width: 500px;
+  width: 550px;
+  z-index: 100;
 
   @include media(MobileScreens){
-    width: 300px
+    width: 250px
   }
 }
 
@@ -47,12 +48,12 @@
 
   .polygon-top-right {
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 5%;
 
     @include media(MobileScreens) {
-      top: 10%;
-      right: -20%
+      top: 5%;
+      right: -5%
     }
 
     .polygon-frame {
@@ -61,15 +62,15 @@
       opacity: 65%;
 
       @include media(MobileScreens) {
-        width: 200px;
-        height: 220px;
+        width: 120px;
+        height: 140px;
       }
     }
   }
 
   .polygon-bottom-left {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 15%;
 
     @include media(MobileScreens) {
@@ -79,34 +80,34 @@
 
     .polygon-frame {
       width: 250px;
-      height: 300px;
+      height: 270px;
       opacity: 50%;
 
       @include media(MobileScreens) {
-        width: 150px;
-        height: 170px;
+        width: 130px;
+        height: 150px;
       }
     }
   }
 
   .polygon-bottom-right {
     position: absolute;
-    top: 70%;
+    top: 65%;
     right: 5%;
 
     @include media(MobileScreens) {
-      top: 65%;
-      right: -20%
+      top: 45%;
+      right: -15%
     }
 
     .polygon-frame {
       width: 200px;
-      height: 250px;
+      height: 220px;
 
       opacity: 50%;
       @include media(MobileScreens) {
-        width: 150px;
-        height: 170px;
+        width: 120px;
+        height: 140px;
       }
     }
   }

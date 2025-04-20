@@ -3,8 +3,7 @@
     @media (max-width: 700px) { @content; }
   }
 
-  // only used for specific cases for ipad air, ipad mini, etc
   @if $query == TabletScreens {
-    @media (max-width: 850px) { @content; }
+    @media (max-width: 1200px) { @content; }
   }
 }
