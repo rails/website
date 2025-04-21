@@ -5,6 +5,10 @@
   height: 100vh;
   overflow: hidden;
 
+  @include media(MobileScreens) {
+    height: calc(100vh - 100px)
+  }
+
   .floating-polygons-container {
     width: 25%;
     display: grid;
@@ -16,6 +20,12 @@
       width:  40%;
       height: 100%;
       padding: 0;
+    }
+
+    .polygon-frame {
+      @include media(SmallMobileScreens) {
+        transform: scale(0.8)
+      }
     }
   }
 
@@ -66,7 +76,7 @@
       height: 400px;
       opacity: 75%;
 
-      @include media(MobileAndTabletScreens) {
+      @include media(MobileScreens) {
         width: 100px;
         height: 120px;
       }

@@ -7,6 +7,10 @@
   padding: 20px;
   margin: 50px 0;
 
+  @include media(MobileScreens) {
+    margin: 10px 0;
+  }
+
   img {
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
@@ -62,6 +66,10 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @include media(MobileScreens) {
+      gap: 20px;
+    }
 
     img {
       width: 150px;

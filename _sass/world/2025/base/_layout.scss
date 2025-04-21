@@ -25,12 +25,12 @@ body {
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  justify-content: center;
   }
 
-  &.half-height-mobile {
+  &.mobile-fit-content {
     @include media(MobileAndTabletScreens) {
-      height: 50vh;
+      height: fit-content;
     }
   }
 

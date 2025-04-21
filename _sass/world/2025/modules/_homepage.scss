@@ -13,17 +13,16 @@
     justify-content: center;
   }
 
+  .illustration-container {
+    @include media(MobileAndTabletScreens) {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
   .illustration {
     height: 100%;
-
-    @include media(MobileScreens) {
-      height: 32%;
-    }
-
-    @include media(TabletScreens) {
-      align-self: flex-end;
-      height: 60%;
-    }
   }
 
   .content {
@@ -52,6 +51,7 @@
 
   @include media(MobileScreens) {
     background-image: none;
+    margin-bottom: 80px;
   }
 
   h2 {
@@ -59,8 +59,10 @@
     padding: 100px 0 0 80px;
 
     @include media(MobileScreens) {
+      display: flex;
+      align-items: center;
       background-image: url("/assets/world/2025/images/shape.png");
-      height: 50%;
+      height: 300px;
       background-size: contain;
       background-repeat: no-repeat;
       padding: 20px 0 0 20px;
@@ -92,6 +94,7 @@
   @include media(MobileScreens) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 80px;
   }
 
   @include media(TabletScreens) {
