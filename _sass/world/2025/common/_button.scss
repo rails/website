@@ -37,6 +37,10 @@
     @include media(MobileScreens) {
       font-size: $medium;
     }
+
+    @include media(TabletScreens) {
+      font-size: $x-large;
+    }
   }
 
   &:before {

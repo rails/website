@@ -2,126 +2,135 @@
   topics:
     - question: What is Rails World? Who is it for?
       answer: >
-        Rails World is a conference focused on the Ruby on Rails framework. It brings together developers, engineers, and enthusiasts from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals.
+        Rails World is a conference focused on the Ruby on Rails framework. It brings together developers, engineers, and enthusiasts, as well as the Rails maintainers from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals.
+
     - question: Does Rails World have a Code of Conduct?
       answer: >
         You bet we do. [Please read the Code of Conduct here](/world/conduct).
         We are committed to making Rails World a safe space for all.
         If you have any issues please reach out to
         [world@rubyonrails.org](mailto:world@rubyonrails.org).
+
     - question: Will Rails World be livestreamed?
       answer: >
-        Rails World will not be livestreamed.
-    - question: Will the talks be recorded/published?
-      answer: >
-        Yes, all talks will be recorded and published on the Rails
-        [YouTube channel](https://www.youtube.com/@railsofficial) within 2 weeks after Rails World. Subscribe to the channel to be informed
-        when the videos get published. Lighting talks will not be recorded.
+          Rails World will not be livestreamed, but we will publish the Opening Keynote within hours of it taking place. All other sessions will follow quickly and be online within two weeks after Rails World. Subscribe to be informed when the videos get published.
+
     - question: Will there be a conference app or chat?
       answer: >
-        We will be using a Campfire instance for Rails World this year for updates, announcements, and a means for attendees to connect with each other.
-        Registered attendees will be invited to Campfire in September.
-        The Rails World conference app is developed by Telos Labs. Attendees can see a more detailed agenda, build their schedule, receive notifications of upcoming sessions, and share their profile for networking. Telos Labs has <a href="https://www.teloslabs.co/post/rails-world-2024-conference-app">open sourced this app</a>, and it is our hope that the (many) events in our space will also use it for their own events.
+        We’ll use Campfire for the conference chat this year. Attendees will receive a link approximately one month before Rails World.
+
     - question: Should I stay for the weekend after Rails World?
       answer: >
-        Staying longer in Toronto is a great idea - there is definitely plenty to do, and with 1,000 other attendees coming from around the world to attend Rails World, it's likely that you will have plenty of people to hang around with after the event!
+        Of course you should! Staying in Amsterdam longer is never a bad idea, and with 800 other community members coming to Rails World, it’s likely you will have plenty of company to explore the city with.
+
+    - question: I am staying for the weekend. What can I see or do?
+      answer: >
+        There is a lot to see in Amsterdam, from the picturesque narrow houses to cruises in the canals via incredible museums. Our Platinum sponsor, AppSignal, wrote a guide on what to see and do while you are in their hometown. Check it out here (ADD LINK APP SIGNAL GUIDE).
+
     - question: What are the starting and ending times and dates so I can book my travel?
       answer: |-
-        - Sept 25, 4pm: Pre-registration and badge pickup.
-        - Sept 26, 9am: Day one, doors open at 9am at the venue.
-        - Sept 27, 10pm: Day two, closing party ends.
-        We recommend booking your travel to arrive by 4pm on Wednesday September 25th and depart on Saturday September 28th if you want to attend the Rails World closing party without worrying about rushing to catch your flight.
-    - question: My question isn't answered here. Who can I contact?
-      answer: >
-        Reach out to us at [world@rubyonrails.org](mailto:world@rubyonrails.org).
-- category: Tickets & Visas
-  topics:
+        - September 3rd: pre registration 16:00 - 19:00
+        - September 4th: 09:00 - 17:30
+        - September 5th:09:00 - 17:30, Closing Party: 18:30 - 22:00
 
-    - question: I need a letter with the event code to obtain a visa from the Canadian government.
-      answer: |-
-        Please read about <a href="https://ircc.canada.ca/english/visit/visas.asp">Canadian Visa Requirements here</a>.
-        Most foreign nationals need a temporary resident visa (TRV) or an Electronic Travel Authorization (ETA) to travel to Canada.
-        ETAs are easy and take minutes to request, however if you need a TRV, the process can be considerably longer. Registered attendees have received information about visas and requesting a letter of invitation in their ticket confirmation.
-    - question: What is the refund policy?
-      answer: |-
-        If you need to cancel your registration for Rails World,
-        please let us know as soon as possible by emailing [world@rubyonrails.org](mailto:world@rubyonrails.org).
-        Full refunds are available up to 45 days prior to the start of the
-        event, minus a 4% transaction fee. If you cancel between 44 and 30 days
-        prior to the event, you are eligible for a 50% refund, minus the
-        transaction fee.
-        Unfortunately, we cannot provide any
-        refunds for cancellations less than 30 days prior to the event.
-        However, you may transfer your ticket to another attendee free of charge
-        up to 14 days prior to the start of Rails World.
-        Badges will be pre-printed 14 days before the event, so no changes or transfers will be honored after that date.
-    - question: Can I transfer my ticket to someone else?
+        The full schedule will be published in July/August.
+
+    - question: My question is not answered here. Who can I contact?
       answer: >
-        You may reassign your ticket to another attendee free of charge up
-        to 14 days prior to the start of Rails World via the personal
-        ticket link emailed to you from Tito (registration software)
-        after booking. Badges will be pre-printed 14 days before the event, so no changes or transfers will be honored after that date.
-    - question: What is the covid/mask policy?
+        You can reach out to us at world@rubyonrails.org
+
+
+- category: Tickets & Entry
+  topics:
+    - question: What is the refund policy ?
       answer: |-
-        As of now (April 2024), Canada does not require testing, proof of vaccination, or masks at events, and so they will not be required for Rails World. Any changes in this policy will be communicated to attendees as soon as they are known.
-        Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
-        In the event you test positive for Covid immediately before or on the first day of Rails World, your ticket cost will be transferred into credit to be used at the next Rails World event. To request credit for your attendance fee, or if you have any questions, please contact [world@rubyonrails.org](mailto:world@rubyonrails.org).
+        If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing world@rubyonrails.org.
+        Full refunds are available up to 45 days prior to the start of the event, minus a 5% transaction fee. If you cancel between 44 and 30 days prior to the event, you are eligible for a 50% refund, minus the transaction fee.
+        Unfortunately, we cannot provide any refunds for cancellations less than 30 days prior to the event. However, you may transfer your ticket to another attendee free of charge up to 14 days prior to the start of Rails World.
+
     - question: Do you have a scholarship or financial support program?
       answer: |-
-        The financial support program is currently maxed out while we find sponsors for the current applicants. We will not be taking any further applicants at this time.
+        We have a limited number of financial support tickets thanks to the support of our sponsors. They are currently all accounted for, but if you would like to put yourself on the waiting list please write to world@rubyonrails.org.
+
+    - question: What is the COVID/ mask policy?
+      answer: >
+        Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
+        In the event you test positive for Covid immediately before or on the first day of Rails World, your ticket cost will be transferred into credit to be used at the next Rails World event. To request credit for your attendance fee, or if you have any questions, please contact world@rubyonrails.org.
+
 - category: Venues & Hotels
   topics:
     - question: Where is the event taking place?
       answer: |-
-        Rails World will be held at the Evergreen Brick Works in Toronto. This historic building used to be the former brick factory and quarry which produced the bricks that built some of Toronto’s most iconic buildings.
-        We can't wait for you to see this raw, industrial, beautiful space.
+        Rails World will be held at the Beurs van Berlage in Amsterdam. This historic building used to be the home of the stock exchange, and is located in the heart of the city.
+
+    - question: How can I get to the venue?
+      answer: |-
+        Beurs van Berlage (Google maps), is located precisely 7 minutes by walk from Amsterdam Centraal. If you are staying in Amsterdam we would recommend taking any trams or bus going towards the station, and walk from there.
+        For more accurate traveling options, please make use of the 9292 travel planner app or Google maps.
+
     - question: Where should I stay?
       answer: |-
-        The Chelsea Hotel is a centrally located 3-star hotel where many attendees are staying. The event room block is currently full, but the hotel still has availability at $410 CAD ($305 USD) plus taxes. If you want to book this rate please reach out to [info@magnifycommunications.com](mailto:info@magnifycommunications.com) and we will do our best to assist.
+        We have secured event rates in two hotels in the city. Ticket holders will be sent details on how you can book these rates in their confirmation.
+        We advise attendees to book as early as possible. While there are many hotels in Amsterdam, the rates are quite high averaging €200 - €350 per night.
+        Luckily, Amsterdam is a small city and easily accessible by bike, public transportation, or walking, so no matter where you stay in the city you won’t be far from the event venue.
+
 - category: Accessibility
   topics:
-    - question: How do I communicate my accessibility needs to the Rails World organizers?
+    - question: How can I communicate my accessibility needs to the organisation?
       answer: >
-        Rails World is committed to making the event accessible to everyone.
-        If you have specific accessibility needs or require any
-        accommodations, please indicate that in the 'Accessibility needs'
-        question of the registration form, and we will do our best
-        to accommodate you.
+        Rails World is committed to making the event accessible to everyone. If you have specific accessibility needs or require any accommodations, please indicate that in the ‘Accessibility needs’ question of the registration form, and we will do our best to accommodate you.
+
     - question: Will the conference be accessible by wheelchair?
       answer: >
-        Yes, Evergreen Brick Works is wheelchair accessible, and all programmed activity will take place on the ground level after you enter the venue. Because the building is a preserved monument and an old brick factory, some of the floor in the old kilns or the outside pavilion can be a little uneven.
+        Yes, the Beurs van Berlage is wheelchair accessible, and wheelchair users can expect to use the lifts for:
+          - Entering from the street to the lobby.
+          - Descending to level -1 where the restrooms and cloakroom are located.
+          - Ascending to the first floor where the workshops are held.
+          - All other programmed activity will take place on the ground level after you enter through the lobby.
+
     - question: How much walking will be required?
       answer: >
-        Most of the program will take place on two tracks and in the Sponsor Garden, all of which are all located closely together, so walking can be kept to a minimum if need be, and there will be plenty of seating throughout the space to relax.
+        While the building is fairly long, most of the program will take place on two tracks and in the Sponsor Lounge, the entries of which are all located closely together; meaning walking can be kept to a minimum if need be. There will be plenty of seating throughout the space to relax.
+        Attending workshops will require a longer distance, as they are located one floor higher at the end of the building. As an indication, the longest room is 45 meters (121 feet) long.
+
     - question: Will the talks have closed captioning?
       answer: |-
-        Closed captioning will be provided on the two main tracks to accommodate those with hearing impairments, as well as those who speak English as a second language and prefer to read spoken content. Screens will be set up next to the stage to display these captions, so attendees who wish to make use of the captions are advised to sit close to the screens for better viewing.
-        Lightning talks will not have closed captioning.
-    - question: Are food and drinks included? Can special dietary requirements be accommodated?
+        There will be closed caption screens to the left and right of the stages for those who need it.
+
+    - question: Are food and drinks included? Can dietary requirements be accommodated?
       answer: |-
-        Rails World will provide lunch and food breaks, and light food and drinks at any official networking event.
-        Efforts are made to accommodate special dietary requirements, such as vegetarian, vegan, gluten-free, or other specific dietary restrictions.
-        Please indicate your dietary needs during registration to ensure suitable arrangements are made.
-    - question: Does the venue have a cloakroom? Luggage room?
+        The following will be available at the venue:
+        - a light breakfast (emphasis on the light- if you need a substantial breakfast, we recommend eating before arriving),
+        - lunch on both days sponsored by Codeminer42
+        - snack breaks
+        - all-day non-alcoholic drinks and coffee
+        - Barista coffee carts with espresso, lattes, and cappuccinos sponsored by Cedarcode
+        The Closing Party will also have passed appetizers and beer, wine, and softdrinks.
+
+
+    - question: Do you have a cloakroom?
       answer: >
-        Yes, we will have a manned cloakroom at the entrance where attendees can store their coats, luggage and personal belongings during the event. Although this is a closed conference only open to ticket holders, attendees are always advised to watch their belongings closely.
-    - question: Does the venue have a nursing parents’ room?
+        Yes, the Beurs van Berlage venue is equipped with a manned cloakroom where attendees can store their coats, luggage and personal belongings during the event. Although this is a closed conference only open to ticket holders, attendees are always advised to watch their belongings closely throughout the venue.
+
+    - question: Does the venue have a nursing room?
       answer: >
-        Not by design, so if you are a nursing parent,
-        please indicate this on the registration form and we
-        will assign a private meeting room for your needs.
+          A nursing room is available. Please indicate on the registration form if you intend to bring a small child and will need to make use of this room.
+
     - question: Does Rails World provide childcare?
       answer: >
-        Rails World does not typically provide childcare services directly. However, if you require assistance in finding childcare options during the conference, the organizers may be able to offer recommendations for reliable local services. It is advisable to contact the Rails World team in advance to discuss your childcare needs and receive appropriate guidance.
-    - question: Does the venue have a single-occupancy or gender neutral bathroom?
+        Rails World does not offer child care, but the event organizers would be happy to refer you to trusted babysitting services in the city. Please reach out to world@rubyonrails.org.
+
+    - question: Does the venue have gender neutral bathrooms?
       answer: >
-        The bathrooms at Evergreen Brick Works are all gender neutral.
+        The venue does not have gender neutral toilets.
+
 - category: Rails at Scale
   topics:
     - question: What constitutes "at scale"?
       answer: >
         If you're tackling performance bottlenecks, scaling databases, managing high volumes of traffic, or optimizing large codebases, we'd love
         to hear from you. "At scale" could refer to the number of Rails devs on your team, or the number of applications/services you are working with.
+
     - question: What topics will be covered?
       answer: >
         The agenda will be shaped around the challenges and interests of the attendees. Once applications are reviewed,

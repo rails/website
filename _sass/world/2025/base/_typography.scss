@@ -39,6 +39,7 @@ h2 {
     font-size: $xxxx-large;
 
     @include media(MobileScreens) { font-size: 55px; }
+    @include media(TabletScreens) {font-size: $xxx-large; }
   }
 }
 

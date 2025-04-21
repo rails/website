@@ -1,15 +1,22 @@
 .hero-banner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  height: calc(100vh - 100px);
+  margin-bottom: 150px;
 
-  @include media(MobileScreens) {
-    height: calc(100vh - 100px)
+  @include media(MobileAndTabletScreens) {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  @include media(TabletScreens) {
+    height: 60vh;
   }
 
   .floating-polygons-container {
+    position: absolute;
     width: 25%;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -20,12 +27,6 @@
       width:  40%;
       height: 100%;
       padding: 0;
-    }
-
-    .polygon-frame {
-      @include media(SmallMobileScreens) {
-        transform: scale(0.8)
-      }
     }
   }
 
@@ -38,30 +39,25 @@
     z-index: 2;
 
     #logo-world-2025 {
-      width: clamp(300px, 40vw, 550px);
-    }
-
-    .button-primary {
-      @include media(MobileAndTabletScreens) {
-        position: absolute;
-        bottom: 15%;
-      }
+      width: clamp(300px, 40vw, 450px);
     }
   }
 
   .left-side {
-    margin-top: 100px;
+    top: 10%;
+    left: 0;
 
     @include media(MobileAndTabletScreens) {
-      margin-top: 50px;
+      top: 0;
     }
   }
 
   .right-side {
-    margin-top: -100px;
+    top: 10%;
+    right: 0;
 
     @include media(MobileAndTabletScreens) {
-      margin-top: 0;
+      top: 0;
     }
   }
 
@@ -86,7 +82,7 @@
         height: 220px;
       }
     }
-    }
+  }
 
   .polygon-bottom-left {
     display: flex;
@@ -104,7 +100,7 @@
       height: 270px;
       opacity: 50%;
 
-      @include media(MobileAndTabletScreens) {
+      @include media(MobileScreens) {
         width: 130px;
         height: 150px;
       }
@@ -122,6 +118,7 @@
 
     @include media(MobileAndTabletScreens) {
       align-items: center;
+      justify-content: flex-end;
     }
 
     .polygon-frame {
@@ -129,7 +126,7 @@
       height: 350px;
       opacity: 65%;
 
-      @include media(MobileAndTabletScreens) {
+      @include media(MobileScreens) {
         width: 200px;
         height: 180px;
       }
@@ -157,7 +154,7 @@
       height: 220px;
       opacity: 50%;
 
-      @include media(MobileAndTabletScreens) {
+      @include media(MobileScreens) {
         width: 120px;
         height: 140px;
       }

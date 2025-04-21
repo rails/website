@@ -9,6 +9,7 @@
 .faq-tabs {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 50px;
   margin-top: 100px;
   padding: 0 80px;
@@ -86,12 +87,15 @@
 
   .answer {
     display: none;
-    color: white;
-    font-size: $large;
-    line-height: 30px;
     max-height: 0;
     padding-bottom: 20px;
     transition: all 0.35s;
+  }
+
+  p, a {
+    color: white;
+    font-size: $medium;
+    line-height: 30px;
   }
 }
 
