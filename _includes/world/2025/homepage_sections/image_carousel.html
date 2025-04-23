@@ -41,19 +41,3 @@
     carousel.addEventListener("mousemove", onDrag);
   });
 </script>
-
-<!-- auto scroll  -->
-<!-- <script>
-  document.addEventListener("scroll", () => {
-    const container = document.querySelector(".carousel-container");
-    console.log('scrolling!');
-    const carousel = document.querySelector(".scroll-carousel");
-    const scrollY = window.scrollY;
-    const offsetTop = container.offsetTop;
-    const scrollRange = container.offsetHeight;
-    if (scrollY >= offsetTop && scrollY <= offsetTop + scrollRange) {
-      const scrollOffset = scrollY - offsetTop;
-      carousel.style.transform = translateX(-${scrollOffset + 200}px);
-    }
-  });
-</script> -->
