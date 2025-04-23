@@ -9,35 +9,46 @@
 .faq-tabs {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
   margin-top: 100px;
-  padding: 0 80px;
+  padding-left: 80px;
 
   @include media(MobileScreens) {
+    overflow-x: auto;
     flex-wrap: nowrap;
     white-space: nowrap;
     min-width: max-content;
     padding: 0 20px;
-    align-items: center;
-    gap: 20px;
+  }
+
+  @include media(TabletScreens) {
+    padding-left: 40px;
   }
 
   .tab {
+    text-align: center;
+    padding: 0 20px;
     border-right: 1px solid white;
-    padding-right: 40px;
 
     a {
+      display: inline-block;
       color: white;
       font-size: $large;
       font-variation-settings: $font-weight-700;
       text-decoration: none;
       transition: all 0.25s;
 
-      &:hover { text-decoration: underline; }
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    &:last-child { border-right: none; }
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
   }
 }
 
@@ -48,6 +59,10 @@
   @include media(MobileScreens) {
     padding: 0 20px;
     margin: 20px auto 0 auto;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0 40px;
   }
 }
 
