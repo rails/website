@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0;
+  padding: 10px 0;
 
   .content {
     width: 95%;
@@ -19,8 +19,20 @@
       text-align: center;
       color: white;
       font-variation-settings: $font-weight-900;
+      line-height: 30px;
 
-      @include media(MobileScreens) { font-size: $medium; }
+      @include media(MobileScreens) {
+        font-size: $medium;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .mobile-break {
+    display: none;
+
+    @include media(MobileScreens) {
+      display: block;
     }
   }
 }

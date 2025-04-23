@@ -6,11 +6,15 @@
 
   @include media(MobileAndTabletScreens) {
     flex-direction: column-reverse;
-    padding-left: 20px;
   }
 
   @include media(MobileScreens) {
     justify-content: center;
+    padding: 20px 25px;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0;
   }
 
   .illustration-container {
@@ -70,7 +74,7 @@
       height: 300px;
       background-size: contain;
       background-repeat: no-repeat;
-      padding: 20px 0 0 20px;
+      padding: 20px 25px;
     }
   }
 
@@ -85,7 +89,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 20px;
+      padding: 0 25px;
     }
 
     @include media(TabletScreens) {

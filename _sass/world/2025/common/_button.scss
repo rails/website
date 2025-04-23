@@ -72,6 +72,11 @@
     background-image: $button-gradient;
   }
 
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
   &:before {
     @include gradient-border($fushia-to-red-gradient);
   }
