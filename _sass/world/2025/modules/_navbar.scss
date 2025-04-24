@@ -9,12 +9,12 @@
   &.red-background { background-color: $red; }
 
   #navbar-desktop { display: flex; }
-  #navbar-mobile { display: none; }
+  // #navbar-mobile { display: none; }
 
-  @include media(MobileScreens) {
-    #navbar-desktop { display: none; }
-    #navbar-mobile { display: flex; }
-  }
+  // @include media(MobileScreens) {
+  //   #navbar-desktop { display: none; }
+  //   #navbar-mobile { display: flex; }
+  // }
 }
 
 #navbar-desktop {
@@ -23,12 +23,22 @@
   padding: 0 30px;
   height: 100px;
 
+  @include media(MobileScreens) {
+    height: 80px;
+  }
+
   .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    img { width: 140px; }
+    img {
+      width: 140px;
+
+      @include media(MobileScreens) {
+        width: 80px;
+      }
+    }
   }
 
   .nav-links-container {

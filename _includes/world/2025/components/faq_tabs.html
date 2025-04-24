@@ -2,7 +2,7 @@
 {% assign filtered = data | where_exp: "item", "item.category != 'Rails at Scale'" %}
 {% assign categories = filtered | map: 'category' %}
 
-<div class="faq-tabs-scroll">
+<div class="faq-tabs-container">
   <div class="faq-tabs">
     {% for category in categories %}
       {% assign category_id = category | split: " " | first | downcase %}

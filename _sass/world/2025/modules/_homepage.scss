@@ -10,7 +10,7 @@
 
   @include media(MobileScreens) {
     justify-content: center;
-    padding: 20px 25px;
+    padding: 0;
   }
 
   @include media(TabletScreens) {
@@ -28,6 +28,10 @@
   .illustration {
     height: 100%;
 
+    @include media(MobileScreens) {
+      height: 45vh;
+    }
+
     @include media(TabletScreens) {
       height: 50vh;
     }
@@ -41,7 +45,7 @@
     text-align: left;
 
     @include media(MobileScreens) {
-      width: 100%;
+      width: 90%;
       margin-top: 50px;
     }
 

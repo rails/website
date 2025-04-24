@@ -3,7 +3,7 @@ layout: world/2025/default
 permalink: /world/2025/faq/tickets
 ---
 
-{% assign data = site.data.world['2025'].faq | where_exp: 'item', 'item.category == "Tickets & Visas"' %}
+{% assign data = site.data.world['2025'].faq | where_exp: 'item', 'item.category == "Tickets & Entry"' %}
 {% assign faqs = data.first %}
 
 <div class="faq-container">

@@ -1,11 +1,3 @@
-.faq-tabs-scroll {
-  @include media(MobileScreens) {
-    overflow-x: auto;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-
 .faq-tabs {
   display: flex;
   justify-content: flex-start;
@@ -13,11 +5,11 @@
   padding-left: 80px;
 
   @include media(MobileScreens) {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    min-width: max-content;
-    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+    padding-left: 0;
   }
 
   @include media(TabletScreens) {
@@ -28,6 +20,10 @@
     text-align: center;
     padding: 0 20px;
     border-right: 1px solid white;
+
+    @include media(MobileScreens) {
+      border-right: none;
+    }
 
     a {
       display: inline-block;
@@ -44,6 +40,10 @@
 
     &:first-child {
       padding-left: 0;
+
+      @include media(MobileScreens) {
+        padding-left: 20px;
+      }
     }
 
     &:last-child {
@@ -58,7 +58,7 @@
 
   @include media(MobileScreens) {
     padding: 0 20px;
-    margin: 20px auto 0 auto;
+    margin: 25px auto;
   }
 
   @include media(TabletScreens) {
