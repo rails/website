@@ -4,17 +4,9 @@ permalink: /world/2025/faq/venues
 ---
 
 {% assign data = site.data.world['2025'].faq | where_exp: 'item', 'item.category == "Venues & Hotels"' %}
-{% assign faqs = data.first %}
+{% assign topics = data.first.topics %}
 
 <div class="faq-container">
   {% include world/2025/components/faq_tabs.html %}
-  <div class="section faq-content">
-    {% for topic in faqs.topics %}
-      <div class="faq-row">
-        <input type="checkbox" id="topic-{{ forloop.index }}" class="faq-toggle">
-        <label for="topic-{{ forloop.index }}" class="question">{{ topic.question }}</label>
-        <div class="answer">{{ topic.answer | markdownify  }}</div>
-      </div>
-    {% endfor %}
-  </div>
+  {% include world/2025/components/faq_category.html topics=topics %}
 </div>
