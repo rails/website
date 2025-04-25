@@ -25,19 +25,6 @@
       border-right: none;
     }
 
-    a {
-      display: inline-block;
-      color: white;
-      font-size: $large;
-      font-variation-settings: $font-weight-700;
-      text-decoration: none;
-      transition: all 0.25s;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
     &:first-child {
       padding-left: 0;
 
@@ -49,6 +36,24 @@
     &:last-child {
       border-right: none;
     }
+
+    a {
+      display: inline-block;
+      color: white;
+      font-size: $large;
+      font-variation-settings: $font-weight-700;
+      text-decoration: none;
+      transition: all 0.25s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
   }
 }
 
