@@ -5,7 +5,7 @@
   justify-items: center;
   margin: 0 auto;
   padding: 20px;
-  margin: 50px 0;
+  margin: 25px 0;
 
   @include media(MobileScreens) {
     margin: 10px 0;
@@ -40,14 +40,15 @@
   }
 
   &.gold {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
 
     @include media(MobileScreens) {
       grid-template-columns: repeat(2, 1fr);
     }
 
     img {
-      width: 250px;
+      width: 300px;
 
       @include media(MobileScreens) {
         width: 120px;
@@ -61,11 +62,25 @@
   }
 
   &.silver {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include media(MobileScreens) {
+      gap: 20px;
+    }
+
+    img {
+      width: 150px;
+
+      @include media(MobileAndTabletScreens) {
+        width: 100px;
+      }
+    }
+  }
+
+  &.members {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 
     @include media(MobileScreens) {
       gap: 20px;

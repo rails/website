@@ -28,7 +28,6 @@
     {% endfor %}
   </div>
 
-
   <div class="logos-grid gold">
     {% for sponsor in site.data.world['2025'].sponsors.gold %}
       <a href="{{ sponsor.url }}">
@@ -41,9 +40,20 @@
     {% endfor %}
   </div>
 
-
   <div class="logos-grid silver">
     {% for sponsor in site.data.world['2025'].sponsors.silver %}
+      <a href="{{ sponsor.url }}">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid members">
+    {% for sponsor in site.data.world['2025'].sponsors.members %}
       <a href="{{ sponsor.url }}">
         <img
           src="{{ sponsor.logo }}"
