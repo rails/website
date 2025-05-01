@@ -135,3 +135,11 @@
       answer: >
         The agenda will be shaped around the challenges and interests of the attendees. Once applications are reviewed,
         we'll tailor the content to address the most relevant topics for the group.
+
+    - question: Who should attend?
+      answer: >
+        Consider bringing/sending a staff (or senior) engineer who spends significant time on the code solving these problems, or someone who can speak on behalf of your company’s engineering team.
+
+    - question: Content will not be recorded.
+      answer: >
+        To encourage open and candid discussion, all attendees will be asked to sign an NDA, and no talks will be recorded.

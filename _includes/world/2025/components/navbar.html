@@ -10,7 +10,7 @@
   </nav>
 
   <!-- Hide until we have more nav items to show -->
-  <!-- <nav id="navbar-mobile">
+  <nav id="navbar-mobile">
     <div class="nav-content">
       <a href="/world/2025" class="logo-container">
         <img alt="Rails World Logo 2025" src="/assets/world/2025/logos/RW25_logo-white-trademark.png" />
@@ -19,11 +19,12 @@
     </div>
 
     <div class="mobile-menu">
+      {% include world/2025/components/navbar_links.html %}
     </div>
-  </nav> -->
+  </nav>
 </header>
 
-<!--
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('#navbar-mobile');
@@ -34,4 +35,4 @@
       mobileMenu.classList.toggle('menu-open');
     });
   });
-</script> -->
+</script>

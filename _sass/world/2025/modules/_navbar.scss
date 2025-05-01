@@ -9,12 +9,12 @@
   &.red-background { background-color: $red; }
 
   #navbar-desktop { display: flex; }
-  // #navbar-mobile { display: none; }
+  #navbar-mobile { display: none; }
 
-  // @include media(MobileScreens) {
-  //   #navbar-desktop { display: none; }
-  //   #navbar-mobile { display: flex; }
-  // }
+  @include media(MobileScreens) {
+    #navbar-desktop { display: none; }
+    #navbar-mobile { display: flex; }
+  }
 }
 
 #navbar-desktop {
@@ -90,10 +90,11 @@
   .mobile-menu {
     display: none;
     flex-direction: column;
+    text-align: center;
     background-color: $dark-purple;
     padding: 10px;
     position: absolute;
-    top: 110%;
+    top: 102%;
     left: 0;
     right: 0;
 

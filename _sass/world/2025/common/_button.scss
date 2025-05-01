@@ -60,6 +60,14 @@
     &:before { opacity: 1; }
     &:after { background: none; }
   }
+
+  &.small {
+    padding: 15px 30px;
+
+    span {
+      font-size: $medium;
+    }
+  }
 }
 
 .button-primary {
