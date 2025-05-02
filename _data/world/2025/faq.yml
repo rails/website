@@ -2,7 +2,7 @@
   topics:
     - question: What is Rails World? Who is it for?
       answer: >
-        Rails World is a conference focused on the Ruby on Rails framework. It brings together developers, engineers, and enthusiasts, as well as the Rails maintainers from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals.
+        Rails World is a technical conference focused on the Ruby on Rails framework. It brings together developers, engineers, and Rails maintainers from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals.
 
     - question: Does Rails World have a Code of Conduct?
       answer: >
@@ -13,7 +13,7 @@
 
     - question: Will Rails World be livestreamed?
       answer: >
-          Rails World will not be livestreamed, but we will publish the Opening Keynote within hours of it taking place. All other sessions will follow quickly and be online within two weeks after Rails World. Subscribe to be informed when the videos get published.
+          Rails World will not be livestreamed, but we will publish the Opening Keynote within hours of it taking place. All other sessions will follow quickly and be online within two weeks after Rails World. <a href="https://www.youtube.com/@railsofficial">Subscribe</a> to be informed when the videos get published.
 
     - question: Will there be a conference app or chat?
       answer: >
@@ -25,13 +25,14 @@
 
     - question: I am staying for the weekend. What can I see or do?
       answer: >
-        There is a lot to see in Amsterdam, from the picturesque narrow houses to cruises in the canals via incredible museums. Our Platinum sponsor, AppSignal, wrote a guide on what to see and do while you are in their hometown. Check it out here (ADD LINK APP SIGNAL GUIDE).
+        There is a lot to see in Amsterdam, from the picturesque narrow houses to cruises in the canals via incredible museums. Our Platinum sponsor, AppSignal, will be sharing a guide on what to see and do while you are in their hometown. We'll share that here soon.
 
     - question: What are the starting and ending times and dates so I can book my travel?
       answer: |-
         - September 3rd: pre registration 16:00 - 19:00
         - September 4th: 09:00 - 17:30
-        - September 5th:09:00 - 17:30, Closing Party: 18:30 - 22:00
+        - September 5th: 09:00 - 17:30
+        - Closing Party: 18:30 - 22:00
 
         The full schedule will be published in July/August.
 
@@ -42,24 +43,21 @@
 
 - category: Tickets & Entry
   topics:
-    - question: I was not able to get a ticket, is there a chance that I can still get one?
-      answer: >
-        You can reach out to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a> and be added to a waiting list, for any unclaimed tickets. Is not likely that it will happen, but we will do our best.
-
+    
     - question: What is the refund policy ?
       answer: |-
-        If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing world@rubyonrails.org.
+        If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
         Full refunds are available up to 45 days prior to the start of the event, minus a 5% transaction fee. If you cancel between 44 and 30 days prior to the event, you are eligible for a 50% refund, minus the transaction fee.
         Unfortunately, we cannot provide any refunds for cancellations less than 30 days prior to the event. However, you may transfer your ticket to another attendee free of charge up to 14 days prior to the start of Rails World.
 
     - question: Do you have a scholarship or financial support program?
       answer: |-
-        We have a limited number of financial support tickets thanks to the support of our sponsors. They are currently all accounted for, but if you would like to put yourself on the waiting list please write to world@rubyonrails.org.
+        We have a limited number of financial support tickets thanks to the support of our sponsors. They are currently all claimed, but if you would like to put yourself on the waiting list please write to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
 
     - question: What is the COVID/ mask policy?
       answer: >
         Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
-        In the event you test positive for Covid immediately before or on the first day of Rails World, your ticket cost will be transferred into credit to be used at the next Rails World event. To request credit for your attendance fee, or if you have any questions, please contact world@rubyonrails.org.
+        In the event you test positive for Covid immediately before or on the first day of Rails World, your ticket cost will be transferred into credit to be used at the next Rails World event. To request credit for your attendance fee, or if you have any questions, please contact <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
 
 - category: Venues & Hotels
   topics:
@@ -69,7 +67,7 @@
 
     - question: How can I get to the venue?
       answer: |-
-        Beurs van Berlage (Google maps), is located precisely 7 minutes by walk from Amsterdam Centraal. If you are staying in Amsterdam we would recommend taking any trams or bus going towards the station, and walk from there.
+        Beurs van Berlage (<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c609c787f17ca7:0xfdc6eede688a772f?sa=X&ved=1t:8290&ictx=111">Google maps</a>), is located precisely 7 minutes by walk from Amsterdam Centraal. If you are staying in Amsterdam we would recommend taking any trams or bus going towards the station, and walk from there.
         For more accurate traveling options, please make use of the 9292 travel planner app or Google maps.
 
     - question: Where should I stay?
@@ -104,7 +102,7 @@
     - question: Are food and drinks included? Can dietary requirements be accommodated?
       answer: |-
         The following will be available at the venue:
-        - a light breakfast (emphasis on the light- if you need a substantial breakfast, we recommend eating before arriving),
+        - a light breakfast (emphasis on the light- if you need a substantial breakfast, we recommend eating before arriving)
         - lunch on both days sponsored by Codeminer42
         - snack breaks
         - all-day non-alcoholic drinks and coffee
@@ -114,7 +112,7 @@
 
     - question: Do you have a cloakroom?
       answer: >
-        Yes, the Beurs van Berlage venue is equipped with a manned cloakroom where attendees can store their coats, luggage and personal belongings during the event. Although this is a closed conference only open to ticket holders, attendees are always advised to watch their belongings closely throughout the venue.
+        Yes, the Beurs van Berlage venue is equipped with a manned cloakroom where you can store coats, luggage and personal belongings during the event. Although this is a closed conference only open to ticket holders, attendees are always advised to watch their belongings closely throughout the venue.
 
     - question: Does the venue have a nursing room?
       answer: >
@@ -130,6 +128,11 @@
 
 - category: Rails at Scale
   topics:
+
+    - question: Where will the Rails at Scale Summit take place?
+      answer: >
+        We have secured a venue in Amsterdam Noord within easy access to the conference hotel(s), and invited attendees will be sent location details with their registration.
+        
     - question: What constitutes "at scale"?
       answer: >
         If you're tackling performance bottlenecks, scaling databases, managing high volumes of traffic, or optimizing large codebases, we'd love
@@ -147,3 +150,7 @@
     - question: Content will not be recorded.
       answer: >
         To encourage open and candid discussion, all attendees will be asked to sign an NDA, and no talks will be recorded.
+
+    - question: How much are tickets?
+      answer: >
+        We are pricing out tickets and will publish this shortly. Good to know: Rails at Scale tickets do not include access to Rails World. Rails World tickets will be sold separately.
