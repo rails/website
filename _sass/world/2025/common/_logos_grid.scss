@@ -1,14 +1,15 @@
 .logos-grid {
-  display: grid;
-  row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  margin: 0 auto;
+  gap: 50px;
   padding: 20px;
   margin: 25px 0;
 
   @include media(MobileScreens) {
-    margin: 10px 0;
+    padding: 10px;
+    gap: 50px;
   }
 
   img {
@@ -21,76 +22,65 @@
   }
 
   &.platinum {
-    display: flex;
-    justify-content: center;
-
-    @include media(MobileAndTabletScreens) {
-      flex-direction: column;
-      gap: 0;
-    }
-
     img {
       width: 400px;
 
       @include media(MobileScreens) {
-        height: 100px;
-        width: 200px;
+        width: 300px;
+      }
+
+      @include media(TabletScreens) {
+        width: 300px;
       }
     }
   }
 
   &.gold {
-    display: flex;
-    justify-content: center;
+    gap: 150px;
 
-    @include media(MobileScreens) {
-      grid-template-columns: repeat(2, 1fr);
+    @include media(MobileAndTabletScreens) {
+      justify-content: space-around;
+      gap: 0;
+      margin: 0;
     }
 
     img {
-      width: 300px;
+      width: 180px;
 
       @include media(MobileScreens) {
         width: 120px;
       }
-
-      @include media(TabletScreens) {
-        width: 200px;
-      }
     }
-
   }
 
   &.silver {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    @include media(MobileScreens) {
-      gap: 20px;
+    @include media(MobileAndTabletScreens) {
+      gap: 25px;
     }
 
     img {
-      width: 150px;
+      width: 200px;
 
-      @include media(MobileAndTabletScreens) {
-        width: 100px;
+      @include media(MobileScreens) {
+        width: 125px;
+      }
+
+      @include media(TabletScreens) {
+        width: 150px;
       }
     }
   }
 
   &.members {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-
-    @include media(MobileScreens) {
-      gap: 20px;
+    @include media(MobileAndTabletScreens) {
+      gap: 25px;
     }
 
     img {
-      width: 150px;
+      width: 120px;
 
       @include media(MobileAndTabletScreens) {
-        width: 100px;
+        width: 80px;
       }
     }
   }

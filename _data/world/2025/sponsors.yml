@@ -4,17 +4,17 @@ platinum:
     url: https://www.appsignal.com/
 
 gold:
-  - name: Shopify
-    logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
-    url: https://www.shopify.com/
   - name: GitHub
-    logo: /assets/world/2024/images/sponsors/RW-logo-github.svg
+    logo: /assets/world/2025/images/sponsors/RW-logo-github.svg
     url: https://www.github.com/
+  - name: Shopify
+    logo: /assets/world/2025/images/sponsors/RW-logo-shopify.svg
+    url: https://www.shopify.com/
 
 silver:
   - name: Code Miner 42
-    logo: /assets/world/2025/images/sponsors/logo-codeminer42.png
-    url: ""
+    logo: /assets/world/2025/images/sponsors/RW-logo-codeminer42.png
+    url: "https://www.codeminer42.com/"
   - name: Buzzsprout
     logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
     url: https://www.buzzsprout.com/
@@ -26,10 +26,7 @@ silver:
     url: https://www.intercom.com/
   - name: Makandra
     logo: /assets/world/2024/images/sponsors/RW-logo-makandra.svg
-    url: ""
-  - name: ODDS
-    logo: /assets/world/2024/images/sponsors/RW-logo-odds.svg
-    url: https://odds.team/
+    url: "https://makandra.de/en"
   - name: Paraxial
     logo: /assets/world/2024/images/sponsors/RW-logo-paraxial.svg
     url: https://paraxial.io/
@@ -37,16 +34,19 @@ silver:
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/
   - name: Wyework
-    logo: /assets/world/2025/images/sponsors/logo-wyeworks.svg
-    url: ""
+    logo: /assets/world/2025/images/sponsors/RW-logo-wyeworks.svg
+    url: "https://www.wyeworks.com/"
 
 members:
   - name: Avo
-    logo: /assets/world/2025/images/sponsors/logo-avo.png
-    url: ""
+    logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
+    url: "https://avohq.io/"
   - name: Cedarcode
     logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: ODDS
+    logo: /assets/world/2025/images/sponsors/RW-logo-odds.svg
+    url: https://odds.team/
   - name: Cookpad
     logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
     url: https://cookpad.com/uk
@@ -60,16 +60,16 @@ members:
     logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
     url: https://37signals.com/
   - name: BigBinary
-    logo: /assets/world/2023/images/sponsors/RW-logo-bigbinary.svg
+    logo: /assets/world/2025/images/sponsors/RW-logo-bigbinary.svg
     url: https://www.bigbinary.com/
   - name: Clio
-    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    logo: /assets/world/2025/images/sponsors/RW-logo-clio.svg
     url: https://www.clio.com/
   - name: Gusto
     logo: /assets/images/logo-gusto.svg
-    url: ""
-  - name: Planet Argon
-    logo: /assets/world/2023/images/sponsors/RW-logo-planet-argon.png
+    url: "https://gusto.com/"
+  - name: Planet Aragon
+    logo: /assets/world/2025/images/sponsors/RW-logo-planet-aragon.svg
     url: https://www.planetargon.com/
   - name: Renuo
     logo: /assets/images/logo-renuo.svg
@@ -79,4 +79,4 @@ members:
     url: https://www.saeloun.com/
   - name: Tablecheck
     logo: /assets/world/2024/images/sponsors/RW-logo-tablecheck.svg
-    url: https://www.tablecheck.com/
+    url: https://www.tablecheck.com/en/join/
