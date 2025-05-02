@@ -1,19 +1,11 @@
 $dark-purple: #3B1D62;
-$fushia: #880C51; // rename to fushia
+$fushia: #880C51;
 $red: #CB0C1C;
 $pink: #FF18A2;
 
 // Gradients
 $button-gradient: linear-gradient(90deg, #3B1D62 47%, $red 100%);
 $button-secondary-gradient: linear-gradient(270deg, $dark-purple 17%, $red 100%);
-
-$speaker-card-gradient: linear-gradient(180deg, rgba(59, 29, 98, 0%) 50%, $red 100%);
-$speaker-card-gradient-hover: linear-gradient(180deg, rgba(59, 29, 98, 0%) 0%, rgba(203, 12, 28, 50%) 31%, $red 100%);;
 $purple-gradient: linear-gradient(180deg, $dark-purple, $dark-purple, $fushia, $fushia);
 $red-gradient: linear-gradient(180deg, $red, $red, $dark-purple, $dark-purple);
-$title-background-gradient: linear-gradient(270deg, rgba(59, 29, 98, 0.00) 0%, $red 100%);
-$text-background-gradient: linear-gradient(270deg, $dark-purple 17%, $red 100%);
 $fushia-to-red-gradient: linear-gradient(90deg, #880C51 0%, $red 100%);
-
-$fushia-red-gradient: linear-gradient(90deg, $fushia, $fushia, $red, $red);
-$red-gradient-vertical: linear-gradient(0deg, $red 0%, #880C51 100%);
