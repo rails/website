@@ -37,11 +37,15 @@
 
     - question: My question is not answered here. Who can I contact?
       answer: >
-        You can reach out to us at world@rubyonrails.org
+        You can reach out to us at <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>
 
 
 - category: Tickets & Entry
   topics:
+    - question: I was not able to get a ticket, is there a chance that I can still get one?
+      answer: >
+        You can reach out to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a> and be added to a waiting list, for any unclaimed tickets. Is not likely that it will happen, but we will do our best.
+
     - question: What is the refund policy ?
       answer: |-
         If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing world@rubyonrails.org.

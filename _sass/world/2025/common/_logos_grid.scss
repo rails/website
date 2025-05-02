@@ -7,9 +7,8 @@
   padding: 20px;
   margin: 25px 0;
 
-  @include media(MobileScreens) {
-    padding: 10px;
-    gap: 50px;
+  @include media(MobileAndTabletScreens) {
+    margin: 0;
   }
 
   img {
@@ -38,10 +37,15 @@
   &.gold {
     gap: 150px;
 
-    @include media(MobileAndTabletScreens) {
+    @include media(MobileScreens) {
       justify-content: space-around;
       gap: 0;
       margin: 0;
+    }
+
+    @include media(TabletScreens) {
+      padding: 0;
+      gap: 100px;
     }
 
     img {

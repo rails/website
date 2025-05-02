@@ -12,7 +12,7 @@ $xx-large: 30px;
 $x-large: 24px;
 $large: 20px;
 $medium: 16px;
-$small: 12px;
+$small: 14px;
 
 h1 {
   font-size: $xxx-large;
@@ -80,7 +80,7 @@ ul {
 
 .uppercase { text-transform: uppercase; }
 .bold { font-variation-settings: $font-weight-900-basic; }
-.italic { font-style: italic; }
+.italic { font-style: italic; font-size: $small; }
 .text-pink { color: $pink; }
 
 .title-background-gradient {

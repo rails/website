@@ -61,10 +61,15 @@
 .homepage .sponsor-intro-container {
   background-image: url("/assets/world/2025/images/shape.png");
   background-repeat: no-repeat;
+  background-size: 550px;
 
   @include media(MobileScreens) {
     background-image: none;
     margin-bottom: 80px;
+  }
+
+  @include media(TabletScreens) {
+    margin-bottom: 50px;
   }
 
   h2 {
