@@ -14,7 +14,7 @@ gold:
 silver:
   - name: Code Miner 42
     logo: /assets/world/2025/images/sponsors/RW-logo-codeminer42.png
-    url: "https://www.codeminer42.com/"
+    url: https://www.codeminer42.com/?utm_source=railsworld2025&utm_medium=website&utm_campaign=sponsor
   - name: Buzzsprout
     logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
     url: https://www.buzzsprout.com/
@@ -26,7 +26,7 @@ silver:
     url: https://www.intercom.com/
   - name: Makandra
     logo: /assets/world/2024/images/sponsors/RW-logo-makandra.svg
-    url: "https://makandra.de/en"
+    url: https://makandra.de/en
   - name: Paraxial
     logo: /assets/world/2024/images/sponsors/RW-logo-paraxial.svg
     url: https://paraxial.io/
@@ -35,15 +35,15 @@ silver:
     url: https://sentry.io/
   - name: Wyework
     logo: /assets/world/2025/images/sponsors/RW-logo-wyeworks.svg
-    url: "https://www.wyeworks.com/"
+    url: https://www.wyeworks.com/
 
 members:
-  - name: Avo
-    logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
-    url: "https://avohq.io/"
   - name: Cedarcode
     logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: Avo
+    logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
+    url: https://avohq.io/
   - name: ODDS
     logo: /assets/world/2025/images/sponsors/RW-logo-odds.svg
     url: https://odds.team/
@@ -67,7 +67,7 @@ members:
     url: https://www.clio.com/
   - name: Gusto
     logo: /assets/images/logo-gusto.svg
-    url: "https://gusto.com/"
+    url: https://gusto.com/
   - name: Planet Aragon
     logo: /assets/world/2025/images/sponsors/RW-logo-planet-aragon.svg
     url: https://www.planetargon.com/
