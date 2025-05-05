@@ -56,6 +56,12 @@ members:
   - name: Fleetio
     logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
     url: https://www.fleetio.com/
+  - name: Procore
+    logo: /assets/world/2024/images/sponsors/RW-logo-procore.svg
+    url: https://www.procore.com/en-gb
+  - name: 1password
+    logo: /assets/images/logo-1password.svg
+    url:  https://1password.com/
   - name: 37signals
     logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
     url: https://37signals.com/
