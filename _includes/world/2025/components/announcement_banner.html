@@ -1,0 +1,10 @@
+{% assign announcements = site.data.world['2025'].announcements %}
+{% if announcements %}
+  <div class="announcement-banner {{ include.background_color }}">
+    {% for announcement in announcements %}
+      <div class="content">
+        <p>{{ announcement.content | html }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

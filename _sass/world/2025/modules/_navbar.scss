@@ -1,0 +1,114 @@
+#header-2025 {
+  position: sticky !important;
+  top: 0;
+  z-index: 900 !important;
+  width: 100%;
+  border-bottom: 2px solid white;
+
+  &.purple-background {  background-color: $dark-purple; }
+  &.red-background { background-color: $red; }
+
+  #navbar-desktop { display: flex; }
+  #navbar-mobile { display: none; }
+
+  @include media(MobileScreens) {
+    #navbar-desktop { display: none; }
+    #navbar-mobile { display: flex; }
+  }
+}
+
+#navbar-desktop {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 100px;
+
+  @include media(MobileScreens) {
+    height: 80px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 140px;
+
+      @include media(MobileScreens) {
+        width: 80px;
+      }
+    }
+  }
+
+  .nav-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+#navbar-mobile {
+  padding: 10px;
+  position: relative;
+  height: 60px;
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img { width: 80px; }
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: $dark-purple;
+    padding: 10px;
+    position: absolute;
+    top: 102%;
+    left: 0;
+    right: 0;
+
+    a {
+      padding: 10px 0;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:last-child { border: none }
+    }
+
+    &.menu-open {
+      display: flex;
+    }
+  }
+}

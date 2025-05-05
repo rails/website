@@ -1,0 +1,29 @@
+.social-card {
+  text-decoration: none;
+  background-image:linear-gradient(0deg, #CB0C1C 0%, #880C51 100%);;
+  width: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease-in;
+  color: white;
+
+  img { width: 40px; }
+
+  p {
+    font-size: $medium;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &:hover {
+    background-image: linear-gradient(0deg, #880C51 35%, #3B1D62 100%);
+  }
+
+  @include media(MobileScreens) {
+    width: 120px;
+    margin: auto;
+  }
+}

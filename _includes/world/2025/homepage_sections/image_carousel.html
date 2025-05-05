@@ -1,0 +1,44 @@
+<div class="section full-height mobile-fit-content">
+  <div class="carousel-container">
+    <div class="scroll-carousel">
+      <img src="/assets/world/2025/images/carousel/carousel1.jpg" alt="people networking" />
+      <img src="/assets/world/2025/images/carousel/carousel2.jpg" alt="talk rails world 2023" />
+      <img src="/assets/world/2025/images/carousel/carousel3.jpg" alt="people applauding at rails world" />
+      <img src="/assets/world/2025/images/carousel/carousel4.jpg" alt="the venue of rails world 2025" />
+      <img src="/assets/world/2025/images/carousel/carousel5.jpg" alt="talk rails world 2023" />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".scroll-carousel");
+
+    let isDragging = false;
+    let startX = 0;
+    let initialScroll = 0;
+
+    const startDrag = (e) => {
+      isDragging = true;
+      startX = e.pageX;
+      initialScroll = carousel.scrollLeft;
+      carousel.classList.add("grabbing");
+    };
+
+    const stopDrag = () => {
+      isDragging = false;
+      carousel.classList.remove("grabbing");
+    };
+
+    const onDrag = (e) => {
+      if (!isDragging) return;
+      const deltaX = e.pageX - startX;
+      carousel.scrollLeft = initialScroll - deltaX * 3;
+    };
+
+    carousel.addEventListener("mousedown", startDrag);
+    carousel.addEventListener("mouseup", stopDrag);
+    carousel.addEventListener("mouseleave", stopDrag);
+    carousel.addEventListener("mousemove", onDrag);
+  });
+</script>

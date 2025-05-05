@@ -1,0 +1,66 @@
+<div class="section full-height mobile-fit-content">
+  <div class="sponsor-intro-container">
+    <h2 class="large-title">Sponsor Rails World</h2>
+
+    <div class="content">
+      <div></div>
+      <div>
+        <p class="larger">
+          Sponsoring Rails World means showcasing your brand to a  <span class="bold">global audience of Rails enthusiasts</span>, developers, and maintainers.
+          Get in touch and help make Rails World an unforgettable experience for all.
+        </p>
+        <a href="https://public.3.basecamp.com/p/KZTZxpc6BVtMSH9Vv4PWAMN9" class="button-secondary" target="_blank"><span>View prospectus</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="logos-grid platinum">
+    {% for sponsor in site.data.world['2025'].sponsors.platinum %}
+      <a href="{{ sponsor.url }}">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid gold">
+    {% for sponsor in site.data.world['2025'].sponsors.gold %}
+      <a href="{{ sponsor.url }}">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid silver">
+    {% for sponsor in site.data.world['2025'].sponsors.silver %}
+      <a href="{{ sponsor.url }}">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid members">
+    {% for sponsor in site.data.world['2025'].sponsors.members %}
+      <a href="{{ sponsor.url }}">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+</div>

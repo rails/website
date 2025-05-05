@@ -1,3 +1,11 @@
 $dark-purple: #3B1D62;
-$pink-purple: #880C51;
-$purple-pink-gradient: linear-gradient(180deg, $dark-purple, $dark-purple, $pink-purple, $pink-purple);
+$fushia: #880C51;
+$red: #CB0C1C;
+$pink: #FF18A2;
+
+// Gradients
+$button-gradient: linear-gradient(90deg, #3B1D62 47%, $red 100%);
+$button-secondary-gradient: linear-gradient(270deg, $dark-purple 17%, $red 100%);
+$purple-gradient: linear-gradient(180deg, $dark-purple, $dark-purple, $fushia, $fushia);
+$red-gradient: linear-gradient(180deg, $red, $red, $dark-purple, $dark-purple);
+$fushia-to-red-gradient: linear-gradient(90deg, #880C51 0%, $red 100%);

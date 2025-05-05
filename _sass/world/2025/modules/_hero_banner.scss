@@ -1,0 +1,168 @@
+.hero-banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 100px);
+  margin-bottom: 150px;
+
+  @include media(MobileAndTabletScreens) {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  @include media(TabletScreens) {
+    height: 60vh;
+  }
+
+  .floating-hexagons-container {
+    position: absolute;
+    width: 25%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    flex: 0 0 auto;
+    padding: 0 50px;
+
+    @include media(MobileAndTabletScreens) {
+      width:  40%;
+      height: 100%;
+      padding: 0;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    z-index: 2;
+
+    #logo-world-2025 {
+      width: clamp(300px, 40vw, 450px);
+    }
+  }
+
+  .left-side {
+    top: 10%;
+    left: 0;
+
+    @include media(MobileAndTabletScreens) {
+      top: 0;
+    }
+  }
+
+  .right-side {
+    top: 10%;
+    right: 0;
+
+    @include media(MobileAndTabletScreens) {
+      top: 0;
+    }
+  }
+
+  // position floating hexagons within their containers
+  .hexagon-top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hexagon-frame {
+      width: 350px;
+      height: 400px;
+      opacity: 75%;
+
+      @include media(MobileScreens) {
+        width: 100px;
+        height: 120px;
+      }
+
+      @include media(TabletScreens) {
+        width: 200px;
+        height: 220px;
+      }
+    }
+  }
+
+  .hexagon-bottom-left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @include media(MobileAndTabletScreens) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: -70px;
+    }
+
+    .hexagon-frame {
+      width: 250px;
+      height: 270px;
+      opacity: 50%;
+
+      @include media(MobileScreens) {
+        width: 130px;
+        height: 150px;
+      }
+
+      @include media(TabletScreens) {
+        width: 230px;
+        height: 250px;
+      }
+    }
+  }
+
+  .hexagon-top-right {
+    display: flex;
+    align-items: flex-start;
+
+    @include media(MobileAndTabletScreens) {
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .hexagon-frame {
+      width: 300px;
+      height: 350px;
+      opacity: 65%;
+
+      @include media(MobileScreens) {
+        width: 200px;
+        height: 180px;
+      }
+
+      @include media(TabletScreens) {
+        width: 220px;
+        height: 240px;
+      }
+    }
+  }
+
+  .hexagon-bottom-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include media(MobileAndTabletScreens) {
+      align-items: flex-start;
+      justify-content: flex-end;
+      margin-right: -60px;
+    }
+
+    .hexagon-frame {
+      width: 200px;
+      height: 220px;
+      opacity: 50%;
+
+      @include media(MobileScreens) {
+        width: 120px;
+        height: 140px;
+      }
+
+      @include media(TabletScreens) {
+        width: 220px;
+        height: 240px;
+      }
+    }
+  }
+}
