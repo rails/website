@@ -116,11 +116,14 @@
       img {
         margin-bottom: 30px;
         object-fit: cover;
-        width: 100%;
         height: 500px;
 
         @include media(MobileScreens) {
           height: 300px;
+        }
+
+        @include media(MobileAndTabletScreens) {
+          width: 100%;
         }
       }
     }
