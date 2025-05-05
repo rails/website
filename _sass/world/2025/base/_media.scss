@@ -1,4 +1,9 @@
 @mixin media($query) {
+
+  @if $query == SmallMobileScreens {
+    @media (max-width: 375px) { @content; }
+  }
+
   @if $query == MobileScreens {
     @media (max-width: 700px) { @content; }
   }
