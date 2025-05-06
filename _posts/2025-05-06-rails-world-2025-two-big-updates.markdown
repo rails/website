@@ -9,7 +9,7 @@ date: 2025-05-06
 
 Hey everyone!
 
-The [Rails World 2025 website](/world/2025) has been updated, and here are two big updates you should know about this year’s event.
+The [Rails World 2025 website](/world/2025) has been updated, and here are a few big updates you should know about this year’s event.
 
 <img src="/assets/images/banner-RW25-tickets.png">
 
