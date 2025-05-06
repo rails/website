@@ -2,9 +2,9 @@ $font-weight-200: 'wght' 200, 'wdth' 100;
 $font-weight-400: 'wght' 400, 'wdth' 100;
 $font-weight-600: 'wght' 600, 'wdth' 100, 'slnt' -12;
 $font-weight-700: 'wght' 700, 'wdth' 100;
-$font-weight-800: 'wght' 800, 'wdth' 100;
+$font-weight-800: 'wght' 800, 'wdth' 100, 'slnt' -12;
 $font-weight-900: 'wght' 900, 'wdth' 100, 'slnt' -12;
-$font-weight-900-basic: 'wght' 900, 'wdth' 100;
+$font-weight-800-basic: 'wght' 800, 'wdth' 100;
 
 $xxxx-large: 90px;
 $xxx-large: 70px;
@@ -79,6 +79,6 @@ ul {
 }
 
 .uppercase { text-transform: uppercase; }
-.bold { font-variation-settings: $font-weight-900-basic; }
+.bold { font-variation-settings: $font-weight-800-basic; }
 .italic { font-style: italic; font-size: $small; }
 .text-pink { color: $pink; }
