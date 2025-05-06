@@ -33,6 +33,9 @@ silver:
   - name: Makandra
     logo: /assets/world/2024/images/sponsors/RW-logo-makandra.svg
     url: https://makandra.de/en
+  - name: Salesforce Heroku
+    logo: /assets/world/2025/images/sponsors/RW-logo-salesforce-heroku.svg
+    url: https://www.heroku.com/salesforce/
   - name: Sentry
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/
