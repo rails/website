@@ -50,6 +50,9 @@ members:
   - name: Avo
     logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
     url: https://avohq.io/
+  - name: Telos Labs
+    logo: /assets/world/2024/images/sponsors/RW-logo-teloslabs.svg
+    url: https://hi.teloslabs.co/
   - name: ODDS
     logo: /assets/world/2025/images/sponsors/RW-logo-odds.svg
     url: https://odds.team/
