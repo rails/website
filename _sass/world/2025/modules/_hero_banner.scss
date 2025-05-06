@@ -50,13 +50,21 @@
     @include media(MobileAndTabletScreens) {
       top: 0;
     }
+
+    @include media(SmallMobileScreens) {
+      top: -20px;
+    }
   }
 
   .right-side {
     top: 10%;
     right: 0;
 
-    @include media(MobileAndTabletScreens) {
+    @include media(MobileScreens) {
+      top: -25px;
+    }
+
+    @include media(TabletScreens) {
       top: 0;
     }
   }
@@ -134,6 +142,11 @@
       @include media(TabletScreens) {
         width: 220px;
         height: 240px;
+      }
+
+      @include media(SmallMobileScreens) {
+        width: 120px;
+        height: 130px;
       }
     }
   }

@@ -18,7 +18,7 @@
 <div class="section">
   <div class="logos-grid platinum">
     {% for sponsor in site.data.world['2025'].sponsors.platinum %}
-      <a href="{{ sponsor.url }}">
+      <a href="{{ sponsor.url }}" target="_blank">
         <img
           src="{{ sponsor.logo }}"
           alt="{{ sponsor.name }}"
@@ -30,7 +30,7 @@
 
   <div class="logos-grid gold">
     {% for sponsor in site.data.world['2025'].sponsors.gold %}
-      <a href="{{ sponsor.url }}">
+      <a href="{{ sponsor.url }}"  target="_blank">
         <img
           src="{{ sponsor.logo }}"
           alt="{{ sponsor.name }}"
@@ -42,7 +42,7 @@
 
   <div class="logos-grid silver">
     {% for sponsor in site.data.world['2025'].sponsors.silver %}
-      <a href="{{ sponsor.url }}">
+      <a href="{{ sponsor.url }}" target="_blank">
         <img
           src="{{ sponsor.logo }}"
           alt="{{ sponsor.name }}"
@@ -54,7 +54,7 @@
 
   <div class="logos-grid members">
     {% for sponsor in site.data.world['2025'].sponsors.members %}
-      <a href="{{ sponsor.url }}">
+      <a href="{{ sponsor.url }}" target="_blank">
         <img
           src="{{ sponsor.logo }}"
           alt="{{ sponsor.name }}"
