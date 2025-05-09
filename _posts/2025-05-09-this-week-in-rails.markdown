@@ -35,9 +35,9 @@ This change enhances the `MemCacheStore#read_multi_entries` method by adding err
 The Safari browser version used in Sauce Labs tests for Action Cable was updated, fixing issues preventing test execution with the latest Safari.
 
 [Support selenium-webdriver 4.32.0](https://github.com/rails/rails/commit/8819ab5ba521ed93504a0797e2a5ef74081e4c0c)  
-This change updates and adds support for some breaking changes on selenium-webdriver 4.32.0 version.
+This change updates and adds support for some breaking changes on `selenium-webdriver` 4.32.0 version.
 
-_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-05-02%7D...main@%7B2025-05-09%7D)._
+_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-05-02%7D...main@%7B2025-05-09%7D)._  
 _We had [11 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20250502-20250509) to the Rails codebase this past week!_
 
 Until next time!
