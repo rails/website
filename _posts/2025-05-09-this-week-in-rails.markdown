@@ -17,7 +17,7 @@ If you are well versed in these areas, please review and submit your feedback on
 [Rails World updates!](https://rubyonrails.org/2025/5/6/rails-world-2025-two-big-updates)  
 Check out the latest updates on schedule, new ticket types and availability and a new [Rails at Scale](https://rubyonrails.org/world/2025/rails_at_scale) event!
 
-[Defer ActiveJob enqueue callbacks until after commit when `enqueue_after_transaction_commit` enabled](https://github.com/rails/rails/pull/55004)  
+[Defer Active Job enqueue callbacks until after commit when `enqueue_after_transaction_commit` enabled](https://github.com/rails/rails/pull/55004)  
 Active Job's `around_enqueue` callbacks are deferred until after the database transaction commits, but only when the `enqueue_after_transaction_commit` option is enabled. 
 This ensures that job enqueue logic, including handling Sidekiq connectivity issues, occurs only after a successful transaction commit, preventing premature job execution.
 
