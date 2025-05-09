@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New RF Guides PR, Rails World Updates and more!"
+title: "New Guides PR, Rails World Updates and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
@@ -10,6 +10,7 @@ date: 2025-05-09
 
 Hi, it's [Vipul!](https://www.saeloun.com/team/vipul/). Let's explore this week's changes in the Rails codebase.
 
+**New Guides Pull Request for review**  
 A new guides [Pull Request](https://github.com/rails/rails/pull/55020) is up, which updates the Rails Application Template Guide and also merges it with Rails Generators Guide.
 If you are well versed in these areas, please review and submit your feedback on the PR!
 
