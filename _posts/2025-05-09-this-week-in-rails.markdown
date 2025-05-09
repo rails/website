@@ -17,11 +17,10 @@ If you are well versed in these areas, please review and submit your feedback on
 [Rails World updates!](https://rubyonrails.org/2025/5/6/rails-world-2025-two-big-updates)  
 Check out the latest updates on schedule, new ticket types and availability and a new [Rails at Scale](https://rubyonrails.org/world/2025/rails_at_scale) event!
 
-[Defer Active Job enqueue callbacks until after commit when `enqueue_after_transaction_commit` enabled](https://github.com/rails/rails/pull/55004)  
-Active Job's `around_enqueue` callbacks are deferred until after the database transaction commits, but only when the `enqueue_after_transaction_commit` option is enabled. 
+[Defer ActiveJob enqueue callbacks until after commit when enqueue_after_transaction_commit enabled](https://github.com/rails/rails/pull/55004)Active Job's `around_enqueue` callbacks are deferred until after the database transaction commits, but only when the `enqueue_after_transaction_commit` option is enabled. 
 This ensures that job enqueue logic, including handling Sidekiq connectivity issues, occurs only after a successful transaction commit, preventing premature job execution.
 
-[Enable passing retryable `SqlLiteral`s to `#where`](https://github.com/rails/rails/pull/54951)  
+[Enable passing retryable SqlLiterals to #where](https://github.com/rails/rails/pull/54951)  
 This update ensures that when a retryable `SqlLiteral` is provided to `#where`, its retryable status is preserved. The modification adjusts the internal handling within `#build_where_clause` and WhereClause to maintain the retryable attribute of the original `SqlLiteral`.
 
 [Use TRUE and FALSE for more SQLite queries](https://github.com/rails/rails/pull/55015)  
@@ -32,9 +31,6 @@ This change updates Active Record's SQLite adapter to represent boolean values a
 
 [Rescue connection related errors in MemCacheStore#read_multi_entries](https://github.com/rails/rails/pull/55000)  
 This change enhances the `MemCacheStore#read_multi_entries` method by adding error handling for connection-related issues. Previously, network interruptions during bulk reads from Memcached could cause failures; such errors are now properly rescued, improving resilience in distributed caching scenarios.
-
-[Fix spec ERROR launcher.sauce - Cannot start safari latest](https://github.com/rails/rails/pull/55013)  
-The Safari browser version used in Sauce Labs tests for Action Cable was updated, fixing issues preventing test execution with the latest Safari.
 
 [Support selenium-webdriver 4.32.0](https://github.com/rails/rails/commit/8819ab5ba521ed93504a0797e2a5ef74081e4c0c)  
 This change updates and adds support for some breaking changes on `selenium-webdriver` 4.32.0 version.
