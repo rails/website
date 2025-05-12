@@ -1,0 +1,57 @@
+---
+layout: world/2025/default
+---
+
+{% assign speaker_id = page.path | split: '/' | last %}
+<!-- {% assign filteredSessions = site.world_sessions | where_exp: 'item', 'item.path contains "2025"'%} -->
+{% assign speakerSessions = filteredSessions | where: 'speaker', speaker_id %}
+{% assign secondarySessions = filteredSessions | where: 'second_speaker', speaker_id %}
+{% assign thirdSessions = filteredSessions | where: 'third_speaker', speaker_id %}
+
+<div class="speaker-show-page">
+  <div class="illustration-background">
+    <img src="/assets/world/2025/images/shape.png" alt="shape lines">
+  </div>
+
+  <div class="speaker-presentation">
+    <div class="hexagon-frame">
+      <img class="headshot" src="{{ page.image_path }}" alt="{{ page.first_name }} {{ page.last_name }}'s photo" loading="lazy">
+    </div>
+
+    <div>
+      <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+      <h3>{{ page.role }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}</h3>
+      <p>{{ content }}</p>
+
+      <div class="social-links">
+        {% if page.github %}
+        <a href="{{ page.github }}">
+          <img src="/assets/world/2025/icons/github.png" alt="linkedin logo" width="20"/>
+        </a>
+        {% endif %}
+        {% if page.linkedin %}
+        <a href="{{ page.linkedin }}">
+          <img src="/assets/world/2025/icons/linkedin.png" alt="linkedin logo"/>
+        </a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="{{ page.twitter }}">
+          <img src="/assets/world/2025/icons/x.png" alt="X logo"/>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="speaker-sessions">
+    <div class="title-background-gradient">
+      <h2>Sessions</h2>
+    </div>
+
+    <div class="sessions-container">
+      {% for session in speakerSessions %}
+        {% include world/2025/components/session-card.html session=session speaker=page %}
+      {% endfor %}
+    </div>
+  </div> -->
+</div>

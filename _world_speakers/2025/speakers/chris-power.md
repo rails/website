@@ -1,5 +1,5 @@
 ---
-layout: world/2024/speaker
+layout: world/2025/speaker
 first_name: Chris
 last_name: Power
 image_path: /assets/world/2024/images/speakers/c-power.jpg

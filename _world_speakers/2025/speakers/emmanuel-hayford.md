@@ -1,5 +1,5 @@
 ---
-layout: world/2024/speaker
+layout: world/2025/speaker
 first_name: Emmanuel
 last_name: Hayford
 image_path: /assets/world/2024/images/speakers/e-hayford.jpg

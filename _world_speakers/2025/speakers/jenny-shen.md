@@ -1,5 +1,5 @@
 ---
-layout: world/2024/speaker
+layout: world/2025/speaker
 first_name: Jenny
 last_name: Shen
 image_path: /assets/world/2024/images/speakers/j-shen.jpg

@@ -1,12 +1,16 @@
 .speaker-card {
-  // width is relative to the carousel styling
   position: relative;
   overflow: hidden;
   background-image: $speaker-card-gradient;
   transition: background 0.6s ease-in;
   height: 450px;
+  width: 350px;
   border-radius: 10px;
   cursor: pointer;
+
+  @include media(MobileScreens) {
+    width: 300px;
+  }
 
   &::after {
     content: "";
