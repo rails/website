@@ -1,9 +1,9 @@
 .speaker-card {
+  // width is relative to the carousel styling
   position: relative;
   overflow: hidden;
   background-image: $speaker-card-gradient;
   transition: background 0.6s ease-in;
-  width: 300px;
   height: 450px;
   border-radius: 10px;
   cursor: pointer;
@@ -65,6 +65,10 @@
         flex-direction: column;
         justify-content: center;
         height: 40px;
+
+        @include media(MobileScreens) {
+          height: fit-content;
+        }
       }
     }
 }
