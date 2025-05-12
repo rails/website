@@ -1,21 +1,97 @@
 {% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2025"' | sort: 'last_name' %}
 
-<div class="section speaker-cards-container title-center">
+<div class="section speakers-container title-center">
   <h2>This year's speakers</h2>
-  <div class="speaker-carousel">
-    {% for speaker in sorted_speakers %}
-    {%
-    include world/2025/components/speaker_card.html
-    first_name=speaker.first_name
-    last_name=speaker.last_name
-    role=speaker.role
-    company=speaker.company
-    photo=speaker.image_path
-    path=speaker.path
-    %}
-  {% endfor %}
+
+  <div class="carousel-container">
+    <img class="carousel-arrow left" src="/assets/world/2025/icons/chevron.svg" alt="go left on the carousel">
+
+    <div class="carousel-wrapper">
+      <div class="speaker-carousel">
+        {% for speaker in sorted_speakers %}
+          {%
+          include world/2025/components/speaker_card.html
+          first_name=speaker.first_name
+          last_name=speaker.last_name
+          role=speaker.role
+          company=speaker.company
+          photo=speaker.image_path
+          path=speaker.path
+          %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <img class="carousel-arrow right" src="/assets/world/2025/icons/chevron.svg" alt="go right on the carousel">
   </div>
+
   <div class="button-center">
     <a href="" class="button-primary"><span>Go to speaker showcase</span></a>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".speaker-carousel");
+    const leftBtn = document.querySelector(".carousel-arrow.left");
+    const rightBtn = document.querySelector(".carousel-arrow.right");
+
+    const scrollAmount = carousel.clientWidth / 3; // Adjust based on your card width
+
+    leftBtn.addEventListener("click", () => {
+      carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+
+    });
+
+    rightBtn.addEventListener("click", () => {
+      console.log(carousel.clientWidth);
+      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+  });
+</script>
+
+<!-- <script>
+  const speakerCarousel = document.querySelector('.speaker-carousel')
+  const cards = document.querySelectorAll('.speaker-card')
+  let currentIndex = null
+  // const leftBtn = document.querySelector('#leftBtn')
+  // const rightBtn = document.querySelector('#rightBtn')
+
+  leftBtn.addEventListener('click', () => {
+      console.log('left!');
+      scrollToIndex("back");
+    });
+
+  rightBtn.addEventListener('click', () => {
+    console.log("right!");
+    scrollToIndex("forward");
+  });
+
+  setCurrentIndex = (type) => {
+    if (type === "forward") {
+      if (currentIndex === null || currentIndex === cards.length - 1) {
+          currentIndex = 0;
+      } else {
+          currentIndex++;
+      }
+    } else if (type === "back") {
+      if (currentIndex === null || currentIndex === 0) {
+          currentIndex = cards.length - 1;
+      } else {
+          currentIndex--;
+      }
+    }
+  }
+
+  scrollToIndex = (type) => {
+    setCurrentIndex(type);
+
+    const currentCard = cards[currentIndex];
+    const scrollLeft = currentCard.offsetLeft - speakerCarousel.offsetLeft;
+
+    speakerCarousel.scroll({
+      left: scrollLeft,
+      behavior: 'smooth'
+    });
+  }
+</script> -->

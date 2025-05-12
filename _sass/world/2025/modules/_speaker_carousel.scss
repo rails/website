@@ -1,0 +1,46 @@
+.speakers-container .carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 60px 0;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.speaker-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 40px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-inline: 40px;
+}
+.speaker-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Speaker card sizing (assumes .speaker-card is the card wrapper) */
+.speaker-carousel > * {
+  flex: 0 0 calc((100% / 3)); /* show 3 cards with 1rem gaps */
+  scroll-snap-align: start;
+}
+
+.carousel-arrow {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+}
+
+.carousel-arrow.left {
+  rotate: 180deg;
+  left: 50px;
+}
+.carousel-arrow.right {
+  right: 50px;
+}
