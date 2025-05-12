@@ -1,0 +1,77 @@
+.speaker-carousel {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+  background-image: $speaker-card-gradient;
+  transition: background 0.6s ease-in;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: $speaker-card-gradient-hover;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    pointer-events: none; // ensures it doesn't block clicks
+    z-index: 1;
+  }
+
+  // ensure content stays on top
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.speaker-card .card-content {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+    .info-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      justify-content: space-between;
+      padding: 0 20px 20px 20px;
+
+      h3 {
+        color: white;
+        font-size: 28px;
+        font-variation-settings: $font-weight-900;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: $medium;
+        font-variation-settings: $font-weight-400;
+        line-height: 25px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40px;
+      }
+    }
+}

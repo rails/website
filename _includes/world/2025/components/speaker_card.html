@@ -1,0 +1,49 @@
+{% assign speaker_url = include.path | split: '/' | last | remove_first: '.md' %}
+
+<div
+    class="speaker-card"
+    role="button"
+    tabindex="0"
+    title="{{ include.first_name }} {{ include.last_name }}"
+    aria-label="Go to {{ include.first_name }} {{ include.last_name }}'s speaker page"
+    onclick="openWindow(
+        '/world/2025/speakers/{{ speaker_url }}'
+        )
+    "
+    onkeydown="handleEnterOrSpaceWindowOpen(
+          event,
+          '/world/2025/speakers/{{ speakerUrl }}'
+      )
+    "
+>
+    <div class="card-content">
+        <div class="hexagon-frame">
+          <img src="{{ include.photo }}" alt="{{ include.first_name }} {{ include.last_name }}'s photo" loading="lazy">
+        </div>
+
+        <div class="info-container">
+          <div class="info">
+            <h3>{{ include.first_name }} {{ include.last_name }}</h3>
+          </div>
+
+          <div class="info">
+            <p>{{ include.role }}{% if include.company and include.company != "false" %},{% endif %}</p>
+            <p>{% if include.company and include.company != "false" %} {{ include.company }}{% endif %}</p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openWindow(url, openTab = false) {
+        const openType = openTab ? '_blank' : '_self';
+
+        window.open(url, openType);
+    }
+
+    function handleEnterOrSpaceWindowOpen(e, url) {
+        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+            openWindow(url);
+        }
+    }
+</script>

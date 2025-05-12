@@ -1,0 +1,21 @@
+{% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2025"' | sort: 'last_name' %}
+
+<div class="section speaker-cards-container title-center">
+  <h2>This year's speakers</h2>
+  <div class="speaker-carousel">
+    {% for speaker in sorted_speakers %}
+    {%
+    include world/2025/components/speaker_card.html
+    first_name=speaker.first_name
+    last_name=speaker.last_name
+    role=speaker.role
+    company=speaker.company
+    photo=speaker.image_path
+    path=speaker.path
+    %}
+  {% endfor %}
+  </div>
+  <div class="button-center">
+    <a href="" class="button-primary"><span>Go to speaker showcase</span></a>
+  </div>
+</div>
