@@ -47,15 +47,6 @@
       answer: >
         You can reach out to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a> and be added to a waiting list. No promises, but if a ticket becomes available, we will let you know. Please note: due to volume, we cannot reply to all requests, but don’t worry - even if you don’t hear from us, you’ll be added to the waiting list.
 
-    - question: How much are tickets?
-      answer: |-
-        This year we will have two ticket types.
-        
-        - General Admission tickets will be 499 euro and go on sale May 13th. These tickets are strongly subsidized by the Rails Foundation and are idea for those attendees paying out of pocket. They tend to sell out quickly.
-        
-        - <a href="https://rails-foundation.neetoform.com/6c170cd8bdedc4b16ec0">Corporate Support tickets</a> are available now until they are sold out, and will be 899 euro each. While still partially subsidized, the higher cost of these tickets will help keep General Admissoin tickets affordable for those paying out of pocket.
-        If your company has an L&D budget, please consider booking a Corporate Support ticket. <a href="https://rails-foundation.neetoform.com/6c170cd8bdedc4b16ec0">Book your Corporate ticket here.</a>
-  
     - question: What is the refund policy?
       answer: |-
         If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
