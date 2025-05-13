@@ -43,6 +43,10 @@
 - category: Tickets & Entry
   topics:
 
+    - question: I was not able to get a ticket, is there a chance that I can still get one?
+      answer: >
+        You can reach out to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a> and be added to a waiting list. No promises, but if a ticket becomes available, we will let you know. Please note: due to volume, we cannot reply to all requests, but don’t worry - even if you don’t hear from us, you’ll be added to the waiting list.
+
     - question: How much are tickets?
       answer: |-
         This year we will have two ticket types.
