@@ -47,6 +47,9 @@ members:
   - name: Cedarcode
     logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: Typesense
+    logo: /assets/world/2025/images/sponsors/RW-logo-typesense.svg
+    url: https://typesense.org/
   - name: Avo
     logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
     url: https://avohq.io/
@@ -56,6 +59,12 @@ members:
   - name: ODDS
     logo: /assets/world/2025/images/sponsors/RW-logo-odds.svg
     url: https://odds.team/
+  - name: Rompslomp
+    logo: /assets/world/2023/images/sponsors/RW-logo-rompslomp2.svg
+    url: https://rompslomp.nl/
+  - name: TRMNL
+    logo: /assets/world/2025/images/sponsors/RW-logo-trmnl.png
+    url: https://usetrmnl.com/
   - name: Cookpad
     logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
     url: https://cookpad.com/uk
