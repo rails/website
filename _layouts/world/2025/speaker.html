@@ -18,7 +18,7 @@ layout: world/2025/default
       <img class="headshot" src="{{ page.image_path }}" alt="{{ page.first_name }} {{ page.last_name }}'s photo" loading="lazy">
     </div>
 
-    <div>
+    <div class="speaker-info">
       <h1>{{ page.first_name }} {{ page.last_name }}</h1>
       <h3>{{ page.role }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}</h3>
       <p>{{ content }}</p>
@@ -26,17 +26,17 @@ layout: world/2025/default
       <div class="social-links">
         {% if page.github %}
         <a href="{{ page.github }}">
-          <img src="/assets/world/2025/icons/github.png" alt="linkedin logo" width="20"/>
+          <img src="/assets/world/2025/icons/github.png" alt="github logo" width="30"/>
         </a>
         {% endif %}
         {% if page.linkedin %}
         <a href="{{ page.linkedin }}">
-          <img src="/assets/world/2025/icons/linkedin.png" alt="linkedin logo"/>
+          <img src="/assets/world/2025/icons/linkedin.png" alt="linkedin logo" width="30"/>
         </a>
         {% endif %}
         {% if page.twitter %}
         <a href="{{ page.twitter }}">
-          <img src="/assets/world/2025/icons/x.png" alt="X logo"/>
+          <img src="/assets/world/2025/icons/x.png" alt="X logo" width="30"/>
         </a>
         {% endif %}
       </div>

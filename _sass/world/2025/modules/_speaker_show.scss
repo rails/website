@@ -1,15 +1,44 @@
 .speaker-show-page {
-  h1 { font-size: $xxx-large; }
-  h3 { font-size: $xx-large; font-variation-settings: $font-weight-200; }
-  p { font-size: $medium; line-height: 30px; }
+  margin-bottom: 50px;
 
-  .illustration-background {
-    position: absolute;
-    left: 0;
-    z-index: -100;
-    margin-top: 50px;
+  h1 {
+    font-size: $xxx-large;
+    margin-bottom: 20px;
 
-    img { width: 600px; height: 600px; }
+    @include media(MobileScreens) {
+      font-size: $xx-large
+    }
+  }
+
+  h3 {
+    font-size: $xx-large;
+    font-variation-settings: $font-weight-200;
+
+    @include media(MobileScreens) {
+      font-size: $x-large
+    }
+  }
+
+  p {
+    font-size: $medium;
+    line-height: 30px;
+  }
+}
+
+.speaker-show-page .illustration-background {
+  position: absolute;
+  left: 0;
+  z-index: -100;
+  margin-top: 50px;
+
+  img {
+    width: 600px;
+    height: 600px;
+
+    @include media(MobileScreens) {
+      width: 350px;
+      height: 350px;
+    }
   }
 }
 
@@ -21,9 +50,33 @@
   align-items: center;
   gap: 100px;
 
+  @include media(MobileAndTabletScreens) {
+    padding: 25% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
   p { margin: 40px 0; }
 
-  .hexagon-frame { width: 400px; height: 450px; }
+  .hexagon-frame {
+    width: 400px;
+    height: 450px;
+
+    @include media(MobileScreens) {
+      align-self: flex-start;
+      padding-left: 10%;
+      width: 250px;
+      height: 270px;
+    }
+  }
+
+  .speaker-info {
+    @include media(MobileScreens) {
+      align-self: flex-start;
+      padding: 0 10%;
+    }
+  }
 
   .social-links {
     display: flex;
