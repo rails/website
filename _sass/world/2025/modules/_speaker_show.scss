@@ -9,20 +9,6 @@
       font-size: $xx-large
     }
   }
-
-  h3 {
-    font-size: $xx-large;
-    font-variation-settings: $font-weight-200;
-
-    @include media(MobileScreens) {
-      font-size: $x-large
-    }
-  }
-
-  p {
-    font-size: $medium;
-    line-height: 30px;
-  }
 }
 
 .speaker-show-page .illustration-background {
@@ -57,7 +43,20 @@
     height: fit-content;
   }
 
-  p { margin: 40px 0; }
+  p {
+    font-size: $medium;
+    line-height: 30px;
+    margin: 40px 0;
+  }
+
+  h3 {
+    font-size: $xx-large;
+    font-variation-settings: $font-weight-200;
+
+    @include media(MobileScreens) {
+      font-size: $x-large
+    }
+  }
 
   .hexagon-frame {
     width: 400px;
@@ -91,6 +90,32 @@
   }
 }
 
+.speaker-show-page .speaker-sessions {
+  padding: 0 80px;
+
+  @include media(MobileScreens) {
+    padding: 0 5%;
+    margin-top: 50px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+
+    @include media(MobileScreens) {
+      font-size: 25px;
+      text-align: left;
+    }
+  }
+}
+
 .speaker-show-page .sessions-container {
-  padding-left: 80px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include media(MobileScreens) {
+    margin-top: 50px;
+  }
 }

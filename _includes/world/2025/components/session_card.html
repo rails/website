@@ -1,0 +1,29 @@
+{% assign speaker_url = include.speaker.path | split: '/' | last | remove_first: '.md' %}
+{% assign session = include.session %}
+
+{% if session.time != blank and session.session_date != blank and session.location != blank %}
+{% assign hasInfo = true %}
+{% else %}
+{% assign hasInfo = false %}
+{% endif %}
+
+{% if hasInfo %}
+{% assign className = "sessionCard" %}
+{% else %}
+{% assign className = "sessionCard noInfo" %}
+{% endif %}
+
+{% assign url_segments = include.session.url | split: '/' %}
+{% assign day_segment = "" %}
+
+{% for segment in url_segments %}
+{% if segment contains "day-" %}
+{% assign day_segment = segment %}
+{% endif %}
+{% endfor %}
+
+
+<div class="session-card">
+  <h3>{{ session.title }}</h3>
+  <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }}, {{ include.speaker.role }}{% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
+</div>

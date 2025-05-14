@@ -12,3 +12,6 @@ $fushia-to-red-gradient: linear-gradient(90deg, #880C51 0%, $red 100%);
 
 $speaker-card-gradient: linear-gradient(180deg, rgba(59, 29, 98, 0%) 50%, $red 100%);
 $speaker-card-gradient-hover: linear-gradient(180deg, rgba(59, 29, 98, 0%) 0%, rgba(203, 12, 28, 50%) 31%, $red 100%);;
+
+$session-card-gradient: linear-gradient(-90deg, rgba(59, 29, 98, 0%) 20%, $red 100%);
+$session-card-gradient-hover: linear-gradient(-90deg, rgba(59, 29, 98, 0%) 0%, $red 61%);
