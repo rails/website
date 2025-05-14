@@ -1,41 +1,45 @@
-.speaker-index-page {
+.speaker-index-page .section {
+  margin-top: 60px;
 
   h1 {
-    font-size: $xxx-large;
+    font-size: 60px;
 
     @include media(MobileScreens) {
       font-size: $xx-large;
     }
-  }
-
-  .description-center {
-    p {
-      font-size: $large;
-      line-height: 35px;
-
-      @include media(MobileScreens) {
-        font-size: $medium;
-      }
-    }
-  }
-
-  .section {
-    margin-top: 50px;
-  }
-
-  .speaker-cards-container {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    row-gap: 75px;
-
-    @include media(MobileScreens) {
-      grid-template-columns: repeat(1, 1fr);
-    }
 
     @include media(TabletScreens) {
-      grid-template-columns: repeat(2, 1fr);
+      font-size: 40px;
     }
+  }
+
+  p {
+    font-size: $large;
+    line-height: 35px;
+    margin-top: 20px;
+
+    @include media(MobileScreens) {
+      font-size: $medium;
+    }
+  }
+}
+
+.speaker-index-page .speaker-cards-container {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  row-gap: 75px;
+
+  @include media(MobileScreens) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 5%;
+  }
+
+  @include media(TabletScreens) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5%;
+    gap: 20px;
   }
 }

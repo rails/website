@@ -4,8 +4,8 @@
   height: 240px;
 
   @include media(MobileScreens) {
-    width: 180px;
-    height: 200px;
+    width: 160px;
+    height: 180px;
   }
 
   @include media(MobileScreens) {
