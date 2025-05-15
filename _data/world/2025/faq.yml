@@ -6,13 +6,13 @@
 
     - question: Does Rails World have a Code of Conduct?
       answer: >
-        We are committed to making Rails World a safe space for all, and We adhere to the [Rails Code of Conduct](/conduct).
+        We are committed to making Rails World a safe space for all, and we adhere to the [Rails Code of Conduct](/conduct).
         If you have any issues please reach out to
         [foundation@rubyonrails.org](mailto:foundation@rubyonrails.org).
 
     - question: Will Rails World be livestreamed?
       answer: >
-          Rails World will not be livestreamed, but we will publish the Opening Keynote within hours of it taking place. All other sessions will fbe online within two weeks after Rails World. <a href="https://www.youtube.com/@railsofficial">Subscribe</a> to be informed when the videos get published.
+          Rails World will not be livestreamed, but we want those who cannot attend to have access to the sessions quickly, so we will publish the Opening Keynote within hours of it taking place. All other sessions will be online within two weeks after Rails World. <a href="https://www.youtube.com/@railsofficial">Subscribe</a> to be informed when the videos get published.
 
     - question: Will there be a conference app or chat?
       answer: >
@@ -60,7 +60,7 @@
       answer: |-
         We have a limited number of financial support tickets thanks to the support of our sponsors. They are currently all claimed, but if you would like to put yourself on the waiting list please write to <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
 
-    - question: What is the COVID/ mask policy?
+    - question: What is the COVID/mask policy?
       answer: >
         Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
         In the event you test positive for Covid immediately before or on the first day of Rails World, your ticket cost will be transferred into credit to be used at the next Rails World event. To request credit for your attendance fee, or if you have any questions, please contact <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
@@ -151,7 +151,7 @@
 
     - question: Who should attend?
       answer: >
-        Consider bringing/sending a staff (or senior) engineer who spends significant time on the code solving these problems, or someone who can speak on behalf of your company’s engineering team.
+        Consider bringing/sending a staff (or senior) engineer who spends significant time on the code solving these problems, or someone who can speak on behalf of your company’s engineering team. 
 
     - question: Content will not be recorded.
       answer: >
