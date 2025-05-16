@@ -1,7 +1,7 @@
 ---
 layout: world/2025/session
 title: "Teaching Rails with the Real Thing: Onboarding Engineers into a (Massive) Monolith"
-speaker: rosa-gutierrez.md
+speaker: katarina-rossi.md
 time:
 location:
 running_order:
