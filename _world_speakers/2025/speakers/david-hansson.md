@@ -1,5 +1,5 @@
 ---
-layout: world/2024/speaker
+layout: world/2025/speaker
 redirect_from: /world/speakers/david-hansson
 first_name: DHH
 last_name:

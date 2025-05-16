@@ -1,5 +1,5 @@
 ---
-layout: world/2023/speaker
+layout: world/2025/speaker
 redirect_from: /world/speakers/hartley-mcguire
 first_name: Hartley
 last_name: McGuire
