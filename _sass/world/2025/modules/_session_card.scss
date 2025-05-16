@@ -28,6 +28,7 @@
 
   p {
     font-size: $large;
+    line-height: 30px;
 
     @include media(MobileScreens) {
       font-size: $small;

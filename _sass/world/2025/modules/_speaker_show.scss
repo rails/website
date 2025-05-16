@@ -43,6 +43,14 @@
     height: fit-content;
   }
 
+  @include media(MobileScreens) {
+    padding: 25% 0 0 0;
+  }
+
+  @include media(TabletScreens) {
+    padding: 15% 0 0 0;
+  }
+
   p {
     font-size: $medium;
     line-height: 30px;
@@ -62,16 +70,19 @@
     width: 400px;
     height: 450px;
 
-    @include media(MobileScreens) {
+    @include media(MobileAndTabletScreens) {
       align-self: flex-start;
       padding-left: 10%;
+    }
+
+    @include media(MobileScreens) {
       width: 250px;
       height: 270px;
     }
   }
 
   .speaker-info {
-    @include media(MobileScreens) {
+    @include media(MobileAndTabletScreens) {
       align-self: flex-start;
       padding: 0 10%;
     }
@@ -98,13 +109,25 @@
     margin-top: 50px;
   }
 
+  @include media(TabletScreens) {
+    padding: 0 10%;
+    margin-top: 80px;
+  }
+
   h2 {
     text-align: center;
     font-size: 50px;
 
+    @include media(MobileAndTabletScreens) {
+      text-align: left;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 40px;
+    }
+
     @include media(MobileScreens) {
       font-size: 25px;
-      text-align: left;
     }
   }
 }
@@ -115,7 +138,7 @@
   flex-direction: column;
   gap: 25px;
 
-  @include media(MobileScreens) {
+  @include media(MobileAndTabletScreens) {
     margin-top: 50px;
   }
 }
