@@ -1,10 +1,9 @@
-    
 {% assign speakerUrl = include.path | split: '/' | last | remove_first: '.md' %}
 
-<div 
-    class="speakerCard" 
-    role="button" 
-    tabindex="0" 
+<div
+    class="speakerCard"
+    role="button"
+    tabindex="0"
     title="{{ include.first_name }} {{ include.last_name }}"
     aria-label="Go to {{ include.first_name }} {{ include.last_name }}'s speaker page"
     onclick="openWindow(
@@ -13,7 +12,7 @@
     "
     onkeydown="
         handleEnterOrSpaceWindowOpen(
-            event, 
+            event,
             '/world/2024/speakers/{{ speakerUrl }}'
         )
     "
@@ -41,14 +40,13 @@
 </div>
 <script>
     function openWindow(url, openTab = false) {
-        const openType = openTab ? '_blank' : '_self';
-
-        window.open(url, openType);
+      const openType = openTab ? '_blank' : '_self';
+      window.open(url, openType);
     }
 
     function handleEnterOrSpaceWindowOpen(e, url) {
-        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
-            openWindow(url);
-        }
+      if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+          openWindow(url);
+      }
     }
 </script>

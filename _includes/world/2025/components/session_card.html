@@ -22,8 +22,27 @@
 {% endif %}
 {% endfor %}
 
+{% assign clean_path = session.path | replace: '_world_sessions/2025', '' | replace: '.md', '' %}
 
-<div class="session-card">
+<div class="session-card"
+     title="{{ session.title }}"
+     aria-label="Go to {{ session.title }} session page"
+     onclick="openWindow( '/world/2025{{ clean_path }}')"
+     onkeydown="handleEnterOrSpaceWindowOpen(event, '/world/2025{{ clean_path }}')">
   <h3>{{ session.title }}</h3>
   <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }} - {{ include.speaker.tagline }}{% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
 </div>
+
+<script>
+  function openWindow(url, openTab = false) {
+      const openType = openTab ? '_blank' : '_self';
+
+      window.open(url, openType);
+  }
+
+  function handleEnterOrSpaceWindowOpen(e, url) {
+      if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+          openWindow(url);
+      }
+  }
+</script>

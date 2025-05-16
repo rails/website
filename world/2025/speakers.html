@@ -18,13 +18,13 @@ title: Speakers
   <div class="speaker-cards-container">
     {% for speaker in sorted_speakers %}
     {%
-    include world/2025/components/speaker_card.html
-    first_name=speaker.first_name
-    last_name=speaker.last_name
-    tagline=speaker.tagline
-    company=speaker.company
-    photo=speaker.image_path
-    path=speaker.path
+      include world/2025/components/speaker_card.html
+      first_name=speaker.first_name
+      last_name=speaker.last_name
+      tagline=speaker.tagline
+      company=speaker.company
+      photo=speaker.image_path
+      path=speaker.path
     %}
   {% endfor %}
   </div>

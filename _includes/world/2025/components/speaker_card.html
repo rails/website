@@ -1,21 +1,11 @@
 {% assign speaker_url = include.path | split: '/' | last | remove_first: '.md' %}
 
-<div
-    class="speaker-card"
-    role="button"
-    tabindex="0"
-    title="{{ include.first_name }} {{ include.last_name }}"
-    aria-label="Go to {{ include.first_name }} {{ include.last_name }}'s speaker page"
-    onclick="openWindow(
-        '/world/2025/speakers/{{ speaker_url }}'
-        )
-    "
-    onkeydown="handleEnterOrSpaceWindowOpen(
-          event,
-          '/world/2025/speakers/{{ speakerUrl }}'
-      )
-    "
->
+<div class="speaker-card"
+     role="button"
+     title="{{ include.first_name }} {{ include.last_name }}"
+     aria-label="Go to {{ include.first_name }} {{ include.last_name }}'s speaker page"
+     onclick="openWindow('/world/2025/speakers/{{ speaker_url }}')"
+     onkeydown="handleEnterOrSpaceWindowOpen(event, '/world/2025/speakers/{{ speakerUrl }}')">
     <div class="card-content">
         <div class="hexagon-frame">
           <img src="{{ include.photo }}" alt="{{ include.first_name }} {{ include.last_name }}'s photo" loading="lazy">

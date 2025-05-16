@@ -7,7 +7,7 @@ location:
 running_order:
 ---
 
-"Building native mobile apps is time-consuming and expensive. Each screen must be built three times: once for web, again for iOS, and a third time for Android.
+Building native mobile apps is time-consuming and expensive. Each screen must be built three times: once for web, again for iOS, and a third time for Android.
 
 But with Hotwire Native, you only need to build your screens once, in HTML and CSS, and then reuse them across all three platforms. If you already have a Hotwire-enabled Rails app, you can use the screens you've already built!
 
