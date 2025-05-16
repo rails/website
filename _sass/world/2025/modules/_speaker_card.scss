@@ -3,7 +3,7 @@
   overflow: hidden;
   background-image: $speaker-card-gradient;
   transition: background 0.6s ease-in;
-  height: 400px;
+  height: 420px;
   width: 350px;
   border-radius: 10px;
   cursor: pointer;
@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
 
   @include media(MobileScreens) {
     gap: 25px;
@@ -57,19 +57,19 @@
 
     h3 {
       color: white;
-      font-size: 28px;
+      font-size: 24px;
       font-variation-settings: $font-weight-900;
-      margin-bottom: 0;
+      margin-bottom: 5px;
 
       @include media(MobileScreens) {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 
     p {
       font-size: $medium;
       font-variation-settings: $font-weight-400;
-      line-height: 25px;
+      line-height: 22px;
     }
 
     .info {

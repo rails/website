@@ -27,8 +27,9 @@
           </div>
 
           <div class="info">
-            <p>{{ include.role }}{% if include.company and include.company != "false" %},{% endif %}
-            {% if include.company and include.company != "false" %} {{ include.company }}{% endif %}</p>
+            <p>
+              {{ include.tagline }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}
+            </p>
           </div>
         </div>
     </div>
