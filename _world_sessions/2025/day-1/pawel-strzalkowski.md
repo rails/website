@@ -1,7 +1,7 @@
 ---
 layout: world/2025/session
 title: "Make Rails AI-Ready by Design with the Model Context Protocol"
-speaker: jack-sharkey.md
+speaker: pawel-strzalkowski.md
 time:
 location:
 running_order:
