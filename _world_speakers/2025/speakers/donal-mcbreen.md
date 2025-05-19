@@ -5,7 +5,7 @@ first_name: Donal
 last_name: McBreen
 image_path: /assets/world/2024/images/speakers/d-mcbreen.jpg
 role:
-tagline: Lead Programmer, in the SIP team,
+tagline: Lead Programmer, in the SIP team
 company: 37signals
 keynote: false
 github:

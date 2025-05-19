@@ -2,7 +2,7 @@
   margin-bottom: 50px;
 
   h1 {
-    font-size: $xxx-large;
+    font-size: 50px;
     margin-bottom: 20px;
 
     @include media(MobileScreens) {
@@ -34,7 +34,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 
   @include media(MobileAndTabletScreens) {
     padding: 25% 0 0 0;
@@ -58,12 +58,8 @@
   }
 
   h3 {
-    font-size: $xx-large;
-    font-variation-settings: $font-weight-200;
-
-    @include media(MobileScreens) {
-      font-size: $x-large
-    }
+    font-size: $x-large;
+    font-variation-settings: $font-weight-700;
   }
 
   .hexagon-frame {

@@ -18,7 +18,7 @@ layout: world/2025/default
 
     <div class="speaker-info">
       <h1>{{ page.first_name }} {{ page.last_name }}</h1>
-      <h3>{{ page.role }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}</h3>
+      <h3>{{ page.tagline }}{% if page.company and page.company != "false" %}, {{ page.company }}{% endif %}</h3>
       <p>{{ content }}</p>
 
       <div class="social-links">
