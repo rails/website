@@ -7,7 +7,7 @@ image_path: /assets/world/2025/images/speakers/j-sharkey.png
 role:
 tagline: CTO / Co-Founder
 company: Whop
-keynote:
+keynote: false
 github: https://github.com/sharkey11
 linkedin: https://www.linkedin.com/in/sharkeyjack/
 twitter: http://x.com/jacksharkey11

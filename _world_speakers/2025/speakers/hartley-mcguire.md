@@ -7,7 +7,7 @@ image_path: /assets/world/2025/images/speakers/h-mcguire.png
 role:
 tagline: Rails Issues Team & Senior Developer
 company: Shopify
-keynote:
+keynote: false
 github:
 linkedin:
 twitter:

@@ -7,7 +7,7 @@ image_path: /assets/world/2025/images/speakers/j-meller.jpg
 role:
 tagline: VP, Engineering
 company: 1Password
-keynote:
+keynote: false
 github:
 linkedin: https://www.linkedin.com/in/jason-meller-04498230/
 twitter: https://twitter.com/jmeller

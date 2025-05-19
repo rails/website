@@ -7,7 +7,7 @@ image_path: /assets/world/2023/images/speakers/j-masilotti.jpeg
 role:
 tagline: The Hotwire Native guy
 company:
-keynote:
+keynote: false
 github: https://github.com/joemasilotti/
 linkedin: https://www.linkedin.com/in/joemasilotti/
 twitter: https://twitter.com/joemasilotti

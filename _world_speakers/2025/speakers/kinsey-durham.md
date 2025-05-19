@@ -5,7 +5,7 @@ first_name: Kinsey
 last_name: Durham Grace
 image_path: /assets/world/2025/images/speakers/k-durham.jpg
 role: Programmer
-tagline: Software Engineer on Copilot at GitHub, VP of the Board for RubyCentral, ERG Leader and Mom
+tagline: Software Engineer on Copilot
 company: GitHub
 keynote: false
 github: https://www.github.com/kinseydurhamgrace

@@ -7,7 +7,7 @@ image_path: /assets/world/2025/images/speakers/m-okura.jpg
 role:
 company:
 keynote: false
-tagline: Freelance Ruby/Rails developer, library author and conference organizer
+tagline: Freelance Ruby/Rails developer
 github: https://github.com/okuramasafumi
 linkedin: https://www.linkedin.com/in/masafumi-okura-82651128/
 twitter: https://twitter.com/okuramasafumi

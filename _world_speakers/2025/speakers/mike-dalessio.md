@@ -5,7 +5,7 @@ first_name: Mike
 last_name: Dalessio
 image_path: /assets/world/2025/images/speakers/m-dalessio.png
 role:
-tagline: Rubyist, gummi bear lover, and open-source maintainer
+tagline: Software Developer & Gummi bear lover
 company: 37signals
 keynote: false
 github: https://github.com/flavorjones

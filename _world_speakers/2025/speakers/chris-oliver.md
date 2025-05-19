@@ -7,7 +7,7 @@ image_path: /assets/world/2023/images/speakers/c-oliver.jpg
 role:
 tagline: Founder
 company: GoRails
-keynote:
+keynote: false
 github: https://github.com/excid3
 linkedin: https://www.linkedin.com/in/excid3/
 twitter: https://twitter.com/excid3
