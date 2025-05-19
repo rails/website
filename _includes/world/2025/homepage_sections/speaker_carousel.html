@@ -55,7 +55,7 @@
     const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
     const nextScroll = carousel.scrollLeft + scrollAmount;
 
-    // If the next scroll goes beyond the last visible card, go back to the start (with '-5' to avoid breaking the card)
+    // If the next scroll goes beyond the last visible card, go back to the start (with '-25' to avoid breaking the card)
     // Otherwise, scroll forward by scrollAmount
     if (nextScroll >= maxScrollLeft - 25) {
       carousel.scrollTo({ left: 0, behavior: "smooth" });

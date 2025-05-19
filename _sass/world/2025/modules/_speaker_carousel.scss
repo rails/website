@@ -37,9 +37,8 @@
   display: none;
 }
 
-/* Speaker card sizing (assumes .speaker-card is the card wrapper) */
 .speaker-carousel > * {
-  flex: 0 0 calc((100% / 3)); /* show 3 cards with 1rem gaps */
+  flex: 0 0 calc((100% / 3)); /* show 3 cards */
   scroll-snap-align: start;
 
   @include media(MobileScreens) {

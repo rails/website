@@ -2,40 +2,28 @@
 layout: world/2025/default
 ---
 
-{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" |
-where_exp: 'item', 'item.path contains "2025"'%}
+{% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" | where_exp: 'item', 'item.path contains "2025"' %}
 {% assign speaker = filteredSpeakers | first %}
-{% assign speakerUrl = speaker.path | split: '/' | last | remove_first: '.md' %}
-
-{% assign allSessions = site.world_sessions | where_exp: 'session', 'session.path contains "2025"' %}
-{% assign matchingSessions = allSessions | where: "multiple_speakers", true %}
-{% assign duplicateSessions = matchingSessions | where: "title", page.title | where: "description", page.description |
-where_exp: "session", "session.url != page.url" %}
-
-{% assign url_segments = page.url | split: '/' %}
-{% assign day_segment = "" %}
-
-{% for segment in url_segments %}
-{% if segment contains "day-" %}
-{% assign day_segment = segment %}
-{% endif %}
-{% endfor %}
 
 <div class="session-page">
   <div class="session-content">
     <h1>{{ page.title }}</h1>
-    <h3>{{ speaker.first_name}} {{ speaker.last_name}} {% if speaker.company %}, {{ speaker.company }}{% endif %}</h3>
-    <p>{{content}}</p>
+    <h3>
+      {{ speaker.first_name }} {{ speaker.last_name }}
+      {% if speaker.company %}, {{ speaker.company }}{% endif %}
+    </h3>
+    <p>{{ content }}</p>
   </div>
+
   <div>
     {% if speaker %}
-      {%  include world/2025/components/speaker_card.html
-            first_name=speaker.first_name
-            last_name=speaker.last_name
-            tagline=speaker.tagline
-            company=speaker.company
-            photo=speaker.image_path
-            path=speaker.path
+      {% include world/2025/components/speaker_card.html
+          first_name=speaker.first_name
+          last_name=speaker.last_name
+          tagline=speaker.tagline
+          company=speaker.company
+          photo=speaker.image_path
+          path=speaker.path
       %}
     {% endif %}
   </div>
