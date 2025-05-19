@@ -44,67 +44,27 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const carousel = document.querySelector(".speaker-carousel");
-    const leftBtn = document.querySelector(".carousel-arrow.left");
-    const rightBtn = document.querySelector(".carousel-arrow.right");
+  const carousel = document.querySelector(".speaker-carousel");
+  const leftBtn = document.querySelector(".carousel-arrow.left");
+  const rightBtn = document.querySelector(".carousel-arrow.right");
 
-    const scrollAmount = carousel.clientWidth / 3; // Adjust based on your card width
+  // Scroll 1 card width per click
+  const scrollAmount = carousel.clientWidth / 3;
 
-    leftBtn.addEventListener("click", () => {
-      carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  rightBtn.addEventListener("click", () => {
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    const nextScroll = carousel.scrollLeft + scrollAmount;
 
-    });
-
-    rightBtn.addEventListener("click", () => {
-      console.log(carousel.clientWidth);
+    // If the next scroll goes beyond the last visible card, go back to the start (with '-5' to avoid breaking the card)
+    // Otherwise, scroll forward by scrollAmount
+    if (nextScroll >= maxScrollLeft - 25) {
+      carousel.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
       carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
+    }
+  });
+
+  leftBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" })
   });
 </script>
-
-<!-- <script>
-  const speakerCarousel = document.querySelector('.speaker-carousel')
-  const cards = document.querySelectorAll('.speaker-card')
-  let currentIndex = null
-  // const leftBtn = document.querySelector('#leftBtn')
-  // const rightBtn = document.querySelector('#rightBtn')
-
-  leftBtn.addEventListener('click', () => {
-      console.log('left!');
-      scrollToIndex("back");
-    });
-
-  rightBtn.addEventListener('click', () => {
-    console.log("right!");
-    scrollToIndex("forward");
-  });
-
-  setCurrentIndex = (type) => {
-    if (type === "forward") {
-      if (currentIndex === null || currentIndex === cards.length - 1) {
-          currentIndex = 0;
-      } else {
-          currentIndex++;
-      }
-    } else if (type === "back") {
-      if (currentIndex === null || currentIndex === 0) {
-          currentIndex = cards.length - 1;
-      } else {
-          currentIndex--;
-      }
-    }
-  }
-
-  scrollToIndex = (type) => {
-    setCurrentIndex(type);
-
-    const currentCard = cards[currentIndex];
-    const scrollLeft = currentCard.offsetLeft - speakerCarousel.offsetLeft;
-
-    speakerCarousel.scroll({
-      left: scrollLeft,
-      behavior: 'smooth'
-    });
-  }
-</script> -->
