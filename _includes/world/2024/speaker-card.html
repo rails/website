@@ -1,3 +1,4 @@
+
 {% assign speakerUrl = include.path | split: '/' | last | remove_first: '.md' %}
 
 <div
@@ -40,13 +41,14 @@
 </div>
 <script>
     function openWindow(url, openTab = false) {
-      const openType = openTab ? '_blank' : '_self';
-      window.open(url, openType);
+        const openType = openTab ? '_blank' : '_self';
+
+        window.open(url, openType);
     }
 
     function handleEnterOrSpaceWindowOpen(e, url) {
-      if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
-          openWindow(url);
-      }
+        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+            openWindow(url);
+        }
     }
 </script>
