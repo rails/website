@@ -3,7 +3,7 @@ layout: world/2025/speaker
 redirect_from: /world/speakers/kinsey-durham
 first_name: Kinsey
 last_name: Durham Grace
-image_path: /assets/world/2025/images/speakers/k-durham.jpg
+image_path: /assets/world/2025/images/speakers/k-durham2.jpg
 role: Programmer
 tagline: Software Engineer on Copilot
 company: GitHub
