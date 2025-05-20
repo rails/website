@@ -6,7 +6,7 @@ last_name: Skoric
 image_path: /assets/world/2025/images/speakers/r-skoric.jpg
 role:
 tagline: Lead Software Engineer
-company: Halaalbooking.com
+company: Halalbooking.com
 keynote: false
 github: https://github.com/radanskoric/
 linkedin: https://www.linkedin.com/in/radanskoric/
