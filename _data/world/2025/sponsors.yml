@@ -1,0 +1,106 @@
+platinum:
+  - name: AppSignal
+    logo: /assets/world/2024/images/sponsors/RW-logo-appsignal.svg
+    url: https://www.appsignal.com/
+
+gold:
+  - name: GitHub
+    logo: /assets/world/2025/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: Shopify
+    logo: /assets/world/2025/images/sponsors/RW-logo-shopify.svg
+    url: https://www.shopify.com/
+
+silver:
+  - name: Codeminer42
+    logo: /assets/world/2025/images/sponsors/RW-logo-codeminer42.png
+    url: https://www.codeminer42.com/?utm_source=railsworld2025&utm_medium=website&utm_campaign=sponsor
+  - name: Buzzsprout
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: https://www.buzzsprout.com/
+  - name: Crunchy Data
+    logo: /assets/world/2025/images/sponsors/RW-logo-crunchydata.png
+    url: https://www.crunchydata.com/
+  - name: GitLab
+    logo: /assets/world/2025/images/sponsors/RW-logo-gitlab.svg
+    url: https://about.gitlab.com/   
+  - name: Huntress
+    logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
+    url: https://www.huntress.com/
+  - name: Intercom
+    logo: /assets/world/2023/images/sponsors/RW-logo-intercom.svg
+    url: https://www.intercom.com/
+  - name: Makandra
+    logo: /assets/world/2024/images/sponsors/RW-logo-makandra.svg
+    url: https://makandra.de/en
+  - name: Salesforce Heroku
+    logo: /assets/world/2025/images/sponsors/RW-logo-salesforce-heroku.svg
+    url: https://www.heroku.com/salesforce/
+  - name: Sentry
+    logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
+    url: https://sentry.io/
+  - name: Wyework
+    logo: /assets/world/2025/images/sponsors/RW-logo-wyeworks.svg
+    url: https://www.wyeworks.com/
+
+members:
+  - name: Cedarcode
+    logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
+    url: https://www.cedarcode.com/
+  - name: Typesense
+    logo: /assets/world/2025/images/sponsors/RW-logo-typesense.svg
+    url: https://typesense.org/
+  - name: Avo
+    logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
+    url: https://avohq.io/rails-admin
+  - name: Telos Labs
+    logo: /assets/world/2024/images/sponsors/RW-logo-teloslabs.svg
+    url: https://hi.teloslabs.co/
+  - name: ODDS
+    logo: /assets/world/2025/images/sponsors/RW-logo-odds.svg
+    url: https://odds.team/
+  - name: Rompslomp
+    logo: /assets/world/2023/images/sponsors/RW-logo-rompslomp2.svg
+    url: https://rompslomp.nl/
+  - name: TRMNL
+    logo: /assets/world/2025/images/sponsors/RW-logo-trmnl.png
+    url: https://usetrmnl.com/
+  - name: Cookpad
+    logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
+    url: https://cookpad.com/uk
+  - name: Doximity
+    logo: /assets/world/2024/images/sponsors/RW-logo-doximity.svg
+    url: https://www.doximity.com/
+  - name: Fleetio
+    logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
+    url: https://www.fleetio.com/
+  - name: Procore
+    logo: /assets/world/2024/images/sponsors/RW-logo-procore.svg
+    url: https://www.procore.com/en-gb
+  - name: 1password
+    logo: /assets/images/logo-1password.svg
+    url:  https://1password.com/
+  - name: 37signals
+    logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
+    url: https://37signals.com/
+  - name: BigBinary
+    logo: /assets/world/2025/images/sponsors/RW-logo-bigbinary.svg
+    url: https://www.bigbinary.com/
+  - name: Clio
+    logo: /assets/world/2025/images/sponsors/RW-logo-clio.svg
+    url: https://www.clio.com/
+  - name: Gusto
+    logo: /assets/images/logo-gusto.svg
+    url: https://gusto.com/
+  - name: Planet Aragon
+    logo: /assets/world/2025/images/sponsors/RW-logo-planet-aragon.svg
+    url: https://www.planetargon.com/
+  - name: Renuo
+    logo: /assets/images/logo-renuo.svg
+    url: https://www.renuo.ch/
+  - name: Saeloun
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: https://www.saeloun.com/
+  - name: Tablecheck
+    logo: /assets/world/2024/images/sponsors/RW-logo-tablecheck.svg
+    url: https://www.tablecheck.com/en/join/

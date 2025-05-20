@@ -1,0 +1,51 @@
+.session-page {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include media(MobileAndTabletScreens) {
+    display: block;
+    padding: 0 5%;
+  }
+}
+
+.session-page .session-content {
+  width: 65%;
+
+  @include media(MobileAndTabletScreens) {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 50px;
+
+    @include media(MobileScreens) {
+      font-size: 30px;
+    }
+  }
+
+  h3 {
+    font-size: $large;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: $medium;
+    line-height: 25px;
+  }
+}
+
+.session-page .speaker-card {
+  @include media(MobileScreens) {
+    margin: 50px auto;
+  }
+
+  @include media(TabletScreens) {
+    margin-top: 100px;
+  }
+}

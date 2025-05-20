@@ -1,0 +1,131 @@
+.shape-background {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  z-index: -999;
+
+  @include media(MobileAndTabletScreens) {
+    display: none;
+  }
+
+  img {
+    width: 800px;
+    rotate: 180deg;
+  }
+}
+
+.rails-at-scale {
+  .title-container {
+    width: 50%;
+    margin: 120px auto 80px auto;
+
+    @include media(MobileAndTabletScreens) {
+      display: flex;
+      align-items: center;
+      background-image: url("/assets/world/2025/images/shape.png");
+      height: 350px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 20px 25px;
+      width: fit-content;
+      padding: 20px;
+      margin: 50px 0;
+    }
+
+    @include media(TabletScreens) {
+      height: 500px;
+    }
+
+    .title {
+      @include media(TabletScreens) {
+        padding-left: 10%;
+      }
+    }
+  }
+
+  h1, h2 {
+    text-align: center;
+
+    @include media(MobileAndTabletScreens) {
+      text-align: left;
+    }
+  }
+
+  h1 {
+    font-size: 90px;
+    margin-bottom: 50px;
+
+    @include media(MobileScreens) {
+      font-size: 60px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-variation-settings: $font-weight-400;
+
+    @include media(MobileScreens) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  p,ul {
+    font-size: 18px;
+    line-height: 30px;;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column-reverse;
+      gap: 80px;
+    }
+
+    .text {
+      width: 40%;
+      padding: 0 80px;
+
+      @include media(MobileAndTabletScreens) {
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 50px;
+      }
+
+      @include media(TabletScreens) {
+        padding: 0 40px;
+      }
+    }
+
+    .image-container {
+      margin-bottom: 30px;
+
+      @include media(MobileScreens) {
+        height: 300px;
+        margin-left: 20px;
+      }
+
+      @include media(TabletScreens) {
+        margin-left: 30%;
+      }
+
+      img {
+        margin-bottom: 30px;
+        object-fit: cover;
+        height: 500px;
+
+        @include media(MobileScreens) {
+          height: 300px;
+        }
+
+        @include media(MobileAndTabletScreens) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

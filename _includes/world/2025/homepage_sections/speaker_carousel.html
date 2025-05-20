@@ -1,0 +1,77 @@
+{% assign keynote_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2025"' | where: 'keynote', true | sort: 'first_name' %}
+{% assign sorted_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2025"' | where: 'keynote', false | sort: 'first_name' %}
+
+<div class="section speakers-container title-center">
+  <h2>This year's speakers</h2>
+
+  <div class="carousel-container">
+    <img class="carousel-arrow left" src="/assets/world/2025/icons/chevron.svg" alt="go left on the carousel">
+
+    <div class="carousel-wrapper">
+      <div class="speaker-carousel">
+        {% for speaker in keynote_speakers %}
+          {%
+          include world/2025/components/speaker_card.html
+          first_name=speaker.first_name
+          last_name=speaker.last_name
+          tagline=speaker.tagline
+          company=speaker.company
+          photo=speaker.image_path
+          path=speaker.path
+          %}
+        {% endfor %}
+
+        {% for speaker in sorted_speakers %}
+          {%
+          include world/2025/components/speaker_card.html
+          first_name=speaker.first_name
+          last_name=speaker.last_name
+          tagline=speaker.tagline
+          company=speaker.company
+          photo=speaker.image_path
+          path=speaker.path
+          %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <img class="carousel-arrow right" src="/assets/world/2025/icons/chevron.svg" alt="go right on the carousel">
+  </div>
+
+  <div class="button-center">
+    <a href="/world/2025/speakers" class="button-primary"><span>View all speakers</span></a>
+  </div>
+</div>
+
+<script>
+  const carousel = document.querySelector(".speaker-carousel");
+  const leftBtn = document.querySelector(".carousel-arrow.left");
+  const rightBtn = document.querySelector(".carousel-arrow.right");
+
+  // Scroll 1 card width per click
+  let scrollAmount;
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    scrollAmount = carousel.clientWidth;
+  } else if (window.matchMedia("(min-width: 701px) and (max-width: 1200px)").matches) {
+    scrollAmount = carousel.clientWidth / 2;
+  } else {
+    scrollAmount = carousel.clientWidth / 3;
+  }
+
+  rightBtn.addEventListener("click", () => {
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    const nextScroll = carousel.scrollLeft + scrollAmount;
+
+    // If the next scroll goes beyond the last visible card, go back to the start (with '-25' to avoid breaking the card)
+    // Otherwise, scroll forward by scrollAmount
+    if (nextScroll >= maxScrollLeft - 25) {
+      carousel.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  });
+
+  leftBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" })
+  });
+</script>
