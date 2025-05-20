@@ -2,7 +2,7 @@
 layout: world/2025/speaker
 redirect_from: /world/speakers/rosa-gutierrez
 first_name: Rosa
-last_name: Gutierrez
+last_name: Gutiérrez
 image_path: /assets/world/2024/images/speakers/r-gutierrez.jpg
 role:
 tagline: Principal programmer
