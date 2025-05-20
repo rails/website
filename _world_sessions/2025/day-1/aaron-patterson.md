@@ -6,3 +6,5 @@ time:
 location:
 running_order:
 ---
+
+We actually never know with Aaron. We'll find out what this session is about when you do.
