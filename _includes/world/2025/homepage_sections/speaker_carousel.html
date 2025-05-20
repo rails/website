@@ -49,7 +49,14 @@
   const rightBtn = document.querySelector(".carousel-arrow.right");
 
   // Scroll 1 card width per click
-  const scrollAmount = carousel.clientWidth / 3;
+  let scrollAmount;
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    scrollAmount = carousel.clientWidth;
+  } else if (window.matchMedia("(min-width: 701px) and (max-width: 1200px)").matches) {
+    scrollAmount = carousel.clientWidth / 2;
+  } else {
+    scrollAmount = carousel.clientWidth / 3;
+  }
 
   rightBtn.addEventListener("click", () => {
     const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
