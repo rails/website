@@ -1,0 +1,75 @@
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+  background-image: $speaker-card-gradient;
+  transition: background 0.6s ease-in;
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @include media(MobileScreens) {
+    width: 300px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: $speaker-card-gradient-hover;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    pointer-events: none; // ensures it doesn't block clicks
+    z-index: 1;
+  }
+
+  // ensure content stays on top
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.speaker-card .card-content {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include media(MobileScreens) {
+    gap: 25px;
+  }
+
+  .info-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+
+    h3 {
+      color: white;
+      font-size: 24px;
+      font-variation-settings: $font-weight-900;
+      margin-bottom: 5px;
+
+      @include media(MobileScreens) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: $medium;
+      font-variation-settings: $font-weight-400;
+      line-height: 22px;
+    }
+  }
+}

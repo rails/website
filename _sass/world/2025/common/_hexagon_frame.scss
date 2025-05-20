@@ -1,7 +1,17 @@
 .hexagon-frame {
   position: relative;
-  width: 260px;
-  height: 280px;
+  width: 220px;
+  height: 240px;
+
+  @include media(MobileScreens) {
+    width: 160px;
+    height: 180px;
+  }
+
+  @include media(MobileScreens) {
+    width: 200px;
+    height: 220px;
+  }
 
   img {
     width: 100%;

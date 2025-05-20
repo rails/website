@@ -128,3 +128,15 @@
     row-gap: 50px;
   }
 }
+
+.homepage .speakers-container {
+  margin-top: 120px;
+
+  h2 {
+    font-size: 60px;
+
+    @include media(MobileScreens) {
+      font-size: 40px;
+    }
+  }
+}

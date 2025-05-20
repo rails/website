@@ -1,0 +1,55 @@
+---
+layout: world/2025/default
+---
+
+{% assign speaker_id = page.path | split: '/' | last %}
+{% assign filteredSessions = site.world_sessions | where_exp: 'item', 'item.path contains "2025"'%}
+{% assign speakerSessions = filteredSessions | where: 'speaker', speaker_id %}
+
+<div class="speaker-show-page">
+  <div class="illustration-background">
+    <img src="/assets/world/2025/images/shape.png" alt="shape lines">
+  </div>
+
+  <div class="speaker-presentation">
+    <div class="hexagon-frame">
+      <img class="headshot" src="{{ page.image_path }}" alt="{{ page.first_name }} {{ page.last_name }}'s photo" loading="lazy">
+    </div>
+
+    <div class="speaker-info">
+      <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+      <h3>{{ page.tagline }}{% if page.company and page.company != "false" %}, {{ page.company }}{% endif %}</h3>
+      <p>{{ content }}</p>
+
+      <div class="social-links">
+        {% if page.github %}
+        <a href="{{ page.github }}">
+          <img src="/assets/world/2025/icons/github.png" alt="github logo" width="30"/>
+        </a>
+        {% endif %}
+        {% if page.linkedin %}
+        <a href="{{ page.linkedin }}">
+          <img src="/assets/world/2025/icons/linkedin.png" alt="linkedin logo" width="30"/>
+        </a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="{{ page.twitter }}">
+          <img src="/assets/world/2025/icons/x.png" alt="X logo" width="30"/>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if speakerSessions.size > 0 %}
+    <div class="speaker-sessions">
+      <h2>Sessions by this speaker</h2>
+
+      <div class="sessions-container">
+        {% for session in speakerSessions %}
+          {% include world/2025/components/session_card.html session=session speaker=page %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
