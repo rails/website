@@ -6,6 +6,18 @@
     max-width: 1080px;
   }
 
+  h2 {
+    color: $color-black;
+    font-size: 23px;
+    padding: 0px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+
+  span:hover h2 {
+    color: $color-red;
+  }
+
   &__posts,
   &__pagination {
     margin-left: 30px;
