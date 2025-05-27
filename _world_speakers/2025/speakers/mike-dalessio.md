@@ -5,7 +5,7 @@ first_name: Mike
 last_name: Dalessio
 image_path: /assets/world/2025/images/speakers/m-dalessio.png
 role:
-tagline: Software Developer & Gummi bear lover
+tagline: Software Developer & Gummi Bear Lover
 company: 37signals
 keynote: false
 github: https://github.com/flavorjones
