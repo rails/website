@@ -5,7 +5,7 @@ first_name: Peter
 last_name: Zhu
 image_path: /assets/world/2023/images/speakers/p-zhu.jpeg
 role:
-tagline: Ruby Core committer, Senior Developer
+tagline: Ruby Core committer, Staff Developer
 company: Shopify
 keynote: false
 github: https://github.com/peterzhu2118
