@@ -13,4 +13,4 @@ linkedin: https://www.linkedin.com/in/peterzhu2118/
 twitter: https://twitter.com/peterzhu2118
 ---
 
-Peter is a Ruby core committer and Senior Developer at Shopify. He works on improving the performance of Ruby and is currently working on Modular GC and the MMTk integration. He is the co-author of Variable Width Allocation in Ruby, which improves Ruby's performance by optimizing the memory layout.
+Peter is a Ruby core committer and Staff Developer at Shopify. He works on improving the performance of Ruby and is currently working on Modular GC and the MMTk integration. He is the co-author of Variable Width Allocation in Ruby, which improves Ruby's performance by optimizing the memory layout.
