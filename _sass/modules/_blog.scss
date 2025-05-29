@@ -30,17 +30,25 @@
 
     border-top: 3px solid rgba($color-black, 0.1);
     padding-top: 30px;
+    display: flex;
+    gap: 30px;
 
-    p {
+
+    
+    .post-date {
+      flex: 1;
+    
+      p {
       font-size: 21px;
       font-weight: 600;
       letter-spacing: -0.006em;
       line-height: 26px;
       margin-top: -7px;
+      }
     }
 
-    dl {
-
+    .post-container {
+      flex: 3;
       margin-bottom: -6px;
       margin-top: 1px;
 
@@ -62,10 +70,9 @@
           }
 
         }
-
       }
 
-      dd {
+      p {
 
         color: $color-grey-5;
         font-size: 21px;
@@ -117,12 +124,15 @@
       gap: 30px;
       padding-top: 40px;
 
-      p {
-        flex: 1;
-        margin-top: -1px;
+      .post-date {
+        p {
+          flex: 1;
+          margin-top: -1px;
+        }
       }
 
-      dl {
+
+      .post-container {
         flex: 3;
         margin-top: -8px;
       }

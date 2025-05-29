@@ -1,8 +1,13 @@
-<div class="blog__post">
-  <p>{{ post.date | date: '%B %-d, %Y' }}</p>
-
-  <dl>
-    <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
-    <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
-  </dl>
-</div>
+<li class="blog__post">
+  <div class="post-date">
+    <p>{{ post.date | date: '%B %-d, %Y' }}</p>
+  </div>
+  <div class="post-container">
+    <h3>
+      <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
+    </h3>
+    <p>
+      {{ post.content | strip_html | truncatewords: 30 }}
+    </p>
+  </div>
+</li>
