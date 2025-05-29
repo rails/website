@@ -15,7 +15,7 @@ As we approach the last ever <a href="https://railsconf.org/">RailsConf</a> July
 >
 > _Chris Oliver & Ufuk Kayserilioglu, RailsConf 2025 co-chairs_
 
-The <a href="https://railsconf.org/speakers/">speaker lineup</a> has been announced, and it’s shaping up to be **one for the books**, including a **fireside chat with DHH**, and talks by Rails team members **Eileen Uchitelle** (Core), **Gannon McGibbon** (Committers), **Hartley McGuire** (Committers), and **Matheus Richards** (Triage).
+The <a href="https://railsconf.org/speakers/">speaker lineup</a> has been announced, and it’s shaping up to be **one for the books**, including a **fireside chat with DHH**, and talks by Rails team members **Eileen Uchitelle** (Core), **Gannon McGibbon** (Committers), **Hartley McGuire** (Issues), and **Matheus Richards** (Triage).
 
 We’ll also check out the panel where **Rosa Gutiérrez**, Rails Foundation board member and 37signals developer, will discuss ‘The Past, Present, and Future of Background Jobs’. Those interested will also find Rosa in the Hacker Space on day 2, working on Solid Queue.
 
