@@ -1,0 +1,12 @@
+---
+layout: world/2025/default
+permalink: /world/2025/faq/tickets
+---
+
+{% assign data = site.data.world['2025'].faq | where_exp: 'item', 'item.category == "Tickets & Entry"' %}
+{% assign topics = data.first.topics %}
+
+<div class="faq-container">
+  {% include world/2025/components/faq_tabs.html %}
+  {% include world/2025/components/faq_category.html topics=topics %}
+</div>

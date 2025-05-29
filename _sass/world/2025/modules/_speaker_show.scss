@@ -1,0 +1,141 @@
+.speaker-show-page {
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    @include media(MobileScreens) {
+      font-size: $xx-large
+    }
+  }
+}
+
+.speaker-show-page .illustration-background {
+  position: absolute;
+  left: 0;
+  z-index: -100;
+  margin-top: 50px;
+
+  img {
+    width: 600px;
+    height: 600px;
+
+    @include media(MobileScreens) {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+.speaker-show-page .speaker-presentation {
+  padding: 0 120px;
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 25% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  @include media(MobileScreens) {
+    padding: 25% 0 0 0;
+  }
+
+  @include media(TabletScreens) {
+    padding: 15% 0 0 0;
+  }
+
+  p {
+    font-size: $medium;
+    line-height: 30px;
+    margin: 40px 0;
+  }
+
+  h3 {
+    font-size: $x-large;
+    font-variation-settings: $font-weight-700;
+    line-height: 35px;
+  }
+
+  .hexagon-frame {
+    width: 400px;
+    height: 450px;
+
+    @include media(MobileAndTabletScreens) {
+      align-self: flex-start;
+      padding-left: 10%;
+    }
+
+    @include media(MobileScreens) {
+      width: 250px;
+      height: 270px;
+    }
+  }
+
+  .speaker-info {
+    @include media(MobileAndTabletScreens) {
+      align-self: flex-start;
+      padding: 0 10%;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+
+    svg {
+      font-size: 30px;
+      fill: white;
+
+      &:hover { fill: $pink; }
+    }
+  }
+}
+
+.speaker-show-page .speaker-sessions {
+  padding: 0 80px;
+
+  @include media(MobileScreens) {
+    padding: 0 5%;
+    margin-top: 50px;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0 10%;
+    margin-top: 80px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+
+    @include media(MobileAndTabletScreens) {
+      text-align: left;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 40px;
+    }
+
+    @include media(MobileScreens) {
+      font-size: 25px;
+    }
+  }
+}
+
+.speaker-show-page .sessions-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include media(MobileAndTabletScreens) {
+    margin-top: 50px;
+  }
+}

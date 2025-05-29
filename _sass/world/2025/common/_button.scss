@@ -1,29 +1,134 @@
-.button-primary {
+@mixin gradient-border($gradient, $thickness: 2px) {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: $thickness;
+  border-radius: inherit;
+  background: $gradient;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@mixin button-base {
   display: inline-block;
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 100px;
-  color: $dark-purple;
-  cursor: pointer;
+  position: relative;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.5s ease-out, border 0.5s ease-out, color 0.5s ease-out;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
 
-  &.large {
-    width: 100%;
-    padding: 1rem 0;
+  @include media(MobileScreens) {
+    padding: 15px 20px;
+  }
+
+  span {
     font-size: $xx-large;
-    font-variation-settings: $font-weight-900;
-    margin-top: 30px;
+    font-variation-settings: $font-weight-800-basic;
+    position: relative;
+    z-index: 2;
 
-    @media only screen and (max-width: 600px) {
-      margin-top: 25px;
-      width: 90%;
-      font-size: 25px;
+    @include media(MobileScreens) {
+      font-size: $medium;
+    }
+
+    @include media(TabletScreens) {
+      font-size: $x-large;
     }
   }
 
+  &:before {
+    @include gradient-border($button-gradient);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+
   &:hover {
-    background-color: transparent;
+    &:before { opacity: 1; }
+    &:after { background: none; }
+  }
+
+  &.small {
+    padding: 15px 30px;
+
+    span {
+      font-size: $medium;
+    }
+  }
+}
+
+.button-primary {
+  @include button-base;
+
+  span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: $button-gradient;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
+  &:before {
+    @include gradient-border($fushia-to-red-gradient);
+  }
+
+  &:after {
+    background: white;
+  }
+
+  &:hover {
+    span {
+      color: white;
+      background: none;
+      background-clip: initial;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+    }
+  }
+}
+
+.button-secondary {
+  @include button-base;
+
+  span {
     color: white;
   }
+
+  &:before {
+    @include gradient-border($button-secondary-gradient);
+  }
+
+  &:after {
+    background: $button-secondary-gradient;
+    border: 2px solid $red;
+  }
+
+  &:hover {
+    &:after {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
 }

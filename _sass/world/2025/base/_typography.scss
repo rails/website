@@ -1,47 +1,83 @@
 $font-weight-200: 'wght' 200, 'wdth' 100;
+$font-weight-400: 'wght' 400, 'wdth' 100;
 $font-weight-600: 'wght' 600, 'wdth' 100, 'slnt' -12;
+$font-weight-700: 'wght' 700, 'wdth' 100;
+$font-weight-800: 'wght' 800, 'wdth' 100, 'slnt' -12;
 $font-weight-900: 'wght' 900, 'wdth' 100, 'slnt' -12;
+$font-weight-800-basic: 'wght' 800, 'wdth' 100;
 
-$xxx-large: 52px;
-$xx-large: 29px;
+$xxxx-large: 90px;
+$xxx-large: 70px;
+$xx-large: 30px;
 $x-large: 24px;
 $large: 20px;
 $medium: 16px;
-$small: 12px;
+$small: 14px;
 
 h1 {
-  color: white;
   font-size: $xxx-large;
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
   line-height: 65px;
 
-  @media only screen and (max-width: 600px) {
-    line-height: 40px;
-    font-size: $xx-large;
+  @include media(MobileScreens) {
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
 h2 {
-  color: white;
+  font-size: $xxx-large;
+  font-variation-settings: $font-weight-900;
+  letter-spacing: 1px;
+
+  @include media(MobileScreens) {
+    font-size: $medium;
+  }
+
+  &.large-title {
+    font-size: $xxxx-large;
+
+    @include media(MobileScreens) { font-size: 55px; }
+    @include media(TabletScreens) {font-size: $xxx-large; }
+  }
+}
+
+h3, h4 {
   font-size: $xx-large;
   font-variation-settings: $font-weight-900;
   letter-spacing: 1px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: $medium;
-  }
 }
 
 p {
-  color: white;
-  font-size: $large;
-  font-variation-settings: $font-weight-900;
+  font-size: $x-large;
+  font-variation-settings: $font-weight-400;
   letter-spacing: 1px;
+  line-height: 45px;
 
-  @media only screen and (max-width: 600px) {
+  @include media(MobileScreens) {
     font-size: 18px;
+    line-height: 25px;
+  }
+
+  &.larger {
+    font-size: $xx-large;
+
+    @include media(MobileScreens) {
+      font-size: $large;
+      line-height: 25px;
+    }
   }
 }
 
+ul {
+  font-size: $medium;
+  line-height: 30px;;
+  list-style: disc;
+  padding-left: 30px;
+}
+
 .uppercase { text-transform: uppercase; }
+.bold { font-variation-settings: $font-weight-800-basic; }
+.italic { font-style: italic; font-size: $small; }
+.text-pink { color: $pink; }
