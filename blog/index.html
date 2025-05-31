@@ -2,6 +2,10 @@
 title: "Latest Rails News & Release Notes"
 description: "Discover the latest Ruby on Rails news, Rails Foundation updates, new versions, and feature announcements. All in one place."
 ---
+<script src="/blog/loadMorePosts.js"></script>
+
+{% assign see_more_posts = "See more posts&hellip;" %}
+{% assign button_class = "common-button common-button--color-red" %}
 
 <div class="heading common-padding--bottom-small common-padding--top-small">
   <div class="container">
@@ -22,7 +26,7 @@ description: "Discover the latest Ruby on Rails news, Rails Foundation updates, 
 
 <div class="blog common-padding--bottom">
   <div class="container">
-    <div class="blog__posts">
+    <div id="blogPosts" class="blog__posts">
       {% for post in paginator.posts %}
         {% include post.html %}
       {% endfor %}
@@ -30,7 +34,19 @@ description: "Discover the latest Ruby on Rails news, Rails Foundation updates, 
 
     {% if paginator.next_page %}
       <div class="blog__pagination">
-        <a href="{{ paginator.next_page_path }}" class="common-button common-button--color-red"><span>See more posts&hellip;</span></a>
+        <a href="{{ paginator.next_page_path }}" id="loadMorePosts" class={{ button_class }}>
+          <span>{{ see_more_posts }}</span>
+        </a>
+        <noscript>
+          <style>
+            #loadMorePosts {
+              display: none;
+            }
+          </style>
+          <a href="{{ paginator.next_page_path }}" class={{ button_class }}>
+            <span>{{ see_more_posts }}</span>
+          </a>
+        </noscript>
       </div>
     {% endif %}
   </div>
