@@ -4,7 +4,7 @@ title: "Judge.me joins the Rails Foundation as a new Core member"
 categories: news, foundation
 author: Amanda Perino
 published: true
-date: 2025-06-01
+date: 2025-06-03
 ---
 
 The Rails Foundation is pleased to announce that <a href="https://judge.me/">Judge.me</a> is joining the Rails Foundation as our newest Core member, joining <a href="https://cookpad.com/">Cookpad</a>, <a href="https://www.doximity.com/">Doximity</a>, <a href="https://www.fleetio.com/">Fleetio</a>, <a href="https://github.com/">GitHub</a>, <a href="https://www.intercom.com/">Intercom</a>, <a href="https://www.procore.com/">Procore</a>, <a href="https://www.shopify.com/">Shopify</a>, <a href="https://1password.com/">1Password</a>and <a href="https://37signals.com/">37signals</a>.
