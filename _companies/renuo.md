@@ -20,7 +20,7 @@ rails_usage: |
 pull_quote: "We want to contribute to the longevity of Rails. Every day, a new project is bootstrapped using Ruby On Rails, and we’d like to provide a more basic angle to the future development of Rails. We come from a small agency’s point of view and want to influence the formal and cultural groundwork as a small player.<br><br> We also feel strongly about education. Our vision? To see Ruby on Rails in universities."
 quote_author: "Alessandro Rodi"
 quote_title: "Software Engineer & Partner"
-member_status: "In 2023, Gusto became a **contributing member** of the Rails Foundation."
+member_status: "In 2023, Renuo became a **contributing member** of the Rails Foundation."
 github_contributions:
   - name: "rails_api_logger"
     url: "https://github.com/renuo/rails_api_logger"
