@@ -1,7 +1,7 @@
 ---
 layout: company
 title: cedarcode
-description: "cedarcode is a contributing member of the Rails Foundation since 2023. Cedarcode specializes in deploying high-performance Ruby on Rails engineering teams for startups and industry leaders that need to scale fast without compromising quality."
+description: "Cedarcode specializes in deploying high-performance Ruby on Rails engineering teams for startups and industry leaders. They are a Contributing member of the Rails Foundation since 2023."
 name: Cedarcode
 intro: |
   Cedarcode specializes in deploying high-performance Ruby on Rails engineering teams for startups and industry leaders that need to scale fast without compromising quality. With a collective 15 years of deep expertise in the Rails ecosystem, Cedarcode has earned the trust of companies like Airbnb, BetterUp, Underdog Fantasy, Amgen, and ID.me, among others.
