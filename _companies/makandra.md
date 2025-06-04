@@ -1,7 +1,7 @@
 ---
 layout: company
 title: makandra
-description: "makrandra is a contributing member of the Rails Foundation since 2024. They are a Rails consultancy based in Germany. Since 2009, it has delivered over 200 custom web applications across the full software lifecycle — from requirements and UI/UX to development, operations, and maintenance."
+description: "makrandra is a Rails consultancy based in Germany, and a Contributing member of the Rails Foundation since 2024.Since 2009, makandra has delivered over 200 custom Rails applications across the full software lifecycle — from requirements and UI/UX to development, operations, and maintenance."
 name: makandra
 intro: |
   makandra is a Rails consultancy based in Germany. Since 2009, it has delivered over 200 custom web applications across the full software lifecycle — from requirements and UI/UX to development, operations, and maintenance. Clients range from small businesses to global enterprises. Notable projects include [Siemens SiESTA](https://makandra.de/en/siemens-38) (cybersecurity testing), [JustClaims](https://makandra.de/en/justclaims-34) (air passenger claims), [Audi MediaCenter](https://makandra.de/en/audi-mediacenter-31) (press hub), [GREENZERO](https://makandra.de/en/greenzero-179) (LCA platform), [JUUUPORT](https://makandra.de/en/juuuport-368) (online youth counseling), and [Studyflix](https://makandra.de/en/studyflix-39) (video learning platform).
