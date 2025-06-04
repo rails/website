@@ -1,7 +1,7 @@
 ---
 layout: company
 title: 37signals
-description: "37signals is a founding core member of the Rails Foundation since 2022. 37signals is the birthplace of Rails, which was started in 2003 to build Basecamp."
+description: "37signals is the birthplace of Rails and a founding Core member of the Rails Foundation since 2022."
 name: 37signals
 intro: |
   37signals is the birthplace of Rails, which was started in 2003 to build Basecamp. Basecamp is a project-management tool that has been helping companies make progress and avoid letting things slip through the cracks for over twenty years. The company also makes HEY, an email and calendar system, and ONCE, for self-hosted SaaS, and has shared its development process Shape Up.
