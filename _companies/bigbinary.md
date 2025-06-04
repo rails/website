@@ -1,5 +1,7 @@
 ---
 layout: company
+title: BigBinary
+description: "BigBinary is a development firm with over 13 years of experience specializing in Ruby on Rails and a Contributing member of the Rails Foundation since 2023."
 name: BigBinary
 intro: |
   BigBinary is a development firm with over 13 years of experience specializing in Ruby on Rails. BigBinary has a track record of building high-quality software and was an early adopter of Ruby on Rails due to its exceptional productivity. Over the years, clients like **Gumroad**, **MLB**, **AngelList**, **Rootly**, **AtoB**, and **Healthicity** have worked with them to build robust, scalable software. In addition to client work, BigBinary is also building Neeto — a suite of productivity tools — entirely using Ruby on Rails.
@@ -24,5 +26,3 @@ github_contributions:
 community: |
   Every year, BigBinary hires recent graduates from colleges across India and trains them in Ruby on Rails through the [Learn Ruby on Rails course](https://courses.bigbinaryacademy.com/learn-rubyonrails/). This course has been actively maintained and refined by BigBinary for over five years. This course and other courses including [Learn Ruby](https://courses.bigbinaryacademy.com/learn-ruby/) are available for anyone to use for free at BigBinary Academy.
 ---
-
-
