@@ -1,7 +1,7 @@
 ---
 layout: company
 title: Clio
-description: "Clio is a contributing member of the Rails Foundation since 2025. Clio is the world's leading provider of cloud-based legal technology, trusted by 150,000 legal professionals in 130+ countries."
+description: "Clio is the world's leading provider of cloud-based legal technology, trusted by 150,000 legal professionals in 130+ countries. They are a Contributing member of the Rails Foundation since 2025."
 name: Clio
 intro: |
   Clio is the world's leading provider of cloud-based legal technology, trusted by 150,000 legal professionals in 130+ countries. As the industry's only end-to-end software solution, Clio centralizes client intake, case management, document automation, payments, and more—powered by AI on its unified platform.
