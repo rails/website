@@ -1,5 +1,7 @@
 ---
 layout: company
+title: Renuo
+description: "Renuo is a contributing member of the Rails Foundation since 2023. Renuo is a Web Agency based in Zürich, Switzerland."
 name: Renuo
 intro: |
   Renuo is a Web Agency based in Zürich, Switzerland. They have built with Rails since their foundation, and the framework is what represents their competitive advantage over other agencies in the Swiss market.<br><br>

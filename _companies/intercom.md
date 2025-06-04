@@ -1,5 +1,7 @@
 ---
 layout: company
+title: Intercom
+description: "Intercom is a founding core member of the Rails Foundation since 2022. Intercom is the AI Customer Service company on a mission to help businesses provide incredible customer experiences."
 name: Intercom
 intro: |
   Intercom is the AI Customer Service company on a mission to help businesses provide incredible customer experiences. Our AI agent [Fin](https://fin.ai), the most advanced customer service AI agent on the market, lets businesses deliver always-on, impeccable customer service and ultimately transform their customer experiences for the better. Fin can also be combined with our Helpdesk to become a complete solution called the Intercom Customer Service Suite, which provides AI enhanced support for the more complex or high touch queries that require a human agent. Founded in 2011 and trusted by nearly 30,000 global businesses, Intercom is setting the new standard for customer service.

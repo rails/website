@@ -1,5 +1,7 @@
 ---
 layout: company
+title: Gusto
+description: "Gusto is a contributing member of the Rails Foundation since 2024. Gusto is a modern, online people platform that helps small and medium-sized businesses take care of their teams."
 name: Gusto
 intro: |
   Gusto is a modern, online people platform that helps small and medium-sized businesses take care of their teams. In addition to full-service payroll, Gusto offers access to health insurance, 401(k) integrations, HR experts, employee self-onboarding, and team management tools. The company serves over 400,000 businesses nationwide and has offices in Denver, New York City, and San Francisco. For more information, visit gusto.com.
