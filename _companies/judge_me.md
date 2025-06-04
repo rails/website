@@ -3,7 +3,7 @@ layout: company
 name: Judge.me
 intro: |
   Judge.me is a product reviews platform built with Ruby on Rails at its core. Founded in 2015, the company has grown to support more than 500,000 e-commerce shops across 140+ countries. Every month, Judge.me processes over 70 million orders and generates more than 2 million verified buyer reviews.<br><br>At its core, Judge.me is driven by a clear purpose: to fix trust in commerce by making customer feedback authentic, accessible, and genuinely useful, for both merchants and shoppers.<br><br>In e-commerce, reviews play a critical role in building trust, improving conversion rates, and guiding purchase decisions. Judge.me helps merchants turn customer feedback into a core part of their growth strategy, delivering fast, reliable, and transparent product and store review collection at scale.
-logo: /assets/images/logo-judgeme.svg
+logo: /assets/images/logo-judgeme.png
 exturl: https://judge.me
 company_type: Private
 founded_date: 2015
