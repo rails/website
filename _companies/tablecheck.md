@@ -1,7 +1,7 @@
 ---
 layout: company
 title: Tablecheck
-description: "Tablecheck is a contributing member of the Rails Foundation since 2024. TableCheck, a restaurant booking and guest experience platform, has used Rails since its initial product launch in 2013. Their platform serves over 12,000 venues across 35 countries."
+description: "TableCheck, a restaurant booking and guest experience platform, has used Rails since its initial product launch in 2013. Their platform serves over 12,000 venues across 35 countries. They ares a Contributing member of the Rails Foundation since 2024."
 name: TableCheck
 intro: |
   TableCheck, a restaurant booking and guest experience platform, has used Rails since its initial product launch in 2013. Their platform serves over 12,000 venues across 35 countries.
