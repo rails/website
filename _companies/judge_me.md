@@ -10,7 +10,7 @@ exturl: https://judge.me
 company_type: Private
 founded_date: 2015
 headquarters: "**London, UK**, with offices in Brazil, Vietnam, Morocco."
-employees_range: "24"
+employees_range: "30"
 rails_engineers_range: "13"
 rails_usage: |
   Judge.me has been using Ruby on Rails since day one, building its platform on a Rails monolith that continues to scale with the company’s global growth. Today, this Rails monolithic powers a platform that serves hundreds of thousands of merchants in over 140 countries, processing more than 70 million orders and generating millions of verified reviews every month, all while maintaining a lean and scalable system.<br><br>With a small, efficient engineering team of just over 10 people, Rails plays a major role in driving productivity and development speed. Its developer-friendly characteristics and rich ecosystem enable Judge.me to rapidly build and maintain a wide range of features while handling high volumes of traffic effectively. Rails helps the team stay focused on product innovation and remain competitive in a fast-moving market.
