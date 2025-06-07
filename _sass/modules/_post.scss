@@ -12,6 +12,20 @@
     margin: -7px 30px -6px 30px;
     text-align: center;
 
+    h1 {
+      color: $color-red;
+      font-size: 39px;
+      @media (max-width: 800px) {
+        font-size: 32px;
+      }
+      @media (max-width: 600px) {
+        font-size: 28px;
+      }
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 38px;
+    }
+    
     h5 {
       margin-bottom: 16px;
     }
