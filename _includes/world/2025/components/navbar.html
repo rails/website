@@ -1,0 +1,36 @@
+<header id="header-2025" class="{{ include.background_color }}">
+  <nav id="navbar-desktop" class="nav">
+    <a href="/world/2025" class="logo-container">
+      <img alt="Rails World Logo 2025" src="/assets/world/2025/logos/RW25_logo-white-trademark.png" />
+    </a>
+
+    <div class="nav-links-container">
+      {% include world/2025/components/navbar_links.html %}
+    </div>
+  </nav>
+
+  <nav id="navbar-mobile">
+    <div class="nav-content">
+      <a href="/world/2025" class="logo-container">
+        <img alt="Rails World Logo 2025" src="/assets/world/2025/logos/RW25_logo-white-trademark.png" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+
+    <div class="mobile-menu">
+      {% include world/2025/components/navbar_links.html %}
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('#navbar-mobile');
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu')
+
+    toggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('menu-open');
+    });
+  });
+</script>

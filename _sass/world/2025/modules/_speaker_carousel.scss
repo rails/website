@@ -1,0 +1,70 @@
+.speakers-container .carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 60px;
+
+  @include media(MobileAndTabletScreens) {
+    margin: 60px 25px;
+  }
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.speaker-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 40px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-inline: 40px;
+
+  @include media(MobileScreens) {
+    padding-inline: 0;
+  }
+
+  @include media(TabletScreens) {
+    padding-inline: 20px;
+  }
+}
+.speaker-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.speaker-carousel > * {
+  flex: 0 0 calc((100% / 3)); /* show 3 cards */
+  scroll-snap-align: start;
+
+  @include media(MobileScreens) {
+    flex: 0 0 100%;
+  }
+
+  @include media(TabletScreens) {
+    flex: 0 0 50%;
+  }
+}
+
+.carousel-arrow {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+
+  @include media(MobileScreens) {
+    width: 15px;
+  }
+}
+
+.carousel-arrow.left {
+  rotate: 180deg;
+  left: 0;
+}
+
+.carousel-arrow.right {
+  right: 0;
+}
