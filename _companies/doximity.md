@@ -1,8 +1,10 @@
 ---
 layout: company
+title: Doximity
+description: "Doximity is the leading digital platform for U.S. medical professionals, and a founding Core member of the Rails Foundation since 2022."
 name: Doximity
 intro: |
-  Doximity is the leading digital platform for U.S. medical professionals. The company's network members include more than 80% of U.S. physicians across all specialties and practice areas. Doximity provides its verified clinical membership with digital tools built for medicine, enabling them to collaborate with colleagues, stay up to date with the latest medical news and research, manage their careers and on-call schedules, streamline documentation and administrative paperwork, and conduct virtual patient visits. 
+  Doximity is the leading digital platform for U.S. medical professionals. The company's network members include more than 80% of U.S. physicians across all specialties and practice areas. Doximity provides its verified clinical membership with digital tools built for medicine, enabling them to collaborate with colleagues, stay up to date with the latest medical news and research, manage their careers and on-call schedules, streamline documentation and administrative paperwork, and conduct virtual patient visits.
 logo: /assets/images/logo-doximity.svg
 exturl: https://doximity.com
 company_type: Public
