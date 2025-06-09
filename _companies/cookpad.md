@@ -1,5 +1,7 @@
 ---
 layout: company
+title: "Cookpad, Inc."
+description: "Cookpad is a founding Core member of the Rails Foundation since 2022. Cookpad provides a global platform for recipe sharing and search, used in 67 countries and regions, in 26 languages."
 name: Cookpad Inc.
 intro: |
   Cookpad provides a global platform for recipe sharing and search, used in 67 countries and regions, in 26 languages. Our mission is to make everyday cooking fun, because we see a brighter future. And we believe that the power of cooking will get us there. Cooking isn’t just a matter of putting together ingredients. When you cook, you choose. You choose what to buy, what to eat, and how to nourish yourself, your family, and friends. You choose how to give back to communities. When you cook, you choose to become a maker of tomorrow’s world. Here at Cookpad, each day is about inspiring more people to make these choices.
@@ -48,5 +50,3 @@ community: |
   - [South West Ruby Meetup](https://www.southwestruby.com/), Bristol UK
 
 ---
-
-

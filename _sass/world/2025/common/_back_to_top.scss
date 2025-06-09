@@ -1,0 +1,25 @@
+#backToTop {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  background-color: white;
+  color: $dark-purple;
+  opacity: 0.8;
+  font-size: 20px;
+  z-index: 999;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+@include media(MobileScreens) {
+  #backToTop.show {
+    display: flex;
+  }
+}

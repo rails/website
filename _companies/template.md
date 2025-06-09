@@ -1,8 +1,10 @@
 ---
 layout: company
+title: 37signals
+description: "makrandra is a founding core member of the Rails Foundation since 2022. 37signals is the birthplace of Rails, which was started in 2003 to build Basecamp."
 name: Company Name
 intro: |
-  Intro text long form paragraph 
+  Intro text long form paragraph
 logo: /assets/images/logo-company.svg
 exturl: https://company.com
 company_type: Public
@@ -27,5 +29,3 @@ community: |
 case_study_blurb: "Check out the case study of how company delivers incredible value to its customers with Rails"
 case_study_url: /docs/case-studies/company
 ---
-
-

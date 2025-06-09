@@ -1,6 +1,6 @@
 ---
-title: The Rails Foundation
-description:
+title: "The Rails Foundation"
+description: "Learn about the Rails Foundation's mission, current work, members, and how you can support the Rails community."
 category: foundation
 permalink: /foundation
 redirect_from:
@@ -23,37 +23,58 @@ redirect_from:
     <div class="text__body">
       <div class="text__content common-content">
         <h3>Our Mission.</h3>
-        <p>To improve the documentation, education, marketing, and <a href="/world">events</a> of our framework to the benefit of all new and existing Rails developers, and to ensure a prosperous ecosystem that continues to improve for decades to come. Read <a href="/2022/11/14/the-rails-foundation">our announcement</a> for more details.</p>
+        <p>
+          To improve the documentation, education, marketing, and
+          <a href="/world">events</a> of our framework to the benefit of all new
+          and existing Rails developers, and to ensure a prosperous ecosystem
+          that continues to improve for decades to come. Read
+          <a href="/2022/11/14/the-rails-foundation">our announcement</a> for
+          more details.
+        </p>
 
         <hr class="divider" />
 
         <h3>Our Work.</h3>
-        <p>The foundation will commission freelancers and firms to work on better written documentation, more compelling screencasts, exciting events, and much more. We've only just gotten started, so more detailed plans are still to follow.</p>
+        <p>
+          The foundation will commission freelancers and firms to work on better
+          written documentation, more compelling screencasts, exciting events,
+          and much more. We've only just gotten started, so more detailed plans
+          are still to follow.
+        </p>
 
-        <p>We will also be administering <a href="/trademarks">the Rails trademarks</a> through an exclusive license from the trademark owner.</p>
+        <p>
+          We will also be administering
+          <a href="/trademarks">the Rails trademarks</a> through an exclusive
+          license from the trademark owner.
+        </p>
         <p>Here are some of our recent announcements:</p>
-        
-        <ul style="padding-left: 0;">
-          {% assign sorted_posts = site.categories[page.category] | sort: 'date' | reverse %}
-          {% assign limited_posts = sorted_posts | slice: 0, 8 %}
+
+        <ul style="padding-left: 0">
+          {% assign sorted_posts = site.categories[page.category] | sort: 'date'
+          | reverse %} {% assign limited_posts = sorted_posts | slice: 0, 8 %}
           {% for post in limited_posts %}
-            <li style="display: flex; gap: 2rem; margin-top: 1rem;">
-              <div style="white-space: nowrap; flex-shrink: 0; width: 6rem;">
-                {{ post.date | date: '%b %-d, %Y' }}
-              </div>
-              <div>
-                <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
-              </div>
-            </li>
+          <li style="display: flex; gap: 2rem; margin-top: 1rem">
+            <div style="white-space: nowrap; flex-shrink: 0; width: 6rem">
+              {{ post.date | date: '%b %-d, %Y' }}
+            </div>
+            <div>
+              <a href="{{ post.url }}">{{ post.title | strip_html }}</a>
+            </div>
+          </li>
           {% endfor %}
         </ul>
-        
-        <p>Stay up to date with all Rails Foundation news <a href="/category/foundation">here</a>.</p>
-        
+
+        <p>
+          Stay up to date with all Rails Foundation news
+          <a href="/category/foundation">here</a>.
+        </p>
+
         <hr class="divider" />
 
         <h3>Our Members.</h3>
-        <p>In alphabetical order, the nine Core members of the foundation are: </p>
+        <p>
+          In alphabetical order, the ten Core members of the foundation are:
+        </p>
         <div class="trusted common-padding--bottom-small">
           <div class="container">
             <div class="trusted__blocks">
@@ -78,8 +99,17 @@ redirect_from:
                 </a>
               </div>
               <div class="trusted__block">
-                <a href="https://www.intercom.com" aria-label="Intercom">
+                <a href="/foundation/intercom" aria-label="Intercom">
                   <img src="/assets/images/logo-intercom.svg" alt="Intercom" />
+                </a>
+              </div>
+              <div class="trusted__block">
+                <a href="/foundation/judge_me" aria-label="Judge.me">
+                  <img
+                    src="/assets/images/logo-judgeme.svg"
+                    alt="Judge.me"
+                    style="padding: 10px 0"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
@@ -94,131 +124,276 @@ redirect_from:
               </div>
               <div class="trusted__block">
                 <a href="https://1password.com/" aria-label="1Password">
-                  <img src="/assets/images/logo-1password.svg" alt="1Password" />
+                  <img
+                    src="/assets/images/logo-1password.svg"
+                    alt="1Password"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/37signals" aria-label="37signals">
-                  <img src="/assets/images/logo-37signals.svg" alt="37signals" />
+                  <img
+                    src="/assets/images/logo-37signals.svg"
+                    alt="37signals"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <p>The next tier of membership is Contributing member, and we are pleased to have the further support of the following members:</p>
+        <p>
+          The next tier of membership is Contributing member, and we are pleased
+          to have the further support of the following members:
+        </p>
         <div class="trusted common-padding--bottom-small">
           <div class="container">
             <div class="trusted__blocks">
               <div class="trusted__block">
                 <a href="https://www.appsignal.com/" aria-label="AppSignal">
-                  <img src="/assets/images/logo-appsignal.svg" alt="AppSignal" />
+                  <img
+                    src="/assets/images/logo-appsignal.svg"
+                    alt="AppSignal"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/bigbinary" aria-label="BigBinary">
-                  <img src="/assets/images/logo-bigbinary.svg" alt="BigBinary" />
+                  <img
+                    src="/assets/images/logo-bigbinary.svg"
+                    alt="BigBinary"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/cedarcode" aria-label="Cedarcode">
-                  <img src="/assets/images/logo-cedarcode.svg" alt="Cedarcode" />
+                  <img
+                    src="/assets/images/logo-cedarcode.svg"
+                    alt="Cedarcode"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/clio" aria-label="Clio">
-                  <img src="/assets/images/logo-clio.svg" alt="Clio" style="padding:3px 0" />
+                  <img
+                    src="/assets/images/logo-clio.svg"
+                    alt="Clio"
+                    style="padding: 3px 0"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
-                <a href="https://gusto.com/" aria-label="Gusto">
+                <a href="/foundation/gusto" aria-label="Gusto">
                   <img src="/assets/images/logo-gusto.svg" alt="Gusto" />
                 </a>
               </div>
               <div class="trusted__block">
-                <a href="https://www.higherpixels.com/" aria-label="Higher Pixels">
-                  <img src="/assets/images/logo-higherpixels-BW.svg" alt="Higher Pixels" style="filter: none;"/>
+                <a
+                  href="https://www.higherpixels.com/"
+                  aria-label="Higher Pixels"
+                >
+                  <img
+                    src="/assets/images/logo-higherpixels-BW.svg"
+                    alt="Higher Pixels"
+                    style="filter: none"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/makandra" aria-label="makandra">
-                  <img src="/assets/images/logo-makandra-2.svg" alt="makandra" style="padding: 8px" style="filter: none;"/>
+                  <img
+                    src="/assets/images/logo-makandra-2.svg"
+                    alt="makandra"
+                    style="padding: 8px"
+                    style="filter: none"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
-                <a href="https://www.planetargon.com/" aria-label="Planet Argon">
-                  <img src="/assets/images/logo-planetargon.png" alt="Planet Argon" />
+                <a
+                  href="https://www.planetargon.com/"
+                  aria-label="Planet Argon"
+                >
+                  <img
+                    src="/assets/images/logo-planetargon.png"
+                    alt="Planet Argon"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
-                <a href="https://www.renuo.ch/" aria-label="Renuo">
+                <a href="/foundation/renuo" aria-label="Renuo">
                   <img src="/assets/images/logo-renuo.svg" alt="Renuo" />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="https://www.saeloun.com/" aria-label="Saeloun">
-                  <img src="/assets/images/logo-saeloun-4.svg" alt="Saeloun" style="padding:8px 0" />
+                  <img
+                    src="/assets/images/logo-saeloun-4.svg"
+                    alt="Saeloun"
+                    style="padding: 8px 0"
+                  />
                 </a>
               </div>
               <div class="trusted__block">
                 <a href="/foundation/tablecheck" aria-label="TableCheck">
-                  <img src="/assets/images/logo-tablecheck-black.svg" alt="TableCheck" style="padding:4px" />
+                  <img
+                    src="/assets/images/logo-tablecheck-black.svg"
+                    alt="TableCheck"
+                    style="padding: 4px"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <p>The foundation is always open to new Contributing members. Please apply for membership by writing to <a href="mailto:foundation@rubyonrails.org">foundation@rubyonrails.org</a> for more details. If your company has been benefiting from Rails over the years, but not sure how it might give back to the ecosystem, now there's a clear and obvious choice.</p>
-        
-        <div class="container" style="display: flex; justify-content: center; padding: 20px">
-          <a href="https://public.3.basecamp.com/p/7ymKZrwbdPoZhwCzhH2SZkLH" class="common-button common-button--size-medium common-button--color-red" style="color: #FFF"><span>Download the membership deck</span></a>
-        </div>
+        <p>
+          The foundation is always open to new Contributing members. Please
+          apply for membership by writing to
+          <a href="mailto:foundation@rubyonrails.org"
+            >foundation@rubyonrails.org</a
+          >
+          for more details. If your company has been benefiting from Rails over
+          the years, but not sure how it might give back to the ecosystem, now
+          there's a clear and obvious choice.
+        </p>
 
+        <div
+          class="container"
+          style="display: flex; justify-content: center; padding: 20px"
+        >
+          <a
+            href="https://public.3.basecamp.com/p/7ymKZrwbdPoZhwCzhH2SZkLH"
+            class="common-button common-button--size-medium common-button--color-red"
+            style="color: #fff"
+            ><span>Download the membership deck</span></a
+          >
+        </div>
 
         <hr class="divider" />
 
         <h3>Our Board.</h3>
-        <p>The Core member companies are each represented by one employee on the foundation's board, which is then chaired by the creator of Ruby on Rails, David Heinemeier Hansson.</p>
+        <p>
+          The Core member companies are each represented by one employee on the
+          foundation's board, which is then chaired by the creator of Ruby on
+          Rails, David Heinemeier Hansson.
+        </p>
 
         <p>The current board members are:</p>
 
         <ul>
-          <li><a href="https://www.linkedin.com/in/nbatra/">Neha Batra</a> (VP of Engineering, GitHub)</li>
-          <li><a href="https://www.linkedin.com/in/duncandavidson/">Duncan Davidson</a> (Technical Advisor, Office of the CEO, Shopify)</li>
-          <li><a href="https://www.linkedin.com/in/sdavis7766/">Steve Davis</a> (President of Product & Technology, Procore)</li>
-          <li><a href="https://www.linkedin.com/in/rosagutierrezescudero/">Rosa Gutiérrez</a> (Lead Programmer, 37signals)</li>
-          <li><a href="https://www.linkedin.com/in/jason-meller-04498230/">Jason Meller</a> (VP, Product, 1Password)</li>
-          <li><a href="https://www.linkedin.com/in/brunomiranda/">Bruno Miranda</a> (SVP, Engineering, Doximity)</li>
-          <li><a href="https://www.linkedin.com/in/ryansherlock/">Ryan Sherlock</a> (Director of Engineering, Intercom)</li>
-          <li><a href="https://www.linkedin.com/in/valdivia-dev/">Jorge Valdivia</a> (CTO, Fleetio)</li>
-          <li><a href="https://www.linkedin.com/in/tapster/">Miles Woodroffe</a> (Technical Advisor to the CEO, Cookpad)</li>
+          <li>
+            <a href="https://www.linkedin.com/in/nbatra/">Neha Batra</a> (VP of
+            Engineering, GitHub)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/linh-dam-48a55641/"
+              >Linh Dam</a
+            >
+            (Co-Founder and Chief Architect, Judge.me)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/duncandavidson/"
+              >Duncan Davidson</a
+            >
+            (Technical Advisor, Office of the CEO, Shopify)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sdavis7766/">Steve Davis</a>
+            (President of Product & Technology, Procore)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rosagutierrezescudero/"
+              >Rosa Gutiérrez</a
+            >
+            (Lead Programmer, 37signals)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jason-meller-04498230/"
+              >Jason Meller</a
+            >
+            (VP, Product, 1Password)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/brunomiranda/"
+              >Bruno Miranda</a
+            >
+            (SVP, Engineering, Doximity)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ryansherlock/"
+              >Ryan Sherlock</a
+            >
+            (Director of Engineering, Intercom)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/valdivia-dev/"
+              >Jorge Valdivia</a
+            >
+            (CTO, Fleetio)
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tapster/">Miles Woodroffe</a>
+            (Technical Advisor to the CEO, Cookpad)
+          </li>
         </ul>
 
         <hr class="divider" />
 
         <h3>Our Executive Director.</h3>
-        <p><a href="https://www.linkedin.com/in/amandabrookeperino/">Amanda Perino</a> is our executive director. You can reach her at amanda@rubyonrails.org.</p>
+        <p>
+          <a href="https://www.linkedin.com/in/amandabrookeperino/"
+            >Amanda Perino</a
+          >
+          is our executive director. You can reach her at
+          amanda@rubyonrails.org.
+        </p>
 
         <hr class="divider" />
 
         <h3>Our Structure.</h3>
-        <p>The foundation is a non-profit 501(c)6 foundation incorporated in the US.</p>
+        <p>
+          The foundation is a non-profit 501(c)6 foundation incorporated in the
+          US.
+        </p>
 
         <hr class="divider" />
 
         <h3>Our Budget.</h3>
-        <p>In 2022, the first eight Core foundation members banded together to generously endow the foundation with $1,000,000 USD in funding to kick start the foundation and make a real difference on all the aforementioned areas of improvement. </p>
+        <p>
+          In 2022, the first eight Core foundation members banded together to
+          generously endow the foundation with $1,000,000 USD in funding to kick
+          start the foundation and make a real difference on all the
+          aforementioned areas of improvement.
+        </p>
 
-        <p>Going forward, each Core member has committed to contributing $75,000/year, with Contributing members donating a further $25,000/year.</p>
+        <p>
+          Going forward, each Core member has committed to contributing
+          $75,000/year, with Contributing members donating a further
+          $25,000/year.
+        </p>
 
-        <p>With this combined budget dedicated to fulfilling our mission, we will not have to rely on funding from individual contributors.</p>
+        <p>
+          With this combined budget dedicated to fulfilling our mission, we will
+          not have to rely on funding from individual contributors.
+        </p>
 
         <h3>Suggestions?</h3>
-        <p>We are always open to hearing ideas and suggestions that align with our mission to improve the documentation, education, events, and marketing efforts around Rails.</p>
-        <p>Feel free to use <a href="https://app.todohelpers.com/forms/4758b5b0-d6f9-4f41-8041-992cc9b748fb">this suggestion form</a> to send us your ideas.</p>
+        <p>
+          We are always open to hearing ideas and suggestions that align with
+          our mission to improve the documentation, education, events, and
+          marketing efforts around Rails.
+        </p>
+        <p>
+          Feel free to use
+          <a
+            href="https://app.todohelpers.com/forms/4758b5b0-d6f9-4f41-8041-992cc9b748fb"
+            >this suggestion form</a
+          >
+          to send us your ideas.
+        </p>
 
         <hr class="divider" />
-        <p><a href="/foundation/privacy">Rails Foundation Privacy Policy</a>
+        <p><a href="/foundation/privacy">Rails Foundation Privacy Policy</a></p>
       </div>
     </div>
   </div>

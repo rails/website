@@ -1,0 +1,41 @@
+.legal-container {
+  padding: 30px;
+
+  @include media(MobileScreens) {
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 40px 0;
+  }
+
+  h2 {
+    font-size: $xx-large;
+    margin: 40px 0;
+
+    @include media(MobileScreens) {
+      font-size: $x-large;
+    }
+  }
+
+  p {
+    font-size: $medium;
+    line-height: 30px;
+    padding-left: 20px;
+
+    @include media(MobileScreens) {
+      font-size: $small;
+    }
+  }
+
+  ol {
+    list-style: auto;
+    padding-left: 40px;
+
+    p { padding-left: 5px; }
+  }
+
+  a {
+    color: white;
+  }
+}

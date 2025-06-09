@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
+
 <section class="company-profile">
   <div class="container common-content">
     <div id="leftcol">
-      <header class="common-headline company-header heading common-padding--bottom-small common-padding--top-small">
+      <header
+        class="common-headline company-header heading common-padding--bottom-small common-padding--top-small"
+      >
         <p>MEMBERS »</p>
         <h1>{{ page.name }}</h1>
       </header>
@@ -14,117 +17,103 @@ layout: default
       </div>
 
       {% if page.rails_usage %}
-        <section class="rails-usage common-padding--bottom-small">
-          <h3>How They Use Rails</h3>
-          {{ page.rails_usage | markdownify }}
-        </section>
-      {% endif %}
-
-      {% if page.member_status %}
-        <section class="member-status common-padding--bottom-small">
-          {{ page.member_status | markdownify }}
-        </section>
-      {% endif %}
-
-      {% if page.pull_quote %}
-        <section class="pull-quote common-padding--bottom-small">
-          <blockquote>
-            <p>{{ page.pull_quote }}</p>
-            {% if page.quote_author %}
-              <cite>
-                {{ page.quote_author }}
-                {% if page.quote_title %}
-                  <span class="title">{{ page.quote_title }}</span>
-                {% endif %}
-              </cite>
+      <section class="rails-usage common-padding--bottom-small">
+        <h3>How They Use Rails</h3>
+        {{ page.rails_usage | markdownify }}
+      </section>
+      {% endif %} {% if page.member_status %}
+      <section class="member-status common-padding--bottom-small">
+        {{ page.member_status | markdownify }}
+      </section>
+      {% endif %} {% if page.pull_quote %}
+      <section class="pull-quote common-padding--bottom-small">
+        <blockquote>
+          <p>{{ page.pull_quote }}</p>
+          {% if page.quote_author %}
+          <cite>
+            {{ page.quote_author }} {% if page.quote_title %}
+            <span class="title">{{ page.quote_title }}</span>
             {% endif %}
-          </blockquote>
-        </section>
-      {% endif %}
-
-      {% if page.github_contributions or page.contribution_string %}
-        <section class="contributions common-padding--bottom-small">
-          <h3>Open Source Contributions</h3>
-          {% if page.github_contributions %}
-          <ul>
-            {% for contribution in page.github_contributions %}
-              <li>
-                <p>{{ contribution.name }}<br>
-                <a href="{{ contribution.url }}">{{ contribution.url }}</a></p>
-              </li>
-            {% endfor %}
-          </ul>
+          </cite>
           {% endif %}
-          
-          {% if page.contribution_string %}
-            <p class="contrib-string">{{ page.contribution_string }}</p>
-          {% endif %}
-
-        </section>
-      {% endif %}
-
-      {% if page.community %}
-        <section class="community-involvement common-padding--bottom-small">
-          <h3>Community Involvement</h3>
-          {{ page.community | markdownify }}
-        </section>
-      {% endif %}
-
-      {% if page.case_study_url %}
-        <section class="case-study-link common-padding--bottom-small">
-          {{ page.case_study_blurb }}
-          <a href="{{ page.case_study_url }}" class="button">Read Full Case Study</a>
-        </section>
+        </blockquote>
+      </section>
+      {% endif %} {% if page.github_contributions or page.contribution_string %}
+      <section class="contributions common-padding--bottom-small">
+        <h3>Open Source Contributions</h3>
+        {% if page.github_contributions %}
+        <ul>
+          {% for contribution in page.github_contributions %}
+          <li>
+            <p>
+              {{ contribution.name }}<br />
+              <a href="{{ contribution.url }}">{{ contribution.url }}</a>
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% if page.contribution_string %}
+        <p class="contrib-string">
+          {{ page.contribution_string | markdownify }}
+        </p>
+        {% endif %}
+      </section>
+      {% endif %} {% if page.community %}
+      <section class="community-involvement common-padding--bottom-small">
+        <h3>Community Involvement</h3>
+        {{ page.community | markdownify }}
+      </section>
+      {% endif %} {% if page.case_study_url %}
+      <section class="case-study-link common-padding--bottom-small">
+        {{ page.case_study_blurb }}
+        <a href="{{ page.case_study_url }}" class="button"
+          >Read Full Case Study</a
+        >
+      </section>
       {% endif %}
     </div>
 
     <aside class="company-details">
       {% if page.logo %}
-        <img src="{{ page.logo }}" alt="{{ page.name }} logo" class="company-logo">
+      <img
+        src="{{ page.logo }}"
+        alt="{{ page.name }} logo"
+        class="company-logo"
+      />
+      {% endif %} {% if page.exturl %}
+      <p class="website"><a href="{{ page.exturl }}">{{ page.exturl }}</a></p>
       {% endif %}
 
-      {% if page.exturl %}
-        <p class="website"><a href="{{ page.exturl }}">{{ page.exturl }}</a></p>
-      {% endif %}
-              
       <dl class="metapairs">
         {% if page.company_type %}
-          <dt>Type:</dt>
-          <dd>{{ page.company_type }}
-            {% if page.stock_ticker %}
-              <span>({{ page.stock_ticker }})</span>
-            {% endif %}
-          </dd>
-        {% endif %}
-
-        {% if page.valuation %}
-          <dt>Valuation:</dt>
-          <dd>{{ page.valuation }}</dd>
-        {% endif %}
-
-        {% if page.founded_date %}
-          <dt>Founded:</dt>
-          <dd>{{ page.founded_date }}</dd>
-        {% endif %}
-        
-        {% if page.headquarters %}
-          <dt>HQ:</dt>
-          <dd>{{ page.headquarters | markdownify }}</dd>
+        <dt>Type:</dt>
+        <dd>
+          {{ page.company_type }} {% if page.stock_ticker %}
+          <span>({{ page.stock_ticker }})</span>
+          {% endif %}
+        </dd>
+        {% endif %} {% if page.valuation %}
+        <dt>Valuation:</dt>
+        <dd>{{ page.valuation }}</dd>
+        {% endif %} {% if page.founded_date %}
+        <dt>Founded:</dt>
+        <dd>{{ page.founded_date }}</dd>
+        {% endif %} {% if page.headquarters %}
+        <dt>HQ:</dt>
+        <dd>{{ page.headquarters | markdownify }}</dd>
         {% endif %}
       </dl>
       <div class="people-counts">
         <p>
           {% if page.employees_range %}
-            <b>{{ page.employees_range }}</b>
-            # of Employees
-          {% endif %}
+          <b>{{ page.employees_range }}</b>
+          # of Employees {% endif %}
         </p>
 
         <p>
           {% if page.rails_engineers_range %}
-            <b>{{ page.rails_engineers_range }}</b>
-            # Rails Engineers
-          {% endif %}
+          <b>{{ page.rails_engineers_range }}</b>
+          # Rails Engineers {% endif %}
         </p>
       </div>
     </aside>
