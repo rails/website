@@ -4,7 +4,7 @@ redirect_from: /world/speakers/hiroshi-shibata
 first_name: Hiroshi
 last_name: Shibata
 image_path: /assets/world/2025/images/speakers/h-shibata.jpeg
-role: Ruby Core, Technical fellow
+role: Ruby Maintainer, Technical fellow
 company: ANDPAD, Inc.
 keynote: true
 tagline: Ruby Committer & OSS maintainer
