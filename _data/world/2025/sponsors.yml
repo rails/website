@@ -4,12 +4,18 @@ platinum:
     url: https://www.appsignal.com/
 
 gold:
-  - name: GitHub
-    logo: /assets/world/2025/images/sponsors/RW-logo-github.svg
-    url: https://www.github.com/
   - name: Shopify
     logo: /assets/world/2025/images/sponsors/RW-logo-shopify.svg
     url: https://www.shopify.com/
+  - name: GitHub
+    logo: /assets/world/2025/images/sponsors/RW-logo-github.svg
+    url: https://www.github.com/
+  - name: Framework
+    logo: /assets/world/2024/images/sponsors/RW-logo-framework.png
+    url: https://frame.work/
+  - name: JetBrains
+    logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
+    url: https://www.jetbrains.com/
 
 silver:
   - name: Codeminer42
@@ -39,7 +45,7 @@ silver:
   - name: Sentry
     logo: /assets/world/2024/images/sponsors/RW-logo-sentry.svg
     url: https://sentry.io/
-  - name: Wyework
+  - name: Wyeworks
     logo: /assets/world/2025/images/sponsors/RW-logo-wyeworks.svg
     url: https://www.wyeworks.com/
 
@@ -74,6 +80,9 @@ members:
   - name: Fleetio
     logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
     url: https://www.fleetio.com/
+  - name: Judge.me
+    logo: assets/images/logo-judgeme.svg
+    url: https://judge.me/
   - name: Procore
     logo: /assets/world/2024/images/sponsors/RW-logo-procore.svg
     url: https://www.procore.com/en-gb
