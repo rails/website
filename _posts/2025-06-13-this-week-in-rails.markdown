@@ -8,7 +8,7 @@ published: true
 date: 2025-06-13
 ---
 
-Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Happy Friday 🎃 !   
+Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Happy Friday 🎃!   
 Let's explore this week's changes in the Rails codebase.
 
 **New Guides Pull Request for review**  
