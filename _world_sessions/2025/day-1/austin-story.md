@@ -2,9 +2,9 @@
 layout: world/2025/session
 title: "Startup Speed, Enterprise Scale: Rails Powers 3k Events/Sec Throughput"
 speaker: austin-story.md
-time:
-location:
-running_order:
+time: 11:15 - 11:45
+location: Graanbeurs
+running_order: 2
 ---
 
 Ditch vendor lock-in!

@@ -2,9 +2,9 @@
 layout: world/2025/session
 title: "Lessons from Migrating a Legacy Frontend to Hotwire"
 speaker: radan-skoric.md
-time:
-location:
-running_order:
+time: 15:45 - 16:00
+location: Graanbeurs
+running_order: 6
 ---
 
 Is Hotwire just for `rails new` scenarios and not worth it for mature applications? Absolutely not.

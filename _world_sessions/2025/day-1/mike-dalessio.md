@@ -2,9 +2,9 @@
 layout: world/2025/session
 title: "Multi-Tenant Rails: Everybody Gets a Database!"
 speaker: mike-dalessio.md
-time:
-location:
-running_order:
+time: 11:15 -  11:45
+location: Effectenbeurs
+running_order: 2
 ---
 
 As Rails’s SQLite support has improved, it's finally possible to have truly multi-tenant Rails applications - isolated data for each account! - without sacrificing performance or ease of use. This talk describes a novel, production-vetted approach to isolating tenant data everywhere in Rails: the database, fragment caches, background jobs, Active Storage, Turbo Stream broadcasts, Action Mailer, and even the testing framework.

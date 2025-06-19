@@ -2,9 +2,9 @@
 layout: world/2025/session
 title: "Rails World Closing Keynote"
 speaker: aaron-patterson.md
-time:
-location:
-running_order:
+time: 16:30 - 17:30
+location: Effectenbeurs
+running_order: 7
 ---
 
 We actually never know with Aaron. We'll find out what this session is about when you do.
