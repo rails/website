@@ -1,0 +1,80 @@
+.agenda-page {
+  padding-left: 80px;
+
+  @include media(MobileScreens) {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0 40px;
+  }
+}
+
+.agenda-header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(MobileAndTabletScreens) {
+    flex-direction: column-reverse;
+    margin-top: 25px;
+  }
+
+  h1 {
+    @include media(MobileScreens) {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+  }
+
+  h2 {
+    @include media(MobileScreens) {
+      font-size: $large;
+    }
+  }
+}
+
+.agenda-header .content {
+  width: 50%;
+  align-self: flex-start;
+  margin-top: 100px;
+
+  @include media(MobileAndTabletScreens) {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+.agenda-header .illustration-container {
+  @include media(MobileAndTabletScreens) {
+    display: none;
+  }
+
+  img {
+    width: 500px;
+    rotate: 180deg;
+  }
+}
+
+.agenda-tabs {
+  display: flex;
+  gap: 25px;
+
+  @include media(MobileAndTabletScreens) {
+    margin-top: 50px;
+  }
+
+  .tab {
+    cursor: pointer;
+    padding: 10px 50px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    &:hover, &.active {
+      background-image: $agenda-tag-gradient;
+    }
+  }
+}
