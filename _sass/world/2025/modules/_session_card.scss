@@ -9,12 +9,19 @@
   background-image: $session-card-gradient;
   transition: background 0.6s ease-in;
 
-  @include media(MobileScreens) {
+  @include media(MobileAndTabletScreens) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
     padding: 25px;
     width: fit-content;
+  }
+
+  @include media(MobileScreens) {
+    gap: 20px;
+  }
+
+  @include media(TabletScreens) {
+    gap: 30px;
   }
 
   .time {
@@ -25,16 +32,18 @@
     font-size: 22px;
 
     @include media(MobileScreens) {
-      width: fit-content;
-      border-right: none;
-      padding-right: 0;
       font-size: 16px;;
     }
 
     @include media(TabletScreens) {
-      padding-right: 20px;
+      font-size: 20px;
     }
 
+    @include media(MobileAndTabletScreens)  {
+      width: fit-content;
+      border-right: none;
+      padding-right: 0;
+    }
   }
 
   .content {
@@ -42,7 +51,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    @include media(MobileScreens) {
+    @include media(MobileAndTabletScreens) {
       gap: 10px;
     }
   }
@@ -56,6 +65,11 @@
     @include media(MobileScreens) {
       font-size: 18px;
       line-height: 25px;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 22px;
+      line-height: 35px;
     }
   }
 

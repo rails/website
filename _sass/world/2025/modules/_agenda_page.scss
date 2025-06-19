@@ -19,19 +19,48 @@
 
   @include media(MobileAndTabletScreens) {
     flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  @include media(MobileScreens) {
     margin-top: 25px;
   }
 
+  @include media(TabletScreens) {
+    margin-top: 50px;
+  }
+
   h1 {
+    margin-bottom: 10px;
+
     @include media(MobileScreens) {
-      font-size: 35px;
-      margin-bottom: 10px;
+      font-size: $xx-large;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 50px;
     }
   }
 
   h2 {
+    font-size: 60px;
+
     @include media(MobileScreens) {
-      font-size: $large;
+      font-size: 25px;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    @include media(MobileScreens) {
+      font-size: 18px;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 28px;
     }
   }
 }
