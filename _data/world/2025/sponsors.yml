@@ -16,6 +16,9 @@ gold:
   - name: JetBrains
     logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
     url: https://www.jetbrains.com/
+  - name: Basecamp
+    logo: /assets/world/2025/images/sponsors/RW-logo-basecamp.svg
+    url: https://basecamp.com/
 
 silver:
   - name: Codeminer42
@@ -59,6 +62,9 @@ members:
   - name: Avo
     logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
     url: https://avohq.io/rails-admin
+  - name: Aha!
+    logo: /assets/world/2025/images/sponsors/RW-logo-aha.png
+    url: https://www.aha.io/
   - name: Telos Labs
     logo: /assets/world/2024/images/sponsors/RW-logo-teloslabs.svg
     url: https://hi.teloslabs.co/
@@ -71,6 +77,12 @@ members:
   - name: TRMNL
     logo: /assets/world/2025/images/sponsors/RW-logo-trmnl.png
     url: https://usetrmnl.com/
+  - name: IQ Lab
+    logo: /assets/world/2025/images/sponsors/RW-logo-iqlab.png
+    url: https://www.iqlab.us/
+  - name: Andpad
+    logo: /assets/world/2025/images/sponsors/RW-logo-andpad.png
+    url: https://andpad.co.jp/
   - name: Cookpad
     logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
     url: https://cookpad.com/uk
