@@ -17,8 +17,12 @@ title: Agenda
 
     <div class="sessions-container" id="agenda-content">
       {% for session in sortedSessions %}
-        {% assign speaker_filename = session.speaker | replace: '.md', '' %}
-        {% assign session_speaker = speakers_2025 | where_exp: "s", "s.path contains speaker_filename" | first %}
+        {% assign session_speaker = nil %}
+
+        {% unless session.speaker == false %}
+          {% assign speaker_filename = session.speaker | replace: '.md', '' %}
+          {% assign session_speaker = speakers_2025 | where_exp: "s", "s.path contains speaker_filename" | first %}
+        {% endunless %}
 
         {% include world/2025/components/session_card.html session=session speaker=session_speaker %}
       {% endfor %}

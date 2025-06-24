@@ -2,7 +2,7 @@
 layout: world/2025/session
 title: "Lessons from Migrating a Legacy Frontend to Hotwire"
 speaker: radan-skoric.md
-time: 15:45 - 16:00
+time: 15:45 - 16:15
 location: Graanbeurs
 running_order: 6
 ---

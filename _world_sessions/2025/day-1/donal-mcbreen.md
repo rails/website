@@ -4,7 +4,7 @@ title: "Resumable Jobs with Active Job Continuations"
 speaker: donal-mcbreen.md
 time: 13:45 - 14:15
 location: Graanbeurs
-running_order: 4
+running_order: 5
 ---
 
 Long-running jobs can cause problems. They can delay deployments and leave old versions of your code running longer than expected. Interrupting them can leave data in an inconsistent state or cause redundant rework.

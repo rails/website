@@ -12,8 +12,12 @@
 
   <div class="content">
     <h3>{{ session.title }}</h3>
-    <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }} - {{ include.speaker.tagline }}{% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
-  </div>
+    {% if session.multiple_speakers %}
+      <p>{{session.multiple_speakers}}</p>
+    {% elsif include.speaker %}
+      <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }} {% if include.speaker.tagline %} - {{ include.speaker.tagline }} {% endif %} {% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
+    {% endif %}
+    </div>
 </div>
 
 <script>

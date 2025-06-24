@@ -1,18 +1,26 @@
 <div class="agenda-tabs" id="agenda-tabs">
-  <div class="tab one {% if page.day == 'day-1' %}active{% endif %}"
+  <div class="tab zero {% if page.day == 'day-0' %}active{% endif %}"
        role="button"
        tabindex="0"
-       title="Day One"
+       title="Wednesday"
+       aria-label="View pre-registration agenda">
+    <p>Wednesday</p>
+  </div>
+
+  <div class="tab one {% if page.day == 'day-1' %}active{% endif %}"
+       role="button"
+       tabindex="1"
+       title="Thursday"
        aria-label="View day one agenda">
-    <p>Day 1</p>
+    <p>Thursday</p>
   </div>
 
   <div class="tab two {% if page.day == 'day-2' %}active{% endif %}"
        role="button"
-       tabindex="0"
-       title="Day Two"
+       tabindex="2"
+       title="Friday"
        aria-label="View day two agenda">
-    <p>Day 2</p>
+    <p>Friday</p>
   </div>
 </div>
 
@@ -23,7 +31,9 @@
 
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => {
-        const day = index + 1;
+        console.log(index);
+
+        const day = index;
         loadAgendaDay(day);
         setActiveTab(tab);
       });
