@@ -5,4 +5,5 @@ speaker: false
 time: 18:30 - 22:30
 location:
 running_order: 8
+show_page: false
 ---

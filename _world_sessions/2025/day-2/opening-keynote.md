@@ -8,4 +8,5 @@ third_speaker: jean-boussier.md
 time: 10:00 - 11:00
 location: Effectenbeurs
 running_order: 1
+show_page: false
 ---
