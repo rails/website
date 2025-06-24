@@ -4,7 +4,7 @@ title: "Beyond the Basics: Advanced Rails Techniques"
 speaker: chris-oliver.md
 time: 13:45 - 14:15
 location: Effectenbeurs
-running_order: 5
+running_order: 7
 ---
 
 This talk showcases ways to take a traditional Rails app and shape it around your product domain—while also using Rails tools in ways you might not have considered.

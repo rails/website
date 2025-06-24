@@ -4,7 +4,7 @@ title: "Active Record 8: Resilient by Default"
 speaker: hartley-mcguire.md
 time: 15:45 - 16:15
 location: Graanbeurs
-running_order: 7
+running_order: 12
 ---
 
 Databases crash, connections drop, and queries timeout at the worst possible moments. Rather than writing custom rescue code everywhere, Rails is revolutionizing how Active Record handles these inevitable hiccups.

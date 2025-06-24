@@ -4,7 +4,7 @@ title: "Make Rails AI-Ready by Design with the Model Context Protocol"
 speaker: pawel-strzalkowski.md
 time: 13:00 - 13:30
 location: Effectenbeurs
-running_order: 4
+running_order: 5
 ---
 
 Remember the joy of Rails scaffold creating web interfaces in DHH’s demos? Let’s make it just as simple for AI integrations!

@@ -4,7 +4,7 @@ title: "Rails Under a Microscope: Diagnosing Slowness at the Byte Level"
 speaker: snehal-ahire.md
 time: 11:15 - 11:45
 location: Graanbeurs
-running_order: 2
+running_order: 3
 ---
 
 We realized our legacy code didn’t need a rewrite, it needed a performance plan.

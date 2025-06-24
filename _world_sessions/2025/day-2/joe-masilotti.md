@@ -4,7 +4,7 @@ title: "Hotwire Native: A Rails Developer’s Secret Tool to Building Mobile App
 speaker: joe-masilotti.md
 time: 14:45 - 15:15
 location: Effectenbeurs
-running_order: 6
+running_order: 9
 ---
 
 Building native mobile apps is time-consuming and expensive. Each screen must be built three times: once for web, again for iOS, and a third time for Android.
