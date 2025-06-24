@@ -1,7 +1,7 @@
 ---
 layout: world/2025/default
-permalink: /world/2025/agenda/day-1
-redirect_from: /world/agenda/day-1
+permalink: /world/2025/agenda/day-0
+redirect_from: /world/agenda/day-0
 day: day-0
 title: Agenda
 ---
@@ -14,7 +14,8 @@ title: Agenda
     {% include world/2025/components/agenda_tabs.html %}
 
     <div class="sessions-container" id="agenda-content">
-      {% for session in sortedSessions %}
+      {% for session in sessions %}
+        {% assign session_speaker = nil %}
         {% include world/2025/components/session_card.html session=session speaker=session_speaker %}
       {% endfor %}
     </div>
