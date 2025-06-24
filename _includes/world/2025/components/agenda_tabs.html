@@ -31,8 +31,6 @@
 
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => {
-        console.log(index);
-
         const day = index;
         loadAgendaDay(day);
         setActiveTab(tab);

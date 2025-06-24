@@ -4,6 +4,6 @@ title: Closing party (location TBD)
 speaker: false
 time: 18:30 - 22:30
 location:
-running_order: 8
+running_order: 9
 show_page: false
 ---

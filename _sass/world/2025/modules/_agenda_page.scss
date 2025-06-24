@@ -11,6 +11,14 @@
   }
 }
 
+.agenda-page {
+  .session-card {
+    @include media(MobileAndTabletScreens) {
+      width: 90%;
+    }
+  }
+}
+
 .agenda-header {
   margin-top: 50px;
   display: flex;
@@ -84,26 +92,5 @@
   img {
     width: 500px;
     rotate: 180deg;
-  }
-}
-
-.agenda-tabs {
-  display: flex;
-  gap: 25px;
-
-  @include media(MobileAndTabletScreens) {
-    margin-top: 50px;
-  }
-
-  .tab {
-    cursor: pointer;
-    padding: 10px 50px;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-
-    &:hover, &.active {
-      background-image: $agenda-tag-gradient;
-    }
   }
 }
