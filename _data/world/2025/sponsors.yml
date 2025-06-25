@@ -93,7 +93,7 @@ members:
     logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
     url: https://www.fleetio.com/
   - name: Judge.me
-    logo: assets/images/logo-judgeme.svg
+    logo: /assets/images/logo-judgeme.svg
     url: https://judge.me/
   - name: Procore
     logo: /assets/world/2024/images/sponsors/RW-logo-procore.svg
