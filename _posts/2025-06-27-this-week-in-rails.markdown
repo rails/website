@@ -11,7 +11,7 @@ date: 2025-06-27
 
 Hi, it's [zzak](https://github.com/zzak). Let's explore this week's changes in the Rails codebase.
 
-[The Rails Foundation launched a new podcast: 'On Rails' with host Robby Russell.](https://onrails.buzzsprout.com)  
+[The Rails Foundation launched a new podcast: 'On Rails' with host Robby Russell](https://onrails.buzzsprout.com)  
 In each episode, Robby talks with Rails devs and explores the real-world decisions that go into building, maintaining, and scaling Ruby on Rails applications. Episode one is already up with guest Rosa Gutiérrez.
 Listen at [onrails.buzzsprout.com](https://onrails.buzzsprout.com), or in your favorite podcast app.
 
