@@ -21,11 +21,11 @@ Now re-entering the executor will properly save and restore that state.
 
 [Implement ActiveSupport::BacktraceCleaner#first_clean_frame](https://github.com/rails/rails/pull/55222)  
 The new method `ActiveSupport::BacktraceCleaner#first_clean_frame` returns the first clean frame of the caller's backtrace, or `nil`.
-Useful when you want to report the application-level frame where something happened as a string.
+Useful when you want to report the application-level frame where something happened, for example the caller that emitted a warning you are tracking in production.
 
 [Implement ActiveSupport::BacktraceCleaner#first_clean_location](https://github.com/rails/rails/pull/55230)  
 The new method `ActiveSupport::BacktraceCleaner#first_clean_location` returns the first clean location of the caller's call stack, or `nil`.
-Locations are `Thread::Backtrace::Location` objects. Useful when you want to report the application-level location where something happened as an object.
+Locations are `Thread::Backtrace::Location` objects. Useful when you want to report the application-level location where something happened, for example the source file and line number of a warning you are tracking in production.
 
 [Respect users configured IRB_NAME](https://github.com/rails/rails/pull/55217)  
 Rails will now honor when the user has configured `IRB.conf[:IRB_NAME]`.
