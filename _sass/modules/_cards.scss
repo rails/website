@@ -1,11 +1,26 @@
 .cards {
-
   font-size: 0;
   line-height: 0;
   position: relative;
 
   .container {
     max-width: 1280px;
+
+    // Override zero font-size for direct text content
+    > h2,
+    > p {
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto 2em;
+      text-wrap: balance;
+    }
+
+    > h2 {
+      font-size: 26px;
+      line-height: 1.2;
+    }
   }
 
   &__container {
@@ -13,10 +28,46 @@
     gap: 30px 0;
     margin: 3px 30px;
     z-index: 1;
+
+    &.card__fullwidth {
+      grid-template-columns: 1fr;
+
+      .card {
+        max-height: auto !important;
+
+        &__body {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          img {
+            border: 1px solid #ccc;
+            width: 100%;
+            margin: 1em;
+            height: auto;
+          }
+
+          h3 {
+            text-align: left;
+          }
+
+          p {
+            margin-bottom: 1em;
+            text-align: left;
+          }
+
+          ul {
+            list-style-type: unset;
+            padding: unset;
+            margin: unset;
+            padding-left: 1em;
+          }
+        }
+      }
+    }
   }
 
   .card {
-
     position: relative;
 
     a,
@@ -25,26 +76,24 @@
     }
 
     a {
-
       display: block;
 
       &:hover {
-
         .card__label h6 {
           background: $color-red;
         }
 
         .card__body {
-          box-shadow: 0 3px 15px 2px rgba($color-black, 0.05), 0 1px 1px rgba($color-black, 0.02), 0 0 0 3px $color-red;
+          box-shadow:
+            0 3px 15px 2px rgba($color-black, 0.05),
+            0 1px 1px rgba($color-black, 0.02),
+            0 0 0 3px $color-red;
           transform: translateY(-3px);
         }
-
       }
-
     }
 
     &__label {
-
       position: absolute;
       text-align: center;
       top: -15px;
@@ -52,7 +101,6 @@
       z-index: 1;
 
       h6 {
-
         background: $color-red;
         border-radius: 3px;
         color: $color-white;
@@ -68,7 +116,7 @@
 
         &:after {
           background: url(../images/icon-card.svg) center center no-repeat;
-          content: '';
+          content: "";
           filter: $filter-white;
           height: 9px;
           position: absolute;
@@ -76,20 +124,51 @@
           top: 9px;
           width: 6px;
         }
+      }
+    }
 
+    &__coming-soon {
+      opacity: 0.6;
+
+      a {
+        &:hover {
+          .card__body {
+            box-shadow:
+              0 3px 15px 2px rgba($color-black, 0.05),
+              0 1px 1px rgba($color-black, 0.02),
+              0 0 0 3px rgba($color-black, 0.1);
+            transform: translateY(0);
+          }
+        }
       }
 
+      .card__label {
+        position: relative;
+        h6 {
+          padding: 3px 13px;
+
+          &:after {
+            background: transparent;
+          }
+        }
+      }
     }
 
     &__body {
       align-items: center;
       background: $color-white;
       border-radius: 8px;
-      box-shadow: 0 3px 15px 2px rgba($color-black, 0.05), 0 1px 1px rgba($color-black, 0.02), 0 0 0 3px rgba($color-black, 0.1);
+      box-shadow:
+        0 3px 15px 2px rgba($color-black, 0.05),
+        0 1px 1px rgba($color-black, 0.02),
+        0 0 0 3px rgba($color-black, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: background $transition, box-shadow $transition, transform $transition;
+      transition:
+        background $transition,
+        box-shadow $transition,
+        transform $transition;
     }
 
     &__headline,
@@ -100,7 +179,6 @@
     }
 
     &__headline {
-
       padding-bottom: 6px;
       padding-top: 32px;
 
@@ -117,11 +195,9 @@
         text-decoration-thickness: 2px;
         transition: color $transition;
       }
-
     }
 
     &__content {
-
       padding-bottom: 35px;
 
       p {
@@ -134,21 +210,45 @@
         transition: color $transition;
       }
 
-    }
+      ul {
+        font-size: 18px;
+        line-height: 23px;
+        list-style-type: disc;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
 
+        li {
+          color: $color-grey-5;
+          margin-bottom: 0.5em;
+        }
+      }
+    }
   }
 
-
-
-  @media(min-width: 768px) {
-
+  @media (min-width: 768px) {
     &__container {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+
+      &.card__fullwidth {
+        .card__body {
+          flex-direction: row;
+
+          > div {
+            width: 45%;
+          }
+
+          img {
+            max-width: 50%;
+            width: 45% !important;
+            margin: 0;
+          }
+        }
+      }
     }
 
     .card {
-
       height: 30vw;
       max-height: 150px;
 
@@ -157,23 +257,14 @@
         height: 100%;
         position: absolute;
       }
-
     }
-
   }
 
-
-
-  @media(min-width: 1024px) {
-
+  @media (min-width: 1024px) {
     &__container {
       grid-template-columns: repeat(3, 1fr);
       margin-left: 60px;
       margin-right: 60px;
     }
-
   }
-
-
-
 }
