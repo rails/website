@@ -30,7 +30,8 @@
     z-index: 1;
 
     &.card__fullwidth {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(600px, 800px);
+      justify-content: center;
 
       .card {
         max-height: auto !important;
@@ -236,12 +237,12 @@
           flex-direction: row;
 
           > div {
-            width: 45%;
+            width: 30%;
           }
 
           img {
-            max-width: 50%;
-            width: 45% !important;
+            max-width: 70%;
+            width: 65% !important;
             margin: 0;
           }
         }
