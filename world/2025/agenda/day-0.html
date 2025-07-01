@@ -1,0 +1,23 @@
+---
+layout: world/2025/default
+permalink: /world/2025/agenda/day-0
+redirect_from: /world/agenda/day-0
+day: day-0
+title: Agenda
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '2025/day-0'" %}
+
+<div class="agenda-page">
+  <div class="section mobile-fit-content">
+    {% include world/2025/components/agenda_header.html %}
+    {% include world/2025/components/agenda_tabs.html %}
+
+    <div class="sessions-container" id="agenda-content">
+      {% for session in sessions %}
+        {% assign session_speaker = nil %}
+        {% include world/2025/components/session_card.html session=session speaker=session_speaker %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
