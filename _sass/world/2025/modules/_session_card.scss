@@ -2,15 +2,14 @@
   display: flex;
   align-items: center;
   gap: 70px;
-  cursor: pointer;
   position: relative;
   width: 100%;
   padding: 20px 25px;
   background-image: $session-card-gradient;
   transition: background 0.6s ease-in;
 
-  &.no-pointer {
-    cursor: default;
+  &.pointer {
+    cursor: pointer;
   }
 
   @include media(MobileAndTabletScreens) {

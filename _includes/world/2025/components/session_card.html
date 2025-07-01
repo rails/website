@@ -2,9 +2,9 @@
 {% assign session = include.session %}
 {% assign clean_path = session.path | replace: '_world_sessions/2025', '' | replace: '.md', '' %}
 
-<div class="session-card {% if session.show_page == false %}no-pointer{% endif %}"
+<div class="session-card {% unless session.show_page == false %}pointer{% endunless %}"
       title="{{ session.title }}"
-      aria-label="{% if session.has_content %}Go to {{ session.title }} session page{% else %}{{ session.title }}{% endif %}"
+      aria-label="{% unless session.show_page == false %}Go to {{ session.title }} session page{% else %}{{ session.title }}{% endunless %}"
       {% unless session.show_page == false %}
         onclick="openWindow('/world/2025{{ clean_path }}')"
         onkeydown="handleEnterOrSpaceWindowOpen(event, '/world/2025{{ clean_path }}')"
