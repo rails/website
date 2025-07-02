@@ -1,0 +1,289 @@
+---
+title: A Doutrina Rails
+permalink: /doctrine/pt
+redirect_from:
+  - /doctrine/pt
+---
+
+<div class="heading common-padding--bottom common-padding--top common-shape--bottom-grey-down-left">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>A Doutrina Rails.</h1>
+      </div>
+      <div class="heading__content heading__content--has-headline common-content">
+        <dl>
+          <dt>David Heinemeier Hansson</dt>
+        </dl>
+      </div>
+      <div class="language">
+        <input class="language__checkbox" id="language__checkbox" type="checkbox" role="button" />
+        <label class="language__toggle" for="language__checkbox">
+          <span>Português</span>
+        </label>
+        <div class="language__options">
+          <ul>
+            <li><a href="/doctrine/de"><span>Deutsch</span></a></li>
+            <li><a href="/doctrine/es"><span>Español</span></a></li>
+            <li><a href="/doctrine/fr"><span>Français</span></a></li>
+            <li><a href="/doctrine/ru"><span>Russian</span></a></li>
+            <li><a href="/doctrine/zh_cn"><span>简体中文</span></a></li>
+            <li><a href="/doctrine/zh_tw"><span>繁體中文</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text common-background--grey common-padding--bottom common-padding--top-small common-shape--bottom-white-down-right">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>A ascensão fenomenal do Ruby on Rails à proeminência deveu-se muito à tecnologia inovadora e ao timing. Mas as vantagens tecnológicas se desgastam com o tempo, e um bom timing não sustenta movimentos sozinhos a longo prazo. Portanto, é necessária uma explicação mais ampla de como o Rails continuou não apenas a se manter relevante, mas a aumentar seu impacto e comunidade. Proponho que o facilitador duradouro tenha sido e continue sendo sua doutrina controversa.</p>
+        <p>Essa doutrina evoluiu na última década, mas a maioria de seus pilares mais fortes também são os fundadores. Não faço nenhuma reivindicação à originalidade fundamental dessas ideias. A principal realização do Rails foi unir e cultivar uma tribo forte em torno de um amplo conjunto de pensamentos heréticos sobre a natureza da programação e dos programadores.</p>
+        <p>Com toda essa introdução, seguem os nove pilares mais importantes da Doutrina Rails, conforme percebido por este que vos fala:</p>
+        <ol>
+          <li><a href="#optimize-for-programmer-happiness">Otimize para a felicidade do programador</a></li>
+          <li><a href="#convention-over-configuration">Convenção sobre Configuração</a></li>
+          <li><a href="#omakase">O menu é omakase</a></li>
+          <li><a href="#no-one-paradigm">Nenhum paradigma único</a></li>
+          <li><a href="#beautiful-code">Exalte o código bonito</a></li>
+          <li><a href="#provide-sharp-knives">Forneça facas afiadas</a></li>
+          <li><a href="#integrated-systems">Valorize sistemas integrados</a></li>
+          <li><a href="#progress-over-stability">Progresso sobre estabilidade</a></li>
+          <li><a href="#big-tent">Levante uma grande tenda</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="optimize-for-programmer-happiness" class="text common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Otimize para a felicidade do programador</h3>
+        <p>Não haveria Rails sem Ruby, então é justo que o primeiro pilar doutrinário seja retirado diretamente da motivação central para criar o Ruby.</p>
+        <p>A heresia original do Ruby foi, de fato, colocar a felicidade do programador em um pedestal. Acima de muitas outras preocupações concorrentes e válidas que haviam impulsionado linguagens de programação e ecossistemas antes dele.</p>
+        <p>Onde o Python pode se orgulhar de que há “uma e preferencialmente apenas uma maneira de fazer algo”, o Ruby apreciava expressividade e sutileza. Onde o Java defendia proteger os programadores de si mesmos, o Ruby incluía um conjunto de facas afiadas no kit de boas-vindas. Onde o Smalltalk pregava a pureza da passagem de mensagens, o Ruby acumulava palavras-chave e construções com um apetite quase glutão.</p>
+        <p>O Ruby era diferente porque valorizava coisas diferentes. E a maioria dessas coisas estava a serviço desse anseio pela felicidade do programador. Uma busca que o colocou em desacordo não apenas com a maioria dos outros ambientes de programação, mas também com a percepção dominante do que era um programador e como ele deveria agir.</p>
+        <p>O Ruby não apenas reconheceu, mas acomodou e elevou os sentimentos dos programadores. Sejam eles de inadequação, capricho ou alegria. Matz superou obstáculos de implementação de complexidade surpreendente para fazer a máquina parecer sorrir e lisonjear seu co-conspirador humano. O Ruby está cheio de ilusões ópticas onde o que parece simples, claro e bonito aos nossos olhos é na verdade uma bagunça acrobática de fios sob o capô. Essas escolhas não foram gratuitas (pergunte à equipe do JRuby sobre tentar fazer a engenharia reversa dessa caixa de música mágica!), e é precisamente por isso que são tão louváveis.</p>
+        <p>Foi essa dedicação a uma visão alternativa para programação e programadores que selou meu caso de amor com o Ruby. Não era apenas facilidade de uso, não era apenas a estética dos blocos, não era uma única conquista técnica. Era uma visão. Uma contracultura. Um lugar para os desajustados do molde profissional de programação existente pertencerem e se associarem com pessoas de mente semelhante.</p>
+        <p>Descrevi essa descoberta do Ruby no passado como encontrar uma luva mágica que se encaixava perfeitamente no meu cérebro. Melhor do que eu jamais imaginei que qualquer luva poderia se encaixar. Mas era ainda mais do que isso. Foi o evento que marcou minha transição pessoal de ‘programar porque eu precisava de programas’ para ‘programar porque me apaixonei por isso como um modo de exercício intelectual e expressão’. Foi encontrar uma <a href="http://www.amazon.com/Flow-Harper-Perennial-Modern-Classics-ebook/dp/B000W94FE6/">fonte de fluxo</a> e ser capaz de ligá-la à vontade. Para quem está familiarizado com o trabalho de Csikszentmihalyi, o impacto disso é difícil de exagerar.</p>
+        <p>Não estou exagerando quando digo que o Ruby me transformou e definiu o curso do trabalho da minha vida. Tão profunda foi a revelação. Isso me imbuía de uma missão de fazer trabalho missionário em serviço da criação de Matz. Para ajudar a espalhar essa criação profunda e seus benefícios.</p>
+        <p>Agora posso imaginar a maioria de vocês balançando a cabeça com incredulidade. Eu não os culpo. Se alguém tivesse descrito a experiência acima para mim quando eu ainda vivia sob o paradigma de “programação é apenas uma ferramenta”, eu também teria balançado a cabeça. E então provavelmente teria rido do uso exagerado de linguagem religiosa. Mas para que este seja um relato verdadeiro, também precisa ser honesto, mesmo que isso seja desagradável para alguns ou até para a maioria.</p>
+        <p>De qualquer forma, o que isso significou para o Rails e como esse princípio continua a guiar sua evolução? Para responder a isso, acho instrutivo olhar para outro princípio que era frequentemente usado para descrever o Ruby nos primeiros dias: O Princípio da Menor Surpresa. O Ruby deve se comportar como você esperaria. Isso é facilmente descrito com um contraste com o Python:</p>
+{% highlight ruby %}
+$ irb
+irb(main):001:0> exit
+$ irb
+irb(main):001:0> quit
+
+$ python
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+{% endhighlight %}
+        <p>O Ruby aceita tanto exit quanto quit para acomodar o desejo óbvio do programador de sair de seu console interativo. O Python, por outro lado, instrui pedanticamente o programador sobre como fazer corretamente o que foi solicitado, mesmo sabendo obviamente o que se quis dizer (já que está exibindo a mensagem de erro). Esse é um exemplo bastante claro, embora pequeno, do Princípio da Menor Surpresa.</p>
+        <p>A razão pela qual o Princípio da Menor Surpresa caiu em desuso na comunidade Ruby foi que esse princípio é inerentemente subjetivo. Menor surpresa para quem? Bem, para Matz. E para as pessoas que se surpreendem da mesma maneira que ele. À medida que a comunidade Ruby cresceu, e a proporção de pessoas que se surpreendiam com coisas diferentes de Matz cresceu junto, isso se tornou uma fonte de discussões infrutíferas nas listas de discussão. Então, o princípio foi deixado de lado, para evitar mais debates sem fim sobre se a pessoa X foi surpreendida pelo comportamento Y ou não.</p>
+        <p>Então, novamente, o que isso tem a ver com o Rails? Bem, o Rails foi projetado com um princípio semelhante ao Princípio da Menor Surpresa (Para Matz). O Princípio do Maior Sorriso (de DHH), que é exatamente o que diz: APIs projetadas com grande atenção ao que me faria sorrir mais e mais. Quando escrevo isso assim, parece quase comicamente narcisista, e até eu acho difícil argumentar contra essa primeira impressão.</p>
+        <p>Mas criar algo como Ruby ou Rails é, pelo menos no início, um empreendimento profundamente narcisista. Ambos os projetos surgiram da mente de um criador singular. Mas talvez eu esteja projetando minhas próprias motivações em Matz aqui, então deixe-me restringir o escopo da minha proclamação ao que eu sei: Eu criei o Rails para mim. Para me fazer sorrir, antes de tudo. Sua utilidade era, em muitos graus, subordinada à sua capacidade de me fazer aproveitar mais a vida. Para enriquecer meu trabalho diário de lidar com requisitos e solicitações para sistemas de informação web.</p>
+        <p>Como Matz, às vezes eu ia a extremos ridículos para servir ao meu princípio. Um exemplo é o Inflector, uma classe que entende o suficiente dos padrões e irregularidades da língua inglesa para mapear uma classe Person para uma tabela People, Analysis para Analyses, e simplesmente Comment para Comments. Esse comportamento agora é aceito como um elemento indiscutível do Rails, mas os fogos da controvérsia arderam com grande intensidade nos primeiros dias, quando ainda estávamos consolidando a doutrina e sua importância.</p>
+        <p>Outro exemplo que exigiu menos esforço de implementação, mas desencadeou quase tanta consternação: Array#second até #fifth (e #forty_two para uma boa provocação). Esses acessores de alias eram profundamente ofensivos para uma constituição muito vocal que denunciava o inchaço (e quase o fim da civilização, para uma boa medida) de algo que poderia muito bem ser escrito como Array#[1], Array#[2] (e Array[41]).</p>
+        <p>Mas ambas as decisões ainda, até hoje, me fazem sorrir. Eu gosto de escrever people.third em um caso de teste ou no console. Não, isso não é lógico. Não é eficiente. Pode até ser patológico. Mas continua a me fazer sorrir, cumprindo assim o princípio e enriquecendo minha vida, ajudando a justificar meu envolvimento contínuo com o Rails após 12 anos de serviço.</p>
+        <p>Diferente de, digamos, otimizar para desempenho, é difícil medir a otimização para a felicidade. Isso torna um empreendimento quase inerentemente não científico, o que para alguns o torna menos importante, se não totalmente frustrante. Os programadores são ensinados a argumentar e conquistar o mensurável. Aquilo que tem conclusões claras e onde A pode categoricamente ser mostrado como melhor que B.</p>
+        <p>Mas enquanto a busca pela felicidade é difícil de medir no nível micro, é muito mais claro observar no nível macro. A comunidade Ruby on Rails está cheia de pessoas que estão aqui precisamente por causa dessa busca. Eles se gabam de vidas de trabalho melhores e mais realizadas. É nesse agregado de emoções que a vitória é clara.</p>
+        <p>Então, assim concluímos: Otimizar para a felicidade é talvez a chave mais formativa para o Ruby on Rails. E continuará sendo assim.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="convention-over-configuration" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Convenção sobre configuração</h3>
+        <p>Um dos primeiros lemas de produtividade do Rails era: “Você não é um floco de neve bonito e único”. Ele postulava que, ao abrir mão da individualidade, você pode evitar problemas triviais e progredir mais rapidamente em áreas que realmente importam.</p>
+        <p>Quem se importa com o formato em que as chaves primárias do banco de dados são descritas? Realmente importa se é “id”, “postId”, “posts_id” ou “pid”? Esta é uma decisão que merece uma discussão recorrente? Não.</p>
+        <p>Parte da missão do Rails é abrir caminho na densa e crescente selva de decisões recorrentes que enfrentam os desenvolvedores ao criar sistemas de informação para a web. Existem milhares dessas decisões que precisam ser tomadas apenas uma vez, e se alguém pode fazer isso por você, melhor ainda.</p>
+        <p>A transferência de configuração para convenção não apenas nos liberta da discussão, mas também fornece um campo fértil para desenvolver abstrações mais profundas. Se podemos depender de uma classe Person mapeando para a tabela people, podemos usar essa mesma inflexão para mapear uma associação declarada como has_many :people para procurar uma classe Person. O poder de boas convenções é que elas geram benefícios em um amplo espectro de uso.</p>
+        <p>Mas além dos ganhos de produtividade para especialistas, as convenções também reduzem as barreiras de entrada para iniciantes. Existem tantas convenções no Rails que um iniciante nem precisa conhecer, mas pode simplesmente se beneficiar sem se dar conta. É possível criar grandes aplicações sem saber por que tudo é do jeito que é.</p>
+        <p>Isso não é possível se o seu framework é apenas um grosso livro didático e sua nova aplicação uma folha de papel em branco. Leva um esforço imenso apenas para descobrir onde e como começar. Metade da batalha para começar é encontrar um fio para puxar.</p>
+        <p>O mesmo vale mesmo quando você entende como todas as peças se encaixam. Quando há um próximo passo óbvio para cada mudança, podemos passar rapidamente pelas muitas partes de uma aplicação que são iguais ou muito semelhantes a todas as outras aplicações que vieram antes dela. Um lugar para tudo e tudo em seu lugar. Restrições liberam até as mentes mais capazes.</p>
+        <p>Como qualquer coisa, porém, o poder da convenção não está isento de perigos. Quando o Rails torna tão trivial fazer tantas coisas, é fácil pensar que todos os aspectos de uma aplicação podem ser formados por modelos pré-definidos. Mas a maioria das aplicações que valem a pena ser construídas tem alguns elementos que são únicos de alguma forma. Pode ser apenas 5% ou 1%, mas está lá.</p>
+        <p>A parte difícil é saber quando se desviar da convenção. Quando os detalhes divergentes são graves o suficiente para justificar uma excursão? Eu sustento que a maioria dos impulsos para ser um floco de neve bonito e único são mal considerados, e que o custo de sair do Rails é subestimado, mas não são tantos e você precisa examinar todos eles cuidadosamente.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="omakase" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>O menu é omakase</h3>
+        <p>Como você sabe o que pedir em um restaurante quando não sabe o que é bom? Bem, se você deixar o chef escolher, pode provavelmente assumir uma boa refeição, mesmo antes de saber o que é "bom". Isso é omakase. Uma maneira de comer bem que não exige que você seja um especialista na culinária nem abençoado com sorte ao escolher cegamente.</p>
+        <p>Para a programação, os benefícios dessa prática, deixar que outros montem sua stack, são semelhantes aos que derivamos da Convenção sobre Configuração, mas em um nível mais alto. Onde CsC se ocupa de como usamos melhor frameworks individuais, omakase se preocupa com <em>quais</em> frameworks, e como eles se encaixam.</p>
+        <p>Isso está em desacordo com a tradição reverenciada da programação de apresentar as ferramentas disponíveis como escolhas individuais, e conceder ao programador individual o privilégio (e o fardo!) de decidir.</p>
+        <p>Você certamente já ouviu, e provavelmente concordou, "use a melhor ferramenta para o trabalho". Parece tão elementar a ponto de estar além do debate, mas ser capaz de escolher a "melhor ferramenta" depende de uma base que permita determinar "melhor" com confiança. Isso é muito mais difícil do que parece.</p>
+        <p>É um problema semelhante ao do cliente em um restaurante. E como escolher cada prato em uma refeição de oito pratos, escolher cada biblioteca ou framework individual não é um trabalho feito em isolamento. O objetivo em ambos os casos é considerar o sistema como um todo.</p>
+        <p>Então, com o Rails, decidimos diminuir um bem, o privilégio individual do programador de escolher cada ferramenta em sua caixa, por um bem maior: Uma caixa de ferramentas melhor para todos. Os benefícios são muitos:</p>
+        <ol>
+          <li><strong>Há segurança em números:</strong> Quando a maioria das pessoas usa o Rails com os mesmos padrões, temos uma experiência compartilhada. Esse terreno comum torna muito mais fácil ensinar e ajudar as pessoas. Estabelece uma base para o debate sobre a abordagem. Todos assistimos ao mesmo programa ontem à noite às 7, então podemos falar sobre isso no dia seguinte. Isso promove um senso mais forte de comunidade.</li>
+          <li><strong>As pessoas estão aperfeiçoando a mesma caixa de ferramentas básica:</strong> Como um framework full-stack, o Rails tem muitas partes móveis, e como elas funcionam juntas é tão importante quanto o que fazem isoladamente. Grande parte da dor no software não vem dos componentes individuais, mas de sua interação. Quando todos trabalhamos para aliviar a dor compartilhada de componentes que são configurados e falham da mesma maneira, todos experimentamos menos dor.</li>
+          <li><strong>Substituições ainda são possíveis, mas não necessárias:</strong> Embora o Rails seja uma stack omakase, ainda permite que você substitua certos frameworks ou bibliotecas por alternativas. Só não exige que você o faça. O que significa que você pode adiar essas decisões até desenvolver um paladar pessoal claro que possa preferir a diferença ocasional.</li>
+        </ol>
+        <p>Porque mesmo os programadores mais experientes e habilidosos que vêm e permanecem no Rails não se opõem a todos os aspectos do menu. (Se fossem, provavelmente não teriam ficado com o Rails.) Então, eles escolhem suas substituições com diligência, e depois continuam a desfrutar do restante da stack compartilhada e curada junto com todos os outros.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="no-one-paradigm" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Nenhum paradigma único</h3>
+        <p>Há um forte apelo emocional em escolher uma única ideia central e segui-la até a conclusão lógica como sua base arquitetônica. Há uma pureza nessa disciplina, então é claro por que os programadores são naturalmente atraídos por essa luz brilhante.</p>
+        <p>O Rails não é assim. Não é um único corte perfeito de tecido. É uma colcha de retalhos. Um composto de muitas ideias diferentes e até paradigmas. Muitos que geralmente seriam vistos em conflito, se contrastados sozinhos e um por um. Mas não é isso que estamos tentando fazer. Não é um único campeonato de ideias superiores onde um único vencedor deve ser declarado.</p>
+        <p>Veja os templates que construímos a view em nossa torta Rails-MVC. Por padrão, todos os helpers que nos permitem extrair código desses templates são apenas um grande conjunto de funções! E até mesmo um único namespace. Oh, o choque e o horror, é como uma sopa de PHP!</p>
+        <p>Mas eu sustento que o PHP estava certo quando se tratava de apresentar funções individuais que raramente precisavam interagir, como é o caso de muita abstração em templates de visualização. E para esse propósito, o namespace único, o grande conjunto de métodos, não é apenas uma escolha razoável, mas uma ótima escolha.</p>
+        <p>Isso não significa que ocasionalmente não queiramos algo mais orientado a objetos ao construir visualizações. O conceito de Presenters, onde envolvemos muitos métodos que são interdependentes entre si e os dados abaixo deles, pode ocasionalmente ser o antídoto perfeito para uma sopa de métodos azedada por dependências. Mas geralmente provou ser um ajuste raro em vez de comum.</p>
+        <p>Em comparação, geralmente tratamos o modelo em nossa camada MVC como o principal bastião da bondade orientada a objetos. Encontrar os nomes certos para objetos, aumentar a coerência e diminuir o acoplamento é a diversão da modelagem de domínio. É uma camada muito diferente da visualização, então adotamos uma abordagem diferente.</p>
+        <p>Mas mesmo aqui não seguimos a doutrina de um único paradigma. As concerns do Rails, a especialização dos mixins do Ruby, são frequentemente usadas para dar aos modelos individuais uma área de superfície muito ampla. Isso se encaixa bem com o padrão Active Record, dando aos métodos envolvidos acesso direto aos dados e ao armazenamento com os quais interagem.</p>
+        <p>Até mesmo a própria base do framework Active Record ofende alguns puristas. Estamos misturando a lógica necessária para interagir com o banco de dados diretamente com o domínio de negócios e a lógica. Que confusão de limites! Sim, porque provou ser a maneira prática de lidar com um aplicativo web que praticamente sempre fala com algum tipo de banco de dados para persistir o estado do modelo de domínio.</p>
+        <p>Ser tão ideologicamente flexível é o que permite ao Rails lidar com uma ampla gama de problemas. A maioria dos paradigmas individuais se sai muito bem dentro de um certo tipo de problema, mas se torna desajeitada ou rígida quando aplicada além de sua zona de conforto. Ao aplicar muitos paradigmas sobrepostos, cobrimos os flancos e protegemos a retaguarda. O framework final é muito mais forte e capaz do que qualquer paradigma individual teria permitido.</p>
+        <p>Agora, o custo desse relacionamento poliamoroso com os muitos paradigmas da programação é a sobrecarga conceitual. Não basta apenas conhecer programação orientada a objetos para se divertir com o Rails. É preferível ter experiências procedurais e funcionais também.</p>
+        <p>Isso se aplica às muitas sub-linguagens do Rails também. Não tentamos protegê-lo tanto de ter que aprender, digamos, JavaScript para a visualização ou SQL para a consulta ocasional complicada. Pelo menos não para alcançar todas as possibilidades possíveis.</p>
+        <p>A maneira de aliviar parte desse fardo de aprendizado é simplesmente tornar fácil começar, fazer algo de valor real, antes de entender todos os aspectos do framework. Temos uma pressa para o Hello World por essa razão. Sua mesa já preparada e um aperitivo servido.</p>
+        <p>A ideia é que, ao dar algo de valor real cedo, encorajaremos os praticantes do Rails a evoluírem rapidamente. Aceitar sua jornada de aprendizado como uma alegria, não um obstáculo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="beautiful-code" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Exalte o código bonito</h3>
+        <p>Escrevemos código não apenas para ser entendido pelo computador ou por outros programadores, mas para nos deleitarmos com o brilho quente da beleza. Código esteticamente agradável é um valor em si mesmo e deve ser perseguido com vigor. Isso não significa que o código bonito sempre supera outras preocupações, mas deve ter um lugar na mesa de prioridades.</p>
+        <p>Então, o que é código bonito? Em Ruby, muitas vezes está em algum lugar na interseção entre os idiomas nativos do Ruby e o poder de uma linguagem específica de domínio personalizada. É uma linha tênue, mas que vale a pena entrar na dança.</p>
+        <p>Aqui está um exemplo simples do Active Record:</p>
+{% highlight ruby %}
+class Project < ApplicationRecord
+  belongs_to :account
+  has_many :participants, class_name: 'Person'
+  validates_presence_of :name
+end
+{% endhighlight %}
+        <p>Isso parece DSL, mas é realmente apenas uma definição de classe com três chamadas de método de classe que aceitam símbolos e opções. Não há nada de sofisticado aqui. Mas com certeza é bonito. Com certeza é simples. Ele oferece uma imensa quantidade de poder e flexibilidade a partir dessas poucas declarações.</p>
+        <p>Parte da beleza vem dessas chamadas honrarem os princípios anteriores, como Convenção sobre Configuração. Quando chamamos belongs_to :account, estamos assumindo que a chave estrangeira é chamada account_id e que ela vive na tabela projects. Quando temos que designar o class_name de Person para o papel da associação participants, exigimos apenas essa definição de nome de classe. A partir dela, derivaremos, novamente, as chaves estrangeiras e outros pontos de configuração.</p>
+        <p>Aqui está outro exemplo do sistema de migrações de banco de dados:</p>
+{% highlight ruby %}
+class CreateAccounts < ActiveRecord::Migration
+  def change
+    create_table :accounts do |t|
+      t.integer :queenbee_id
+      t.timestamps
+    end
+  end
+end
+{% endhighlight %}
+        <p>Esta é a essência do poder do framework. O programador declara uma classe de acordo com certa convenção, como uma subclasse de ActiveRecord::Migration que implementa #change, e o framework se encarrega de fazer todas as operações que envolvem realizar uma migração e sabe que este é o método a ser chamado.</p>
+        <p>Isso deixa o programador com muito pouco código para escrever. No caso das migrações, isso não apenas permitirá uma chamada para rails db:migrate para atualizar o banco de dados para adicionar esta nova tabela, mas também permitirá realizar um rollback e excluir esta tabela com outra chamada. Isso é muito diferente de um programador fazer tudo isso acontecer e costurar este fluxo de trabalho a partir de bibliotecas manualmente.</p>
+        <p>Às vezes, o código bonito é mais sutil, porém. Não se trata de fazer algo o mais curto ou poderoso possível, mas de fazer o ritmo da declaração fluir.</p>
+        <p>Estas duas declarações fazem o mesmo:</p>
+{% highlight ruby %}
+if people.include? person
+...
+if person.in? people
+{% endhighlight %}
+<p>Mas o fluxo e o foco são sutilmente diferentes. Na primeira declaração, o foco está na coleção. Esse é o nosso sujeito. Na segunda declaração, o sujeito é claramente a pessoa. Não há muita diferença entre as duas declarações em tamanho, mas eu afirmo que a segunda é muito mais bonita e provavelmente me fará sorrir quando usada em um ponto onde a condição é sobre a pessoa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="provide-sharp-knives" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Forneça facas afiadas</h3>
+        <p>O Ruby inclui muitas facas afiadas em sua gaveta de recursos. Não por acidente, mas por design. A mais famosa é o monkey patching: O poder de alterar classes e métodos existentes.</p>
+        <p>Esse poder tem sido frequentemente ridicularizado como simplesmente demais para programadores mortais lidarem. Pessoas de ambientes mais restritivos costumavam imaginar todos os tipos de calamidades que condenariam o Ruby por causa da imensa confiança que a linguagem depositava em seus usuários com esse recurso.</p>
+        <p>Se você pode mudar qualquer coisa, o que impede você de sobrescrever String#capitalize para que “something bold”.capitalize retorne “Something Bold” em vez de “Something bold”? Isso pode funcionar em sua aplicação local, mas depois quebrar todos os tipos de código auxiliar que dependem da implementação original.</p>
+        <p>Nada, é a resposta. Não há nada programaticamente no Ruby para impedir você de usar suas facas afiadas para cortar laços com motivo. Nós impomos esse bom senso por convenção, por sugestões e através da educação. Não banindo facas afiadas da cozinha e insistindo que todos usem colheres para cortar tomates.</p>
+        <p>Porque o outro lado monkey patching é o poder de fazer maravilhas como 2.days.ago (que retorna uma data dois dias antes da atual). Agora você pode pensar que isso é uma troca ruim. Que você preferiria perder 2.days.ago se isso significasse impedir programadores de sobrescrever String#capitalize. Se essa é sua opinião, Ruby provavelmente não é para você.</p>
+        <p>No entanto, seria difícil — mesmo para pessoas que abririam mão de tal liberdade por alguma segurança — argumentar que o poder de alterar classes e métodos principais condenou o Ruby como linguagem. Pelo contrário, a linguagem floresceu exatamente porque ofereceu uma perspectiva diferente e radical sobre o papel do programador: Que eles poderiam ser confiáveis com facas afiadas.</p>
+        <p>E não apenas confiáveis, mas ensinados a usar essas ferramentas poderosas. Que poderíamos elevar toda a profissão assumindo que a maioria dos programadores gostaria de se tornar melhores programadores, capazes de manejar facas afiadas sem cortar os dedos. Essa é uma ideia incrivelmente aspiracional, e que contraria a intuição de muitos programadores sobre outros programadores.</p>
+        <p>Porque sempre se trata de outros programadores quando o valor das facas afiadas é contestado. Ainda não ouvi um único programador levantar a mão e dizer “Eu não posso confiar em mim mesmo com esse poder, por favor, tire-o de mim!”. É sempre “Eu acho que outros programadores abusariam disso”. Essa linha de paternalismo nunca me atraiu.</p>
+        <p>Isso nos leva ao Rails. As facas fornecidas pelo framework não são tão afiadas quanto as oferecidas pela linguagem, mas algumas ainda são bastante afiadas. Não pediremos desculpas por oferecer tais ferramentas como parte do kit. Na verdade, devemos celebrar ter fé suficiente nas aspirações de nossos colegas programadores para ousar confiar neles.</p>
+        <p>Muitos recursos no Rails foram contestados ao longo do tempo como sendo “muita liberdade”. Mas um exemplo que está em voga atualmente é <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/concern.rb">o recurso de concerns</a>. Esta é uma camada fina de açúcar sintático em torno do recurso embutido de módulos do Ruby e é projetada para permitir que uma única classe encapsule múltiplas preocupações relacionadas, mas independentes entre sí (daí o nome).</p>
+        <p>A acusação é que concerns fornecem aos programadores propensos a inchar seus objetos um novo conjunto de gavetas para encher com sua bagunça. E isso é verdade. Concerns podem realmente ser usados assim.</p>
+        <p>Mas a grande falácia é pensar que ao <i>não</i> fornecer um recurso como concerns, que quando usado por mãos minimamente capazes permite uma separação parcial eloquente de conceitos, colocaríamos os programadores no caminho para a felicidade arquitetônica. Se você não pode ser confiável para manter a pia da cozinha intocada por sua bagunça, provavelmente não acabará com algo elegante de qualquer maneira.</p>
+        <p>Programadores que não aprenderam a manejar facas afiadas simplesmente não farão merengues ainda. Palavra operativa aqui: Ainda. Eu acredito que todo programador tem um caminho, senão um direito, de se tornar programadores Ruby e Rails totalmente capazes. E por capazes, quero dizer conhecedores o suficiente para saber quando e como, de acordo com seu contexto, eles devem usar as diferentes e às vezes perigosas ferramentas nas gavetas.</p>
+        <p>Isso não abdica da responsabilidade de ajudar a chegar lá. A linguagem e o framework devem ser tutores pacientes dispostos a ajudar e guiar qualquer um à expertise. Reconhecendo que o único caminho confiável passa pela terra dos erros: Ferramentas usadas de forma errada, um pouco de sangue, suor e talvez até algumas lágrimas. Simplesmente não há outro caminho.</p>
+        <p>Ruby on Rails é um ambiente para chefs e aqueles que desejam se tornar chefs. Você pode começar lavando pratos, mas pode trabalhar até comandar a cozinha. Não deixe ninguém dizer que você não pode ser confiável com a melhor ferramenta do mercado como parte dessa jornada.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="integrated-systems" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Valorize sistemas integrados</h3>
+        <p>O Rails pode ser usado em muitos contextos, mas seu primeiro amor é a criação de sistemas integrados: Monolitos majestosos! Um sistema completo que aborda todo um problema. Isso significa que o Rails se preocupa com tudo, desde o JavaScript front-end necessário para fazer atualizações em tempo real até como o banco de dados é migrado de uma versão para outra em produção.</p>
+        <p>Esse é um escopo muito amplo, como discutimos, mas não mais amplo do que o que é realista para uma única pessoa entender. O Rails busca especificamente equipar indivíduos generalistas para fazer esses sistemas completos. Seu propósito não é segregar especialistas em pequenos nichos e depois exigir equipes inteiras desses para construir qualquer coisa de valor duradouro.</p>
+        <p>É esse foco em capacitar o indivíduo que aponta para o sistema integrado. É no sistema integrado que podemos eliminar muitas abstrações desnecessárias, reduzir a duplicação entre camadas (como templates tanto no servidor quanto no cliente) e, acima de tudo, evitar distribuir nosso sistema antes de absolutamente, necessariamente termos de fazer isso.</p>
+        <p>Grande parte da complicação no desenvolvimento de sistemas vem da introdução de novos limites entre os elementos que restringem como você faz chamadas entre A e B. Chamadas de método entre objetos são muito mais simples do que chamadas de métodos remotos entre microsserviços. Há um mundo totalmente novo de dor em estados de falha, problemas de latência e cronogramas de atualização de dependências que aguardam aqueles que se aventuram no buraco dos sistemas distribuídos.</p>
+        <p>Às vezes, essa distribuição é simplesmente necessária. Se você quiser criar uma API para sua aplicação web que outras pessoas possam chamar via HTTP, bem, então você simplesmente tem que aguentar e lidar com muitos desses problemas (embora lidar com entrada de requisições em vez de enviá-las para fora seja muito mais fácil – o seu downtime por consequência o downtime de outra pessoa!). Mas isso é apenas um pequeno dano infligido à sua própria experiência de desenvolvimento.</p>
+        <p>O pior é quando os sistemas são distribuídos prematuramente e divididos em serviços ou, pior ainda, microsserviços. Esse impulso frequentemente começa a partir do equívoco de que, se você quiser uma Aplicação Moderna de Internet, simplesmente terá que construir os sistemas múltiplas vezes: Uma vez no lado do servidor, uma vez no cliente JavaScript MVC, uma vez para cada um dos aplicativos móveis nativos, e assim por diante. Isso não é uma lei da natureza, não precisa ser assim.</p>
+        <p>É totalmente possível compartilhar grandes partes de toda a aplicação entre vários aplicativos e acessos. Usar os mesmos controllers e views para a web desktop e para serem incorporados em aplicativos móveis nativos. Centralizar o máximo possível dentro daquele glorioso, majestoso monolito: O sistema integrado.</p>
+        <p>Tudo isso sem abrir mão de muito, se algo, em termos de velocidade, experiência do usuário ou outros atributos que falsamente atraem os desenvolvedores para a distribuição prematura.</p>
+        <p>Esse é o ter-quase-tudo que buscamos: Todo o poder de aplicativos individualmente ajustados e distribuídos com a facilidade de uso e compreensão de um único sistema integrado.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="progress-over-stability" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Progresso sobre estabilidade</h3>
+        <p>Quando sistemas existem há mais de uma década, como o Rails, sua tendência natural é a ossificação. Existem milhões de razões pelas quais cada mudança pode ser um problema para alguém, em algum lugar que dependia do comportamento anterior. E essas são razões justas também, para o indivíduo.</p>
+        <p>Mas se ouvirmos muito de perto as vozes do conservadorismo, nunca veremos o que está do outro lado. Temos que ousar ocasionalmente quebrar e mudar como as coisas são para evoluir e crescer. É essa evolução que manterá o Rails apto para a sobrevivência e prosperidade na(s) próxima(s) década(s).</p>
+        <p>Isso é fácil de entender na teoria, mas muito mais difícil de engolir na prática. Especialmente quando é sua aplicação que quebra devido a uma mudança incompatível com versões anteriores em uma versão principal do Rails. É nesses momentos que precisamos lembrar desse valor, que valorizamos o progresso sobre a estabilidade, para nos dar força para depurar o problema, descobrir e acompanhar os tempos.</p>
+        <p>Isso não é uma licença para infligir dor desnecessária ou excessiva indiscriminadamente. A Grande Migração do Rails de 2.x para 3 ainda persiste nas cicatrizes de muitos que estavam por aí naquela época. Foi difícil. Uma grande reviravolta que deixou muitos para trás na versão 2.x por um longo tempo, alguns com amargor além do que se pôde convencer. Mas, no grande esquema das coisas, ainda valeu a pena.</p>
+        <p>Essas são decisões difíceis que temos que continuar fazendo. O Rails estará melhor em cinco anos pelas mudanças que fazemos hoje? O Rails estará melhor por adotar outro domínio de problema, como filas ou WebSockets, nos próximos anos? Se sim, então vamos aguentar e fazer o trabalho.</p>
+        <p>Esse trabalho não é algo que precisa acontecer apenas no Rails, mas também na comunidade Ruby em geral. O Rails deve estar na vanguarda de ajudar o progresso do Ruby, incentivando seus membros a adotar versões mais recentes mais rapidamente.</p>
+        <p>Temos feito isso muito bem até agora. Desde quando comecei, passamos pelo Ruby 1.6, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 e agora para 2.6. Muitas mudanças importantes ao longo do caminho, mas o Rails estava lá para apoiar o Ruby e ajudar todos a se atualizarem mais rapidamente. Esse é em parte o privilégio e a obrigação do Rails como o principal popularizador do Ruby.</p>
+        <p>Isso também é verdade para as ferramentas auxiliares do ecossistema. O Bundler já foi uma ideia controversa, mas através da insistência do Rails de que fosse uma pedra angular de um futuro comum, hoje é simplesmente dado como certo. O mesmo é verdade para coisas como o asset pipeline e o Spring, o persistent command process. Todos os três passaram, ou ainda estão passando, por dores de crescimento, mas a obviedade seu valor a longo prazo nos ajudou a superar isso.</p>
+        <p>O progresso é, em última análise, principalmente sobre pessoas e sua disposição para impulsionar mudanças. É por isso que não há assentos vitalícios em grupos como <a href="/community#core">Rails Core</a> ou <a href="/community#committers">Rails Committers</a>. Ambos os grupos são para aqueles que estão ativamente trabalhando para fazer progresso para o framework. Para alguns, seu envolvimento nesse progresso pode durar apenas alguns anos, e seremos eternamente gratos por seu serviço, e para outros pode durar décadas.</p>
+        <p>Da mesma forma, é por isso que é tão importante para nós continuar a receber e encorajar novos membros na comunidade. Precisamos de sangue novo e novas ideias para fazer um progresso melhor.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="big-tent" class="text common-border--top common-padding--bottom common-padding--top">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h3>Levante uma grande tenda</h3>
+        <p>Com tantas ideias controversas a seu crédito, o Rails poderia rapidamente se tornar um grupo isolado de eremitas ideológicos, se exigíssemos que todos demonstrassem aderência completa a todos os princípios, o tempo todo. Então, não fazemos isso!</p>
+        <p>Precisamos de discordância. Precisamos de dialetos. Precisamos de diversidade de pensamento e de pessoas. É nesse caldeirão de ideias que obteremos o melhor comum para todos compartilharem. Muitas pessoas contribuindo com suas opiniões, em código ou argumentos.</p>
+        <p>Então, enquanto esta doutrina descreveu uma forma idealizada, a realidade cotidiana é muito mais sutil (e interessante). O Rails é capaz de suportar uma comunidade tão grande sob uma tenda exatamente porque há poucos, se é que há algum, testes decisivos.</p>
+        <p>O sucesso contínuo do RSpec, um DSL para testes com o qual muitas vezes expressei grave descontentamento, é a prova perfeita. Posso reclamar até ficar azul de tanto falar sobre por que não acho que é o caminho a seguir, e ele ainda pode florescer e prosperar. Esse ponto é o mais importante!</p>
+        <p>O mesmo é verdade para o advento do Rails como uma API. Embora meu foco e dedicação pessoal seja para o sistema integrado que inclui a view, há, sem dúvida, espaço para o Rails se sair bem com pessoas que querem separar seus clientes e servidores desde o início. Devemos abraçar isso na medida em que possa coexistir como uma missão secundária, e acredito que certamente pode.</p>
+        <p>Ter uma grande tenda não significa tentar ser tudo para todas as pessoas, no entanto. Significa apenas que você dá boas-vindas a todas as pessoas na sua festa e permite que elas tragam suas próprias bebidas. Não precisamos perder nossa alma ou valores ao oferecer a outros a oportunidade de se juntarem a nós, e podemos muito bem aprender a misturar uma nova bebida deliciosa ou duas.</p>
+        <p>Isso não vem de graça. Requer trabalho para ser acolhedor. Especialmente se o seu objetivo não é apenas atrair mais pessoas que são exatamente como as que já fazem parte da comunidade. Reduzir as barreiras de entrada é um trabalho que devemos sempre levar a sério.</p>
+        <p>Você nunca sabe quando a próxima pessoa que começa apenas corrigindo um erro de ortografia na documentação acaba implementando o próximo grande recurso. Mas você tem uma chance de descobrir se sorrir e agradecer por qualquer pequena contribuição que motive o fluxo.</p>
+      </div>
+    </div>
+  </div>
+</div>
