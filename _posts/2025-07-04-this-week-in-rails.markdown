@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TODO: add a title"
+title: "Deprecating Associations, Cleaner Backtraces, and Smarter Defaults"
 categories: news
 author: Emmanuel Hayford
 og_image: assets/images/this-week-in-rails.png
