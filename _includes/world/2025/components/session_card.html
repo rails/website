@@ -2,6 +2,18 @@
 {% assign session = include.session %}
 {% assign clean_path = session.path | replace: '_world_sessions/2025', '' | replace: '.md', '' %}
 
+{% if session.location == "Effectenbeurs" %}
+  {% assign track = "Track 1" %}
+{% else %}
+  {% assign track = "Track 2" %}
+{% endif %}
+
+{% if session.path contains 'day-1/' %}
+  {% assign day = 'Thursday Sept 4' %}
+{% elsif session.path contains 'day-2/' %}
+  {% assign day = 'Friday Sept 5' %}
+{% endif %}
+
 <div class="session-card {% unless session.show_page == false %}pointer{% endunless %}"
       title="{{ session.title }}"
       aria-label="{% unless session.show_page == false %}Go to {{ session.title }} session page{% else %}{{ session.title }}{% endunless %}"
@@ -12,7 +24,15 @@
         tabindex="0"
       {% endunless %} >
 
-  <p class="time">{{session.time}}</p>
+  {% if page.path contains 'speakers/' %}
+  <div class="details">
+    <p class="italic">{{ day }}</p>
+    <p class="bold">{{ session.time }}</p>
+    <p>{{ track }}</p>
+  </div>
+  {% else %}
+    <p class="details">{{ session.time }}</p>
+  {% endif %}
 
   <div class="content">
     <h3>{{ session.title }}</h3>
