@@ -10,7 +10,7 @@ keynote: true
 tagline: Ruby Committer & OSS maintainer
 github: https://github.com/hsbt
 linkedin: https://www.linkedin.com/in/hiroshi-shibata-04264122/
-twitter: 
+twitter:
 ---
 
 OSS programmer, Ruby committer, maintainer of many OSS such as Ruby, rubygems, rake, ruby-build and administrator of ruby-lang.org.
