@@ -54,3 +54,14 @@ body {
     padding: 0 5%;
   }
 }
+
+.sessions-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include media(MobileAndTabletScreens) {
+    margin-top: 50px;
+  }
+}

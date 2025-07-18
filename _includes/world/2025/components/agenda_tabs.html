@@ -1,0 +1,67 @@
+<div class="agenda-tabs" id="agenda-tabs">
+  <div class="tab zero {% if page.day == 'day-0' %}active{% endif %}"
+       role="button"
+       tabindex="0"
+       title="Wednesday"
+       aria-label="View pre-registration agenda">
+    <p>Wednesday</p>
+  </div>
+
+  <div class="tab one {% if page.day == 'day-1' %}active{% endif %}"
+       role="button"
+       tabindex="1"
+       title="Thursday"
+       aria-label="View day one agenda">
+    <p>Thursday</p>
+  </div>
+
+  <div class="tab two {% if page.day == 'day-2' %}active{% endif %}"
+       role="button"
+       tabindex="2"
+       title="Friday"
+       aria-label="View day two agenda">
+    <p>Friday</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".agenda-tabs .tab");
+    const agendaContent = document.getElementById("agenda-content");
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        const day = index;
+        loadAgendaDay(day);
+        setActiveTab(tab);
+      });
+
+      tab.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+          e.preventDefault();
+          tab.click();
+        }
+      });
+    });
+
+    const loadAgendaDay = ((day) => {
+      fetch(`/world/2025/agenda/day-${day}`)
+        .then(response => response.text())
+        .then(html => {
+          // Create a DOM parser to extract only the agenda content
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newAgendaContent = doc.querySelector('#agenda-content');
+          agendaContent.innerHTML = newAgendaContent.innerHTML;
+        })
+        .catch(() => {
+          agendaContent.innerHTML = "<p>Error loading agenda.</p>";
+        });
+    })
+
+    const setActiveTab = ((activeTab) => {
+      tabs.forEach(tab => tab.classList.remove("active"));
+      activeTab.classList.add("active");
+    })
+  });
+</script>
