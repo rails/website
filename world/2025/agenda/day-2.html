@@ -1,0 +1,31 @@
+---
+layout: world/2025/default
+permalink: /world/2025/agenda/day-2
+redirect_from: /world/agenda/day-2
+day: day-2
+title: Agenda
+---
+
+{% assign sessions = site.world_sessions | where_exp: "session", "session.path contains '2025/day-2'" %}
+{% assign sortedSessions = sessions | sort: "running_order" %}
+{% assign speakers_2025 = site.world_speakers | where_exp: 'item', 'item.path contains "2025"'%}
+
+<div class="agenda-page">
+  <div class="section mobile-fit-content">
+    {% include world/2025/components/agenda_header.html %}
+    {% include world/2025/components/agenda_tabs.html dayTwoActive=true %}
+
+    <div class="sessions-container" id="agenda-content">
+      {% for session in sortedSessions %}
+        {% assign session_speaker = nil %}
+
+        {% unless session.speaker == false %}
+          {% assign speaker_filename = session.speaker | replace: '.md', '' %}
+          {% assign session_speaker = speakers_2025 | where_exp: "s", "s.path contains speaker_filename" | first %}
+        {% endunless %}
+
+        {% include world/2025/components/session_card.html session=session speaker=session_speaker %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

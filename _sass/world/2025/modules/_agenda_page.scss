@@ -1,0 +1,96 @@
+.agenda-page {
+  padding-left: 80px;
+
+  @include media(MobileScreens) {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0 40px;
+  }
+}
+
+.agenda-page {
+  .session-card {
+    @include media(MobileAndTabletScreens) {
+      width: 90%;
+    }
+  }
+}
+
+.agenda-header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(MobileAndTabletScreens) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  @include media(MobileScreens) {
+    margin-top: 25px;
+  }
+
+  @include media(TabletScreens) {
+    margin-top: 50px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+
+    @include media(MobileScreens) {
+      font-size: $xx-large;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 50px;
+    }
+  }
+
+  h2 {
+    font-size: 60px;
+
+    @include media(MobileScreens) {
+      font-size: 25px;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    @include media(MobileScreens) {
+      font-size: 18px;
+    }
+
+    @include media(TabletScreens) {
+      font-size: 28px;
+    }
+  }
+}
+
+.agenda-header .content {
+  width: 50%;
+  align-self: flex-start;
+  margin-top: 100px;
+
+  @include media(MobileAndTabletScreens) {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+.agenda-header .illustration-container {
+  @include media(MobileAndTabletScreens) {
+    display: none;
+  }
+
+  img {
+    width: 500px;
+    rotate: 180deg;
+  }
+}
