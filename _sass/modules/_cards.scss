@@ -29,39 +29,108 @@
     margin: 3px 30px;
     z-index: 1;
 
+    // Mobile-specific adjustments for fullwidth cards
+    @media (max-width: 767px) {
+      &.card__fullwidth {
+        margin: 3px 15px; // Reduced margins for mobile
+        gap: 20px 0; // Reduced gap to prevent overlap
+      }
+    }
+
     &.card__fullwidth {
-      grid-template-columns: minmax(600px, 800px);
+      // Mobile: Single column layout
+      grid-template-columns: 1fr;
       justify-content: center;
+      margin: 3px 15px; // Reduce side margins on mobile to prevent overflow
 
       .card {
         max-height: auto !important;
+        width: 100%; // Ensure card doesn't exceed container
+        box-sizing: border-box; // Include padding in width calculation
 
         &__body {
           display: flex;
           flex-direction: column;
           text-align: left;
+          padding: 20px; // Uniform padding on mobile
+          box-sizing: border-box; // Include padding in width calculation
 
           img {
-            border: 1px solid #ccc;
             width: 100%;
-            margin: 1em;
+            margin: 0 0 15px 0; // Slightly reduced bottom margin
             height: auto;
+            max-width: 100%; // Prevent image overflow
           }
 
-          h3 {
-            text-align: left;
+          // Target the actual content wrapper div (contains card__headline and card__content)
+          > div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
           }
 
-          p {
-            margin-bottom: 1em;
-            text-align: left;
+          .card__headline {
+            h3 {
+              text-align: left;
+              margin-bottom: 10px;
+              margin-top: 0;
+              padding-bottom: 0; // Override default padding
+            }
           }
 
-          ul {
-            list-style-type: unset;
-            padding: unset;
-            margin: unset;
-            padding-left: 1em;
+          .card__content {
+            p {
+              margin-bottom: 1em;
+              text-align: left;
+            }
+
+            ul {
+              list-style-type: disc;
+              padding-left: 1.5em;
+              margin: 0 0 5px 0; // Further reduced bottom margin
+            }
+          }
+        }
+      }
+
+      // Tablet: 768px+ - Start showing side-by-side layout
+      @media (min-width: 768px) {
+        grid-template-columns: minmax(500px, 700px);
+        margin: 3px 30px; // Restore normal margins on tablet+
+
+        .card {
+          &__body {
+            flex-direction: row;
+            padding: 25px 25px 20px 25px; // Reduced bottom padding
+            gap: 25px;
+            align-items: flex-start;
+
+            img {
+              flex: 0 0 60%; // Increased to ~2/3
+              margin: 0;
+            }
+
+            > div {
+              flex: 1; // ~1/3 remaining space
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+
+      // Desktop: 1024px+
+      @media (min-width: 1024px) {
+        grid-template-columns: minmax(600px, 800px);
+
+        .card {
+          &__body {
+            padding: 30px 30px 25px 30px; // Reduced bottom padding
+            gap: 30px;
+
+            img {
+              flex: 0 0 65%; // Image takes ~2/3
+            }
           }
         }
       }
@@ -227,23 +296,31 @@
     }
   }
 
+  &.padfix {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 768px) {
+    &.padfix {
+      padding-bottom: 0;
+    }
+  }
+
   @media (min-width: 768px) {
     &__container {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
 
       &.card__fullwidth {
-        .card__body {
-          flex-direction: row;
+        // This is handled in the specific fullwidth section above
+        .card {
+          height: auto; // Override the fixed height for fullwidth cards
+          max-height: none; // Remove max-height constraint
 
-          > div {
-            width: 30%;
-          }
-
-          img {
-            max-width: 70%;
-            width: 65% !important;
-            margin: 0;
+          a,
+          &__body {
+            height: auto; // Override the 100% height
+            position: static; // Override absolute positioning
           }
         }
       }
@@ -266,6 +343,20 @@
       grid-template-columns: repeat(3, 1fr);
       margin-left: 60px;
       margin-right: 60px;
+
+      &.card__fullwidth {
+        // This is handled in the specific fullwidth section above
+        .card {
+          height: auto; // Override the fixed height for fullwidth cards
+          max-height: none; // Remove max-height constraint
+
+          a,
+          &__body {
+            height: auto; // Override the 100% height
+            position: static; // Override absolute positioning
+          }
+        }
+      }
     }
   }
 }
