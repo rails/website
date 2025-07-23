@@ -8,7 +8,6 @@ third_speaker: jean-boussier.md
 time: 10:00 - 11:00
 location: Effectenbeurs
 running_order: 1
-show_page: false
 ---
 
 Join us for a special discussion featuring members of the Rails Core and Ruby Core teams together on stage as they dive into the future of developer experience in the Ruby and Rails ecosystem. Aaron Patterson and Jean Boussier, who sit on the both Rails and Ruby teams, will be joined by Ruby committer and tools maintainer Hiroshi Shibata to discuss how foundational tools like RubyGems, Bundler, RDoc, Debug, and ERB can be improved to make the language and framework more welcoming, especially for newcomers. 
