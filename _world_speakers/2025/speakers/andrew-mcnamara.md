@@ -4,8 +4,8 @@ redirect_from: /world/speakers/andrew-mcnamra
 first_name: Andrew
 last_name: Mcnamara
 image_path: /assets/world/2025/images/speakers/a_mcnamara.jpg
-role: Director Applied ML
-tagline:
+role: 
+tagline: Director Applied ML
 company: Shopify
 keynote:
 github:

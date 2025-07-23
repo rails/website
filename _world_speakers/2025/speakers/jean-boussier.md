@@ -4,8 +4,8 @@ redirect_from: /world/speakers/jean-boussier
 first_name: Jean
 last_name: Boussier
 image_path: /assets/world/2025/images/speakers/j-boussier.jpeg
-role: Senior Staff Engineer
-tagline: Rails Core
+role: 
+tagline: Rails Core & Senior Staff Engineer
 company: Shopify
 keynote: true
 github: https://github.com/byroot
