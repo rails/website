@@ -3,7 +3,7 @@ layout: world/2025/speaker
 redirect_from: /world/speakers/jean-boussier
 first_name: Jean
 last_name: Boussier
-image_path: /assets/world/2025/images/speakers/j-boussier.jpeg
+image_path: /assets/world/2025/images/speakers/j_boussier.jpeg
 role: 
 tagline: Rails Core & Senior Staff Engineer
 company: Shopify
