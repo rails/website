@@ -13,12 +13,15 @@ gold:
   - name: Framework
     logo: /assets/world/2025/images/sponsors/RW-logo-framework.png
     url: https://frame.work/
-  - name: JetBrains
+  - name: RubyMine
     logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
-    url: https://www.jetbrains.com/
+    url: https://www.jetbrains.com/ruby/
   - name: Basecamp
     logo: /assets/world/2025/images/sponsors/RW-logo-basecamp.svg
     url: https://basecamp.com/
+  - name: Augment Code
+    logo: /assets/world/2025/images/sponsors/RW-logo-augment-code.svg
+    url: https://www.augmentcode.com/
 
 silver:
   - name: Codeminer42
