@@ -70,8 +70,12 @@
           }
 
           .card__headline {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 0;
             h3 {
-              text-align: left;
+              /* text-align: left; */
               margin-bottom: 10px;
               margin-top: 0;
               padding-bottom: 0; // Override default padding
@@ -79,15 +83,25 @@
           }
 
           .card__content {
+            text-align: center;
+            padding-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
             p {
               margin-bottom: 1em;
-              text-align: left;
+              /* text-align: left; */
             }
 
             ul {
               list-style-type: disc;
-              padding-left: 1.5em;
+              padding-left: 0;
               margin: 0 0 5px 0; // Further reduced bottom margin
+
+              li {
+                text-align: center;
+                list-style: none;
+                padding-left: 0;
+              }
             }
           }
         }
@@ -104,6 +118,21 @@
             padding: 25px 25px 20px 25px; // Reduced bottom padding
             gap: 25px;
             align-items: flex-start;
+
+            .card__headline,
+            .card__content {
+              text-align: left;
+
+              ul {
+                padding-left: 1.5em;
+
+                li {
+                  text-align: left;
+                  list-style-type: disc;
+                  padding-left: unset;
+                }
+              }
+            }
 
             img {
               flex: 0 0 60%; // Increased to ~2/3
