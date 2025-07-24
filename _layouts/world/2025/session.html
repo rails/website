@@ -5,6 +5,12 @@ layout: world/2025/default
 {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" | where_exp: 'item', 'item.path contains "2025"' %}
 {% assign speaker = filteredSpeakers | first %}
 
+{% assign filteredSpeakersSecond = site.world_speakers | where_exp:"speaker", "speaker.path contains page.second_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign second_speaker = filteredSpeakersSecond | first %}
+
+{% assign filteredSpeakersThird = site.world_speakers | where_exp:"speaker", "speaker.path contains page.third_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign third_speaker = filteredSpeakersThird | first %}
+
 {% if page.location == "Effectenbeurs" %}
   {% assign track = "Track 1" %}
 {% else %}
@@ -17,7 +23,7 @@ layout: world/2025/default
   {% assign day = 'Friday September 5' %}
 {% endif %}
 
-<div class="session-page">
+<div class="session-page {% if page.multiple_speakers %}multiple-speakers{% endif %}">
   <div class="session-content">
     <h1>{{ page.title }}</h1>
     <p>{{ content }}</p>
@@ -28,7 +34,7 @@ layout: world/2025/default
     </div>
   </div>
 
-  <div>
+  <div class="session-speakers">
     {% if speaker %}
       {% include world/2025/components/speaker_card.html
           first_name=speaker.first_name
@@ -37,6 +43,28 @@ layout: world/2025/default
           company=speaker.company
           photo=speaker.image_path
           path=speaker.path
+      %}
+      {% endif %}
+
+    {% if page.second_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=second_speaker.first_name
+          last_name=second_speaker.last_name
+          tagline=second_speaker.tagline
+          company=second_speaker.company
+          photo=second_speaker.image_path
+          path=second_speaker.path
+      %}
+    {% endif %}
+
+    {% if page.third_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=third_speaker.first_name
+          last_name=third_speaker.last_name
+          tagline=third_speaker.tagline
+          company=third_speaker.company
+          photo=third_speaker.image_path
+          path=third_speaker.path
       %}
     {% endif %}
   </div>
