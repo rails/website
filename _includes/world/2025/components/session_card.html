@@ -39,7 +39,11 @@
     {% if session.multiple_speakers %}
       <p>{{session.multiple_speakers}}</p>
     {% elsif include.speaker %}
-      <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }} {% if include.speaker.tagline %} - {{ include.speaker.tagline }} {% endif %} {% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
+      <p>
+        {{ include.speaker.first_name }} {{ include.speaker.last_name }}
+        {% if include.speaker.tagline %} - {{ include.speaker.tagline }}{% endif %}
+        {%- if include.speaker.company -%}, {{ include.speaker.company }}{%- endif -%}
+      </p>
     {% endif %}
     </div>
 </div>

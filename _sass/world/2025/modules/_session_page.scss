@@ -6,6 +6,30 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  &.multiple-speakers {
+    flex-direction: column;
+
+    .session-content {
+      width: 100%;
+    }
+
+    .session-speakers {
+      margin-top: 40px;
+      display: flex;
+      gap: 50px;
+
+      @include media(MobileScreens) {
+        display: block;
+      }
+
+      @include media(TabletScreens) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+
   @include media(MobileAndTabletScreens) {
     display: block;
     padding: 0 5%;
@@ -59,6 +83,7 @@
   p {
     color: white;
     font-size: $x-large;
+    line-height: 30px;
     font-variation-settings: $font-weight-700;
   }
 }

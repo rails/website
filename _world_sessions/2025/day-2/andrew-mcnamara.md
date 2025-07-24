@@ -1,6 +1,7 @@
 ---
 layout: world/2025/session
 title: "AI Agents at Scale"
+multiple_speakers: "Andrew Mcnamara & Charlie Lee"
 speaker: andrew-mcnamara.md
 second_speaker: charlie-lee.md
 time: 15:45 - 16:15
