@@ -1,6 +1,6 @@
 ---
 layout: world/2025/session
-title: "AI Agents at Scale"
+title: "LLM Evaluations & Reinforcement Learning for Shopify Sidekick on Rails"
 multiple_speakers: "Andrew Mcnamara & Charlie Lee"
 speaker: andrew-mcnamara.md
 second_speaker: charlie-lee.md
@@ -9,10 +9,4 @@ location: Effectenbeurs
 running_order: 11
 ---
 
-Discover how to build flexible, scalable AI agents in Rails through modular components
-that adapt to the evolving AI landscape. Learn practical patterns for abstracting model
-providers, implementing flow-based architectures, building flexible tools, and managing
-prompts. We'll explore how to handle divergent LLM provider features, plus key AI
-learnings: evaluation strategies for large applications, deciding between agents vs tools
-(A2A/MCP), and choosing between fine-tuning vs prompt engineering. Perfect for
-developers integrating AI or scaling existing implementations.
+This talk explores building production LLM systems through Shopify Sidekick's Rails architecture, covering orchestration patterns and tool integration strategies. We'll establish statistically rigorous LLM-based evaluation frameworks that move beyond subjective "vibe testing." Finally, we'll demonstrate how robust evaluation systems become critical infrastructure for reinforcement learning pipelines, while exploring how RL can learn to hack evaluations and strategies to mitigate this.
