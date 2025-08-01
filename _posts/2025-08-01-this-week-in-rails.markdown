@@ -9,7 +9,7 @@ date: 2025-08-01
 ---
 
 
-Hi, it's [gregmolnar](https://github.com/gregmolnar). Let's explore this week's changes in the Rails codebase.
+Hi, it's [Greg](https://github.com/gregmolnar). Let's explore this week's changes in the Rails codebase.
 
 [New written & video tutorials for beginners](https://rubyonrails.org/2025/7/31/new-beginner-resources)  
 The Rails Foundation has launched a few more learning resources for beginners, in partnership with Chris Oliver and the team behind Typecraft - Chris Power and Robert Beene.
