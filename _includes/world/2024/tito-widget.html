@@ -13,5 +13,11 @@
         : "rails-world/rails-world-2024";
 
     window.tito = window.tito || function () { (tito.q = tito.q || []).push(arguments); };
-    tito("widget.mount", { el: "#tito-widget", event })
+    
+    // Only mount Tito widget if the element exists
+    if (document.getElementById("tito-widget")) {
+        tito("widget.mount", { el: "#tito-widget", event })
+    } else {
+        console.info("Tito widget element not found, skipping mount");
+    }
 </script>

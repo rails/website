@@ -57,22 +57,8 @@
   </script>
   <script defer data-domain="rubyonrails.org" src="https://plausible.io/js/script.js"></script>
 
-  <script src="/assets/world/2023/scripts/back_to_top.js" defer></script>
-  <script src="/assets/world/2023/scripts/carousel.js" defer></script>
-  <script src="/assets/world/2023/scripts/modal_component.js" defer></script>
-
-  <script type="module">
-    import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-  </script>
-
-  <script type="text/javascript">
-    document.addEventListener("turbo:click", (event) => {
-      if (event.srcElement.closest("modal-component")) {
-        event.preventDefault()
-        Turbo.visit(event.detail.url)
-      }
-    })
-  </script>
+  <!-- Rails World 2024 specific scripts -->
+  <!-- Note: Removed unused component scripts that were causing console errors -->
 
   <link rel="icon" href="/assets/images/favicon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="/assets/images/apple-touch-icon.png" />

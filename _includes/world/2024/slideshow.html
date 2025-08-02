@@ -33,6 +33,11 @@
 
     function generateDots(slidesLength) {
         const dotsContainer = document.querySelector(".dotsContainer");
+        
+        if (!dotsContainer) {
+            console.warn("Slideshow: .dotsContainer not found");
+            return;
+        }
 
         for (let i = 0; i < slidesLength; i++) {
             const dot = document.createElement("button");
@@ -52,6 +57,11 @@
     function showSlides(index) {
         const dots = document.getElementsByClassName("dot");
 
+        if (!slides.length) {
+            console.warn("Slideshow: No slides found");
+            return;
+        }
+
         if (index > slides.length) {
             currentSlideIndex = 1;
         } else if (index <= 0) {
@@ -69,9 +79,14 @@
             }
         }
 
-        slides[currentSlideIndex - 1].style.display = "flex";
-        slides[currentSlideIndex - 1].ariaHidden = false;
-        dots[currentSlideIndex - 1].classList.add("active")
+        if (slides[currentSlideIndex - 1]) {
+            slides[currentSlideIndex - 1].style.display = "flex";
+            slides[currentSlideIndex - 1].ariaHidden = false;
+        }
+        
+        if (dots[currentSlideIndex - 1]) {
+            dots[currentSlideIndex - 1].classList.add("active")
+        }
     }
 
     function forwardSlide() {
@@ -84,6 +99,11 @@
         showSlides(currentSlideIndex);
     }
 
-    generateDots(slides.length);
-    showSlides(currentSlideIndex);
+    // Initialize slideshow only if elements exist
+    if (slides.length > 0) {
+        generateDots(slides.length);
+        showSlides(currentSlideIndex);
+    } else {
+        console.warn("Slideshow: No slides found, skipping initialization");
+    }
 </script>
