@@ -1,6 +1,6 @@
 ---
 layout: world/2025/session
-title: "Beyond the Prompt: Building Real-World LLM Features in Rails"
+title: "The Rise of the Agent: Rails in the AI Era"
 speaker: kinsey-durham.md
 time: 13:45 - 14:15
 location: Effectenbeurs
