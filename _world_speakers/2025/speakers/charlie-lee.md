@@ -14,4 +14,4 @@ twitter:
 specific_order:
 ---
 
-Bio coming soon.
+Charlie is a Staff Software Engineer on the Assistants team at Shopify. He's been working on empowering merchants with chat including Shopify Inbox and other chatbots (before LLMs!). Outside of work, he's tinkering with his homelab and playing tennis. 
