@@ -6,6 +6,7 @@ last_name: Roth
 image_path: /assets/world/2023/images/speakers/m-roth.jpeg
 role: Independent Consultant & Open Source Contributor
 company: Toolsday GmbH
+tagline: Independent Consultant
 keynote:
 github: https://github.com/marcoroth
 linkedin: https://www.linkedin.com/in/marco-roth/
