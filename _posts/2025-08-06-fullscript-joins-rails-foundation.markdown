@@ -4,7 +4,7 @@ title: "Fullscript joins the Rails Foundation"
 categories: news, foundation
 author: Amanda Perino
 published: true
-date: 2025-07-29
+date: 2025-08-06
 ---
 
 The Rails Foundation is happy to welcome <a href="https://fullscript.com/">Fullscript</a> our newest Contributing member.
