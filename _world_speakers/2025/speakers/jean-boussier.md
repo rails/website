@@ -14,4 +14,4 @@ twitter: https://x.com/_byroot
 specific_order:
 ---
 
-Rails core, Ruby committer, Senior Staff Engineer on Shopify's Ruby and Rails infrastructure team.
+Rails Core member and Ruby committer.
