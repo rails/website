@@ -21,7 +21,7 @@ rails_usage: |
 pull_quote: "Without Rails, we wouldn’t be able to build AppSignal the way we do, leveraging the power of the framework and its community. By joining the Rails Foundation, we want to play our part in helping new and existing developers discover, learn, and enjoy working with the framework that made us."
 quote_author: "Roy Tomeij"
 quote_title: "CCO & Co-Founder"
-member_status: "In 2022, Company became a **founding Core member** of the Rails Foundation."
+member_status: "In 2023, Company became a **contributing member** of the Rails Foundation."
 github_contributions:
   - name: "rdkafka-ruby"
     url: "https://github.com/karafka/rdkafka-ruby"
