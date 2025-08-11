@@ -13,9 +13,7 @@ headquarters: "**Ottawa, Canada**"
 employees_range: "1000"
 rails_engineers_range: "75"
 rails_usage: |
-    What part of the business or product is built on Rails? (customer-facing web apps, API backend, etc.), notable gems or libraries you rely on, monolith or microservices (or something in between)? Are you using Hotwire for the frontend? Have you deployed with Kamal? Etc.
-
-    Fullscript launched on Rails 3.2 in 2011, and that original Rails monolith now runs on Rails 7.2 (with Rails 8 on the horizon), has over 1.6 million lines of Ruby, and leverages the new SolidQueue for background jobs. It serves both an internal GraphQL API for their React MPA, and an external REST API, and connects to 3 separate databases - two MySQL and one PostgreSQL.
+  Fullscript launched on Rails 3.2 in 2011, and that original Rails monolith now runs on Rails 7.2 (with Rails 8 on the horizon), has over 1.6 million lines of Ruby, and leverages the new SolidQueue for background jobs. It serves both an internal GraphQL API for their React MPA, and an external REST API, and connects to 3 separate databases - two MySQL and one PostgreSQL.
 pull_quote: “Ruby on Rails has been at the heart of our platform since day one. It helped us move fast in the early days, and it’s scaled with us to serve tens of millions of users. As we’ve grown, Rails continues to deliver on its promise of developer productivity and software quality. We’re proud to support the Rails Foundation and give back to the community that’s been such a big part of our journey.“
 quote_author: "Kurtis Funai"
 quote_title: "CTO"

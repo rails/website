@@ -15,8 +15,6 @@ headquarters: "**The Netherlands &<br>Austin, TX**"
 employees_range: "22"
 rails_engineers_range: "5"
 rails_usage: |
-  What part of the business or product is built on Rails? (customer-facing web apps, API backend, etc.), notable gems or libraries you rely on, monolith or microservices (or something in between)? Are you using Hotwire for the frontend? Have you deployed with Kamal? etc.
-
   AppSignal has been powered by Rails since commit one and continues to rely on the framework today. Rails powers the core of AppSignal’s monitoring tool.  Their Ruby integration provides first-class Rails support, making installing AppSignal in Rails applications a breeze.
 
   Thirteen years later, AppSignal is still working in Rails every day. The framework allows their small development team to ship quickly, maintain focus, and build features they’re proud of. AppSignal’s Ruby gem has accumulated over 4,000 commits from more than 60 contributors and is currently on its fourth major version, with continuous improvements in each release.
