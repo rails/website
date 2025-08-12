@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Upgrading the Rails World App for 2025"
-categories: foundation
+categories: news, foundation
 author: The Rails Foundation
 published: true
 date: 2025-08-12
