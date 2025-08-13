@@ -9,7 +9,7 @@ intro: |
   They've worked on hundreds of Rails applications across industries, from Nike, Sequoia Capital, Disney, and Oregon State University. Their clients often maintain essential Rails applications that don’t require a full-time engineering team but still demand consistent support and expertise.
 
   Planet Argon helps organizations stabilize and modernize their Rails applications, improving performance, reducing risk, and extending the value of their existing investments. Whether serving as a [long-term technical partner](https://www.planetargon.com/services/staff-augmentation?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile) or providing [flexible augmentation](https://www.planetargon.com/services/fractional-software-development?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile) alongside internal developers, they help teams avoid the risks of relying on limited in-house capacity and keep applications running smoothly.
-logo: /assets/images/logo-planet-argon.svg
+logo: /assets/images/logo-planet-argon.png
 exturl: https://www.planetargon.com/
 company_type: Private
 founded_date: 1999
