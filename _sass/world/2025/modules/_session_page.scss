@@ -16,7 +16,8 @@
     .session-speakers {
       margin-top: 40px;
       display: flex;
-      gap: 50px;
+      flex-wrap: wrap;
+      gap: 25px;
 
       @include media(MobileScreens) {
         display: block;
@@ -58,7 +59,8 @@
     margin-bottom: 50px;
   }
 
-  p {
+  p, a {
+    color: white;
     font-size: $medium;
     line-height: 25px;
   }
