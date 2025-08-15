@@ -1,6 +1,6 @@
 ---
 layout: company
-title: appsignal
+title: AppSignal
 description: "AppSignal is the APM built for Rails developers."
 name: AppSignal
 intro: |
@@ -12,7 +12,7 @@ exturl: https://www.appsignal.com/
 company_type: Private
 founded_date: 2012
 headquarters: "**The Netherlands &<br>Austin, TX**"
-employees_range: "22"
+employees_range: "23"
 rails_engineers_range: "5"
 rails_usage: |
   AppSignal has been powered by Rails since commit one and continues to rely on the framework today. Rails powers the core of AppSignal’s monitoring tool.  Their Ruby integration provides first-class Rails support, making installing AppSignal in Rails applications a breeze.
@@ -21,7 +21,7 @@ rails_usage: |
 pull_quote: "Without Rails, we wouldn’t be able to build AppSignal the way we do, leveraging the power of the framework and its community. By joining the Rails Foundation, we want to play our part in helping new and existing developers discover, learn, and enjoy working with the framework that made us."
 quote_author: "Roy Tomeij"
 quote_title: "CCO & Co-Founder"
-member_status: "In 2023, Company became a **contributing member** of the Rails Foundation."
+member_status: "In 2023, AppSignal became a **contributing member** of the Rails Foundation."
 github_contributions:
   - name: "rdkafka-ruby"
     url: "https://github.com/karafka/rdkafka-ruby"
