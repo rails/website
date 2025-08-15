@@ -27,8 +27,6 @@
 
   }
 
-
-
   @media(min-width: 1024px) {
 
     &__embed {
@@ -36,8 +34,28 @@
       margin-right: 60px;
     }
 
+
+    
   }
 
+}
 
+ // Youtube video playlist embeds
 
+  .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  border-radius: 8px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
 }
