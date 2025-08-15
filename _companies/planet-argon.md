@@ -12,8 +12,8 @@ intro: |
 logo: /assets/images/logo-planet-argon.png
 exturl: https://www.planetargon.com/
 company_type: Private
-founded_date: 1999
-headquarters: "**Portland, OR**"
+founded_date: 2002
+headquarters: "**Portland, OR USA**"
 employees_range: "10-20"
 rails_engineers_range: "10-15"
 rails_usage: |
