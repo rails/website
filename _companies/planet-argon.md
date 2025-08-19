@@ -23,7 +23,7 @@ rails_usage: |
 pull_quote: "Ruby on Rails has long been regarded as an excellent tool for startups and makers. Our delightful clients benefit from the contributions of the Ruby on Rails community, which enables small teams to achieve big goals.<br><br>After learning about the Rails Foundation’s goals and upcoming plans, we asked how we could join the mission. This investment is less an attempt to plant new seeds but rather to help improve the maintainability of an already flourishing garden.<br><br>We believe in a blossoming future for Ruby on Rails. All Aboard!"
 quote_author: "Robby Russell"
 quote_title: "Founder & CEO"
-member_status: "In 2023, Company became a **contributing member** of the Rails Foundation."
+member_status: "In 2023, Planet Argon became a **contributing member** of the Rails Foundation."
 community: |
   Planet Argon contributes back to the Rails ecosystem through mentorship, open source, and developer education. Robby Russell, Planet Argon's founder, hosts the [On Rails podcast](https://onrails.buzzsprout.com/?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile), the official podcast of the Rails Foundation, featuring conversations with developers, maintainers, and teams building with Rails.
 
