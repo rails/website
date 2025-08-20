@@ -11,7 +11,15 @@
     <div>
       <ul>
         {% for option in site.data.nav.items limit:4 %}
+          {% assign is_active = false %}
           {% if page.url == option.url %}
+            {% assign is_active = true %}
+          {% elsif option.url contains '/' and page.url contains option.url and option.url != '/' %}
+            {% assign is_active = true %}
+          {% elsif option.url == '/blog' and page.url contains '/2' %}
+            {% assign is_active = true %}
+          {% endif %}
+          {% if is_active %}
             <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
           {% else %}
             <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
@@ -21,7 +29,15 @@
 
       <ul>
         {% for option in site.data.nav.items limit:4 offset:4 %}
+          {% assign is_active = false %}
           {% if page.url == option.url %}
+            {% assign is_active = true %}
+          {% elsif option.url contains '/' and page.url contains option.url and option.url != '/' %}
+            {% assign is_active = true %}
+          {% elsif option.url == '/blog' and page.url contains '/2' %}
+            {% assign is_active = true %}
+          {% endif %}
+          {% if is_active %}
             <li class="active"><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>
           {% else %}
             <li><a href="{{ option.url }}"><span>{{ option.title }}</span></a></li>

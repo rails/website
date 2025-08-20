@@ -1,26 +1,61 @@
 {% assign speaker_url = include.speaker.path | split: '/' | last | remove_first: '.md' %}
 {% assign session = include.session %}
-
 {% assign clean_path = session.path | replace: '_world_sessions/2025', '' | replace: '.md', '' %}
 
-<div  class="session-card"
+{% if session.location == "Effectenbeurs" %}
+  {% assign track = "Track 1" %}
+{% else %}
+  {% assign track = "Track 2" %}
+{% endif %}
+
+{% if session.path contains 'day-1/' %}
+  {% assign day = 'Thursday Sept 4' %}
+{% elsif session.path contains 'day-2/' %}
+  {% assign day = 'Friday Sept 5' %}
+{% endif %}
+
+<div class="session-card {% unless session.show_page == false %}pointer{% endunless %}"
       title="{{ session.title }}"
-      aria-label="Go to {{ session.title }} session page"
-      onclick="openWindow( '/world/2025{{ clean_path }}')"
-      onkeydown="handleEnterOrSpaceWindowOpen(event, '/world/2025{{ clean_path }}')">
-  <h3>{{ session.title }}</h3>
-  <p>{{ include.speaker.first_name }} {{ include.speaker.last_name }} - {{ include.speaker.tagline }}{% if include.speaker.company %}, {{ include.speaker.company }} {% endif %}</p>
+      aria-label="{% unless session.show_page == false %}Go to {{ session.title }} session page{% else %}{{ session.title }}{% endunless %}"
+      {% unless session.show_page == false %}
+        onclick="openWindow('/world/2025{{ clean_path }}')"
+        onkeydown="handleEnterOrSpaceWindowOpen(event, '/world/2025{{ clean_path }}')"
+        role="button"
+        tabindex="0"
+      {% endunless %} >
+
+  {% if page.path contains 'speakers/' %}
+  <div class="details">
+    <p class="italic">{{ day }}</p>
+    <p class="bold">{{ session.time }}</p>
+    <p>{{ track }}</p>
+  </div>
+  {% else %}
+    <p class="details">{{ session.time }}</p>
+  {% endif %}
+
+  <div class="content">
+    <h3>{{ session.title }}</h3>
+    {% if session.multiple_speakers %}
+      <p>{{session.multiple_speakers}}</p>
+    {% elsif include.speaker %}
+      <p>
+        {{ include.speaker.first_name }} {{ include.speaker.last_name }}
+        {% if include.speaker.tagline %} - {{ include.speaker.tagline }}{% endif %}
+        {%- if include.speaker.company -%}, {{ include.speaker.company }}{%- endif -%}
+      </p>
+    {% endif %}
+    </div>
 </div>
 
 <script>
-  openWindow = (url, openTab = false) =>{
-    const openType = openTab ? '_blank' : '_self';
-    window.open(url, openType);
+  openWindow = (url) =>{
+    window.open(url);
   }
 
   handleEnterOrSpaceWindowOpen = (e, url) => {
     if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
-        openWindow(url);
+      openWindow(url);
     }
   }
 </script>

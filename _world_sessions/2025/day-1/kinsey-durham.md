@@ -1,10 +1,10 @@
 ---
 layout: world/2025/session
-title: "Beyond the Prompt: Building Real-World LLM Features in Rails"
+title: "The Rise of the Agent: Rails in the AI Era"
 speaker: kinsey-durham.md
-time:
-location:
-running_order:
+time: 13:45 - 14:15
+location: Effectenbeurs
+running_order: 7
 ---
 
-Prompting an LLM is easy. Building a Rails app that reliably integrates one? That’s a different story. This talk goes beyond prompt hacking to explore what it takes to bring LLM-powered features into real-world Rails apps—with real users, latency constraints, and production consequences. We’ll cover architectural patterns like model orchestration, prompt versioning, and skill/tool design, all tailored to the Rails ecosystem. You’ll learn how to connect your LLM to internal APIs, business logic, and background jobs, while keeping everything observable, testable, and maintainable. Whether you're adding a smart assistant or orchestrating agents, you’ll leave with practical Rails-specific strategies and patterns to build it right.
+Prompting is a start, but agents are the future. In this talk, we’ll explore how intelligent agents are changing how we build software — and how we can bring them to life in the Rails ecosystem. From early CLI bots to multi-tool agents powered by LLMs, we’ll trace the evolution, show what’s working in production, and give you practical patterns for building agents with a Rails mindset.

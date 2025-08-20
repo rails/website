@@ -1,11 +1,13 @@
 ---
 layout: company
+title: cedarcode
+description: "Cedarcode specializes in deploying high-performance Ruby on Rails engineering teams for startups and industry leaders. They are a Contributing member of the Rails Foundation since 2023."
 name: Cedarcode
 intro: |
   Cedarcode specializes in deploying high-performance Ruby on Rails engineering teams for startups and industry leaders that need to scale fast without compromising quality. With a collective 15 years of deep expertise in the Rails ecosystem, Cedarcode has earned the trust of companies like Airbnb, BetterUp, Underdog Fantasy, Amgen, and ID.me, among others.
   <br><br>
   **How Cedarcode works**<br>
-  Cedarcode Rails teams integrate seamlessly into existing engineering setups, helping businesses build, scale, and evolve their products with agility. They ramp up in weeks, without the hassle of traditional hiring, providing the flexibility to scale up or down as business needs change. Their focus is on quality, reliability, and building long-term partnerships, collaborating with clients for years to ensure ongoing growth and innovation. 
+  Cedarcode Rails teams integrate seamlessly into existing engineering setups, helping businesses build, scale, and evolve their products with agility. They ramp up in weeks, without the hassle of traditional hiring, providing the flexibility to scale up or down as business needs change. Their focus is on quality, reliability, and building long-term partnerships, collaborating with clients for years to ensure ongoing growth and innovation.
   Cedarcode’s passion for security led them to develop webauthn-ruby, an authentication gem used to implement passkeys in ruby, trusted by some of the biggest Rails shops in the industry.
 logo: /assets/images/logo-cedarcode.svg
 exturl: https://cedarcode.com
@@ -38,5 +40,3 @@ community: |
   [Sin City Ruby](https://www.sincityruby.com) sponsoring since 2025<br>
   [Ruby Meetup Montevideo, Uruguay](https://ruby.uy) co-hosting since 2022<br>
 ---
-
-

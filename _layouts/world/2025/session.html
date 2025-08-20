@@ -5,13 +5,39 @@ layout: world/2025/default
 {% assign filteredSpeakers = site.world_speakers | where_exp:"speaker", "speaker.path contains page.speaker" | where_exp: 'item', 'item.path contains "2025"' %}
 {% assign speaker = filteredSpeakers | first %}
 
-<div class="session-page">
+{% assign filteredSpeakersSecond = site.world_speakers | where_exp:"speaker", "speaker.path contains page.second_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign second_speaker = filteredSpeakersSecond | first %}
+
+{% assign filteredSpeakersThird = site.world_speakers | where_exp:"speaker", "speaker.path contains page.third_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign third_speaker = filteredSpeakersThird | first %}
+
+{% assign filteredSpeakersFourth = site.world_speakers | where_exp:"speaker", "speaker.path contains page.fourth_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign fourth_speaker = filteredSpeakersFourth | first %}
+
+{% if page.location == "Effectenbeurs" %}
+  {% assign track = "Track 1" %}
+{% else %}
+  {% assign track = "Track 2" %}
+{% endif %}
+
+{% if page.path contains 'day-1/' %}
+  {% assign day = 'Thursday September 4' %}
+{% elsif page.path contains 'day-2/' %}
+  {% assign day = 'Friday September 5' %}
+{% endif %}
+
+<div class="session-page {% if page.multiple_speakers %}multiple-speakers{% endif %}">
   <div class="session-content">
     <h1>{{ page.title }}</h1>
     <p>{{ content }}</p>
+
+    <div class="session-details">
+      <img class="" width="40" src="/assets/world/2025/icons/clock.svg" alt="clock icon">
+      <p> {{ day }} / {{ page.time }} / {{ track }}</p>
+    </div>
   </div>
 
-  <div>
+  <div class="session-speakers">
     {% if speaker %}
       {% include world/2025/components/speaker_card.html
           first_name=speaker.first_name
@@ -20,6 +46,39 @@ layout: world/2025/default
           company=speaker.company
           photo=speaker.image_path
           path=speaker.path
+      %}
+      {% endif %}
+
+    {% if page.second_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=second_speaker.first_name
+          last_name=second_speaker.last_name
+          tagline=second_speaker.tagline
+          company=second_speaker.company
+          photo=second_speaker.image_path
+          path=second_speaker.path
+      %}
+    {% endif %}
+
+    {% if page.third_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=third_speaker.first_name
+          last_name=third_speaker.last_name
+          tagline=third_speaker.tagline
+          company=third_speaker.company
+          photo=third_speaker.image_path
+          path=third_speaker.path
+      %}
+    {% endif %}
+
+    {% if page.fourth_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=fourth_speaker.first_name
+          last_name=fourth_speaker.last_name
+          tagline=fourth_speaker.tagline
+          company=fourth_speaker.company
+          photo=fourth_speaker.image_path
+          path=fourth_speaker.path
       %}
     {% endif %}
   </div>

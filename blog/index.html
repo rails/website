@@ -19,12 +19,23 @@ description: "Discover the latest Ruby on Rails news, Rails Foundation updates, 
   <div class="container">
     <div class="heading__body">
       <div class="heading__headline common-headline">
+        <h1>The Rails Blog: News & Release Notes</h1>
+        <p>Discover the latest Rails news, version releases, community updates, and feature announcements.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blog common-padding--bottom-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
         <div class="heading__buttons">
           <ul>
-            <li><a href="/blog"><span>Everything</span></a></li>
-            <li><a href="/category/releases"><span>Releases</span></a></li>
-            <li><a href="/category/news"><span>News</span></a></li>
-            <li><a href="/category/foundation"><span>Foundation</span></a></li>
+            <li><a href="/blog"><span><h2>Everything</h2></span></a></li>
+            <li><a href="/category/releases"><span><h2>Releases</h2></span></a></li>
+            <li><a href="/category/news"><span><h2>News</h2></span></a></li>
+            <li><a href="/category/foundation"><span><h2>Foundation</h2></span></a></li>
           </ul>
         </div>
       </div>
@@ -32,13 +43,14 @@ description: "Discover the latest Ruby on Rails news, Rails Foundation updates, 
   </div>
 </div>
 
+
 <div class="blog common-padding--bottom">
   <div class="container">
-    <div class="blog__posts">
+    <ul class="blog__posts">
       {% for post in paginator.posts %}
         {% include post.html %}
       {% endfor %}
-    </div>
+    </ul>
 
     {% if paginator.next_page %}
       <div class="blog__pagination">

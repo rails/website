@@ -34,7 +34,7 @@
     line-height: 34px;
   }
 
-  h4 {
+  h4, p {
 
     color: $color-black;
     font-size: 26px;
@@ -118,7 +118,7 @@
       line-height: 43px;
     }
 
-    h4 {
+    h4, p {
       font-size: 39px;
       letter-spacing: -0.01em;
       line-height: 44px;
@@ -130,9 +130,5 @@
         line-height: 72px;
       }
     }
-
   }
-
-
-
 }

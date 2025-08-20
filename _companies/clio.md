@@ -1,5 +1,7 @@
 ---
 layout: company
+title: Clio
+description: "Clio is the world's leading provider of cloud-based legal technology, trusted by 150,000 legal professionals in 130+ countries. They are a Contributing member of the Rails Foundation since 2025."
 name: Clio
 intro: |
   Clio is the world's leading provider of cloud-based legal technology, trusted by 150,000 legal professionals in 130+ countries. As the industry's only end-to-end software solution, Clio centralizes client intake, case management, document automation, payments, and more—powered by AI on its unified platform.
@@ -26,4 +28,4 @@ github_contributions:
     url: "https://github.com/clio/dead_code_detector"
 community: |
   Clio has a longstanding commitment to the Rails community in Toronto, actively supporting it through event sponsorships, hosting meetups, and participating in industry conferences. Through local Rails meetups and knowledge-sharing sessions, Clio has created opportunities for developers to connect, exchange ideas, and tackle real-world challenges. These gatherings not only strengthen the local developer network but also foster innovation by providing a platform for discussing best practices, emerging trends, and technical problem-solving within the Rails ecosystem.
---- 
+---
