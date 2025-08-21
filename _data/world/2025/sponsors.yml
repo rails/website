@@ -59,6 +59,9 @@ members:
   - name: Cedarcode
     logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
     url: https://www.cedarcode.com/
+  - name: Rubyness
+    logo: /assets/world/2025/images/sponsors/RW-logo-rubyness-2.svg
+    url: https://rubyness.co.uk/
   - name: Typesense
     logo: /assets/world/2025/images/sponsors/RW-logo-typesense.svg
     url: https://typesense.org/
@@ -95,6 +98,9 @@ members:
   - name: Fleetio
     logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
     url: https://www.fleetio.com/
+  - name: Fullscript
+    logo: /assets/world/2024/images/sponsors/RW-logo-fullscript.png
+    url: https://fullscript.com/
   - name: Judge.me
     logo: /assets/images/logo-judgeme.svg
     url: https://judge.me/

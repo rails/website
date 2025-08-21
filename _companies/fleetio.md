@@ -1,6 +1,6 @@
 ---
 layout: company
-title: fleetio
+title: Fleetio
 description: "Fleetio is a software platform that helps companies and organizations track, analyze, and improve their fleet operations."
 name: Fleetio
 intro: |
@@ -21,7 +21,7 @@ rails_usage: |
 pull_quote: "Rails is core to Fleetio’s DNA. While we embrace many of its strengths, the community is by far the most important. We owe much of our success to that community, and for years we’ve looked for meaningful ways to give back. The Rails Foundation gave us that opportunity, and becoming a core founding member is our way of supporting and strengthening the ecosystem that’s helped us thrive."
 quote_author: "Jorge Valdivia"
 quote_title: "CTO"
-member_status: "In 2022, Company became a **founding Core member** of the Rails Foundation."
+member_status: "In 2022, Fleetio became a **founding Core member** of the Rails Foundation."
 community: |
   - [Fleetio Automotive Service Excellence Award](https://www.fleetio.com/lp/ase-scholarship)
   - RailsConf 2020 Sponsor

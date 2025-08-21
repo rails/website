@@ -11,6 +11,9 @@ layout: world/2025/default
 {% assign filteredSpeakersThird = site.world_speakers | where_exp:"speaker", "speaker.path contains page.third_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
 {% assign third_speaker = filteredSpeakersThird | first %}
 
+{% assign filteredSpeakersFourth = site.world_speakers | where_exp:"speaker", "speaker.path contains page.fourth_speaker" | where_exp: 'item', 'item.path contains "2025"' %}
+{% assign fourth_speaker = filteredSpeakersFourth | first %}
+
 {% if page.location == "Effectenbeurs" %}
   {% assign track = "Track 1" %}
 {% else %}
@@ -65,6 +68,17 @@ layout: world/2025/default
           company=third_speaker.company
           photo=third_speaker.image_path
           path=third_speaker.path
+      %}
+    {% endif %}
+
+    {% if page.fourth_speaker %}
+      {% include world/2025/components/speaker_card.html
+          first_name=fourth_speaker.first_name
+          last_name=fourth_speaker.last_name
+          tagline=fourth_speaker.tagline
+          company=fourth_speaker.company
+          photo=fourth_speaker.image_path
+          path=fourth_speaker.path
       %}
     {% endif %}
   </div>
