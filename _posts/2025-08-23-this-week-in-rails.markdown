@@ -11,7 +11,7 @@ date: 2025-08-23
 
 Hi, it's [Greg](https://greg.molnar.io). Let's explore this week's changes in the Rails codebase.
 
-[Rails Plugin documentation update](https://github.com/rails/rails/pull/55522)
+[Rails Plugin documentation update](https://github.com/rails/rails/pull/55522)  
 As part of improving the documentation of the framework, The Rails Plugins Guide
 has been updated.
 
