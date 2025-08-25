@@ -33,7 +33,7 @@ Shopify is further extending its support by sponsoring onsite interviews and pos
 
 Meet the following Gold Sponsors at Rails World and learn more about their products and services.
 
-- <a href="augmentcode.com">Augment Code</a> – Attendees can stop by the Augment Code booth to discover how to start building for free.
+- <a href="https://www.augmentcode.com/">Augment Code</a> – Attendees can stop by the Augment Code booth to discover how to start building for free.
 - <a href="https://basecamp.com/">Basecamp</a> – Basecamp will be on hand to share insights into their tools for project management and team collaboration.
 - <a href="https://frame.work/">Framework</a> – The Framework booth will feature live demos and showcase the company’s lineup of innovative products.
 - <a href="https://github.com/">GitHub</a> – GitHub engineers will be available to meet with attendees and chat about Rails, open source, and development best practices.
@@ -65,7 +65,7 @@ A special thank you goes to our Program Sponsors, whose creativity and support a
 - <a href="https://www.cedarcode.com/">Cedarcode</a> – Sponsored the coffee carts. Good coffee is an absolute must for any Ruby conference.
 - <a href="https://www.aha.io/">A ha!</a> – Sponsored the opening music, created by <a href="https://iamcoreyg.com/">Corey Griffin</a>, a Rails developer from the community.
 - <a href="https://typesense.org/">Typesense</a> – Sponsored the wifi.
-- <a href="https://odds.team/">ODDS</a>, <a href="https://www.rompslomp.nl/">Rompslomp</a>, <a href="https://trmnl.co/">TRMNL</a>, <a href=”https://www.iqlab.us/”>IQ Lab</a>, and  <a href="https://andpad.jp/">AndPad</a> – Generously provided financial assistance that enabled seven attendees to join the conference.
+- <a href="https://odds.team/">ODDS</a>, <a href="https://www.rompslomp.nl/">Rompslomp</a>, <a href="https://usetrmnl.com/">TRMNL</a>, <a href="https://www.iqlab.us/">IQ Lab</a>, and  <a href="https://andpad.jp/">AndPad</a> – Generously provided financial assistance that enabled seven attendees to join the conference.
 
 As you can see, bringing Rails World to attendees each year takes a village of sponsors. We simply couldn't do it without all of these companies, and we can’t wait for you to meet them all onsite next week.
 
