@@ -49,6 +49,7 @@
     line-height: 26px;
   }
 
+  /* Page specific overrides */
   .page-events & {
     h2 {
       color: $color-red;
@@ -328,6 +329,7 @@
       line-height: 28px;
     }
 
+    /* Page specific overrides */
     .page-events & {
       h2 {
         font-size: 36px;
