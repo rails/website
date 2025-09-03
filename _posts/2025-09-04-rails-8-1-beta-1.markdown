@@ -153,6 +153,38 @@ KAMAL_REGISTRY_PASSWORD=$(rails credentials:fetch kamal.registry_password)
 
 Work by Matthew Nguyen from [Shopify](https://shopify.com) and Jean Boussier.
 
+## Deprecated Associations
+
+Active Record associations can now be marked as being deprecated:
+
+```ruby
+class Author < ApplicationRecord
+  has_many :posts, deprecated: true
+end
+```
+
+With that, usage of the `posts` association will be reported. This includes explicit API calls like
+
+```ruby
+author.posts
+author.posts = ...
+```
+
+and others, as well as indirect usage like
+
+```ruby
+author.preload(:posts)
+```
+
+usage via nested attributes, and more.
+
+Three reporting modes are supported (`:warn`, `:raise`, and `:notify`), and
+backtraces can be enabled or disabled, though you always get the location of the
+reported usage regardless. Defaults are `:warn` mode and disabled backtraces.
+
+Upstreamed by Xavier Noria while consulting for [Gusto](https://gusto.com/).
+
+
 ## And Everything Else
 
 With 2500 commits since the last release, there's a ton of fixes, minor features, and improvements included in Rails 8.1 as well. Please have a look at the CHANGELOG files for details.
