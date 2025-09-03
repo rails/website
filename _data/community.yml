@@ -104,6 +104,11 @@ committers:
     location: Canada
     image: gmcgibbon.jpg
 
+  - name: Hartley
+    url: https://github.com/skipkayhil
+    location: USA
+    image: hartley.png
+
   - name: Jonathan
     url: https://jonathan.hefner.pro
     location: USA
@@ -129,8 +134,6 @@ issues:
     github: Edouard-chin
   - name: Haroon Ahmed
     github: hahmed
-  - name: Hartley McGuire
-    github: SkipKayhil
   - name: Jorge Manrubia
     github: jorgemanrubia
   - name: Luan Vieira
