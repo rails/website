@@ -114,6 +114,11 @@ committers:
     location: Japan
     image: yahonda.jpg
 
+  - name: Hartley
+    url: https://github.com/skipkayhil
+    location: USA
+    image: hartley.png
+
 issues:
   - name: Adam Hess
     github: HParker
