@@ -48,7 +48,7 @@ end
 
 Active Job Continuations was lead by Donal McBreen from [37signals](https://37signals.com).
 
-## Structured event reporting
+## Structured Event Reporting
 
 The default logger in Rails is great for human consumption, but less ideal for post-processing. The new Event Reporter provides a unified interface for producing structured events in Rails applications:
 
@@ -118,7 +118,7 @@ The optional integration with gh ensures that PRs must be signed off by a passin
 
 The local CI work was lead by Jeremy Daer from [37signals](https://37signals.com).
 
-## Markdown rendering
+## Markdown Rendering
 
 Markdown has become the lingua franca of AI, and Rails has embraced this adoption by making it easier to respond to markdown requests and render them directly:
 
@@ -142,7 +142,7 @@ end
 ```
 
 
-## Command-line credentials fetching
+## Command-line Credentials Fetching
 
 Kamal can now easily grab its secrets from the encrypted Rails credentials store for deploys. This makes it a low-fi alternative to external secret stores that only needs the master key available to work:
 
@@ -153,6 +153,6 @@ KAMAL_REGISTRY_PASSWORD=$(rails credentials:fetch kamal.registry_password)
 
 Work by Matthew Nguyen from [Shopify](https://shopify.com) and Jean Boussier.
 
-## And everything else
+## And Everything Else
 
 With 2500 commits since the last release, there's a ton of fixes, minor features, and improvements included in Rails 8.1 as well. Please have a look at the CHANGELOG files for details.
