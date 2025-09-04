@@ -92,7 +92,7 @@ Structured Event Reporting was lead by Adrianna Chang from [Shopify](https://sho
 
 Developer machines have gotten incredibly quick with loads of cores, which make them great local runners of even relatively large test suites. The [HEY](https://hey.com/) test suite of over 30,000 assertions used to take over 10 minutes to run in the cloud when counting coordination, image building, and parallelized running. Now it runs locally on a Framework Destkop AMD Linux machine in just 1m 23s and an M4 Max in 2m 22s.
 
-This makes getting rid of a cloud-setup for all of CI not just feasible but desireable for many small-to-mid-sized applications, and Rails has therefore added a default CI declaration DSL, which is defined in `config/ci/rb` and run by `bin/ci`. It looks like this:
+This makes getting rid of a cloud-setup for all of CI not just feasible but desireable for many small-to-mid-sized applications, and Rails has therefore added a default CI declaration DSL, which is defined in `config/ci.rb` and run by `bin/ci`. It looks like this:
 
 ```ruby
 CI.run do
