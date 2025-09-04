@@ -86,7 +86,7 @@ class LogSubscriber
 end
 ```
 
-Active Job Continuations was lead by Adrianna Chang from [Shopify](https://shopify.com).
+Structured Event Reporting was lead by Adrianna Chang from [Shopify](https://shopify.com).
 
 ## Local CI
 
