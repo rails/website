@@ -49,6 +49,15 @@
     line-height: 26px;
   }
 
+  /* Page specific overrides */
+  .page-events & {
+    h2 {
+      color: $color-red;
+      font-size: 36px;
+      line-height: 34px;
+    }
+  }
+
   hr {
 
     background: rgba($color-black, 0.1);
@@ -318,6 +327,14 @@
     h6 {
       font-size: 26px;
       line-height: 28px;
+    }
+
+    /* Page specific overrides */
+    .page-events & {
+      h2 {
+        font-size: 36px;
+        line-height: 34px;
+      }
     }
 
     p,
