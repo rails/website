@@ -15,7 +15,7 @@ Hi, it's [zzak](https://github.com/zzak). Let's explore this week's changes in t
 The first beta release was cut for Rails 8.1, see the post for full details.
 
 [Rails World 2025 Opening Keynote](https://www.youtube.com/watch?v=gcwzWzC7gUA)  
-Part of the newsletter team is enjoying Rails World in Amsterdam, say hi to them if you attend. If you (like me) you couldn't go, the first keynote is already up!
+Part of the newsletter team is enjoying Rails World in Amsterdam, say hi to them if you attend. If you (like me) couldn't go, the first keynote is already up!
 
 [Introduce new database configuration options for managing connection pools](https://github.com/rails/rails/pull/54175)  
 This PR adds `keepalive`, `max_age`, and `min_connections` -- and renames `pool` to `max_connections` to match.
