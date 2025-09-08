@@ -122,18 +122,20 @@ committers:
 issues:
   - name: Adam Hess
     github: HParker
-  - name: Andrew Novoselac
-    github: andrewn617
   - name: Adrianna Chang
     github: adrianna-chang-shopify
   - name: Akhil G Krishnan
     github: akhilgkrishnan
   - name: Alex Ghiculescu
     github: ghiculescu
+  - name: Andrew Novoselac
+    github: andrewn617
   - name: Edouard Chin
     github: Edouard-chin
   - name: Haroon Ahmed
     github: hahmed
+  - name: Joshua Young
+    github: joshuay03
   - name: Jorge Manrubia
     github: jorgemanrubia
   - name: Luan Vieira
