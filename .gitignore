@@ -1,4 +1,5 @@
 _site
+.bundle
 .nova
 .sass-cache
 .jekyll-cache
