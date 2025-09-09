@@ -3,7 +3,7 @@
 <html lang="en">
 {% include head.html %}
 
-<body>
+<body class="{% if page.id %}page-{{ page.id }}{% endif %}">
 {% include notification.html %}
 {% if page.id == 'home' %}
   {% include banner.html %}
