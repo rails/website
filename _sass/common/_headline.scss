@@ -63,6 +63,16 @@
     line-height: 26px;
   }
 
+  .page-home & {
+    h2 {
+      color: $color-red;
+      font-size: 47px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 43px;
+    }
+  }
+
   a {
 
     color: $color-black;
@@ -88,8 +98,6 @@
     font-weight: 600;
   }
 
-
-
   @media(min-width: 1024px) {
 
     font-size: 21px;
@@ -114,6 +122,13 @@
       font-size: 39px;
       letter-spacing: -0.01em;
       line-height: 44px;
+    }
+
+    .page-home & {
+      h2 {
+        font-size: 78px;
+        line-height: 72px;
+      }
     }
   }
 }
