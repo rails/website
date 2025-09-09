@@ -16,7 +16,7 @@ Long-running jobs can now be broken into discrete steps that allow execution to 
 Example:
 
 ```ruby
-class ProcessImportJob
+class ProcessImportJob < ApplicationJob
   include ActiveJob::Continuable
 
   def perform(import_id)
