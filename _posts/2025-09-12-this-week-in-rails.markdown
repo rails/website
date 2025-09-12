@@ -18,7 +18,7 @@ This prevents CI failures or unnecessary steps for applications that are databas
 Improves how arrays are handled in ActiveJob argument serialization. 
 Ensures serialized arrays round-trip correctly and fixes inconsistencies/bugs in how arrays were converted or stored.
 
-[Restore exact behavior of `AJ Arguments.serialize`](https://github.com/rails/rails/commit/5aedcc98e5074919be86a178a592158064ed37e8)  
+[Restore exact behavior of `AJ Arguments.serialize`](https://github.com/rails/rails/pull/55662)  
 Brings back previous behavior of the `ActiveJob::Arguments.serialize` method to avoid breaking changes, so that apps depending on old behavior won’t be surprised by serialization differences.
 
 [Job-date: fix date/time parsing in job arguments](https://github.com/rails/rails/pull/55661)  
@@ -31,13 +31,13 @@ Updates ActionController (or related) test behavior so that debug-level events a
 [Fixes and refinements to `deliver_all_later`](https://github.com/rails/rails/pull/55659)  
 Multiple improvements ensure mailers scheduled with `deliver_all_later` are never processed inline or duplicated, while also adding support for passing job options like queue and priority for more reliable background delivery.
 
-[Emit structured debug events in development only](https://github.com/rails/rails/commit/1850a9fee7cf2d4559df582eeb064ca7cb8f6d6a)  
+[Emit structured debug events in development only](https://github.com/rails/rails/pull/55657)  
 Changes so that structured debug events are only emitted in the **development** environment, reducing overhead and unwanted information in test/production environments.
 
-[Show engine routes in `/rails/info/routes`](https://github.com/rails/rails/commit/14940f28da495fe39ad86aa001d351839d9f6c5c)  
+[Show engine routes in `/rails/info/routes`](https://github.com/rails/rails/pull/55635)  
 Enhances the routes/info page (`/rails/info/routes`) to include routes from any  mounted engines in the application, making debugging easier when engines are used.
 
-[Optimize getting primary keys for PostgreSQL](https://github.com/rails/rails/commit/c93d1b09fcc013033af506b10fd60829267be85c)  
+[Optimize getting primary keys for PostgreSQL](https://github.com/rails/rails/pull/55654)  
 Improves efficiency of retrieving primary keys in PostgreSQL (faster introspection of table schemas, possibly making migrations or reflection-based operations snappier).
 
 [Fix Bootsnap precompilation in Docker builds](https://github.com/rails/rails/pull/55636)  
@@ -46,10 +46,10 @@ Addresses issues with precompiling Bootsnap cache inside Docker builds; ensures 
 [Allow disabling `action_controller.logger`](https://github.com/rails/rails/pull/55625)  
 Adds support to disable the ActionController logger by setting it to `nil` or `false`. Useful in environments where full logging is too verbose.
 
-[Fix auth generator to skip tests unless Minitest is used](https://github.com/rails/rails/commit/eecc362a96b263404edc49c246f657e1f9ab1d67)  
+[Fix Auth generator to skip tests unless Minitest is used](https://github.com/rails/rails/pull/55495)  
 Updates the authentication generator to only generate test files if the app is using Minitest. Keeps generator output cleaner for users of other test frameworks.
 
-[Improve route visualizer regex labels](https://github.com/rails/rails/commit/5d79b321785365973fb347456aaa1a37e735c98e)  
+[Improve route visualizer regex labels](https://github.com/rails/rails/pull/54558)  
 Makes route visualizer output more readable by adding better labels to regex/constrained routes; helps developers see what patterns or constraints are applied.
 
 ---
