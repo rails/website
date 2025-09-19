@@ -29,23 +29,23 @@ Engine routes are now displayed in `/rails/info/routes` alongside application ro
 [Restore Active Storage config to disable variants and analyzers](https://github.com/rails/rails/pull/55303)  
 Active Storage now lets you fully configure which analyzers and variant processor to use. You can clear out analyzers entirely or provide your own:
 
-    ```ruby
-    # ActiveStorage.analyzers can be set to an empty array:
-    config.active_storage.analyzers = []
-    # => ActiveStorage.analyzers = []
+```ruby
+# ActiveStorage.analyzers can be set to an empty array:
+config.active_storage.analyzers = []
+# => ActiveStorage.analyzers = []
 
-    # or use custom analyzer:
-    config.active_storage.analyzers = [ CustomAnalyzer ]
-    # => ActiveStorage.analyzers = [ CustomAnalyzer ]
-    ```
+# or use custom analyzer:
+config.active_storage.analyzers = [ CustomAnalyzer ]
+# => ActiveStorage.analyzers = [ CustomAnalyzer ]
+```
 
-    If no configuration is provided, it will use the default analyzers.
+If no configuration is provided, it will use the default analyzers.
 
-    You can also disable variant processor to remove warnings on startup about missing gems.
+You can also disable variant processor to remove warnings on startup about missing gems.
 
-    ```ruby
-    config.active_storage.variant_processor = :disabled
-    ```
+```ruby
+config.active_storage.variant_processor = :disabled
+```
 
 
 [Fix time attribute dirty tracking with timezone conversions](https://github.com/rails/rails/pull/55298)  
