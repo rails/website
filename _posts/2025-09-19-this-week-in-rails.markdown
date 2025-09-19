@@ -5,7 +5,7 @@ categories: news
 author: Emmanuel Hayford
 og_image: assets/images/this-week-in-rails.png
 published: true
-date: 2025-09-18
+date: 2025-09-19
 ---
 
 
