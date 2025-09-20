@@ -59,9 +59,29 @@ end
 
 def fetch_merged_prs(start_date, end_date, page)
   url = "https://api.github.com/search/issues?q=is:pr+repo:rails/rails+merged:#{start_date}..#{end_date}&page=#{page}"
-  uri = URI.parse(url)
-  body = uri.open.read
+  body = URI.parse(url).open.read
   JSON.parse(body)
+end
+
+def extract_intro_markdown(body)
+  text = body.to_s.dup
+  text = text.gsub("\r\n", "\n").gsub("\r", "\n")
+  text = text.gsub(/<!--.*?-->/m, "")
+
+  parts = text.split(/^\s*#+\s*Detail(s)?\b.*$/i, 2)
+
+  text = parts[0]
+  text = text.split(/^\s*#+\s*Checklist\b.*$/i, 2)[0]
+  text = text.strip
+  text = text.gsub(/\n{3,}/, "\n\n")
+  text
+end
+
+def format_for_post(markdown)
+  cleaned = markdown.to_s.strip
+  return "" if cleaned.empty?
+  lines = cleaned.split("\n")
+  lines.map.with_index { |line, idx| idx.zero? ? line.rstrip : "  #{line.rstrip}" }.join("\n")
 end
 
 post_content = []
@@ -76,17 +96,12 @@ while total_pages >= 0.0
   data = fetch_merged_prs(start_date, end_date, current_page)
 
   data["items"].each do |item|
-    summary = item["body"] ? item["body"] : "no description"
-    summary = summary.gsub(/.*Motivation.*[\/Background]?/, "")
-
-    if summary.match?(/Checklist/)
-      summary = summary.gsub(/### Checklist.*/m, "")
-    end
+    summary = extract_intro_markdown(item["body"])
 
     # The two spaces before line-breaks creates a soft-break in the Rails website.
     post_content << <<~POST
       [#{item["title"]}](#{item["html_url"]})
-      #{summary.squeeze("\n").lstrip.split("\n")[0..2].join("\n  ").lstrip}
+      #{format_for_post(summary)}
 
     POST
   end
