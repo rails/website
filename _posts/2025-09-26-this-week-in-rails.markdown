@@ -13,7 +13,7 @@ Happy Friday! After three weeks of conferencing, this is [Greg](https://greg.mol
 It was a busy week with a lot of changes, let's dive in.
 
 [Rails Version 8.0.3 has been released!](https://rubyonrails.org/2025/9/22/Rails-Version-8-0-3-has-been-released)  
-A new version of Rails has been released. Reaad the [CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.3) for the list of changes.
+A new version of Rails has been released. Read the [CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.3) for the list of changes.
 
 [Deprecate usage of custom ActiveJob serializers without public #klass methods](https://github.com/rails/rails/pull/55760)  
 With this change, custom Active Job serializers must have a public `#klass` method, the previous behavior is deprecated.
@@ -68,7 +68,7 @@ The new `Rails.configuration.action_controller.action_on_open_redirect` configur
 hosts, which helps prevent open redirect attacks.
 This configuration replaces the deprecated `raise_on_open_redirects` setting, providing the
 ability for large codebases to safely turn on the protection (after monitoring
-it with `:log`(logs a warning but allows the redirect) or `:notifications`(sends an ActiveSupport notification for monitoring).
+it with `:log`(logs a warning but allows the redirect) or `:notifications`(sends an Active Support notification for monitoring).
 
 
 [Support virtual (not persisted) generated columns on PostgreSQL 18+](https://github.com/rails/rails/pull/55142)  
