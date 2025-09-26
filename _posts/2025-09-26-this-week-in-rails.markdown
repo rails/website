@@ -12,6 +12,9 @@ date: 2025-09-26
 Happy Friday! After three weeks of conferencing, this is [Greg](https://greg.molnar.io), bringing you the news about the latest changes in your favorite framework.
 It was a busy week with a lot of changes, let's dive in.
 
+[Rails Version 8.0.3 has been released!](https://rubyonrails.org/2025/9/22/Rails-Version-8-0-3-has-been-released)  
+A new version of Rails has been released. Reaad the [CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.3) for the list of changes.
+
 [Deprecate usage of custom ActiveJob serializers without public #klass methods](https://github.com/rails/rails/pull/55760)  
 With this change, custom Active Job serializers must have a public `#klass` method, the previous behavior is deprecated.
 
