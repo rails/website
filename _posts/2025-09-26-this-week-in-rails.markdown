@@ -68,7 +68,7 @@ The new `Rails.configuration.action_controller.action_on_open_redirect` configur
 hosts, which helps prevent open redirect attacks.
 This configuration replaces the deprecated `raise_on_open_redirects` setting, providing the
 ability for large codebases to safely turn on the protection (after monitoring
-it with `:log`(ogs a warning but allows the redirect) or `:notifications`(sends an ActiveSupport notification for monitoring).
+it with `:log`(logs a warning but allows the redirect) or `:notifications`(sends an ActiveSupport notification for monitoring).
 
 
 [Support virtual (not persisted) generated columns on PostgreSQL 18+](https://github.com/rails/rails/pull/55142)  
