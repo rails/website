@@ -176,9 +176,9 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
     <div class="text__body">
       <div class="text__content common-content">
         <h3>ยกย่องโค้ดที่สวยงาม</h3>
-        <p>We write code not just to be understood by the computer or other programmers, but to bask in the warm glow of beauty. Aesthetically pleasing code is a value unto itself and should be pursued with vigor. That doesn’t mean that beautiful code always trumps other concerns, but it should have a full seat at the table of priorities.</p>
-        <p>So what is beautiful code? In Ruby, it’s often somewhere at the intersection between native Ruby idioms and the power of a custom domain-specific language. It’s a fuzzy line, but one well worth trying to dance.</p>
-        <p>Here’s a simple example from Active Record:</p>
+        <p>เราเขียนโค้ดไม่ใช่เพียงเพื่อให้คอมพิวเตอร์หรือโปรแกรมเมอร์คนอื่นเข้าใจเท่านั้น แต่ยังเพื่อชื่นชมความงดงามอันอบอุ่นด้วย โค้ดที่สวยงามในเชิงสุนทรียะ มีคุณค่าในตัวเองและควรถูกไล่ตามด้วยความมุ่งมั่น นั่นไม่ได้หมายความว่าโค้ดที่สวยงามจะสำคัญเหนือข้อพิจารณาอื่นเสมอไป แต่มันควรมีที่นั่งเต็มตัวบนโต๊ะของลำดับความสำคัญ</p>
+        <p>แล้วโค้ดที่สวยงามคืออะไรล่ะ? ในภาษา Ruby มันมักจะอยู่ที่จุดตัดระหว่างสำนวนแบบฉบับของ Ruby เองกับพลังของภาษาที่เจาะจงต่อโดเมน (domain-specific language) แบบกำหนดเอง มันเป็นเส้นแบ่งที่คลุมเครือ แต่ก็คุ้มค่าที่จะลองเต้นรำอยู่บนนั้น</p>
+        <p>นี่คือตัวอย่างง่าย ๆ จาก Active Record:</p>
 {% highlight ruby %}
 class Project < ApplicationRecord
   belongs_to :account
@@ -186,9 +186,9 @@ class Project < ApplicationRecord
   validates_presence_of :name
 end
 {% endhighlight %}
-        <p>This looks like DSL, but it’s really just a class definition with three class-method calls that take symbols and options. There’s nothing fancy here. But it sure is pretty. It sure is simple. It gives an immense amount of power and flexibility from those few declarations.</p>
-        <p>Part of the beauty comes from these calls honoring the previous principles, like Convention over Configuration. When we call belongs_to :account, we’re assuming that the foreign key is called account_id and that it lives in the projects table. When we have to designate the class_name of Person to the role of the participants association, we require just that class name definition. From it we’ll derive, again, the foreign keys and other configuration points.</p>
-        <p>Here’s another example from the database migrations system:</p>
+        <p>นี่ดูเหมือนจะเป็น DSL แต่จริง ๆ แล้วมันก็เป็นแค่การกำหนดคลาสที่มีการเรียกเมธอดระดับคลาสสามตัวซึ่งรับสัญลักษณ์และออปชัน ไม่มีอะไรซับซ้อนที่นี่ แต่มันดูสวยจริง ๆ และเรียบง่ายจริง ๆ มันมอบพลังและความยืดหยุ่นอย่างมากมายจากเพียงไม่กี่คำประกาศนั้น</p>
+        <p>ส่วนหนึ่งของความงามมาจากการเรียกใช้งานเหล่านี้ที่ให้เกียรติหลักการก่อนหน้า เช่น Convention over Configuration เมื่อเราเรียก belongs_to :account เรากำลังสมมติว่าคีย์ต่างประเทศมีชื่อว่า account_id และอยู่ในตาราง projects เมื่อเราต้องกำหนด class_name ของ Person ให้กับบทบาทของสมาคม participants เราต้องการเพียงคำจำกัดความชื่อคลาสนั้นเท่านั้น จากสิ่งนั้นเราจะอนุมาน (อีกครั้ง) คีย์ต่างประเทศและจุดกำหนดค่าต่าง ๆ อื่น ๆ ได้</p>
+        <p>นี่คือตัวอย่างอีกอันจากระบบไมเกรชันฐานข้อมูล:</p>
 {% highlight ruby %}
 class CreateAccounts < ActiveRecord::Migration
   def change
@@ -199,16 +199,16 @@ class CreateAccounts < ActiveRecord::Migration
   end
 end
 {% endhighlight %}
-        <p>This is the essence of framework power. The programmer declares a class according to certain convention, like a ActiveRecord::Migration subclass that implements #change, and the framework can do all the plumbing that goes around that, and know this is the method to call.</p>
-        <p>This leaves the programmer with very little code to write. In the case of migrations, not only will this allow a call to rails db:migrate to upgrade the database to add this new table, it’ll also allow it to go the other way of dropping this table with another call. This is very different from a programmer making all this happen and stitching the workflow together from libraries they call themselves.</p>
-        <p>Sometimes beautiful code is more subtle, though. It’s less about making something as short or powerful as possible, but more about making the rhythm of the declaration flow.</p>
-        <p>These two statements do the same:</p>
+        <p>นี่แหละคือแก่นแท้ของพลังของเฟรมเวิร์ก โปรแกรมเมอร์ประกาศคลาสตามธรรมเนียมบางอย่าง เช่น ซับคลาสของ ActiveRecord::Migration ที่มีเมธอด #change และเฟรมเวิร์กก็สามารถจัดการงานเบื้องหลังทั้งหมดที่เกี่ยวข้องได้ และรู้ว่านี่คือเมธอดที่ต้องเรียกใช้</p>
+        <p>สิ่งนี้ทำให้นักพัฒนามีโค้ดที่ต้องเขียนน้อยมาก ในกรณีของการทำไมเกรชัน ไม่เพียงแต่จะช่วยให้สามารถเรียกใช้คำสั่ง rails db:migrate เพื่ออัปเกรดฐานข้อมูลเพื่อเพิ่มตารางใหม่นี้ได้เท่านั้น แต่ยังช่วยให้สามารถทำในทางกลับกันคือการลบตารางนี้ได้ด้วยการเรียกอีกคำสั่งหนึ่งซึ่งแตกต่างอย่างมากจากการที่นักพัฒนาต้องทำให้ทุกอย่างเกิดขึ้นเองและประกอบเวิร์กโฟลว์จากไลบรารีที่พวกเขาเรียกใช้ด้วยตัวเอง</p>
+        <p>บางครั้งโค้ดที่งามตาก็แยบยลกว่านั้น มันไม่ได้เกี่ยวกับการทำให้บางสิ่งสั้นหรือทรงพลังที่สุดเท่าที่จะเป็นไปได้เท่านั้น แต่เป็นเรื่องของการทำให้จังหวะของคำประกาศลื่นไหล</p>
+        <p>คำสั่งสองบรรทัดนี้ทำงานเหมือนกัน:</p>
 {% highlight ruby %}
 if people.include? person
 ...
 if person.in? people
 {% endhighlight %}
-        <p>But the flow and focus is subtly different. In the first statement, the focus is on the collection. That’s our subject. In the second statement, the subject is clearly the person. There’s not much between the two statements in length, but I’ll contend that the second is far more beautiful and likely to make me smile when used in a spot where the condition is about the person.</p>
+        <p>แต่จังหวะการเล่าและจุดโฟกัสต่างกันอย่างแนบเนียน ในประโยคแรกจุดโฟกัสอยู่ที่คอลเลกชัน นั่นคือประธานของเรา ส่วนในประโยคที่สองประธานชัดเจนว่าเป็น "คน" ทั้งสองประโยคยาวพอๆ กัน แต่ผมขอยืนยันว่าประโยคที่สองงดงามกว่ามาก และมีแนวโน้มจะทำให้ผมยิ้มได้เมื่อถูกใช้ในจุดที่เงื่อนไขพูดถึงคน</p>
       </div>
     </div>
   </div>
