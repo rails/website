@@ -68,12 +68,12 @@ def extract_intro_markdown(body)
   text = text.gsub("\r\n", "\n").gsub("\r", "\n")
   text = text.gsub(/<!--.*?-->/m, "")
 
-  parts = text.split(/^\s*#+\s*Detail(s)?\b.*$/i, 2)
+  parts = text.split(/^\s*#+\s*Details?\b.*$/i, 2)
+  text = parts[1] || parts[0]
 
-  text = parts[0]
   if text
     text = text.gsub(/^\s*#+\s*Motivation \/ Background\s*\n+/i, "")
-
+    text = text.gsub(/^\s*#+\s*Details?\s*\n+/i, "")
     text = text.split(/^\s*#+\s*Checklist\b.*$/i, 2)[0]
     text = text&.strip
     text = text&.gsub(/\n{3,}/, "\n\n")
@@ -85,7 +85,7 @@ def format_for_post(markdown)
   cleaned = markdown.to_s.strip
   return "" if cleaned.empty?
   lines = cleaned.split("\n")
-  lines.map.with_index { |line, idx| idx.zero? ? line.rstrip : "  #{line.rstrip}" }.join("\n")
+  lines.map(&:rstrip).join("\n")
 end
 
 post_content = []
