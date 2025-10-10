@@ -73,8 +73,8 @@ def extract_intro_markdown(body)
   text = parts[0]
   if text
     text = text.split(/^\s*#+\s*Checklist\b.*$/i, 2)[0]
-    text = text.strip
-    text = text.gsub(/\n{3,}/, "\n\n")
+    text = text&.strip
+    text = text&.gsub(/\n{3,}/, "\n\n")
   end
   text
 end
