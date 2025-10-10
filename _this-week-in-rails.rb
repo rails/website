@@ -104,7 +104,7 @@ while total_pages >= 0.0
 
     # The two spaces before line-breaks creates a soft-break in the Rails website.
     post_content << <<~POST
-      [#{item["title"]}](#{item["html_url"]})
+      [#{item["title"]}](#{item["html_url"]})#{"  "}
       #{format_for_post(summary)}
 
     POST
@@ -132,10 +132,10 @@ Hi, it's [#{author}](#{author_url}). Let's explore this week's changes in the Ra
 )
 
 footer = %(
-_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B#{start_date}%7D...main@%7B#{end_date}%7D)._
+_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B#{start_date}%7D...main@%7B#{end_date}%7D)._#{"  "}
 _We had [#{contributors.total} contributors](#{contributors.url}) to the Rails codebase this past week!_
 
-Until next time!
+Until next time!#{"  "}
 
 _[Subscribe](https://world.hey.com/this.week.in.rails) to get these updates mailed to you._
 )
