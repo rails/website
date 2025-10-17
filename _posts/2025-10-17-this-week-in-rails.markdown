@@ -41,8 +41,7 @@ example(dev):001>
 ```
 
 [Fix SQLite3 data loss during table alterations with CASCADE foreign keys.](https://github.com/rails/rails/pull/55907)    
-Fix SQLite3 data loss during table alterations with `CASCADE` foreign keys,.
-
+Fix SQLite3 data loss during table alterations with `CASCADE` foreign keys.
 When altering a table in SQLite3 that is referenced by child tables with `ON DELETE CASCADE` foreign keys, ActiveRecord would silently delete all data from the child tables. This occurred because SQLite requires table recreation for schema changes, and during this process:
 
 1. The original table is temporarily dropped
@@ -51,8 +50,7 @@ When altering a table in SQLite3 that is referenced by child tables with `ON DEL
 
 The fix simply reverses the order to follow the [official SQLite 12-step ALTER TABLE procedure](https://www.sqlite.org/lang_altertable.html#otheralter).
 
-[Make the Structured Event Subscriber emit events in format that are useful for logging](https://github.com/rails/rails/pull/55904)  
-Related to #55900.
+[Make the Structured Event Subscriber emit events in format that are useful for logging](https://github.com/rails/rails/pull/55904
 
 [Improve support for SQLite database URIs](https://github.com/rails/rails/pull/55896)  
 This commit introduces a new singleton method on the connection adapter, `SQLite3Adapter.resolve_path`, to reliably resolve a filesystem path from the database configuration.
@@ -72,22 +70,20 @@ This adds a parameter to `redirect.action_dispatch` which may not be desirable. 
 [Only preconnect connections that have been prepopulated](https://github.com/rails/rails/pull/55857)  
 Otherwise-manually-created connections that have not directly cause a connection should remain lazy.
 
-Since #54175, merely touching `AR::Base.lease_connection` was sufficient to cause a network connection, which could inflate database server connection counts. We don't want that.
-
 [Refactor gcs_service public interface to bring more in line with s3_service](https://github.com/rails/rails/pull/55856)  
-The s3_service exposes it's respective client and bucket attributes publicly. I think this makes sense in the context of active storage, as it allows users to rely on the same adapter & configs that the framework is using for Activestorage without having to duplicate your own client and ensure it matches the original, which can be modified at runtime, in order to perform operations outside of the scope of ActiveStorage.
+The `s3_service` exposes it's respective client and bucket attributes publicly. I think this makes sense in the context of active storage, as it allows users to rely on the same adapter & configs that the framework is using for Activestorage without having to duplicate your own client and ensure it matches the original, which can be modified at runtime, in order to perform operations outside of the scope of ActiveStorage.
 
 [Make `ActiveRecord::Assertions::QueryAssertions` method outputs consistent](https://github.com/rails/rails/pull/55852)  
 
 [Skip analyze job if ruby-vips or mini_magick gem are missing](https://github.com/rails/rails/pull/55839)
 
 [Add structured event for Rails deprecations, when `config.active_support.deprecation` is set to `:notify`.](https://github.com/rails/rails/pull/55838)  
-Opted to make it dependent on the `:notify` behavior than adding yet another behavior just for structured events
+This change makes it dependent of the `:notify` behavior than adding yet another behavior just for structured events
 
 [Fix `change_column` to preserve old column attributes for sqlite3](https://github.com/rails/rails/pull/55837)  
 
 [Add prefix option to has_secure_token for improved token identification](https://github.com/rails/rails/pull/55822)  
-    Adds an optional `:prefix` parameter to has_secure_token that prepends a string to generated tokens, making token types immediately identifiable in logs, debugging sessions, and error messages
+Adds an optional `:prefix` parameter to has_secure_token that prepends a string to generated tokens, making token types immediately identifiable in logs, debugging sessions, and error messages
 
 ```
 # Before:
@@ -108,10 +104,9 @@ This Pull Request adds a behaviour to `Rails::Application` which will raise an e
 [Hide backtrace when parallel tests get interrupted](https://github.com/rails/rails/pull/55720)  
 Right now, if one presses CTRL+C during the parallel test run, one gets a very long backtrace that is very annoying.
 
-[Respect the file_watcher config in the routes reloader](https://github.com/rails/rails/pull/55709)  
-Follow-up to #55708, where using `EventedFileUpdateChecker` also proved to be a possible workaround, but we found out that it's hardcoded inside `RoutesReloader`.
-
 [Add dark mode to http error pages](https://github.com/rails/rails/pull/55671)  
+We now have a dark mode on error pages! 
+
 <img alt="Error pages dark mode" src="https://github.com/user-attachments/assets/2dcc36e7-fef9-4019-86ed-47c0e7068852" />
 
 [Add error type support to `ActiveModel::Errors#messages_for` and `ActiveModel::Errors#full_messages_for` methods](https://github.com/rails/rails/pull/53096)  
