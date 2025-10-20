@@ -25,7 +25,7 @@ This commit fixes the behavior by only passing `shallow` to the `scope` when it 
 [Add advisory DB update by default in bin/bundler-audit](https://github.com/rails/rails/pull/55913)  
 This Pull Request updates the `bin/bundler-audit` script to include the `--update` option.
 
-[Fix negative scopes for enums to include records with `nil` values](https://github.com/rails/rails/pull/55912)    
+[Fix negative scopes for enums to include records with `nil` values](https://github.com/rails/rails/pull/55912)  
 Since NULL != NULL in SQL, the condition where `column != 'value'` always ignores rows with NULLs, but should include them too.
 
 [Show help hint when starting `bin/rails console`](https://github.com/rails/rails/pull/55910)  
