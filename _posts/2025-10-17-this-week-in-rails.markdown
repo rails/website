@@ -75,7 +75,7 @@ The `s3_service` exposes it's respective client and bucket attributes publicly. 
 
 [Make `ActiveRecord::Assertions::QueryAssertions` method outputs consistent](https://github.com/rails/rails/pull/55852)  
 
-[Skip analyze job if ruby-vips or mini_magick gem are missing](https://github.com/rails/rails/pull/55839)
+[Skip analyze job if ruby-vips or mini_magick gem are missing](https://github.com/rails/rails/pull/55839)  
 
 [Add structured event for Rails deprecations, when `config.active_support.deprecation` is set to `:notify`.](https://github.com/rails/rails/pull/55838)  
 This change makes it dependent of the `:notify` behavior than adding yet another behavior just for structured events
