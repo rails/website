@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bound SQL literals in CTEs, negative scopes for enums and more!"
+title: "Bound SQL literals in CTEs, new tutorial and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
