@@ -83,7 +83,7 @@ This change makes it dependent of the `:notify` behavior than adding yet another
 [Fix `change_column` to preserve old column attributes for sqlite3](https://github.com/rails/rails/pull/55837)  
 
 [Add prefix option to has_secure_token for improved token identification](https://github.com/rails/rails/pull/55822)  
-Adds an optional `:prefix` parameter to has_secure_token that prepends a string to generated tokens, making token types immediately identifiable in logs, debugging sessions, and error messages
+Adds an optional `:prefix` parameter to `has_secure_token` that prepends a string to generated tokens, making token types immediately identifiable in logs, debugging sessions, and error messages
 
 ```
 # Before:
