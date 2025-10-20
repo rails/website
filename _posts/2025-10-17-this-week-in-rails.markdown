@@ -15,7 +15,7 @@ Followup on https://github.com/rails/rails/pull/55904.
 
 [Add support for bound SQL literals in CTEs](https://github.com/rails/rails/pull/55918)  
 When creating a SQL literal with bind value parameters, `Arel.sql` returns an instance of `Arel::Nodes::BoundSqlLiteral`, which is not currently supported by `#build_with_expression_from_value`.
-This Pull Request updates the method to accept both `Arel::Nodes::SqlLiteral` and `Arel::Nodes::BoundSqlLiteral`.
+This PR updates the method to accept both `Arel::Nodes::SqlLiteral` and `Arel::Nodes::BoundSqlLiteral`.
 
 [Fix passing both module: and shallow: to resources](https://github.com/rails/rails/pull/55916)  
 This broke because the keyword arg change started always passing `shallow:` through to this `scope` block. 
