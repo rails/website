@@ -57,7 +57,7 @@ This commit introduces a new singleton method on the connection adapter, `SQLite
 
 This method in the connection adapter's initializer to ensure the database file's directory exists. Previously the adapter omitted this check for database URIs.
 
-It also introduces usage of this method in the `create` and `drop` database tasks which also previously did not fully support database URIs.
+This PR also adds usage of this method in the `create` and `drop` database tasks which previously did not fully support database URIs.
 
 [Fix verbose redirect output and route source mapping](https://github.com/rails/rails/pull/55889)  
 This Pull Request changes mostly dispatch code to record some source location in redirect endpoints when needed. This allows this feature to work in environments other than development, if needed, instead of depending on the other route source locations feature.
