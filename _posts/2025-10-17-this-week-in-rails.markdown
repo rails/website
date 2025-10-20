@@ -40,7 +40,7 @@ Type 'help' for help.
 example(dev):001>
 ```
 
-[Fix SQLite3 data loss during table alterations with CASCADE foreign keys.](https://github.com/rails/rails/pull/55907)    
+[Fix SQLite3 data loss during table alterations with CASCADE foreign keys.](https://github.com/rails/rails/pull/55907)  
 Fix SQLite3 data loss during table alterations with `CASCADE` foreign keys.
 When altering a table in SQLite3 that is referenced by child tables with `ON DELETE CASCADE` foreign keys, ActiveRecord would silently delete all data from the child tables. This occurred because SQLite requires table recreation for schema changes, and during this process:
 
