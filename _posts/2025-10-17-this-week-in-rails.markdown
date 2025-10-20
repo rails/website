@@ -64,7 +64,7 @@ This Pull Request changes mostly dispatch code to record some source location in
 
 This adds a parameter to `redirect.action_dispatch` which may not be desirable. We can instead hack the caller trace to include the source location or use route source locations. Open to feedback on this, but I prefer to keep things simple here with an event parameter.
 
-[Load core extensions with require_relative](https://github.com/rails/rails/pull/55887)    
+[Load core extensions with require_relative](https://github.com/rails/rails/pull/55887)  
 `require_relative` is more aligned with this very intentional file structure, and we get some less `$LOAD_PATH` lookups as an extra ball.
 
 [Only preconnect connections that have been prepopulated](https://github.com/rails/rails/pull/55857)  
