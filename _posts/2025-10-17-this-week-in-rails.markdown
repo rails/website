@@ -55,7 +55,7 @@ The fix simply reverses the order to follow the [official SQLite 12-step ALTER T
 [Improve support for SQLite database URIs](https://github.com/rails/rails/pull/55896)  
 This commit introduces a new singleton method on the connection adapter, `SQLite3Adapter.resolve_path`, to reliably resolve a filesystem path from the database configuration.
 
-It uses this method in the connection adapter's initializer to ensure the database file's directory exists. Previously the adapter omitted this check for database URIs.
+This method in the connection adapter's initializer to ensure the database file's directory exists. Previously the adapter omitted this check for database URIs.
 
 It also introduces usage of this method in the `create` and `drop` database tasks which also previously did not fully support database URIs.
 
