@@ -3,7 +3,7 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-3.4-bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	}
