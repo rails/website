@@ -7,8 +7,7 @@ published: true
 date: 2025-10-21 21:30:00 -04:00
 ---
 
-Rails 8.1 represents the work of [over 500 contributors](https://contributors.rubyonrails.org/edge/contributors) across 2500 commits since our last major release. After some
-weeks of people trying the betas and releases candidates, we are excited to share the final release.
+Rails 8.1 represents the work of [over 500 contributors](https://contributors.rubyonrails.org/edge/contributors) across 2500 commits since our last major release. After some weeks of people trying the betas and releases candidates, we are excited to share the final release.
 
 This release shows the stability of Rails, with applications like Shopify and HEY running it in production already for months.
 
@@ -189,6 +188,9 @@ reported usage regardless. Defaults are `:warn` mode and disabled backtraces.
 
 Upstreamed by Xavier Noria while consulting for [Gusto](https://gusto.com/).
 
+## Registry-Free Kamal Deployments
+
+Kamal no longer needs a remote registry, like Docker Hub or GHCR, to do basic deploys. By default, Kamal 2.8 will now use a local registry for simple deploys. For large-scale deploys, you'll still want to use a remote registry, but this makes it easier to get started and see your first Hello World deployment in the wild.
 
 ## And Everything Else
 
