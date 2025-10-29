@@ -24,6 +24,12 @@ Version 7.1.6 is the final release of this series.
 
 If you are still running Rails 7.0 or 7.1, we strongly encourage you to upgrade to a supported version as soon as possible. These versions will no longer receive security fixes or bug fixes.
 
+## Extended Support for Rails 8.0
+
+We are also announcing that **Rails 8.0 support has been extended by 6 months**. This extension was made because Rails 8.1 was released more than six months after Rails 8.0, and per our maintenance policy, we extend support when no release is made within one year.
+
+This means Rails 8.0 will now receive Bug fixes until May 7, 2026 (extended from November 7, 2025).
+
 ## Currently Supported Versions
 
 After these releases, the following versions are currently supported:
