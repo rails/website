@@ -11,7 +11,7 @@ date: 2025-10-31
 
 Hi, [Wojtek](https://x.com/morgoth85) here. 🎃 Let's see if there are any spooky changes in Rails. 🎃
 
-[New Rails Releases and End of Support Announcement](http://127.0.0.1:4000/2025/10/29/new-rails-releases-and-end-of-support-announcement)  
+[New Rails Releases and End of Support Announcement](https://rubyonrails.org/2025/10/29/new-rails-releases-and-end-of-support-announcement)  
 Versions 7.0.10, 7.1.6, 7.2.3, 8.0.4, and 8.1.1 have been released.
 Rails 8.0 has received extended support.
 
