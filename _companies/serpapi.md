@@ -35,5 +35,5 @@ github_contributions:
   - name: "google-local-results-ai-parser "
     url: "https://github.com/serpapi/google-local-results-ai-parser"
 community: |
-SerpApi is also active in the wider developer community, organizing and sponsoring events such as IDSW.dev and PyCon Indonesia, as well as [Riverhacks x NASA Space Apps Challenge hackathon](https://riverhacks2025.devpost.com/) and [Multimodal Search AI (Hybrid) Hackathon](https://paris.aitinkerers.org/p/ai-hackathon-real-time-search-powered-by-serpapi-hybrid)
+  SerpApi is also active in the wider developer community, organizing and sponsoring events such as IDSW.dev and PyCon Indonesia, as well as [Riverhacks x NASA Space Apps Challenge hackathon](https://riverhacks2025.devpost.com/) and [Multimodal Search AI (Hybrid) Hackathon](https://paris.aitinkerers.org/p/ai-hackathon-real-time-search-powered-by-serpapi-hybrid)
 ---
