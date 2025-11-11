@@ -16,6 +16,7 @@ Founded in 2017, SerpApi enables developers and companies to scrape search engin
 >We at SerpApi have used Rails since our earliest days. I’m grateful for how easy it is to maintain and improve our product with it. I’m also inspired by how Rails helped make the MVC pattern a global standard in web development.<br>
 ><br>_Illia Zub, Operations Engineer, SerpApi_<br>
 >
+
 SerpApi’s API, frontend, and background jobs all run on Ruby on Rails. Their app is a majestic monolith, deployed on a cluster of AWS EC2 instances from their automation scripts from CI.
 
 SerpApi relies on a wide range of gems including **Mongoid**, **Sidekiq**, **Redis**, **Puma**, **Stripe-Rails**, **Airbrake**, **AWS SDK**, **HTTP.rb**, **Nokogiri**, **Nokolexbor**, and **Geokdtree**. For frontend development, the team uses **ERB**, **jQuery-Rails**, and **React-Rails**.
