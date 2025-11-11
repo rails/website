@@ -8,8 +8,6 @@ intro: |
 logo: /assets/images/logo-serpapi.png
 exturl: https://serpapi.com/
 company_type: Private
-stock_ticker:  
-valuation:  
 founded_date: 2017
 headquarters: "**Austin, TX**"
 employees_range: "36"
@@ -36,11 +34,6 @@ github_contributions:
     url: "https://github.com/serpapi/uule_converter"
   - name: "google-local-results-ai-parser "
     url: "https://github.com/serpapi/google-local-results-ai-parser"
-contribution_string:  
 community: |
-SerpApi is also active in the wider developer community, organizing and sponsoring events such as IDSW.dev and PyCon Indonesia, as well as:
-[Riverhacks x NASA Space Apps Challenge hackathon](https://riverhacks2025.devpost.com/)
-[Multimodal Search AI (Hybrid) Hackathon](https://paris.aitinkerers.org/p/ai-hackathon-real-time-search-powered-by-serpapi-hybrid)
-case_study_blurb: 
-case_study_url: 
+  SerpApi is also active in the wider developer community, organizing and sponsoring events such as IDSW.dev and PyCon Indonesia, as well as [Riverhacks x NASA Space Apps Challenge hackathon](https://riverhacks2025.devpost.com/) and [Multimodal Search AI (Hybrid) Hackathon](https://paris.aitinkerers.org/p/ai-hackathon-real-time-search-powered-by-serpapi-hybrid)
 ---
