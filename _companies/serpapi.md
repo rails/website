@@ -5,7 +5,7 @@ description: "SerpApi is a real-time API to access Google search results."
 name: SerpApi
 intro: |
   SerpApi enables developers and companies to scrape search engine results from platforms like Google, Amazon, and more, delivering the results in a clean and structured JSON format.
-logo: /assets/images/logo-serpapi.png
+logo: /assets/images/logo-serpapi.svg
 exturl: https://serpapi.com/
 company_type: Private
 founded_date: 2017

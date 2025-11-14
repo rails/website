@@ -5,7 +5,7 @@ description: "Higher Pixels is a product development company and the proud archi
 name: Higher Pixels
 intro: |
   Higher Pixels is a product development company and the proud architect of the majestic monolith of podcasting: Buzzsprout, the easiest way to start podcasting and keep podcasting. They continue to expand their product StreamCare, aligning healthcare stakeholders for better outcomes, while maintaining their legacy products Tick, time tracking that keeps projects profitable, and Donor Tools, empowering nonprofits to easily manage donations. Across industries, they create web products that are elegantly designed and a joy to use.
-logo: /assets/images/logo-higherpixels-color.svg
+logo: /assets/images/logo-higherpixels.svg
 exturl: https://www.higherpixels.com/
 company_type: Private
 founded_date: 1996
