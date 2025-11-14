@@ -32,7 +32,8 @@ require 'nokogiri'
 require 'reverse_markdown'
 require 'date'
 
-post_date = ARGV[1] || Date.today.to_s
+date = Date.today
+post_date = ARGV[1] || Time.utc(date.year, date.month, date.day)
 
 class HeyWorldEmail
   attr_accessor :email, :post_date
