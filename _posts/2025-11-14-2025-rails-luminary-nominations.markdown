@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nominate someone for the 2025 Rails Luminary Awards"
+title: "Nominate a 2025 Rails Luminary"
 categories: news
 author: Amanda Perino
 published: true
