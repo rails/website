@@ -11,7 +11,7 @@ date: 2025-11-14
 
 Happy Friday! This is [Greg](https://greg.molnar.io), bringing you the latest changes from the Rails codebase.
 
-[The 2025 Rails Luminary nominations are open.](https://rubyonrails.org/2025/11/14/2025-rails-luminary-nominations) 
+[The 2025 Rails Luminary nominations are open.](https://rubyonrails.org/2025/11/14/2025-rails-luminary-nominations)  
 If you know of someone who has consistently gone above and beyond to contribute to the framework, triaging bugs, improving performance, adding helpful features or documentation, creating or maintaining gems, etc. please nominate them for the 2025 Rails Luminary Award by Dec 3.
 
 [Remove explicit _--config_ from RuboCop binstub templates](https://github.com/rails/rails/pull/56154)  
