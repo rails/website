@@ -9,7 +9,7 @@ date: 2023-04-09
 
 The Rails Foundation is proud to welcome <a href="https://www.planetargon.com/">Planet Argon</a> as our newest Contributing member.
 
-<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-planet-argon.png" style="width: 50%"></p>
+<p style="text-align: center;"><img src="/assets/images/logo-planet-argon.png" style="width: 55%;"></p>
 
 Planet Argon have been active participants in the Ruby on Rails ecosystem since the beginning of 2005. And when we say active, we are not exaggerating.
 
@@ -29,4 +29,4 @@ We look forward to collaborating with Planet Argon collaborating on improving an
 
 Planet Argon joins the Rails Foundation Core members <a href="https://cookpad.com">Cookpad</a>, <a href="https://www.doximity.com">Doximity</a>, <a href="https://www.fleetio.com">Fleetio</a>, <a href="https://github.com">GitHub</a>, <a href="https://www.intercom.com">Intercom</a>, <a href="https://www.procore.com">Procore</a>, <a href="https://www.shopify.com">Shopify</a>, and <a href="https://37signals.com">37signals</a>, and Contributing member <a href="https://www.cedarcode.com">Cedarcode</a>.
 
-If your company would also like to explore becoming a Contributing member, please reach out to <a href="mailto:foundation@rubyonrails.org">foundation@rubyonrails.org</a>. By joining the Rails Foundation, you will have the opportunity to help us grow and strengthen the Ruby on Rails community for generations to come. 
+If your company would also like to explore becoming a Contributing member, please reach out to <a href="mailto:foundation@rubyonrails.org">foundation@rubyonrails.org</a>. By joining the Rails Foundation, you will have the opportunity to help us grow and strengthen the Ruby on Rails community for generations to come.

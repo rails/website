@@ -11,15 +11,15 @@ The Rails World 2024 Call for Papers is now open. Here’s an overview of what k
 
 [Rails World](/world/2024) takes place on September 26 & 27, 2024 at Evergreen Brickworks in Toronto, Canada, and we are expecting 1,000 attendees.
 
-This year there will be 24 talks and keynotes across two tracks. Preference will be for technical talks with concrete takeaways, and original talks that will be presented for the first time at Rails World 2024. 
+This year there will be 24 talks and keynotes across two tracks. Preference will be for technical talks with concrete takeaways, and original talks that will be presented for the first time at Rails World 2024.
 
 This CFP will remain open until March 21, and we aim to inform all applicants if they are accepted (or not) before tickets are released.
 
 <a href="https://sessionize.com/rails-world/">Submit your proposal here</a>.
 
-**But first: what kind of talks are we looking for?** 
+**But first: what kind of talks are we looking for?**
 
-Rails is stronger than ever thanks to continued progress in both core frameworks, like Active Record and Action Mailbox, as well as associated tools and frameworks, like Hotwire, Kredis, and Propshaft. 
+Rails is stronger than ever thanks to continued progress in both core frameworks, like Active Record and Action Mailbox, as well as associated tools and frameworks, like Hotwire, Kredis, and Propshaft.
 
 The upcoming <a href="https://github.com/rails/rails/milestone/87">Rails 8.0 release</a> is going to push the bar even further.
 
@@ -37,22 +37,22 @@ We will also be on the lookout for talks that align Rails with emerging or impor
 - Best practices for Rails development, including testing, deployment, and performance optimization: What works for you or your team?
 - The state of Rails and its role in the broader tech industry: What are potential areas for growth and innovation?
 
-We encourage you to submit proposals that challenge the status quo, showcase forward-thinking ideas, and push the boundaries of what’s possible with Rails. 
+We encourage you to submit proposals that challenge the status quo, showcase forward-thinking ideas, and push the boundaries of what’s possible with Rails.
 
 Due to space limitations, we will not be accepting workshop proposals this year.
 
 **Now, the fun stuff: speaker benefits**
 
-Huge shout out to our sponsor <a href="https://fullscript.com/">Fullscript</a> for supporting speakers this year. 
+Huge shout out to our sponsor <a href="https://fullscript.com/">Fullscript</a> for supporting speakers this year.
 
-<p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-fullscript.svg" style="width: 50%"></p>
+<p style="text-align: center;"><img src="/assets/images/logo-fullscript.svg" style="width: 55%;"></p>
 
 We want the experience of speaking at Rails World to be one of the best and most inviting in the industry. Thanks to Fullscript, we are able to offer each speaker a $400 USD travel stipend to offset the cost of travel to Toronto in addition to the below benefits. Their sponsorship will also cover the speaker dinner and the on-site speaker lounge to help you prep for your talk.
 
 If you are chosen as a speaker, here is what is included:
 
 - **Free admission** to the conference, naturally.
-- **Accommodation**: The Rails Foundation will cover 3 nights hotel accommodation for each speaker in the speaker hotel (Sept 25-28). 
+- **Accommodation**: The Rails Foundation will cover 3 nights hotel accommodation for each speaker in the speaker hotel (Sept 25-28).
 - **Stipend**: A $400 travel stipend to offset the cost of individual travel thanks to Fullscript.
 - **Speaker dinner**: Speakers will be invited to a private dinner hosted by Rails Foundation Core & Contributing members on Sept 26.
 - **A speaker gift**

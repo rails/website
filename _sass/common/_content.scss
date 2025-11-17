@@ -191,7 +191,7 @@
 
   }
 
-  a {
+  a:not(.common-button) {
 
     color: $color-red;
     font-weight: 600;
