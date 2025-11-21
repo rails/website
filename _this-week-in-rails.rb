@@ -114,9 +114,11 @@ while total_pages >= 0.0
   total_pages -= 1.0
 end
 
+title_date = end_date.strftime("%B %-d, %Y")
+
 meta = %(---
 layout: post
-title: "TODO: add a title"
+title: "This Week in Rails: #{title_date}"
 categories: news
 author: #{author}
 og_image: assets/images/this-week-in-rails.png
