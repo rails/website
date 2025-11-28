@@ -10,7 +10,7 @@ date: 2025-11-28
 
 Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Let's explore this week's changes in the Rails codebase.
 
-[Active Support Instrumentation Documentation](https://github.com/rails/rails/pull/56238)
+[Active Support Instrumentation Documentation](https://github.com/rails/rails/pull/56238)  
 This Pull Request updates the Active Support Instrumentation documentation to receive various additions, improvements and more.
 It is now open for review and feedback from the community!
 
