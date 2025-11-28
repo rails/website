@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "This Week in Rails: November 28, 2025"
+title: "Active Support Instrumentation Documentation, QueryIntent#execute! and more!"
 categories: news
-author: vipul
+author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
 published: true
 date: 2025-11-28
