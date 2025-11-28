@@ -12,7 +12,7 @@ Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Let's explore this week's
 
 [Active Support Instrumentation Documentation](https://github.com/rails/rails/pull/56238)  
 The Rails Foundation documentation team continues on improving different areas of the Guides.
-This Pull Request updates the Active Support Instrumentation documentation to receive various additions, improvements and more.
+This Pull Request updates the Active Support Instrumentation documentation to receive various additions, improvements, and more.
 
 [Ensure TimeWithZone#as_json always returns a UTF-8 string](https://github.com/rails/rails/pull/56242)  
 This PR addresses a regression in Rails 8.1.0 where `ActiveSupport::TimeWithZone#as_json` was returning strings with incorrect encoding. 
