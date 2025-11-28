@@ -63,7 +63,7 @@ ensuring eager loading behavior remains consistent in CI regardless of whether r
 [QueryIntent#execute!](https://github.com/rails/rails/pull/56129)  
 This PR introduces `QueryIntent#execute!` to improve Active Record's internal query execution architecture. 
 Previously, query intents were passive containers passed through the system, but now they can actively execute queries and store results. 
-This refactoring makes `QueryIntent` instances self-sufficient, they know which adapter they belong to and can ask the adapter to do work like query preprocessing. 
+This refactoring makes `QueryIntent` instances self-sufficient. They know which adapter they belong to and can ask the adapter to do work like query preprocessing. 
 The change streamlines the query execution flow and sets the foundation for better handling of query results in different formats (raw or cast).
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-11-21%7D...main@%7B2025-11-28%7D)._
