@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Schema-Enforced JSON Access, Postgres Type Decoding, and more"
+title: "Schema-Enforced JSON Access, Postgres Type Decoding, and more!"
 categories: news
 author: Emmanuel Hayford
 og_image: assets/images/this-week-in-rails.png
@@ -44,7 +44,7 @@ SecureRandom.base32        # => "PAK1NG78CM1HJ44A"
 SecureRandom.base32(24)    # => "BN9EAB8RG9BNTTC9BX7P5JGJ"
 ```
 
-[ActionText: Validate `RemoteImage` URLs](https://github.com/rails/rails/pull/56283)  
+[ActionText: Validate RemoteImage URLs](https://github.com/rails/rails/pull/56283)  
 `RemoteImage.from_node` now validates the URL before creating a `RemoteImage` object, using the same regex that `AssetUrlHelper` uses during rendering. URLs like "image.png" that would previously have been passed to the asset pipeline and raised an `ActionView::Template::Error` are rejected early, and gracefully fail by resulting in a `MissingAttachable`.
 
 [Introduce DevToolsController for Chrome workspaces](https://github.com/rails/rails/pull/56245)  
@@ -66,7 +66,7 @@ ActiveRecord::Base.connection
 #=> BigDecimal
 ```
 
-[`ActiveStorage` immediate variants](https://github.com/rails/rails/pull/51951)  
+[ActiveStorage immediate variants](https://github.com/rails/rails/pull/51951)  
 This Pull Request introduces the `immediate` option and follows the existing patterns around `preprocessed`.
 
 ```ruby
@@ -75,7 +75,7 @@ has_one_attached :avatar_with_immediate do |attachable|
 end
 ```
 
-[Extract `ActionText::Editor` base class and `ActionText::TrixEditor` adapter](https://github.com/rails/rails/pull/51238)  
+[Extract ActionText::Editor base class and ActionText::TrixEditor adapter](https://github.com/rails/rails/pull/51238)  
 The introduction of the `ActionText::TrixEditor` class enables the
 deprecation of a variety of class and instance-level methods across the
 `ActionText` namespace. Action Text benefits from deprecating methods in
