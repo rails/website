@@ -1,0 +1,319 @@
+---
+layout: default
+title: "Cookpad Case Study — Ruby on Rails"
+description: "Read how Rails has helped Cookpad serve 100M+ home cooks."
+og_image: assets/images/case-study-cookpad.jpg
+permalink: /docs/case-studies/cookpad
+redirect_from:
+  - /docs/case-studies/cookpad/
+---
+
+<div
+  class="docs casestudy heading common-padding--bottom common-padding--top-small"
+>
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>
+          The Secret Ingredient: How Rails Helps Cookpad Serve 100M+ Home Cooks.
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>
+          Cookpad is the world’s largest recipe-sharing platform, where over 100
+          million home cooks search, upload, and share their own recipes each
+          month. Founded in Japan, it’s become a staple in millions of kitchens
+          and has since expanded to more than 70 countries and 35 languages.
+        </p>
+
+        <p>
+          Originally built on ColdFusion in 1997, Cookpad migrated to Ruby on
+          Rails in 2007 to improve development speed, flexibility, and long-term
+          maintainability. Today, Rails is still the backbone of Cookpad’s
+          infrastructure, powering everything from recipe search to mobile APIs.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__quote">
+      <img
+        src="/assets/images/case-cookpad-miles-woodroffe.jpg"
+        alt="Miles Woodroffe, Cookpad"
+      />
+      <blockquote>
+        <br />
+        &ldquo;Development sped up, releases became more frequent, and Cookpad
+        was able to expand beyond Japan into 70 countries and 35
+        languages.&rdquo;
+        <cite>
+          &mdash; <b>Miles Woodroffe</b>, <br />Fellow, Former Global CTO,
+          Cookpad</cite
+        >
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Why Rails?</h2>
+
+        <p>
+          At Cookpad, new features are developed as experiments and validated
+          through user feedback. But by the mid-2000s, their ColdFusion-based
+          system was slowing them down. The codebase had become complex and
+          difficult to maintain, making it hard to introduce new features or
+          iterate quickly. They needed a framework that supported rapid
+          experimentation without too much overhead, so they started looking for
+          an alternative.
+        </p>
+        <p>
+          In 2007, they decided to migrate to Rails. Even though no one on their
+          team had prior experience with it, Rails’
+          convention-over-configuration approach fit perfectly with their need
+          for fast prototyping. Instead of spending time on setup and low-level
+          implementation details, the team could focus on building, testing, and
+          improving features based on user feedback.
+        </p>
+        <p>
+          That shift paid off quickly. Development sped up, releases became more
+          frequent, and Cookpad was able to expand beyond Japan into 70
+          countries and 35 languages. Just two years later, in 2009, the company
+          went public on the Tokyo Stock Exchange, all with Rails quietly
+          running under the hood.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img
+        src="/assets/images/case-cookpad-image1.webp"
+        alt="A person looking at the Cookpad app on a cell phone"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>How Rails Powers Cookpad Today</h2>
+
+        <p>
+          Today, Cookpad mostly runs as a Rails monolith, with a few services
+          extracted where it made sense (like search and payments). The same
+          backend also serves as the API for both iOS and Android apps, which
+          keeps development simpler, reduces redundancy, and keeps the user
+          experience consistent across platforms.
+        </p>
+        <p>
+          Because Cookpad’s workload is mostly read-heavy from users browsing
+          recipes, database performance and scalability are critical, so Rails’
+          seamless integration with MySQL on AWS RDS was a big factor in the
+          team’s decision to choose the framework. To keep response times fast,
+          they use Memcached and Redis to cache common queries and reduce
+          database load. ActiveRecord’s query optimizations combined with
+          careful indexing and eager loading help keep things responsive as
+          traffic and the recipe catalog grows.
+        </p>
+
+        <blockquote class="inline-quote float-left">
+          Because Cookpad’s workload is mostly read-heavy from users browsing
+          recipes, database performance and scalability are critical.
+
+          <!--<cite>&mdash; <b>Jordan Hiltunen</b>, Lead Software Engineer</cite>-->
+        </blockquote>
+
+        <p>
+          For background jobs, Cookpad uses an event-driven setup built around
+          Kafka (MSK). Tools like Karafka and Resque handle asynchronous tasks,
+          so that resource-heavy operations don’t block user requests, keeping
+          the platform fast and reliable as it scales.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img
+        src="/assets/images/case-cookpad-image2.webp"
+        alt="Women cooking around a pot with a cellphone filming their cooking"
+        style="object-position: center calc(50% - 100px)"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>Other key Rails features that help Cookpad scale:</p>
+        <ul>
+          <li>
+            <b>ActiveRecord ORM</b> – Provides a structured way to work with
+            databases, enabling engineers to handle a massive recipe catalog
+            while maintaining performance.
+          </li>
+          <li>
+            <b>Internationalization (I18n) support</b> – Baked-in localization
+            features made it easier to expand into 70+ countries and 35+
+            languages.
+          </li>
+          <li>
+            <b>Template rendering system</b> – Keeps logic separate from
+            presentation, making front-end updates cleaner and reducing
+            development friction.
+          </li>
+          <li>
+            <b>Test-driven culture</b> – Encourages a quality-first approach,
+            allowing Cookpad to deploy straight from the main branch multiple
+            times per day with confidence.
+          </li>
+        </ul>
+        <p>
+          On the web, Cookpad leans on <b>Hotwire</b>, using Turbo and Stimulus
+          controllers creating responsive, dynamic interfaces without relying on
+          heavy JavaScript frameworks. This Rails-native approach makes the UI
+          fast and flexible while letting the backend remain in control.
+        </p>
+        <p>
+          Rails’ conventions and cohesive tooling also make onboarding new
+          engineers faster. Developers join the team and are immediately able to
+          contribute meaningful work, often within days. Combined with tools
+          like feature flags and a strong testing culture, Cookpad can
+          experiment, evolve, and scale without fear of breaking things.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy">
+  <div class="container">
+    <div class="casestudy__floater casestudy__image">
+      <img
+        src="/assets/images/case-cookpad-image4.webp"
+        alt="A man scrolling on a tablet in the kitchen with a cellphone overlaid showing the Cookpad application"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Investing Back Into Rails</h2>
+
+        <p>
+          Cookpad hasn’t just used Rails, they’ve helped shape it. Over the
+          years, they’ve employed members of the <b>Rails Core team</b> and
+          supported Ruby directly by employing core maintainers Koichi Sasada
+          and Yusuke Endoh for many years to work on the language, helping
+          define and refine core features and performance across both
+          ecosystems.
+        </p>
+        <p>
+          They’ve also released several <b>open-source tools</b>, including:
+        </p>
+        <ul>
+          <li>
+            <b><a href="https://rubygems.org/gems/chanko">chanko</a></b> – A
+            feature flagging framework for gradually rolling out new features.
+          </li>
+          <li>
+            <b><a href="https://rubygems.org/gems/barbeque">barbeque</a></b> – A
+            background job system built to manage large-scale workloads
+            efficiently.
+          </li>
+        </ul>
+        <p>
+          Beyond code, Cookpad engineers have often spoken at Rails conferences,
+          contributed directly to Rails and Ruby, and improved widely used
+          libraries. Today, Cookpad continues to invest in and support the
+          long-term growth of the framework and its ecosystem as a
+          <b>founding member of the Rails Foundation</b>.
+        </p>
+        <p>
+          Nearly two decades after their migration, Cookpad’s choice of Rails
+          continues to pay off, providing the foundation for a fast, global, and
+          resilient platform that keeps millions of home cooks connected every
+          day.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy keytakeaways text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <h2>Key Takeaways</h2>
+
+        <p>
+          <b>Fast, efficient iteration</b> – Rails provides a structured yet
+          flexible foundation that lets Cookpad ship features quickly while
+          maintaining stability.
+        </p>
+        <p>
+          <b>Simple localization</b> – I18n support enables Cookpad to serve 70+
+          countries and 35+ languages without excessive engineering effort.
+        </p>
+        <p>
+          <b>Modern features, smooth adoption</b> – Built-in tools like Hotwire
+          can be adopted incrementally to improve the user experience without
+          major refactors.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs casestudy cta text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <p>
+          Try Rails out yourself and see how you can take your idea from Startup
+          to IPO.
+        </p>
+
+        <a
+          class="button"
+          href="https://guides.rubyonrails.org/install_ruby_on_rails.html"
+          aria-label="Rails Installation Guide"
+          target="_blank"
+          >Get Started Here</a
+        >
+
+        <p class="notes">
+          This case study was written in collaboration with members of Cookpad's
+          engineering leadership.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
