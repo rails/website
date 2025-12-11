@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails World 2025 Recap - All talks now online!"
-categories: news
+categories: news, foundation
 author: Amanda Perino
 published: true
 date: 2025-09-15
