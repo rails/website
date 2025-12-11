@@ -11,7 +11,7 @@ Last year, we introduced case studies highlighting how companies use and build w
 
 In this case study, you’ll read how and why Cookpad migrated from ColdFusion to Rails in 2007, and how Rails has supported their growth every day since, from their expansion to many more countries, all the way to their public offering on the Tokyo Stock Exchange.
 
-**Read the case study: <a href="https://rubyonrails.org/docs/case-studies/doximity">The Secret Ingredient: How Rails Helps Cookpad Serve 100M+ Home Cooks</a>**
+**Read the case study: <a href="https://rubyonrails.org/docs/case-studies/cookpad">The Secret Ingredient: How Rails Helps Cookpad Serve 100M+ Home Cooks</a>**
 
 _A huge thank-you to the Cookpad engineering team for generously sharing their story, and a big shout-out to everyone involved in helping bring this case study to life, including Robby Russell from Planet Argon._
 
