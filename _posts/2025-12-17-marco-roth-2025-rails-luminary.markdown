@@ -29,10 +29,10 @@ Thank you to all who nominated community members this year, and congratulations 
 >
 
 >Marco's been doing incredible work for Rails with Herb and ReactionView. Views have been a fairly unchanged thing in Rails for years and his work is improving ERB and views enormously. Herb has already found a ton of impossible to spot issues with my views. His Rails World talk got so many people excited and he really deserves credit for all his work on this, Stimulus, Turbo, etc.
->>
+>
 
 >Marco has been a huge Open Source ruby contributor, gathered the community together through the ruby events website, and tackled very hard and a bit neglected tooling problems for the front end.
->>
+>
 
 ***
 
