@@ -36,4 +36,4 @@ Thank you to all who nominated community members this year, and congratulations 
 
 ***
 
-Big shout out to **Alessandro Rodi**, **Josua Schmid**, and **Yessin Ben Brahim** from **<a href="https://www.renuo.ch/">Renuo</a>**, who helped us organize a lastminute [Railshöck](https://www.meetup.com/rubyonrails-ch/events/312295522/) meetup in Zurich and invited Marco so that we could surprise him with the award in person. Short video coming soon!
+Big shout out to **Alessandro Rodi**, **Josua Schmid**, and **Yessin Ben Brahim** from **<a href="https://www.renuo.ch/">Renuo</a>**, who helped us organize a lastminute [Railshöck](https://www.meetup.com/rubyonrails-ch/events/312295522/) meetup in Zurich and invited Marco so that we could surprise him with the award in person. <a href="https://www.youtube.com/watch?v=WqZBzNKWXCQ">Here's a video of how it went!</a>
