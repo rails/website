@@ -11,6 +11,8 @@ date: 2025-12-19
 
 Hi, [Wojtek](https://x.com/morgoth85) here. The Rails Community is not slowing down giving us another week of great news and features.
 
+*Ruby turns 30 today*. Happy anniversary to the language that made Rails possible!
+
 [Marco Roth as 2025 Rails Luminary](https://rubyonrails.org/2025/12/17/marco-roth-2025-rails-luminary)  
 If you attended any Ruby/Rails conference this year, there are high chances you met Marco in person sharing his passion and if you didn't try his excellent [herb](https://herb-tools.dev/) gem yet, then install it and run in your Rails app: *herb analyze app/views* - for sure it will find a bunch of small HTML mistakes for you.
 
