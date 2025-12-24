@@ -4,7 +4,7 @@ title: "2025 Wrap Up from the Rails Foundation"
 categories: news, foundation
 author: Amanda Perino
 published: true
-date: 2024-12-24
+date: 2025-12-24
 ---
 
 So many, many times this past year, I’ve thought to myself, _‘Holy cow, things are moving so fast.’_ This is as true in the wider tech world, as it is in the Ruby community. These are exciting times.
