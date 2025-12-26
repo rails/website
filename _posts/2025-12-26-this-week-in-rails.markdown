@@ -241,7 +241,7 @@ This is especially so when it's followed by a long name, like `credentials`. Now
 
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2025-01-01%7D...main@%7B2025-12-31%7D)._
-_We had [18 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20250101-20251231) to the Rails codebase this past week!_
+_We had [430 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20250101-20251231) to the Rails codebase this past year!_
 
 Until next time!
 
