@@ -8,7 +8,7 @@ published: true
 date: 2025-12-26
 ---
 
-Happy Holidays, this is Emmanuel, Greg, Vipul, Wojciech, and Zzak, bringing you the summary of what happened with Rails in the past year. It was a busy year with close to 2700 commits from 430 contributors and 14 releases, including Rails 8.1! The Rails Foundation also released a [wrap up of 2025](https://rubyonrails.org/2025/12/24/2025-wrap-up-rails-foundation), and here are the most noteworthy changes landed in Rails this year.
+Happy Holidays, this is Claudio, Emmanuel, Greg, Vipul, Wojciech, and Zzak, bringing you the summary of what happened with Rails in the past year. It was a busy year with close to 2700 commits from 430 contributors and 14 releases, including Rails 8.1! The Rails Foundation also released a [wrap up of 2025](https://rubyonrails.org/2025/12/24/2025-wrap-up-rails-foundation), and here are the most noteworthy changes landed in Rails this year.
 
 [Fix inconsistency between “delete_all” & “update_all” allowed methods](https://github.com/rails/rails/pull/54231)  
 After this change, trying to call update_all with distinct or a CTE (with, with_recursive) is deprecated and will raise an error in Rails 8.2. This is consistent with the behavior of delete_all.
