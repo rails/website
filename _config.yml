@@ -73,3 +73,9 @@ paginate_path: "/blog/page/:num"
 
 sass:
   style: compressed
+
+feed:
+  categories:
+    - releases
+    - foundation
+    - news

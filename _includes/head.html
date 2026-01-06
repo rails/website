@@ -67,5 +67,9 @@
   <script defer data-domain="rubyonrails.org" src="https://plausible.io/js/script.js"></script>
   <link rel="icon" href="/assets/images/favicon.png" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  {% if page.feed_url %}
+  <link rel="alternate" type="application/atom+xml" href="{{ page.feed_url | absolute_url }}" title="{{ page.title }}">
+  {% else %}
   <link rel="alternate" type="application/rss+xml"  href="{{ site.feed_path }}" title="The official {{ site.title }} blog">
+  {% endif %}
 </head>
