@@ -1,0 +1,42 @@
+.events {
+  &.heading {
+    h2.thin {
+      @extend h4;
+    }
+  }
+
+  &.cards {
+    .container > h2 {
+      font-size: 47px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      font-weight: bold;
+      color: $color-red;
+    }
+
+    p.date {
+      font-size: 24px;
+    }
+
+    p.link {
+      font-weight: bold;
+      color: $color-red;
+    }
+  }
+
+  p.others {
+    font-size: 26px;
+    margin-top: 100px;
+    text-wrap: balance;
+  }
+
+  &.text {
+    p {
+      font-size: 26px;
+      line-height: 29px;
+    }
+    .container {
+      max-width: 1024px;
+    }
+  }
+}
