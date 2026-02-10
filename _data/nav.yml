@@ -1,5 +1,4 @@
 items:
-
   - title: Source
     url: https://github.com/rails/rails
 
@@ -13,7 +12,7 @@ items:
     url: /blog
 
   - title: Events
-    url: /world
+    url: /events
 
   - title: Jobs
     url: https://jobs.rubyonrails.org
