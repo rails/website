@@ -58,69 +58,39 @@ redirect_from:
   <div class="container">
     <h2>Community Events</h2>
     <div class="cards__container">
+      {% for event in site.data.events.community_events %} {% assign start_month
+      = event.start_date | date: "%B" %} {% assign end_month = event.end_date |
+      date: "%B" %} {% assign start_day = event.start_date | date: "%-d" %} {%
+      assign end_day = event.end_date | date: "%-d" %} {% assign year =
+      event.start_date | date: "%Y" %} {% if start_month == end_month %} {%
+      assign presentation_date = start_month | append: " " | append: start_day |
+      append: "–" | append: end_day | append: ", " | append: year %} {% else %}
+      {% assign presentation_date = start_month | append: " " | append:
+      start_day | append: "–" | append: end_month | append: " " | append:
+      end_day | append: ", " | append: year %} {% endif %}
       <div class="card">
-        <a href="https://tropicalonrails.com" title="Tropical on Rails">
+        <a href="{{ event.url }}" title="{{ event.name }}">
           <div class="card__body">
             <div class="card__label">
-              <h6>São Paulo, Brazil</h6>
+              <h6>{{ event.location }}</h6>
             </div>
 
             <div class="card__headline">
-              <h3>Tropical on Rails</h3>
+              <h3>{{ event.name }}</h3>
             </div>
 
             <div class="card__content">
               <p class="date">
-                <time datetime="2026-04-09">April 9–10, 2026</time>
+                <time datetime="{{ event.start_date }}"
+                  >{{ presentation_date }}</time
+                >
               </p>
-              <p class="link">www.tropicalonrails.com</p>
+              <p class="link">{{ event.display_url }}</p>
             </div>
           </div>
         </a>
       </div>
-
-      <div class="card">
-        <a href="https://blastoffrails.com" title="Blastoff Rails">
-          <div class="card__body">
-            <div class="card__label">
-              <h6>Albuquerque, New Mexico</h6>
-            </div>
-
-            <div class="card__headline">
-              <h3>Blastoff Rails</h3>
-            </div>
-
-            <div class="card__content">
-              <p class="date">
-                <time datetime="2026-06-11">June 11–12, 2026</time>
-              </p>
-              <p class="link">www.blastoffrails.com</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="https://kaigionrails.org/2026/" title="Kaigi on Rails">
-          <div class="card__body">
-            <div class="card__label">
-              <h6>Tokyo, Japan</h6>
-            </div>
-
-            <div class="card__headline">
-              <h3>Kaigi on Rails</h3>
-            </div>
-
-            <div class="card__content">
-              <p class="date">
-                <time datetime="2026-10-16">October 16–17, 2026</time>
-              </p>
-              <p class="link">www.kaigionrails.org/2026</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
+      {% endfor %}
     </div>
     <p class="others">
       There are also many Ruby events around the world where you can often find
