@@ -9,7 +9,7 @@ world25_title: Rails World 2025 - Amsterdam, NL
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
+  # - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
