@@ -67,7 +67,7 @@ message in the logs. This PR skips the redundant ROLLBACK, eliminating the warni
 ---
 
 
-_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-02-13%7D...main@%7B2026-02-20%7D)._
+_You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-02-14%7D...main@%7B2026-02-20%7D)._
 _We had [21 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260214-20260220) to the Rails codebase this past week!_
 
 Until next time!
