@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New date time helpers, improve hash methods and more!"
+title: "New date time helpers, improved hash methods and more!"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
@@ -55,9 +55,9 @@ When a request comes in with an unrecognized HTTP verb, Rails now correctly retu
 response instead of a `500 Internal Server Error`. This long-standing issue was causing unnecessary noise in
 error monitoring tools.
 
-[Introduce `in_this_week?`, `in_this_month?`, and `in_this_year?` to Date/Time](https://github.com/rails/rails/pull/55770)  
+[Introduce `this_week?`, `this_month?`, and `this_year?` to Date/Time](https://github.com/rails/rails/pull/55770)  
 Adds three convenient predicate methods to `Date`, `Time`, and `DateTime` objects. 
-Instead of manually comparing against ranges, you can now call `date.in_this_week?`, `date.in_this_month?`, or `date.in_this_year?` for clean, readable time checks.
+Instead of manually comparing against ranges, you can now call `date.this_week?`, `date.this_month?`, or `date.this_year?` for clean, readable time checks.
 
 [Skip ROLLBACK statement following TransactionRollbackError](https://github.com/rails/rails/pull/56717)
 When a COMMIT fails with a TransactionRollbackError, Rails was unnecessarily issuing a ROLLBACK
