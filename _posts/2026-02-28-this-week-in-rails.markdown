@@ -20,6 +20,9 @@ Introduces `to_markdown` across the Action Text stack (`Content`, `Fragment`, `R
 [Render MissingAttachable as "☒" in plain text](https://github.com/rails/rails/pull/56854)  
 `MissingAttachable` now implements `attachable_plain_text_representation`, returning the same "☒" character used in its HTML partial instead of rendering nothing.
 
+[Add `content_type` parameter to HTTP authentication methods](https://github.com/rails/rails/pull/56887)  
+`request_http_basic_authentication`, `request_http_digest_authentication`, and `request_http_token_authentication` now accept an optional `content_type` parameter to customize the 401 response content type. The existing `message` parameter is also now exposed at the `http_basic_authenticate_with` level.
+
 [Add `RAILS_HOST_APP_PATH` support for editor links in devcontainer/Docker environments](https://github.com/rails/rails/pull/56263)  
 A new `RAILS_HOST_APP_PATH` environment variable lets Rails translate container file paths to host paths when generating editor URLs on error pages. This makes "open in editor" links work correctly in devcontainer and Docker setups.
 
