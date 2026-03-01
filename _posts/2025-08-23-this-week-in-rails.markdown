@@ -19,7 +19,7 @@ has been updated.
 This pull request fixes the removal of _pg_dump_'s versioning comments by also removing the new `\restrict` lines. By removing all these lines, the generated _structure.sql_ can again be consistent between runs of `rails db:schema:dump` on the latest versions of PostgreSQL.
 
 [Allow _current_page?_ to match against specific HTTP method(s) with a _method:_ option](https://github.com/rails/rails/pull/55286)  
-Before this chage, the `current_page?` helper only matched on GET and HEAD
+Before this change, the `current_page?` helper only matched on GET and HEAD
 requests, but with the new optional `method` option, it will match against
 explicit HTTP methods.
 

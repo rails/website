@@ -131,7 +131,7 @@ ActionMailer.deliver_all_later(user_emails)
 ```
 
 [Allow current_page? to match against specific HTTP method(s) with a method: option](https://github.com/rails/rails/pull/55286)  
-Before this chage, the `current_page?` helper only matched on GET and HEAD requests, but with the new optional method option, it will match against explicit HTTP methods.
+Before this change, the `current_page?` helper only matched on GET and HEAD requests, but with the new optional method option, it will match against explicit HTTP methods.
 
 [Add markdown mime type and renderer](https://github.com/rails/rails/pull/55511)  
 Add .md/.markdown as Markdown extensions and add a default `markdown:` renderer:

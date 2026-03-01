@@ -15,7 +15,7 @@ Hi, [Wojtek](https://x.com/morgoth85) here. 🎃 Let's see if there are any spoo
 Versions 7.0.10, 7.1.6, 7.2.3, 8.0.4, and 8.1.1 have been released.
 Rails 8.0 has received extended support.
 
-[Add a summary report at the end of Continous Integration run](https://github.com/rails/rails/pull/56049)  
+[Add a summary report at the end of Continuous Integration run](https://github.com/rails/rails/pull/56049)
 The *@results* ivar is changed to hold the step title in addition to the success boolean, and any multi-step *run* or *step* block will print the failed steps.
 The output looks like:
 ```

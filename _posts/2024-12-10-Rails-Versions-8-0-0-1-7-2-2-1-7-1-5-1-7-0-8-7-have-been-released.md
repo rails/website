@@ -19,7 +19,7 @@ We think this usage will be rare, and the default configuration is not
 vulnerable, but advise upgrading.
 
 Older versions of Rails are unsupported, and users are recommended to upgrade
-to at least the 7.0 series, which will be receiveing security updates until
+to at least the 7.0 series, which will be receiving security updates until
 April. See our [maintenance policy](https://rubyonrails.org/maintenance) for details.
 
 Here is a list of security issues that these releases address:
