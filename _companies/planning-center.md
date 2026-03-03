@@ -4,7 +4,7 @@ title: Planning Center
 description: "Planning Center is a church management software platform serving over 90,000 churches worldwide."
 name: Planning Center
 intro: |
-  Planning Center is a church management software platform serving over 90,000 churches worldwide, building tools that help churches handle the stuff that makes ministry actually run: service planning, volunteer scheduling, donations, event registrations, check-ins, small groups, and more. They've been bootstrapped and profitable since day one, nearly 19 years ago, with a team of 220 people (100+ of whom are engineers). No investors, no debt, no plans to sell. Planning Center recently committed to transitioning to a non-profit, because building software for churches shouldn't be about building equity.
+  Planning Center is a church management software platform serving over 90,000 churches worldwide, building tools that help churches handle the stuff that makes ministry actually run: service planning, volunteer scheduling, donations, event registrations, check-ins, small groups, and more. They've been bootstrapped and profitable since day one, nearly 19 years ago, with a team of 220 people (100+ of whom are engineers). No investors, no debt, [no plans to sell](https://www.planningcenter.com/blog/a-commitment-for-our-customers-never-being-acquired). Planning Center recently committed to transitioning to a non-profit, because building software for churches shouldn't be about building equity.
 logo: /assets/images/logo-planningcenter.svg
 exturl: https://www.planningcenter.com/
 company_type: Private
