@@ -1,0 +1,21 @@
+community_events:
+  - name: Tropical on Rails
+    location: "São Paulo, Brazil"
+    start_date: "2026-04-09"
+    end_date: "2026-04-10"
+    url: https://tropicalonrails.com
+    display_url: www.tropicalonrails.com
+
+  - name: Blastoff Rails
+    location: "Albuquerque, New Mexico"
+    start_date: "2026-06-11"
+    end_date: "2026-06-12"
+    url: https://blastoffrails.com
+    display_url: www.blastoffrails.com
+
+  - name: Kagi on Rails
+    location: "Shibuya, Tokyo, Japan"
+    start_date: "2026-10-16"
+    end_date: "2026-10-17"
+    url: https://www.kagionrails.org/2026
+    display_url: www.kagionrails.org/2026
