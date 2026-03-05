@@ -25,7 +25,7 @@ quote_author: "Robby Russell"
 quote_title: "Founder & CEO"
 member_status: "In 2023, Planet Argon became a **contributing member** of the Rails Foundation."
 community: |
-  Planet Argon contributes back to the Rails ecosystem through mentorship, open source, and developer education. Robby Russell hosts the [On Rails podcast](https://onrails.buzzsprout.com/?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile), the official podcast of the Rails Foundation, featuring conversations with Rails core contributors, maintainers, and teams sharing stories about how Rails is part of their organization's secret sauce.
+  Planet Argon contributes back to the Rails ecosystem through mentorship, open source, and developer education. Robby Russell hosts the [On Rails podcast](https://podcast.rubyonrails.org/?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile), the official podcast of the Rails Foundation, featuring conversations with Rails core contributors, maintainers, and teams sharing stories about how Rails is part of their organization's secret sauce.
 
   They lead the [Rails Community Survey](https://railsdeveloper.com/survey/?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile), a biennial research project that has become one of the go-to sources for understanding tooling trends, team practices, and developer sentiment across the Rails ecosystem. Planet Argon produces the [Maintainable Software Podcast](https://maintainable.fm/?utm_source=rubyonrails.org&utm_medium=referral&utm_campaign=rails_foundation_profile), which has featured over 240 interviews on the challenges of maintaining and improving software systems.
 
