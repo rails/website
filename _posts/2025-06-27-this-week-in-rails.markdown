@@ -11,9 +11,9 @@ date: 2025-06-27
 
 Hi, it's [zzak](https://github.com/zzak). Let's explore this week's changes in the Rails codebase.
 
-[The Rails Foundation launched a new podcast: 'On Rails' with host Robby Russell](https://onrails.buzzsprout.com)  
+[The Rails Foundation launched a new podcast: 'On Rails' with host Robby Russell](https://podcast.rubyonrails.org)  
 In each episode, Robby talks with Rails devs and explores the real-world decisions that go into building, maintaining, and scaling Ruby on Rails applications. Episode one is already up with guest Rosa Gutiérrez.
-Listen at [onrails.buzzsprout.com](https://onrails.buzzsprout.com), or in your favorite podcast app.
+Listen at [podcast.rubyonrails.org](https://podcast.rubyonrails.org), or in your favorite podcast app.
 
 [Improve CurrentAttribute and ExecutionContext state management in test cases](https://github.com/rails/rails/pull/55247)  
 Previously these two global state would be entirely cleared out whenever calling into code that is wrapped by the Rails executor, typically Action Controller or Active Job helpers.
