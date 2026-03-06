@@ -23,7 +23,7 @@ Here’s what kept the Rails Foundation running alongside you in 2025:
 
 **We launched a podcast.** _(Education - Marketing)_
 
-**<a href="https://onrails.buzzsprout.com/">On Rails</a>** is hosted by **Robby Russell** and features deep conversation focused on the technical decisions, architectural trade-offs, and long-term thinking behind building and maintaining Ruby on Rails applications. In season one, Robby spoke to **Rosa Gutierrez**, **Jean Boussier**, **Nadia Odunayo**, **Ryan Stawarz**, **Austin Story**, **Hilary Stohs-Krause**, **Florent Beaurain**, **Alexander Stathis**, **Miguel Conde**, **Peter Compernolle**, **Kayla Reopelle**, and **Jay Tennier**. It's a wonder he still has a voice.
+**<a href="https://podcast.rubyonrails.org/">On Rails</a>** is hosted by **Robby Russell** and features deep conversation focused on the technical decisions, architectural trade-offs, and long-term thinking behind building and maintaining Ruby on Rails applications. In season one, Robby spoke to **Rosa Gutierrez**, **Jean Boussier**, **Nadia Odunayo**, **Ryan Stawarz**, **Austin Story**, **Hilary Stohs-Krause**, **Florent Beaurain**, **Alexander Stathis**, **Miguel Conde**, **Peter Compernolle**, **Kayla Reopelle**, and **Jay Tennier**. It's a wonder he still has a voice.
 
 On Rails is hosted on **Buzzsprout**, and edited by **Anuschka Laubscher**. Find it on all major podcast platforms, and subscribe to be notified when the next episodes drop, because Robby has some great guests lined up for you in 2026.
 

@@ -9,7 +9,7 @@ date: 2025-06-25
 
 There’s no shortage of podcasts about new tools, trending libraries, and web development hot takes. But what’s often missing are the deeper conversations, the ones about _how_ teams actually made things work in production, under pressure, and with real-world constraints.
 
-That’s the gap we’re hoping to close with 🎙️ <a href="https://onrails.buzzsprout.com/">On Rails</a>.
+That’s the gap we’re hoping to close with 🎙️ <a href="https://podcast.rubyonrails.org/">On Rails</a>.
 
 <p style="text-align: center; margin-top: 20px"><img src="/assets/images/logo-onrails.png" style="width: 50%"></p>
 
@@ -33,7 +33,7 @@ I’m Robby Russell, a long-time member of the Rails community and your host for
 
 **🚀 Available Now**
 
-You can listen to _On Rails_ at <a href="https://onrails.buzzsprout.com/">onrails.buzzsprout.com</a>, or in your favorite podcast app. Subscribe if you’re into that sort of thing.
+You can listen to _On Rails_ at <a href="https://podcast.rubyonrails.org/">podcast.rubyonrails.org</a>, or in your favorite podcast app. Subscribe if you’re into that sort of thing.
 
 We’re also proud to be launching the show on <a href="https://www.buzzsprout.com/">Buzzsprout</a>, which is also built on Rails.
 
