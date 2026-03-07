@@ -18,7 +18,7 @@ By default it will load records in batches of 100 and allow to specify the custo
 A valid ordinal value will be converted to an instance of _TimeWithZone._  
 In example "21087" value will be parsed to 28-03-2021 date.
 
-### [Add existence check to foregin key migrations](https://github.com/rails/rails/pull/42616)
+### [Add existence check to foreign key migrations](https://github.com/rails/rails/pull/42616)
 
 It is now possible to use _if\_exists / if\_not\_exist_ on _remove\_foreign\_key / add\_foreign\_key_ in database migrations.
 
