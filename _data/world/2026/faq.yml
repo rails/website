@@ -1,0 +1,78 @@
+- category: General
+  topics:
+    - question: What is Rails World? Who is it for?
+      answer: >
+        Rails World is a technical conference focused on the Ruby on Rails framework. It brings together developers, engineers, and Rails maintainers from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals.
+
+    - question: Does Rails World have a Code of Conduct?
+      answer: >
+        We are committed to making Rails World a safe space for all, and we adhere to the [Rails Code of Conduct](/conduct).
+        If you have any issues please reach out to
+        [foundation@rubyonrails.org](mailto:foundation@rubyonrails.org).
+
+    - question: Will Rails World be livestreamed?
+      answer: >
+          Rails World will not be livestreamed, but we want those who cannot attend to have access to the sessions quickly, so we will publish the Opening Keynote within hours of it taking place. All other sessions will be online within two weeks after Rails World. <a href="https://www.youtube.com/@railsofficial">Subscribe</a> to be informed when the videos get published.
+
+    - question: Will there be a conference app or chat?
+      answer: >
+        We'll use Campfire for the conference chat this year. Attendees will receive a link approximately one month before Rails World.
+
+    - question: What are the starting and ending times and dates so I can book my travel?
+      answer: |-
+        - September 23rd: Day 1 sessions
+        - September 24th: Day 2 sessions
+
+        The full schedule will be published closer to the event.
+
+    - question: My question is not answered here. Who can I contact?
+      answer: >
+        You can reach out to us at <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>
+
+
+- category: Tickets & Entry
+  topics:
+
+    - question: When will tickets go on sale?
+      answer: >
+        Ticket sale details will be announced soon. Sign up to the <a href="https://rails-foundation.kit.com/sign-up">mailing list</a> to be notified when tickets are available.
+
+    - question: What is the refund policy?
+      answer: |-
+        If you need to cancel your registration for Rails World, please let us know as soon as possible by emailing <a href="mailto:world@rubyonrails.org">world@rubyonrails.org</a>.
+        Corporate support tickets are non-refundable. Full refunds are available for General Admission tickets up to 45 days prior to the start of the event, minus a 5% transaction fee. If you cancel between 44 and 30 days prior to the event, you are eligible for a 50% refund, minus the transaction fee.
+        Unfortunately, we cannot provide any refunds for cancellations less than 30 days prior to the event. However, you may transfer your ticket to another attendee free of charge up to 14 days prior to the start of Rails World.
+
+        Corporate Tickets are non-refundable, but can be reassigned up to 14 days before the event.
+
+    - question: What is the COVID/mask policy?
+      answer: >
+        Those who feel more comfortable wearing masks are always welcome to do so, and we do ask that you abide by the new golden rule: if you feel unwell on the day of the event or the days leading up to the event, please do not come.
+
+- category: Venues & Hotels
+  topics:
+    - question: Where is the event taking place?
+      answer: |-
+        Rails World 2026 will be held in Austin, TX on September 23 & 24. Venue details will be announced soon.
+
+    - question: Where should I stay?
+      answer: |-
+        Hotel recommendations will be shared with ticket holders closer to the event.
+
+- category: Accessibility
+  topics:
+    - question: How can I communicate my accessibility needs to the organisation?
+      answer: >
+        Rails World is committed to making the event accessible to everyone. If you have specific accessibility needs or require any accommodations, please let us know on the registration form, and we will do our best to accommodate you.
+
+    - question: Will the talks have closed captioning?
+      answer: |-
+        There will be closed caption screens to the left and right of the stages for those who need it.
+
+    - question: Are food and drinks included? Can dietary requirements be accommodated?
+      answer: |-
+        Food and beverage details will be announced closer to the event.
+
+    - question: Does Rails World provide childcare?
+      answer: >
+        Rails World does not offer child care, but the event organizers would be happy to refer you to trusted babysitting services in the city. Please reach out to world@rubyonrails.org.

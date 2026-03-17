@@ -1,0 +1,38 @@
+.announcement-banner {
+  &.purple-background {  background-color: $dark-purple; }
+  &.red-background { background-color: $red; }
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+
+  .content {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: $large;
+      text-align: center;
+      color: white;
+      font-variation-settings: $font-weight-800;
+      line-height: 30px;
+
+      @include media(MobileScreens) {
+        font-size: $medium;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .mobile-break {
+    display: none;
+
+    @include media(MobileScreens) {
+      display: block;
+    }
+  }
+}

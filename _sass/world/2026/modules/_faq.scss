@@ -1,0 +1,134 @@
+.faq-tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  padding-left: 80px;
+
+  @include media(MobileScreens) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  @include media(TabletScreens) {
+    padding-left: 40px;
+  }
+
+  .tab {
+    text-align: center;
+    padding: 0 20px;
+    border-right: 1px solid white;
+
+    @include media(MobileScreens) {
+      border-right: none;
+    }
+
+    &:first-child {
+      padding-left: 0;
+
+      @include media(MobileScreens) {
+        padding-left: 20px;
+      }
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    a {
+      display: inline-block;
+      color: white;
+      font-size: $large;
+      font-variation-settings: $font-weight-700;
+      text-decoration: none;
+      transition: all 0.25s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.faq-content {
+  margin: 50px auto 0 auto;
+  padding: 0 80px;
+
+  @include media(MobileScreens) {
+    padding: 0 20px;
+    margin: 25px auto;
+  }
+
+  @include media(TabletScreens) {
+    padding: 0 40px;
+  }
+}
+
+.faq-toggle {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.faq-row {
+  .question {
+    font-variation-settings: $font-weight-600;
+    font-size: $xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid white;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    user-select: none;
+    text-transform: none;
+    transition: all;
+
+    @include media(MobileScreens) {
+      font-size: $large;
+    }
+  }
+
+  .question::after {
+    content: url('/assets/world/2025/icons/chevron.svg');
+    padding: 0.51rem;
+    text-align: center;
+    transition: all 0.35s;
+  }
+
+  .answer {
+    display: none;
+    max-height: 0;
+    padding-bottom: 40px;
+    transition: all 0.35s;
+  }
+
+  p, a {
+    color: white;
+    font-size: $medium;
+    line-height: 30px;
+  }
+}
+
+.faq-toggle:checked + .question {
+  border-top: 2px solid $pink;
+}
+
+.faq-toggle:checked + .question::after {
+  content: url('/assets/world/2025/icons/chevron_pink.svg');
+  rotate: 90deg;
+}
+
+.faq-toggle:checked ~ .answer {
+  max-height: 100vh;
+  display: block;
+  transition: all 0.35s;
+}

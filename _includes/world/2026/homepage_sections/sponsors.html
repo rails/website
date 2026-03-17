@@ -1,0 +1,64 @@
+<div class="section full-height mobile-fit-content">
+  <div class="sponsor-intro-container">
+    <h2 class="large-title">Thank you sponsors!</h2>
+
+    <div class="content">
+      <div></div>
+      <div>
+        <p class="larger">
+          These companies brought Rails World to life this year for a <span class="bold">global audience of Rails enthusiasts</span>, developers, and maintainers.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="logos-grid platinum">
+    {% for sponsor in site.data.world['2026'].sponsors.platinum %}
+      <a href="{{ sponsor.url }}" target="_blank">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid gold">
+    {% for sponsor in site.data.world['2026'].sponsors.gold %}
+      <a href="{{ sponsor.url }}"  target="_blank">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid silver">
+    {% for sponsor in site.data.world['2026'].sponsors.silver %}
+      <a href="{{ sponsor.url }}" target="_blank">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="logos-grid members">
+    {% for sponsor in site.data.world['2026'].sponsors.members %}
+      <a href="{{ sponsor.url }}" target="_blank">
+        <img
+          src="{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          loading="lazy"
+        >
+      </a>
+    {% endfor %}
+  </div>
+</div>
