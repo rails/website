@@ -1,0 +1,70 @@
+{% if page.title %}
+{% assign title = 'Rails World 2026' | append: ' &mdash; ' | append: page.title %}
+{% else %}
+{% assign title = 'Rails World 2026' %}
+{% endif %}
+
+{% if page.description %}
+{% assign description = page.description %}
+{% else %}
+{% assign description = site.description %}
+{% endif %}
+
+{% if page.og_image %}
+{% assign image = page.og_image | absolute_url %}
+{% else %}
+{% assign image = '/assets/world/2026/logos/rw26-logo.png' | absolute_url %}
+{% endif %}
+
+{% assign url = page.url | absolute_url %}
+
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta name="handheldfriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}" />
+
+  <meta property="og:site_name" content="Rails World 2026" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ image }}" />
+  <meta property="og:url" content="{{ url }}" />
+  <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}" />
+
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="{{ image }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@{{ site.twitter }}" />
+  <meta name="twitter:image:alt" content="Rails World 2026" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ url }}"
+      },
+      "name": "Rails World 2026",
+      "headline": "{{ title }}",
+      "description": "{{ description }}",
+      "url": "{{ url }}",
+      "image": "{{ image }}"
+    }
+  </script>
+
+  <script defer data-domain="rubyonrails.org" src="https://plausible.io/js/script.js"></script>
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="/assets/images/apple-touch-icon.png" />
+
+  <!-- Clash Grotesk font via Bunny Fonts (open source alternative) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=clash-grotesk:400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/world-2026.css" />
+  <link rel="canonical" href="{{ url }}" />
+</head>

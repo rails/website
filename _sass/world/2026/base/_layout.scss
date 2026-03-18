@@ -1,0 +1,23 @@
+// Rails World 2026 — Layout
+body {
+  font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
+}
+
+.page-wrapper-2026 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

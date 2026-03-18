@@ -1,0 +1,157 @@
+// Rails World 2026 — Navbar
+// Figma: NAVBAR_DESKTOP node 34:532
+// Frame: 1440×229px, transparent background (sits over page background)
+// GLASS pill: 1360×169px, 40px side margins, 30px top, border-radius: 20px
+// NAV inner: 1280×129px
+
+#navbar-2026 {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  // Figma frame height: 229px — provides top padding before the pill
+  padding: 30px 40px 30px 40px;
+  box-sizing: border-box;
+
+  .glass-pill {
+    // Figma GLASS frame: 1360×169px, border-radius 20px
+    // Fill: rgba(0,0,0,0.7), GLASS blur effect, orange inner shadow
+    width: 100%;
+    height: 169px;
+    border-radius: 20px;
+    background-color: $navbar-glass-bg;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: inset 2px 2px 14.1px -6px rgba(253, 139, 0, 1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .nav-inner {
+    // NAV instance: 1280×129px, 40px from left edge of pill
+    width: 100%;
+    height: 129px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .nav-logo {
+    // LOGO frame: 108×109px
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      width: 108px;
+      height: 109px;
+      object-fit: contain;
+      // Blend white PNG background away on dark glass surface
+      mix-blend-mode: screen;
+    }
+  }
+
+  .nav-links {
+    // LINKS frame: 749×20px, centered between logo and button
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+    justify-content: center;
+    padding: 0 40px;
+    list-style: none;
+    margin: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .nav-link {
+    // NAVBAR_LINK: 16px, Clash Grotesk Medium (500), white, no underline
+    font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.68px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .nav-cta {
+    // BUTTON_HOVER: 242×65px, border-radius 3px
+    // Angular gradient border (orange → purple → blue → red)
+    flex-shrink: 0;
+    position: relative;
+    width: 242px;
+    height: 65px;
+    border-radius: 3px;
+
+    // Angular gradient border via pseudo-element
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 3px;
+      padding: 1.5px;
+      background: conic-gradient(
+        from 0deg,
+        #FD8B00 0%,
+        #993CF2 25%,
+        #3C51ED 51.44%,
+        #FF000B 75.96%,
+        #FD8B00 100%
+      );
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    // Outer grey border (Rectangle 1)
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 3px;
+      border: 1px solid rgba(217, 217, 217, 1);
+      pointer-events: none;
+    }
+
+    .nav-cta-text {
+      // TEXT: "Tickets coming soon!" 18px Bold white, centered
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22.14px;
+      color: white;
+      text-decoration: none;
+      cursor: default;
+      // <!-- DEFERRED: link to ticket purchase URL when available -->
+    }
+  }
+}
