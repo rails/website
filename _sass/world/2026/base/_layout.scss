@@ -9,9 +9,12 @@ body {
   color: white;
 
   &.purple-gradient-background {
-    background: $purple-gradient;
-    background-size: 200% 200%;
-    animation: gradient-dissolve 5s ease infinite;
+    background-color: #000000;
+    background-image: url('/assets/world/2026/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   &.red-gradient-background {
     background: $red-gradient;
