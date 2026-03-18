@@ -1,19 +1,23 @@
-$dark-purple: #3B1D62;
-$fushia: #880C51;
-$red: #CB0C1C;
-$pink: #FF18A2;
+// 2026 color palette (from Figma variable collection)
+$black: #000000;
+$purple: #993FF2;
+$blue: #3C51ED;
+$red: #FF000B;
+$orange: #FD8B00;
+$white: #FFFFFF;
+$off-white: #D9D9D9;
+$rails-red: #D30001;
 
-// Gradients
-$button-gradient: linear-gradient(90deg, #3B1D62 47%, $red 100%);
-$button-secondary-gradient: linear-gradient(270deg, $dark-purple 17%, $red 100%);
-$purple-gradient: linear-gradient(180deg, $dark-purple, $dark-purple, $fushia, $fushia);
-$red-gradient: linear-gradient(180deg, $red, $red, $dark-purple, $dark-purple);
-$fushia-to-red-gradient: linear-gradient(90deg, #880C51 0%, $red 100%);
+// Legacy aliases (used in inherited SCSS modules from scaffold)
+$dark-purple: #08020F;
+$fushia: $rails-red;
+$pink: $purple;
 
-$speaker-card-gradient: linear-gradient(180deg, rgba(59, 29, 98, 0%) 50%, $red 100%);
-$speaker-card-gradient-hover: linear-gradient(180deg, rgba(59, 29, 98, 0%) 0%, rgba(203, 12, 28, 50%) 31%, $red 100%);;
+$purple-gradient: linear-gradient(135deg, #060214 0%, #0A0520 50%, #060214 100%);
+$red-gradient: linear-gradient(135deg, $black 0%, #0D0005 50%, $black 100%);
+$button-gradient: linear-gradient(90deg, $purple 0%, $blue 100%);
+$button-secondary-gradient: linear-gradient(270deg, $purple 17%, $blue 100%);
+$fushia-to-red-gradient: linear-gradient(90deg, $purple 0%, $red 100%);
 
-$session-card-gradient: linear-gradient(-90deg, rgba(59, 29, 98, 0%) 20%, $red 100%);
-$session-card-gradient-hover: linear-gradient(-90deg, rgba(59, 29, 98, 0%) 0%, $red 61%);
-
-$agenda-tag-gradient: linear-gradient(0deg, rgba(59, 29, 98, 0%) 0%, $red 140%);
+// Neon border gradient (Angular/conic, used on cards)
+$neon-border-gradient: conic-gradient(from 90deg, #FD8B00 0%, #993FF2 25%, #3C51ED 51%, #FF000B 76%, #FD8B00 100%);
