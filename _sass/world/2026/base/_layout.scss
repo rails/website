@@ -14,6 +14,11 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background-image: url('/assets/world/2026/images/bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #1a1a2e;
 }
 
 .container-center {
