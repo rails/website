@@ -1,0 +1,117 @@
+.speaker-carousel-section {
+  padding: 60px 89px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px;
+  }
+
+  &__header {
+    max-width: 1262px;
+    margin: 0 auto 32px;
+  }
+
+  &__header-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    font-variation-settings: $font-weight-700;
+    color: $white;
+    padding: 12px 20px;
+    border: 1.5px solid rgba(217, 217, 217, 0.6);
+    border-radius: 3px;
+    box-shadow:
+       2px 0   6px rgba(#FD8B00, 0.5),
+       0   2px 6px rgba(#993FF2, 0.5),
+      -2px 0   6px rgba(#3C51ED, 0.5),
+       0  -2px 6px rgba(#FF000B, 0.5);
+  }
+
+  &__see-all {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border: 1.5px solid rgba(217, 217, 217, 0.6);
+    color: $off-white;
+    font-size: 14px;
+    line-height: 1;
+    font-variation-settings: $font-weight-600;
+    text-decoration: none;
+    border-radius: 3px;
+    letter-spacing: normal;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+    &:hover {
+      background: $off-white;
+      color: $black;
+      border-color: $off-white;
+    }
+  }
+
+  &__track-wrapper {
+    position: relative;
+    max-width: 1262px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: $off-white;
+    font-size: 28px;
+    line-height: 1;
+    transition: color 0.2s;
+    user-select: none;
+    padding: 0;
+
+    &:hover { color: $white; }
+
+    @include media(MobileAndTabletScreens) { display: none; }
+  }
+
+  &__track-overflow {
+    flex: 1;
+    // `clip` clips without creating a scroll container; margin lets the neon glow bleed through
+    overflow: clip;
+    overflow-clip-margin: 20px;
+  }
+
+  &__track {
+    display: flex;
+    // gap and transform set by JS
+    will-change: transform;
+
+    .speaker-card {
+      flex: 0 0 200px;
+      width: 200px;
+
+      @include media(MobileScreens) {
+        flex: 0 0 160px;
+        width: 160px;
+      }
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding: 60px 0;
+    color: rgba(217, 217, 217, 0.5);
+    font-size: 16px;
+    font-variation-settings: $font-weight-400;
+    letter-spacing: normal;
+  }
+}

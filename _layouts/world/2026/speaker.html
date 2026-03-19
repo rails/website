@@ -1,0 +1,27 @@
+---
+layout: world/2026/default
+---
+
+<div class="speaker-show-page">
+  <div class="speaker-presentation">
+    <img class="headshot" src="{{ page.image_path }}" alt="{{ page.first_name }} {{ page.last_name }}'s photo">
+
+    <div class="speaker-info">
+      <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+      <h3>{{ page.tagline }}{% if page.company and page.company != "false" %}, {{ page.company }}{% endif %}</h3>
+      <p>{{ content }}</p>
+
+      <div class="social-links">
+        {% if page.github %}
+          <a href="{{ page.github }}"><img src="/assets/world/2026/icons/github.png" alt="GitHub" width="30"></a>
+        {% endif %}
+        {% if page.linkedin %}
+          <a href="{{ page.linkedin }}"><img src="/assets/world/2026/icons/linkedin.png" alt="LinkedIn" width="30"></a>
+        {% endif %}
+        {% if page.twitter %}
+          <a href="{{ page.twitter }}"><img src="/assets/world/2026/icons/x.png" alt="X" width="30"></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

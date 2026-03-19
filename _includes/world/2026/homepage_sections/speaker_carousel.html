@@ -1,0 +1,116 @@
+{% assign keynote_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', true | sort: 'first_name' %}
+{% assign regular_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', false | sort: 'first_name' %}
+{% assign all_speakers = keynote_speakers | concat: regular_speakers %}
+
+<section class="speaker-carousel-section">
+  <div class="speaker-carousel-section__header">
+    <div class="speaker-carousel-section__header-group">
+      <p class="speaker-carousel-section__title">Meet this year's speakers</p>
+      <a href="/world/2026/speakers" class="speaker-carousel-section__see-all">See all</a>
+    </div>
+  </div>
+
+  {% if all_speakers.size > 0 %}
+    <div class="speaker-carousel-section__track-wrapper">
+      <button class="speaker-carousel-section__arrow" id="carousel-left-2026" aria-label="Previous speakers">&#8249;</button>
+
+      <div class="speaker-carousel-section__track-overflow" id="speaker-overflow-2026">
+        <div class="speaker-carousel-section__track" id="speaker-track-2026">
+          {% for speaker in all_speakers %}
+            {%
+              include world/2026/components/speaker_card.html
+              first_name=speaker.first_name
+              last_name=speaker.last_name
+              tagline=speaker.tagline
+              company=speaker.company
+              photo=speaker.image_path
+              path=speaker.path
+            %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <button class="speaker-carousel-section__arrow" id="carousel-right-2026" aria-label="Next speakers">&#8250;</button>
+    </div>
+  {% else %}
+    <div class="speaker-carousel-section__track-wrapper">
+      <p class="speaker-carousel-section__empty">Speakers to be announced. Sign up to the mailing list to be the first to know.</p>
+    </div>
+  {% endif %}
+</section>
+
+{% if all_speakers.size > 0 %}
+<script>
+  (function() {
+    var track    = document.getElementById('speaker-track-2026');
+    var overflow = document.getElementById('speaker-overflow-2026');
+    if (!track || !overflow) return;
+    var leftBtn  = document.getElementById('carousel-left-2026');
+    var rightBtn = document.getElementById('carousel-right-2026');
+
+    // ── 1. Build triple set: [CLONES] + [ORIGINALS] + [CLONES] ──────────
+    var originals = Array.from(track.children);
+    var n = originals.length;
+    if (!n) return;
+    originals.forEach(function(c) { track.appendChild(c.cloneNode(true)); });
+    originals.slice().reverse().forEach(function(c) {
+      track.insertBefore(c.cloneNode(true), track.firstChild);
+    });
+
+    // ── 2. Compute layout ───────────────────────────────────────────────
+    var CARD_W  = 200;
+    var VISIBLE = 4;
+    var offset  = 0;
+    var step    = 0;
+
+    function setup() {
+      var w   = overflow.offsetWidth;
+      var gap = Math.floor((w - VISIBLE * CARD_W) / (VISIBLE - 1));
+      gap     = Math.max(12, gap);
+      step    = CARD_W + gap;
+      track.style.columnGap = gap + 'px';
+
+      // Add the arrow gap so cards are visually centered between both arrows
+      var arrowGap = parseInt(getComputedStyle(overflow.parentElement).gap) || 16;
+      offset = n * step + arrowGap;
+      track.style.transition = 'none';
+      track.style.transform  = 'translateX(' + (-offset) + 'px)';
+    }
+
+    // Defer until layout is painted so offsetWidth is accurate
+    requestAnimationFrame(function() { requestAnimationFrame(setup); });
+
+    var resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(setup, 100);
+    });
+
+    // ── 3. Move ─────────────────────────────────────────────────────────
+    var busy = false;
+
+    function move(dir) {
+      if (busy) return;
+      busy = true;
+      offset += dir * step;
+      track.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+      track.style.transform  = 'translateX(' + (-offset) + 'px)';
+    }
+
+    // ── 4. Infinite wrap on transitionend (100% reliable) ───────────────
+    track.addEventListener('transitionend', function() {
+      var sw = n * step;
+      if (offset < sw)        { offset += sw; }
+      else if (offset >= sw * 2) { offset -= sw; }
+      track.style.transition = 'none';
+      track.style.transform  = 'translateX(' + (-offset) + 'px)';
+      // Force reflow so next move sees the new position before re-enabling transition
+      track.getBoundingClientRect();
+      busy = false;
+    });
+
+    rightBtn.addEventListener('click', function() { move(1); });
+    leftBtn.addEventListener('click', function() { move(-1); });
+  })();
+</script>
+{% endif %}

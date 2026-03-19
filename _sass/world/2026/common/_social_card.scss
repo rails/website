@@ -1,0 +1,38 @@
+.social-card {
+  position: relative;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgba(217, 217, 217, 0.5);
+  width: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 3px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: $off-white;
+
+  img { width: 36px; }
+
+  p {
+    font-size: $medium;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  &:hover {
+    border-color: rgba(217, 217, 217, 1);
+    box-shadow:
+      0   4px 8px rgba(#993FF2, 0.6),
+      0  -4px 8px rgba(#FF000B, 0.6),
+      4px 0   8px rgba(#FD8B00, 0.6),
+      -4px 0  8px rgba(#3C51ED, 0.6);
+  }
+
+  @include media(MobileScreens) {
+    width: 120px;
+    margin: auto;
+  }
+}

@@ -25,6 +25,22 @@
   </div>
 </section>
 
+{% assign members = site.data.world['2026'].sponsors.members %}
+{% if members.size > 0 %}
+<section class="members-logos">
+  <div class="members-logos__inner">
+    <p class="members-logos__label">Rails Foundation members</p>
+    <div class="logos-grid members">
+      {% for sponsor in members %}
+        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" loading="lazy">
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <script>
   (function() {
     var slides = document.querySelectorAll('.become-sponsor__slide');

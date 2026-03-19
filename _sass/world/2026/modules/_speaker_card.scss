@@ -1,0 +1,118 @@
+.speaker-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+
+  // Permanent neon border — outer directional glow only
+  // (no inset: children have solid backgrounds so inset would be hidden)
+  border: 1px solid rgba(217, 217, 217, 1);
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+     4px 0   8px rgba(#FD8B00, 1),
+     0   4px 8px rgba(#993FF2, 1),
+    -4px 0   8px rgba(#3C51ED, 1),
+     0  -4px 8px rgba(#FF000B, 1);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  // Inner glow — painted above children via z-index
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    box-shadow:
+      inset -5px 0   12px rgba(#FD8B00, 0.8),
+      inset  0  -5px 12px rgba(#993FF2, 0.8),
+      inset  5px 0   12px rgba(#3C51ED, 0.8),
+      inset  0   5px 12px rgba(#FF000B, 0.8);
+    transition: box-shadow 0.3s ease;
+  }
+
+  &:hover::after {
+    box-shadow:
+      inset -7px 0   18px rgba(#FD8B00, 1),
+      inset  0  -7px 18px rgba(#993FF2, 1),
+      inset  7px 0   18px rgba(#3C51ED, 1),
+      inset  0   7px 18px rgba(#FF000B, 1);
+  }
+
+  // Conic gradient border on top of white border
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: $neon-border-gradient;
+    opacity: 0.7;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  // Hover: glow grows ~30% more, card scales up slightly
+  &:hover {
+    transform: scale(1.04);
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+       4px 0   11px rgba(#FD8B00, 1),
+       0   4px 11px rgba(#993FF2, 1),
+      -4px 0   11px rgba(#3C51ED, 1),
+       0  -4px 11px rgba(#FF000B, 1);
+  }
+
+  &__photo-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 3.2;
+    overflow: hidden;
+    background: #1a1a1a;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  &__info {
+    padding: 12px 14px 16px;
+    background: transparent;
+  }
+
+  &__first-name {
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: normal;
+    font-variation-settings: $font-weight-700;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  &__last-name {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-variation-settings: $font-weight-700;
+    color: $white;
+    margin-bottom: 4px;
+  }
+
+  &__tagline {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    font-variation-settings: $font-weight-400;
+    color: $off-white;
+    margin-bottom: 0;
+  }
+}

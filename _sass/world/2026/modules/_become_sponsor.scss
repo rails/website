@@ -159,3 +159,27 @@
     }
   }
 }
+
+.members-logos {
+  padding: 0 89px 60px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 0 24px 48px;
+  }
+
+  &__inner {
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(217, 217, 217, 0.6);
+    font-variation-settings: $font-weight-400;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
