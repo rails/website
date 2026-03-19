@@ -5,6 +5,11 @@
     padding: 40px 24px 24px;
   }
 
+  &__inner {
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+
   &__card {
     position: relative;
     display: flex;

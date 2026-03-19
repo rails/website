@@ -1,64 +1,38 @@
-<div class="section full-height mobile-fit-content">
-  <div class="sponsor-intro-container">
-    <h2 class="large-title">Thank you sponsors!</h2>
+<section class="become-sponsor">
+  <div class="become-sponsor__inner">
 
-    <div class="content">
-      <div></div>
-      <div>
-        <p class="larger">
-          These companies brought Rails World to life this year for a <span class="bold">global audience of Rails enthusiasts</span>, developers, and maintainers.
-        </p>
+    <!-- Left column: card + hat -->
+    <div class="become-sponsor__left">
+      <div class="become-sponsor__card">
+        <h2 class="become-sponsor__title">Become a sponsor</h2>
+        <p class="become-sponsor__text">Sponsoring Rails World means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's make Rails World an unforgettable experience for all.</p>
+        <a href="#" class="become-sponsor__btn">View prospectus</a>
+      </div>
+      <img src="/assets/world/2026/images/sponsors/HAT.png" alt="Neon cowboy hat" class="become-sponsor__hat" loading="lazy">
+    </div>
+
+    <!-- Right column: image carousel -->
+    <div class="become-sponsor__carousel">
+      <div class="become-sponsor__slides">
+        <img src="/assets/world/2026/images/sponsors/Property 1=Default.png"  alt="Rails World 2025" class="become-sponsor__slide active" loading="lazy">
+        <img src="/assets/world/2026/images/sponsors/Property 1=Variant2.png" alt="Rails World 2025" class="become-sponsor__slide" loading="lazy">
+        <img src="/assets/world/2026/images/sponsors/Property 1=Variant3.png" alt="Rails World 2025" class="become-sponsor__slide" loading="lazy">
+        <img src="/assets/world/2026/images/sponsors/Property 1=Variant4.png" alt="Rails World 2025" class="become-sponsor__slide" loading="lazy">
+        <img src="/assets/world/2026/images/sponsors/Property 1=Variant5.png" alt="Rails World 2025" class="become-sponsor__slide" loading="lazy">
       </div>
     </div>
-  </div>
-</div>
 
-<div class="section">
-  <div class="logos-grid platinum">
-    {% for sponsor in site.data.world['2026'].sponsors.platinum %}
-      <a href="{{ sponsor.url }}" target="_blank">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
   </div>
+</section>
 
-  <div class="logos-grid gold">
-    {% for sponsor in site.data.world['2026'].sponsors.gold %}
-      <a href="{{ sponsor.url }}"  target="_blank">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
-
-  <div class="logos-grid silver">
-    {% for sponsor in site.data.world['2026'].sponsors.silver %}
-      <a href="{{ sponsor.url }}" target="_blank">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
-
-  <div class="logos-grid members">
-    {% for sponsor in site.data.world['2026'].sponsors.members %}
-      <a href="{{ sponsor.url }}" target="_blank">
-        <img
-          src="{{ sponsor.logo }}"
-          alt="{{ sponsor.name }}"
-          loading="lazy"
-        >
-      </a>
-    {% endfor %}
-  </div>
-</div>
+<script>
+  (function() {
+    var slides = document.querySelectorAll('.become-sponsor__slide');
+    var current = 0;
+    setInterval(function() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  })();
+</script>

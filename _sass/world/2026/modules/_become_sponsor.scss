@@ -1,0 +1,161 @@
+.become-sponsor {
+  padding: 48px 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px 60px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+    align-items: stretch;
+    max-width: 1262px;
+    margin: 0 auto;
+
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column;
+    }
+  }
+
+  // ── Left column ──────────────────────────────────────────
+  &__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
+    position: relative;
+    padding: 35px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    // Same directional neon glow as NL banner
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+       4px 0   8px rgba(#FD8B00, 1),
+       0   4px 8px rgba(#993FF2, 1),
+      -4px 0   8px rgba(#3C51ED, 1),
+       0  -4px 8px rgba(#FF000B, 1),
+      inset -5px 0   12px rgba(#FD8B00, 1),
+      inset  0  -5px 12px rgba(#993FF2, 1),
+      inset  5px 0   12px rgba(#3C51ED, 1),
+      inset  0   5px 12px rgba(#FF000B, 1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 0px;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 1;
+    font-variation-settings: $font-weight-700;
+    color: $white;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 25px;
+    font-variation-settings: $font-weight-400;
+    color: $off-white;
+    margin-bottom: 28px;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1.5px solid $off-white;
+    color: $off-white;
+    font-size: 16px;
+    line-height: 1;
+    font-variation-settings: $font-weight-600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $off-white;
+      color: $black;
+    }
+  }
+
+  &__hat {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 16px;
+    align-self: center;
+  }
+
+  // ── Right column: carousel ────────────────────────────────
+  &__carousel {
+    flex: 1;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+       4px 0   8px rgba(#FD8B00, 1),
+       0   4px 8px rgba(#993FF2, 1),
+      -4px 0   8px rgba(#3C51ED, 1),
+       0  -4px 8px rgba(#FF000B, 1),
+      inset -5px 0   12px rgba(#FD8B00, 1),
+      inset  0  -5px 12px rgba(#993FF2, 1),
+      inset  5px 0   12px rgba(#3C51ED, 1),
+      inset  0   5px 12px rgba(#FF000B, 1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  &__slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+
+  &__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
