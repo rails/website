@@ -99,6 +99,8 @@
     max-width: 420px;
     margin-top: 16px;
     align-self: center;
+    transform-origin: center center;
+    animation: float-hat 7s ease-in-out infinite;
   }
 
   // ── Right column: carousel ────────────────────────────────
@@ -182,4 +184,10 @@
     margin-bottom: 24px;
     text-align: center;
   }
+}
+
+@keyframes float-hat {
+  0%   { transform: translateY(0)     rotate(-1deg); }
+  50%  { transform: translateY(-10px) rotate(1deg); }
+  100% { transform: translateY(0)     rotate(-1deg); }
 }

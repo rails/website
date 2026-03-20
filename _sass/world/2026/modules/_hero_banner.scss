@@ -61,11 +61,12 @@
   .hero-cactus {
     position: absolute;
     left: 47%;
-    transform: translateX(-50%);
     top: -54px;
     height: 210px;
     width: auto;
     pointer-events: none;
+    transform-origin: center bottom;
+    animation: float-cactus 6s ease-in-out infinite;
 
     @include media(MobileAndTabletScreens) {
       display: none;
@@ -87,4 +88,10 @@
       height: auto;
     }
   }
+}
+
+@keyframes float-cactus {
+  0%   { transform: translateX(-50%) translateY(0)    rotate(-1deg); }
+  50%  { transform: translateX(-50%) translateY(-10px) rotate(1deg); }
+  100% { transform: translateX(-50%) translateY(0)    rotate(-1deg); }
 }
