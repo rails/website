@@ -11,7 +11,7 @@ date: 2026-03-20
 
 Hi, it's [gregmolnar](https://github.com/gregmolnar). Let's explore this week's changes in the Rails codebase.
 
-[Batch SQL statements when creating tables.](https://github.com/rails/rails/pull/57000)  
+[Batch SQL statements when creating tables](https://github.com/rails/rails/pull/57000)  
 This change batches the SQL statements during loading a database schema to improve the performance of the process.  
 
 [Deprecate require_dependency](https://github.com/rails/rails/pull/56992)  
