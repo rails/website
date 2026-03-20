@@ -80,57 +80,7 @@
 
   .nav-cta {
     flex-shrink: 0;
-    position: relative;
     width: 242px;
     height: 65px;
-    border-radius: 3px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 3px;
-      padding: 1.5px;
-      background: conic-gradient(
-        from 0deg,
-        #fd8b00 0%,
-        #993cf2 25%,
-        #3c51ed 51.44%,
-        #ff000b 75.96%,
-        #fd8b00 100%
-      );
-      -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 3px;
-      border: 1px solid rgba(217, 217, 217, 1);
-      pointer-events: none;
-    }
-
-    .nav-cta-text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 22.14px;
-      color: white;
-      text-decoration: none;
-    }
   }
 }
