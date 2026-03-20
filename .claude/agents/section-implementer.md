@@ -211,3 +211,52 @@ Jekyll build: PASS
 ### Back-to-top button
 - `<button id="backToTop">` with inline JS for scroll detection
 - `.show` class toggled at `scrollY > 300`
+
+### Neon / glow border effect
+- Correct technique: `border: 1px solid rgba(255,255,255,0.75)` (white core) + directional `box-shadow` values, one per side
+- Do NOT use a blurred pseudo-element (`::before`/`::after` with `filter: blur`) — it bleeds color into transparent backgrounds
+- Example for a multi-color neon border:
+  ```scss
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    6px 0 8px rgba($right-color, 0.7),   // right
+    0 6px 8px rgba($bottom-color, 0.7),  // bottom
+    -6px 0 8px rgba($left-color, 0.7),   // left
+    0 -6px 8px rgba($top-color, 0.7);    // top
+  ```
+- For inner glow add `inset` variants with OPPOSITE offsets: right inset = `-6px 0`, bottom inset = `0 -6px`, etc.
+
+### Conic gradient direction mapping
+`conic-gradient(from 90deg, colorA 0%, colorB 25%, colorC 51%, colorD 76%)` maps to:
+- `0%` (from 90deg) → right side = colorA
+- `25%`             → bottom side = colorB
+- `51%`             → left side  = colorC
+- `76%`             → top side   = colorD
+
+Directional box-shadow offsets: `6px 0` = right, `0 6px` = bottom, `-6px 0` = left, `0 -6px` = top.
+Inset shadows use the OPPOSITE offset direction (e.g. inset right glow: `inset -6px 0 ...`).
+
+### Section max-width alignment
+All homepage sections must use this wrapper structure to prevent glow/shadow from escaping the layout:
+```scss
+.section-name {
+  padding: ...;
+
+  &__inner {
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+}
+```
+Do NOT put `max-width` directly on the card/content element without a wrapper — box-shadow glow escapes the constraint on wide monitors, causing visual misalignment with adjacent sections.
+
+### Fixed background image
+```scss
+body {
+  background-color: #000;              // fallback + darkens transparent PNGs
+  background-image: url('/assets/...');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+```

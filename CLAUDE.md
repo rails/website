@@ -33,6 +33,8 @@ world/                       # Conference year pages
 
 Each Rails World edition is fully self-contained. When adding a new year (e.g. 2026), you must create **all** of these in parallel — they do not inherit from other years.
 
+**Before writing any SCSS for a new year:** extract the Figma variable collection (colors) first and define all color variables in `_sass/world/YYYY/base/_colors.scss`. Each year's palette differs completely from the previous year. Defining wrong or placeholder colors early causes cascading broken builds and incorrect colors across all modules.
+
 ### Files to create per year (`YYYY` = year):
 
 | Path | Purpose |

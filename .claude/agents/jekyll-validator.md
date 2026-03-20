@@ -99,3 +99,44 @@ SCSS issues:
 ```
 
 Do not proceed with any commit or further steps if the result is FAIL.
+
+---
+
+## Known Patterns
+
+### Image carousel (auto-advancing, no JS framework)
+Stack images with `position: absolute; opacity: 0; transition: opacity 0.8s` and activate with `.active { opacity: 1 }`. Drive the rotation with a small IIFE in a `<script>` tag at the bottom of the include file — do not create a separate `.js` file for single-include scripts.
+
+```html
+<div class="carousel">
+  <img class="carousel__slide active" src="..." alt="...">
+  <img class="carousel__slide" src="..." alt="...">
+</div>
+
+<script>
+(function () {
+  var slides = document.querySelectorAll('.carousel__slide');
+  var current = 0;
+  setInterval(function () {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 3000);
+})();
+</script>
+```
+
+```scss
+.carousel {
+  position: relative;
+
+  &__slide {
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+    &.active { opacity: 1; }
+  }
+}
+```
