@@ -7,3 +7,4 @@ _site
 .DS_Store
 .claude/
 .mcp.json
+CLAUDE.md
