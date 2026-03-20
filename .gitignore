@@ -5,3 +5,5 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+.claude/
+.mcp.json
