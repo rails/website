@@ -1,0 +1,38 @@
+// Canonical neon directional glow — matches conic-gradient(from 90deg):
+//   right = orange (#FD8B00), bottom = purple (#993FF2),
+//   left  = blue  (#3C51ED), top    = red    (#FF000B)
+
+// Outer directional glow only (use on the element itself)
+// $blur: 8px default, pass 11px for the stronger hover variant
+@mixin neon-glow-outer($opacity: 1, $blur: 8px) {
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+     4px 0   $blur rgba(#FD8B00, $opacity),
+     0   4px $blur rgba(#993FF2, $opacity),
+    -4px 0   $blur rgba(#3C51ED, $opacity),
+     0  -4px $blur rgba(#FF000B, $opacity);
+}
+
+// Inner glow only as standalone box-shadow (use on ::after pseudo-elements)
+// $offset: 5px default, $blur: 12px default — pass larger values for hover variants
+@mixin neon-glow-inner($opacity: 1, $offset: 5px, $blur: 12px) {
+  box-shadow:
+    inset (-$offset) 0       $blur rgba(#FD8B00, $opacity),
+    inset  0        (-$offset) $blur rgba(#993FF2, $opacity),
+    inset  $offset   0       $blur rgba(#3C51ED, $opacity),
+    inset  0         $offset  $blur rgba(#FF000B, $opacity);
+}
+
+// Combined outer + inner in one declaration (use when element has no solid-bg children)
+@mixin neon-glow($opacity: 1) {
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+     4px 0   8px rgba(#FD8B00, $opacity),
+     0   4px 8px rgba(#993FF2, $opacity),
+    -4px 0   8px rgba(#3C51ED, $opacity),
+     0  -4px 8px rgba(#FF000B, $opacity),
+    inset -5px 0   12px rgba(#FD8B00, $opacity),
+    inset  0  -5px 12px rgba(#993FF2, $opacity),
+    inset  5px 0   12px rgba(#3C51ED, $opacity),
+    inset  0   5px 12px rgba(#FF000B, $opacity);
+}

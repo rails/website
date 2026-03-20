@@ -20,20 +20,8 @@
     border-radius: 3px;
     background: transparent;
 
-    // Directional glow — each side matches its angular gradient color
     border: 1px solid rgba(217, 217, 217, 1);
-    box-shadow:
-      0px 4px 4px rgba(0, 0, 0, 0.25),
-      // outer glow — matches conic-gradient(from 90deg): right=orange, bottom=purple, left=blue, top=red
-       4px 0   8px rgba(#FD8B00, 1),   // right: orange
-       0   4px 8px rgba(#993FF2, 1),   // bottom: purple
-      -4px 0   8px rgba(#3C51ED, 1),   // left: blue
-       0  -4px 8px rgba(#FF000B, 1),   // top: red
-      // inner glow
-      inset -5px 0   12px rgba(#FD8B00, 1),
-      inset  0  -5px 12px rgba(#993FF2, 1),
-      inset  5px 0   12px rgba(#3C51ED, 1),
-      inset  0   5px 12px rgba(#FF000B, 1);
+    @include neon-glow;
 
     // Gradient colored border (conic) on top of white core
     &::before {

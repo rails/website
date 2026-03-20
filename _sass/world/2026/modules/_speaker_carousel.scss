@@ -22,19 +22,23 @@
     letter-spacing: normal;
     font-variation-settings: $font-weight-700;
     color: $white;
-    padding: 12px 20px;
-    border: 1.5px solid rgba(217, 217, 217, 0.6);
+    background: transparent;
+    margin: 0;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 3px;
-    box-shadow:
-       2px 0   6px rgba(#FD8B00, 0.5),
-       0   2px 6px rgba(#993FF2, 0.5),
-      -2px 0   6px rgba(#3C51ED, 0.5),
-       0  -2px 6px rgba(#FF000B, 0.5);
+    @include neon-glow;
   }
 
   &__see-all {
     flex-shrink: 0;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 28px;
     border: 1.5px solid rgba(217, 217, 217, 0.6);
     color: $off-white;
     font-size: 14px;
