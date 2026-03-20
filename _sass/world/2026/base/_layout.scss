@@ -1,4 +1,3 @@
-// Rails World 2026 — Layout
 body {
   font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
   display: flex;
@@ -14,11 +13,22 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('/assets/world/2026/images/bg.png');
+  background-image: url("/assets/world/2026/images/bg.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: #1a1a2e;
+  background-color: #000000;
+}
+
+#section-desktop {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  #footer-2026 {
+    margin-top: auto;
+  }
 }
 
 .container-center {
