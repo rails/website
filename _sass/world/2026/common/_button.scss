@@ -28,3 +28,33 @@
     text-decoration: none;
   }
 }
+
+.btn-secondary {
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid rgba(217, 217, 217, 1);
+
+  &:hover {
+    background: rgba(217, 217, 217, 1);
+
+    > span,
+    > a {
+      color: #0d0d0d;
+    }
+  }
+
+  > span,
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.14px;
+    color: white;
+    text-decoration: none;
+  }
+}
