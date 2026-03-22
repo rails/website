@@ -74,7 +74,7 @@
     font-size: 20px;
     line-height: 1.1;
     letter-spacing: normal;
-    font-variation-settings: $font-weight-700;
+    font-weight: $font-weight-700;
     color: $white;
     margin-bottom: 0;
   }
@@ -83,7 +83,7 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: normal;
-    font-variation-settings: $font-weight-700;
+    font-weight: $font-weight-700;
     color: $white;
     margin-bottom: 4px;
   }
@@ -92,7 +92,7 @@
     font-size: 12px;
     line-height: 1.4;
     letter-spacing: normal;
-    font-variation-settings: $font-weight-400;
+    font-weight: $font-weight-400;
     color: $off-white;
     margin-bottom: 0;
   }

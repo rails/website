@@ -55,7 +55,7 @@
     font-size: 30px;
     line-height: 30px;
     letter-spacing: normal;
-    font-variation-settings: $font-weight-700;
+    font-weight: $font-weight-700;
     color: $white;
     margin-bottom: 12px;
   }
@@ -64,10 +64,10 @@
     font-size: 18px;
     line-height: 25px;
     color: $off-white;
-    font-variation-settings: $font-weight-400;
+    font-weight: $font-weight-400;
 
     strong {
-      font-variation-settings: $font-weight-700;
+      font-weight: $font-weight-700;
       color: $white;
     }
   }
@@ -84,7 +84,7 @@
     color: $off-white;
     font-size: 16px;
     line-height: 1;
-    font-variation-settings: $font-weight-600;
+    font-weight: $font-weight-600;
     text-decoration: none;
     white-space: nowrap;
     transition: background 0.2s, color 0.2s;

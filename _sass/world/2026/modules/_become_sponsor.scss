@@ -63,7 +63,7 @@
   &__title {
     font-size: 50px;
     line-height: 1;
-    font-variation-settings: $font-weight-700;
+    font-weight: $font-weight-700;
     color: $white;
     letter-spacing: normal;
     margin-bottom: 20px;
@@ -72,7 +72,7 @@
   &__text {
     font-size: 18px;
     line-height: 25px;
-    font-variation-settings: $font-weight-400;
+    font-weight: $font-weight-400;
     color: $off-white;
     margin-bottom: 28px;
   }
@@ -84,7 +84,7 @@
     color: $off-white;
     font-size: 16px;
     line-height: 1;
-    font-variation-settings: $font-weight-600;
+    font-weight: $font-weight-600;
     text-decoration: none;
     transition: background 0.2s, color 0.2s;
 
@@ -180,7 +180,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgba(217, 217, 217, 0.6);
-    font-variation-settings: $font-weight-400;
+    font-weight: $font-weight-400;
     margin-bottom: 24px;
     text-align: center;
   }
