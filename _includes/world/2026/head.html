@@ -1,7 +1,7 @@
 {% if page.title %}
-{% assign title = site.world26_title | append: ' &mdash; ' | append: page.title %}
+{% assign title = 'Rails World 2026' | append: ' &mdash; ' | append: page.title %}
 {% else %}
-{% assign title = site.world26_title %}
+{% assign title = 'Rails World 2026' %}
 {% endif %}
 
 {% if page.description %}
@@ -13,7 +13,7 @@
 {% if page.og_image %}
 {% assign image = page.og_image | absolute_url %}
 {% else %}
-{% assign image = '/assets/world/2026/rails-world-2026.png' | absolute_url %}
+{% assign image = '/assets/world/2026/logos/rw26-logo.png' | absolute_url %}
 {% endif %}
 
 {% assign url = page.url | absolute_url %}
@@ -26,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ description }}" />
 
-  <meta property="og:site_name" content="{{ site.world26_title }}" />
+  <meta property="og:site_name" content="Rails World 2026" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ image }}" />
@@ -38,7 +38,7 @@
   <meta name="twitter:image" content="{{ image }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />
-  <meta name="twitter:image:alt" content="{{ site.world26_title }}" />
+  <meta name="twitter:image:alt" content="Rails World 2026" />
 
   <script type="application/ld+json">
     {
@@ -48,24 +48,23 @@
         "@type": "WebPage",
         "@id": "{{ url }}"
       },
-      "name": "{{ site.world26_title }}",
+      "name": "Rails World 2026",
       "headline": "{{ title }}",
       "description": "{{ description }}",
       "url": "{{ url }}",
       "image": "{{ image }}"
     }
   </script>
+
   <script defer data-domain="rubyonrails.org" src="https://plausible.io/js/script.js"></script>
 
   <link rel="icon" href="/assets/images/favicon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="/assets/images/apple-touch-icon.png" />
-  <link rel="stylesheet" href="https://use.typekit.net/lar2lzk.css">
+
+  <!-- Clash Grotesk font via Bunny Fonts (open source alternative) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=clash-grotesk:400,500,600,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/assets/css/world-2026.css" />
   <link rel="canonical" href="{{ url }}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
 </head>

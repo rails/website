@@ -1,5 +1,5 @@
 body {
-  font-family: "acumin-variable", sans-serif;
+  font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -7,13 +7,32 @@ body {
   width: 100%;
   overflow-x: hidden;
   color: white;
+}
 
-  &.purple-gradient-background {
-    background-color: #000000;
-    background-image: url('/assets/world/2026/images/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.page-wrapper-2026 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/assets/world/2026/images/bg.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#section-desktop {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  #footer-2026 {
+    margin-top: auto;
   }
+}
+
+.container-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
 }

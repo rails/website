@@ -1,3 +1,4 @@
+// Rails World 2026 — Media Query Mixins
 @mixin media($query) {
 
   @if $query == SmallMobileScreens {
@@ -15,4 +16,5 @@
   @if $query == TabletScreens {
     @media (min-width: 700px) and (max-width: 1200px) { @content; }
   }
+
 }

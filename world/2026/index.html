@@ -6,12 +6,17 @@ permalink: /world/2026
 redirect_from: /world/2026/
 ---
 
-<div class="homepage">
-  {% include world/2026/homepage_sections/hero_banner.html %}
-  {% include world/2026/homepage_sections/nl_banner.html %}
-  {% include world/2026/homepage_sections/speaker_carousel.html %}
-  {% include world/2026/homepage_sections/sponsors.html %}
-<button id="backToTop" onclick="scrollToTop()">↑</button>
+<div class="page-wrapper-2026">
+  <div id="section-desktop">
+    {% include world/2026/components/nav.html %}
+    {% include world/2026/homepage_sections/hero_banner.html %}
+    {% include world/2026/homepage_sections/nl_banner.html %}
+    {% include world/2026/homepage_sections/speaker_carousel.html %}
+    {% include world/2026/homepage_sections/sponsors.html %}
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    {% include world/2026/components/footer.html %}
+  </div>
+  <div id="section-mobile"></div>
 </div>
 
 <script>

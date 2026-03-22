@@ -1,0 +1,93 @@
+#footer-2026 {
+  position: relative;
+  background: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: linear-gradient(
+      to right,
+      #fd8b00,
+      #ff000b,
+      #ff18a2,
+      #993cf2,
+      #3c51ed
+    );
+    filter: blur(4px);
+    opacity: 0.65;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.5px;
+    background: white;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 107px;
+    padding: 0 px;
+    padding-top: 20px;
+  }
+
+  .footer-tickets {
+    width: 190px;
+    height: 44px;
+    flex-shrink: 0;
+
+    > span,
+    > a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .footer-btn {
+    width: 150px;
+    height: 44px;
+
+    > span,
+    > a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .footer-credits {
+    text-align: center;
+    font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: white;
+    padding-top: 30px;
+
+    &__link {
+      font-weight: 700;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+
+    .social-icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
