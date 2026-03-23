@@ -1,0 +1,105 @@
+.nl-banner {
+  padding: 58px 89px 27px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px 24px;
+  }
+
+  &__inner {
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 35px;
+    border-radius: 3px;
+    background: transparent;
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    @include neon-glow;
+
+    // Gradient colored border (conic) on top of white core
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 0px;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+
+  &__text {
+    flex: 0 1 700px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: normal;
+    font-weight: $font-weight-700;
+    color: $white;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    color: $off-white;
+    font-weight: $font-weight-400;
+
+    strong {
+      font-weight: $font-weight-700;
+      color: $white;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    padding: 0 32px;
+    margin: 25px 0;  // card padding (35px) + this margin (25px) = 60px from card border
+    border: 1.5px solid $off-white;
+    color: $off-white;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: $font-weight-600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $off-white;
+      color: $black;
+    }
+
+    @include media(MobileAndTabletScreens) {
+      width: 100%;
+      align-self: auto;
+      margin: 0;
+      padding: 16px 24px;
+      text-align: center;
+    }
+  }
+}

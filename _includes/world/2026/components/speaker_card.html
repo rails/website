@@ -1,0 +1,14 @@
+{% assign speaker_slug = include.path | split: '/' | last | remove_first: '.md' %}
+
+<a  class="speaker-card"
+    href="/world/2026/speakers/{{ speaker_slug }}"
+    aria-label="{{ include.first_name }} {{ include.last_name }}">
+  <div class="speaker-card__photo-wrap">
+    <img class="speaker-card__photo" src="{{ include.photo }}" alt="{{ include.first_name }} {{ include.last_name }}" loading="lazy">
+  </div>
+  <div class="speaker-card__info">
+    <p class="speaker-card__first-name">{{ include.first_name }}</p>
+    <p class="speaker-card__last-name">{{ include.last_name }}</p>
+    <p class="speaker-card__tagline">{{ include.tagline }}{% if include.company and include.company != "false" %}, {{ include.company }}{% endif %}</p>
+  </div>
+</a>

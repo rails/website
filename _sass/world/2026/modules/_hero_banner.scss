@@ -1,0 +1,97 @@
+.hero-banner {
+  background-color: transparent;
+  padding: 60px 89px;
+  color: white;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px;
+  }
+
+  .hero-inner {
+    position: relative;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1262px;
+    margin: 0 auto;
+
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  .hero-text {
+    flex: 0 0 570px;
+    max-width: 570px;
+
+    @include media(MobileAndTabletScreens) {
+      flex: unset;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: $font-weight-700;
+      letter-spacing: normal;
+      margin-bottom: 24px;
+
+      @include media(MobileScreens) {
+        font-size: 36px;
+        line-height: 1.1;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.9px;
+      margin-bottom: 16px;
+      font-weight: $font-weight-400;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .hero-cactus {
+    position: absolute;
+    left: 47%;
+    top: -54px;
+    height: 210px;
+    width: auto;
+    pointer-events: none;
+    transform-origin: center bottom;
+    animation: float-cactus 6s ease-in-out infinite;
+
+    @include media(MobileAndTabletScreens) {
+      display: none;
+    }
+  }
+
+  .hero-logo {
+    flex: 1;
+    align-self: center;
+
+    @include media(MobileAndTabletScreens) {
+      flex: unset;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .logo-full {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@keyframes float-cactus {
+  0%   { transform: translateX(-50%) translateY(0)    rotate(-1deg); }
+  50%  { transform: translateX(-50%) translateY(-10px) rotate(1deg); }
+  100% { transform: translateX(-50%) translateY(0)    rotate(-1deg); }
+}
