@@ -18,8 +18,6 @@
   transition: opacity 0.3s ease;
 }
 
-@include media(MobileScreens) {
-  #backToTop.show {
-    display: flex;
-  }
+#backToTop.show {
+  display: flex;
 }

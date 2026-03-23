@@ -36,7 +36,6 @@
     align-items: center;
     justify-content: space-around;
     height: 107px;
-    padding: 0 px;
     padding-top: 20px;
   }
 
@@ -66,7 +65,7 @@
   .footer-credits {
     text-align: center;
     font-family: "clash-grotesk", "ClashGrotesk-Variable", sans-serif;
-    font-weight: 300;
+    font-weight: $font-weight-400;
     font-size: 18px;
     letter-spacing: 0;
     color: white;
