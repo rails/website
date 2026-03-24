@@ -67,11 +67,15 @@
   }
 
   &__body {
+    font-family: "Calibre", sans-serif;
+    font-weight: 100;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.9px;
-    color: white;
-    font-weight: 100;
+
+    strong {
+      font-weight: 600;
+    }
   }
 }
 
@@ -101,14 +105,13 @@
 
     p {
       font-family: "Calibre", sans-serif;
-      font-weight: 400;
+      font-weight: 100;
       font-size: 18px;
       line-height: 25px;
       letter-spacing: 0.9px;
-      color: white;
 
       strong {
-        font-weight: 700;
+        font-weight: 600;
       }
     }
 
