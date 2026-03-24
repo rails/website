@@ -1,0 +1,30 @@
+.ras-sponsor {
+  padding: 0 110px;
+  margin-bottom: 80px;
+
+  &__content {
+    @include neon-glow-red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
+    padding: 35px;
+    height: 182px;
+  }
+
+  &__text {
+    font-family: 'Calibre', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    width: 366px;
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    width: 345px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}

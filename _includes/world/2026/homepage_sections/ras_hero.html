@@ -1,0 +1,55 @@
+<section class="ras-hero">
+  <div class="ras-hero__left">
+    <img
+      src="/assets/world/2026/images/ras-lockup-simple-white.svg"
+      alt="Rails at Scale"
+      class="ras-hero__logo"
+      width="584"
+      height="276"
+    />
+    <div class="ras-hero__carousel">
+      <div class="ras-hero__slides">
+        <img src="/assets/world/2026/images/ras-photo-1.png" alt="Rails at Scale event" class="ras-hero__slide active" loading="lazy">
+        <img src="/assets/world/2026/images/ras-photo-2.png" alt="Rails at Scale event" class="ras-hero__slide" loading="lazy">
+        <img src="/assets/world/2026/images/ras-photo-3.png" alt="Rails at Scale event" class="ras-hero__slide" loading="lazy">
+        <img src="/assets/world/2026/images/ras-photo-4.png" alt="Rails at Scale event" class="ras-hero__slide" loading="lazy">
+        <img src="/assets/world/2026/images/ras-photo-5.png" alt="Rails at Scale event" class="ras-hero__slide" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="ras-hero__right">
+    <div class="ras-hero__tags">
+      <span class="ras-tag">Sept 22, 2026</span>
+      <span class="ras-tag">The Line</span>
+      <span class="ras-tag">Austin, TX</span>
+    </div>
+
+    <h2 class="ras-hero__headline">A gathering for engineers solving big challenges with Ruby on Rails.</h2>
+
+    <p class="ras-hero__body">
+      <strong>Rails at Scale</strong> is a day of open discussion about scaling Rails applications. It's where engineers working on high-performance, high-traffic systems can connect and exchange insights, best practices, and hard-earned lessons.
+    </p>
+
+    <div class="ras-apply-box">
+      <div class="ras-apply-box__content">
+        <p>We encourage applications from anyone working with Rails at scale. However, this is an invite-only event capped at 100 attendees, so space is limited. We will therefore need to limit the number of attendees from any one company. Applicants are asked to apply on behalf of their company and indicate how many people they would like to send.</p>
+        <p>We will review all applications and select those who best align with the event's focus.</p>
+        <p><strong>Apply to attend and be part of the conversation.</strong></p>
+        <a href="#" class="btn-ras-primary"><span>Apply here</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var slides = document.querySelectorAll('.ras-hero__slide');
+    var current = 0;
+    setInterval(function() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  })();
+</script>

@@ -22,6 +22,21 @@
     inset  0         $offset  $blur rgba(#FF000B, $opacity);
 }
 
+// Red neon border (used in Rails at Scale section frames)
+@mixin neon-glow-red {
+  border: 1px solid #d9d9d9;
+  box-shadow:
+    // outer glow
+    0 0 16px 4px rgba(#d30001, 0.7),
+    0 0 4px  2px rgba(#d30001, 0.9),
+    0 0 1px  1px rgba(#d30001, 1),
+    // inner glow
+    inset  5px  0   12px rgba(#d30001, 0.5),
+    inset -5px  0   12px rgba(#d30001, 0.5),
+    inset  0    5px 12px rgba(#d30001, 0.5),
+    inset  0   -5px 12px rgba(#d30001, 0.5);
+}
+
 // Combined outer + inner in one declaration (use when element has no solid-bg children)
 @mixin neon-glow($opacity: 1) {
   box-shadow:
