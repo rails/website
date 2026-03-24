@@ -7,7 +7,7 @@ published: true
 date: 2026-03-24 13:00:00 -07:00
 ---
 
-Hello again everyone! Long time no see 😅.
+Hello again everyone! [Long time no see 😆](/2026/3/23/Rails-Versions-7-2-3-1-8-0-4-1-and-8-1-2-1-have-been-released).
 
 Rails Versions 8.0.5 and 8.1.3 have been released! These are regular bugfix releases.
 
@@ -15,33 +15,8 @@ These also include the changes from [yesterday's security releases](/2026/3/23/R
 
 The Rails 8.1 series will continue receiving bug fixes until October 2026.  The
 8.0 series will change to only receiving security updates in May next month, so
-this may be the last release in the series. See our [Maintenance
+this might be the last bug fix release in that series. See our [Maintenance
 policy](https://rubyonrails.org/maintenance) for more information.
-
-## CHANGES since 8.0.4
-
-To see a summary of changes, please read the release on GitHub:
-
-[8.0.5 CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.5)
-To view the changes for each gem, please read the changelogs on GitHub:
-* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actioncable/CHANGELOG.md)
-* [Action Mailbox CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionmailbox/CHANGELOG.md)
-* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionmailer/CHANGELOG.md)
-* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionpack/CHANGELOG.md)
-* [Action Text CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actiontext/CHANGELOG.md)
-* [Action View CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionview/CHANGELOG.md)
-* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activejob/CHANGELOG.md)
-* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activemodel/CHANGELOG.md)
-* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activerecord/CHANGELOG.md)
-* [Active Storage CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activestorage/CHANGELOG.md)
-* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activesupport/CHANGELOG.md)
-* [Railties CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/railties/CHANGELOG.md)
-
-
-*Full listing*
-
-To see the full list of changes, [check out all the commits on
-GitHub](https://github.com/rails/rails/compare/v8.0.4...v8.0.5).
 
 ## CHANGES since 8.1.2
 
@@ -67,6 +42,31 @@ To view the changes for each gem, please read the changelogs on GitHub:
 
 To see the full list of changes, [check out all the commits on
 GitHub](https://github.com/rails/rails/compare/v8.1.2...v8.1.3).
+
+## CHANGES since 8.0.4
+
+To see a summary of changes, please read the release on GitHub:
+
+[8.0.5 CHANGELOG](https://github.com/rails/rails/releases/tag/v8.0.5)
+To view the changes for each gem, please read the changelogs on GitHub:
+* [Action Cable CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actioncable/CHANGELOG.md)
+* [Action Mailbox CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionmailbox/CHANGELOG.md)
+* [Action Mailer CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionmailer/CHANGELOG.md)
+* [Action Pack CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionpack/CHANGELOG.md)
+* [Action Text CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actiontext/CHANGELOG.md)
+* [Action View CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/actionview/CHANGELOG.md)
+* [Active Job CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activejob/CHANGELOG.md)
+* [Active Model CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activemodel/CHANGELOG.md)
+* [Active Record CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activerecord/CHANGELOG.md)
+* [Active Storage CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activestorage/CHANGELOG.md)
+* [Active Support CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/activesupport/CHANGELOG.md)
+* [Railties CHANGELOG](https://github.com/rails/rails/blob/v8.0.5/railties/CHANGELOG.md)
+
+
+*Full listing*
+
+To see the full list of changes, [check out all the commits on
+GitHub](https://github.com/rails/rails/compare/v8.0.4...v8.0.5).
 
 ## SHA-256
 
