@@ -1,0 +1,17 @@
+{% assign sponsors_2026 = site.data.world['2026'].sponsors %}
+
+<section class="sponsor-grid">
+  <div class="sponsor-grid__inner">
+
+    <h2 class="sponsor-grid__title">Thank you to our sponsors that make it all possible!</h2>
+
+    <div class="sponsor-grid__logos">
+      {% for sponsor in sponsors_2026 %}
+        <a href="{{ sponsor.url }}" class="sponsor-grid__item" target="_blank" rel="noopener" aria-label="{{ sponsor.name }}">
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" loading="lazy">
+        </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

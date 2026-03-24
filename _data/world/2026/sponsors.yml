@@ -1,0 +1,12 @@
+- name: "Wyeworks"
+  logo: /assets/world/2026/logos/logo-wyeworks.png
+  url: "https://www.wyeworks.com"
+- name: "Typesense"
+  logo: /assets/world/2026/logos/logo-typesense.png
+  url: "https://typesense.org"
+- name: "Test Double"
+  logo: /assets/world/2026/logos/logo-testdouble.png
+  url: "https://testdouble.com"
+- name: "Sorcer"
+  logo: /assets/world/2026/logos/logo-sorcer.png
+  url: "https://sorcer.com"
