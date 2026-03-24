@@ -10,7 +10,7 @@ world26_title: Rails World 2026 - Austin, TX
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
+  # - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
@@ -50,7 +50,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: docs/case-studies"
+      path: "docs/case-studies"
       type: "case-studies"
     values:
       layout: "default"
