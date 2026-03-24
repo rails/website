@@ -1,0 +1,213 @@
+// FAQ page — Rails World 2026
+
+.faq-page {
+  padding: 48px 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px 60px;
+  }
+}
+
+.faq-inner {
+  max-width: 1262px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Tabs (folder-style) ───────────────────────────────────────────────────────
+
+.faq-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-tab {
+  padding: 14px 24px;
+  border-radius: 3px 3px 0 0;
+  font-family: "clash-grotesk", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: $font-weight-500;
+  color: $white;
+  background: rgba($black, 0.5);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+
+  // Outer neon — top & sides only (no bottom glow so the tab blends with the box)
+  box-shadow:
+     4px  0   8px rgba(#FD8B00, 1),
+    -4px  0   8px rgba(#3C51ED, 1),
+     0   -4px 8px rgba(#FF000B, 1);
+
+  // Inner glow + thin white border — top & sides only
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-bottom: none;
+    pointer-events: none;
+    box-shadow:
+      inset -5px 0    12px rgba(#FD8B00, 1),
+      inset  5px 0    12px rgba(#3C51ED, 1),
+      inset  0   5px  12px rgba(#FF000B, 1);
+  }
+
+  // "Still got q's?" — plain white border only, no neon; same hover as .btn-secondary
+  &--contact {
+    box-shadow: none;
+
+    &::after {
+      border: 2px solid $white;
+      border-bottom: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: rgba(217, 217, 217, 1);
+      color: #0d0d0d;
+    }
+  }
+}
+
+// ── Content box ───────────────────────────────────────────────────────────────
+
+.faq-content-box {
+  border-radius: 0 16px 16px 16px;
+  background: rgba($black, 0.5);
+  padding: 8px 0;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(217, 217, 217, 1);
+  @include neon-glow;
+}
+
+// ── Panels ────────────────────────────────────────────────────────────────────
+
+.faq-panel {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+// ── Accordion list ────────────────────────────────────────────────────────────
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-item {
+  position: relative;
+
+  // Neon gradient separator between items
+  & + & {
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      margin: 0 32px;
+      background: linear-gradient(
+        90deg,
+        rgba(#FF000B, 0.8) 0%,
+        rgba(#993CF2, 0.7) 33%,
+        rgba(#3C51ED, 0.7) 66%,
+        rgba(#FD8B00, 0.9) 100%
+      );
+      box-shadow: 0 0 5px rgba(#FD8B00, 0.35);
+    }
+  }
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: "clash-grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: $font-weight-600;
+  color: $white;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+// Hollow downward-pointing triangle chevron
+.faq-chevron {
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid $white;
+  transition: transform 0.25s ease, border-top-color 0.2s ease;
+}
+
+.faq-question--open {
+  color: $orange;
+
+  .faq-chevron {
+    transform: rotate(180deg);
+    border-top-color: $orange;
+  }
+}
+
+.faq-answer {
+  padding: 0 32px 24px;
+  color: rgba($white, 0.85);
+  font-size: 16px;
+  font-weight: $font-weight-400;
+  line-height: 1.6;
+
+  p { margin: 0 0 8px; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  strong { font-weight: $font-weight-700; }
+}
+
+// ── Mobile ────────────────────────────────────────────────────────────────────
+
+@include media(MobileScreens) {
+  .faq-page {
+    padding: 100px 16px 60px;
+  }
+
+  .faq-question {
+    font-size: 17px;
+    padding: 20px 20px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+
+  .faq-item + .faq-item::before {
+    margin: 0 20px;
+  }
+}
