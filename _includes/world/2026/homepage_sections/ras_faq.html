@@ -1,0 +1,52 @@
+{% assign ras_faq = site.data.world['2026'].ras_faq %}
+
+<section class="ras-faq">
+  <div class="ras-faq__box">
+    <h2 class="ras-faq__title">FAQs</h2>
+
+    <ul class="faq-list" role="list">
+      {% for item in ras_faq %}
+        <li class="faq-item">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="ras-faq-answer-{{ forloop.index }}"
+          >
+            <span>{{ item.question }}</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div
+            class="faq-answer"
+            id="ras-faq-answer-{{ forloop.index }}"
+            hidden
+          >
+            {{ item.answer }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var questions = document.querySelectorAll('.ras-faq .faq-question');
+    questions.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        questions.forEach(function(b) {
+          b.classList.remove('faq-question--open');
+          b.setAttribute('aria-expanded', 'false');
+          var ans = document.getElementById(b.getAttribute('aria-controls'));
+          if (ans) ans.hidden = true;
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          this.classList.add('faq-question--open');
+          var answer = document.getElementById(this.getAttribute('aria-controls'));
+          if (answer) answer.hidden = false;
+        }
+      });
+    });
+  })();
+</script>

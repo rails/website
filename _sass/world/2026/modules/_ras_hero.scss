@@ -1,0 +1,122 @@
+.ras-hero {
+  display: grid;
+  grid-template-columns: 584px 1fr;
+  gap: 98px;
+  padding: 60px 110px 80px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__carousel {
+    @include neon-glow-red;
+    height: 666px;
+    margin-top: 120px;
+    position: relative;
+  }
+
+  &__slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 75px;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__headline {
+    font-family: "Borgstrand Pro", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    color: white;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  &__body {
+    font-family: "Calibre", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.9px;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.ras-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid white;
+  font-family: "Borgstrand Pro", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ras-apply-box {
+  @include neon-glow-red;
+  padding: 35px;
+  margin-top: 16px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    p {
+      font-family: "Calibre", sans-serif;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.9px;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    .btn-ras-primary {
+      align-self: flex-start;
+    }
+  }
+}

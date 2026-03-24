@@ -29,6 +29,33 @@
   }
 }
 
+.btn-ras-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  background: $white;
+  border: 2px solid $white;
+  transition: background 0.3s ease;
+
+  span {
+    display: block;
+    font-family: "Borgstrand Pro", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: $red;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background: $black;
+
+    span {
+      color: $white;
+    }
+  }
+}
+
 .btn-secondary {
   position: relative;
   border-radius: 3px;

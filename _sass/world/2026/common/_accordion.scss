@@ -1,0 +1,104 @@
+// Shared accordion styles — used by FAQ page and RAS FAQ section
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-item {
+  position: relative;
+
+  // Neon gradient separator between items
+  & + & {
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      margin: 0 32px;
+      background: linear-gradient(
+        90deg,
+        rgba(#FF000B, 0.8) 0%,
+        rgba(#993CF2, 0.7) 33%,
+        rgba(#3C51ED, 0.7) 66%,
+        rgba(#FD8B00, 0.9) 100%
+      );
+      box-shadow: 0 0 5px rgba(#FD8B00, 0.35);
+    }
+  }
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: "clash-grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: $font-weight-600;
+  color: $white;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+// Hollow downward-pointing triangle chevron
+.faq-chevron {
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid $white;
+  transition: transform 0.25s ease, border-top-color 0.2s ease;
+}
+
+.faq-question--open {
+  color: $orange;
+
+  .faq-chevron {
+    transform: rotate(180deg);
+    border-top-color: $orange;
+  }
+}
+
+.faq-answer {
+  padding: 0 32px 24px;
+  color: rgba($white, 0.85);
+  font-size: 16px;
+  font-weight: $font-weight-400;
+  line-height: 1.6;
+
+  p { margin: 0 0 8px; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  strong { font-weight: $font-weight-700; }
+}
+
+@include media(MobileScreens) {
+  .faq-question {
+    font-size: 17px;
+    padding: 20px 20px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+
+  .faq-item + .faq-item::before {
+    margin: 0 20px;
+  }
+}
