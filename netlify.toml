@@ -6,3 +6,4 @@
   RUBY_VERSION = "3.4.7"
   JEKYLL_ENV = "production"
   SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "pX27zsMN2ViQKta1bGfLmVJE,tU9bLuZseefXQ4yQxQo8wjtB,auth_pX27zsMN2ViQKta1bGfLmVJE,reset_token_tU9bLuZseefXQ4yQxQo8wjtB"
+  PAGES_REPO_NWO = "wyeworks/rails-word-website"
