@@ -5,3 +5,4 @@
 [build.environment]
   RUBY_VERSION = "3.4.7"
   JEKYLL_ENV = "production"
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
