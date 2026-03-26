@@ -63,6 +63,10 @@
       inset  0   5px  12px rgba(#FF000B, 1);
   }
 
+  &--contact-mobile {
+    display: none;
+  }
+
   // "Still got q's?" — plain white border only, no neon; same hover as .btn-secondary
   &--contact {
     box-shadow: none;
@@ -106,6 +110,38 @@
 
 @include media(MobileScreens) {
   .faq-page {
-    padding: 100px 16px 60px;
+    padding: 40px 16px 60px;
+  }
+}
+
+@include media(MobileAndTabletScreens) {
+  // Tabs: full border on all sides (no folder effect)
+  .faq-tab {
+    border-radius: 3px;
+    font-size: 18px;
+
+    &::after {
+      border-radius: 3px;
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+    }
+
+    &--contact-desktop {
+      display: none;
+    }
+
+    &--contact-mobile {
+      display: inline-block;
+      margin-top: 16px;
+      border-radius: 3px;
+
+      &::after {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  // Content box: full border-radius
+  .faq-content-box {
+    border-radius: 16px;
   }
 }
