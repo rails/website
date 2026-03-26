@@ -32,6 +32,11 @@
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 3px;
     @include neon-glow;
+
+    @include media(MobileAndTabletScreens) {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   &__see-all {
@@ -53,6 +58,21 @@
       background: $off-white;
       color: $black;
       border-color: $off-white;
+    }
+
+    &--desktop {
+      @include media(MobileAndTabletScreens) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media(MobileAndTabletScreens) {
+        display: inline-flex;
+        margin-top: 16px;
+      }
     }
   }
 
@@ -102,6 +122,8 @@
 
     @include media(MobileAndTabletScreens) {
       overflow: hidden;
+      padding: 12px 0;
+      margin: -12px 0;
     }
   }
 
