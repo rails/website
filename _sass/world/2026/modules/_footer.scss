@@ -78,6 +78,10 @@
     }
   }
 
+  .footer-links {
+    display: contents; // transparent on desktop — children behave as direct flex children
+  }
+
   .footer-social {
     display: flex;
     align-items: center;
@@ -87,6 +91,45 @@
     .social-icon {
       width: 44px;
       height: 44px;
+    }
+  }
+
+  @include media(MobileAndTabletScreens) {
+    .footer-inner {
+      flex-direction: column;
+      height: auto;
+      padding: 32px 24px 16px;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .footer-tickets {
+      width: 100%;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      padding: 0 16px;
+    }
+
+    .footer-btn {
+      width: auto;
+      flex: 0 0 auto;
+      height: auto;
+      padding: 10px 16px;
+    }
+
+    .footer-social {
+      justify-content: center;
+    }
+
+    .footer-credits {
+      font-size: 14px;
+      padding: 8px 24px 16px;
+      line-height: 1.5;
     }
   }
 }
