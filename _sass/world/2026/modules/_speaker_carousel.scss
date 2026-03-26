@@ -63,6 +63,10 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @include media(MobileAndTabletScreens) {
+      gap: 0;
+    }
   }
 
   &__arrow {
@@ -84,7 +88,10 @@
 
     &:hover { color: $white; }
 
-    @include media(MobileAndTabletScreens) { display: none; }
+    @include media(MobileAndTabletScreens) {
+      position: relative;
+      z-index: 2;
+    }
   }
 
   &__track-overflow {
@@ -92,6 +99,10 @@
     // `clip` clips without creating a scroll container; margin lets the neon glow bleed through
     overflow: clip;
     overflow-clip-margin: 20px;
+
+    @include media(MobileAndTabletScreens) {
+      overflow: hidden;
+    }
   }
 
   &__track {

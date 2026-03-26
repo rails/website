@@ -49,6 +49,10 @@
 
   &__text {
     flex: 0 1 700px;
+
+    @include media(MobileAndTabletScreens) {
+      flex: none;
+    }
   }
 
   &__title {
@@ -95,11 +99,11 @@
     }
 
     @include media(MobileAndTabletScreens) {
-      width: 100%;
-      align-self: auto;
+      align-self: stretch;
       margin: 0;
       padding: 16px 24px;
       text-align: center;
+      white-space: normal;
     }
   }
 }
