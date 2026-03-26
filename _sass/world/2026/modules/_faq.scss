@@ -140,8 +140,9 @@
     }
   }
 
-  // Content box: full border-radius
+  // Content box: full border-radius + spacing from tabs
   .faq-content-box {
     border-radius: 16px;
+    margin-top: 24px;
   }
 }
