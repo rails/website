@@ -1,9 +1,17 @@
 .ras-faq {
   padding: 0 110px 80px;
 
+  @include media(MobileAndTabletScreens) {
+    padding: 0 24px 60px;
+  }
+
   &__box {
     @include neon-glow-red;
     padding: 35px 40px;
+
+    @include media(MobileAndTabletScreens) {
+      padding: 24px;
+    }
   }
 
   &__title {
