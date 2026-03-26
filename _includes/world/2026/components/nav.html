@@ -26,6 +26,38 @@
         <span>Tickets coming soon!</span>
       </div>
 
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
     </nav>
+
+    <div class="nav-mobile-menu" id="nav-mobile-menu" hidden>
+      <ul role="list">
+        <li><a href="/world/2026" class="nav-link">Home</a></li>
+        <li><a href="/world/2026/speakers" class="nav-link">Speakers</a></li>
+        <li><a href="/world/2026/programme" class="nav-link">Programme</a></li>
+        <li><a href="/world/2026/faq" class="nav-link">FAQs</a></li>
+        <li><a href="/world/2026/rails-at-scale" class="nav-link">Rails at Scale Summit</a></li>
+      </ul>
+      <div class="btn-primary nav-cta nav-cta--mobile" role="button" tabindex="0" aria-label="Tickets coming soon">
+        <span>Tickets coming soon!</span>
+      </div>
+    </div>
+
   </div>
 </header>
+
+<script>
+  (function() {
+    var btn  = document.querySelector('.nav-hamburger');
+    var menu = document.getElementById('nav-mobile-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function() {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.classList.toggle('nav-hamburger--open', !open);
+      menu.hidden = open;
+    });
+  })();
+</script>
