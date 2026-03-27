@@ -63,12 +63,13 @@
 
   <!-- Preload LCP image (hero logo on homepage) -->
   {% if page.url == '/world/2026/' or page.url == '/world/2026' %}
-  <link rel="preload" href="/assets/world/2026/logos/logo.png" as="image" fetchpriority="high">
+  <link rel="preload" href="/assets/world/2026/logos/logo.webp" as="image" type="image/webp" fetchpriority="high">
   {% endif %}
 
-  <!-- Clash Grotesk font via Bunny Fonts (open source alternative) -->
+  <!-- Clash Grotesk font via Bunny Fonts — non-blocking load -->
   <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=clash-grotesk:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.bunny.net/css?family=clash-grotesk:400,500,600,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.bunny.net/css?family=clash-grotesk:400,500,600,700&display=swap" rel="stylesheet"></noscript>
 
   <link rel="stylesheet" href="/assets/css/world-2026.css" />
   <link rel="canonical" href="{{ url }}" />
