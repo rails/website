@@ -66,7 +66,9 @@
   <link rel="preload" href="/assets/world/2026/logos/logo.webp" as="image" type="image/webp" fetchpriority="high">
   {% endif %}
 
-  <!-- Clash Grotesk is self-hosted via @font-face in _fonts.scss -->
+  <!-- Clash Grotesk via Fontshare CDN (ITF FFL license permits API usage) -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/css/world-2026.css" />
   <link rel="canonical" href="{{ url }}" />
