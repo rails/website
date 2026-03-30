@@ -59,7 +59,7 @@
     font-size: 30px;
     line-height: 30px;
     letter-spacing: normal;
-    font-weight: $font-weight-700;
+    font-weight: $font-weight-600;
     color: $white;
     margin-bottom: 12px;
   }
@@ -67,11 +67,12 @@
   &__subtitle {
     font-size: 18px;
     line-height: 25px;
+    letter-spacing: -0.02em;
     color: $off-white;
     font-weight: $font-weight-400;
 
     strong {
-      font-weight: $font-weight-700;
+      font-weight: $font-weight-600;
       color: $white;
     }
   }

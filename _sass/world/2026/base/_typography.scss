@@ -17,20 +17,20 @@ $small: 14px;
 
 h1 {
   font-size: $xxx-large;
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-600;
   letter-spacing: 1px;
   line-height: 65px;
 }
 
 h2 {
   font-size: $xxx-large;
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-600;
   letter-spacing: 1px;
 }
 
 h3, h4 {
   font-size: $xx-large;
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-600;
   letter-spacing: 1px;
 }
 
@@ -42,5 +42,5 @@ p {
 }
 
 .uppercase { text-transform: uppercase; }
-.bold { font-weight: $font-weight-700; }
+.bold { font-weight: $font-weight-600; }
 .text-pink { color: $pink; }
