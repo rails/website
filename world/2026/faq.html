@@ -51,9 +51,8 @@ permalink: /world/2026/faq
                 <div
                   class="faq-answer"
                   id="faq-answer-{{ category.slug }}-{{ forloop.index }}"
-                  hidden
                 >
-                  {{ item.answer }}
+                  <div class="faq-answer__inner">{{ item.answer }}</div>
                 </div>
               </li>
             {% endfor %}
@@ -87,7 +86,7 @@ permalink: /world/2026/faq
       btn.classList.remove('faq-question--open');
       btn.setAttribute('aria-expanded', 'false');
       var answer = document.getElementById(btn.getAttribute('aria-controls'));
-      if (answer) answer.hidden = true;
+      if (answer) answer.classList.remove('faq-answer--open');
     });
   }
 
@@ -101,7 +100,6 @@ permalink: /world/2026/faq
           closeAllInPanel(panel);
         }
         panel.classList.remove('faq-panel--active');
-        panel.hidden = true;
       });
 
       document.querySelectorAll('.faq-tab[role="tab"]').forEach(function(t) {
@@ -113,10 +111,7 @@ permalink: /world/2026/faq
       this.setAttribute('aria-selected', 'true');
 
       var targetPanel = document.getElementById('faq-panel-' + targetSlug);
-      if (targetPanel) {
-        targetPanel.classList.add('faq-panel--active');
-        targetPanel.hidden = false;
-      }
+      if (targetPanel) targetPanel.classList.add('faq-panel--active');
     });
   });
 
@@ -126,15 +121,13 @@ permalink: /world/2026/faq
       var expanded = this.getAttribute('aria-expanded') === 'true';
       var panel = this.closest('.faq-panel');
 
-      // Close all others in this panel first
       closeAllInPanel(panel);
 
-      // If it was closed, open it; if it was open, leave it closed (toggle off)
       if (!expanded) {
         this.setAttribute('aria-expanded', 'true');
         this.classList.add('faq-question--open');
         var answer = document.getElementById(this.getAttribute('aria-controls'));
-        if (answer) answer.hidden = false;
+        if (answer) answer.classList.add('faq-answer--open');
       }
     });
   });

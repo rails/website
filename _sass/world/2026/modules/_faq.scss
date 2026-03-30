@@ -98,11 +98,17 @@
 
 // ── Panels ────────────────────────────────────────────────────────────────────
 
+@keyframes faq-panel-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .faq-panel {
   display: none;
 
   &--active {
     display: block;
+    animation: faq-panel-in 0.2s ease;
   }
 }
 

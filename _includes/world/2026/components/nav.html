@@ -35,7 +35,7 @@
 
     </nav>
 
-    <div class="nav-mobile-menu" id="nav-mobile-menu" hidden>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
       <ul role="list">
         <li><a href="/world/2026" class="nav-link">Home</a></li>
         <li><a href="/world/2026/speakers" class="nav-link">Speakers</a></li>
@@ -60,7 +60,7 @@
       var open = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!open));
       btn.classList.toggle('nav-hamburger--open', !open);
-      menu.hidden = open;
+      menu.classList.toggle('nav-mobile-menu--open', !open);
     });
   })();
 </script>

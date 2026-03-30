@@ -156,9 +156,19 @@
 
     .nav-mobile-menu {
       display: block;
-      padding: 0 20px 24px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease;
+      padding: 0 20px 0;
 
-      &[hidden] { display: none; }
+      &--open {
+        max-height: 600px;
+        opacity: 1;
+        transform: translateY(0);
+        padding-bottom: 24px;
+      }
 
       ul {
         list-style: none;

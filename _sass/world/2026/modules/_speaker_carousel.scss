@@ -67,12 +67,19 @@
     }
 
     &--mobile {
-      display: none;
-
       @include media(MobileAndTabletScreens) {
         display: inline-flex;
-        margin-top: 16px;
       }
+    }
+  }
+
+  &__see-all-row {
+    display: none;
+
+    @include media(MobileAndTabletScreens) {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
     }
   }
 

@@ -101,6 +101,10 @@
     align-self: center;
     transform-origin: center center;
     animation: float-hat 7s ease-in-out infinite;
+
+    @include media(MobileAndTabletScreens) {
+      display: none;
+    }
   }
 
   // ── Right column: carousel ────────────────────────────────

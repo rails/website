@@ -18,9 +18,8 @@
           <div
             class="faq-answer"
             id="ras-faq-answer-{{ forloop.index }}"
-            hidden
           >
-            {{ item.answer }}
+            <div class="faq-answer__inner">{{ item.answer }}</div>
           </div>
         </li>
       {% endfor %}
@@ -38,13 +37,13 @@
           b.classList.remove('faq-question--open');
           b.setAttribute('aria-expanded', 'false');
           var ans = document.getElementById(b.getAttribute('aria-controls'));
-          if (ans) ans.hidden = true;
+          if (ans) ans.classList.remove('faq-answer--open');
         });
         if (!expanded) {
           this.setAttribute('aria-expanded', 'true');
           this.classList.add('faq-question--open');
           var answer = document.getElementById(this.getAttribute('aria-controls'));
-          if (answer) answer.hidden = false;
+          if (answer) answer.classList.add('faq-answer--open');
         }
       });
     });
