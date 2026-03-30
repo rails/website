@@ -1,3 +1,20 @@
+@property --glow-r { syntax: "<color>"; initial-value: #FD8B00; inherits: true; }
+@property --glow-b { syntax: "<color>"; initial-value: #993CF2; inherits: true; }
+@property --glow-l { syntax: "<color>"; initial-value: #3C51ED; inherits: true; }
+@property --glow-t { syntax: "<color>"; initial-value: #FF000B; inherits: true; }
+
+@keyframes btn-glow-spin {
+  0%    { --glow-r: #FD8B00; --glow-b: #993CF2; --glow-l: #3C51ED; --glow-t: #FF000B; }
+  12.5% { --glow-r: #e03c00; --glow-b: #cc2cdc; --glow-l: #6e3cf0; --glow-t: #e0005e; }
+  25%   { --glow-r: #FF000B; --glow-b: #FD8B00; --glow-l: #993CF2; --glow-t: #3C51ED; }
+  37.5% { --glow-r: #cc003a; --glow-b: #e06200; --glow-l: #cc2cdc; --glow-t: #6e3cf0; }
+  50%   { --glow-r: #3C51ED; --glow-b: #FF000B; --glow-l: #FD8B00; --glow-t: #993CF2; }
+  62.5% { --glow-r: #6e3cf0; --glow-b: #e0005e; --glow-l: #e06200; --glow-t: #cc2cdc; }
+  75%   { --glow-r: #993CF2; --glow-b: #3C51ED; --glow-l: #FF000B; --glow-t: #FD8B00; }
+  87.5% { --glow-r: #cc2cdc; --glow-b: #6e3cf0; --glow-l: #e0005e; --glow-t: #e06200; }
+  100%  { --glow-r: #FD8B00; --glow-b: #993CF2; --glow-l: #3C51ED; --glow-t: #FF000B; }
+}
+
 .btn-primary {
   position: relative;
   border-radius: 3px;
@@ -11,6 +28,24 @@
     border: 1px solid rgba(217, 217, 217, 1);
     pointer-events: none;
     @include neon-glow-inner;
+  }
+
+  &:hover {
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+       4px 0   11px var(--glow-r),
+       0   4px 11px var(--glow-b),
+      -4px 0   11px var(--glow-l),
+       0  -4px 11px var(--glow-t);
+    animation: btn-glow-spin 3s linear infinite;
+
+    &::after {
+      box-shadow:
+        inset -5px 0    12px var(--glow-r),
+        inset  0  -5px  12px var(--glow-b),
+        inset  5px 0    12px var(--glow-l),
+        inset  0   5px  12px var(--glow-t);
+    }
   }
 
   > span,
