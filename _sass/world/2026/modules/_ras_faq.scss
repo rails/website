@@ -1,5 +1,8 @@
 .ras-faq {
   padding: 0 110px 80px;
+  max-width: 1482px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(MobileAndTabletScreens) {
     padding: 0 24px 60px;

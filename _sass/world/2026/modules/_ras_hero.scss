@@ -3,6 +3,9 @@
   grid-template-columns: 584px 1fr;
   gap: 98px;
   padding: 60px 110px 80px;
+  max-width: 1482px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(MobileAndTabletScreens) {
     grid-template-columns: 1fr;
@@ -115,8 +118,11 @@
 
 .ras-apply-box {
   @include neon-glow-red;
-  padding: 35px;
+  padding: 56px;
   margin-top: 16px;
+  @include media(MobileAndTabletScreens) {
+      padding: 35px;
+    }
 
   &__content {
     display: flex;

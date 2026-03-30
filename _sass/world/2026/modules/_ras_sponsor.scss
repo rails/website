@@ -1,5 +1,9 @@
 .ras-sponsor {
-  padding: 0 110px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1482px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 80px;
 
   @include media(MobileAndTabletScreens) {
@@ -8,12 +12,12 @@
   }
 
   &__content {
+    width: 100%;
     @include neon-glow-red;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 67px;
-    padding: 35px;
     height: 182px;
 
     @include media(MobileAndTabletScreens) {
@@ -21,6 +25,7 @@
       height: auto;
       gap: 24px;
       text-align: center;
+      padding: 35px 0;
     }
   }
 
@@ -30,7 +35,6 @@
     font-size: 30px;
     line-height: 30px;
     color: white;
-    width: 366px;
     flex-shrink: 0;
 
     @include media(MobileAndTabletScreens) {
