@@ -51,6 +51,7 @@ permalink: /world/2026/faq
                 <div
                   class="faq-answer"
                   id="faq-answer-{{ category.slug }}-{{ forloop.index }}"
+                  aria-hidden="true"
                 >
                   <div class="faq-answer__inner">{{ item.answer }}</div>
                 </div>
@@ -86,7 +87,7 @@ permalink: /world/2026/faq
       btn.classList.remove('faq-question--open');
       btn.setAttribute('aria-expanded', 'false');
       var answer = document.getElementById(btn.getAttribute('aria-controls'));
-      if (answer) answer.classList.remove('faq-answer--open');
+      if (answer) { answer.classList.remove('faq-answer--open'); answer.setAttribute('aria-hidden', 'true'); }
     });
   }
 
@@ -127,7 +128,7 @@ permalink: /world/2026/faq
         this.setAttribute('aria-expanded', 'true');
         this.classList.add('faq-question--open');
         var answer = document.getElementById(this.getAttribute('aria-controls'));
-        if (answer) answer.classList.add('faq-answer--open');
+        if (answer) { answer.classList.add('faq-answer--open'); answer.setAttribute('aria-hidden', 'false'); }
       }
     });
   });
