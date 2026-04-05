@@ -19,7 +19,7 @@ Ruby 3.2.0 had a bug where `Time.new(..., in: "UTC")` could return an invalid Ti
 With the minimum supported Ruby now at 3.3.1, the runtime probe and workaround are dead code and have been removed.
 
 [Add `prepend: true` option to `ActiveSupport::Notifications.subscribe`](https://github.com/rails/rails/pull/57115)  
-A new prepend: true option on ActiveSupport::Notification.subscribe ensures a subscriber runs before all others
+A new prepend: true option on ActiveSupport::Notifications.subscribe ensures a subscriber runs before all others
 enabling payload mutation before any downstream handler sees it.
 
 [ActiveSupport::Cache add a fast path for string keys](https://github.com/rails/rails/pull/57108)  
@@ -28,14 +28,14 @@ making every cache operation slightly faster.
 
 [Speedup ActiveRecord::LogSubscriber#sql_color](https://github.com/rails/rails/pull/57105)  
 SQL queries can be very long, and unanchored regexps even with linear performance may take longer than Regexp.timeout.
-This PR fix anchors the regexp patterns used to determine SQL color in the log subscriber.
+This PR fixes this by anchoring the regexp patterns used to determine SQL color in the log subscriber.
 
 [Update ActiveRecord::Associations::Preloader::Association.owners_by_key to handle composite keys](https://github.com/rails/rails/pull/57103)  
-`owners_by_key` was skipping nil key checks for composite keys since they are Arrays. A targeted is_a?(Array)
+`owners_by_key` was skipping nil key checks for composite keys since they are Arrays. A targeted `is_a?(Array)`
 check is added to handle this correctly.
 
 [Delay engine route building](https://github.com/rails/rails/pull/57094)  
-Engines calling routes do directly were eagerly allocating route objects before lazy loading could kick in.
+Engines calling `routes` directly were eagerly allocating route objects before lazy loading could kick in.
 Route blocks are now deferred until after `route_set_class` is configured, so lazy loading works as intended.
 
 [Deprecate schema_order option in PostgreSQL database configurations](https://github.com/rails/rails/pull/57080)  
@@ -49,7 +49,7 @@ The strict option for MySQL introduced in Rails 4.2 is now deprecated. The same 
 Replacing it with `\p{Lower}` fixes capitalization for the full Unicode lowercase category.
 
 [Allow skipping individual SET queries in PostgreSQL and MySQL configure_connection](https://github.com/rails/rails/pull/57070)  
-PostgreSQL and MySQL `configure_connection` now allows individual `SET` queries to be skipped by setting them to false in `database.yml`,
+PostgreSQL and MySQL `configure_connection` now allow individual `SET` queries to be skipped by setting them to false in `database.yml`,
 useful when connecting through a load balancer or proxy that manages session settings itself.
 
 [Fix parallel test shutdown hang when workers die during Server#shutdown](https://github.com/rails/rails/pull/57053)  
