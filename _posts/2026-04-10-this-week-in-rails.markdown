@@ -25,6 +25,9 @@ Two new predicate methods on `ActionDispatch::Request` let you ask whether the c
 [Update Action Cable origin check to respect X-Forwarded-Host](https://github.com/rails/rails/pull/56775)  
 The `allow_same_origin_as_host` check in `allow_request_origin?` compared the browser's Origin header against the raw `HTTP_HOST`, which fails behind a reverse proxy where the internal host differs from the public one. This updates the check to use `request.host_with_port` and `request.ssl?` instead, consistent with how the rest of Rails resolves the host.
 
+[Rewrite the Layouts and Rendering guide](https://github.com/rails/rails/pull/57152)  
+This pull request is open for review: it rewrites the layouts and rendering guide around how controllers and views work together, and trims or relocates overlap with other guides (partial rendering stays in the Action View Overview; request variants move here from the Action Controller Overview, which gets a short rendering intro that points here). If you use these guides or care how we explain Rails to newcomers, open the PR and share any feedback you have.
+
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-04-03%7D...main@%7B2026-04-10%7D)._  
 _We had [9 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260403-20260410) to the Rails codebase this past week!_
 
