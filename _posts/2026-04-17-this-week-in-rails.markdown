@@ -9,7 +9,7 @@ date: 2026-04-17
 ---
 
 
-Hi, [Wojtek](https://x.com/morgoth85) here. Let's see what's new in the Rails on this finally sunny day (at least in this part of Earth ;-)
+Hi, [Wojtek](https://x.com/morgoth85) here. Let's see what's new in the Rails on this finally sunny day (at least in my corner of the world ;-)
 
 [Query command for read-only database queries](https://github.com/rails/rails/pull/57156)  
 Adds *rails query* — a read-only database query command with structured JSON output.
@@ -36,7 +36,7 @@ rails query "Account.where(plan: 'premium').limit(2)"
 }
 ```
 
-There are much more possibilities and more subcommands available, like *query schema*, *query models*, and *query explain*.
+There are many more possibilities and additional subcommands available, such as *query schema*, *query models*, and *query explain*.
 
 [Add charset=utf-8 to Content-Type for static CSS and HTML files](https://github.com/rails/rails/pull/57188)  
 *ActionDispatch::FileHandler#try_files* now appends *; charset=utf-8* to the Content-Type header for *CSS* and *HTML* static files.
@@ -49,10 +49,10 @@ New Rails apps now include an *app/views/pwa/offline.html.erb* template and a co
 New documentation pull request awaiting community review.
 
 [Fix IO copy stream writing to Action Controller Live Buffer](https://github.com/rails/rails/pull/57190)  
-In addition return the number of bytes written from *write* method.
+In addition to the fix, return the number of bytes written from *write* method.
 
 [Fix reset_counters when using string IDs](https://github.com/rails/rails/pull/57187)  
-Makes it consistent with other Active Record methods that already accepted string IDs.
+The fix brings consistency with other Active Record methods that already accepted string IDs.
 
 [Use hash lookup for exact-match regexp filters in ParameterFilter](https://github.com/rails/rails/pull/57166)  
 When *ParameterFilter* is initialized with anchored regexp filters like */^code$/* or */\Atoken\z/*, extract the literal string and store it in a Hash for O(1) lookup instead of iterating all regexps with *.any?*.
