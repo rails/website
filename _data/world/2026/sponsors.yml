@@ -1,0 +1,102 @@
+platinum:
+  - name: "AppSignal"
+    logo: /assets/images/logo-appsignal.svg
+    url: "https://www.appsignal.com/"
+  - name: "Procore"
+    logo: /assets/images/logo-procore.svg
+    url: "https://www.procore.com/"
+  - name: "Shopify"
+    logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
+    url: "https://www.shopify.com/"
+
+gold:
+  - name: "Clio"
+    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    url: "https://www.clio.com/"
+  - name: "Huntress"
+    logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
+    url: "https://www.huntress.com/"
+  - name: "JetBrains"
+    logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
+    url: "https://www.jetbrains.com/"
+  - name: "RWX"
+    logo: /assets/world/2026/logos/logo-rwx.png
+    url: "https://www.rwx.com/"
+  - name: "Test Double"
+    logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
+    url: "https://testdouble.com/"
+
+silver:
+  - name: "37signals"
+    logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
+    url: "https://37signals.com/"
+  - name: "Intercom"
+    logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
+    url: "https://www.intercom.com/"
+
+other:
+  - name: "Fleetio"
+    logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
+    url: "https://www.fleetio.com/"
+  - name: "Fullscript"
+    logo: /assets/images/logo-fullscript-black.svg
+    url: "https://fullscript.com/"
+  - name: "Judoscale"
+    logo: /assets/world/2026/logos/logo-judoscale.svg
+    url: "https://judoscale.com/"
+  - name: "Sorcer"
+    logo: /assets/world/2026/logos/logo-sorcer.png
+    url: "https://sorcer.com/"
+  - name: "Typesense"
+    logo: /assets/world/2026/logos/logo-typesense.png
+    url: "https://typesense.org/"
+
+members:
+  - name: "1Password"
+    logo: /assets/images/logo-1password.svg
+    url: "https://1password.com/"
+  - name: "Cookpad"
+    logo: /assets/world/2024/images/sponsors/RW-logo-cookpad.svg
+    url: "https://cookpad.com/"
+  - name: "Doximity"
+    logo: /assets/world/2024/images/sponsors/RW-logo-doximity.svg
+    url: "https://www.doximity.com/"
+  - name: "GitHub"
+    logo: /assets/world/2025/images/sponsors/RW-logo-github.svg
+    url: "https://github.com/"
+  - name: "Judge.me"
+    logo: /assets/images/logo-judgeme-black.svg
+    url: "https://judge.me/"
+  - name: "Cedarcode"
+    logo: /assets/world/2024/images/sponsors/RW-logo-cedarcode.svg
+    url: "https://www.cedarcode.com/"
+  - name: "Planet Argon"
+    logo: /assets/world/2024/images/sponsors/RW-logo-planet-argon.png
+    url: "https://www.planetargon.com/"
+  - name: "Renuo"
+    logo: /assets/images/logo-renuo.svg
+    url: "https://www.renuo.ch/"
+  - name: "makandra GmbH"
+    logo: /assets/images/logo-makandra-black.svg
+    url: "https://makandracards.com/makandra"
+  - name: "TableCheck"
+    logo: /assets/images/logo-tablecheck-black.svg
+    url: "https://www.tablecheck.com/"
+  - name: "Gusto"
+    logo: /assets/images/logo-gusto.svg
+    url: "https://gusto.com/"
+  - name: "Saeloun"
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: "https://www.saeloun.com/"
+  - name: "Buzzsprout"
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: "https://www.buzzsprout.com/"
+  - name: "Chime"
+    logo: /assets/images/logo-chime-black.svg
+    url: "https://www.chime.com/"
+  - name: "SerpApi"
+    logo: /assets/images/logo-serpapi.svg
+    url: "https://serpapi.com/"
+  - name: "Planning Center"
+    logo: /assets/images/logo-planningcenter-black.svg
+    url: "https://www.planningcenter.com/"
