@@ -1,0 +1,46 @@
+// Rails World 2026 — Typography
+// Primary font: Clash Grotesk (2026 design uses Clash Grotesk, not Acumin Variable)
+// Loaded via CSS Fonts API in head.html
+
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+$xxxx-large: 90px;
+$xxx-large: 70px;
+$xx-large: 30px;
+$x-large: 24px;
+$large: 20px;
+$medium: 16px;
+$small: 14px;
+
+h1 {
+  font-size: $xxx-large;
+  font-weight: $font-weight-600;
+  letter-spacing: 1px;
+  line-height: 65px;
+}
+
+h2 {
+  font-size: $xxx-large;
+  font-weight: $font-weight-600;
+  letter-spacing: 1px;
+}
+
+h3, h4 {
+  font-size: $xx-large;
+  font-weight: $font-weight-600;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: $x-large;
+  font-weight: $font-weight-400;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+.uppercase { text-transform: uppercase; }
+.bold { font-weight: $font-weight-600; }
+.text-pink { color: $pink; }

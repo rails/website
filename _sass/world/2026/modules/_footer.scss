@@ -1,0 +1,147 @@
+#footer-2026 {
+  position: relative;
+  background: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: linear-gradient(
+      to right,
+      #fd8b00,
+      #ff000b,
+      #ff18a2,
+      #993cf2,
+      #3c51ed
+    );
+    filter: blur(4px);
+    opacity: 0.65;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.5px;
+    background: white;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 107px;
+    padding-top: 20px;
+  }
+
+  .footer-tickets {
+    width: 190px;
+    height: 44px;
+    flex-shrink: 0;
+
+    > span,
+    > a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .footer-btn {
+    width: 150px;
+    height: 44px;
+
+    > span,
+    > a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .footer-credits {
+    text-align: center;
+    font-family: "Clash Grotesk", sans-serif;
+    font-weight: $font-weight-400;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: white;
+    padding-top: 30px;
+
+    &__link {
+      font-weight: 600;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .footer-links {
+    display: contents; // transparent on desktop — children behave as direct flex children
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+
+    .social-icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  @include media(MobileAndTabletScreens) {
+    .footer-inner {
+      flex-direction: column;
+      height: auto;
+      padding: 32px 24px 16px;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .footer-tickets {
+      width: 100%;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 20px;
+      justify-content: center;
+      padding: 0 16px;
+    }
+
+    .footer-btn {
+      border: none;
+      background: none;
+      width: auto;
+      flex: 0 0 auto;
+      height: auto;
+      padding: 0;
+
+      > a {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: underline;
+        width: auto;
+        height: auto;
+        padding: 4px 0;
+      }
+    }
+
+    .footer-social {
+      justify-content: center;
+    }
+
+    .footer-credits {
+      font-size: 14px;
+      padding: 8px 24px 16px;
+      line-height: 1.5;
+    }
+  }
+}
