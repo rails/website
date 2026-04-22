@@ -1,0 +1,154 @@
+// FAQ page — Rails World 2026
+// Accordion base styles are in common/_accordion.scss
+
+.faq-page {
+  padding: 48px 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px 60px;
+  }
+}
+
+.faq-inner {
+  max-width: 1262px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Tabs (folder-style) ───────────────────────────────────────────────────────
+
+.faq-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-tab {
+  padding: 14px 24px;
+  border-radius: 3px 3px 0 0;
+  font-family: "Clash Grotesk", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: $font-weight-500;
+  color: $white;
+  background: rgba($black, 0.5);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+
+  // Outer neon — top & sides only (no bottom glow so the tab blends with the box)
+  box-shadow:
+     4px  0   8px rgba(#FD8B00, 1),
+    -4px  0   8px rgba(#3C51ED, 1),
+     0   -4px 8px rgba(#FF000B, 1);
+
+  // Inner glow + thin white border — top & sides only
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-bottom: none;
+    pointer-events: none;
+    box-shadow:
+      inset -5px 0    12px rgba(#FD8B00, 1),
+      inset  5px 0    12px rgba(#3C51ED, 1),
+      inset  0   5px  12px rgba(#FF000B, 1);
+  }
+
+  &--contact-mobile {
+    display: none;
+  }
+
+  // "Still got q's?" — plain white border only, no neon; same hover as .btn-secondary
+  &--contact {
+    box-shadow: none;
+
+    &::after {
+      border: 2px solid $white;
+      border-bottom: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: rgba(217, 217, 217, 1);
+      color: #0d0d0d;
+    }
+  }
+}
+
+// ── Content box ───────────────────────────────────────────────────────────────
+
+.faq-content-box {
+  border-radius: 0 16px 16px 16px;
+  background: rgba($black, 0.5);
+  padding: 8px 0;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(217, 217, 217, 1);
+  @include neon-glow;
+}
+
+// ── Panels ────────────────────────────────────────────────────────────────────
+
+@keyframes faq-panel-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.faq-panel {
+  display: none;
+
+  &--active {
+    display: block;
+    animation: faq-panel-in 0.2s ease;
+  }
+}
+
+// ── Mobile ────────────────────────────────────────────────────────────────────
+
+@include media(MobileScreens) {
+  .faq-page {
+    padding: 40px 16px 60px;
+  }
+}
+
+@include media(MobileAndTabletScreens) {
+  // Tabs: full border on all sides (no folder effect)
+  .faq-tab {
+    border-radius: 3px;
+    font-size: 16px;
+
+    &::after {
+      border-radius: 3px;
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+    }
+
+    &--contact-desktop {
+      display: none;
+    }
+
+    &--contact-mobile {
+      display: inline-block;
+      margin-top: 16px;
+      border-radius: 3px;
+
+      &::after {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  // Content box: full border-radius + spacing from tabs
+  .faq-content-box {
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+}

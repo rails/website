@@ -1,0 +1,127 @@
+---
+title: "FAQs - Rails World 2026"
+description: "Frequently asked questions about Rails World 2026 in Austin, TX"
+layout: world/2026/default
+permalink: /world/2026/faq
+---
+
+{% assign faq_data = site.data.world['2026'].faq %}
+
+<div class="page-wrapper-2026" id="top">
+  <div id="section-desktop">
+    {% include world/2026/components/nav.html %}
+
+<section class="faq-page">
+  <div class="faq-inner">
+
+    <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
+      {% for category in faq_data %}
+        <button
+          class="faq-tab{% if forloop.first %} faq-tab--active{% endif %}"
+          role="tab"
+          aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+          aria-controls="faq-panel-{{ category.slug }}"
+          id="faq-tab-{{ category.slug }}"
+          data-tab="{{ category.slug }}"
+        >{{ category.category }}</button>
+      {% endfor %}
+      <a href="mailto:world@rubyonrails.org" class="faq-tab faq-tab--contact faq-tab--contact-desktop">Still got q's?</a>
+    </div>
+
+    <div class="faq-content-box">
+      {% for category in faq_data %}
+        <div
+          class="faq-panel{% if forloop.first %} faq-panel--active{% endif %}"
+          role="tabpanel"
+          id="faq-panel-{{ category.slug }}"
+          aria-labelledby="faq-tab-{{ category.slug }}"
+          {% unless forloop.first %}hidden{% endunless %}
+        >
+          <ul class="faq-list" role="list">
+            {% for item in category.questions %}
+              <li class="faq-item">
+                <button
+                  class="faq-question"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-{{ category.slug }}-{{ forloop.index }}"
+                >
+                  <span>{{ item.question }}</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+                <div
+                  class="faq-answer"
+                  id="faq-answer-{{ category.slug }}-{{ forloop.index }}"
+                  aria-hidden="true"
+                >
+                  <div class="faq-answer__inner">{{ item.answer }}</div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+
+    <a href="mailto:world@rubyonrails.org" class="faq-tab faq-tab--contact faq-tab--contact-mobile">Still got q's?</a>
+
+  </div>
+</section>
+
+    <a href="#top" id="backToTop" aria-label="Back to top">↑</a>
+    {% include world/2026/components/code_of_conduct_banner.html %}
+    {% include world/2026/components/footer.html %}
+  </div>
+</div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    document.getElementById('backToTop').classList.toggle('show', window.scrollY > 300);
+  });
+</script>
+
+<script>
+  function closeAccordionsInPanel(panel) {
+    panel.querySelectorAll('.faq-question--open').forEach(function(btn) {
+      btn.classList.remove('faq-question--open');
+      btn.setAttribute('aria-expanded', 'false');
+      var answer = document.getElementById(btn.getAttribute('aria-controls'));
+      if (answer) { answer.classList.remove('faq-answer--open'); answer.setAttribute('aria-hidden', 'true'); }
+    });
+  }
+
+  // Tab switching
+  document.querySelectorAll('.faq-tab[role="tab"]').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.faq-tab[role="tab"]').forEach(function(t) {
+        t.classList.remove('faq-tab--active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.faq-panel').forEach(function(panel) {
+        closeAccordionsInPanel(panel);
+        panel.classList.remove('faq-panel--active');
+        panel.hidden = true;
+      });
+      this.classList.add('faq-tab--active');
+      this.setAttribute('aria-selected', 'true');
+      var target = document.getElementById('faq-panel-' + this.dataset.tab);
+      if (target) {
+        target.hidden = false;
+        target.classList.add('faq-panel--active');
+      }
+    });
+  });
+
+  // Accordion — one item open at a time per panel
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var isOpen = this.getAttribute('aria-expanded') === 'true';
+      closeAccordionsInPanel(this.closest('.faq-panel'));
+      if (!isOpen) {
+        this.classList.add('faq-question--open');
+        this.setAttribute('aria-expanded', 'true');
+        var answer = document.getElementById(this.getAttribute('aria-controls'));
+        if (answer) { answer.classList.add('faq-answer--open'); answer.setAttribute('aria-hidden', 'false'); }
+      }
+    });
+  });
+</script>
