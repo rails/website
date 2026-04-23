@@ -1,0 +1,28 @@
+community_events:
+  - name: Tropical on Rails
+    location: "São Paulo, Brazil"
+    start_date: "2026-04-09"
+    end_date: "2026-04-10"
+    url: https://tropicalonrails.com
+    display_url: www.tropicalonrails.com
+
+  - name: Blastoff Rails
+    location: "Albuquerque, New Mexico"
+    start_date: "2026-06-11"
+    end_date: "2026-06-12"
+    url: https://blastoffrails.com
+    display_url: www.blastoffrails.com
+
+  - name: Deccan Queen on Rails
+    location: "Pune, India"
+    start_date: "2026-10-8"
+    end_date: "2026-10-11"
+    url: https://deccanqueenonrails.com/
+    display_url: https://deccanqueenonrails.com/
+    
+  - name: Kaigi on Rails
+    location: "Shibuya, Tokyo, Japan"
+    start_date: "2026-10-16"
+    end_date: "2026-10-17"
+    url: https://www.kaigionrails.org/2026
+    display_url: www.kaigionrails.org/2026
