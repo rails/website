@@ -33,8 +33,14 @@ silver:
   - name: "Intercom"
     logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
     url: "https://www.intercom.com/"
+  - name: "Wyeworks"
+    logo: /assets/world/2026/logos/wyeworks-logo-white.svg
+    url: "https://www.wyeworks.com/"
 
 other:
+  - name: "Beyond Finance"
+    logo: /assets/world/2026/logos/logo-beyond-finance.svg
+    url: "https://www.beyondfinance.com/"
   - name: "Fleetio"
     logo: /assets/world/2024/images/sponsors/RW-logo-fleetio.svg
     url: "https://www.fleetio.com/"
