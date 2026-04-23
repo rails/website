@@ -7,7 +7,7 @@ published: true
 date: 2026-04-23  
 ---
 
-Rails World is back heading to Austin, Texas on September 23-24, 2026 for the largest Rails World yet, with space for 1,200 developers, founders, and teams building with Rails, and we have a **huge** Rails World update for you!
+**Rails World** is back heading to Austin, Texas on September 23-24, 2026 for the largest Rails World yet, with space for 1,200 developers, founders, and teams building with Rails, and we have a **huge** Rails World update for you!
 
 **First**: The Rails World website is finally live thanks to our website sponsor [WyeWorks](https://www.wyeworks.com/), and the amazing work of developers [Jessica Ferreira](https://github.com/JessicaFerreiraLopez) and [Lucas Troncoso](https://github.com/lucastroncoso) and designer [Jomiro Eming](https://www.jomiro.de/). Big thanks to the team!
 
@@ -29,7 +29,7 @@ Some of our CFP themes remain the same as previous years (*Rails 8 in production
 * **Rails + AI / Agentic Systems**  
 * **Trust, Security, and Reliability**
 
-In short: we really want to hear *how* you'’'re building now, not just *what* you'’'ve built.
+In short: we really want to hear *how* you're building now, not just *what* you've built.
 
 Check out the [CFP](https://sessionize.com/rails-world-2026/) for more details about those and other themes, speaker benefits, and how to apply.
 
@@ -59,13 +59,13 @@ We encourage applications from anyone working with Rails at scale. However, this
 
 Applicants are asked to apply to attend or speak by **May 8**. We will review all applications and suggested talks and select those who best align with the event's focus (undoubtedly AI will play a large role at the summit, too).
 
-[Apply to attend the Rails at Scale Summit here](https://docs.google.com/forms/d/e/1FAIpQLSdNzzOKAWl4VdF8uLmx_Rdm4ElL0x5Vqg6sPKWNlFq711SDYg/viewform?usp=header).
+Apply to attend the Rails at Scale Summit [here](https://docs.google.com/forms/d/e/1FAIpQLSdNzzOKAWl4VdF8uLmx_Rdm4ElL0x5Vqg6sPKWNlFq711SDYg/viewform?usp=header).
 
 ## **Corporate Support tickets are live**
 
 We've released **Corporate Support** tickets for $1,300. These pre-released tickets cover almost the full cost of having an attendee at Rails World (no joke), and are ideal if your company wants to send your team and can use an L&D budget. 
 
-Support tickets play a key role in making Rails World possible and also help keep General Admission tickets affordable for community members paying out of pocket. As a thank you for supporting the event, we'’'ll recognize your name (or your company'’'s name) during the opening session at Rails World. 
+Support tickets play a key role in making Rails World possible and also help keep General Admission tickets affordable for community members paying out of pocket. As a thank you for supporting the event, we'll recognize your name (or your company's name) during the opening session at Rails World. 
 
 We also have a *very special* limited edition swag item for Corporate Support ticket holders that I promise you haven't seen before. I'm so excited about it.
 
@@ -79,15 +79,14 @@ But we do have more tickets available this year, so I am always hopeful!
 
 Don't forget to sign up to the [event mailing list](https://rails-foundation.kit.com/sign-up) to receive a reminder on the day itself.
 
+## **That's all for now. Good luck to all who apply!**
+
+**Questions?**   Reach out to [world@rubyonrails.org](mailto:world@rubyonrails.org)
+
+✌🏻 Amanda  
+
+Rails Foundation  
+
 **Still here? Great. Interested in sponsoring?** 
 
 There are still a few booths and programs remaining. Check out the [2026 prospectus](https://public.3.basecamp.com/p/gr3BsVx9mBmfJzN36rjaprRs) and get in touch at [sponsors@rubyonrails.org](mailto:sponsors@rubyonrails.org) to join our amazing lineup of sponsors this year.
-
-**Questions?**   
-Reach out to [world@rubyonrails.org](mailto:world@rubyonrails.org)
-
-I think that's quite enough for now, yes? Good luck to all who apply to speak this year!
-
-Amanda  
-
-Rails Foundation  
