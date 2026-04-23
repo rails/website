@@ -1,8 +1,25 @@
-<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+<svg
+  width="0"
+  height="0"
+  style="position: absolute; overflow: hidden"
+  aria-hidden="true"
+>
   <defs>
     <filter id="glass-refraction" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.012" numOctaves="2" seed="5" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.018 0.012"
+        numOctaves="2"
+        seed="5"
+        result="noise"
+      />
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="noise"
+        scale="8"
+        xChannelSelector="R"
+        yChannelSelector="G"
+      />
     </filter>
   </defs>
 </svg>
@@ -10,59 +27,85 @@
 <header id="navbar-2026" role="banner">
   <div class="glass-pill">
     <nav class="nav-inner" aria-label="Rails World 2026 primary navigation">
-
       <div class="nav-logo">
         <a href="/world/2026" aria-label="Rails World 2026 home">
           <picture>
-            <source srcset="/assets/world/2026/logos/rw26-logo.webp" type="image/webp">
+            <source
+              srcset="/assets/world/2026/logos/rw26-logo.webp"
+              type="image/webp"
+            />
             <img
               src="/assets/world/2026/logos/rw26-logo.png"
               alt="Rails World 2026 logo"
               width="108"
               height="109"
-            >
+            />
           </picture>
         </a>
       </div>
 
       <ul class="nav-links" role="list">
         <li><a href="/world/2026/faq" class="nav-link">FAQs</a></li>
-        <li><a href="/world/2026/rails-at-scale" class="nav-link">Rails at Scale Summit</a></li>
+        <li>
+          <a href="/world/2026/rails-at-scale" class="nav-link"
+            >Rails at Scale Summit</a
+          >
+        </li>
       </ul>
 
-      <div class="btn-primary nav-cta" role="button" tabindex="0" aria-label="Apply to speak">
-        <!-- DEFERRED: replace div+span with <a href="https://sessionize.com/rails-world-2026/"> once URL is available -->
-        <span>Apply to speak</span>
+      <div
+        class="btn-primary nav-cta"
+        role="button"
+        tabindex="0"
+        aria-label="Apply to speak"
+      >
+        <a href="https://sessionize.com/rails-world-2026/"
+          ><span>Apply to speak</span></a
+        >
       </div>
 
-      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu">
+      <button
+        class="nav-hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile-menu"
+      >
         <span></span><span></span><span></span>
       </button>
-
     </nav>
 
     <div class="nav-mobile-menu" id="nav-mobile-menu">
       <ul role="list">
         <li><a href="/world/2026/faq" class="nav-link">FAQs</a></li>
-        <li><a href="/world/2026/rails-at-scale" class="nav-link">Rails at Scale Summit</a></li>
+        <li>
+          <a href="/world/2026/rails-at-scale" class="nav-link"
+            >Rails at Scale Summit</a
+          >
+        </li>
       </ul>
-      <div class="btn-primary nav-cta nav-cta--mobile" role="button" tabindex="0" aria-label="Apply to speak">
-        <span>Apply to speak</span>
+      <div
+        class="btn-primary nav-cta nav-cta--mobile"
+        role="button"
+        tabindex="0"
+        aria-label="Apply to speak"
+      >
+        <a href="https://sessionize.com/rails-world-2026/"
+          ><span>Apply to speak</span></a
+        >
       </div>
     </div>
-
   </div>
 </header>
 
 <script>
-  (function() {
-    var btn  = document.querySelector('.nav-hamburger');
-    var menu = document.getElementById('nav-mobile-menu');
+  (function () {
+    var btn = document.querySelector(".nav-hamburger");
+    var menu = document.getElementById("nav-mobile-menu");
     if (!btn || !menu) return;
-    btn.addEventListener('click', function() {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      btn.setAttribute('aria-expanded', open);
-      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", open);
+      btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
   })();
 </script>
