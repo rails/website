@@ -13,9 +13,16 @@ community_events:
     url: https://blastoffrails.com
     display_url: www.blastoffrails.com
 
-  - name: Kagi on Rails
+  - name: Deccan Queen on Rails
+    location: "Pune, India"
+    start_date: "2026-10-8"
+    end_date: "2026-10-11"
+    url: https://deccanqueenonrails.com/
+    display_url: https://deccanqueenonrails.com/
+    
+  - name: Kaigi on Rails
     location: "Shibuya, Tokyo, Japan"
     start_date: "2026-10-16"
     end_date: "2026-10-17"
-    url: https://www.kagionrails.org/2026
-    display_url: www.kagionrails.org/2026
+    url: https://www.kaigionrails.org/2026
+    display_url: www.kaigionrails.org/2026
