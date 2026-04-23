@@ -205,6 +205,7 @@
 
   &__item--37signals img,
   &__item--intercom img,
+  &__item--wyeworks img,
   &__item--planning-center img {
     max-height: 46px;
   }
@@ -224,6 +225,16 @@
   &__item--judoscale img {
     filter: none;
     max-height: 35px;
+  }
+
+  &__item--wyeworks img {
+    height: 26px;
+    width: auto;
+  }
+
+  &__item--beyond-finance img {
+    height: 30px;
+    width: auto;
   }
 
   &__item--jetbrains img {
