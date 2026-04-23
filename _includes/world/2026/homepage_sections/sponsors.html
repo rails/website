@@ -1,0 +1,32 @@
+{% assign sponsor_photos = "rw-photo-10.jpg,rw-photo-1.jpg,rw-photo-2.jpg,rw-photo-3.jpg,rw-photo-4.jpg,rw-photo-5.jpg,rw-photo-6.jpg,rw-photo-7.jpg,rw-photo-8.jpg,rw-photo-9.jpg" | split: "," %}
+
+<section class="become-sponsor">
+  <div class="become-sponsor__inner">
+
+    <!-- Left column: card + hat -->
+    <div class="become-sponsor__left">
+      <div class="become-sponsor__card">
+        <h2 class="become-sponsor__title">Become a sponsor</h2>
+        <p class="become-sponsor__text">Sponsoring Rails World means showcasing your brand to a global audience of Rails enthusiasts, developers, and industry leaders. Let's make Rails World an unforgettable experience for all.</p>
+        <a href="/assets/world/2026/files/rails-world-2026-sponsorship-prospectus.pdf" class="become-sponsor__btn" target="_blank" rel="noopener noreferrer">View prospectus</a>
+      </div>
+      <img src="/assets/world/2026/images/sponsors/HAT.png" alt="Neon cowboy hat" class="become-sponsor__hat" loading="lazy">
+    </div>
+
+    <!-- Right column: image carousel -->
+    <div class="become-sponsor__carousel">
+      <div class="become-sponsor__slides" role="img" aria-label="Rails World 2026 sponsor photos" style="--sponsor-slide-count: {{ sponsor_photos.size }};">
+        {% for photo in sponsor_photos %}
+          <img
+            src="/assets/world/2026/images/sponsors/{{ photo }}"
+            alt=""
+            class="become-sponsor__slide{% if forloop.first %} become-sponsor__slide--first{% endif %}"
+            style="--sponsor-slide-index: {{ forloop.index }};"
+            loading="lazy"
+          >
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,169 @@
+.speaker-carousel-section {
+  padding: 60px 89px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 40px 24px;
+  }
+
+  &__header {
+    max-width: 1262px;
+    margin: 0 auto 32px;
+  }
+
+  &__header-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    font-weight: $font-weight-600;
+    color: $white;
+    background: transparent;
+    margin: 0;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 3px;
+    @include neon-glow;
+
+    @include media(MobileAndTabletScreens) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__see-all {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 28px;
+    border: 1.5px solid rgba(217, 217, 217, 0.6);
+    color: $off-white;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: $font-weight-600;
+    text-decoration: none;
+    border-radius: 3px;
+    letter-spacing: normal;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+    &:hover {
+      background: $off-white;
+      color: $black;
+      border-color: $off-white;
+    }
+
+    &--desktop {
+      @include media(MobileAndTabletScreens) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @include media(MobileAndTabletScreens) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__see-all-row {
+    display: none;
+
+    @include media(MobileAndTabletScreens) {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+    }
+  }
+
+  &__track-wrapper {
+    position: relative;
+    max-width: 1262px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: $off-white;
+    font-size: 28px;
+    line-height: 1;
+    transition: color 0.2s;
+    user-select: none;
+    padding: 0;
+
+    &:hover { color: $white; }
+
+    @include media(MobileAndTabletScreens) {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__track {
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    // scroll-padding tells the snap engine the port starts after the visual padding,
+    // so the first card snaps at scrollLeft=0 (keeping the padding visible for glow bleed)
+    scroll-padding: 20px 36px;
+    scrollbar-width: none;
+    // padding gives edge cards room for their neon glow inside the scroll container
+    // vertical negative margin compensates so the track doesn't add extra height
+    padding: 20px 36px;
+    margin: -20px 0;
+
+    &::-webkit-scrollbar { display: none; }
+
+    mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 36px,
+      black calc(100% - 36px),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 36px,
+      black calc(100% - 36px),
+      transparent 100%
+    );
+
+    .speaker-card {
+      flex: 0 0 200px;
+      scroll-snap-align: start;
+
+      @include media(MobileAndTabletScreens) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding: 60px 0;
+    color: rgba(217, 217, 217, 0.5);
+    font-size: 16px;
+    font-weight: $font-weight-400;
+    letter-spacing: normal;
+  }
+}

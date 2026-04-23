@@ -1,0 +1,55 @@
+.ras-sponsor {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1702px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 110px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 0 24px;
+  }
+
+  &__content {
+    width: 100%;
+    @include neon-glow-red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
+    height: 182px;
+
+    @include media(MobileAndTabletScreens) {
+      flex-direction: column;
+      height: auto;
+      gap: 24px;
+      text-align: center;
+      padding: 35px 0;
+    }
+  }
+
+  &__text {
+    font-family: "Calibre", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    flex-shrink: 0;
+
+    @include media(MobileAndTabletScreens) {
+      width: auto;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+  }
+
+  &__logo {
+    width: 345px;
+    height: auto;
+    flex-shrink: 0;
+
+    @include media(MobileAndTabletScreens) {
+      width: 220px;
+    }
+  }
+}

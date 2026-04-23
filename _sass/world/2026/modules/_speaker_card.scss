@@ -1,0 +1,99 @@
+.speaker-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+
+  // Outer glow only — inset hidden by solid-bg children, handled via ::after
+  border: 1px solid rgba(217, 217, 217, 1);
+  @include neon-glow-outer;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  // Inner glow — painted above children via z-index
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    @include neon-glow-inner;
+    transition: box-shadow 0.3s ease;
+  }
+
+  &:hover::after {
+    @include neon-glow-inner($offset: 7px, $blur: 18px);
+  }
+
+  // Conic gradient border on top of white border
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: $neon-border-gradient;
+    opacity: 0.7;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  // Hover: glow grows ~30% more, card scales up slightly
+  &:hover {
+    transform: scale(1.04);
+    @include neon-glow-outer($blur: 11px);
+  }
+
+  &__photo-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 3.2;
+    overflow: hidden;
+    background: #1a1a1a;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  &__info {
+    padding: 12px 14px 16px;
+    background: transparent;
+  }
+
+  &__first-name {
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: normal;
+    font-weight: $font-weight-600;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  &__last-name {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: $font-weight-600;
+    color: $white;
+    margin-bottom: 4px;
+  }
+
+  &__tagline {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    font-weight: $font-weight-400;
+    color: $off-white;
+    margin-bottom: 0;
+  }
+}

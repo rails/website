@@ -1,0 +1,221 @@
+#navbar-2026 {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  padding: 30px 40px 30px 40px;
+  box-sizing: border-box;
+
+  .glass-pill {
+    width: 100%;
+    height: 169px;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(8px) saturate(220%) brightness(0.78);
+      -webkit-backdrop-filter: blur(8px) saturate(220%) brightness(0.78);
+      filter: url(#glass-refraction);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      box-shadow: inset 2px 2px 14.1px -6px rgba(253, 139, 0, 1);
+      pointer-events: none;
+    }
+  }
+
+  .nav-inner {
+    width: 100%;
+    height: 129px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      width: 108px;
+      height: 109px;
+      object-fit: contain;
+      mix-blend-mode: screen;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex: 1;
+    justify-content: center;
+    padding: 0 40px;
+    list-style: none;
+    margin: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .nav-link {
+    font-family: "Clash Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.68px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    white-space: nowrap;
+    text-shadow: 0px 0px 1.2px black;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  .nav-cta {
+    flex-shrink: 0;
+    width: 242px;
+    height: 65px;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-mobile-menu {
+    display: none;
+    position: relative;
+    z-index: 2;
+  }
+
+  // ── Mobile ──────────────────────────────────────────────────────────────────
+
+  @include media(MobileAndTabletScreens) {
+    padding: 16px 20px;
+
+    .glass-pill {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+      border-radius: 16px;
+    }
+
+    .nav-inner {
+      height: auto;
+      padding: 12px 20px;
+      justify-content: space-between;
+    }
+
+    .nav-logo img {
+      width: 56px;
+      height: 57px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-cta {
+      display: none;
+    }
+
+    .nav-hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      width: 40px;
+      height: 40px;
+
+      span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: $white;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+      }
+
+    }
+
+    // X animation and menu open state driven by aria-expanded (no extra classes needed)
+    .glass-pill:has(.nav-hamburger[aria-expanded="true"]) {
+      .nav-hamburger {
+        span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        span:nth-child(2) { opacity: 0; }
+        span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      }
+
+      .nav-mobile-menu {
+        max-height: 600px;
+        opacity: 1;
+        transform: translateY(0);
+        padding-bottom: 24px;
+      }
+    }
+
+    .nav-mobile-menu {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease;
+      padding: 0 20px 0;
+
+      ul {
+        list-style: none;
+        margin: 0 0 24px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .nav-link {
+        display: block;
+        font-size: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    .nav-cta--mobile {
+      display: flex;
+      width: 100%;
+      height: 52px;
+    }
+  }
+}

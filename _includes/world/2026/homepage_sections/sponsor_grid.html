@@ -1,0 +1,25 @@
+{% assign sponsors_2026 = site.data.world['2026'].sponsors %}
+{% assign sponsor_tiers = "platinum,gold,silver,other,members" | split: "," %}
+
+<section class="sponsor-grid">
+  <div class="sponsor-grid__inner">
+    <h2 class="sponsor-grid__title">Thank you to our sponsors that make it all possible!</h2>
+
+    <div class="sponsor-grid__groups">
+      {% for tier in sponsor_tiers %}
+        {% assign sponsors = sponsors_2026[tier] %}
+        {% if sponsors and sponsors.size > 0 %}
+          <section class="sponsor-grid__group sponsor-grid__group--{{ tier }}" aria-label="{{ tier | replace: '-', ' ' | capitalize }} sponsors">
+            <div class="sponsor-grid__logos sponsor-grid__logos--{{ tier }}">
+              {% for sponsor in sponsors %}
+                <a href="{{ sponsor.url }}" class="sponsor-grid__item sponsor-grid__item--{{ tier }} sponsor-grid__item--{{ sponsor.name | slugify }}" target="_blank" rel="noopener" aria-label="{{ sponsor.name }}">
+                  <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" loading="lazy">
+                </a>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
