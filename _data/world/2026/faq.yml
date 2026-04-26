@@ -13,6 +13,8 @@
       answer: "There is a lot to see in Austin, from the vibrant live music scene to stunning natural swimming holes via world-class BBQ joints and food trucks. We'll have a list of local recommendations for attendees soon."
     - question: "What are the start and end times and dates of the conference?"
       answer: "<strong>September 22nd:</strong> Rails at Scale Summit and Workshops (both require add-on tickets)<br><strong>September 22nd:</strong> Pre-registration 4–7pm<br><strong>September 23rd:</strong> 9am–5:30pm<br><strong>September 24th:</strong> 9am–5:30pm, Closing Party 6:30–10:30pm<br><br>The full schedule will be published in July/August.<br><br>If you plan to attend Rails World only, we recommend you arrive on Sept 22 by 4pm and depart at any time on Sept 25. If you plan to attend the Rails World and a workshop/Rails at Scale Summit (which will require an additional ticket), please plan to arrive on Sept 21 and depart on Sept 25."
+    - question: "What is the Rails World Code of Conduct?"
+      answer: "Just like Rails, Rails World follows the Ruby community's Code of Conduct. In this context, 'collaborative spaces' include all venues related to Rails World and Rails at Scale activities.<br><br>If you believe these guidelines have been violated, please contact the Rails Foundation at <a href=\"mailto:world@rubyonrails.org\">world@rubyonrails.org</a>.<br><br><a href=\"/conduct\">Read the Code of Conduct</a>"
 
 - category: Tickets & Entry
   slug: tickets
@@ -59,3 +61,5 @@
       answer: "The venue does not have gender neutral toilets."
     - question: "My question is not answered here. Who can I contact?"
       answer: "You can reach out to us at <a href=\"mailto:world@rubyonrails.org\">world@rubyonrails.org</a>."
+
+
