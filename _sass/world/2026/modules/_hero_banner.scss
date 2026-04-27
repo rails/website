@@ -43,6 +43,12 @@
         font-size: 36px;
         line-height: 1.1;
       }
+
+      @include media(MobileScreens) {
+        br.desktop-only {
+          display: none;
+        }
+      }
     }
 
     p {
@@ -60,7 +66,7 @@
 
   .hero-cactus {
     position: absolute;
-    left: 43%;
+    left: 40%;
     top: -54px;
     height: 210px;
     width: auto;
