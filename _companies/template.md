@@ -23,7 +23,7 @@ member_status: "In 2022, Company became a **founding Core member** of the Rails 
 github_contributions:
   - name: "rails"
     url: "https://github.com/rails/rails"
-contribution_string: "detail abotu contributions if don't want to link to repositories"
+contribution_string: "detail about contributions if don't want to link to repositories"
 community: |
   [Item to link](https://www.com) - Description of contribution
 case_study_blurb: "Check out the case study of how company delivers incredible value to its customers with Rails"

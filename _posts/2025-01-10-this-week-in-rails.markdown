@@ -36,7 +36,7 @@ This fixes a very old regression introduced in Rails 5.1!
 The table columns inside `schema.rb` are now sorted alphabetically.
 Previously they'd be sorted by creation order, which can cause merge conflicts when two branches modify the same table concurrently.
 
-[Update NotificationAssertions's assert_notifcation to match against payload subsets and return matched notification](https://github.com/rails/rails/pull/54126)  
+[Update NotificationAssertions's assert_notification to match against payload subsets and return matched notification](https://github.com/rails/rails/pull/54126)
 `ActiveSupport::Testing::NotificationAssertions`'s `assert_notification` now matches against payload subsets by default.
 
 Previously the following assertion would fail due to excess key values in the notification payload. Now with payload subset matching, it will pass.

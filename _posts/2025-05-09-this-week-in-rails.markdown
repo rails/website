@@ -28,7 +28,7 @@ This update ensures that when a retryable `SqlLiteral` is provided to `#where`, 
 This change updates Active Record's SQLite adapter to represent boolean values as `TRUE` and `FALSE` instead of 1 and 0. This enhances SQL readability and aligns with standard SQL boolean literals.
 
 [Make the executor hooks in AR::QueryCache private](https://github.com/rails/rails/pull/55007)  
-`ActiveRecord::QueryCache` has been refactored to make its executor hooks private, ensuring they're not accessible or overrideable externally. Additionally, it reorganizes these hooks for improved clarity, aligning with the structure used in the connection pool.
+`ActiveRecord::QueryCache` has been refactored to make its executor hooks private, ensuring they're not accessible or overridable externally. Additionally, it reorganizes these hooks for improved clarity, aligning with the structure used in the connection pool.
 
 [Rescue connection related errors in MemCacheStore#read_multi_entries](https://github.com/rails/rails/pull/55000)  
 This change enhances the `MemCacheStore#read_multi_entries` method by adding error handling for connection-related issues. Previously, network interruptions during bulk reads from Memcached could cause failures; such errors are now properly rescued, improving resilience in distributed caching scenarios.
