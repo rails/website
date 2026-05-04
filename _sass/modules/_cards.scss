@@ -44,7 +44,7 @@
       margin: 3px 15px; // Reduce side margins on mobile to prevent overflow
 
       .card {
-        max-height: auto !important;
+        max-height: none !important;
         width: 100%; // Ensure card doesn't exceed container
         box-sizing: border-box; // Include padding in width calculation
 
@@ -322,16 +322,6 @@
           margin-bottom: 0.5em;
         }
       }
-    }
-  }
-
-  &.padfix {
-    padding-bottom: 80px;
-  }
-
-  @media (min-width: 768px) {
-    &.padfix {
-      padding-bottom: 0;
     }
   }
 
