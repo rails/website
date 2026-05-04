@@ -44,7 +44,7 @@
       margin: 3px 15px; // Reduce side margins on mobile to prevent overflow
 
       .card {
-        max-height: auto !important;
+        max-height: none !important;
         width: 100%; // Ensure card doesn't exceed container
         box-sizing: border-box; // Include padding in width calculation
 
