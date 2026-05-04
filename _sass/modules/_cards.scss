@@ -325,16 +325,6 @@
     }
   }
 
-  &.padfix {
-    padding-bottom: 80px;
-  }
-
-  @media (min-width: 768px) {
-    &.padfix {
-      padding-bottom: 0;
-    }
-  }
-
   @media (min-width: 768px) {
     &__container {
       grid-template-columns: repeat(2, 1fr);
