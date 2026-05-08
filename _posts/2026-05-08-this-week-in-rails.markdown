@@ -25,7 +25,7 @@ end
 ```
 
 [Add datalist to FormBuilder](https://github.com/rails/rails/pull/57318)  
-Form builders now support `f.datalist`, deriving the datalist id from the builder object and method so text fields can point to it with `list:`.
+Form builders now support `f.datalist`, deriving the datalist's ID from the builder object and method so text fields can point to it with `list:`.
 
 [Add datalist_tag to create datalist form elements](https://github.com/rails/rails/pull/52137)  
 Action View now has a `datalist_tag` helper for generating standalone HTML `datalist` elements and option values.
