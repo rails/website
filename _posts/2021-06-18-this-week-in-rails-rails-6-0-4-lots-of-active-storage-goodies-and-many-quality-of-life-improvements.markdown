@@ -57,7 +57,7 @@ You should be calling these methods directly on the attachment and not on the as
 
 You may be familiar with the instance method Model#update!, but now you can do that on the class!
 
-### [Performance regression in CollectionAssocation#build](https://github.com/rails/rails/pull/42524)
+### [Performance regression in CollectionAssociation#build](https://github.com/rails/rails/pull/42524)
 
 This fixes a huge performance bug for inversing associations with a lot of records.
 

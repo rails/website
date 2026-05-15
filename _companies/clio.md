@@ -22,7 +22,7 @@ member_status: "In 2025, Company became a **contributing member** of the Rails F
 github_contributions:
   - name: "jit_preloader"
     url: "https://github.com/clio/jit_preloader"
-  - name: "polymoprhic_integer_type"
+  - name: "polymorphic_integer_type"
     url: "https://github.com/clio/polymorphic_integer_type"
   - name: "dead_code_detector"
     url: "https://github.com/clio/dead_code_detector"
