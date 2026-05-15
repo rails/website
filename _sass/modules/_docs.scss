@@ -65,7 +65,11 @@
   }
 
   .card__fullwidth .card {
-    max-height: 500px !important;
+    max-height: none !important;
+
+    @media (min-width: 768px) {
+      max-height: 500px !important;
+    }
   }
 
   // UL/LIs here are for cards, no bullets actually used.
