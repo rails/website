@@ -11,6 +11,9 @@ date: 2026-05-23
 
 Hi, I'm [Emmanuel Hayford](https://hayford.dev/). Rails had a busy week, so grab a tea and let's get into it.
 
+[The 2026 Ruby on Rails Community Survey is open](https://railsdeveloper.com/survey/)
+Open through July 3rd. Anonymous, and takes about 10 to 12 minutes, results published free. This year goes deeper on tools, deployment, team shape, and how AI is (or isn't) showing up in your workflow.
+
 [Limit the size of strings we call `to_i` on in ActiveRecord](https://github.com/rails/rails/pull/57368)
 Calling `to_i` on a very long string can be a DoS vector. Active Model now caps auto-integer coercion to the first `_limit * 4` bytes of the input, where `_limit` is the column's storage size: 16 bytes for a default 4-byte integer, 32 bytes for an 8-byte bigint. That's comfortably more than the digits any in-range value can have, with room left for a sign or a typical slug suffix. Without the multiplier, slug-style routes (`Post.where(id: params[:id])` where the id arrives as `123-hello-world`) would break.
 
