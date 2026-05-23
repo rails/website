@@ -100,13 +100,13 @@ The same idempotency check that has long existed for check constraints, foreign 
 The default is still January 1st 2011, but you can pass a more relevant time when one exists. Active Storage's `ProxyController` now uses the new keyword so its responses report a meaningful Last-Modified header.
 
 [Fix duplicate `where` conditions in `create_or_find_by`](https://github.com/rails/rails/pull/57223)
-Fixes [#57192](https://github.com/rails/rails/issues/57192), where `create_or_find_by` would emit duplicate WHERE conditions on the conflict path.
+On a relation that already has `where` conditions, when `create_or_find_by` catches a `RecordNotUnique` inside a transaction it retries the lookup with `where(attributes).find_by!(attributes)`, applying the same attributes twice. If the prior scope and the `create_or_find_by` argument disagree on a column (for example a polluted `CollectionProxy`), the retry matches nothing and raises `RecordNotFound`. The retry now only applies the attributes once.
 
 [Preserve attachment changes when converting a record to another class via STI](https://github.com/rails/rails/pull/46486)
-Fixes [#45778](https://github.com/rails/rails/issues/45778), where becoming a sibling STI class would drop pending attachment changes on the way through.
+Calling `record.becomes(SubclassName)` on an unsaved record with pending Active Storage attachments dropped those attachments on the new instance, because `@attachment_changes` wasn't carried over (and still pointed at the original record). `becomes` now copies `@attachment_changes` to the new instance and rewires each change's owning record, so a `comment.becomes(ModeratedComment)` keeps its attached image. Persisted records weren't affected.
 
 [Fix bulk job and email enqueueing methods with no arguments](https://github.com/rails/rails/pull/57267)
-A code-only move that fixes [#57264](https://github.com/rails/rails/issues/57264).
+`ActionMailer.deliver_all_later` and `ActiveJob.perform_all_later` are defined inside files that only autoload once a mailer or job class is referenced, so calling either with an empty array in code that didn't otherwise touch a mailer or job raised `NoMethodError`. The definitions now live where they get loaded eagerly enough for the empty-array call to work, so a dynamically-built (and possibly empty) batch enqueues cleanly.
 
 [Prevent the development welcome route from duplicating on route reload](https://github.com/rails/rails/pull/57367)
 The internal welcome route's append block is now registered once per application boot, while keeping the existing `append` ordering so app-defined root routes still take precedence over the welcome page.
