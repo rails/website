@@ -114,6 +114,11 @@ committers:
     location: USA
     image: jonathanhefner.jpg
 
+  - name: Mike
+    url: https://github.com/flavorjones
+    location: USA
+    image: mike-dalessio.jpg
+
   - name: Yasuo
     url: https://github.com/yahonda
     location: Japan
@@ -142,8 +147,6 @@ issues:
     github: luanzeba
   - name: Matheus Richard
     github: MatheusRich
-  - name: Mike Dalessio
-    github: flavorjones
   - name: Nikita Vasilevsky
     github: nvasilevski
   - name: Paul Reece
