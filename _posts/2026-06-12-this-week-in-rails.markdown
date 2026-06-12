@@ -46,7 +46,7 @@ that satisfy the `HAVING` clause.
 [Updated Active Job Basics guide](https://github.com/rails/rails/pull/57592)  
 As part of the Rails Foundation documentation project, the Active Job Basics guide received a big update.
 
-[Support _only:_ and _except:_ on __deliver_ callbacks in ActionMailer](https://github.com/rails/rails/pull/57581)  
+[Support _only:_ and _except:_ on __deliver_ callbacks in Action Mailer](https://github.com/rails/rails/pull/57581)  
 This pull request adds support for
 `config.action_mailer.raise_on_missing_callback_actions` when using `_deliver`
 callbacks with `only:` and `except:` options.
