@@ -36,7 +36,7 @@ This pull request introduces a way for applications to know whether all procs pa
 `insert!` now accepts the `:unique_by` option, consistent with `insert`.
 
 [Make _rails new_ work again on systems that do not have vips](https://github.com/rails/rails/pull/57613)  
-`rails new` was broken on Rails main if you do not have vips, but developers running `rails new` are not  expected to have `vips` installed, especially if they are not using ActiveStorage. This change fixes the generator to work even when `vips` is not installed.
+`rails new` was broken on Rails main if you do not have vips, but developers running `rails new` are not expected to have `vips` installed, especially if they are not using Active Storage. This change fixes the generator to work even when `vips` is not installed.
 
 [Fix _update_all_ / _delete_all_ ignoring _group_/_having_ (updates/deletes every row)](https://github.com/rails/rails/pull/57601)  
 This change fixes the issue of `update_all` / `delete_all` ignoring `group` and
