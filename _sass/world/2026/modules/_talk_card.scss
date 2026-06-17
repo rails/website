@@ -1,0 +1,112 @@
+.talk-card {
+  padding: 0 30px 80px;
+
+  &__inner {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba($off-white, 0.6);
+    padding: 28px 32px;
+    max-width: 860px;
+    @include neon-glow-outer;
+
+    // Conic gradient border
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    // Inner glow
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      z-index: 1;
+      @include neon-glow-inner;
+    }
+  }
+
+  &__chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 2px;
+    border: 1px solid rgba($off-white, 0.6);
+    font-size: 12px;
+    font-weight: $font-weight-600;
+    color: $white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    position: relative;
+    @include neon-glow-outer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 200;
+    color: $off-white;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+
+    p {
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 1.7;
+      letter-spacing: 0.3px;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include media(MobileScreens) {
+    padding: 0 20px 60px;
+
+    &__inner {
+      padding: 28px 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+  }
+}

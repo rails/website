@@ -39,6 +39,20 @@ layout: world/2026/default
       </div>
     </div>
 
+    {% if page.talk_title %}
+    <div class="talk-card container-center">
+      <div class="talk-card__inner">
+        {% if page.talk_date %}
+        <div class="talk-card__chip">{{ page.talk_date }}</div>
+        {% endif %}
+        <h2 class="talk-card__title">{{ page.talk_title }}</h2>
+        {% if page.talk_description %}
+        <div class="talk-card__description">{{ page.talk_description | markdownify }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
     {% include world/2026/components/footer.html %}
   </div>
 </div>
