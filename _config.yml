@@ -65,6 +65,11 @@ defaults:
       path: "world/2025"
     values:
       description: September 4 & 5 - Beurs van Berlage, Amsterdam, NL
+  - scope:
+      path: "_world_speakers/2026"
+      type: "world_speakers"
+    values:
+      layout: "world/2026/speaker"
 
 markdown: kramdown
 highlighter: rouge
