@@ -21,6 +21,11 @@
     mask-repeat: no-repeat;
     mask-position: center;
 
+    &--github {
+      -webkit-mask-image: url("/assets/world/2026/icons/github.svg");
+      mask-image: url("/assets/world/2026/icons/github.svg");
+    }
+
     &--linkedin {
       -webkit-mask-image: url("/assets/world/2026/icons/linkedin.svg");
       mask-image: url("/assets/world/2026/icons/linkedin.svg");

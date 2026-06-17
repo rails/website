@@ -1,0 +1,44 @@
+---
+layout: world/2026/default
+---
+
+<div class="page-wrapper-2026">
+  <div id="section-desktop">
+    {% include world/2026/components/nav.html %}
+
+    <div class="speaker-page container-center">
+      <div class="speaker-page__left">
+        <div class="speaker-page__photo-frame">
+          <img src="{{ page.image_path }}" alt="{{ page.first_name }} {{ page.last_name }}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="speaker-page__right">
+        <div class="speaker-page__content">
+          <h1 class="speaker-page__name">{{ page.first_name }} {{ page.last_name }}</h1>
+          <p class="speaker-page__tagline">{{ page.tagline }}{% if page.company and page.company != "false" %}, {{ page.company }}{% endif %}</p>
+          <div class="speaker-page__bio">{{ content }}</div>
+        </div>
+        <div class="speaker-page__social">
+          {% if page.github %}
+            <a href="{{ page.github }}" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="social-icon__glyph social-icon__glyph--github"></span>
+            </a>
+          {% endif %}
+          {% if page.linkedin %}
+            <a href="{{ page.linkedin }}" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="social-icon__glyph social-icon__glyph--linkedin"></span>
+            </a>
+          {% endif %}
+          {% if page.twitter %}
+            <a href="{{ page.twitter }}" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+              <span class="social-icon__glyph social-icon__glyph--x"></span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% include world/2026/components/footer.html %}
+  </div>
+</div>
