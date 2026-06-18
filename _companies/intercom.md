@@ -5,7 +5,7 @@ description: "Fin is the AI Customer Agent company on a mission to help business
 name: Fin (previously Intercom)
 intro: |
   Fin is the Customer Agent company delivering perfect customer experiences – from support to sales to commerce. Founded as Intercom in 2011, Fin (name changed in 2026) is an AI-first company on a mission to help businesses provide incredible customer experiences. Their AI agent [Fin](https://fin.ai), the most advanced customer service AI agent on the market, lets businesses deliver always-on, impeccable customer interactions and ultimately transform their customer experiences for the better. Fin can also be combined with their Helpdesk to become a complete solution called the Intercom Customer Service Suite, which provides AI enhanced support for the more complex or high touch queries that require a human agent. Founded in 2011 and trusted by nearly 30,000 global businesses, Fin is setting the new standard for customer experience.
-logo: /assets/images/logo-fin.svg
+logo: /assets/images/logo-fin-black.svg
 exturl: https://fin.ai/
 company_type: Private
 valuation: "$1.275B (2018)"
