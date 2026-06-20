@@ -11,6 +11,9 @@ date: 2026-06-19
 
 Hi, it's [zzak](https://github.com/zzak). This week was full of changes, so let's pull into the station and take a look.
 
+[Last Rails World GA tickets available](https://rubyonrails.org/world/2026)  
+Heads up: there are now just 100 General Admission tickets available for Rails World 2026. Don’t miss your chance to join the Rails community in Austin this September for two days of talks, code, connection and music.
+
 [Rails Foundation documentation guides](https://github.com/rails/rails/pull/57747)  
 The documentation project reworked the Multiple Databases guide, now ready for community review, and reorganized the [Internationalization guide](https://github.com/rails/rails/pull/57735) from beginner-friendly setup through advanced topics.
 
