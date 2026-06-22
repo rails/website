@@ -204,10 +204,13 @@
   }
 
   &__item--37signals img,
-  &__item--intercom img,
   &__item--wyeworks img,
   &__item--planning-center img {
     max-height: 46px;
+  }
+
+  &__item--intercom img {
+    max-height: 60px;
   }
 
   &__item--sorcer img,
@@ -258,6 +261,10 @@
 
   &__item--baytek img {
     max-height: 32px;
+  }
+
+  &__item--fullscript img {
+    max-height: 60px;
   }
 
   &__item--thoughtbot img {
