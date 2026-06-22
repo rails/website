@@ -1,6 +1,4 @@
-{% assign keynote_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', true | sort: 'first_name' %}
-{% assign regular_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', false | sort: 'first_name' %}
-{% assign all_speakers = keynote_speakers | concat: regular_speakers %}
+{% assign all_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | sort: 'specific_order' %}
 
 <section class="speaker-carousel-section">
   <div class="speaker-carousel-section__header">

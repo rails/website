@@ -1,0 +1,44 @@
+---
+title: "Speakers"
+description: "Meet the speakers of Rails World 2026 in Austin, TX."
+og_image: /assets/world/2026/og-rw26.png
+layout: world/2026/default
+permalink: /world/2026/speakers
+---
+
+{% assign all_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | sort: 'specific_order' %}
+
+<div class="page-wrapper-2026">
+  <div id="section-desktop">
+    {% include world/2026/components/nav.html %}
+
+    <div class="speakers-page container-center">
+      <div class="speakers-page__header">
+        <div class="speakers-page__header-text">
+          <h1 class="speakers-page__title">Meet this year's<br>(epic) speakers</h1>
+          <p class="speakers-page__description">A gathering of engineers, makers, and thinkers pushing Rails to new heights. Join us in Austin, TX on September 23 & 24, 2026.</p>
+        </div>
+        <div class="speakers-page__hat">
+          <img src="/assets/world/2026/images/sponsors/HAT.png" alt="Neon cowboy hat" />
+        </div>
+      </div>
+
+      <div class="speakers-page__grid">
+        {% for speaker in all_speakers %}
+          {%
+            include world/2026/components/speaker_card.html
+            first_name=speaker.first_name
+            last_name=speaker.last_name
+            tagline=speaker.tagline
+            company=speaker.company
+            photo=speaker.image_path
+            path=speaker.path
+          %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {% include world/2026/components/code_of_conduct_banner.html %}
+    {% include world/2026/components/footer.html %}
+  </div>
+</div>

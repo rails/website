@@ -1,0 +1,85 @@
+.speakers-page {
+  padding: 60px 30px 100px;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__header-text {
+    max-width: 420px;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: $font-weight-400;
+    color: $off-white;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+  }
+
+  &__hat {
+    flex-shrink: 0;
+    width: 340px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  @include media(TabletScreens) {
+    &__hat {
+      width: 240px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @include media(MobileScreens) {
+    padding: 32px 20px 60px;
+
+    &__header {
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__hat {
+      width: 180px;
+      align-self: flex-end;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+  }
+}

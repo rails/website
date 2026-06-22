@@ -240,4 +240,31 @@
   &__item--jetbrains img {
     filter: brightness(0) invert(1);
   }
+
+  &__item--gumroad img {
+    max-height: 30px;
+    max-width: 190px;
+  }
+
+  &__item--serpapi img {
+    max-height: 46px;
+    max-width: 240px;
+  }
+
+  &__item--trmnl img {
+    max-height: 32px;
+  }
+
+  &__item--baytek img {
+    filter: none !important;
+  }
+
+  &__item--thoughtbot img {
+    max-height: 28px;
+    max-width: 140px;
+  }
+
+  &__item--crunch-loop img {
+    filter: none !important;
+  }
 }

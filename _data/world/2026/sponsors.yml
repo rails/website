@@ -22,6 +22,9 @@ gold:
   - name: "RWX"
     logo: /assets/world/2026/logos/logo-rwx.png
     url: "https://www.rwx.com/"
+  - name: "SerpApi"
+    logo: /assets/images/logo-serpapi.svg
+    url: "https://serpapi.com/"
   - name: "Test Double"
     logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
     url: "https://link.testdouble.com/bp8"
@@ -30,14 +33,23 @@ silver:
   - name: "37signals"
     logo: /assets/world/2024/images/sponsors/RW-logo-37signals.svg
     url: "https://37signals.com/"
+  - name: "Crunch Loop"
+    logo: /assets/world/2026/logos/logo-crunchloop.svg
+    url: "https://www.crunchloop.io/"
   - name: "Intercom"
     logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
     url: "https://www.intercom.com/"
+  - name: "TRMNL"
+    logo: /assets/world/2026/logos/logo-trmnl.png
+    url: "https://trmnl.com/"
   - name: "Wyeworks"
     logo: /assets/world/2026/logos/wyeworks-logo-white.svg
     url: "https://www.wyeworks.com/"
 
 other:
+  - name: "Baytek"
+    logo: /assets/world/2026/logos/logo-baytek.svg
+    url: "https://www.baytekent.com/"
   - name: "Beyond Finance"
     logo: /assets/world/2026/logos/logo-beyond-finance.svg
     url: "https://www.beyondfinance.com/"
@@ -53,6 +65,9 @@ other:
   - name: "Sorcer"
     logo: /assets/world/2026/logos/logo-sorcer.png
     url: "https://sorcer.io/"
+  - name: "thoughtbot"
+    logo: /assets/world/2026/logos/logo-thoughtbot.svg
+    url: "https://thoughtbot.com/"
   - name: "Typesense"
     logo: /assets/world/2026/logos/logo-typesense.png
     url: "https://typesense.org/"
@@ -100,9 +115,6 @@ members:
   - name: "Chime"
     logo: /assets/images/logo-chime-black.svg
     url: "https://www.chime.com/"
-  - name: "SerpApi"
-    logo: /assets/images/logo-serpapi.svg
-    url: "https://serpapi.com/"
   - name: "Planning Center"
     logo: /assets/images/logo-planningcenter-black.svg
     url: "https://www.planningcenter.com/"
