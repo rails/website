@@ -247,7 +247,7 @@
   }
 
   &__item--serpapi img {
-    max-height: 46px;
+    max-height: 60px;
     max-width: 240px;
   }
 
@@ -255,8 +255,9 @@
     max-height: 32px;
   }
 
+
   &__item--baytek img {
-    filter: none !important;
+    max-height: 32px;
   }
 
   &__item--thoughtbot img {
