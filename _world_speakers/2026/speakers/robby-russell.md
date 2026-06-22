@@ -5,7 +5,7 @@ image_path: /assets/world/2024/images/speakers/r-russell.jpg
 tagline: CEO
 company: Planet Argon
 specific_order: 3
-keynote: false
+keynote: true
 github: https://github.com/robbyrussell
 linkedin: https://www.linkedin.com/in/robbyrussell/
 twitter: https://twitter.com/robbyrussell
