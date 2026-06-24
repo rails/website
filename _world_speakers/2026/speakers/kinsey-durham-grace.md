@@ -2,7 +2,7 @@
 first_name: Kinsey
 last_name: Durham Grace
 image_path: https://sessionize.com/image/b2b9-400o400o1-BLuCxLFgUpKV1g4krc7uH.jpg
-tagline: Infrastructure Engineer
+tagline: Copilot Coding Agent Engineering
 company: GitHub
 specific_order: 16
 keynote: false
