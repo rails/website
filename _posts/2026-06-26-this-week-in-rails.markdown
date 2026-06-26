@@ -8,13 +8,12 @@ published: true
 date: 2026-06-26
 ---
 
-Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Correction-heavy week: bug fixes, config parsing, association edge cases, and more Ractor safety.
+Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). This week was heavy on fixes: config parsing, association edge cases, caller-owned state, and more Ractor safety.
 
 [Add RFC 9110 compliant Accept header content negotiation opt-in](https://github.com/rails/rails/pull/57579)  
 New opt-in: `config.action_dispatch.respect_accept_header_rfc9110`. Default: off.
-Turn it on if you want RFC-compliant media type specificity and quality handling, for example `Accept: application/json, */*` returning JSON.
-If your app relies on old browser-like fallbacks, leave it off.
-Turn it on only after you test real browser `Accept` headers in your app and CI.
+Enable it when you want RFC-compliant media type specificity and quality handling, for example `Accept: application/json, */*` returning JSON.
+If your app relies on old browser-like fallbacks, leave it off until you test real browser `Accept` headers in your app and CI.
 
 [Strip inline comments from unquoted `.env` values](https://github.com/rails/rails/pull/57789)  
 Unquoted dotenv values now strip whitespace-prefixed inline comments before interpolation and command execution.
@@ -23,13 +22,13 @@ No action needed unless your app relied on trailing comments being part of unquo
 
 [Fix `Rails.app.dotenvs` to honor an explicit path argument](https://github.com/rails/rails/pull/57787)  
 `Rails.application.dotenvs(path)` now memoizes by path instead of returning the first dotenv configuration it saw.
-This keeps the default `.env` path fast, while making custom dotenv files work as expected.
-Useful if you read multiple dotenv files in one process.
+The default `.env` file remains cached, and custom dotenv files now work as expected.
+Useful when reading multiple dotenv files in one process.
 
 [Fix `create_or_find_by` scope pollution on the non-transactional retry](https://github.com/rails/rails/pull/57711)  
 This completes the earlier [`create_or_find_by` fix](https://github.com/rails/rails/pull/57192) by covering the branch that runs outside an open transaction.
 On a uniqueness retry, Rails now uses `rewhere(attributes).take!` there too, so a caller scope no longer pollutes the lookup and turns an existing record into `RecordNotFound`.
-Right fix: keep the caller scope for create, drop it for the retry lookup.
+Create keeps the caller scope; the retry lookup drops it.
 
 [Validate offset value at call time like limit](https://github.com/rails/rails/pull/57808)  
 `offset` now mirrors `limit` and raises `ArgumentError` for invalid values instead of silently coercing `"abc"` to `OFFSET 0`.
@@ -39,7 +38,7 @@ Bad input now fails where it enters the relation.
 [Avoid mutating params hash passed to `ActionDispatch::Http::URL.url_for`](https://github.com/rails/rails/pull/57782)  
 `url_for` no longer deletes nil-valued entries from the caller's `params:` hash.
 That fixes corrupted `request.query_parameters` and avoids `FrozenError` when the hash is frozen.
-Rails should not mutate caller-owned state here.
+Rails no longer mutates caller-owned state here.
 
 [Fix `Http::Headers#merge` mutating the original request](https://github.com/rails/rails/pull/57805)  
 `ActionDispatch::Http::Headers#merge` is documented to return a new headers object, but it was still mutating the original request env.
@@ -48,7 +47,7 @@ Merging headers should not change the original request.
 
 [Avoid mutating the override options passed to `ActiveModel::Errors#import`](https://github.com/rails/rails/pull/57792)  
 `Errors#import` now duplicates override options before normalizing `:attribute` and `:type`.
-Duplicate first, normalize inside Rails.
+Rails duplicates first, then normalizes internally.
 
 [Don't share the actions Hash across `ActionableError` subclasses](https://github.com/rails/rails/pull/57720)  
 `ActionableError.action` now uses copy-on-write for the `_actions` class attribute.
@@ -88,10 +87,10 @@ This behavior was undocumented in Rails, and Ruby has warned about setting `$,` 
 Boring default. Better default.
 
 **Ractor safety continues**  
-More internals moved to the boring pattern we want: freeze defaults, copy on write, avoid shared mutable state.
+More internals moved to the boring pattern we want: freeze defaults, copy-on-write, avoid shared mutable state.
 Touched areas include [TimeFormats](https://github.com/rails/rails/pull/57857), [rescue handlers](https://github.com/rails/rails/pull/57850), [parameter encodings](https://github.com/rails/rails/pull/57848), [view cache dependencies](https://github.com/rails/rails/pull/57754), [ExecutionContext.after_change](https://github.com/rails/rails/pull/57753), and the [Active Record Railtie](https://github.com/rails/rails/pull/57602).
 Some Active Record and Active Model memoization was also [removed](https://github.com/rails/rails/pull/57642).
-If your app patches internals with global mutation, stop and audit now.
+If your app patches internals with global mutation, audit those patches.
 Prefer frozen defaults, copy-on-write, or explicit duplication.
 
 **Documentation fixes**  
