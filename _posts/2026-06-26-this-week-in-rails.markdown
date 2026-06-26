@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This Week in Rails: RFC 9110 Accept headers, dotenv fixes, and Ractor safety"
+title: "RFC 9110 Accept headers, dotenv fixes, and Ractor safety"
 categories: news
 author: vipulnsward
 og_image: assets/images/this-week-in-rails.png
@@ -15,17 +15,17 @@ New opt-in: `config.action_dispatch.respect_accept_header_rfc9110`. Default: off
 Enable it when you want RFC-compliant media type specificity and quality handling, for example `Accept: application/json, */*` returning JSON.
 If your app relies on old browser-like fallbacks, leave it off until you test real browser `Accept` headers in your app and CI.
 
-[Strip inline comments from unquoted `.env` values](https://github.com/rails/rails/pull/57789)  
+[Strip inline comments from unquoted dotenv values](https://github.com/rails/rails/pull/57789)  
 Unquoted dotenv values now strip whitespace-prefixed inline comments before interpolation and command execution.
 So `PORT=5432 # primary` resolves to `5432`, while `URL=http://host#frag` and quoted values still keep their `#` content.
 No action needed unless your app relied on trailing comments being part of unquoted values.
 
-[Fix `Rails.application.dotenvs(path)` to honor an explicit path argument](https://github.com/rails/rails/pull/57787)  
+[Fix Rails.application.dotenvs(path) to honor an explicit path argument](https://github.com/rails/rails/pull/57787)  
 `Rails.application.dotenvs(path)` now memoizes by path instead of returning the first dotenv configuration it saw.
 The default `.env` file remains cached, and custom dotenv files now work as expected.
 Useful when reading multiple dotenv files in one process.
 
-[Fix `create_or_find_by` scope pollution on the non-transactional retry](https://github.com/rails/rails/pull/57711)  
+[Fix create_or_find_by scope pollution on the non-transactional retry](https://github.com/rails/rails/pull/57711)  
 This completes the earlier [`create_or_find_by` fix](https://github.com/rails/rails/pull/57192) by covering the branch that runs outside an open transaction.
 On a uniqueness retry, Rails now uses `rewhere(attributes).take!` there too, so a caller scope no longer pollutes the lookup and turns an existing record into `RecordNotFound`.
 Create keeps the caller scope; the retry lookup drops it.
@@ -35,21 +35,21 @@ Create keeps the caller scope; the retry lookup drops it.
 Clean numeric strings still work.
 Bad input now fails where it enters the relation.
 
-[Avoid mutating params hash passed to `ActionDispatch::Http::URL.url_for`](https://github.com/rails/rails/pull/57782)  
+[Avoid mutating params hash passed to ActionDispatch::Http::URL.url_for](https://github.com/rails/rails/pull/57782)  
 `url_for` no longer deletes nil-valued entries from the caller's `params:` hash.
 That fixes corrupted `request.query_parameters` and avoids `FrozenError` when the hash is frozen.
 Rails no longer mutates caller-owned state here.
 
-[Fix `Http::Headers#merge` mutating the original request](https://github.com/rails/rails/pull/57805)  
+[Fix Http::Headers#merge mutating the original request](https://github.com/rails/rails/pull/57805)  
 `ActionDispatch::Http::Headers#merge` is documented to return a new headers object, but it was still mutating the original request env.
 The implementation now duplicates the env before merging, so the method follows its contract.
 Merging headers should not change the original request.
 
-[Avoid mutating the override options passed to `ActiveModel::Errors#import`](https://github.com/rails/rails/pull/57792)  
+[Avoid mutating the override options passed to ActiveModel::Errors#import](https://github.com/rails/rails/pull/57792)  
 `Errors#import` now duplicates override options before normalizing `:attribute` and `:type`.
 Rails duplicates first, then normalizes internally.
 
-[Don't share the actions Hash across `ActionableError` subclasses](https://github.com/rails/rails/pull/57720)  
+[Don't share the actions Hash across ActionableError subclasses](https://github.com/rails/rails/pull/57720)  
 `ActionableError.action` now uses copy-on-write for the `_actions` class attribute.
 An action registered on one subclass no longer leaks into the parent or sibling subclasses.
 Same direction: no shared mutable defaults.
@@ -59,7 +59,7 @@ Action View lookup now has a non-raising `#find` path, replacing places that had
 It also adds an `#any_formats?` finder, keeping more of the template lookup behavior inside `LookupContext`.
 Less exception-driven lookup.
 
-[Support polymorphic associations with custom primary keys through `:inverse_of`](https://github.com/rails/rails/pull/57795)  
+[Support polymorphic associations with custom primary keys through :inverse_of](https://github.com/rails/rails/pull/57795)  
 Polymorphic associations with an explicit `:inverse_of` now respect custom primary keys from the inverse association.
 This helps applications where associated records use identifiers like `uuid` or `slug` instead of the default `id`.
 
@@ -76,15 +76,15 @@ That fixes `has_many` and `has_one` lookups on new records when all key columns 
 Overriding it on an abstract class or STI base now behaves like applications would expect: subclasses inherit the override.
 Less surprise for abstract models and STI.
 
-[Parse intentional JSON comments with `allow_comments: true`](https://github.com/rails/rails/pull/57832)  
+[Parse intentional JSON comments with allow_comments: true](https://github.com/rails/rails/pull/57832)  
 Rails bumped `json` to 2.20.0 and now opts in to `allow_comments: true` where comments are expected.
 That keeps the Active Support serializer fallback and devcontainer JSONC handling ready for stricter json 3.0 behavior.
 Good cleanup before json 3.0 tightens behavior.
 
-[Remove the use of `$,` as a default value for `safe_join`](https://github.com/rails/rails/pull/57844)  
+[Remove the use of $, as a default value for safe_join](https://github.com/rails/rails/pull/57844)  
 `safe_join` now defaults `sep` to `nil` instead of reading Ruby's deprecated global output field separator.
 This behavior was undocumented in Rails, and Ruby has warned about setting `$,` for years.
-Boring default. Better default.
+Simple default. Better default.
 
 **Ractor safety continues**  
 More internals moved to the boring pattern we want: freeze defaults, copy-on-write, avoid shared mutable state.
