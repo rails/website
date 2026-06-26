@@ -20,7 +20,7 @@ Unquoted dotenv values now strip whitespace-prefixed inline comments before inte
 So `PORT=5432 # primary` resolves to `5432`, while `URL=http://host#frag` and quoted values still keep their `#` content.
 No action needed unless your app relied on trailing comments being part of unquoted values.
 
-[Fix `Rails.app.dotenvs` to honor an explicit path argument](https://github.com/rails/rails/pull/57787)  
+[Fix `Rails.application.dotenvs(path)` to honor an explicit path argument](https://github.com/rails/rails/pull/57787)  
 `Rails.application.dotenvs(path)` now memoizes by path instead of returning the first dotenv configuration it saw.
 The default `.env` file remains cached, and custom dotenv files now work as expected.
 Useful when reading multiple dotenv files in one process.
@@ -92,9 +92,6 @@ Touched areas include [TimeFormats](https://github.com/rails/rails/pull/57857), 
 Some Active Record and Active Model memoization was also [removed](https://github.com/rails/rails/pull/57642).
 If your app patches internals with global mutation, audit those patches.
 Prefer frozen defaults, copy-on-write, or explicit duplication.
-
-**Documentation fixes**  
-The guides got several cleanup passes this week, including [fixed internal guide anchors](https://github.com/rails/rails/pull/57806), an [8-1-stable backport](https://github.com/rails/rails/pull/57809), and a narrower public API page for [`ActionView::Template`](https://github.com/rails/rails/pull/57858).
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-06-19%7D...main@%7B2026-06-26%7D)._  
 _We had [24 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260619-20260626) to the Rails codebase this past week!_
