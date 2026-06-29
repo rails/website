@@ -24,7 +24,7 @@ apps:
   - name: Writebook
     by: 37signals
     blurb: A self-hosted platform for publishing books on the web, showcasing clean model design, Active Storage, and rich text editing.
-    tags: [Active Storage, Action Text, Authentication]
+    tags: [Active Storage, Action Text, Auth]
     repo: https://github.com/basecamp/writebook
     screenshot: /assets/images/reference-apps/writebook.webp
 
