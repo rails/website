@@ -1,0 +1,90 @@
+---
+title: "Reference Apps — Ruby on Rails"
+description: "A curated library of exemplary open-source Rails apps, hand-picked to show how real, production-quality Rails applications are built."
+permalink: /docs/reference-apps
+redirect_from:
+  - /docs/reference-apps/
+---
+
+<div class="docs heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>
+          Learn from real,<br />
+          open-source Rails apps.
+        </h1>
+        <p>
+          A small, hand-picked library of exemplary open-source apps worth
+          reading to see how production-quality Rails is built today. The bar
+          for inclusion is high.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs cards reference-apps common-padding--bottom-small">
+  <div class="container">
+    <div class="cards__container">
+      {% for app in site.data.reference_apps.apps %}
+      <div class="card">
+        <a href="{{ app.repo }}" aria-label="{{ app.name }} source code">
+          <div class="card__body">
+            {% if app.screenshot %}
+            <img
+              class="reference-apps__shot"
+              src="{{ app.screenshot }}"
+              alt=""
+              {% unless forloop.first %}loading="lazy"{% endunless %}
+            />
+            {% endif %}
+
+            <div class="reference-apps__text">
+              {% if app.by %}
+              <div class="card__label">
+                <h6>{{ app.by }}</h6>
+              </div>
+              {% endif %}
+
+              <div class="card__headline">
+                <h3>{{ app.name }}</h3>
+              </div>
+
+              <div class="card__content">
+                {% if app.blurb %}<p>{{ app.blurb }}</p>{% endif %}
+
+                {% if app.tags %}
+                <ul class="reference-apps__tags">
+                  {% for tag in app.tags %}
+                  <li>{{ tag }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="docs text common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content">
+        <hr class="divider" />
+        <h3>About this library</h3>
+        <p>
+          This is a curated library, and the bar for inclusion is intentionally
+          high. An app is listed here only if it is open source under a
+          permissive license, written in idiomatic and modern Rails, and worth
+          reading end to end to learn how a real, production-quality Rails
+          application is built.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

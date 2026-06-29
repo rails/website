@@ -1,0 +1,103 @@
+# Reference Apps — a curated library of exemplary open-source Rails apps.
+#
+# The bar for inclusion is intentionally high. An app belongs here only if it
+# is worth reading to learn how a real, production-quality Rails app is built:
+#
+#   * Open source under a permissive license, with a public repository.
+#   * Idiomatic, modern Rails — a strong example of the conventions and tools
+#     the framework encourages today.
+#   * Actively maintained, or a complete and self-contained reference.
+#   * Substantial enough to teach something, but readable end to end.
+#
+# To propose an app, open a pull request adding an entry below. Keep blurbs to
+# a single sentence and limit tags to the 2-3 patterns the app best
+# demonstrates. Entries render in the order listed here.
+
+apps:
+  - name: Campfire
+    by: 37signals
+    blurb: A complete, real-time group chat app — a compact masterclass in server-rendered Hotwire and lean, dependency-light Rails.
+    tags: [Hotwire, Turbo Streams, Action Cable]
+    repo: https://github.com/basecamp/once-campfire
+    screenshot: /assets/images/reference-apps/campfire.webp
+
+  - name: Writebook
+    by: 37signals
+    blurb: A self-hosted platform for publishing books on the web, showcasing clean model design, Active Storage, and rich text editing.
+    tags: [Active Storage, Action Text, Authentication]
+    repo: https://github.com/basecamp/writebook
+    screenshot: /assets/images/reference-apps/writebook.webp
+
+  - name: Fizzy
+    by: 37signals
+    blurb: A Kanban board reimagined — drag-and-drop boards built with modern Hotwire patterns and crisp, RESTful controllers.
+    tags: [Hotwire, Stimulus, RESTful design]
+    repo: https://github.com/basecamp/fizzy
+    screenshot: /assets/images/reference-apps/fizzy.webp
+
+  # --- Placeholder/mock entries (remove before launch) -----------------------
+  # These are fictional apps with generated screenshots, used to fill out the
+  # grid while the real library is curated. Replace or delete each one.
+
+  - name: Beacon
+    by: Lighthouse Labs
+    blurb: A self-hosted help desk for small teams — shared inbox, ticketing, and canned replies, all server-rendered.
+    tags: [Action Mailbox, Hotwire, PostgreSQL]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-beacon.png
+
+  - name: Cadence
+    by: Tempo
+    blurb: A focused sprint board for product teams, with drag-and-drop planning and real-time updates.
+    tags: [Turbo Streams, Stimulus, Action Cable]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-cadence.png
+
+  - name: Inkwell
+    by: Quill Co
+    blurb: A minimalist publishing platform with Markdown authoring, drafts, and scheduled posts.
+    tags: [Action Text, Active Storage, Sitemaps]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-inkwell.png
+
+  - name: Tindra
+    by: Northbound
+    blurb: A lightweight e-commerce storefront with a product catalog, cart, and Stripe checkout.
+    tags: [Active Record, Stripe, Hotwire]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-tindra.png
+
+  - name: Relay
+    by: Cobalt
+    blurb: A simple sales CRM — contacts, deals, and a visual pipeline for closing more business.
+    tags: [PostgreSQL, Turbo, Pundit]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-relay.png
+
+  - name: Pulse
+    by: Signalbox
+    blurb: A privacy-friendly product analytics dashboard with funnels, events, and cohort reports.
+    tags: [Solid Queue, Chartkick, Caching]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-pulse.png
+
+  - name: Roundtable
+    by: Commons
+    blurb: A community discussion forum with threaded topics, categories, and reputation.
+    tags: [Action Text, Full-text search, Hotwire]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-roundtable.png
+
+  - name: Slate
+    by: Daypart
+    blurb: An appointment scheduling app with availability, bookings, and calendar sync.
+    tags: [Active Job, iCal, Time zones]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-slate.png
+
+  - name: Compendium
+    by: Archive
+    blurb: A team knowledge base and wiki with spaces, nested docs, and instant search.
+    tags: [Action Text, Search, Versioning]
+    repo: "#"
+    screenshot: /assets/images/reference-apps/mock-compendium.png
