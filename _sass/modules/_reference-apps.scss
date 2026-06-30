@@ -1,0 +1,128 @@
+// Reference Apps library — an image-led variant of the docs card grid.
+// The default docs cards are fixed-height, centered, and absolutely
+// positioned; these cards lead with a screenshot and size to their content.
+.reference-apps {
+  // Breathing room between the heading/subtitle and the grid. Cards stretch
+  // to equal height per row (default align-items: stretch); the tags are
+  // pushed to the bottom of each card so rows stay tidy.
+  .cards__container {
+    margin-top: 50px;
+  }
+
+  .card {
+    height: auto !important;
+    max-height: none !important;
+
+    a,
+    .card__body {
+      position: static;
+      height: 100%;
+    }
+
+    // Keep the author eyebrow legible on hover (the base card turns
+    // .card__label h6 red, which would hide our red-on-transparent text).
+    a:hover .card__label h6 {
+      background: transparent;
+    }
+  }
+
+  // Image flush to the card edges; overflow:hidden clips it to the
+  // rounded top corners. Content padding lives on the text wrapper.
+  .card__body {
+    align-items: stretch;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  &__shot {
+    aspect-ratio: 16 / 9;
+    background: $color-grey-1;
+    border-bottom: 1px solid rgba($color-black, 0.08);
+    display: block;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    width: 100%;
+  }
+
+  // Author eyebrow — restyle the floating red badge as inline red text.
+  .card__label {
+    margin-bottom: 6px;
+    position: static;
+    width: auto;
+
+    h6 {
+      background: transparent;
+      color: $color-red;
+      letter-spacing: 0.1em;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  // Neutralize the base card's 30px side margins and vertical padding so
+  // the headline and blurb align flush with the eyebrow and the wrapper's
+  // own 25px padding.
+  .card__headline,
+  .card__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card__headline {
+    padding-top: 0;
+
+    h3 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // Scoped under .card__content to override the default
+  // `.cards .card__content ul { list-style-type: disc }` rule.
+  .card__content ul.reference-apps__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-top: auto; // hug the bottom of the card
+    padding: 18px 0 0; // guaranteed gap above the tags
+
+    li {
+      background: rgba($color-black, 0.05);
+      border-radius: 3px;
+      color: $color-grey-5;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      padding: 6px 10px;
+      text-transform: uppercase;
+    }
+  }
+}
