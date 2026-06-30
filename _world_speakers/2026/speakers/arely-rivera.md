@@ -1,13 +1,13 @@
 ---
-first_name: Alicia
-last_name: Rojas
-image_path: https://sessionize.com/image/34c5-400o400o1-Lrd3daP4sLqnLav22v4SKx.jpg
-tagline: Software developer
+first_name: Arely
+last_name: Rivera
+image_path: https://sessionize.com/image/1924-200o200o2-w4Zwd1jR6uQdhKERnuYo6W.png
+tagline: Lead Product Designer
 company: Telos Labs
-specific_order: 4
+specific_order: 24
 keynote: false
-github: https://github.com/aliciapaz
-linkedin: https://www.linkedin.com/in/aliciapazrojas/
+github: https://github.com/emiliacurie
+linkedin: https://www.linkedin.com/in/arely-rivera-a15307137/
 talk_title: "Layered Design, Layered Trust: How a Designer Started Shipping Production Rails"
 talk_description: |
   Her first PR added 7,158 lines, deleted 1,920, and touched 153 files of a production Rails app. It shipped a token-based design system, a 28-section component catalog, and a full visual overhaul. The designer was the primary author.
@@ -16,7 +16,7 @@ talk_description: |
 
   An engineer and a designer tell the story together. We show real code, real prompts, and what broke the first time. You leave with a pattern you can drop into your Rails app, and a sharper question: who on your team could be shipping if the harness were better?
 
-  Alicia will present this talk with co-speaker [Arely Rivera](/world/2026/speakers/arely-rivera).
+  Arely will present this talk with co-speaker [Alicia Rojas](/world/2026/speakers/alicia-rojas).
 ---
 
-Software developer, musician, and natural resources engineer from Chile. Builds products with social and environmental impact. Currently focused on harness engineering: the scaffolding that makes AI agent output trustworthy, so teams garden systems instead of line-reviewing code.
+Lead Product Designer at Telos Labs. Works end to end: research, design, AI-assisted code, and measure. Focused on the harness that lets designers contribute trustworthy production code alongside engineers.
