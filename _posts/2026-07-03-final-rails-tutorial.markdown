@@ -38,5 +38,5 @@ Our goal with this series has been to make Rails easier to learn by teaching rea
 We started in December 2024. Not that long ago when you think about it, and yet it already feels like another lifetime given how quickly technology is changing, especially in how people learn and are introduced to new languages and frameworks.
 
 We may be entering a future where people learn to code more through agents than by following traditional tutorials, but we still felt it was important to complete this series. Whether it helps train LLMs or guides a new developer who is looking to learn the craft of Rails, these resources are now available in their entirety.
-">
+
 Happy building!
