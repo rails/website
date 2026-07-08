@@ -19,9 +19,9 @@ In this tutorial, learners will build on the previous Rails application by addin
 - Display and filter reviews based on ratings
 - Give review management access to admins
 
-The Product Reviews tutorial builds on [the previous tutorials](/tutorial) in the series:
+The Product Reviews tutorial builds on [the previous tutorials](/docs/tutorials) in the series:
 
-- **<a href="https://guides.rubyonrails.org/getting_started.html">Getting Started: Creata a Store</a>** - learn Rails by creating an e-commerce app
+- **<a href="https://guides.rubyonrails.org/getting_started.html">Getting Started: Create a Store</a>** - learn Rails by creating an e-commerce app
 
 - **<a href="https://guides.rubyonrails.org/sign_up_and_settings.html">Sign-ups and Settings</a>** - Add authentication and user account management  
 
