@@ -1,0 +1,37 @@
+# Reference Apps — a curated library of exemplary open-source Rails apps.
+#
+# The bar for inclusion is intentionally high. An app belongs here only if it
+# is worth reading to learn how a real, production-quality Rails app is built:
+#
+#   * Open source under a permissive license, with a public repository.
+#   * Idiomatic, modern Rails — a strong example of the conventions and tools
+#     the framework encourages today.
+#   * Actively maintained, or a complete and self-contained reference.
+#   * Substantial enough to teach something, but readable end to end.
+#
+# To propose an app, open a pull request adding an entry below. Keep blurbs to
+# a single sentence and limit tags to the 2-3 patterns the app best
+# demonstrates. Entries render in the order listed here.
+
+apps:
+  - name: Campfire
+    by: 37signals
+    blurb: A complete, real-time group chat app — a compact masterclass in server-rendered Hotwire and lean, dependency-light Rails.
+    tags: [Hotwire, Turbo Streams, Action Cable]
+    repo: https://github.com/basecamp/once-campfire
+    screenshot: /assets/images/reference-apps/campfire.webp
+
+  - name: Writebook
+    by: 37signals
+    blurb: A self-hosted platform for publishing books on the web, showcasing clean model design, Active Storage, and rich text editing.
+    tags: [Active Storage, Action Text, Auth]
+    repo: https://github.com/basecamp/writebook
+    screenshot: /assets/images/reference-apps/writebook.webp
+
+  - name: Fizzy
+    by: 37signals
+    blurb: A Kanban board reimagined — drag-and-drop boards built with modern Hotwire patterns and crisp, RESTful controllers.
+    tags: [Hotwire, Stimulus, RESTful design]
+    repo: https://github.com/basecamp/fizzy
+    screenshot: /assets/images/reference-apps/fizzy.webp
+
