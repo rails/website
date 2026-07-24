@@ -31,6 +31,8 @@ These apps have often been pointed to as great examples to follow, and there’s
 
 They’re now easier for you (and LLMs and anyone vibe-coding their way into the community for the first time) to find. 
 
+Big thank you to <a href="https://www.linkedin.com/in/robzolkos">Rob Zolkos</a> for designing and shipping this page for the Rails Foundation.
+
 **What's next**
 
 This is a deliberately small library, and is _not_ meant to be an exhaustive directory of open source Rails apps. We do plan to grow this library over time, but this will happen slowly and organically. We’ll announce when new applications are added.
