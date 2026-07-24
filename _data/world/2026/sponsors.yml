@@ -8,6 +8,9 @@ platinum:
   - name: "Shopify"
     logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
     url: "https://www.shopify.com/"
+  - name: "Dell"
+    logo: /assets/world/2023/images/sponsors/RW-logo-dell.svg
+    url: "https://www.dell.com/"
 
 gold:
   - name: "Clio"
