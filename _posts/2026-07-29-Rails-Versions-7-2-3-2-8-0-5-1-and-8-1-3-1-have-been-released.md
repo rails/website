@@ -4,7 +4,7 @@ title: 'Rails Versions 7.2.3.2, 8.0.5.1, and 8.1.3.1 have been released!'
 categories: releases
 author: rafaelfranca
 published: true
-date: 2026-07-29 15:00:00 -05:00
+date: 2026-07-29 15:00:00 -04:00
 ---
 
 Hi friends!
