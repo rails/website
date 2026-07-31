@@ -15,9 +15,9 @@ changes in the Rails codebase.
 ---
 
 [Nominations are open for the 2026 Rails Luminary Awards](https://rubyonrails.org/2026/7/29/nominations-2026-rails-luminary)  
-Amanda Perino announced that nominations are open through August 21. The awards
-recognize people who have significantly advanced Rails for the benefit of the
-community.
+The Rails Foundation announced that nominations are open through August 21.
+The awards recognize people who have significantly advanced Rails for the
+benefit of the community.
 
 [Rails versions 7.2.3.2, 8.0.5.1, and 8.1.3.1 have been released](https://rubyonrails.org/2026/7/29/Rails-Versions-7-2-3-2-8-0-5-1-and-8-1-3-1-have-been-released)  
 These security releases address a possible arbitrary file read and remote code
