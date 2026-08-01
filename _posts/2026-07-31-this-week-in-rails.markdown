@@ -85,11 +85,6 @@ names. They now consistently use `arel_or_sql`.
 SQL logs and EXPLAIN output now show casted binds with positional markers such
 as `$1` instead of `[nil, value]`, making each value's position clear.
 
-[Remove the migrations filter from schema dumps](https://github.com/rails/rails/pull/58322)  
-Schema dumps no longer filter migration versions against the files on disk.
-This keeps `db/schema.rb` self-contained across branches and matches the
-behavior of the `:sql` schema format.
-
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-07-24%7D...main@%7B2026-07-31%7D)._  
 _We had [25 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260724-20260731) to the Rails codebase this past week!_
 
