@@ -154,6 +154,13 @@
     }
   }
 
+  @media (min-width: 1201px) {
+    &__logos--platinum .sponsor-grid__item--platinum:last-child:nth-child(3n+1) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+  }
+
   &__logos--platinum .sponsor-grid__item--platinum:last-child:nth-child(odd),
   &__logos--gold .sponsor-grid__item--gold:last-child:nth-child(odd),
   &__logos--other .sponsor-grid__item--other:last-child:nth-child(odd) {

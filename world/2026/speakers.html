@@ -6,7 +6,9 @@ layout: world/2026/default
 permalink: /world/2026/speakers
 ---
 
-{% assign all_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | sort: 'specific_order' %}
+{% assign keynote_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', true | sort: 'specific_order' %}
+{% assign other_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' | where: 'keynote', false | sort: 'first_name' %}
+{% assign all_speakers = keynote_speakers | concat: other_speakers %}
 
 <div class="page-wrapper-2026">
   <div id="section-desktop">
