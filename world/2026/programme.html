@@ -1,0 +1,126 @@
+---
+title: "Programme"
+description: "The full Rails World 2026 programme. Two days of keynotes, talks, workshops, food and fun in Austin, TX."
+og_image: /assets/world/2026/og-rw26.png
+layout: world/2026/default
+permalink: /world/2026/programme
+---
+
+{% assign schedule = site.data.world['2026'].schedule %}
+
+<div class="page-wrapper-2026">
+  <div id="section-desktop">
+    {% include world/2026/components/nav.html %}
+
+    <section class="schedule-page">
+      <div class="schedule-inner">
+
+        <div class="schedule-header">
+          <div class="schedule-header__text">
+            <h1 class="schedule-header__title">Agenda</h1>
+            <p class="schedule-header__description">Rails World will feature two full days of keynotes, talks, workshops, food and fun. All sessions will be recorded and published on our YouTube channel.</p>
+          </div>
+          <div class="schedule-header__boot">
+            <img src="/assets/world/2026/images/boot.png" alt="Neon cowboy boot" />
+          </div>
+        </div>
+
+        <div class="faq-tabs" role="tablist" aria-label="Conference days">
+          {% for day in schedule.days %}
+            <button
+              class="faq-tab{% if forloop.first %} faq-tab--active{% endif %}"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              aria-controls="schedule-panel-{{ day.id }}"
+              id="schedule-tab-{{ day.id }}"
+              data-tab="{{ day.id }}"
+            >{{ day.label }}</button>
+          {% endfor %}
+        </div>
+
+        <div class="faq-content-box">
+          {% for day in schedule.days %}
+            <div
+              class="faq-panel{% if forloop.first %} faq-panel--active{% endif %}"
+              role="tabpanel"
+              id="schedule-panel-{{ day.id }}"
+              aria-labelledby="schedule-tab-{{ day.id }}"
+              {% unless forloop.first %}hidden{% endunless %}
+            >
+              {% if day.ras_day %}
+                <div class="schedule-ras-notice">
+                  <p>September 22 is the <strong>Rails at Scale Summit</strong> — a separate, invitation-only event for engineers scaling Rails at significant traffic and data volumes.</p>
+                  <a href="/world/2026/rails-at-scale" class="schedule-ras-notice__link">Learn more about Rails at Scale Summit →</a>
+                </div>
+              {% else %}
+                <ul class="schedule-list" role="list">
+                  {% for session in day.sessions %}
+                    {% if session.type == 'talk' or session.type == 'keynote' %}
+                      <li class="schedule-session">
+                        <div class="schedule-session__meta">
+                          <span class="schedule-session__time">{{ session.time }}</span>
+                          <span class="schedule-session__track">{{ session.track }}</span>
+                        </div>
+                        <h3 class="schedule-session__title">{{ session.title }}</h3>
+                        {% if session.speaker %}
+                          <p class="schedule-session__speaker">
+                            {% if session.speaker_slug %}<a href="/world/2026/speakers/{{ session.speaker_slug }}" class="schedule-session__speaker-link">{{ session.speaker }}</a>{% else %}{{ session.speaker }}{% endif %}
+                          </p>
+                        {% endif %}
+                        {% if session.location %}
+                          <p class="schedule-session__location">{{ session.location }}</p>
+                        {% endif %}
+                        {% if session.description %}
+                          <p class="schedule-session__description">{{ session.description }}</p>
+                        {% endif %}
+                      </li>
+                    {% elsif session.location %}
+                      <li class="schedule-session schedule-session--social">
+                        <div class="schedule-session__meta">
+                          <span class="schedule-session__time">{{ session.time }}</span>
+                        </div>
+                        <h3 class="schedule-session__title">{{ session.title }}</h3>
+                        <p class="schedule-session__location">{{ session.location }}</p>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+
+    {% include world/2026/components/code_of_conduct_banner.html %}
+    {% include world/2026/components/footer.html %}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('.schedule-page .faq-tab[role="tab"]');
+    var panels = document.querySelectorAll('.schedule-page .faq-panel');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (t) {
+          t.classList.remove('faq-tab--active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        panels.forEach(function (p) {
+          p.classList.remove('faq-panel--active');
+          p.hidden = true;
+        });
+        this.classList.add('faq-tab--active');
+        this.setAttribute('aria-selected', 'true');
+        var target = document.getElementById('schedule-panel-' + this.dataset.tab);
+        if (target) {
+          target.hidden = false;
+          target.classList.add('faq-panel--active');
+        }
+      });
+    });
+  })();
+</script>
