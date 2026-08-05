@@ -39,19 +39,31 @@ layout: world/2026/default
       </div>
     </div>
 
-    {% if page.talk_title %}
-    <div class="talk-card container-center">
-      <div class="talk-card__inner">
-        {% if page.talk_date %}
-        <div class="talk-card__chip">{{ page.talk_date }}</div>
-        {% endif %}
-        <h2 class="talk-card__title">{{ page.talk_title }}</h2>
-        {% if page.talk_description %}
-        <div class="talk-card__description">{{ page.talk_description | markdownify }}</div>
-        {% endif %}
-      </div>
+    {% assign schedule = site.data.world['2026'].schedule %}
+    {% capture speaker_name %}{{ page.first_name }}{% if page.last_name %} {{ page.last_name }}{% endif %}{% endcapture %}
+    {% assign speaker_name = speaker_name | strip %}
+
+    <div class="speaker-talks container-center">
+      {% for day in schedule.days %}
+        {% for session in day.sessions %}
+          {% if session.type == 'talk' or session.type == 'keynote' %}
+            {% if session.speaker contains speaker_name %}
+              <article class="schedule-session">
+                <div class="schedule-session__meta">
+                  <span class="schedule-session__day">{{ day.label }}</span>
+                  <span class="schedule-session__time">{{ session.time }}</span>
+                  {% if session.track %}<span class="schedule-session__track">{{ session.track }}</span>{% endif %}
+                </div>
+                <h2 class="schedule-session__title">{{ session.title }}</h2>
+                {% if session.description %}
+                  <p class="schedule-session__description">{{ session.description }}</p>
+                {% endif %}
+              </article>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </div>
-    {% endif %}
 
     {% include world/2026/components/footer.html %}
   </div>

@@ -134,6 +134,7 @@
     margin-bottom: 16px;
   }
 
+  &__day,
   &__time,
   &__track {
     font-size: 18px;
@@ -190,6 +191,41 @@
     &__title { font-size: 20px; line-height: 24px; }
     &__speaker { font-size: 15px; }
     &__description { font-size: 14px; }
+  }
+}
+
+// ── Speaker page talk cards ────────────────────────────────────────────────────
+
+.speaker-talks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 0 24px 60px;
+    gap: 20px;
+  }
+
+  .schedule-session__meta {
+    @include media(MobileScreens) {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+
+  .schedule-session__day,
+  .schedule-session__time,
+  .schedule-session__track {
+    border: 1px solid $white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    @include neon-glow;
+
+    @include media(MobileScreens) {
+      font-size: 13px;
+      padding: 4px 10px;
+    }
   }
 }
 
