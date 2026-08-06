@@ -42,6 +42,7 @@ layout: world/2026/default
     {% assign schedule = site.data.world['2026'].schedule %}
     {% capture speaker_name %}{{ page.first_name }}{% if page.last_name %} {{ page.last_name }}{% endif %}{% endcapture %}
     {% assign speaker_name = speaker_name | strip %}
+    {% if page.schedule_name %}{% assign speaker_name = page.schedule_name %}{% endif %}
 
     <div class="speaker-talks container-center">
       {% for day in schedule.days %}
