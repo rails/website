@@ -1,7 +1,7 @@
 ---
 first_name: Nathan
 last_name: Hessler
-image_path: /assets/world/2026/images/speakers/Portrait_Placeholder 1.png
+image_path: /assets/world/2026/images/speakers/Nathan_Hessler.jpg
 tagline: Organizer
 company: AustinRB
 specific_order: 25

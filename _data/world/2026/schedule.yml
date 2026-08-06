@@ -176,6 +176,8 @@ days:
         title: "Layered Design, Layered Trust: How a Designer Started Shipping Production Rails"
         slug: "layered-design"
         speaker: "Alicia Rojas & Arely Rivera (Telos Labs)"
+        speaker_slug: "alicia-rojas"
+        second_speaker_slug: "arely-rivera"
         tags:
           - AI
           - Frontend
@@ -292,6 +294,8 @@ days:
         title: "AI and the future of Ruby & Rails — a chat with Matz & DHH"
         slug: "matz-dhh"
         speaker: "Yukihiro Matsumoto & David Heinemeier Hansson"
+        speaker_slug: "yukihiro-matz"
+        second_speaker_slug: "dhh"
         tags:
           - AI
           - Ruby
