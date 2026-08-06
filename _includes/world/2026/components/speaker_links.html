@@ -1,9 +1,3 @@
-{% comment %}
-  Renders speaker name(s) as linked text for a schedule session.
-  Params:
-    session      — the schedule session object
-    all_speakers — pre-filtered collection of 2026 speakers
-{% endcomment %}
 {% if include.session.second_speaker_slug %}
   {% assign slug1 = include.session.speaker_slug %}
   {% assign slug2 = include.session.second_speaker_slug %}
