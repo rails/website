@@ -70,6 +70,11 @@ defaults:
       type: "world_speakers"
     values:
       layout: "world/2026/speaker"
+  - scope:
+      path: "_world_sessions/2026"
+      type: "world_sessions"
+    values:
+      layout: "world/2026/session"
 
 markdown: kramdown
 highlighter: rouge
