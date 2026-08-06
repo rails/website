@@ -3,15 +3,17 @@ days:
     label: "SEPT 22"
     date: "September 22, 2026"
     sessions:
-      - time: "All Day"
+      - time: "9:00 AM"
         type: info
         title: "Rails at Scale Summit"
         location: "Private"
+        description: "Invite only. Ticket holders will be sent more information."
 
-      - time: "Evening"
+      - time: "4:00 PM"
         type: info
         title: "Pre-Registration, sponsored by Clio"
         location: "The Line Hotel"
+        description: "A place to grab your badge and a drink and meet other attendees before we kick off Day 1."
 
   - id: sept23
     label: "SEPT 23"
@@ -279,6 +281,7 @@ days:
         type: info
         title: "Community Game Night"
         location: "The Line Hotel"
+        description: "Badge holders only; more info shared soon."
 
   - id: sept24
     label: "SEPT 24"
@@ -534,3 +537,4 @@ days:
         type: info
         title: "Closing Party, sponsored by Shopify & Procore"
         location: "Banger's"
+        description: "Badge holders only."
