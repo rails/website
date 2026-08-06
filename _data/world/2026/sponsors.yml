@@ -20,7 +20,7 @@ gold:
     logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
     url: "https://www.huntress.com/"
   - name: "JetBrains"
-    logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
+    logo: /assets/world/2026/logos/logo-jetbrains.svg
     url: "https://www.jetbrains.com/"
   - name: "PlanetScale"
     logo: /assets/images/logo-planetscale.svg
@@ -46,7 +46,7 @@ silver:
     logo: /assets/world/2026/logos/logo-crunchloop.svg
     url: "https://www.crunchloop.io/"
   - name: "GiftHealth"
-    logo: /assets/images/logo-gifthealth.svg
+    logo: /assets/world/2026/logos/logo-gifthealth.svg
     url: "https://www.gifthealth.com/"
   - name: "Intercom"
     logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
@@ -78,7 +78,7 @@ other:
     logo: /assets/world/2026/logos/logo-judoscale.svg
     url: "https://judoscale.com/"
   - name: "Poll Everywhere"
-    logo: /assets/images/logo-poll-everywhere.svg
+    logo: /assets/world/2026/logos/logo-polleverywhere.svg
     url: "https://www.polleverywhere.com/"
   - name: "Sorcer"
     logo: /assets/world/2026/logos/logo-sorcer.png

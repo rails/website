@@ -189,9 +189,14 @@
     max-width: 240px;
   }
 
+  &__item--planetscale img {
+    max-height: 52px;
+    max-width: 240px;
+  }
+
   &__item--rwx img {
-    max-height: 28px;
-    max-width: 190px;
+    max-height: 22px;
+    max-width: 150px;
   }
 
   &__item--test-double img {
@@ -243,6 +248,30 @@
   &__item--gumroad img {
     max-height: 30px;
     max-width: 190px;
+  }
+
+  &__item--gifthealth img {
+    height: 38px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--avo img {
+    height: 36px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--clio img {
+    height: 62px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--poll-everywhere img {
+    height: 30px;
+    width: auto;
+    max-height: none;
   }
 
   &__item--serpapi img {

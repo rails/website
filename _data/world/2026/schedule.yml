@@ -1,4 +1,18 @@
 days:
+  - id: sept22
+    label: "SEPT 22"
+    date: "September 22, 2026"
+    sessions:
+      - time: "All Day"
+        type: info
+        title: "Rails at Scale Summit"
+        location: "Private"
+
+      - time: "Evening"
+        type: info
+        title: "Pre-Registration, sponsored by Clio"
+        location: "The Line Hotel"
+
   - id: sept23
     label: "SEPT 23"
     date: "September 23, 2026"

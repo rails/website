@@ -44,13 +44,33 @@
   }
 
   &__logo {
-    height: 48px;
+    height: auto;
     width: auto;
     flex-shrink: 0;
     filter: brightness(0) invert(1);
+  }
+
+  &__logo--shopify {
+    height: 70px;
 
     @include media(MobileAndTabletScreens) {
-      height: 36px;
+      height: 30px;
+    }
+  }
+
+  &__logo--procore {
+    height: 28px;
+
+    @include media(MobileAndTabletScreens) {
+      height: 14px;
+    }
+  }
+
+  &__logo--cloudflare {
+    height: 70px;
+
+    @include media(MobileAndTabletScreens) {
+      height: 30px;
     }
   }
 }
