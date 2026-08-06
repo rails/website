@@ -61,7 +61,9 @@ permalink: /world/2026/agenda
                           <span class="schedule-session__time">{{ session.time }}</span>
                           <span class="schedule-session__track">{{ session.track }}</span>
                         </div>
-                        <h3 class="schedule-session__title">{{ session.title }}</h3>
+                        <h3 class="schedule-session__title">
+                          {% if session.slug %}<a href="/world/2026/sessions/{{ session.slug }}" class="schedule-session__title-link">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}
+                        </h3>
                         {% if session.speaker %}
                           <p class="schedule-session__speaker">
                             {% if session.speaker_slug %}<a href="/world/2026/speakers/{{ session.speaker_slug }}" class="schedule-session__speaker-link">{{ session.speaker }}</a>{% else %}{{ session.speaker }}{% endif %}
@@ -82,7 +84,9 @@ permalink: /world/2026/agenda
                         <div class="schedule-session__meta">
                           <span class="schedule-session__time">{{ session.time }}</span>
                         </div>
-                        <h3 class="schedule-session__title">{{ session.title }}</h3>
+                        <h3 class="schedule-session__title">
+                          {% if session.slug %}<a href="/world/2026/sessions/{{ session.slug }}" class="schedule-session__title-link">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}
+                        </h3>
                         <p class="schedule-session__location">{{ session.location }}</p>
                       </li>
                     {% endif %}

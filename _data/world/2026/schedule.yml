@@ -11,6 +11,7 @@ days:
         type: keynote
         track: "KEYNOTE"
         title: "Rails World 2026 Opening Keynote"
+        slug: "opening-keynote"
         speaker: "David Heinemeier Hansson (37signals)"
         speaker_slug: "dhh"
         tags:
@@ -27,6 +28,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Active Search"
+        slug: "active-search"
         speaker: "Donal McBreen (37signals)"
         speaker_slug: "donal-mcbreen"
         tags:
@@ -43,6 +45,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Ractors, Rails, and Robots: Automating the Path to Ractor-safety"
+        slug: "ractors-rails-robots"
         speaker: "Andrew Novoselac (Shopify)"
         speaker_slug: "andrew-novoselac"
         tags:
@@ -67,6 +70,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Shipping is your heartbeat: Rails in the agentic era"
+        slug: "shipping-heartbeat"
         speaker: "Ryan Sherlock (Fin)"
         speaker_slug: "ryan-sherlock"
         tags:
@@ -90,6 +94,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Practical Hotwire: Stimulus & Turbo on the Ground"
+        slug: "practical-hotwire"
         speaker: "Jeremy Smith (HYBRD)"
         speaker_slug: "jeremy-smith"
         tags:
@@ -110,6 +115,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Lexxy: a new text editor for Action Text"
+        slug: "lexxy"
         speaker: "Jorge Manrubia Díez (37signals)"
         speaker_slug: "jorge-manrubia"
         tags:
@@ -131,6 +137,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Custom Rails Generators in RubyEvents"
+        slug: "custom-generators"
         speaker: "Rachael Wright-Munn (Independent)"
         speaker_slug: "rachael-wright-munn"
         tags:
@@ -153,6 +160,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Layered Design, Layered Trust: How a Designer Started Shipping Production Rails"
+        slug: "layered-design"
         speaker: "Alicia Rojas & Arely Rivera (Telos Labs)"
         tags:
           - AI
@@ -171,6 +179,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "How I Built a CI Platform on Rails as a Solo Developer"
+        slug: "ci-platform"
         speaker: "Jason Swett (Code with Jason Podcast)"
         speaker_slug: "jason-swett"
         tags:
@@ -194,6 +203,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Lingua Clanka: Markdown APIs for Action Text"
+        slug: "lingua-clanka"
         speaker: "Mike Dalessio (37signals)"
         speaker_slug: "mike-dalessio"
         tags:
@@ -212,6 +222,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Sharding Is Hard: Let's Make It Easier!"
+        slug: "sharding"
         speaker: "Tess Griffin (thoughtbot)"
         speaker_slug: "tess-griffin"
         tags:
@@ -233,6 +244,7 @@ days:
         type: keynote
         track: "KEYNOTE"
         title: "The Most Valuable Engineer Isn't Shipping Features"
+        slug: "most-valuable-engineer"
         speaker: "Robby Russell (Planet Argon)"
         speaker_slug: "robby-russell"
         tags:
@@ -264,6 +276,7 @@ days:
         type: keynote
         track: "KEYNOTE"
         title: "AI and the future of Ruby & Rails — a chat with Matz & DHH"
+        slug: "matz-dhh"
         speaker: "Yukihiro Matsumoto & David Heinemeier Hansson"
         tags:
           - AI
@@ -283,6 +296,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Agents on Rails: Building AI Pipelines in plain Ruby"
+        slug: "agents-on-rails"
         speaker: "Daniela Velasquez (Shopify)"
         speaker_slug: "daniela-velasquez"
         tags:
@@ -302,6 +316,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Distributing Rails applications with ONCE"
+        slug: "distributing-rails-once"
         speaker: "Kevin McConnell (37signals)"
         speaker_slug: "kevin-mcconnell"
         tags:
@@ -322,6 +337,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Herb in Rails 8.2: Your ERB views, now HTML-aware"
+        slug: "herb-rails-8-2"
         speaker: "Marco Roth (Independent)"
         speaker_slug: "marco-roth"
         tags:
@@ -341,6 +357,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Durable orchestration on Rails: from continuation to workflow"
+        slug: "durable-orchestration"
         speaker: "Vladimir Dementyev (Evil Martians)"
         speaker_slug: "vladimir-dementyev"
         tags:
@@ -364,6 +381,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Agent-Proof Your Rails App: Your Codebase Is the Prompt"
+        slug: "agent-proof"
         speaker: "Kinsey Durham Grace (GitHub)"
         speaker_slug: "kinsey-durham-grace"
         description: >-
@@ -379,6 +397,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "A deep dive into Solid Cable"
+        slug: "solid-cable"
         speaker: "Nick Pezza (beehiiv)"
         speaker_slug: "nick-pezza"
         description: >-
@@ -398,6 +417,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "Kamal Deep Dive"
+        slug: "kamal-deep-dive"
         speaker: "Josef Strzibny (SerpApi)"
         speaker_slug: "josef-strzibny"
         tags:
@@ -415,6 +435,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "I Didn't Get MCP, So I Built My Way Through It"
+        slug: "i-didnt-get-mcp"
         speaker: "Enrique Mogollan (Handshake)"
         speaker_slug: "enrique-mogollan"
         tags:
@@ -437,6 +458,7 @@ days:
         type: talk
         track: "TRACK 1"
         title: "The RubyGems Compact Index: What Powers Every bundle install"
+        slug: "rubygems-compact-index"
         speaker: "Jenny Shen (Shopify)"
         speaker_slug: "jenny-shen"
         location: "Private"
@@ -456,6 +478,7 @@ days:
         type: talk
         track: "TRACK 2"
         title: "Harness Engineering on Rails"
+        slug: "harness-engineering"
         speaker: "Joël Quenneville (thoughtbot)"
         speaker_slug: "joel-quenneville"
         tags:
@@ -478,6 +501,7 @@ days:
         type: keynote
         track: "KEYNOTE"
         title: "Rails World 2026 Closing Keynote"
+        slug: "closing-keynote"
         speaker: "Aaron Patterson (Shopify)"
         speaker_slug: "aaron-patterson"
         tags:

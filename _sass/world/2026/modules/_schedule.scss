@@ -167,6 +167,16 @@
     text-decoration: none;
   }
 
+  &__title-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+
   &__location {
     font-size: 12px;
     font-weight: $font-weight-500;
