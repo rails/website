@@ -185,12 +185,23 @@
     margin: 0;
   }
 
+  &__tags {
+    font-size: 13px;
+    font-weight: $font-weight-500;
+    color: $off-white;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
   @include media(MobileScreens) {
     padding: 16px;
 
     &__title { font-size: 20px; line-height: 24px; }
     &__speaker { font-size: 15px; }
     &__description { font-size: 14px; }
+    &__tags { font-size: 11px; }
   }
 }
 

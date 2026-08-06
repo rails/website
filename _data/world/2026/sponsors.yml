@@ -3,15 +3,18 @@ platinum:
     logo: /assets/images/logo-appsignal.svg
     url: "https://www.appsignal.com/"
   - name: "Procore"
-    logo: /assets/images/logo-procore.svg
+    logo: /assets/world/2023/images/sponsors/RW-logo-procore.svg
     url: "https://www.procore.com/"
+  - name: "Dell"
+    logo: /assets/world/2023/images/sponsors/RW-logo-dell.svg
+    url: "https://www.dell.com/"
   - name: "Shopify"
     logo: /assets/world/2024/images/sponsors/RW-logo-shopify.svg
     url: "https://www.shopify.com/"
 
 gold:
   - name: "Clio"
-    logo: /assets/world/2024/images/sponsors/RW-logo-clio.svg
+    logo: /assets/world/2025/images/sponsors/RW-logo-clio.svg
     url: "https://www.clio.com/"
   - name: "Huntress"
     logo: /assets/world/2024/images/sponsors/RW-logo-huntress.svg
@@ -19,6 +22,9 @@ gold:
   - name: "JetBrains"
     logo: /assets/world/2023/images/sponsors/RW-logo-jetbrains1.svg
     url: "https://www.jetbrains.com/"
+  - name: "PlanetScale"
+    logo: /assets/images/logo-planetscale.svg
+    url: "https://planetscale.com/"
   - name: "RWX"
     logo: /assets/world/2026/logos/logo-rwx.png
     url: "https://www.rwx.com/"
@@ -28,6 +34,9 @@ gold:
   - name: "Test Double"
     logo: /assets/world/2024/images/sponsors/RW-logo-testdouble.svg
     url: "https://link.testdouble.com/bp8"
+  - name: "Buzzsprout"
+    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
+    url: "https://www.buzzsprout.com/"
 
 silver:
   - name: "37signals"
@@ -36,17 +45,23 @@ silver:
   - name: "Crunch Loop"
     logo: /assets/world/2026/logos/logo-crunchloop.svg
     url: "https://www.crunchloop.io/"
+  - name: "GiftHealth"
+    logo: /assets/images/logo-gifthealth.svg
+    url: "https://www.gifthealth.com/"
   - name: "Intercom"
     logo: /assets/world/2024/images/sponsors/RW-logo-intercom.svg
     url: "https://www.intercom.com/"
   - name: "TRMNL"
     logo: /assets/world/2026/logos/logo-trmnl.png
     url: "https://trmnl.com/"
-  - name: "Wyeworks"
+  - name: "WyeWorks"
     logo: /assets/world/2026/logos/wyeworks-logo-white.svg
     url: "https://www.wyeworks.com/"
 
 other:
+  - name: "Avo"
+    logo: /assets/world/2025/images/sponsors/RW-logo-avo.svg
+    url: "https://avohq.io/"
   - name: "Baytek"
     logo: /assets/world/2026/logos/logo-baytek.png
     url: "https://www.baytekent.com/"
@@ -62,6 +77,9 @@ other:
   - name: "Judoscale"
     logo: /assets/world/2026/logos/logo-judoscale.svg
     url: "https://judoscale.com/"
+  - name: "Poll Everywhere"
+    logo: /assets/images/logo-poll-everywhere.svg
+    url: "https://www.polleverywhere.com/"
   - name: "Sorcer"
     logo: /assets/world/2026/logos/logo-sorcer.png
     url: "https://sorcer.io/"
@@ -109,9 +127,6 @@ members:
   - name: "Saeloun"
     logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
     url: "https://www.saeloun.com/"
-  - name: "Buzzsprout"
-    logo: /assets/world/2024/images/sponsors/RW-logo-buzzsprout.svg
-    url: "https://www.buzzsprout.com/"
   - name: "Chime"
     logo: /assets/images/logo-chime-black.svg
     url: "https://www.chime.com/"

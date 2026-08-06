@@ -44,12 +44,13 @@
   }
 
   &__logo {
-    width: 345px;
-    height: auto;
+    height: 48px;
+    width: auto;
     flex-shrink: 0;
+    filter: brightness(0) invert(1);
 
     @include media(MobileAndTabletScreens) {
-      width: 220px;
+      height: 36px;
     }
   }
 }

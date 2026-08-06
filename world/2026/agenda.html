@@ -1,9 +1,9 @@
 ---
-title: "Programme"
-description: "The full Rails World 2026 programme. Two days of keynotes, talks, workshops, food and fun in Austin, TX."
+title: "Agenda"
+description: "The full Rails World 2026 agenda. Two days of keynotes, talks, workshops, food and fun in Austin, TX."
 og_image: /assets/world/2026/og-rw26.png
 layout: world/2026/default
-permalink: /world/2026/programme
+permalink: /world/2026/agenda
 ---
 
 {% assign schedule = site.data.world['2026'].schedule %}
@@ -72,6 +72,9 @@ permalink: /world/2026/programme
                         {% endif %}
                         {% if session.description %}
                           <p class="schedule-session__description">{{ session.description }}</p>
+                        {% endif %}
+                        {% if session.tags %}
+                          <p class="schedule-session__tags">{{ session.tags | join: " · " }}</p>
                         {% endif %}
                       </li>
                     {% elsif session.location %}

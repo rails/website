@@ -50,14 +50,10 @@
 
   &__logos--platinum {
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 24px 32px;
-
-    @include media(MobileAndTabletScreens) {
-      grid-template-columns: repeat(2, minmax(0, max-content));
-    }
 
     @include media(MobileScreens) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
