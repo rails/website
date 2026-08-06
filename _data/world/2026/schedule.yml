@@ -1,0 +1,536 @@
+days:
+  - id: sept22
+    label: "SEPT 22"
+    date: "September 22, 2026"
+    sessions:
+      - time: "All Day"
+        type: info
+        title: "Rails at Scale Summit"
+        location: "Private"
+
+      - time: "Evening"
+        type: info
+        title: "Pre-Registration, sponsored by Clio"
+        location: "The Line Hotel"
+
+  - id: sept23
+    label: "SEPT 23"
+    date: "September 23, 2026"
+    sessions:
+      - time: "8:30 AM"
+        type: info
+        title: "Doors Open"
+
+      - time: "9:45 AM"
+        type: keynote
+        track: "KEYNOTE"
+        title: "Rails World 2026 Opening Keynote"
+        slug: "opening-keynote"
+        speaker: "David Heinemeier Hansson (37signals)"
+        speaker_slug: "dhh"
+        tags:
+          - Keynote
+        description: >-
+          Opening Keynote highlighting what's new in Rails, what's coming next,
+          and where Rails is headed in the future.
+
+      - time: "11:00 AM"
+        type: break
+        title: "Break"
+
+      - time: "11:15 AM"
+        type: talk
+        track: "TRACK 1"
+        title: "Active Search"
+        slug: "active-search"
+        speaker: "Donal McBreen (37signals)"
+        speaker_slug: "donal-mcbreen"
+        tags:
+          - Rails
+          - Search
+        description: >-
+          Active Search is a new Rails framework for application search. It provides a single,
+          Active Record-style chainable interface for searching across different search engines
+          like Elasticsearch, Meilisearch or Typesense and database full-text search in
+          PostgreSQL, MySQL or SQLite. Find out how we use it at 37signals to switch search
+          engines between SaaS and self-hosted versions of Basecamp and Fizzy.
+
+      - time: "11:15 AM"
+        type: talk
+        track: "TRACK 2"
+        title: "Ractors, Rails, and Robots: Automating the Path to Ractor-safety"
+        slug: "ractors-rails-robots"
+        speaker: "Andrew Novoselac (Shopify)"
+        speaker_slug: "andrew-novoselac"
+        tags:
+          - Ractors
+          - AI assisted development
+        description: >-
+          Ractors are production-ready in Ruby 4.0! But the road to adopting them in Rails
+          is long and challenging. Or is it? In this talk, we'll show how an AI agent loop
+          helped us make rapid progress toward Rails Ractor-safety in just a couple of weeks.
+          We'll explain why Rails' reliance on global state makes adopting Ractors hard, and
+          why this problem is especially suited to AI-driven prototyping. Then we'll walk
+          through the harness and specification that enabled the agent to generate, test, and
+          refine multiple prototypes. Of course, not everything can be automated — we'll also
+          talk about hotspots where human intervention and design is needed. We'll close with
+          the current state of Rails Ractor-safety, what worked, what failed, and what remains.
+
+      - time: "11:45 AM"
+        type: break
+        title: "Lunch"
+
+      - time: "1:00 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Shipping is your heartbeat: Rails in the agentic era"
+        slug: "shipping-heartbeat"
+        speaker: "Ryan Sherlock (Fin)"
+        speaker_slug: "ryan-sherlock"
+        tags:
+          - Rails at scale
+          - Agentic development
+          - AI-native Rails
+          - Monoliths
+          - Continuous delivery
+          - Observability
+        description: >-
+          In 2013, Fin's CTO wrote that shipping is your company's heartbeat — software only
+          starts learning when it reaches customers. In the agentic era, that heartbeat has to
+          get stronger, but it has not been plain sailing. As agents increased the amount of
+          code moving through Fin, our test suites, deployment pipeline, and shipping process
+          started to strain, slow down, and cost far more than we were comfortable with. This
+          talk goes inside our Rails monolith (3M+ lines of code, 100k+ tests, P50 suite time
+          around 3 minutes, merge-to-customers in under 10 minutes) to show how we got speed
+          and safety pulling together again.
+
+      - time: "1:00 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "Practical Hotwire: Stimulus & Turbo on the Ground"
+        slug: "practical-hotwire"
+        speaker: "Jeremy Smith (HYBRD)"
+        speaker_slug: "jeremy-smith"
+        tags:
+          - Hotwire
+          - Stimulus
+          - Turbo
+        description: >-
+          Curious about Stimulus and Turbo? Already using Hotwire, but seeking out solid
+          practices? Join this guided tour through a variety of examples and techniques, with
+          commentary on the challenges and tradeoffs. Keeping an eye out for sharp edges,
+          we'll discover what makes HTML-over-the-wire magical.
+
+      - time: "1:30 PM"
+        type: break
+        title: "Break"
+
+      - time: "1:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Lexxy: a new text editor for Action Text"
+        slug: "lexxy"
+        speaker: "Jorge Manrubia Díez (37signals)"
+        speaker_slug: "jorge-manrubia"
+        tags:
+          - Rails
+          - Action Text
+          - Rich text
+          - Editors
+        description: >-
+          Action Text and Trix ship with Rails as a complete, batteries-included solution for
+          rich text. In practice, many teams have hit its limits, especially when it comes to
+          semantics, extensibility, and modern editing expectations. In this talk, we'll
+          introduce Lexxy, a new rich text editor for Rails built on Meta's Lexical framework.
+          We'll explore what makes Lexxy different: clean, semantic HTML, built-in Markdown
+          support, extensible commands and prompts, and a foundation that makes customization
+          straightforward. Lexxy represents a shift in how we think about rich text in Rails:
+          from a fixed editor to a pluggable, evolvable editing layer.
+
+      - time: "1:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "Custom Rails Generators in RubyEvents"
+        slug: "custom-generators"
+        speaker: "Rachael Wright-Munn (Independent)"
+        speaker_slug: "rachael-wright-munn"
+        tags:
+          - AI
+          - Rails
+          - Generators
+        description: >-
+          At RubyEvents.org, we generate a lot of YAML. Contributors need an easy, idiomatic
+          way to generate event files to the latest standards in an unfamiliar codebase. AI
+          needs to generate files from unstructured data without drifting. These feel like
+          different problems, but custom Rails generators can solve both. This will be a deep
+          dive into how to build a custom generator: templates, mutating files, testing, and
+          everything we learned the hard way at RubyEvents.
+
+      - time: "2:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "2:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Layered Design, Layered Trust: How a Designer Started Shipping Production Rails"
+        slug: "layered-design"
+        speaker: "Alicia Rojas & Arely Rivera (Telos Labs)"
+        speaker_slug: "alicia-rojas"
+        second_speaker_slug: "arely-rivera"
+        tags:
+          - AI
+          - Frontend
+          - Design systems
+        description: >-
+          Her first PR added 7,158 lines, deleted 1,920, and touched 153 files of a
+          production Rails app. It shipped a token-based design system, a 28-section component
+          catalog, and a full visual overhaul. The designer was the primary author. The pattern
+          is three layers deep, borrowing from layered Rails: a mechanical floor of Tailwind
+          tokens, a middle layer of named partials, and a natural-language contract in CLAUDE.md
+          at the top. An engineer and a designer tell the story together — real code, real
+          prompts, and what broke the first time.
+
+      - time: "2:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "How I Built a CI Platform on Rails as a Solo Developer"
+        slug: "ci-platform"
+        speaker: "Jason Swett (Code with Jason Podcast)"
+        speaker_slug: "jason-swett"
+        tags:
+          - Rails
+          - Entrepreneurship
+          - One-person framework
+        description: >-
+          In 2023, frustrated with the clunky UIs of CircleCI and GitHub Actions, I decided
+          to build my own continuous integration platform. I took inspiration from 37signals
+          and Steve-Jobs-era Apple and built the product with the absolute minimum set of
+          features necessary, but to the highest degree of quality and usability. The key
+          principles are high standards, disciplined laziness, thorough automated testing, and
+          aggressive refactoring. Paradoxically, a focus on high quality yields much greater
+          speed than a thoughtless focus on speed itself.
+
+      - time: "3:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "3:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Lingua Clanka: Markdown APIs for Action Text"
+        slug: "lingua-clanka"
+        speaker: "Mike Dalessio (37signals)"
+        speaker_slug: "mike-dalessio"
+        tags:
+          - API
+          - Markdown
+          - Action Text
+        description: >-
+          Agent accessibility is now table stakes, and Markdown is the lingua clanka — the
+          universal rich text format for both AI agents and humans. If you want your Rails app
+          to be agent-accessible, your API needs to emit Action Text content as Markdown and
+          accept Markdown updates from agents. This talk walks through Markdown support for
+          Action Text: how Markdown is generated, and how parser configuration shapes what's
+          stored when agents send Markdown.
+
+      - time: "3:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "Sharding Is Hard: Let's Make It Easier!"
+        slug: "sharding"
+        speaker: "Tess Griffin (thoughtbot)"
+        speaker_slug: "tess-griffin"
+        tags:
+          - Rails at scale
+        description: >-
+          You've stuck to a single database. It has gotten beefier and beefier servers as
+          the scale grows. Now your RDS bill is $500k a month and half your indexes have
+          stopped working! Database scaling is a common problem for applications reaching
+          large scale. Vertical scaling works well to a point but gets expensive fast. In
+          this talk we'll explore the other approach to scaling your database, horizontally
+          with sharding — where do you start, which table do you shard on, and how do you
+          keep your transactions atomic when they need to cross multiple shards?
+
+      - time: "4:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "4:30 PM"
+        type: keynote
+        track: "KEYNOTE"
+        title: "The Most Valuable Engineer Isn't Shipping Features"
+        slug: "most-valuable-engineer"
+        speaker: "Robby Russell (Planet Argon)"
+        speaker_slug: "robby-russell"
+        tags:
+          - AI
+        description: >-
+          As AI lets teams generate more code, many Rails engineers are discovering their
+          bottlenecks were never about typing speed. They were slow feedback loops, fragile
+          deploys, dependency sprawl, and years of overlapping architectural patterns that
+          never fully disappeared. AI agents amplify those problems. They also reward systems
+          built around strong conventions, predictable workflows, and integrated tooling —
+          areas where Rails continues to double down. This talk explores why the engineers
+          creating the most leverage are increasingly the ones improving the environment
+          around the code.
+
+      - time: "7:00 PM"
+        type: info
+        title: "Community Game Night"
+        location: "The Line Hotel"
+
+  - id: sept24
+    label: "SEPT 24"
+    date: "September 24, 2026"
+    sessions:
+      - time: "8:30 AM"
+        type: info
+        title: "Doors Open"
+
+      - time: "10:00 AM"
+        type: keynote
+        track: "KEYNOTE"
+        title: "AI and the future of Ruby & Rails — a chat with Matz & DHH"
+        slug: "matz-dhh"
+        speaker: "Yukihiro Matsumoto & David Heinemeier Hansson"
+        speaker_slug: "yukihiro-matz"
+        second_speaker_slug: "dhh"
+        tags:
+          - AI
+          - Ruby
+          - Rails
+        description: >-
+          Join Ruby creator Yukihiro "Matz" Matsumoto and Rails creator David Heinemeier
+          Hansson for a conversation on the future of AI, Ruby, and Rails. They'll discuss
+          how AI is changing software development, what it means for the Ruby ecosystem, and
+          where they see opportunities (and challenges) ahead.
+
+      - time: "11:00 AM"
+        type: break
+        title: "Break"
+
+      - time: "11:15 AM"
+        type: talk
+        track: "TRACK 1"
+        title: "Agents on Rails: Building AI Pipelines in plain Ruby"
+        slug: "agents-on-rails"
+        speaker: "Daniela Velasquez (Shopify)"
+        speaker_slug: "daniela-velasquez"
+        tags:
+          - AI
+        description: >-
+          Every application with users sits on a mountain of data. Buried within it are
+          opportunities worth acting on, but finding them at the right time takes effort most
+          people can't spare. In this talk, I'll walk you through how at Shopify we designed
+          a multi-stage pipeline in plain Rails — no Python, no ML platform. The pipeline
+          runs as a sequence of ApplicationJob batches, where some jobs call agents to
+          research, and others call independent critic agents to validate what the researcher
+          found. The pipeline also learns: when a suggestion is disliked, an ActiveRecord
+          callback triggers a job that captures insights and feeds them back into the
+          researcher.
+
+      - time: "11:15 AM"
+        type: talk
+        track: "TRACK 2"
+        title: "Distributing Rails applications with ONCE"
+        slug: "distributing-rails-once"
+        speaker: "Kevin McConnell (37signals)"
+        speaker_slug: "kevin-mcconnell"
+        tags:
+          - ONCE
+        description: >-
+          ONCE aims to be the easiest way to install and manage web applications. Built on
+          the experience of shipping products like Campfire and Fizzy, ONCE also aims to make
+          distribution easier for you as a Rails developer, by providing most of what's needed
+          to make your applications simple to self-host. In this talk we'll cover what the
+          ONCE platform offers, how it works, and the steps you can take to make sure your
+          own Rails applications are ONCE-compatible.
+
+      - time: "11:45 AM"
+        type: break
+        title: "Lunch"
+
+      - time: "1:00 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Herb in Rails 8.2: Your ERB views, now HTML-aware"
+        slug: "herb-rails-8-2"
+        speaker: "Marco Roth (Independent)"
+        speaker_slug: "marco-roth"
+        tags:
+          - Rails 8.2
+          - HTML
+          - ERB
+          - Action View
+          - Hotwire
+        description: >-
+          With teams, companies, and open source projects adopting Herb in their daily
+          workflows, the foundation is proving itself at scale and is on track to become an
+          opt-in view engine in Rails 8.2. This talk covers what Herb brings to Rails — how
+          we made the integration possible, how we adapted and extended ActionView, and the
+          toolchain and dev tools every Rails developer gets out of the box as a result.
+
+      - time: "1:00 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "Durable orchestration on Rails: from continuation to workflow"
+        slug: "durable-orchestration"
+        speaker: "Vladimir Dementyev (Evil Martians)"
+        speaker_slug: "vladimir-dementyev"
+        tags:
+          - Active Job
+          - Workflows
+          - Orchestration
+        description: >-
+          Rails 8.1 shipped Active Job Continuation so long-running jobs survive restarts and
+          resume from a checkpoint. This was a real step forward, but can only be the
+          beginning. The workflows Rails apps orchestrate today need more than
+          interruptibility: durable state across steps, pause/resume capabilities, and
+          human-in-the-loop-like interactions. This talk introduces a small, principled
+          extension to Active Job that connects the dots: same step DSL, same job runner, now
+          with persistent context, scheduled steps, and first-class resumeability.
+
+      - time: "1:30 PM"
+        type: break
+        title: "Break"
+
+      - time: "1:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Agent-Proof Your Rails App: Your Codebase Is the Prompt"
+        slug: "agent-proof"
+        speaker: "Kinsey Durham Grace (GitHub)"
+        speaker_slug: "kinsey-durham-grace"
+        description: >-
+          When AI agents write code in your repo, your codebase becomes the context window.
+          Messy conventions, implicit knowledge that lives in people's heads, and inconsistent
+          patterns aren't just tech debt anymore — they're the reason the agent writes bad
+          code. Working on GitHub's agent platform, I've seen firsthand what makes codebases
+          easy or hard for agents to work in. With real before-and-after examples, you'll
+          leave with a playbook for making your Rails app agent-friendly — which also makes
+          it more human-friendly.
+
+      - time: "1:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "A deep dive into Solid Cable"
+        slug: "solid-cable"
+        speaker: "Nick Pezza (beehiiv)"
+        speaker_slug: "nick-pezza"
+        description: >-
+          When Action Cable was introduced, running Redis in production became the norm. But
+          with the introduction of Solid Queue and Solid Cache, Redis became almost optional.
+          Almost. With Rails 8, Solid Cable became part of the Solid family, making it
+          possible to deploy many Rails apps to production without Redis. In this talk, we'll
+          explore Solid Cable's internals, why it was created, how it compares to the other
+          Action Cable adapters, and where realtime Rails apps are headed in the age of LLM
+          interfaces.
+
+      - time: "2:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "2:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "Kamal Deep Dive"
+        slug: "kamal-deep-dive"
+        speaker: "Josef Strzibny (SerpApi)"
+        speaker_slug: "josef-strzibny"
+        tags:
+          - Kamal
+          - DevOps
+          - Deployment
+        description: >-
+          Learn the core concepts behind Kamal, how it's implemented and how it actually
+          works under the hood. See how the most important parts of Kamal are designed.
+          Understand deploying to multiple servers, using local and remote registries, or how
+          Kamal Proxy fits in. Along the way, you'll gain a clear mental model of Kamal's
+          architecture that should let you use Kamal to its full potential.
+
+      - time: "2:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "I Didn't Get MCP, So I Built My Way Through It"
+        slug: "i-didnt-get-mcp"
+        speaker: "Enrique Mogollan (Handshake)"
+        speaker_slug: "enrique-mogollan"
+        tags:
+          - MCP
+          - Agents
+          - AI
+        description: >-
+          MCP is everywhere in AI tooling, but what actually is it? This talk follows one
+          developer's honest journey: not understanding MCP, deciding to build an inspector
+          to figure it out, and discovering something much bigger along the way. We'll walk
+          through building a Ruby MCP inspector gem from scratch using Rails 8. Then comes
+          the plot twist — what if your Rails app could read available MCP servers and
+          generate its own UI dynamically? Add a new server, get a new interface. No redeploy.
+
+      - time: "3:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "3:45 PM"
+        type: talk
+        track: "TRACK 1"
+        title: "The RubyGems Compact Index: What Powers Every bundle install"
+        slug: "rubygems-compact-index"
+        speaker: "Jenny Shen (Shopify)"
+        speaker_slug: "jenny-shen"
+        location: "Private"
+        tags:
+          - RubyGems
+          - Bundler
+          - Supply chain security
+        description: >-
+          Three endpoints handle millions of requests per day, yet most Rubyists have never
+          seen them. The RubyGems.org compact index is the hidden API behind every bundle
+          install, powering dependency resolution across the Ruby ecosystem. In this talk,
+          we'll explore how Bundler uses the compact index to resolve dependencies and how
+          RubyGems.org serves it at scale — including improvements like publish cooldowns,
+          smaller native gems, and security warnings.
+
+      - time: "3:45 PM"
+        type: talk
+        track: "TRACK 2"
+        title: "Harness Engineering on Rails"
+        slug: "harness-engineering"
+        speaker: "Joël Quenneville (thoughtbot)"
+        speaker_slug: "joel-quenneville"
+        tags:
+          - AI
+          - Harness engineering
+        description: >-
+          Agents have re-shaped how AI can work with code yet we still use them like ChatGPT
+          and wonder why they disappoint. The quest to one-shot our code with the perfect
+          prompt is a trap. We get much better results by hooking into signals from RSpec,
+          Rubocop, or even a self-review. This requires a paradigm shift: from chatbot to
+          reactive system. When your reaction to mediocre code is to fix the harness rather
+          than the mistake, agents can become valuable assistants that write code you are
+          proud of.
+
+      - time: "4:15 PM"
+        type: break
+        title: "Break"
+
+      - time: "4:30 PM"
+        type: keynote
+        track: "KEYNOTE"
+        title: "Rails World 2026 Closing Keynote"
+        slug: "closing-keynote"
+        speaker: "Aaron Patterson (Shopify)"
+        speaker_slug: "aaron-patterson"
+        tags:
+          - Rails
+          - Ractors
+          - Ruby
+        description: >-
+          Aaron Patterson wraps up Rails World with his annual Closing Keynote.
+          Come for the technical content. Stay for the laughs.
+
+      - time: "6:30 PM"
+        type: info
+        title: "Closing Party, sponsored by Shopify & Procore"
+        location: "Banger's"

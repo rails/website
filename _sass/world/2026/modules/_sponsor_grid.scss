@@ -50,14 +50,10 @@
 
   &__logos--platinum {
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 24px 32px;
-
-    @include media(MobileAndTabletScreens) {
-      grid-template-columns: repeat(2, minmax(0, max-content));
-    }
 
     @include media(MobileScreens) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -193,9 +189,14 @@
     max-width: 240px;
   }
 
+  &__item--planetscale img {
+    max-height: 52px;
+    max-width: 240px;
+  }
+
   &__item--rwx img {
-    max-height: 28px;
-    max-width: 190px;
+    max-height: 22px;
+    max-width: 150px;
   }
 
   &__item--test-double img {
@@ -247,6 +248,30 @@
   &__item--gumroad img {
     max-height: 30px;
     max-width: 190px;
+  }
+
+  &__item--gifthealth img {
+    height: 38px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--avo img {
+    height: 36px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--clio img {
+    height: 62px;
+    width: auto;
+    max-height: none;
+  }
+
+  &__item--poll-everywhere img {
+    height: 30px;
+    width: auto;
+    max-height: none;
   }
 
   &__item--serpapi img {
