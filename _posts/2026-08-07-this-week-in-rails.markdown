@@ -11,8 +11,10 @@ date: 2026-08-07
 
 Some things that should have worked all along finally do... like `alias_attribute` in associations, `pluck` on unsaved records, `search_field` with `autosave: true`. The rest of the week went into sharper SQL logs, sturdier job continuations, and more Ractor-ready registries. Here's what's new in Rails:
 
+[Matz is coming to Rails World 2026!](https://rubyonrails.org/world/2026/)  
+Ruby creator Yukihiro "Matz" Matsumoto is coming to Rails World 2026! He'll join DHH, Aaron Patterson, Robby Russell, and the rest of the lineup in Austin this September, and the full conference agenda is now live. If you've been waiting to see what's planned before grabbing a ticket or planning your schedule, now's the time to take a look.
 
-[Fix `pluck` ignoring records assigned to a new record's association](https://github.com/rails/rails/pull/58372)  
+[Fix `pluck` ignoring records assigned to a new record's association](https://github.com/rails/rails/pull/58372)   
 When the parent is unsaved, `CollectionProxy#pluck` read the null scope instead of in-memory records assigned to the association. After a regression that made `ids` delegate to `pluck`, both returned empty on a new record even with tags already assigned. `pluck` now reads the target records directly, so `post.tags.pluck(:name)` works before save — and `ids` follows along.
 
 ```ruby
