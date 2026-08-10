@@ -26,7 +26,7 @@ gold:
     logo: /assets/images/logo-planetscale.svg
     url: "https://planetscale.com/"
   - name: "RWX"
-    logo: /assets/world/2026/logos/logo-rwx.png
+    logo: /assets/world/2026/logos/logo-rwx.svg
     url: "https://www.rwx.com/"
   - name: "SerpApi"
     logo: /assets/images/logo-serpapi.svg
