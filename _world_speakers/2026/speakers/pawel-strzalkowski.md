@@ -4,7 +4,7 @@ last_name: Strzałkowski
 image_path: https://sessionize.com/image/8a46-0o0o0-MMr2wpXTZaoVR584i42eqx.jpg
 tagline: CTO
 company: Visuality
-specific_order: 19.5
+specific_order: 19
 keynote: false
 github: https://github.com/pstrzalk
 twitter: https://x.com/realPawelS
