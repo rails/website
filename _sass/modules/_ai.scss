@@ -788,43 +788,6 @@ body.ai-dialog-open {
     }
   }
 
-  &__eval-dialog__target-note {
-    color: $color-grey-5;
-    display: block;
-    font-size: 11px;
-    margin-top: 5px;
-    white-space: nowrap;
-  }
-
-  &__discovery {
-    align-items: center;
-    display: inline-flex;
-    font-size: 12px;
-    font-weight: 700;
-    gap: 6px;
-    white-space: nowrap;
-
-    &:before {
-      background: $color-grey-4;
-      border-radius: 50%;
-      content: "";
-      height: 8px;
-      width: 8px;
-    }
-  }
-
-  &__discovery--recalled:before {
-    background: #137333;
-  }
-
-  &__discovery--found:before {
-    background: #24558a;
-  }
-
-  &__discovery--passed_over:before {
-    background: #c4283c;
-  }
-
   &__tokens {
     margin: 90px auto 0;
     max-width: 1120px;
@@ -1046,10 +1009,6 @@ body.ai-dialog-open {
         overflow-wrap: anywhere;
         white-space: normal;
       }
-    }
-
-    &__eval-dialog__target-note {
-      white-space: normal;
     }
 
   }

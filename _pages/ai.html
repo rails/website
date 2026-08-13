@@ -191,7 +191,7 @@ redirect_from:
                   <th>Time</th>
                   <th>Tokens/run</th>
                   <th>Cost</th>
-                  <th>Approach</th>
+                  <th>API Recall</th>
                 </tr>
               </thead>
               <tbody data-eval-dialog-results></tbody>
@@ -532,13 +532,6 @@ redirect_from:
           var dialogTitle = dialog.querySelector('[data-eval-dialog-title]');
           var dialogSummary = dialog.querySelector('[data-eval-dialog-summary]');
           var dialogResults = dialog.querySelector('[data-eval-dialog-results]');
-          var discoveryLabels = {
-            recalled: 'Recalled',
-            found: 'Found',
-            passed_over: 'Passed over',
-            hand_rolled: 'Hand-rolled'
-          };
-
           function scoreClass(score) {
             if (score === evalData.scoring.runs_per_eval) return 'ai__score--high';
             if (score >= Math.ceil(evalData.scoring.runs_per_eval / 2)) return 'ai__score--mid';
@@ -556,26 +549,18 @@ redirect_from:
             var durationCell = document.createElement('td');
             var tokensCell = document.createElement('td');
             var costCell = document.createElement('td');
-            var discoveryCell = document.createElement('td');
+            var recallCell = document.createElement('td');
 
             evalCell.scope = 'row';
             addTextElement(evalCell, 'strong', null, evalItem.id);
             addTextElement(evalCell, 'span', null, evalItem.description);
             frameworkCell.textContent = framework ? framework.name : evalItem.framework_id;
             addTextElement(targetCell, 'code', null, evalItem.target);
-            if (evalItem.target_already_in_app) {
-              addTextElement(targetCell, 'span', 'ai__eval-dialog__target-note', 'In the app already');
-            }
             addTextElement(scoreCell, 'span', 'ai__score ' + scoreClass(result.score), result.score + '/' + evalData.scoring.runs_per_eval);
             durationCell.textContent = formatDuration(result.duration_seconds);
-            tokensCell.textContent = integerFormat.format(result.average_input_tokens_per_run + result.average_output_tokens_per_run);
+            tokensCell.textContent = integerFormat.format(result.average_tokens_per_run);
             costCell.textContent = currency.format(result.cost_usd);
-
-            if (result.discovery) {
-              addTextElement(discoveryCell, 'span', 'ai__discovery ai__discovery--' + result.discovery, discoveryLabels[result.discovery]);
-            } else {
-              discoveryCell.textContent = '—';
-            }
+            addTextElement(recallCell, 'span', 'ai__score ' + scoreClass(result.recalled_runs), result.recalled_runs + '/' + evalData.scoring.runs_per_eval);
 
             row.appendChild(evalCell);
             row.appendChild(frameworkCell);
@@ -584,7 +569,7 @@ redirect_from:
             row.appendChild(durationCell);
             row.appendChild(tokensCell);
             row.appendChild(costCell);
-            row.appendChild(discoveryCell);
+            row.appendChild(recallCell);
             dialogResults.appendChild(row);
           }
 
