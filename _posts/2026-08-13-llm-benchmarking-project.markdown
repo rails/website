@@ -51,6 +51,6 @@ If you're a Rails team with thoughts on what we should test next, or if you simp
 
 ***
 
-This work is made possible by the ongoing support of the [Rails Foundation Core and Contributing members](/foundation). Four years ago, when the Rails Foundation launched, we had a few main pillars in mind to focus on - _marketing, documentation, education, events_ - all working towards the mission of supporting and growing the Rails ecosystem. 
+This work is made possible by the ongoing support and input from the [Rails Foundation Core and Contributing members](/foundation). Four years ago, when the Rails Foundation launched, we had a few main pillars in mind to focus on - _marketing, documentation, education, events_ - all working towards the mission of supporting and growing the Rails ecosystem. 
 
 Since the rise of agent-assisted coding, things are changing for you, and that means it’s changing for us. The mission will remain the same, but the work is evolving. The [reference library](/docs/reference-apps) was one step in that direction. This is another such initiative. More will follow, so stay tuned.
