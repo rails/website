@@ -9,7 +9,7 @@ date: 2026-08-13
 
 ## TL;DR
 
-We ran 8 models against 21 atomic Rails tasks, 3 runs each. Every task runs against [Writebook](https://github.com/basecamp/writebook): a bug report, a security finding, a feature request, each written the way you'd actually file it. Read [our announcement post](/2026/8/13/llm-benchmarking-project) for more information about the project.
+We ran 8 models against 21 atomic Rails tasks, 3 runs each. Every task runs against [Writebook](https://github.com/basecamp/writebook): a bug report, a security finding, a feature request, each written the way you'd actually file it. Read [our announcement post](/2026/8/12/llm-benchmarking-project) for more information about the project.
 
 <p style="text-align: center;"><img src="/assets/images/evals-atomic-scoreboard.png" style="width: 100%;"></p>
 
