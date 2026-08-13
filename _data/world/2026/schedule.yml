@@ -196,22 +196,26 @@ days:
       - time: "2:45 PM"
         type: talk
         track: "TRACK 2"
-        title: "How I Built a CI Platform on Rails as a Solo Developer"
-        slug: "ci-platform"
-        speaker: "Jason Swett (Code with Jason Podcast)"
-        speaker_slug: "jason-swett"
+        title: "From Prompt to Rails: An Online Rails App Generator"
+        slug: "prompt-to-rails"
+        speaker: "Paweł Strzałkowski (Visuality)"
+        speaker_slug: "pawel-strzalkowski"
         tags:
-          - Rails
-          - Entrepreneurship
-          - One-person framework
+          - Agentic development
         description: >-
-          In 2023, frustrated with the clunky UIs of CircleCI and GitHub Actions, I decided
-          to build my own continuous integration platform. I took inspiration from 37signals
-          and Steve-Jobs-era Apple and built the product with the absolute minimum set of
-          features necessary, but to the highest degree of quality and usability. The key
-          principles are high standards, disciplined laziness, thorough automated testing, and
-          aggressive refactoring. Paradoxically, a focus on high quality yields much greater
-          speed than a thoughtless focus on speed itself.
+          "Rails scales from prompt to IPO." But where do non-coders put that prompt? Today's
+          web-based AI generators ship JavaScript apps, leaving millions of creators outside Rails!
+
+          Hifumi.dev fixes that, as the first online generator building Ruby on Rails apps. Build
+          with prompt, iterate, one-click preview with Kamal, and export the project to GitHub.
+          Hifumi is pure Rails, open source, and ready to inspire similar projects.
+
+          We'll see demos of Rails apps generated online, a Solid Queue pipeline that turns a
+          prompt into an app, Self-healing generation (implement, verify, remediate, commit), and
+          how Kamal turns each project into its own preview sandbox.
+
+          Listeners leave with the architecture for an online AI generator built entirely in
+          Rails, ready to generate far beyond "Blog posts with comments".
 
       - time: "3:15 PM"
         type: break

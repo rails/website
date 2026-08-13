@@ -14,13 +14,13 @@ talk_description: |
   "Rails scales from prompt to IPO." But where do non-coders put that prompt? Today's web-based AI generators ship JavaScript apps, leaving millions of creators outside Rails!
 
   Hifumi.dev fixes that, as the first online generator building Ruby on Rails apps. Build with prompt, iterate, one-click preview with Kamal, and export the project to GitHub.
-Hifumi is pure Rails, open source, and ready to inspire similar projects.
+  Hifumi is pure Rails, open source, and ready to inspire similar projects.
 
   The talk shows:
--Demos of Rails apps generated online
--Solid Queue pipeline that turns a prompt into an app
--Self-healing generation: implement, verify, remediate, commit
--How Kamal turns each project into its own preview sandbox
+  - Demos of Rails apps generated online
+  - Solid Queue pipeline that turns a prompt into an app
+  - Self-healing generation: implement, verify, remediate, commit
+  - How Kamal turns each project into its own preview sandbox
 
   Listeners leave with the architecture for an online AI generator built entirely in Rails, ready to generate far beyond "Blog posts with comments".
 
