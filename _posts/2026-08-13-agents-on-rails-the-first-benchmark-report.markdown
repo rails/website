@@ -18,9 +18,9 @@ So, as of August 2026, which model is best?
 - **Most accurate:** Claude Opus 5, 92% of runs solved (58 of 63)<sup>\*</sup>.
 - **Cheapest:** GPT-5.6 Luna, 73% at its default medium reasoning effort, and all 63 of its runs cost 91 cents combined. Not a typo.
 - **Fastest:** Luna again, at a median of 3.3 minutes per run task.
-- **Best combination of all three:** GPT-5.6 Sol: 84%, about $1.50 and five minutes per task.
+- **Best combination of all three:** GPT-5.6 Sol: 84%, about $0.52 and five minutes per run.
 
-<sup>\*</sup> Claude Fable 5 would lead at ~95%, but it refused the one task worded like a security report.
+<sup>\*</sup> Claude Fable 5 might lead with ~95%, but it refused to solve one task worded like a security report.
 
 ## A dollar gets you most of the way. Each point after that gets expensive.
 
@@ -28,7 +28,7 @@ Luna ran all 63 of its runs for 91 cents and beat two models that cost more. Sol
 
 <p style="text-align: center;"><img src="/assets/images/evals-atomic-cost-vs-accuracy.png" style="width: 100%;"></p>
 
-Time doesn't track price either. Sol finishes a task in five minutes. Muse takes sixteen, and the transcripts show where they go: 18% executing commands, 82% thinking. The gap between models is thinking speed, not test speed. Your suite still matters, though. Opus runs it nine times per task, and an agent pays for a slow suite nine times over.
+Time doesn't track price either. Sol finishes a run in five minutes. Muse takes sixteen, and the transcripts show where they go: 18% executing commands, 82% thinking. The gap between models is thinking speed, not test speed. Your suite still matters, though. Opus runs it nine times per task, and an agent pays for a slow suite nine times over.
 
 ## Knowing Rails is what separates the models
 
@@ -68,9 +68,9 @@ The hardest task in the corpus is purging embedded images, a bug whose visible h
 
 - **Corpus:** 21 atomic tasks on Writebook, each turning on one Rails API, spanning bug fixes, security hardening, performance, small features, and a flaky test suite. Tasks describe the problem, never the API.
 - **Models:** all at their provider's default reasoning effort: Claude Opus 5 (high), Claude Fable 5 (high), GPT-5.6 Sol (medium), GPT-5.6 Luna (medium), Muse Spark 1.2 (medium), Kimi K3 (max), GLM 5.2 (max), DeepSeek V4 Flash (high).
-- **Protocol:** 3 runs per model per task, 504 runs total, $493. Fair by construction: every run uses the same frozen harness, the same minimalistic agent with a lightweight prompt and only one bash tool (miniswen, our Ruby port of [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent)), the same step and cost limits, and default API settings for every model. The only thing that changes is the model.
+- **Protocol:** 3 runs per model per task, 504 runs total, $491. Fair by construction: every run uses the same frozen harness, the same minimalistic agent with a lightweight prompt and only one bash tool (miniswen, our Ruby port of [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent)), the same step and cost limits, and default API settings for every model. The only thing that changes is the model.
 - **Judging:** hidden test suites per task. A run passes when the tests do. No hidden assumptions: the tests check behavior, not implementation, so a hand-rolled fix passes just like an idiomatic one. Recall use is scored separately.
 
-The tooling is going open source too: the corpus, the runs, and **lemans**, the Ruby harness we built to run all of this. Find it all in the rails GitHub soon.
+The tooling is going open source too: [the corpus and the runs](https://github.com/rails/ai-evals), and **lemans**, the Ruby harness we built to run all of this. Find it all in the rails GitHub soon.
 
 If you want the current numbers rather than this snapshot, they're on the [Agents on Rails](/ai) page. Send feedback to <foundation@rubyonrails.org>.
