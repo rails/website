@@ -1,0 +1,636 @@
+---
+title: "Rails and AI — Ruby on Rails"
+description: "Rails gives AI coding agents a convention-driven, expressive framework for building production-quality software quickly."
+permalink: /ai
+redirect_from:
+  - /ai/
+---
+
+<div class="heading common-padding--bottom common-padding--top-small">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Rails is built for AI.</h1>
+
+        <p>Rails gives coding agents the same thing it has always given developers: clear conventions, expressive code, and a complete framework for turning ideas into production software.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ai common-background--grey common-shape--bottom-white-up-left common-shape--top-white-down-right">
+  <div class="container">
+    <div class="ai__body">
+      <div class="ai__areas">
+        <div class="ai__area">
+          <div class="ai__area__number">01</div>
+          <h3>Convention Over Configuration</h3>
+          <p><strong>Rails gives agents a map.</strong> Standard names, folders, commands, and patterns help generated changes land closer to idiomatic Rails with less prompting.</p>
+        </div>
+
+        <div class="ai__area">
+          <div class="ai__area__number">02</div>
+          <h3>Token Efficiency</h3>
+          <p><strong>Less code means more context.</strong> Ruby and Rails express product ideas with fewer tokens, helping agents make smaller edits and move faster from request to working feature.</p>
+        </div>
+
+        <div class="ai__area">
+          <div class="ai__area__number">03</div>
+          <h3>Quality Training Data</h3>
+          <p><strong>The patterns are everywhere.</strong> Decades of public Rails code give models strong signals for controllers, models, views, tests, jobs, migrations, and the glue between them.</p>
+        </div>
+
+        <div class="ai__area">
+          <div class="ai__area__number">04</div>
+          <h3>The One Person Framework</h3>
+          <p><strong>One person can ship more.</strong> Rails provides the full product stack. Add an AI coding agent, and a solo builder can take on broader work without stitching everything together from scratch.</p>
+        </div>
+      </div>
+
+      <section class="ai__models" aria-labelledby="ai-models-heading">
+        <div class="ai__headline common-headline">
+          <h2>Agents on Rails</h2>
+        </div>
+
+        <div class="ai__models__header">
+          <h2 id="ai-models-heading">Which model is best?</h2>
+          <p>Compare accuracy, speed, token efficiency, cost, and API recall across the same set of Rails evaluations.</p>
+        </div>
+
+        <p class="ai__scroll-hint">Swipe to compare all model metrics <span aria-hidden="true">→</span></p>
+        <div class="ai__models__table-wrap ai__leaderboard-table">
+          <table class="ai__models__table" data-sortable-table>
+            <thead>
+              <tr>
+                <th><button type="button" data-sort-key="model" data-sort-type="text">Model</button></th>
+                <th aria-sort="descending"><button type="button" data-sort-key="accuracy" data-sort-type="number">Accuracy<small>Successful runs</small></button></th>
+                <th><button type="button" data-sort-key="speed" data-sort-type="number">Speed<small>Median</small></button></th>
+                <th><button type="button" data-sort-key="tokens" data-sort-type="number">Tokens<small>Mean per run</small></button></th>
+                <th><button type="button" data-sort-key="cost" data-sort-type="number">Cost<small>Mean per run</small></button></th>
+                <th><button type="button" data-sort-key="api-recall" data-sort-type="number">API Recall<small>Runs</small></button></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for model in site.data.ai_page_evals.models %}
+                {% assign vendor = site.data.ai_page_evals.vendors | where: "id", model.vendor_id | first %}
+                {% assign minutes = model.metrics.median_duration_seconds | divided_by: 60 %}
+                {% assign seconds = model.metrics.median_duration_seconds | modulo: 60 %}
+                {% assign tokens_per_run = model.metrics.tokens_per_task | divided_by: 3.0 | round %}
+                {% assign cost_per_run = model.metrics.cost_per_task_usd | divided_by: 3.0 %}
+                {% assign recalled_runs_total = 0 %}
+                {% for eval in site.data.ai_page_evals.evals %}
+                  {% assign recalled_runs_total = recalled_runs_total | plus: eval.results[model.id].recalled_runs %}
+                {% endfor %}
+                {% assign api_recall = recalled_runs_total | times: 100.0 | divided_by: model.metrics.total_runs | round: 1 %}
+                {% assign display_name = model.name %}
+                {% if model.id == "sol" %}{% assign display_name = "GPT-5.6 Sol" %}{% endif %}
+                <tr data-model="{{ display_name }}">
+                  <th scope="row">
+                    <button type="button" class="ai__model ai__model--button" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} evaluation details">
+                      <img src="{{ vendor.logo }}" alt="{{ vendor.name }}" width="24" height="24" />
+                      <span>{{ display_name }}</span>
+                    </button>
+                  </th>
+                  <td data-sort-column="accuracy" data-sort-value="{{ model.metrics.accuracy_percentage }}">
+                    <button type="button" class="ai__score ai__score--button {% if model.metrics.accuracy_percentage >= 83.3 %}ai__score--high{% elsif model.metrics.accuracy_percentage >= 50 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} accuracy details">{{ model.metrics.accuracy_percentage }}%</button>
+                  </td>
+                  <td data-sort-column="speed" data-sort-value="{{ model.metrics.median_duration_seconds }}">
+                    <button type="button" class="ai__score ai__score--button {% if model.metrics.median_duration_seconds <= 400 %}ai__score--high{% elsif model.metrics.median_duration_seconds <= 700 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} median speed details">{% if minutes > 0 %}{{ minutes }}m {{ seconds }}s{% else %}{{ seconds }}s{% endif %}</button>
+                  </td>
+                  <td data-sort-column="tokens" data-sort-value="{{ tokens_per_run }}">
+                    <button type="button" class="ai__score ai__score--button {% if tokens_per_run <= 30000 %}ai__score--high{% elsif tokens_per_run <= 50000 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean token details">{{ tokens_per_run }}</button>
+                  </td>
+                  <td data-sort-column="cost" data-sort-value="{{ cost_per_run }}">
+                    <button type="button" class="ai__score ai__score--button {% if cost_per_run <= 0.033 %}ai__score--high{% elsif cost_per_run <= 1.17 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean cost details">${{ cost_per_run | round: 3 }}</button>
+                  </td>
+                  <td data-sort-column="api-recall" data-sort-value="{{ api_recall }}">
+                    <button type="button" class="ai__score ai__score--button {% if api_recall >= 30 %}ai__score--high{% elsif api_recall >= 20 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} API recall details">{{ api_recall }}%</button>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ai__benchmark-chart">
+          <div class="ai__benchmark-chart__header">
+            <h3 data-benchmark-title>Accuracy vs. token efficiency</h3>
+            <p data-benchmark-description>The strongest models rise toward the top-left.</p>
+            <div class="ai__benchmark-chart__filters" role="group" aria-label="Compare accuracy against">
+              <button type="button" data-benchmark-metric="tokens" aria-pressed="true">Tokens</button>
+              <button type="button" data-benchmark-metric="speed" aria-pressed="false">Speed</button>
+              <button type="button" data-benchmark-metric="cost" aria-pressed="false">Cost</button>
+            </div>
+          </div>
+
+          <p class="ai__scroll-hint ai__scroll-hint--chart">Swipe to explore every model <span aria-hidden="true">→</span></p>
+          <div class="ai__benchmark-chart__frame">
+            <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean tokens per run">
+              <div class="ai__benchmark-chart__y-ticks" data-benchmark-y-ticks aria-hidden="true"></div>
+              <div class="ai__benchmark-chart__x-ticks" data-benchmark-x-ticks aria-hidden="true"></div>
+              <div class="ai__benchmark-chart__points" data-benchmark-points></div>
+            </div>
+            <div class="ai__benchmark-chart__y-label">Accuracy <span>Higher is better</span></div>
+            <div class="ai__benchmark-chart__x-label"><span data-benchmark-x-label>Mean tokens per run</span> <small>Lower is better</small></div>
+          </div>
+
+          <ul class="ai__benchmark-chart__legend" aria-label="Chart legend">
+            <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--accuracy"></span>Higher is more accurate</li>
+            <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--tokens"></span><span data-benchmark-x-legend>Further left uses fewer tokens</span></li>
+          </ul>
+        </div>
+
+        <div class="ai__benchmark-report">
+          <a href="https://rubyonrails.org/category/agents" class="common-button common-button--color-red"><span>Read the most recent benchmark report</span></a>
+        </div>
+
+        <div class="ai__methodology">
+          <h3>Methodology</h3>
+          <p>Each model ran every evaluation three times in August 2026, using the provider's default settings — 63 runs per model. Accuracy is the share of runs that passed the evaluation's hidden tests; refusals count as failures, and differences of a few points between models are within run-to-run noise. Speed is the median run duration, and tokens and cost are means per run. API recall is the percentage of runs in which the model reached directly for the target Rails API. Model-level medians come from run-level data, so they can differ slightly from the per-evaluation timings. Select any model or result for the underlying evaluation details.</p>
+        </div>
+      </section>
+
+      <div class="ai__quotes reference-quotes">
+        <ul class="reference-quotes__grid">
+          {% for quote in site.data.ai_quotes.quotes %}
+          <li class="reference-quotes__item">
+            <blockquote>
+              <p>{{ quote.text }}</p>
+            </blockquote>
+            <cite>
+              <a href="{{ quote.url }}">
+                {% if quote.avatar %}
+                <img
+                  class="reference-quotes__avatar"
+                  src="{{ quote.avatar }}"
+                  alt="{{ quote.name }}"
+                  loading="lazy"
+                />
+                {% endif %}
+                <span class="reference-quotes__person">
+                  <span class="reference-quotes__name">{{ quote.name }}</span>
+                  <span class="reference-quotes__meta">
+                    {{ quote.handle }}
+                  </span>
+                </span>
+              </a>
+            </cite>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <dialog class="ai__eval-dialog" data-eval-dialog aria-labelledby="ai-eval-dialog-title">
+        <div class="ai__eval-dialog__body">
+          <form method="dialog">
+            <button class="ai__eval-dialog__close" type="submit" aria-label="Close evaluation details">×</button>
+          </form>
+          <p class="ai__eval-dialog__model" data-eval-dialog-model></p>
+          <h2 id="ai-eval-dialog-title" data-eval-dialog-title></h2>
+          <p class="ai__eval-dialog__summary" data-eval-dialog-summary></p>
+
+          <div class="ai__eval-dialog__table-wrap">
+            <table class="ai__eval-dialog__table">
+              <thead>
+                <tr>
+                  <th>Evaluation</th>
+                  <th>Framework</th>
+                  <th>Target</th>
+                  <th>Score</th>
+                  <th>Time</th>
+                  <th>Tokens/run</th>
+                  <th>Cost/run</th>
+                  <th>API Recall</th>
+                </tr>
+              </thead>
+              <tbody data-eval-dialog-results></tbody>
+            </table>
+          </div>
+        </div>
+      </dialog>
+
+      <script>
+        (function() {
+          var evalData = {{ site.data.ai_page_evals | jsonify }};
+          var modelById = {};
+          var vendorById = {};
+          var frameworkById = {};
+          var lastDialogTrigger;
+          var integerFormat = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+          var currency = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          });
+
+          evalData.models.forEach(function(model) {
+            modelById[model.id] = model;
+          });
+
+          evalData.vendors.forEach(function(vendor) {
+            vendorById[vendor.id] = vendor;
+          });
+
+          evalData.frameworks.forEach(function(framework) {
+            frameworkById[framework.id] = framework;
+          });
+
+          var displayNames = { sol: 'GPT-5.6 Sol' };
+
+          function displayName(model) {
+            return displayNames[model.id] || model.name;
+          }
+
+          function recallPercentage(model) {
+            var recalledRuns = 0;
+            evalData.evals.forEach(function(evalItem) {
+              recalledRuns += evalItem.results[model.id].recalled_runs;
+            });
+            return Math.round(recalledRuns * 1000 / model.metrics.total_runs) / 10;
+          }
+
+          function addTextElement(parent, tagName, className, text) {
+            var element = document.createElement(tagName);
+            if (className) element.className = className;
+            element.textContent = text;
+            parent.appendChild(element);
+            return element;
+          }
+
+          function formatDuration(seconds) {
+            if (seconds < 60) return seconds + 's';
+            return Math.floor(seconds / 60) + 'm ' + (seconds % 60) + 's';
+          }
+
+          function formatBenchmarkCost(value) {
+            return new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: value < 0.1 ? 3 : 2,
+              maximumFractionDigits: value < 0.1 ? 3 : 2
+            }).format(value);
+          }
+
+          document.querySelectorAll('[data-sort-column="tokens"] .ai__score').forEach(function(score) {
+            score.textContent = integerFormat.format(parseFloat(score.closest('td').dataset.sortValue));
+          });
+
+          document.querySelectorAll('[data-sort-column="cost"] .ai__score').forEach(function(score) {
+            score.textContent = formatBenchmarkCost(parseFloat(score.closest('td').dataset.sortValue));
+          });
+
+          document.querySelectorAll('[data-sortable-table]').forEach(function(table) {
+            var tbody = table.querySelector('tbody');
+            var buttons = table.querySelectorAll('thead button[data-sort-key]');
+            var directions = { accuracy: 'desc' };
+
+            function valueFor(row, key) {
+              if (key === 'model') return row.dataset.model;
+              var cell = row.querySelector('[data-sort-column="' + key + '"]');
+              return cell ? cell.dataset.sortValue : '';
+            }
+
+            function sortRows(key, type, direction) {
+              Array.from(tbody.querySelectorAll('tr'))
+                .sort(function(a, b) {
+                  var aValue = valueFor(a, key);
+                  var bValue = valueFor(b, key);
+
+                  if (type === 'number') {
+                    aValue = parseFloat(aValue);
+                    bValue = parseFloat(bValue);
+                  } else {
+                    aValue = aValue.toLowerCase();
+                    bValue = bValue.toLowerCase();
+                  }
+
+                  if (aValue < bValue) return direction === 'asc' ? -1 : 1;
+                  if (aValue > bValue) return direction === 'asc' ? 1 : -1;
+
+                  if (key === 'accuracy') {
+                    var aTokens = parseFloat(valueFor(a, 'tokens'));
+                    var bTokens = parseFloat(valueFor(b, 'tokens'));
+                    if (aTokens !== bTokens) return aTokens - bTokens;
+                  }
+
+                  return valueFor(a, 'model').localeCompare(valueFor(b, 'model'));
+                })
+                .forEach(function(row) {
+                  tbody.appendChild(row);
+                });
+            }
+
+            buttons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                var key = button.dataset.sortKey;
+                var type = button.dataset.sortType;
+                var direction = directions[key] === 'asc' ? 'desc' : 'asc';
+                directions[key] = direction;
+
+                Array.from(table.querySelectorAll('thead th')).forEach(function(header) {
+                  header.removeAttribute('aria-sort');
+                });
+                button.closest('th').setAttribute('aria-sort', direction === 'asc' ? 'ascending' : 'descending');
+                sortRows(key, type, direction);
+              });
+            });
+
+            sortRows('accuracy', 'number', 'desc');
+          });
+
+          var benchmarkModels = evalData.models.map(function(model) {
+            return {
+              model: model,
+              vendor: vendorById[model.vendor_id],
+              accuracy: model.metrics.accuracy_percentage,
+              duration: model.metrics.median_duration_seconds,
+              tokensPerRun: Math.round(model.metrics.tokens_per_task / 3),
+              costPerRun: model.metrics.cost_per_task_usd / 3,
+              apiRecall: recallPercentage(model)
+            };
+          });
+
+          var currentBenchmarkMetric = 'tokens';
+
+          function renderBenchmarkChart(metric) {
+            currentBenchmarkMetric = metric;
+            var plot = document.querySelector('[data-benchmark-plot]');
+            var title = document.querySelector('[data-benchmark-title]');
+            var description = document.querySelector('[data-benchmark-description]');
+            var xLabel = document.querySelector('[data-benchmark-x-label]');
+            var xLegend = document.querySelector('[data-benchmark-x-legend]');
+            if (!plot || !title || !description || !xLabel || !xLegend) return;
+
+            var points = plot.querySelector('[data-benchmark-points]');
+            var xTicks = plot.querySelector('[data-benchmark-x-ticks]');
+            var yTicks = plot.querySelector('[data-benchmark-y-ticks]');
+            var views = {
+              tokens: {
+                title: 'Accuracy vs. token efficiency',
+                description: 'The strongest models rise toward the top-left.',
+                xLabel: 'Mean tokens per run',
+                xLegend: 'Further left uses fewer tokens',
+                value: function(item) { return item.tokensPerRun; },
+                format: function(value) {
+                  if (value >= 1000000) return (Math.round(value / 100000) / 10) + 'm';
+                  return Math.round(value / 1000) + 'k';
+                },
+                padding: function(minimum, maximum) {
+                  return [Math.floor(minimum * 0.92 / 1000) * 1000, Math.ceil(maximum * 1.06 / 1000) * 1000];
+                }
+              },
+              speed: {
+                title: 'Accuracy vs. completion time',
+                description: 'Models toward the top-left solve more evaluations with a lower median duration.',
+                xLabel: 'Median completion time',
+                xLegend: 'Further left finishes faster',
+                value: function(item) { return item.duration; },
+                format: function(value) { return formatDuration(Math.round(value)); },
+                padding: function(minimum, maximum) {
+                  return [Math.floor(minimum * 0.9 / 10) * 10, Math.ceil(maximum * 1.1 / 10) * 10];
+                }
+              },
+              cost: {
+                title: 'Accuracy vs. cost',
+                description: 'Models toward the top-left solve more evaluations at a lower mean cost per run. Cost uses a logarithmic scale.',
+                xLabel: 'Mean cost per run',
+                xLegend: 'Further left costs less',
+                value: function(item) { return item.costPerRun; },
+                format: formatBenchmarkCost,
+                padding: function(minimum, maximum) {
+                  return [Math.log10(minimum * 0.75), Math.log10(maximum * 1.25)];
+                },
+                transform: Math.log10,
+                inverse: function(value) { return Math.pow(10, value); }
+              }
+            };
+            var view = views[metric];
+            var rawValues = benchmarkModels.map(view.value);
+            var bounds = view.padding(Math.min.apply(null, rawValues), Math.max.apply(null, rawValues));
+            var xMinimum = bounds[0];
+            var xMaximum = bounds[1];
+            var transform = view.transform || function(value) { return value; };
+            var inverse = view.inverse || function(value) { return value; };
+            var yMinimum = Math.floor((Math.min.apply(null, benchmarkModels.map(function(item) { return item.accuracy; })) - 5) / 5) * 5;
+            var yMaximum = 100;
+
+            title.textContent = view.title;
+            description.textContent = view.description;
+            xLabel.textContent = view.xLabel;
+            xLegend.textContent = view.xLegend;
+            plot.setAttribute('aria-label', 'Model accuracy compared with ' + view.xLabel.toLowerCase());
+            points.replaceChildren();
+            xTicks.replaceChildren();
+            yTicks.replaceChildren();
+
+            for (var tickIndex = 0; tickIndex < 5; tickIndex += 1) {
+              var tickRatio = tickIndex / 4;
+              var transformedXValue = xMinimum + (xMaximum - xMinimum) * tickRatio;
+              var xValue = inverse(transformedXValue);
+              var yValue = yMaximum - (yMaximum - yMinimum) * tickRatio;
+              var xTick = addTextElement(xTicks, 'span', null, view.format(xValue));
+              var yTick = addTextElement(yTicks, 'span', null, Math.round(yValue) + '%');
+              xTick.style.left = (tickRatio * 100) + '%';
+              yTick.style.top = (tickRatio * 100) + '%';
+            }
+
+            var positionedPoints = [];
+            var pointSize = 56;
+            var minimumDistance = 68;
+            var plotWidth = plot.clientWidth;
+            var plotHeight = plot.clientHeight;
+            var collisionOffsets = [
+              [0, 0], [52, -42], [-52, 42], [52, 42], [-52, -42],
+              [76, 0], [-76, 0], [0, 76], [0, -76],
+              [104, 0], [-104, 0], [0, 104], [0, -104],
+              [82, 70], [-82, 70], [82, -70], [-82, -70]
+            ];
+
+            benchmarkModels.forEach(function(item, index) {
+              var xValue = transform(view.value(item));
+              var trueX = (xValue - xMinimum) / (xMaximum - xMinimum) * plotWidth;
+              var trueY = (yMaximum - item.accuracy) / (yMaximum - yMinimum) * plotHeight;
+              var position = { x: trueX, y: trueY };
+              var bestAvailableDistance = -1;
+
+              collisionOffsets.some(function(offset) {
+                var candidate = {
+                  x: Math.max(pointSize / 2, Math.min(plotWidth - pointSize / 2, trueX + offset[0])),
+                  y: Math.max(pointSize / 2, Math.min(plotHeight - pointSize / 2, trueY + offset[1]))
+                };
+                var nearestPointDistance = positionedPoints.length ? Math.min.apply(null, positionedPoints.map(function(existing) {
+                  return Math.hypot(candidate.x - existing.x, candidate.y - existing.y);
+                })) : Infinity;
+
+                if (nearestPointDistance > bestAvailableDistance) {
+                  position = candidate;
+                  bestAvailableDistance = nearestPointDistance;
+                }
+                return nearestPointDistance >= minimumDistance;
+              });
+
+              positionedPoints.push(position);
+
+              var displacementX = position.x - trueX;
+              var displacementY = position.y - trueY;
+              var displacement = Math.hypot(displacementX, displacementY);
+              if (displacement > 2) {
+                var connector = document.createElement('span');
+                connector.className = 'ai__benchmark-point-connector';
+                connector.style.left = trueX + 'px';
+                connector.style.top = trueY + 'px';
+                connector.style.width = displacement + 'px';
+                connector.style.transform = 'rotate(' + Math.atan2(displacementY, displacementX) + 'rad)';
+                points.appendChild(connector);
+              }
+
+              var point = document.createElement('button');
+              var logo = document.createElement('img');
+
+              point.type = 'button';
+              point.className = 'ai__benchmark-point ai__benchmark-point--label-' + (index % 2 === 0 ? 'above' : 'below');
+              point.dataset.evalDetails = '';
+              point.dataset.modelId = item.model.id;
+              point.style.left = position.x + 'px';
+              point.style.top = position.y + 'px';
+              point.style.width = pointSize + 'px';
+              point.style.height = pointSize + 'px';
+              point.setAttribute('aria-label', displayName(item.model) + ': ' + item.accuracy.toFixed(1) + '% accuracy, ' + integerFormat.format(item.tokensPerRun) + ' mean tokens per run, ' + formatDuration(item.duration) + ' median completion time, ' + formatBenchmarkCost(item.costPerRun) + ' mean cost per run');
+
+              logo.src = item.vendor.logo;
+              logo.alt = '';
+              point.appendChild(logo);
+              addTextElement(point, 'span', null, displayName(item.model));
+              points.appendChild(point);
+            });
+
+            var placedLabels = [];
+            var chartPoints = Array.from(points.querySelectorAll('.ai__benchmark-point'));
+            chartPoints.forEach(function(point) {
+              var label = point.querySelector('span');
+              var directions = ['above', 'below', 'right', 'left'];
+
+              directions.some(function(direction) {
+                point.className = 'ai__benchmark-point ai__benchmark-point--label-' + direction;
+                var labelBounds = label.getBoundingClientRect();
+                var overlapsLabel = placedLabels.some(function(bounds) {
+                  return !(labelBounds.right + 3 < bounds.left || labelBounds.left - 3 > bounds.right || labelBounds.bottom + 3 < bounds.top || labelBounds.top - 3 > bounds.bottom);
+                });
+                var overlapsPoint = chartPoints.some(function(candidate) {
+                  if (candidate === point) return false;
+                  var bounds = candidate.getBoundingClientRect();
+                  return !(labelBounds.right + 3 < bounds.left || labelBounds.left - 3 > bounds.right || labelBounds.bottom + 3 < bounds.top || labelBounds.top - 3 > bounds.bottom);
+                });
+                return !overlapsLabel && !overlapsPoint;
+              });
+
+              placedLabels.push(label.getBoundingClientRect());
+            });
+          }
+
+          document.querySelectorAll('[data-benchmark-metric]').forEach(function(button) {
+            button.addEventListener('click', function() {
+              document.querySelectorAll('[data-benchmark-metric]').forEach(function(candidate) {
+                candidate.setAttribute('aria-pressed', candidate === button ? 'true' : 'false');
+              });
+              renderBenchmarkChart(button.dataset.benchmarkMetric);
+            });
+          });
+
+          renderBenchmarkChart('tokens');
+
+          var benchmarkResizeTimer;
+          window.addEventListener('resize', function() {
+            window.clearTimeout(benchmarkResizeTimer);
+            benchmarkResizeTimer = window.setTimeout(function() {
+              renderBenchmarkChart(currentBenchmarkMetric);
+            }, 150);
+          });
+
+          var dialog = document.querySelector('[data-eval-dialog]');
+          if (!dialog) return;
+
+          var dialogModel = dialog.querySelector('[data-eval-dialog-model]');
+          var dialogTitle = dialog.querySelector('[data-eval-dialog-title]');
+          var dialogSummary = dialog.querySelector('[data-eval-dialog-summary]');
+          var dialogResults = dialog.querySelector('[data-eval-dialog-results]');
+          function scoreClass(score) {
+            if (score === evalData.scoring.runs_per_eval) return 'ai__score--high';
+            if (score >= Math.ceil(evalData.scoring.runs_per_eval / 2)) return 'ai__score--mid';
+            return 'ai__score--low';
+          }
+
+          function renderResult(evalItem, modelId) {
+            var result = evalItem.results[modelId];
+            var framework = frameworkById[evalItem.framework_id];
+            var row = document.createElement('tr');
+            var evalCell = document.createElement('th');
+            var frameworkCell = document.createElement('td');
+            var targetCell = document.createElement('td');
+            var scoreCell = document.createElement('td');
+            var durationCell = document.createElement('td');
+            var tokensCell = document.createElement('td');
+            var costCell = document.createElement('td');
+            var recallCell = document.createElement('td');
+
+            evalCell.scope = 'row';
+            addTextElement(evalCell, 'strong', null, evalItem.id);
+            addTextElement(evalCell, 'span', null, evalItem.description);
+            frameworkCell.textContent = framework ? framework.name : evalItem.framework_id;
+            addTextElement(targetCell, 'code', null, evalItem.target);
+            addTextElement(scoreCell, 'span', 'ai__score ' + scoreClass(result.score), result.score + '/' + evalData.scoring.runs_per_eval);
+            durationCell.textContent = formatDuration(result.duration_seconds);
+            tokensCell.textContent = integerFormat.format(result.average_tokens_per_run);
+            costCell.textContent = currency.format(result.cost_usd);
+            addTextElement(recallCell, 'span', 'ai__score ' + scoreClass(result.recalled_runs), result.recalled_runs + '/' + evalData.scoring.runs_per_eval);
+
+            row.appendChild(evalCell);
+            row.appendChild(frameworkCell);
+            row.appendChild(targetCell);
+            row.appendChild(scoreCell);
+            row.appendChild(durationCell);
+            row.appendChild(tokensCell);
+            row.appendChild(costCell);
+            row.appendChild(recallCell);
+            dialogResults.appendChild(row);
+          }
+
+          function openDetails(trigger) {
+            var modelId = trigger.dataset.modelId;
+            var model = modelById[modelId];
+            var vendor = vendorById[model.vendor_id];
+            var evaluations = evalData.evals;
+
+            lastDialogTrigger = trigger;
+            dialogModel.textContent = displayName(model) + ' · ' + vendor.name;
+            dialogTitle.textContent = 'Overall results';
+            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(Math.round(model.metrics.tokens_per_task / 3)) + ' mean tokens per run · ' + formatBenchmarkCost(model.metrics.cost_per_task_usd / 3) + ' mean cost per run · ' + recallPercentage(model) + '% API recall';
+            dialogResults.replaceChildren();
+            evaluations.forEach(function(evalItem) {
+              renderResult(evalItem, modelId);
+            });
+            document.body.classList.add('ai-dialog-open');
+            dialog.showModal();
+          }
+
+          document.addEventListener('click', function(event) {
+            var trigger = event.target.closest('[data-eval-details]');
+            if (trigger) openDetails(trigger);
+          });
+
+          dialog.addEventListener('click', function(event) {
+            var bounds = dialog.getBoundingClientRect();
+            var outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+            if (outside) dialog.close();
+          });
+
+          dialog.addEventListener('close', function() {
+            document.body.classList.remove('ai-dialog-open');
+            if (lastDialogTrigger) lastDialogTrigger.focus();
+          });
+        })();
+      </script>
+    </div>
+  </div>
+</div>

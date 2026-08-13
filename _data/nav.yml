@@ -5,6 +5,9 @@ items:
   - title: Docs
     url: /docs
 
+  - title: AI
+    url: /ai
+
   - title: Community
     url: /community
 
@@ -16,9 +19,6 @@ items:
 
   - title: Jobs
     url: https://jobs.rubyonrails.org
-
-  - title: Merch
-    url: https://merch.rubyonrails.org
 
   - title: Foundation
     url: /foundation
