@@ -72,7 +72,7 @@
     "median_duration_seconds": 407,
     "tokens_per_task": 74000,
     "cost_per_task_usd": 6.95,
-    "api_recall_percentage": 35.0,
+    "api_recall_percentage": 33.3,
     "successful_runs": 57,
     "total_runs": 63
    }
