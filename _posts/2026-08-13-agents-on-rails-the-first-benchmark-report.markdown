@@ -71,6 +71,6 @@ The hardest task in the corpus is purging embedded images, a bug whose visible h
 - **Protocol:** 3 runs per model per task, 504 runs total, $493. Fair by construction: every run uses the same frozen harness, the same minimalistic agent with a lightweight prompt and only one bash tool (miniswen, our Ruby port of [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent)), the same step and cost limits, and default API settings for every model. The only thing that changes is the model.
 - **Judging:** hidden test suites per task. A run passes when the tests do. No hidden assumptions: the tests check behavior, not implementation, so a hand-rolled fix passes just like an idiomatic one. Recall use is scored separately.
 
-The tooling is going open source too: the corpus, the runs, and [lemans](https://github.com/rails/lemans), the Ruby harness we built to run all of this.
+The tooling is going open source too: the corpus, the runs, and **lemans**, the Ruby harness we built to run all of this. Find it all in the rails GitHub soon.
 
 If you want the current numbers rather than this snapshot, they're on the [Agents on Rails](/ai) page. Send feedback to <foundation@rubyonrails.org>.
