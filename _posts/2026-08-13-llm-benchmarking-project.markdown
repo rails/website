@@ -29,7 +29,7 @@ This benchmark is being built out in stages, with Stage 1 launching today.
 
 **Stage 1: Atomic tasks.** The current set of evals is made up of small, self-contained tasks that isolate one specific capability, and if they touch an API, it's only the one. In addition to testing accuracy, speed, token spend, and cost across 8 different frontier and open-weight models, we’re also checking if the models reach for current Rails APIs.
 
-The full methodology can be found [here](https://github.com/rails/ai-evals/methodology.md). 
+The full methodology can be found [here](https://github.com/rails/ai-evals/blob/main/methodology.md). 
 
 This benchmark will run as promising new models are released, so the Ruby community always has the most up to date information on how the models stack up against each other, and any cost/capability tradeoffs to consider.
 
@@ -39,7 +39,7 @@ The current leaderboard can be found on the new [AI page](/ai), and each time we
 
 **Stage 2: More realistic work.** (Coming soon.) This is where we’ll move beyond isolated tasks into more realistic, complex work - testing how agents perform across longer, multi-step work, adding features, and building an app from scratch. These tests will be more challenging for the agents and will more closely mimic how you and your teams work on your apps in production.
 
-**Open-sourcing it all.** The [tasks and methodology](https://github.com/rails/ai-evals) are available now, and the raw runs will be uploaded into the repo tommorrow. Soon [lemans](https://github.com/rails/lemans), the Ruby harness that Evil Martians built to run all of this, will also be open sourced for the community.
+**Open-sourcing it all.** The [tasks and methodology](https://github.com/rails/ai-evals) are available now, and the raw runs will be uploaded into the repo tommorrow. Soon **lemans**, the Ruby harness that Evil Martians built to run all of this, will also be open sourced for the community.
 
 **Shout out to Evil Martians**
 
