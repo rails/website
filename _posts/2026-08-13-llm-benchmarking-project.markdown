@@ -39,7 +39,7 @@ The current leaderboard can be found on the new [AI page](/ai), and each time we
 
 **Stage 2: More realistic work.** (Coming soon.) This is where we’ll move beyond isolated tasks into more realistic, complex work - testing how agents perform across longer, multi-step work, adding features, and building an app from scratch. These tests will be more challenging for the agents and will more closely mimic how you and your teams work on your apps in production.
 
-**Open-sourcing it all.** The [corpus and runs](https://github.com/rails/ai-evals) are available now. Soon [lemans](https://github.com/rails/lemans), the Ruby harness that Evil Martians built to run all of this, will also be open sourced for the community.
+**Open-sourcing it all.** The [tasks and methodology](https://github.com/rails/ai-evals) are available now, and the raw runs will be uploaded into the repo tommorrow. Soon [lemans](https://github.com/rails/lemans), the Ruby harness that Evil Martians built to run all of this, will also be open sourced for the community.
 
 **Shout out to Evil Martians**
 
