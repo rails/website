@@ -27,7 +27,7 @@ We loved to hear it, but we needed more than anecdotal evidence. So we commissio
 
 This benchmark is being built out in stages, with Stage 1 launching today. 
 
-**Stage 1: Atomic tasks.** The current set of evals is made up of small, self-contained tasks that isolate one specific capability, and touch one API. In addition to testing accuracy, speed, token spend, and cost across 8 different frontier and open-weight models, we’re also checking if the models reach for current Rails APIs.
+**Stage 1: Atomic tasks.** The current set of evals is made up of small, self-contained tasks that isolate one specific capability, and if they touch an API, it's only the one. In addition to testing accuracy, speed, token spend, and cost across 8 different frontier and open-weight models, we’re also checking if the models reach for current Rails APIs.
 
 The full methodology can be found [here](https://github.com/rails/ai-evals/methodology.md). 
 
