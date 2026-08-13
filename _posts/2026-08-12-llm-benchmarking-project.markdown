@@ -4,7 +4,7 @@ title: "Agents on Rails: The LLM Benchmark Project"
 categories: news, foundation, agents
 author: Rails Foundation
 published: true
-date: 2026-08-13
+date: 2026-08-12
 ---
 
 Today we’re sharing the first results of [Agents on Rails](/ai), a new, ongoing initiative to measure how well today's leading agentic coding tools (both frontier and open-weight) actually perform on Ruby on Rails codebases. 
