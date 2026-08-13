@@ -71,12 +71,13 @@ redirect_from:
               </tr>
             </thead>
             <tbody>
+              {% assign runs_per_eval = site.data.ai_page_evals.scoring.runs_per_eval %}
               {% for model in site.data.ai_page_evals.models %}
                 {% assign vendor = site.data.ai_page_evals.vendors | where: "id", model.vendor_id | first %}
                 {% assign minutes = model.metrics.median_duration_seconds | divided_by: 60 %}
                 {% assign seconds = model.metrics.median_duration_seconds | modulo: 60 %}
-                {% assign tokens_per_run = model.metrics.tokens_per_task | divided_by: 3.0 | round %}
-                {% assign cost_per_run = model.metrics.cost_per_task_usd | divided_by: 3.0 %}
+                {% assign tokens_per_run = model.metrics.tokens_per_task | times: 1.0 | divided_by: runs_per_eval | round %}
+                {% assign cost_per_run = model.metrics.cost_per_task_usd | times: 1.0 | divided_by: runs_per_eval %}
                 {% assign recalled_runs_total = 0 %}
                 {% for eval in site.data.ai_page_evals.evals %}
                   {% assign recalled_runs_total = recalled_runs_total | plus: eval.results[model.id].recalled_runs %}
@@ -213,6 +214,7 @@ redirect_from:
       <script>
         (function() {
           var evalData = {{ site.data.ai_page_evals | jsonify }};
+          var runsPerEval = evalData.scoring.runs_per_eval;
           var modelById = {};
           var vendorById = {};
           var frameworkById = {};
@@ -346,8 +348,8 @@ redirect_from:
               vendor: vendorById[model.vendor_id],
               accuracy: model.metrics.accuracy_percentage,
               duration: model.metrics.median_duration_seconds,
-              tokensPerRun: Math.round(model.metrics.tokens_per_task / 3),
-              costPerRun: model.metrics.cost_per_task_usd / 3,
+              tokensPerRun: Math.round(model.metrics.tokens_per_task / runsPerEval),
+              costPerRun: model.metrics.cost_per_task_usd / runsPerEval,
               apiRecall: recallPercentage(model)
             };
           });
@@ -606,7 +608,7 @@ redirect_from:
             lastDialogTrigger = trigger;
             dialogModel.textContent = displayName(model) + ' · ' + vendor.name;
             dialogTitle.textContent = 'Overall results';
-            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(Math.round(model.metrics.tokens_per_task / 3)) + ' mean tokens per run · ' + formatBenchmarkCost(model.metrics.cost_per_task_usd / 3) + ' mean cost per run · ' + recallPercentage(model) + '% API recall';
+            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(Math.round(model.metrics.tokens_per_task / runsPerEval)) + ' mean tokens per run · ' + formatBenchmarkCost(model.metrics.cost_per_task_usd / runsPerEval) + ' mean cost per run · ' + recallPercentage(model) + '% API recall';
             dialogResults.replaceChildren();
             evaluations.forEach(function(evalItem) {
               renderResult(evalItem, modelId);
