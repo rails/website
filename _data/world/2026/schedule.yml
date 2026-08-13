@@ -214,6 +214,9 @@ days:
           prompt into an app, Self-healing generation (implement, verify, remediate, commit), and
           how Kamal turns each project into its own preview sandbox.
 
+          Listeners leave with the architecture for an online AI generator built entirely in
+          Rails, ready to generate far beyond "Blog posts with comments".
+
       - time: "3:15 PM"
         type: break
         title: "Break"
