@@ -1,3 +1,7 @@
+body.ai-dialog-open {
+  overflow: hidden;
+}
+
 .ai {
 
   position: relative;
@@ -546,19 +550,21 @@
 
       &:after {
         color: $color-red;
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 1;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
 
     [aria-sort="ascending"] button:after {
-      content: "\2191";
+      content: "\25B2";
     }
 
     [aria-sort="descending"] button:after {
-      content: "\2193";
+      content: "\25BC";
     }
   }
 
@@ -644,6 +650,7 @@
     border-radius: 10px;
     box-shadow: 0 20px 70px rgba($color-black, 0.3);
     color: $color-black;
+    margin: auto;
     max-height: calc(100vh - 40px);
     max-width: 1180px;
     overflow: hidden;
