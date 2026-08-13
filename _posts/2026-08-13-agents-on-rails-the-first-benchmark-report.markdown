@@ -3,7 +3,7 @@ layout: post
 title: "Agents on Rails: the first benchmark report"
 categories: agents
 author: Svyatoslav Kryukov, Artur Petrov
-published: false
+published: true
 date: 2026-08-13
 ---
 
