@@ -65,9 +65,9 @@ redirect_from:
                 <th><button type="button" data-sort-key="model" data-sort-type="text">Model</button></th>
                 <th aria-sort="descending"><button type="button" data-sort-key="accuracy" data-sort-type="number">Accuracy<small>Successful runs</small></button></th>
                 <th><button type="button" data-sort-key="speed" data-sort-type="number">Speed<small>Median</small></button></th>
-                <th><button type="button" data-sort-key="tokens" data-sort-type="number">Tokens<small>Mean per task</small></button></th>
-                <th><button type="button" data-sort-key="cost" data-sort-type="number">Cost<small>Mean per task</small></button></th>
-                <th><button type="button" data-sort-key="api-recall" data-sort-type="number">API Recall<small>Evaluations</small></button></th>
+                <th><button type="button" data-sort-key="tokens" data-sort-type="number">Tokens<small>Mean per run</small></button></th>
+                <th><button type="button" data-sort-key="cost" data-sort-type="number">Cost<small>Mean per run</small></button></th>
+                <th><button type="button" data-sort-key="api-recall" data-sort-type="number">API Recall<small>Runs</small></button></th>
               </tr>
             </thead>
             <tbody>
@@ -75,27 +75,36 @@ redirect_from:
                 {% assign vendor = site.data.ai_page_evals.vendors | where: "id", model.vendor_id | first %}
                 {% assign minutes = model.metrics.median_duration_seconds | divided_by: 60 %}
                 {% assign seconds = model.metrics.median_duration_seconds | modulo: 60 %}
-                <tr data-model="{{ model.name }}">
+                {% assign tokens_per_run = model.metrics.tokens_per_task | divided_by: 3.0 | round %}
+                {% assign cost_per_run = model.metrics.cost_per_task_usd | divided_by: 3.0 %}
+                {% assign recalled_runs_total = 0 %}
+                {% for eval in site.data.ai_page_evals.evals %}
+                  {% assign recalled_runs_total = recalled_runs_total | plus: eval.results[model.id].recalled_runs %}
+                {% endfor %}
+                {% assign api_recall = recalled_runs_total | times: 100.0 | divided_by: model.metrics.total_runs | round: 1 %}
+                {% assign display_name = model.name %}
+                {% if model.id == "sol" %}{% assign display_name = "GPT-5.6 Sol" %}{% endif %}
+                <tr data-model="{{ display_name }}">
                   <th scope="row">
-                    <button type="button" class="ai__model ai__model--button" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} evaluation details">
+                    <button type="button" class="ai__model ai__model--button" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} evaluation details">
                       <img src="{{ vendor.logo }}" alt="{{ vendor.name }}" width="24" height="24" />
-                      <span>{{ model.name }}</span>
+                      <span>{{ display_name }}</span>
                     </button>
                   </th>
                   <td data-sort-column="accuracy" data-sort-value="{{ model.metrics.accuracy_percentage }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.accuracy_percentage >= 83.3 %}ai__score--high{% elsif model.metrics.accuracy_percentage >= 50 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} accuracy details">{{ model.metrics.accuracy_percentage }}%</button>
+                    <button type="button" class="ai__score ai__score--button {% if model.metrics.accuracy_percentage >= 83.3 %}ai__score--high{% elsif model.metrics.accuracy_percentage >= 50 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} accuracy details">{{ model.metrics.accuracy_percentage }}%</button>
                   </td>
                   <td data-sort-column="speed" data-sort-value="{{ model.metrics.median_duration_seconds }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.median_duration_seconds <= 400 %}ai__score--high{% elsif model.metrics.median_duration_seconds <= 700 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} median speed details">{% if minutes > 0 %}{{ minutes }}m {{ seconds }}s{% else %}{{ seconds }}s{% endif %}</button>
+                    <button type="button" class="ai__score ai__score--button {% if model.metrics.median_duration_seconds <= 400 %}ai__score--high{% elsif model.metrics.median_duration_seconds <= 700 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} median speed details">{% if minutes > 0 %}{{ minutes }}m {{ seconds }}s{% else %}{{ seconds }}s{% endif %}</button>
                   </td>
-                  <td data-sort-column="tokens" data-sort-value="{{ model.metrics.tokens_per_task }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.tokens_per_task <= 1500000 %}ai__score--high{% elsif model.metrics.tokens_per_task <= 4000000 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} mean token details">{{ model.metrics.tokens_per_task }}</button>
+                  <td data-sort-column="tokens" data-sort-value="{{ tokens_per_run }}">
+                    <button type="button" class="ai__score ai__score--button {% if tokens_per_run <= 30000 %}ai__score--high{% elsif tokens_per_run <= 50000 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean token details">{{ tokens_per_run }}</button>
                   </td>
-                  <td data-sort-column="cost" data-sort-value="{{ model.metrics.cost_per_task_usd }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.cost_per_task_usd <= 0.1 %}ai__score--high{% elsif model.metrics.cost_per_task_usd <= 3.5 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} mean cost details">${{ model.metrics.cost_per_task_usd | round: 3 }}</button>
+                  <td data-sort-column="cost" data-sort-value="{{ cost_per_run }}">
+                    <button type="button" class="ai__score ai__score--button {% if cost_per_run <= 0.033 %}ai__score--high{% elsif cost_per_run <= 1.17 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean cost details">${{ cost_per_run | round: 3 }}</button>
                   </td>
-                  <td data-sort-column="api-recall" data-sort-value="{{ model.metrics.api_recall_percentage }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.api_recall_percentage >= 33 %}ai__score--high{% elsif model.metrics.api_recall_percentage >= 20 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ model.name }} API recall details">{{ model.metrics.api_recall_percentage }}%</button>
+                  <td data-sort-column="api-recall" data-sort-value="{{ api_recall }}">
+                    <button type="button" class="ai__score ai__score--button {% if api_recall >= 30 %}ai__score--high{% elsif api_recall >= 20 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} API recall details">{{ api_recall }}%</button>
                   </td>
                 </tr>
               {% endfor %}
@@ -116,13 +125,13 @@ redirect_from:
 
           <p class="ai__scroll-hint ai__scroll-hint--chart">Swipe to explore every model <span aria-hidden="true">→</span></p>
           <div class="ai__benchmark-chart__frame">
-            <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean tokens per task">
+            <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean tokens per run">
               <div class="ai__benchmark-chart__y-ticks" data-benchmark-y-ticks aria-hidden="true"></div>
               <div class="ai__benchmark-chart__x-ticks" data-benchmark-x-ticks aria-hidden="true"></div>
               <div class="ai__benchmark-chart__points" data-benchmark-points></div>
             </div>
             <div class="ai__benchmark-chart__y-label">Accuracy <span>Higher is better</span></div>
-            <div class="ai__benchmark-chart__x-label"><span data-benchmark-x-label>Mean tokens per task</span> <small>Lower is better</small></div>
+            <div class="ai__benchmark-chart__x-label"><span data-benchmark-x-label>Mean tokens per run</span> <small>Lower is better</small></div>
           </div>
 
           <ul class="ai__benchmark-chart__legend" aria-label="Chart legend">
@@ -137,7 +146,7 @@ redirect_from:
 
         <div class="ai__methodology">
           <h3>Methodology</h3>
-          <p>Accuracy comes from three runs of each Rails evaluation. Duration is the median, while tokens and cost are means per task. API recall is the percentage of evaluations where the model recalled the target Rails API directly. Select any model or result for the underlying evaluation details.</p>
+          <p>Each model ran every evaluation three times in August 2026, using the provider's default settings — 63 runs per model. Accuracy is the share of runs that passed the evaluation's hidden tests; refusals count as failures, and differences of a few points between models are within run-to-run noise. Speed is the median run duration, and tokens and cost are means per run. API recall is the percentage of runs in which the model reached directly for the target Rails API. Model-level medians come from run-level data, so they can differ slightly from the per-evaluation timings. Select any model or result for the underlying evaluation details.</p>
         </div>
       </section>
 
@@ -186,11 +195,11 @@ redirect_from:
                 <tr>
                   <th>Evaluation</th>
                   <th>Framework</th>
-                  <th>Target API</th>
+                  <th>Target</th>
                   <th>Score</th>
                   <th>Time</th>
                   <th>Tokens/run</th>
-                  <th>Cost</th>
+                  <th>Cost/run</th>
                   <th>API Recall</th>
                 </tr>
               </thead>
@@ -226,6 +235,20 @@ redirect_from:
           evalData.frameworks.forEach(function(framework) {
             frameworkById[framework.id] = framework;
           });
+
+          var displayNames = { sol: 'GPT-5.6 Sol' };
+
+          function displayName(model) {
+            return displayNames[model.id] || model.name;
+          }
+
+          function recallPercentage(model) {
+            var recalledRuns = 0;
+            evalData.evals.forEach(function(evalItem) {
+              recalledRuns += evalItem.results[model.id].recalled_runs;
+            });
+            return Math.round(recalledRuns * 1000 / model.metrics.total_runs) / 10;
+          }
 
           function addTextElement(parent, tagName, className, text) {
             var element = document.createElement(tagName);
@@ -322,9 +345,9 @@ redirect_from:
               vendor: vendorById[model.vendor_id],
               accuracy: model.metrics.accuracy_percentage,
               duration: model.metrics.median_duration_seconds,
-              tokensPerTask: model.metrics.tokens_per_task,
-              costPerTask: model.metrics.cost_per_task_usd,
-              apiRecall: model.metrics.api_recall_percentage
+              tokensPerRun: Math.round(model.metrics.tokens_per_task / 3),
+              costPerRun: model.metrics.cost_per_task_usd / 3,
+              apiRecall: recallPercentage(model)
             };
           });
 
@@ -346,9 +369,9 @@ redirect_from:
               tokens: {
                 title: 'Accuracy vs. token efficiency',
                 description: 'The strongest models rise toward the top-left.',
-                xLabel: 'Mean tokens per task',
+                xLabel: 'Mean tokens per run',
                 xLegend: 'Further left uses fewer tokens',
-                value: function(item) { return item.tokensPerTask; },
+                value: function(item) { return item.tokensPerRun; },
                 format: function(value) {
                   if (value >= 1000000) return (Math.round(value / 100000) / 10) + 'm';
                   return Math.round(value / 1000) + 'k';
@@ -370,10 +393,10 @@ redirect_from:
               },
               cost: {
                 title: 'Accuracy vs. cost',
-                description: 'Models toward the top-left solve more evaluations at a lower mean cost per task. Cost uses a logarithmic scale.',
-                xLabel: 'Mean cost per task',
+                description: 'Models toward the top-left solve more evaluations at a lower mean cost per run. Cost uses a logarithmic scale.',
+                xLabel: 'Mean cost per run',
                 xLegend: 'Further left costs less',
-                value: function(item) { return item.costPerTask; },
+                value: function(item) { return item.costPerRun; },
                 format: formatBenchmarkCost,
                 padding: function(minimum, maximum) {
                   return [Math.log10(minimum * 0.75), Math.log10(maximum * 1.25)];
@@ -473,12 +496,12 @@ redirect_from:
               point.style.top = position.y + 'px';
               point.style.width = pointSize + 'px';
               point.style.height = pointSize + 'px';
-              point.setAttribute('aria-label', item.model.name + ': ' + item.accuracy.toFixed(1) + '% accuracy, ' + integerFormat.format(item.tokensPerTask) + ' mean tokens per task, ' + formatDuration(item.duration) + ' median completion time, ' + formatBenchmarkCost(item.costPerTask) + ' mean cost per task');
+              point.setAttribute('aria-label', displayName(item.model) + ': ' + item.accuracy.toFixed(1) + '% accuracy, ' + integerFormat.format(item.tokensPerRun) + ' mean tokens per run, ' + formatDuration(item.duration) + ' median completion time, ' + formatBenchmarkCost(item.costPerRun) + ' mean cost per run');
 
               logo.src = item.vendor.logo;
               logo.alt = '';
               point.appendChild(logo);
-              addTextElement(point, 'span', null, item.model.name);
+              addTextElement(point, 'span', null, displayName(item.model));
               points.appendChild(point);
             });
 
@@ -580,9 +603,9 @@ redirect_from:
             var evaluations = evalData.evals;
 
             lastDialogTrigger = trigger;
-            dialogModel.textContent = model.name + ' · ' + vendor.name;
+            dialogModel.textContent = displayName(model) + ' · ' + vendor.name;
             dialogTitle.textContent = 'Overall results';
-            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(model.metrics.tokens_per_task) + ' mean tokens per task · ' + formatBenchmarkCost(model.metrics.cost_per_task_usd) + ' mean cost per task · ' + model.metrics.api_recall_percentage + '% API recall';
+            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(Math.round(model.metrics.tokens_per_task / 3)) + ' mean tokens per run · ' + formatBenchmarkCost(model.metrics.cost_per_task_usd / 3) + ' mean cost per run · ' + recallPercentage(model) + '% API recall';
             dialogResults.replaceChildren();
             evaluations.forEach(function(evalItem) {
               renderResult(evalItem, modelId);
