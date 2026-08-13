@@ -7,7 +7,7 @@ body.ai-dialog-open {
   position: relative;
 
   &__body {
-    padding: 70px 0 80px;
+    padding: 35px 0 80px;
     position: relative;
     z-index: 1;
   }
@@ -869,6 +869,11 @@ body.ai-dialog-open {
     color: #b3261e;
   }
 
+  &__benchmark-report {
+    margin: 28px auto 0;
+    text-align: center;
+  }
+
   &__methodology {
     background: rgba($color-white, 0.7);
     border-radius: 8px;
@@ -1087,7 +1092,7 @@ body.ai-dialog-open {
     }
 
     &__body {
-      padding: 90px 0 100px;
+      padding: 50px 0 100px;
     }
 
     &__areas {
