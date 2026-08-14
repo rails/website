@@ -195,7 +195,8 @@
     }
 
     &.case-studies {
-      justify-content: space-around;
+      gap: 2em;
+      justify-content: center;
       margin-bottom: 2em;
 
       li {
@@ -207,6 +208,45 @@
       }
     }
   } // ul
+
+  .podcast {
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    color: $color-grey-5;
+    display: flex;
+    gap: 1.25em;
+    margin-bottom: 2em;
+    padding: 0.75em 1.25em;
+
+    &__logo {
+      flex: 0 0 108px;
+
+      img {
+        display: block;
+        width: 108px;
+      }
+    } // &__logo
+
+    &__body {
+      text-align: center;
+    } // &__body
+
+    &__blurb {
+      margin: 0 0 0.5em;
+      padding: 0;
+      text-wrap: balance;
+    } // &__blurb
+
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em 1.5em;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    } // &__links
+  } // .podcast
 
   &.casestudy {
     overflow: hidden;
@@ -407,6 +447,11 @@
         font-size: 26px;
       }
     }
+
+    .podcast {
+      gap: 1.5em;
+      padding: 0.75em 1.5em;
+    } // .podcast
   } // .docs
 
   .text {
