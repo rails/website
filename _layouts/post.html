@@ -12,10 +12,25 @@
       <div class="post__headline common-headline">
         <h5>{{ page.date | date: '%A, %B %-d, %Y' }}</h5>
         <h1>{{ page.title | strip_html }}</h1>
-{% if page.author %}
+{% if page.authors %}
+        <h6>Posted by {{ page.authors | join: " and " }}</h6>
+{% elsif page.author %}
         <h6>Posted by {{ page.author }}</h6>
 {% endif %}
       </div>
+{% if page.youtube %}
+      <div class="embed-container">
+        <iframe
+          src="https://www.youtube.com/embed/{{ page.youtube }}"
+          title="{{ page.title | strip_html }}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+{% endif %}
       <div class="post__content common-content common-content--post">
         {{ content }}
       </div>

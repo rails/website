@@ -1,0 +1,16 @@
+---
+layout: post
+title: "On Rails — Brian Scanlan: Building AI-First at Intercom"
+categories: podcast
+authors:
+  - Rails Foundation
+  - Robby Russell
+og_image: assets/images/on-rails-podcast.png
+youtube: ADBs2K5Tpz0
+published: true
+date: 2026-04-22
+---
+
+<p>In this episode of On Rails, Robby is joined by <a href='https://www.linkedin.com/in/scanlanb/'><b>Brian Scanlan</b></a>, Senior Principal Engineer at <a href='https://www.intercom.com/'><b>Intercom</b></a>, where a 15-year-old Rails monolith with millions of lines of code sits at the heart of the business.</p><p>Brian shares how Intercom&apos;s philosophy of being &quot;technically conservative&quot; has kept their engineering organization productive and focused on shipping product rather than managing infrastructure complexity, and on Intercom&apos;s all-in bet on <b>Claude Code</b> as their singular AI tool, now generating over 95% of daily code, with over 1,000 weekly users across the company including non-engineers in sales, marketing, and finance. Brian explains their approach to automated code review and PR approvals, how they built a Rails console MCP that lets Claude run production queries (with non-engineers as the top users), their layered plugin and skills architecture, and where AI still falls short in open-ended debugging, using the metaphor of commercial airline pilots who know when to disengage the autopilot.</p><p><b>Tools &amp; Libraries Mentioned</b></p><ul><li>Claude Code — AI coding agent (mandated tool at Intercom) — <a href='https://docs.anthropic.com/en/docs/claude-code/overview'>https://docs.anthropic.com/en/docs/claude-code/overview</a></li><li>Rotoscope — Shopify&apos;s tool for identifying test subsets — <a href='https://github.com/Shopify/rotoscope'>https://github.com/Shopify/rotoscope</a></li><li>Honeycomb — Observability and tracing — <a href='https://www.honeycomb.io/'>https://www.honeycomb.io/</a></li><li>RuboCop — Ruby linting and static analysis — <a href='https://rubocop.org/'>https://rubocop.org/</a></li><li>Snowflake — Cloud data warehouse — <a href='https://www.snowflake.com/'>https://www.snowflake.com/</a></li><li>Datadog — Monitoring and metrics — <a href='https://www.datadoghq.com/'>https://www.datadoghq.com/</a></li><li>GitHub Dependabot — Automated dependency updates — <a href='https://github.com/dependabot'>https://github.com/dependabot</a></li><li>Console1984 — Rails console audit trail gem — <a href='https://github.com/basecamp/console1984'>https://github.com/basecamp/console1984</a></li><li> Playwright — Browser automation (mentioned re: token consumption) — <a href='https://playwright.dev/'>https://playwright.dev/</a></li></ul><p><b>Books Mentioned</b></p><ul><li> Designing Data-Intensive Applications by Martin Kleppmann </li></ul><p><b>Blog Posts Mentioned</b></p><ul><li> Choose Boring Technology by Dan McKinley — <a href='https://mcfunley.com/choose-boring-technology'>https://mcfunley.com/choose-boring-technology</a></li></ul><p><br/></p>
+
+<p><a href="https://podcast.rubyonrails.org/2462975/episodes/19060786-brian-scanlan-building-ai-first-at-intercom">Listen to this episode</a> (1h 51m) or <a href="https://podcast.rubyonrails.org">subscribe to On Rails</a> in your podcast player.</p>
