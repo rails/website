@@ -57,10 +57,21 @@
       "description": "{{ description }}",
       "url": "{{ url }}",
       "image": "{{ image }}"{% if page.collection == 'posts' %},
+{% if page.authors %}
+      "author": [
+{% for author in page.authors %}
+        {
+          "@type": "{% if author == 'Rails Foundation' %}Organization{% else %}Person{% endif %}",
+          "name": "{{ author }}"
+        }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+      ],
+{% else %}
       "author": {
         "@type": "Person",
         "name": "{{ page.author }}"
       },
+{% endif %}
       "datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}
     }
   </script>

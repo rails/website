@@ -37,6 +37,22 @@
 
   }
 
+  // The shared .embed-container reserves a 16:9 box but sizes its iframe to
+  // 80% of it, which leaves a gap under the video. Episode players fill the
+  // box they reserve.
+  .embed-container {
+
+    margin-top: 40px;
+    max-width: 100%;
+
+    iframe {
+      border-radius: 8px;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
   &__content {
 
     border-top: 3px solid rgba($color-black, 0.1);
