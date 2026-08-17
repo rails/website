@@ -32,6 +32,16 @@
    "id": "deepseek",
    "name": "DeepSeek",
    "logo": "/assets/images/ai-vendors/deepseek.svg"
+  },
+  {
+   "id": "google",
+   "name": "Google",
+   "logo": "/assets/images/ai-vendors/google.svg"
+  },
+  {
+   "id": "xai",
+   "name": "xAI",
+   "logo": "/assets/images/ai-vendors/xai.svg"
   }
  ],
  "models": [
@@ -42,9 +52,9 @@
    "metrics": {
     "accuracy_percentage": 92.1,
     "median_duration_seconds": 582,
-    "tokens_per_task": 141000,
-    "cost_per_task_usd": 5.7,
-    "api_recall_percentage": 31.7,
+    "tokens_per_run": 47000,
+    "cost_per_run_usd": 1.9,
+    "api_recall_percentage": 34.9,
     "successful_runs": 58,
     "total_runs": 63
    }
@@ -56,9 +66,9 @@
    "metrics": {
     "accuracy_percentage": 90.5,
     "median_duration_seconds": 765,
-    "tokens_per_task": 153000,
-    "cost_per_task_usd": 3.27,
-    "api_recall_percentage": 23.8,
+    "tokens_per_run": 51000,
+    "cost_per_run_usd": 1.09,
+    "api_recall_percentage": 31.7,
     "successful_runs": 57,
     "total_runs": 63
    }
@@ -70,8 +80,8 @@
    "metrics": {
     "accuracy_percentage": 90.5,
     "median_duration_seconds": 407,
-    "tokens_per_task": 74000,
-    "cost_per_task_usd": 6.95,
+    "tokens_per_run": 24700,
+    "cost_per_run_usd": 2.32,
     "api_recall_percentage": 33.3,
     "successful_runs": 57,
     "total_runs": 63
@@ -84,10 +94,52 @@
    "metrics": {
     "accuracy_percentage": 84.1,
     "median_duration_seconds": 304,
-    "tokens_per_task": 84000,
-    "cost_per_task_usd": 1.56,
+    "tokens_per_run": 27900,
+    "cost_per_run_usd": 0.52,
     "api_recall_percentage": 31.7,
     "successful_runs": 53,
+    "total_runs": 63
+   }
+  },
+  {
+   "id": "grok-4-6",
+   "name": "GROK-4.6",
+   "vendor_id": "xai",
+   "metrics": {
+    "accuracy_percentage": 82.5,
+    "median_duration_seconds": 650,
+    "tokens_per_run": 37100,
+    "cost_per_run_usd": 0.778,
+    "api_recall_percentage": 33.3,
+    "successful_runs": 52,
+    "total_runs": 63
+   }
+  },
+  {
+   "id": "glm-5-3",
+   "name": "GLM-5.3",
+   "vendor_id": "z-ai",
+   "metrics": {
+    "accuracy_percentage": 79.4,
+    "median_duration_seconds": 941,
+    "tokens_per_run": 43600,
+    "cost_per_run_usd": null,
+    "api_recall_percentage": 19.0,
+    "successful_runs": 50,
+    "total_runs": 63
+   }
+  },
+  {
+   "id": "opus-4-8",
+   "name": "OPUS-4.8",
+   "vendor_id": "anthropic",
+   "metrics": {
+    "accuracy_percentage": 79.4,
+    "median_duration_seconds": 216,
+    "tokens_per_run": 29000,
+    "cost_per_run_usd": 0.706,
+    "api_recall_percentage": 15.9,
+    "successful_runs": 50,
     "total_runs": 63
    }
   },
@@ -98,8 +150,8 @@
    "metrics": {
     "accuracy_percentage": 76.2,
     "median_duration_seconds": 944,
-    "tokens_per_task": 205000,
-    "cost_per_task_usd": 5.06,
+    "tokens_per_run": 68400,
+    "cost_per_run_usd": 1.69,
     "api_recall_percentage": 22.2,
     "successful_runs": 48,
     "total_runs": 63
@@ -112,10 +164,24 @@
    "metrics": {
     "accuracy_percentage": 73.0,
     "median_duration_seconds": 199,
-    "tokens_per_task": 63000,
-    "cost_per_task_usd": 0.0429,
+    "tokens_per_run": 21100,
+    "cost_per_run_usd": 0.0143,
     "api_recall_percentage": 25.4,
     "successful_runs": 46,
+    "total_runs": 63
+   }
+  },
+  {
+   "id": "gemini-3-7-flash",
+   "name": "GEMINI-3.7-FLASH",
+   "vendor_id": "google",
+   "metrics": {
+    "accuracy_percentage": 71.4,
+    "median_duration_seconds": 527,
+    "tokens_per_run": 50800,
+    "cost_per_run_usd": 0.283,
+    "api_recall_percentage": 27.0,
+    "successful_runs": 45,
     "total_runs": 63
    }
   },
@@ -126,8 +192,8 @@
    "metrics": {
     "accuracy_percentage": 66.7,
     "median_duration_seconds": 360,
-    "tokens_per_task": 99000,
-    "cost_per_task_usd": 0.717,
+    "tokens_per_run": 33100,
+    "cost_per_run_usd": 0.239,
     "api_recall_percentage": 11.1,
     "successful_runs": 42,
     "total_runs": 63
@@ -140,9 +206,9 @@
    "metrics": {
     "accuracy_percentage": 65.1,
     "median_duration_seconds": 408,
-    "tokens_per_task": 133000,
-    "cost_per_task_usd": 0.0916,
-    "api_recall_percentage": 7.9,
+    "tokens_per_run": 44400,
+    "cost_per_run_usd": 0.0305,
+    "api_recall_percentage": 12.7,
     "successful_runs": 41,
     "total_runs": 63
    }
@@ -199,7 +265,7 @@
     "kimi-k3": {
      "score": 3,
      "cost_usd": 0.42,
-     "recalled_runs": 2,
+     "recalled_runs": 3,
      "duration_seconds": 577,
      "average_tokens_per_run": 22600
     },
@@ -217,6 +283,27 @@
      "duration_seconds": 241,
      "average_tokens_per_run": 18500
     },
+    "grok-4-6": {
+     "score": 1,
+     "cost_usd": 0.28,
+     "recalled_runs": 3,
+     "duration_seconds": 307,
+     "average_tokens_per_run": 21600
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 852,
+     "average_tokens_per_run": 33200
+    },
+    "opus-4-8": {
+     "score": 2,
+     "cost_usd": 0.25,
+     "recalled_runs": 0,
+     "duration_seconds": 126,
+     "average_tokens_per_run": 13800
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 0.63,
@@ -230,6 +317,13 @@
      "recalled_runs": 3,
      "duration_seconds": 179,
      "average_tokens_per_run": 14200
+    },
+    "gemini-3-7-flash": {
+     "score": 0,
+     "cost_usd": 0.01,
+     "recalled_runs": 0,
+     "duration_seconds": 56,
+     "average_tokens_per_run": 2300
     },
     "glm-5-2": {
      "score": 2,
@@ -281,6 +375,27 @@
      "duration_seconds": 218,
      "average_tokens_per_run": 22900
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.97,
+     "recalled_runs": 3,
+     "duration_seconds": 1246,
+     "average_tokens_per_run": 31900
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 1,
+     "duration_seconds": 938,
+     "average_tokens_per_run": 26100
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.42,
+     "recalled_runs": 3,
+     "duration_seconds": 199,
+     "average_tokens_per_run": 21600
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.48,
@@ -294,6 +409,13 @@
      "recalled_runs": 0,
      "duration_seconds": 188,
      "average_tokens_per_run": 20400
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.13,
+     "recalled_runs": 2,
+     "duration_seconds": 327,
+     "average_tokens_per_run": 26400
     },
     "glm-5-2": {
      "score": 3,
@@ -342,8 +464,29 @@
      "score": 3,
      "cost_usd": 0.33,
      "recalled_runs": 3,
-     "duration_seconds": 235,
+     "duration_seconds": 234,
      "average_tokens_per_run": 19800
+    },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.39,
+     "recalled_runs": 3,
+     "duration_seconds": 436,
+     "average_tokens_per_run": 29500
+    },
+    "glm-5-3": {
+     "score": 2,
+     "cost_usd": null,
+     "recalled_runs": 2,
+     "duration_seconds": 1192,
+     "average_tokens_per_run": 51300
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.32,
+     "recalled_runs": 1,
+     "duration_seconds": 164,
+     "average_tokens_per_run": 15600
     },
     "muse-1-2": {
      "score": 3,
@@ -359,6 +502,13 @@
      "duration_seconds": 166,
      "average_tokens_per_run": 15300
     },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.25,
+     "recalled_runs": 3,
+     "duration_seconds": 450,
+     "average_tokens_per_run": 44900
+    },
     "glm-5-2": {
      "score": 0,
      "cost_usd": 0.19,
@@ -369,7 +519,7 @@
     "deepseek": {
      "score": 1,
      "cost_usd": 0.02,
-     "recalled_runs": 0,
+     "recalled_runs": 1,
      "duration_seconds": 403,
      "average_tokens_per_run": 31600
     }
@@ -384,7 +534,7 @@
     "opus-5": {
      "score": 3,
      "cost_usd": 1.05,
-     "recalled_runs": 0,
+     "recalled_runs": 1,
      "duration_seconds": 582,
      "average_tokens_per_run": 35200
     },
@@ -409,6 +559,27 @@
      "duration_seconds": 376,
      "average_tokens_per_run": 17100
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.82,
+     "recalled_runs": 1,
+     "duration_seconds": 1284,
+     "average_tokens_per_run": 36500
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 988,
+     "average_tokens_per_run": 33900
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.56,
+     "recalled_runs": 0,
+     "duration_seconds": 265,
+     "average_tokens_per_run": 24500
+    },
     "muse-1-2": {
      "score": 2,
      "cost_usd": 1.37,
@@ -422,6 +593,13 @@
      "recalled_runs": 0,
      "duration_seconds": 380,
      "average_tokens_per_run": 21300
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.16,
+     "recalled_runs": 3,
+     "duration_seconds": 339,
+     "average_tokens_per_run": 32400
     },
     "glm-5-2": {
      "score": 2,
@@ -473,6 +651,27 @@
      "duration_seconds": 288,
      "average_tokens_per_run": 20500
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.71,
+     "recalled_runs": 0,
+     "duration_seconds": 769,
+     "average_tokens_per_run": 33300
+    },
+    "glm-5-3": {
+     "score": 2,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 825,
+     "average_tokens_per_run": 34200
+    },
+    "opus-4-8": {
+     "score": 2,
+     "cost_usd": 0.48,
+     "recalled_runs": 0,
+     "duration_seconds": 187,
+     "average_tokens_per_run": 23000
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.21,
@@ -486,6 +685,13 @@
      "recalled_runs": 0,
      "duration_seconds": 249,
      "average_tokens_per_run": 23100
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.33,
+     "recalled_runs": 0,
+     "duration_seconds": 588,
+     "average_tokens_per_run": 59900
     },
     "glm-5-2": {
      "score": 3,
@@ -537,6 +743,27 @@
      "duration_seconds": 297,
      "average_tokens_per_run": 21900
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.73,
+     "recalled_runs": 0,
+     "duration_seconds": 650,
+     "average_tokens_per_run": 34700
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 707,
+     "average_tokens_per_run": 30700
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.38,
+     "recalled_runs": 0,
+     "duration_seconds": 158,
+     "average_tokens_per_run": 20600
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.19,
@@ -550,6 +777,13 @@
      "recalled_runs": 0,
      "duration_seconds": 213,
      "average_tokens_per_run": 22100
+    },
+    "gemini-3-7-flash": {
+     "score": 2,
+     "cost_usd": 0.18,
+     "recalled_runs": 0,
+     "duration_seconds": 392,
+     "average_tokens_per_run": 38200
     },
     "glm-5-2": {
      "score": 3,
@@ -601,6 +835,27 @@
      "duration_seconds": 238,
      "average_tokens_per_run": 18800
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.36,
+     "recalled_runs": 0,
+     "duration_seconds": 414,
+     "average_tokens_per_run": 23800
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 585,
+     "average_tokens_per_run": 27100
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.36,
+     "recalled_runs": 0,
+     "duration_seconds": 173,
+     "average_tokens_per_run": 17200
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 0.55,
@@ -614,6 +869,13 @@
      "recalled_runs": 0,
      "duration_seconds": 154,
      "average_tokens_per_run": 16000
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.14,
+     "recalled_runs": 0,
+     "duration_seconds": 323,
+     "average_tokens_per_run": 26900
     },
     "glm-5-2": {
      "score": 3,
@@ -640,15 +902,15 @@
     "opus-5": {
      "score": 3,
      "cost_usd": 1.37,
-     "recalled_runs": 2,
+     "recalled_runs": 3,
      "duration_seconds": 594,
      "average_tokens_per_run": 34200
     },
     "kimi-k3": {
      "score": 2,
      "cost_usd": 0.78,
-     "recalled_runs": 0,
-     "duration_seconds": 763,
+     "recalled_runs": 3,
+     "duration_seconds": 764,
      "average_tokens_per_run": 41800
     },
     "fable-5": {
@@ -665,6 +927,27 @@
      "duration_seconds": 316,
      "average_tokens_per_run": 24000
     },
+    "grok-4-6": {
+     "score": 1,
+     "cost_usd": 0.71,
+     "recalled_runs": 3,
+     "duration_seconds": 1152,
+     "average_tokens_per_run": 29100
+    },
+    "glm-5-3": {
+     "score": 1,
+     "cost_usd": null,
+     "recalled_runs": 2,
+     "duration_seconds": 939,
+     "average_tokens_per_run": 26900
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.84,
+     "recalled_runs": 2,
+     "duration_seconds": 326,
+     "average_tokens_per_run": 32900
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 0.91,
@@ -679,6 +962,13 @@
      "duration_seconds": 184,
      "average_tokens_per_run": 13600
     },
+    "gemini-3-7-flash": {
+     "score": 2,
+     "cost_usd": 0.21,
+     "recalled_runs": 3,
+     "duration_seconds": 527,
+     "average_tokens_per_run": 35400
+    },
     "glm-5-2": {
      "score": 2,
      "cost_usd": 0.21,
@@ -689,7 +979,7 @@
     "deepseek": {
      "score": 0,
      "cost_usd": 0.02,
-     "recalled_runs": 2,
+     "recalled_runs": 3,
      "duration_seconds": 570,
      "average_tokens_per_run": 35800
     }
@@ -729,6 +1019,27 @@
      "duration_seconds": 209,
      "average_tokens_per_run": 22200
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.21,
+     "recalled_runs": 0,
+     "duration_seconds": 262,
+     "average_tokens_per_run": 20400
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 483,
+     "average_tokens_per_run": 24500
+    },
+    "opus-4-8": {
+     "score": 1,
+     "cost_usd": 0.4,
+     "recalled_runs": 0,
+     "duration_seconds": 172,
+     "average_tokens_per_run": 18900
+    },
     "muse-1-2": {
      "score": 0,
      "cost_usd": 0.46,
@@ -742,6 +1053,13 @@
      "recalled_runs": 0,
      "duration_seconds": 157,
      "average_tokens_per_run": 16800
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.24,
+     "recalled_runs": 0,
+     "duration_seconds": 553,
+     "average_tokens_per_run": 44000
     },
     "glm-5-2": {
      "score": 2,
@@ -793,6 +1111,27 @@
      "duration_seconds": 566,
      "average_tokens_per_run": 48000
     },
+    "grok-4-6": {
+     "score": 0,
+     "cost_usd": 1.03,
+     "recalled_runs": 0,
+     "duration_seconds": 1264,
+     "average_tokens_per_run": 45800
+    },
+    "glm-5-3": {
+     "score": 0,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 1129,
+     "average_tokens_per_run": 57500
+    },
+    "opus-4-8": {
+     "score": 0,
+     "cost_usd": 1.39,
+     "recalled_runs": 0,
+     "duration_seconds": 356,
+     "average_tokens_per_run": 52200
+    },
     "muse-1-2": {
      "score": 0,
      "cost_usd": 2.85,
@@ -806,6 +1145,13 @@
      "recalled_runs": 0,
      "duration_seconds": 212,
      "average_tokens_per_run": 24100
+    },
+    "gemini-3-7-flash": {
+     "score": 0,
+     "cost_usd": 0.51,
+     "recalled_runs": 0,
+     "duration_seconds": 745,
+     "average_tokens_per_run": 96200
     },
     "glm-5-2": {
      "score": 0,
@@ -857,6 +1203,27 @@
      "duration_seconds": 255,
      "average_tokens_per_run": 16300
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.38,
+     "recalled_runs": 0,
+     "duration_seconds": 534,
+     "average_tokens_per_run": 26700
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 714,
+     "average_tokens_per_run": 31400
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.44,
+     "recalled_runs": 0,
+     "duration_seconds": 165,
+     "average_tokens_per_run": 20900
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 0.71,
@@ -870,6 +1237,13 @@
      "recalled_runs": 0,
      "duration_seconds": 173,
      "average_tokens_per_run": 18800
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.16,
+     "recalled_runs": 0,
+     "duration_seconds": 305,
+     "average_tokens_per_run": 24200
     },
     "glm-5-2": {
      "score": 3,
@@ -921,6 +1295,27 @@
      "duration_seconds": 395,
      "average_tokens_per_run": 34400
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 1.02,
+     "recalled_runs": 0,
+     "duration_seconds": 1356,
+     "average_tokens_per_run": 46000
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 1963,
+     "average_tokens_per_run": 41400
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 1.58,
+     "recalled_runs": 0,
+     "duration_seconds": 515,
+     "average_tokens_per_run": 50600
+    },
     "muse-1-2": {
      "score": 2,
      "cost_usd": 3.81,
@@ -934,6 +1329,13 @@
      "recalled_runs": 0,
      "duration_seconds": 230,
      "average_tokens_per_run": 39500
+    },
+    "gemini-3-7-flash": {
+     "score": 2,
+     "cost_usd": 0.23,
+     "recalled_runs": 0,
+     "duration_seconds": 328,
+     "average_tokens_per_run": 53400
     },
     "glm-5-2": {
      "score": 2,
@@ -985,6 +1387,27 @@
      "duration_seconds": 217,
      "average_tokens_per_run": 29100
     },
+    "grok-4-6": {
+     "score": 0,
+     "cost_usd": 0.98,
+     "recalled_runs": 0,
+     "duration_seconds": 640,
+     "average_tokens_per_run": 46700
+    },
+    "glm-5-3": {
+     "score": 1,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 1320,
+     "average_tokens_per_run": 58200
+    },
+    "opus-4-8": {
+     "score": 0,
+     "cost_usd": 0.57,
+     "recalled_runs": 0,
+     "duration_seconds": 191,
+     "average_tokens_per_run": 26200
+    },
     "muse-1-2": {
      "score": 1,
      "cost_usd": 3.88,
@@ -998,6 +1421,13 @@
      "recalled_runs": 0,
      "duration_seconds": 186,
      "average_tokens_per_run": 21800
+    },
+    "gemini-3-7-flash": {
+     "score": 0,
+     "cost_usd": 0.51,
+     "recalled_runs": 0,
+     "duration_seconds": 647,
+     "average_tokens_per_run": 88300
     },
     "glm-5-2": {
      "score": 0,
@@ -1049,6 +1479,27 @@
      "duration_seconds": 430,
      "average_tokens_per_run": 55000
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 1.51,
+     "recalled_runs": 0,
+     "duration_seconds": 1256,
+     "average_tokens_per_run": 62300
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 1330,
+     "average_tokens_per_run": 84700
+    },
+    "opus-4-8": {
+     "score": 2,
+     "cost_usd": 1.59,
+     "recalled_runs": 0,
+     "duration_seconds": 396,
+     "average_tokens_per_run": 55800
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 2.26,
@@ -1062,6 +1513,13 @@
      "recalled_runs": 0,
      "duration_seconds": 193,
      "average_tokens_per_run": 27200
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.32,
+     "recalled_runs": 0,
+     "duration_seconds": 552,
+     "average_tokens_per_run": 65500
     },
     "glm-5-2": {
      "score": 2,
@@ -1113,6 +1571,27 @@
      "duration_seconds": 486,
      "average_tokens_per_run": 44400
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 2.2,
+     "recalled_runs": 0,
+     "duration_seconds": 2712,
+     "average_tokens_per_run": 65700
+    },
+    "glm-5-3": {
+     "score": 2,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 5798,
+     "average_tokens_per_run": 83600
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 1.16,
+     "recalled_runs": 0,
+     "duration_seconds": 383,
+     "average_tokens_per_run": 44000
+    },
     "muse-1-2": {
      "score": 1,
      "cost_usd": 4.65,
@@ -1127,11 +1606,18 @@
      "duration_seconds": 221,
      "average_tokens_per_run": 25200
     },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.62,
+     "recalled_runs": 0,
+     "duration_seconds": 886,
+     "average_tokens_per_run": 99900
+    },
     "glm-5-2": {
      "score": 3,
      "cost_usd": 0.58,
      "recalled_runs": 0,
-     "duration_seconds": 531,
+     "duration_seconds": 532,
      "average_tokens_per_run": 73100
     },
     "deepseek": {
@@ -1153,7 +1639,7 @@
      "score": 3,
      "cost_usd": 2.97,
      "recalled_runs": 0,
-     "duration_seconds": 953,
+     "duration_seconds": 952,
      "average_tokens_per_run": 78200
     },
     "kimi-k3": {
@@ -1177,6 +1663,27 @@
      "duration_seconds": 409,
      "average_tokens_per_run": 34100
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 1.19,
+     "recalled_runs": 0,
+     "duration_seconds": 811,
+     "average_tokens_per_run": 52400
+    },
+    "glm-5-3": {
+     "score": 1,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 1071,
+     "average_tokens_per_run": 53700
+    },
+    "opus-4-8": {
+     "score": 1,
+     "cost_usd": 1.13,
+     "recalled_runs": 0,
+     "duration_seconds": 342,
+     "average_tokens_per_run": 42700
+    },
     "muse-1-2": {
      "score": 0,
      "cost_usd": 2.49,
@@ -1190,6 +1697,13 @@
      "recalled_runs": 0,
      "duration_seconds": 233,
      "average_tokens_per_run": 24700
+    },
+    "gemini-3-7-flash": {
+     "score": 1,
+     "cost_usd": 0.7,
+     "recalled_runs": 0,
+     "duration_seconds": 1025,
+     "average_tokens_per_run": 99900
     },
     "glm-5-2": {
      "score": 1,
@@ -1241,6 +1755,27 @@
      "duration_seconds": 343,
      "average_tokens_per_run": 42500
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.87,
+     "recalled_runs": 3,
+     "duration_seconds": 550,
+     "average_tokens_per_run": 46400
+    },
+    "glm-5-3": {
+     "score": 2,
+     "cost_usd": null,
+     "recalled_runs": 1,
+     "duration_seconds": 2923,
+     "average_tokens_per_run": 77700
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.85,
+     "recalled_runs": 0,
+     "duration_seconds": 254,
+     "average_tokens_per_run": 37600
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.03,
@@ -1254,6 +1789,13 @@
      "recalled_runs": 3,
      "duration_seconds": 180,
      "average_tokens_per_run": 31000
+    },
+    "gemini-3-7-flash": {
+     "score": 2,
+     "cost_usd": 0.27,
+     "recalled_runs": 2,
+     "duration_seconds": 647,
+     "average_tokens_per_run": 61300
     },
     "glm-5-2": {
      "score": 2,
@@ -1295,7 +1837,7 @@
      "score": 3,
      "cost_usd": 0.5,
      "recalled_runs": 0,
-     "duration_seconds": 213,
+     "duration_seconds": 212,
      "average_tokens_per_run": 11400
     },
     "sol": {
@@ -1304,6 +1846,27 @@
      "recalled_runs": 0,
      "duration_seconds": 204,
      "average_tokens_per_run": 14800
+    },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.23,
+     "recalled_runs": 0,
+     "duration_seconds": 204,
+     "average_tokens_per_run": 19100
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 572,
+     "average_tokens_per_run": 24000
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.25,
+     "recalled_runs": 0,
+     "duration_seconds": 122,
+     "average_tokens_per_run": 12800
     },
     "muse-1-2": {
      "score": 3,
@@ -1318,6 +1881,13 @@
      "recalled_runs": 0,
      "duration_seconds": 261,
      "average_tokens_per_run": 13600
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.2,
+     "recalled_runs": 0,
+     "duration_seconds": 213,
+     "average_tokens_per_run": 29900
     },
     "glm-5-2": {
      "score": 3,
@@ -1369,6 +1939,27 @@
      "duration_seconds": 402,
      "average_tokens_per_run": 30800
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.66,
+     "recalled_runs": 3,
+     "duration_seconds": 338,
+     "average_tokens_per_run": 42900
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 3,
+     "duration_seconds": 779,
+     "average_tokens_per_run": 52000
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.5,
+     "recalled_runs": 3,
+     "duration_seconds": 199,
+     "average_tokens_per_run": 23600
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.73,
@@ -1383,6 +1974,13 @@
      "duration_seconds": 206,
      "average_tokens_per_run": 14700
     },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.26,
+     "recalled_runs": 3,
+     "duration_seconds": 612,
+     "average_tokens_per_run": 50000
+    },
     "glm-5-2": {
      "score": 2,
      "cost_usd": 0.16,
@@ -1394,7 +1992,7 @@
      "score": 3,
      "cost_usd": 0.02,
      "recalled_runs": 3,
-     "duration_seconds": 459,
+     "duration_seconds": 460,
      "average_tokens_per_run": 35200
     }
    }
@@ -1416,7 +2014,7 @@
      "score": 3,
      "cost_usd": 0.86,
      "recalled_runs": 0,
-     "duration_seconds": 847,
+     "duration_seconds": 848,
      "average_tokens_per_run": 37500
     },
     "fable-5": {
@@ -1433,6 +2031,27 @@
      "duration_seconds": 289,
      "average_tokens_per_run": 21100
     },
+    "grok-4-6": {
+     "score": 2,
+     "cost_usd": 0.76,
+     "recalled_runs": 0,
+     "duration_seconds": 771,
+     "average_tokens_per_run": 42000
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 0,
+     "duration_seconds": 734,
+     "average_tokens_per_run": 33400
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.66,
+     "recalled_runs": 0,
+     "duration_seconds": 243,
+     "average_tokens_per_run": 28300
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 0.9,
@@ -1447,6 +2066,13 @@
      "duration_seconds": 201,
      "average_tokens_per_run": 21900
     },
+    "gemini-3-7-flash": {
+     "score": 0,
+     "cost_usd": 0.28,
+     "recalled_runs": 0,
+     "duration_seconds": 560,
+     "average_tokens_per_run": 45900
+    },
     "glm-5-2": {
      "score": 1,
      "cost_usd": 0.25,
@@ -1457,7 +2083,7 @@
     "deepseek": {
      "score": 0,
      "cost_usd": 0.02,
-     "recalled_runs": 0,
+     "recalled_runs": 1,
      "duration_seconds": 463,
      "average_tokens_per_run": 32200
     }
@@ -1479,7 +2105,7 @@
     "kimi-k3": {
      "score": 3,
      "cost_usd": 0.71,
-     "recalled_runs": 2,
+     "recalled_runs": 3,
      "duration_seconds": 969,
      "average_tokens_per_run": 37400
     },
@@ -1497,6 +2123,27 @@
      "duration_seconds": 501,
      "average_tokens_per_run": 29400
     },
+    "grok-4-6": {
+     "score": 3,
+     "cost_usd": 0.32,
+     "recalled_runs": 2,
+     "duration_seconds": 308,
+     "average_tokens_per_run": 22000
+    },
+    "glm-5-3": {
+     "score": 3,
+     "cost_usd": null,
+     "recalled_runs": 3,
+     "duration_seconds": 1083,
+     "average_tokens_per_run": 30800
+    },
+    "opus-4-8": {
+     "score": 3,
+     "cost_usd": 0.69,
+     "recalled_runs": 1,
+     "duration_seconds": 431,
+     "average_tokens_per_run": 27100
+    },
     "muse-1-2": {
      "score": 3,
      "cost_usd": 1.94,
@@ -1510,6 +2157,13 @@
      "recalled_runs": 0,
      "duration_seconds": 204,
      "average_tokens_per_run": 17600
+    },
+    "gemini-3-7-flash": {
+     "score": 3,
+     "cost_usd": 0.22,
+     "recalled_runs": 1,
+     "duration_seconds": 693,
+     "average_tokens_per_run": 41200
     },
     "glm-5-2": {
      "score": 3,
