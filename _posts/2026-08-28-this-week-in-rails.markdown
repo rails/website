@@ -12,8 +12,8 @@ date: 2026-08-28
 Hi, it's [Greg](https://greg.molnar.io). Let's explore this week's changes in the Rails codebase.
 
 [Agents on Rails: lemans goes open source](https://rubyonrails.org/2026/8/24/agents-on-rails-lemans)  
-Another week, another step for Agents on Rails. This one is a big one: lemans,
-the harness behind every number we’ve published, is now open source Also four
+Another week, another update from Agents on Rails. This one is a big one: lemans,
+the harness behind every number we’ve published, is now open source. Also four
 new models were added: Sonnet 5, Terra, an open-weight Qwen you can run on your
 own machine, and one that won’t tell us its name.
 
