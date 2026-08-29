@@ -40,7 +40,7 @@ A caption of `[click](javascript:alert(1))` previously produced
 vulnerabilities.
 
 [Add Herb as an HTML-aware ERB implementation](https://github.com/rails/rails/pull/58552)  
-This pull request adds `ActionView::Template::Handlers::ERB::Herb`, a `::Herb::Engine` subclass that closly mirrors `ActionView::Template::Handlers::ERB::Erubi`. `Herb::Engine` is specifically built for HTML+ERB templates and is designed to be API-comaptible with `Erubi::Engine`.
+This pull request adds `ActionView::Template::Handlers::ERB::Herb`, a `::Herb::Engine` subclass that closly mirrors `ActionView::Template::Handlers::ERB::Erubi`. `Herb::Engine` is specifically built for HTML+ERB templates and is designed to be API-compatible with `Erubi::Engine`.
 Herb parses HTML and ERB into a single syntax tree and uses Prism to parse the Ruby inside the ERB tags. Based on this parser, `Herb::Engine` is an HTML-aware ERB rendering engine that also understands the HTML semantics during template compilation, guaranteeing that templates cannot produce invalid Ruby and markup.
 
 [Allow `translate`'s `scope:` argument to resolve relative i18n keys with leading period ](https://github.com/rails/rails/pull/58504)  
