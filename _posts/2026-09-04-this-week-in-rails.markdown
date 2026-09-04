@@ -20,7 +20,7 @@ Robby Russell spoke with Eddie Galindo and Kagen Hearn from Ascend about scaling
 [Rails keeps moving toward Ractor support](https://github.com/rails/rails/pull/58647)  
 Rails made controller configuration, [Action View settings](https://github.com/rails/rails/pull/58620), [Active Record commit callbacks](https://github.com/rails/rails/pull/58653), and [time zone configuration](https://github.com/rails/rails/pull/58642) shareable across Ractors.
 
-Active Record's schema context also [preloads schemas to prevent a deadlock](https://github.com/rails/rails/pull/58651), while [event reporters](https://github.com/rails/rails/pull/58599) now use per-Ractor storage on non-main Ractors.
+Active Record's schema context also [no longer deadlocks when initializing attributes](https://github.com/rails/rails/pull/58651), while [event reporters](https://github.com/rails/rails/pull/58599) now use per-Ractor storage on non-main Ractors.
 
 [Fix TypeCaster sometimes leaking a connection](https://github.com/rails/rails/pull/58645)  
 `TypeCaster` now uses `with_connection`, so it checks the connection back into the pool immediately instead of relying on executor cleanup. This fixes a connection leak seen in `ActionController::Live` actions.
