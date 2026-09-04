@@ -60,7 +60,7 @@ Active Support now passes options to `JSON.parse` as keyword arguments, which is
 New Rails applications now set a 15-minute timeout on each generated GitHub Actions job. Applications with longer test suites can raise or remove the limit.
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-08-28%7D...main@%7B2026-09-04%7D)._  
-_We had [23 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260828-20260904) to the Rails codebase this past week!_
+_We had [25 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260828-20260904) to the Rails codebase this past week!_
 
 Until next time!  
 
