@@ -25,7 +25,7 @@ Active Record's schema context also [no longer deadlocks when initializing attri
 [Fix TypeCaster sometimes leaking a connection](https://github.com/rails/rails/pull/58645)  
 `TypeCaster` now uses `with_connection`, so it checks the connection back into the pool immediately instead of relying on executor cleanup. This fixes a connection leak seen in `ActionController::Live` actions.
 
-[Preserve `fetch_multi` key order with a local cache](https://github.com/rails/rails/pull/58639)  
+[Preserve fetch_multi key order with a local cache](https://github.com/rails/rails/pull/58639)  
 `ActiveSupport::Cache::Strategy::LocalCache#fetch_multi` used to return local hits before misses, changing the order requested by the caller. It now returns keys in the original order, matching `Store#fetch_multi`.
 
 [Configure PostgreSQL error verbosity](https://github.com/rails/rails/pull/58638)  
@@ -37,7 +37,7 @@ production:
   error_verbosity: <%= PG::PQERRORS_TERSE %>
 ```
 
-[Re-enable PostgreSQL triggers when `disable_referential_integrity` raises](https://github.com/rails/rails/pull/58635)  
+[Re-enable PostgreSQL triggers when disable_referential_integrity raises](https://github.com/rails/rails/pull/58635)  
 Rails now restores disabled triggers from an `ensure` block. Raising inside `disable_referential_integrity` no longer risks leaving triggers disabled after the block exits.
 
 [Avoid a redundant join in scoped through associations](https://github.com/rails/rails/pull/58625)  
@@ -58,6 +58,9 @@ Active Support now passes options to `JSON.parse` as keyword arguments, which is
 
 [Add timeouts to generated GitHub Actions jobs](https://github.com/rails/rails/pull/58595)  
 New Rails applications now set a 15-minute timeout on each generated GitHub Actions job. Applications with longer test suites can raise or remove the limit.
+
+[Two new guides are up for review](https://github.com/rails/rails/pull/58617)  
+The much anticipated [Hotwire guide](https://github.com/rails/rails/pull/58617) and a [rewrite of the Securing Rails guide](https://github.com/rails/rails/pull/58618) are open for review. Take a look and share your feedback!
 
 _You can view the whole list of changes [here](https://github.com/rails/rails/compare/@%7B2026-08-28%7D...main@%7B2026-09-04%7D)._  
 _We had [25 contributors](https://contributors.rubyonrails.org/contributors/in-time-window/20260828-20260904) to the Rails codebase this past week!_
