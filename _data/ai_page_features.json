@@ -1,0 +1,1654 @@
+{
+  "scoring": {
+    "runs_per_eval": 3
+  },
+  "vendors": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "logo": "/assets/images/ai-vendors/anthropic.svg"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "logo": "/assets/images/ai-vendors/openai.svg"
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "logo": "/assets/images/ai-vendors/google.svg"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "logo": "/assets/images/ai-vendors/xai.svg"
+    },
+    {
+      "id": "moonshot-ai",
+      "name": "Moonshot AI",
+      "logo": "/assets/images/ai-vendors/moonshot-ai.svg"
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "logo": "/assets/images/ai-vendors/meta.svg"
+    },
+    {
+      "id": "z-ai",
+      "name": "Z.ai",
+      "logo": "/assets/images/ai-vendors/z-ai.svg"
+    }
+  ],
+  "models": [
+    {
+      "id": "astra",
+      "name": "GPT-6 Astra",
+      "vendor_id": "openai",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 35.0,
+        "median_duration_seconds": 551,
+        "tokens_per_run": 58000,
+        "cost_per_run_usd": 2.51,
+        "successful_runs": 21,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "fable-5-1",
+      "name": "Claude Fable 5.1",
+      "vendor_id": "anthropic",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 30.0,
+        "median_duration_seconds": 1405,
+        "tokens_per_run": 177000,
+        "cost_per_run_usd": 9.14,
+        "successful_runs": 18,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "vendor_id": "google",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 28.3,
+        "median_duration_seconds": 1591,
+        "tokens_per_run": 203000,
+        "cost_per_run_usd": 2.92,
+        "successful_runs": 17,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "opus-5",
+      "name": "Claude Opus 5",
+      "vendor_id": "anthropic",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 25.0,
+        "median_duration_seconds": 1445,
+        "tokens_per_run": 186800,
+        "cost_per_run_usd": 9.85,
+        "successful_runs": 15,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "sol",
+      "name": "GPT-5.6 Sol",
+      "vendor_id": "openai",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 15.0,
+        "median_duration_seconds": 633,
+        "tokens_per_run": 71300,
+        "cost_per_run_usd": 0.753,
+        "successful_runs": 9,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM 5.3 Flash",
+      "vendor_id": "z-ai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 13.3,
+        "median_duration_seconds": 3208,
+        "tokens_per_run": 184600,
+        "cost_per_run_usd": 0.313,
+        "successful_runs": 8,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "grok-4-6",
+      "name": "Grok 4.6",
+      "vendor_id": "xai",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 13.3,
+        "median_duration_seconds": 1020,
+        "tokens_per_run": 129200,
+        "cost_per_run_usd": 4.23,
+        "successful_runs": 8,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor_id": "moonshot-ai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 13.3,
+        "median_duration_seconds": 4207,
+        "tokens_per_run": 150700,
+        "cost_per_run_usd": 5.16,
+        "successful_runs": 8,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "muse-1-3",
+      "name": "Muse Spark 1.3",
+      "vendor_id": "meta",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 10.0,
+        "median_duration_seconds": 692,
+        "tokens_per_run": 135900,
+        "cost_per_run_usd": 2.63,
+        "successful_runs": 6,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "luna",
+      "name": "GPT-5.6 Luna",
+      "vendor_id": "openai",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 0.0,
+        "median_duration_seconds": 199,
+        "tokens_per_run": 35400,
+        "cost_per_run_usd": 0.0282,
+        "successful_runs": 0,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    }
+  ],
+  "frameworks": [],
+  "evals": [
+    {
+      "id": "ft-account-id-rollout",
+      "description": "Migration and backfill work - write the migrations that finish the account_id rollout, backfill every existing row's account through its association path, index by account, and roll back cleanly on a live database.",
+      "tags": [
+        "active-record",
+        "migrations",
+        "backfill",
+        "multi-tenancy"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-account-id-rollout",
+      "results": {
+        "opus-5": {
+          "score": 1,
+          "cost_usd": 14.58,
+          "duration_seconds": 1875,
+          "average_tokens_per_run": 266800
+        },
+        "fable-5-1": {
+          "score": 2,
+          "cost_usd": 12.5,
+          "duration_seconds": 2190,
+          "average_tokens_per_run": 245200
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 3.51,
+          "duration_seconds": 812,
+          "average_tokens_per_run": 71600
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 1.59,
+          "duration_seconds": 792,
+          "average_tokens_per_run": 120900
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 215,
+          "average_tokens_per_run": 43300
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 4.34,
+          "duration_seconds": 1188,
+          "average_tokens_per_run": 282900
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 5.26,
+          "duration_seconds": 1018,
+          "average_tokens_per_run": 162200
+        },
+        "kimi-k3": {
+          "score": 1,
+          "cost_usd": 10.51,
+          "duration_seconds": 5219,
+          "average_tokens_per_run": 240200
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 4.24,
+          "duration_seconds": 992,
+          "average_tokens_per_run": 214000
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.46,
+          "duration_seconds": 3051,
+          "average_tokens_per_run": 227200
+        }
+      }
+    },
+    {
+      "id": "ft-active-storage-tracking",
+      "description": "Track storage usage for accounts and boards.",
+      "tags": [
+        "active-storage",
+        "active-record",
+        "active-job",
+        "callbacks"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-active-storage-tracking",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 7.03,
+          "duration_seconds": 1500,
+          "average_tokens_per_run": 174400
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 8.89,
+          "duration_seconds": 1792,
+          "average_tokens_per_run": 180300
+        },
+        "astra": {
+          "score": 1,
+          "cost_usd": 2.75,
+          "duration_seconds": 844,
+          "average_tokens_per_run": 62500
+        },
+        "sol": {
+          "score": 1,
+          "cost_usd": 0.93,
+          "duration_seconds": 867,
+          "average_tokens_per_run": 86100
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 162,
+          "average_tokens_per_run": 32000
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 2.45,
+          "duration_seconds": 1586,
+          "average_tokens_per_run": 191300
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 4.43,
+          "duration_seconds": 1305,
+          "average_tokens_per_run": 135000
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 6.39,
+          "duration_seconds": 5469,
+          "average_tokens_per_run": 178200
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 3.26,
+          "duration_seconds": 960,
+          "average_tokens_per_run": 170100
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.24,
+          "duration_seconds": 4023,
+          "average_tokens_per_run": 171800
+        }
+      }
+    },
+    {
+      "id": "ft-activity-feed-api",
+      "description": "Expose the existing HTML activity timeline as an API endpoint.",
+      "tags": [
+        "action-controller",
+        "action-view",
+        "serialization"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-activity-feed-api",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 2.98,
+          "duration_seconds": 655,
+          "average_tokens_per_run": 98500
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 2.84,
+          "duration_seconds": 778,
+          "average_tokens_per_run": 79100
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 1.35,
+          "duration_seconds": 566,
+          "average_tokens_per_run": 41400
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.47,
+          "duration_seconds": 390,
+          "average_tokens_per_run": 55800
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 467,
+          "average_tokens_per_run": 40700
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 1.71,
+          "duration_seconds": 1090,
+          "average_tokens_per_run": 158000
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 2.57,
+          "duration_seconds": 785,
+          "average_tokens_per_run": 100700
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 2.53,
+          "duration_seconds": 2369,
+          "average_tokens_per_run": 104500
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.47,
+          "duration_seconds": 717,
+          "average_tokens_per_run": 105200
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.16,
+          "duration_seconds": 2365,
+          "average_tokens_per_run": 137000
+        }
+      }
+    },
+    {
+      "id": "ft-board-publish-unpublish-public-boundary",
+      "description": "Publish a board to an unguessable public URL that unpublishing revokes at once.",
+      "tags": [
+        "action-controller",
+        "active-record",
+        "authorization",
+        "caching"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-board-publish-unpublish-public-boundary",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 6.69,
+          "duration_seconds": 1321,
+          "average_tokens_per_run": 159100
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 6.72,
+          "duration_seconds": 1061,
+          "average_tokens_per_run": 161700
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 1.71,
+          "duration_seconds": 430,
+          "average_tokens_per_run": 45400
+        },
+        "sol": {
+          "score": 1,
+          "cost_usd": 0.51,
+          "duration_seconds": 372,
+          "average_tokens_per_run": 60700
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 214,
+          "average_tokens_per_run": 37300
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 3.22,
+          "duration_seconds": 1621,
+          "average_tokens_per_run": 196500
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 3.35,
+          "duration_seconds": 884,
+          "average_tokens_per_run": 112900
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 3.1,
+          "duration_seconds": 2548,
+          "average_tokens_per_run": 117700
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.74,
+          "duration_seconds": 789,
+          "average_tokens_per_run": 109100
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.26,
+          "duration_seconds": 3159,
+          "average_tokens_per_run": 172000
+        }
+      }
+    },
+    {
+      "id": "ft-cancelled-account-cleanup",
+      "description": "Permanently remove data belonging to cancelled accounts after a grace period.",
+      "tags": [
+        "active-record",
+        "active-job",
+        "active-storage",
+        "data-erasure"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-cancelled-account-cleanup",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 2.27,
+          "duration_seconds": 586,
+          "average_tokens_per_run": 80500
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 3.5,
+          "duration_seconds": 750,
+          "average_tokens_per_run": 89600
+        },
+        "astra": {
+          "score": 1,
+          "cost_usd": 1.94,
+          "duration_seconds": 442,
+          "average_tokens_per_run": 43600
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.27,
+          "duration_seconds": 337,
+          "average_tokens_per_run": 33500
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 166,
+          "average_tokens_per_run": 32700
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 2.16,
+          "duration_seconds": 1187,
+          "average_tokens_per_run": 178200
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 1.24,
+          "duration_seconds": 671,
+          "average_tokens_per_run": 73400
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 2.66,
+          "duration_seconds": 2721,
+          "average_tokens_per_run": 95200
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 0.69,
+          "duration_seconds": 296,
+          "average_tokens_per_run": 64600
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.16,
+          "duration_seconds": 2298,
+          "average_tokens_per_run": 127900
+        }
+      }
+    },
+    {
+      "id": "ft-card-drop-settled-landing",
+      "description": "Drag cards around the board, settled the moment you let go.",
+      "tags": [
+        "hotwire",
+        "stimulus",
+        "turbo-streams"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-drop-settled-landing",
+      "results": {
+        "opus-5": {
+          "score": 1,
+          "cost_usd": 6.63,
+          "duration_seconds": 1679,
+          "average_tokens_per_run": 158200
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 8.1,
+          "duration_seconds": 2002,
+          "average_tokens_per_run": 165900
+        },
+        "astra": {
+          "score": 3,
+          "cost_usd": 2.38,
+          "duration_seconds": 878,
+          "average_tokens_per_run": 57400
+        },
+        "sol": {
+          "score": 1,
+          "cost_usd": 0.88,
+          "duration_seconds": 829,
+          "average_tokens_per_run": 78800
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 201,
+          "average_tokens_per_run": 36600
+        },
+        "gemini-3-8-flash": {
+          "score": 3,
+          "cost_usd": 2.09,
+          "duration_seconds": 1666,
+          "average_tokens_per_run": 182000
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 2.87,
+          "duration_seconds": 915,
+          "average_tokens_per_run": 112100
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 4.45,
+          "duration_seconds": 5490,
+          "average_tokens_per_run": 144900
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.49,
+          "duration_seconds": 431,
+          "average_tokens_per_run": 103500
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.29,
+          "duration_seconds": 3935,
+          "average_tokens_per_run": 194500
+        }
+      }
+    },
+    {
+      "id": "ft-card-reactions",
+      "description": "Extend reaction support from comments to cards.",
+      "tags": [
+        "active-record",
+        "action-controller",
+        "migrations",
+        "caching"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-reactions",
+      "results": {
+        "opus-5": {
+          "score": 3,
+          "cost_usd": 5.82,
+          "duration_seconds": 881,
+          "average_tokens_per_run": 141700
+        },
+        "fable-5-1": {
+          "score": 2,
+          "cost_usd": 5.43,
+          "duration_seconds": 1157,
+          "average_tokens_per_run": 124500
+        },
+        "astra": {
+          "score": 3,
+          "cost_usd": 1.44,
+          "duration_seconds": 359,
+          "average_tokens_per_run": 43700
+        },
+        "sol": {
+          "score": 3,
+          "cost_usd": 0.51,
+          "duration_seconds": 416,
+          "average_tokens_per_run": 51700
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 187,
+          "average_tokens_per_run": 36300
+        },
+        "gemini-3-8-flash": {
+          "score": 3,
+          "cost_usd": 2.63,
+          "duration_seconds": 1484,
+          "average_tokens_per_run": 181000
+        },
+        "grok-4-6": {
+          "score": 2,
+          "cost_usd": 5.07,
+          "duration_seconds": 912,
+          "average_tokens_per_run": 126600
+        },
+        "kimi-k3": {
+          "score": 2,
+          "cost_usd": 4.74,
+          "duration_seconds": 3155,
+          "average_tokens_per_run": 131800
+        },
+        "muse-1-3": {
+          "score": 2,
+          "cost_usd": 1.64,
+          "duration_seconds": 696,
+          "average_tokens_per_run": 108900
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.19,
+          "duration_seconds": 2484,
+          "average_tokens_per_run": 142700
+        }
+      }
+    },
+    {
+      "id": "ft-card-stalled-quiet-clock",
+      "description": "Badge cards that caught fire and then went quiet, and let people list them.",
+      "tags": [
+        "active-record",
+        "active-job",
+        "callbacks"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-stalled-quiet-clock",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 5.44,
+          "duration_seconds": 1118,
+          "average_tokens_per_run": 145300
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 4.72,
+          "duration_seconds": 840,
+          "average_tokens_per_run": 112400
+        },
+        "astra": {
+          "score": 3,
+          "cost_usd": 2.84,
+          "duration_seconds": 642,
+          "average_tokens_per_run": 67600
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.51,
+          "duration_seconds": 494,
+          "average_tokens_per_run": 62600
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 168,
+          "average_tokens_per_run": 37800
+        },
+        "gemini-3-8-flash": {
+          "score": 2,
+          "cost_usd": 3.98,
+          "duration_seconds": 1820,
+          "average_tokens_per_run": 242300
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 3.7,
+          "duration_seconds": 1002,
+          "average_tokens_per_run": 112000
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 4.37,
+          "duration_seconds": 3011,
+          "average_tokens_per_run": 138800
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.46,
+          "duration_seconds": 574,
+          "average_tokens_per_run": 105800
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.18,
+          "duration_seconds": 2672,
+          "average_tokens_per_run": 153400
+        }
+      }
+    },
+    {
+      "id": "ft-comment-reaction-live-echo",
+      "description": "Let people react to comments, live for everyone, settled instantly for the reactor.",
+      "tags": [
+        "hotwire",
+        "turbo-streams",
+        "active-record",
+        "callbacks"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-comment-reaction-live-echo",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 8.4,
+          "duration_seconds": 1365,
+          "average_tokens_per_run": 178200
+        },
+        "fable-5-1": {
+          "score": 3,
+          "cost_usd": 8.44,
+          "duration_seconds": 1721,
+          "average_tokens_per_run": 179000
+        },
+        "astra": {
+          "score": 2,
+          "cost_usd": 1.93,
+          "duration_seconds": 575,
+          "average_tokens_per_run": 50300
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.48,
+          "duration_seconds": 513,
+          "average_tokens_per_run": 57600
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 355,
+          "average_tokens_per_run": 31300
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 2.93,
+          "duration_seconds": 2139,
+          "average_tokens_per_run": 190600
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 5.28,
+          "duration_seconds": 1222,
+          "average_tokens_per_run": 151000
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 6.37,
+          "duration_seconds": 5550,
+          "average_tokens_per_run": 181600
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 3.54,
+          "duration_seconds": 687,
+          "average_tokens_per_run": 162500
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.57,
+          "duration_seconds": 5528,
+          "average_tokens_per_run": 261000
+        }
+      }
+    },
+    {
+      "id": "ft-data-export-and-import",
+      "description": "Export an account or a person's cards as a file, and bring an account file back in as a new account.",
+      "tags": [
+        "active-job",
+        "active-storage",
+        "action-mailer",
+        "authorization",
+        "multi-tenancy",
+        "security"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-data-export-and-import",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 17.14,
+          "duration_seconds": 2434,
+          "average_tokens_per_run": 278800
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 19.34,
+          "duration_seconds": 3061,
+          "average_tokens_per_run": 320700
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 4.38,
+          "duration_seconds": 903,
+          "average_tokens_per_run": 91100
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 1.41,
+          "duration_seconds": 878,
+          "average_tokens_per_run": 101600
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.05,
+          "duration_seconds": 204,
+          "average_tokens_per_run": 48600
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 3.91,
+          "duration_seconds": 1883,
+          "average_tokens_per_run": 236500
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 8.97,
+          "duration_seconds": 1472,
+          "average_tokens_per_run": 188300
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 7.86,
+          "duration_seconds": 5478,
+          "average_tokens_per_run": 200300
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 3.65,
+          "duration_seconds": 1130,
+          "average_tokens_per_run": 176100
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.63,
+          "duration_seconds": 5474,
+          "average_tokens_per_run": 269500
+        }
+      }
+    },
+    {
+      "id": "ft-email-code-sign-in",
+      "description": "Sign in, sign up and join with a six-character code sent by email.",
+      "tags": [
+        "action-controller",
+        "action-mailer",
+        "authentication",
+        "rate-limiting"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-email-code-sign-in",
+      "results": {
+        "opus-5": {
+          "score": 2,
+          "cost_usd": 8.07,
+          "duration_seconds": 1684,
+          "average_tokens_per_run": 190200
+        },
+        "fable-5-1": {
+          "score": 2,
+          "cost_usd": 7.27,
+          "duration_seconds": 1358,
+          "average_tokens_per_run": 151600
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 1.57,
+          "duration_seconds": 462,
+          "average_tokens_per_run": 40700
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.63,
+          "duration_seconds": 821,
+          "average_tokens_per_run": 59400
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 232,
+          "average_tokens_per_run": 33700
+        },
+        "gemini-3-8-flash": {
+          "score": 2,
+          "cost_usd": 2.03,
+          "duration_seconds": 1453,
+          "average_tokens_per_run": 176600
+        },
+        "grok-4-6": {
+          "score": 2,
+          "cost_usd": 3.19,
+          "duration_seconds": 1255,
+          "average_tokens_per_run": 120400
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 4.79,
+          "duration_seconds": 4006,
+          "average_tokens_per_run": 142400
+        },
+        "muse-1-3": {
+          "score": 1,
+          "cost_usd": 1.74,
+          "duration_seconds": 602,
+          "average_tokens_per_run": 111600
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.36,
+          "duration_seconds": 4111,
+          "average_tokens_per_run": 209900
+        }
+      }
+    },
+    {
+      "id": "ft-entropy-sweep",
+      "description": "Large-account performance incident: the hourly auto-postpone sweep no longer fits its hour.",
+      "tags": [
+        "active-record",
+        "migrations",
+        "performance",
+        "query-planning"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-entropy-sweep",
+      "results": {
+        "opus-5": {
+          "score": 1,
+          "cost_usd": 6.91,
+          "duration_seconds": 2297,
+          "average_tokens_per_run": 146700
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 3.25,
+          "duration_seconds": 987,
+          "average_tokens_per_run": 76500
+        },
+        "astra": {
+          "score": 2,
+          "cost_usd": 1.45,
+          "duration_seconds": 461,
+          "average_tokens_per_run": 42000
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.42,
+          "duration_seconds": 615,
+          "average_tokens_per_run": 48400
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 152,
+          "average_tokens_per_run": 28300
+        },
+        "gemini-3-8-flash": {
+          "score": 2,
+          "cost_usd": 2.09,
+          "duration_seconds": 1613,
+          "average_tokens_per_run": 180300
+        },
+        "grok-4-6": {
+          "score": 1,
+          "cost_usd": 2.21,
+          "duration_seconds": 739,
+          "average_tokens_per_run": 92900
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 3.54,
+          "duration_seconds": 4389,
+          "average_tokens_per_run": 131900
+        },
+        "muse-1-3": {
+          "score": 1,
+          "cost_usd": 1.46,
+          "duration_seconds": 765,
+          "average_tokens_per_run": 102800
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.2,
+          "duration_seconds": 5491,
+          "average_tokens_per_run": 168600
+        }
+      }
+    },
+    {
+      "id": "ft-i18n-support",
+      "description": "Add full internationalization to Fizzy - a complete Japanese locale, a per-person language choice that persists, and unchanged English for everyone else.",
+      "tags": [
+        "i18n",
+        "action-view",
+        "caching"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-i18n-support",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 54.8,
+          "duration_seconds": 3966,
+          "average_tokens_per_run": 560100
+        },
+        "fable-5-1": {
+          "score": 1,
+          "cost_usd": 35.24,
+          "duration_seconds": 3846,
+          "average_tokens_per_run": 520500
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 9.13,
+          "duration_seconds": 1564,
+          "average_tokens_per_run": 157400
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 1.92,
+          "duration_seconds": 1152,
+          "average_tokens_per_run": 135700
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 204,
+          "average_tokens_per_run": 35200
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 5.51,
+          "duration_seconds": 2194,
+          "average_tokens_per_run": 315100
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 10.86,
+          "duration_seconds": 1936,
+          "average_tokens_per_run": 222700
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 9.69,
+          "duration_seconds": 5472,
+          "average_tokens_per_run": 235900
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 12.6,
+          "duration_seconds": 1770,
+          "average_tokens_per_run": 330100
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.85,
+          "duration_seconds": 5471,
+          "average_tokens_per_run": 308000
+        }
+      }
+    },
+    {
+      "id": "ft-kamal-deploy",
+      "description": "Give the open-source Fizzy a Kamal deployment for one box, with the deployment's settings and secrets outside the code.",
+      "tags": [
+        "deployment",
+        "kamal",
+        "configuration"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-kamal-deploy",
+      "results": {
+        "opus-5": {
+          "score": 3,
+          "cost_usd": 2.93,
+          "duration_seconds": 635,
+          "average_tokens_per_run": 99200
+        },
+        "fable-5-1": {
+          "score": 3,
+          "cost_usd": 3.35,
+          "duration_seconds": 691,
+          "average_tokens_per_run": 84600
+        },
+        "astra": {
+          "score": 3,
+          "cost_usd": 1.1,
+          "duration_seconds": 574,
+          "average_tokens_per_run": 32500
+        },
+        "sol": {
+          "score": 2,
+          "cost_usd": 0.26,
+          "duration_seconds": 402,
+          "average_tokens_per_run": 37600
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 157,
+          "average_tokens_per_run": 25800
+        },
+        "gemini-3-8-flash": {
+          "score": 2,
+          "cost_usd": 2.68,
+          "duration_seconds": 1396,
+          "average_tokens_per_run": 188100
+        },
+        "grok-4-6": {
+          "score": 2,
+          "cost_usd": 1.66,
+          "duration_seconds": 609,
+          "average_tokens_per_run": 80500
+        },
+        "kimi-k3": {
+          "score": 1,
+          "cost_usd": 2.4,
+          "duration_seconds": 2146,
+          "average_tokens_per_run": 91300
+        },
+        "muse-1-3": {
+          "score": 2,
+          "cost_usd": 0.96,
+          "duration_seconds": 430,
+          "average_tokens_per_run": 77500
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.15,
+          "duration_seconds": 1842,
+          "average_tokens_per_run": 122800
+        }
+      }
+    },
+    {
+      "id": "ft-local-time-human-clock",
+      "description": "Render times in the browser, in the viewer's timezone, the way a person says them.",
+      "tags": [
+        "hotwire",
+        "stimulus",
+        "caching",
+        "i18n"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-local-time-human-clock",
+      "results": {
+        "opus-5": {
+          "score": 3,
+          "cost_usd": 7.21,
+          "duration_seconds": 1824,
+          "average_tokens_per_run": 172500
+        },
+        "fable-5-1": {
+          "score": 2,
+          "cost_usd": 5.88,
+          "duration_seconds": 1145,
+          "average_tokens_per_run": 122200
+        },
+        "astra": {
+          "score": 1,
+          "cost_usd": 1.68,
+          "duration_seconds": 455,
+          "average_tokens_per_run": 43900
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.59,
+          "duration_seconds": 565,
+          "average_tokens_per_run": 61300
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 458,
+          "average_tokens_per_run": 32900
+        },
+        "gemini-3-8-flash": {
+          "score": 3,
+          "cost_usd": 1.97,
+          "duration_seconds": 1369,
+          "average_tokens_per_run": 179000
+        },
+        "grok-4-6": {
+          "score": 1,
+          "cost_usd": 3.1,
+          "duration_seconds": 989,
+          "average_tokens_per_run": 110200
+        },
+        "kimi-k3": {
+          "score": 2,
+          "cost_usd": 3.98,
+          "duration_seconds": 4231,
+          "average_tokens_per_run": 133900
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.48,
+          "duration_seconds": 608,
+          "average_tokens_per_run": 111000
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.18,
+          "duration_seconds": 2541,
+          "average_tokens_per_run": 140400
+        }
+      }
+    },
+    {
+      "id": "ft-mysql-fulltext-search-foundation",
+      "description": "Search cards, scoped to the boards a person currently has access to.",
+      "tags": [
+        "active-record",
+        "migrations",
+        "raw-sql",
+        "callbacks"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-mysql-fulltext-search-foundation",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 5.53,
+          "duration_seconds": 1016,
+          "average_tokens_per_run": 141900
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 5.43,
+          "duration_seconds": 980,
+          "average_tokens_per_run": 128000
+        },
+        "astra": {
+          "score": 2,
+          "cost_usd": 1.87,
+          "duration_seconds": 428,
+          "average_tokens_per_run": 49100
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.52,
+          "duration_seconds": 448,
+          "average_tokens_per_run": 64700
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 170,
+          "average_tokens_per_run": 31500
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 3.29,
+          "duration_seconds": 1748,
+          "average_tokens_per_run": 206300
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 3.41,
+          "duration_seconds": 800,
+          "average_tokens_per_run": 117900
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 3.67,
+          "duration_seconds": 2899,
+          "average_tokens_per_run": 119100
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.22,
+          "duration_seconds": 398,
+          "average_tokens_per_run": 98500
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.19,
+          "duration_seconds": 2419,
+          "average_tokens_per_run": 138400
+        }
+      }
+    },
+    {
+      "id": "ft-notification-bundle-window-overlap",
+      "description": "Bundle notifications into per-person email digests, windows that never overlap, nothing dropped.",
+      "tags": [
+        "active-record",
+        "active-job",
+        "callbacks",
+        "transactions"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-notification-bundle-window-overlap",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 6.17,
+          "duration_seconds": 1186,
+          "average_tokens_per_run": 148500
+        },
+        "fable-5-1": {
+          "score": 2,
+          "cost_usd": 8.44,
+          "duration_seconds": 1522,
+          "average_tokens_per_run": 170800
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 1.61,
+          "duration_seconds": 473,
+          "average_tokens_per_run": 38800
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.47,
+          "duration_seconds": 437,
+          "average_tokens_per_run": 51600
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 194,
+          "average_tokens_per_run": 31600
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 2.36,
+          "duration_seconds": 1330,
+          "average_tokens_per_run": 175400
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 3.27,
+          "duration_seconds": 986,
+          "average_tokens_per_run": 120000
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 5.08,
+          "duration_seconds": 4593,
+          "average_tokens_per_run": 141100
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.69,
+          "duration_seconds": 609,
+          "average_tokens_per_run": 111800
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.24,
+          "duration_seconds": 3257,
+          "average_tokens_per_run": 167600
+        }
+      }
+    },
+    {
+      "id": "ft-saas-billing",
+      "description": "Bring the paid product back to hosted Fizzy - Stripe-driven subscriptions and plans, free-tier card and storage allowances enforced in the app, the upgrade path in settings, staff comps and overrides, and a signature-guarded webhook endpoint.",
+      "tags": [
+        "action-controller",
+        "engines",
+        "billing",
+        "webhooks"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-saas-billing",
+      "results": {
+        "opus-5": {
+          "score": 1,
+          "cost_usd": 10.73,
+          "duration_seconds": 1832,
+          "average_tokens_per_run": 217200
+        },
+        "fable-5-1": {
+          "score": 1,
+          "cost_usd": 15.87,
+          "duration_seconds": 2198,
+          "average_tokens_per_run": 269500
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 2.99,
+          "duration_seconds": 719,
+          "average_tokens_per_run": 71000
+        },
+        "sol": {
+          "score": 1,
+          "cost_usd": 1.13,
+          "duration_seconds": 802,
+          "average_tokens_per_run": 103400
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 159,
+          "average_tokens_per_run": 37500
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 3.57,
+          "duration_seconds": 1792,
+          "average_tokens_per_run": 226000
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 4.36,
+          "duration_seconds": 1176,
+          "average_tokens_per_run": 147900
+        },
+        "kimi-k3": {
+          "score": 2,
+          "cost_usd": 6.65,
+          "duration_seconds": 5162,
+          "average_tokens_per_run": 174700
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 3.52,
+          "duration_seconds": 908,
+          "average_tokens_per_run": 176000
+        },
+        "glm-5-3-flash": {
+          "score": 1,
+          "cost_usd": 0.46,
+          "duration_seconds": 4686,
+          "average_tokens_per_run": 243600
+        }
+      }
+    },
+    {
+      "id": "ft-web-push-device-delivery",
+      "description": "Push notifications for the web app, readable on every device, once, never inward.",
+      "tags": [
+        "active-job",
+        "web-push",
+        "service-worker",
+        "security"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-web-push-device-delivery",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 11.0,
+          "duration_seconds": 1759,
+          "average_tokens_per_run": 216200
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 11.23,
+          "duration_seconds": 1814,
+          "average_tokens_per_run": 219700
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 2.5,
+          "duration_seconds": 495,
+          "average_tokens_per_run": 60500
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.82,
+          "duration_seconds": 578,
+          "average_tokens_per_run": 81000
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 194,
+          "average_tokens_per_run": 37200
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 3.59,
+          "duration_seconds": 1609,
+          "average_tokens_per_run": 203400
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 5.73,
+          "duration_seconds": 1109,
+          "average_tokens_per_run": 162500
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 6.66,
+          "duration_seconds": 4507,
+          "average_tokens_per_run": 172300
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 3.01,
+          "duration_seconds": 862,
+          "average_tokens_per_run": 159100
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.35,
+          "duration_seconds": 4308,
+          "average_tokens_per_run": 194600
+        }
+      }
+    },
+    {
+      "id": "ft-webhook-delivery-trust-and-restart",
+      "description": "Make board webhooks deliver, once per event, switched off when dead.",
+      "tags": [
+        "active-job",
+        "webhooks",
+        "security",
+        "net-http"
+      ],
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-webhook-delivery-trust-and-restart",
+      "results": {
+        "opus-5": {
+          "score": 0,
+          "cost_usd": 6.76,
+          "duration_seconds": 1678,
+          "average_tokens_per_run": 162400
+        },
+        "fable-5-1": {
+          "score": 0,
+          "cost_usd": 6.37,
+          "duration_seconds": 1215,
+          "average_tokens_per_run": 138300
+        },
+        "astra": {
+          "score": 0,
+          "cost_usd": 2.02,
+          "duration_seconds": 493,
+          "average_tokens_per_run": 48700
+        },
+        "sol": {
+          "score": 0,
+          "cost_usd": 0.73,
+          "duration_seconds": 702,
+          "average_tokens_per_run": 74700
+        },
+        "luna": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 198,
+          "average_tokens_per_run": 37300
+        },
+        "gemini-3-8-flash": {
+          "score": 0,
+          "cost_usd": 1.97,
+          "duration_seconds": 1147,
+          "average_tokens_per_run": 170200
+        },
+        "grok-4-6": {
+          "score": 0,
+          "cost_usd": 4.15,
+          "duration_seconds": 1197,
+          "average_tokens_per_run": 134900
+        },
+        "kimi-k3": {
+          "score": 0,
+          "cost_usd": 3.85,
+          "duration_seconds": 3505,
+          "average_tokens_per_run": 138200
+        },
+        "muse-1-3": {
+          "score": 0,
+          "cost_usd": 1.82,
+          "duration_seconds": 680,
+          "average_tokens_per_run": 120600
+        },
+        "glm-5-3-flash": {
+          "score": 0,
+          "cost_usd": 0.15,
+          "duration_seconds": 2497,
+          "average_tokens_per_run": 141200
+        }
+      }
+    }
+  ]
+}

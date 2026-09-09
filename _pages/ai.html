@@ -54,103 +54,120 @@ redirect_from:
 
         <div class="ai__models__header">
           <h2 id="ai-models-heading">Which model is best?</h2>
-          <p>Compare accuracy, speed, token efficiency, cost, and API recall across the same set of Rails evaluations.</p>
+          <p>Two benchmarks, one harness. Atomic tasks ask whether a model knows Rails. Feature tickets ask whether it can ship.</p>
+          <div class="ai__models__tabs" role="tablist" aria-label="Benchmark">
+            {% for benchmark in site.data.ai_benchmarks %}
+            <button type="button" role="tab" id="ai-tab-{{ benchmark.id }}" aria-controls="{{ benchmark.anchor }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-benchmark-tab="{{ benchmark.id }}">{{ benchmark.label }}<small>{{ benchmark.stage }}</small></button>
+            {% endfor %}
+          </div>
         </div>
 
-        <p class="ai__scroll-hint">Swipe to compare all model metrics <span aria-hidden="true">→</span></p>
-        <div class="ai__models__table-wrap ai__leaderboard-table">
-          <table class="ai__models__table" data-sortable-table>
-            <thead>
-              <tr>
-                <th><button type="button" data-sort-key="model" data-sort-type="text">Model</button></th>
-                <th aria-sort="descending"><button type="button" data-sort-key="accuracy" data-sort-type="number">Accuracy<small>Successful runs</small></button></th>
-                <th><button type="button" data-sort-key="speed" data-sort-type="number">Speed<small>Median</small></button></th>
-                <th><button type="button" data-sort-key="tokens" data-sort-type="number">Tokens<small>Mean per run</small></button></th>
-                <th><button type="button" data-sort-key="cost" data-sort-type="number">Cost<small>Mean per run</small></button></th>
-                <th><button type="button" data-sort-key="api-recall" data-sort-type="number">API Recall<small>Runs</small></button></th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for model in site.data.ai_page_evals.models %}
-                {% assign vendor = site.data.ai_page_evals.vendors | where: "id", model.vendor_id | first %}
-                {% assign minutes = model.metrics.median_duration_seconds | divided_by: 60 %}
-                {% assign seconds = model.metrics.median_duration_seconds | modulo: 60 %}
-                {% assign tokens_per_run = model.metrics.tokens_per_run %}
-                {% assign cost_per_run = model.metrics.cost_per_run_usd %}
-                {% assign cost_class = '' %}
-                {% if cost_per_run %}
-                  {% if cost_per_run <= 0.033 %}{% assign cost_class = 'ai__score--high' %}{% elsif cost_per_run <= 1.17 %}{% assign cost_class = 'ai__score--mid' %}{% else %}{% assign cost_class = 'ai__score--low' %}{% endif %}
-                {% endif %}
-                {% assign recalled_runs_total = 0 %}
-                {% for eval in site.data.ai_page_evals.evals %}
-                  {% assign recalled_runs_total = recalled_runs_total | plus: eval.results[model.id].recalled_runs %}
-                {% endfor %}
-                {% assign api_recall = recalled_runs_total | times: 100.0 | divided_by: model.metrics.total_runs | round: 1 %}
-                {% assign display_name = model.name %}
-                <tr data-model="{{ display_name }}">
-                  <th scope="row">
-                    <button type="button" class="ai__model ai__model--button" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} evaluation details">
-                      <img src="{{ vendor.logo }}" alt="{{ vendor.name }}" width="24" height="24" />
-                      <span>{{ display_name }}</span>{% if model.default_effort %}<span class="ai__model__effort">{{ model.default_effort }}</span>{% endif %}
-                    </button>
-                  </th>
-                  <td data-sort-column="accuracy" data-sort-value="{{ model.metrics.accuracy_percentage }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.accuracy_percentage >= 83.3 %}ai__score--high{% elsif model.metrics.accuracy_percentage >= 50 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} accuracy details">{{ model.metrics.accuracy_percentage }}%</button>
-                  </td>
-                  <td data-sort-column="speed" data-sort-value="{{ model.metrics.median_duration_seconds }}">
-                    <button type="button" class="ai__score ai__score--button {% if model.metrics.median_duration_seconds <= 400 %}ai__score--high{% elsif model.metrics.median_duration_seconds <= 700 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} median speed details">{% if minutes > 0 %}{{ minutes }}m {{ seconds }}s{% else %}{{ seconds }}s{% endif %}</button>
-                  </td>
-                  <td data-sort-column="tokens" data-sort-value="{{ tokens_per_run }}">
-                    <button type="button" class="ai__score ai__score--button {% if tokens_per_run <= 30000 %}ai__score--high{% elsif tokens_per_run <= 50000 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean token details">{{ tokens_per_run }}</button>
-                  </td>
-                  <td data-sort-column="cost" data-sort-value="{{ cost_per_run }}">
-                    <button type="button" class="ai__score ai__score--button {{ cost_class }}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean cost details">{% if cost_per_run %}${{ cost_per_run | round: 3 }}{% else %}&mdash;{% endif %}</button>
-                  </td>
-                  <td data-sort-column="api-recall" data-sort-value="{{ api_recall }}">
-                    <button type="button" class="ai__score ai__score--button {% if api_recall >= 30 %}ai__score--high{% elsif api_recall >= 20 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-model-id="{{ model.id }}" aria-label="View {{ display_name }} API recall details">{{ api_recall }}%</button>
-                  </td>
+        {% for benchmark in site.data.ai_benchmarks %}
+        {% assign data = site.data[benchmark.data] %}
+        {% assign thresholds = benchmark.thresholds %}
+        <div class="ai__benchmark" id="{{ benchmark.anchor }}" role="tabpanel" aria-labelledby="ai-tab-{{ benchmark.id }}" data-benchmark-panel="{{ benchmark.id }}"{% unless forloop.first %} hidden{% endunless %}>
+          <p class="ai__models__blurb">{{ benchmark.blurb }}</p>
+
+          <p class="ai__scroll-hint">Swipe to compare all model metrics <span aria-hidden="true">→</span></p>
+          <div class="ai__models__table-wrap ai__leaderboard-table">
+            <table class="ai__models__table" data-sortable-table>
+              <thead>
+                <tr>
+                  <th><button type="button" data-sort-key="model" data-sort-type="text">Model</button></th>
+                  <th aria-sort="descending"><button type="button" data-sort-key="accuracy" data-sort-type="number">Accuracy<small>Successful runs</small></button></th>
+                  <th><button type="button" data-sort-key="speed" data-sort-type="number">Speed<small>Median</small></button></th>
+                  <th><button type="button" data-sort-key="tokens" data-sort-type="number">Tokens<small>Mean per run</small></button></th>
+                  <th><button type="button" data-sort-key="cost" data-sort-type="number">Cost<small>Mean per run</small></button></th>
+                  {% if benchmark.recall %}<th><button type="button" data-sort-key="api-recall" data-sort-type="number">API Recall<small>Runs</small></button></th>{% endif %}
                 </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-
-        <div class="ai__benchmark-chart">
-          <div class="ai__benchmark-chart__header">
-            <h3 data-benchmark-title>Accuracy vs. token efficiency</h3>
-            <p data-benchmark-description>The strongest models rise toward the top-right.</p>
-            <div class="ai__benchmark-chart__filters" role="group" aria-label="Compare accuracy against">
-              <button type="button" data-benchmark-metric="cost" aria-pressed="true">Cost</button>
-              <button type="button" data-benchmark-metric="speed" aria-pressed="false">Speed</button>
-              <button type="button" data-benchmark-metric="tokens" aria-pressed="false">Tokens</button>
-            </div>
+              </thead>
+              <tbody>
+                {% for model in data.models %}
+                  {% assign vendor = data.vendors | where: "id", model.vendor_id | first %}
+                  {% assign minutes = model.metrics.median_duration_seconds | divided_by: 60 %}
+                  {% assign seconds = model.metrics.median_duration_seconds | modulo: 60 %}
+                  {% assign tokens_per_run = model.metrics.tokens_per_run %}
+                  {% assign cost_per_run = model.metrics.cost_per_run_usd %}
+                  {% assign cost_class = '' %}
+                  {% if cost_per_run %}
+                    {% if cost_per_run <= thresholds.cost[0] %}{% assign cost_class = 'ai__score--high' %}{% elsif cost_per_run <= thresholds.cost[1] %}{% assign cost_class = 'ai__score--mid' %}{% else %}{% assign cost_class = 'ai__score--low' %}{% endif %}
+                  {% endif %}
+                  {% if benchmark.recall %}
+                    {% assign recalled_runs_total = 0 %}
+                    {% for eval in data.evals %}
+                      {% assign recalled_runs_total = recalled_runs_total | plus: eval.results[model.id].recalled_runs %}
+                    {% endfor %}
+                    {% assign api_recall = recalled_runs_total | times: 100.0 | divided_by: model.metrics.total_runs | round: 1 %}
+                  {% endif %}
+                  {% assign display_name = model.name %}
+                  <tr data-model="{{ display_name }}">
+                    <th scope="row">
+                      <button type="button" class="ai__model ai__model--button" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} evaluation details">
+                        <img src="{{ vendor.logo }}" alt="{{ vendor.name }}" width="24" height="24" />
+                        <span>{{ display_name }}</span>{% if model.default_effort %}<span class="ai__model__effort">{{ model.default_effort }}</span>{% endif %}
+                      </button>
+                    </th>
+                    <td data-sort-column="accuracy" data-sort-value="{{ model.metrics.accuracy_percentage }}">
+                      <button type="button" class="ai__score ai__score--button {% if model.metrics.accuracy_percentage >= thresholds.accuracy[0] %}ai__score--high{% elsif model.metrics.accuracy_percentage >= thresholds.accuracy[1] %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} accuracy details">{{ model.metrics.accuracy_percentage }}%</button>
+                    </td>
+                    <td data-sort-column="speed" data-sort-value="{{ model.metrics.median_duration_seconds }}">
+                      <button type="button" class="ai__score ai__score--button {% if model.metrics.median_duration_seconds <= thresholds.speed[0] %}ai__score--high{% elsif model.metrics.median_duration_seconds <= thresholds.speed[1] %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} median speed details">{% if minutes > 0 %}{{ minutes }}m {{ seconds }}s{% else %}{{ seconds }}s{% endif %}</button>
+                    </td>
+                    <td data-sort-column="tokens" data-sort-value="{{ tokens_per_run }}">
+                      <button type="button" class="ai__score ai__score--button {% if tokens_per_run <= thresholds.tokens[0] %}ai__score--high{% elsif tokens_per_run <= thresholds.tokens[1] %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean token details">{{ tokens_per_run }}</button>
+                    </td>
+                    <td data-sort-column="cost" data-sort-value="{{ cost_per_run }}">
+                      <button type="button" class="ai__score ai__score--button {{ cost_class }}" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} mean cost details">{% if cost_per_run %}${{ cost_per_run | round: 3 }}{% else %}&mdash;{% endif %}</button>
+                    </td>
+                    {% if benchmark.recall %}
+                    <td data-sort-column="api-recall" data-sort-value="{{ api_recall }}">
+                      <button type="button" class="ai__score ai__score--button {% if api_recall >= 30 %}ai__score--high{% elsif api_recall >= 20 %}ai__score--mid{% else %}ai__score--low{% endif %}" data-eval-details data-benchmark="{{ benchmark.id }}" data-model-id="{{ model.id }}" aria-label="View {{ display_name }} API recall details">{{ api_recall }}%</button>
+                    </td>
+                    {% endif %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
           </div>
 
-          <p class="ai__scroll-hint ai__scroll-hint--chart">Swipe to explore every model <span aria-hidden="true">→</span></p>
-          <div class="ai__benchmark-chart__frame">
-            <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean tokens per run">
-              <div class="ai__benchmark-chart__y-ticks" data-benchmark-y-ticks aria-hidden="true"></div>
-              <div class="ai__benchmark-chart__x-ticks" data-benchmark-x-ticks aria-hidden="true"></div>
-              <div class="ai__benchmark-chart__points" data-benchmark-points></div>
+          <div class="ai__benchmark-chart">
+            <div class="ai__benchmark-chart__header">
+              <h3 data-benchmark-title>Accuracy vs. token efficiency</h3>
+              <p data-benchmark-description>The strongest models rise toward the top-right.</p>
+              <div class="ai__benchmark-chart__filters" role="group" aria-label="Compare accuracy against">
+                <button type="button" data-benchmark-metric="cost" aria-pressed="true">Cost</button>
+                <button type="button" data-benchmark-metric="speed" aria-pressed="false">Speed</button>
+                <button type="button" data-benchmark-metric="tokens" aria-pressed="false">Tokens</button>
+              </div>
             </div>
-            <div class="ai__benchmark-chart__y-label">Accuracy <span>Higher is better</span></div>
-            <div class="ai__benchmark-chart__x-label"><span data-benchmark-x-label>Mean tokens per run</span> <small>Lower is better</small></div>
+
+            <p class="ai__scroll-hint ai__scroll-hint--chart">Swipe to explore every model <span aria-hidden="true">→</span></p>
+            <div class="ai__benchmark-chart__frame">
+              <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean tokens per run">
+                <div class="ai__benchmark-chart__y-ticks" data-benchmark-y-ticks aria-hidden="true"></div>
+                <div class="ai__benchmark-chart__x-ticks" data-benchmark-x-ticks aria-hidden="true"></div>
+                <div class="ai__benchmark-chart__points" data-benchmark-points></div>
+              </div>
+              <div class="ai__benchmark-chart__y-label">Accuracy <span>Higher is better</span></div>
+              <div class="ai__benchmark-chart__x-label"><span data-benchmark-x-label>Mean tokens per run</span> <small>Lower is better</small></div>
+            </div>
+
+            <ul class="ai__benchmark-chart__legend" aria-label="Chart legend">
+              <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--accuracy"></span>Higher is more accurate</li>
+              <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--tokens"></span><span data-benchmark-x-legend>Further right uses fewer tokens</span></li>
+            </ul>
           </div>
 
-          <ul class="ai__benchmark-chart__legend" aria-label="Chart legend">
-            <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--accuracy"></span>Higher is more accurate</li>
-            <li><span class="ai__benchmark-chart__legend-mark ai__benchmark-chart__legend-mark--tokens"></span><span data-benchmark-x-legend>Further right uses fewer tokens</span></li>
-          </ul>
+          <div class="ai__methodology">
+            <h3>Methodology</h3>
+            <p>{{ benchmark.methodology }}</p>
+            <p>Explore the open-source <a href="https://github.com/rails/ai-evals">Rails AI evaluation suite</a>.</p>
+          </div>
         </div>
+        {% endfor %}
 
         <div class="ai__benchmark-report">
           <a href="https://rubyonrails.org/category/agents" class="common-button common-button--color-red"><span>Read the most recent benchmark report</span></a>
-        </div>
-
-        <div class="ai__methodology">
-          <h3>Methodology</h3>
-          <p>Each model ran every evaluation three times in August or September 2026, using the provider's default settings — 63 runs per model. Accuracy is the share of runs that passed the evaluation's hidden tests; refusals count as failures, and differences of a few points between models are within run-to-run noise. Speed is the median run duration, and tokens and cost are means per run. API recall is the percentage of runs in which the model reached directly for the target Rails API. Model-level medians come from run-level data, so they can differ slightly from the per-evaluation timings. GLM 5.3 ran on a coding-plan subscription, so it carries no dollar figures. Select any model or result for the underlying evaluation details.</p>
-          <p>Explore the open-source <a href="https://github.com/rails/ai-evals">Rails AI evaluation suite</a>.</p>
         </div>
       </section>
 
@@ -195,18 +212,7 @@ redirect_from:
 
           <div class="ai__eval-dialog__table-wrap">
             <table class="ai__eval-dialog__table">
-              <thead>
-                <tr>
-                  <th>Evaluation</th>
-                  <th>Framework</th>
-                  <th>Target</th>
-                  <th>Score</th>
-                  <th>Time</th>
-                  <th>Tokens/run</th>
-                  <th>Cost/run</th>
-                  <th>API Recall</th>
-                </tr>
-              </thead>
+              <thead data-eval-dialog-head></thead>
               <tbody data-eval-dialog-results></tbody>
             </table>
           </div>
@@ -215,10 +221,12 @@ redirect_from:
 
       <script>
         (function() {
-          var evalData = {{ site.data.ai_page_evals | jsonify }};
-          var modelById = {};
-          var vendorById = {};
-          var frameworkById = {};
+          var benchmarks = {{ site.data.ai_benchmarks | jsonify }};
+          var datasets = {
+            {% for benchmark in site.data.ai_benchmarks %}"{{ benchmark.id }}": {{ site.data[benchmark.data] | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          };
+          var benchmarkById = {};
           var lastDialogTrigger;
           var integerFormat = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
           var currency = new Intl.NumberFormat('en-US', {
@@ -228,26 +236,26 @@ redirect_from:
             maximumFractionDigits: 2
           });
 
-          evalData.models.forEach(function(model) {
-            modelById[model.id] = model;
+          benchmarks.forEach(function(benchmark) {
+            var data = datasets[benchmark.id];
+            benchmark.data = data;
+            benchmark.modelById = {};
+            benchmark.vendorById = {};
+            benchmark.frameworkById = {};
+            benchmark.currentMetric = 'cost';
+            data.models.forEach(function(model) { benchmark.modelById[model.id] = model; });
+            data.vendors.forEach(function(vendor) { benchmark.vendorById[vendor.id] = vendor; });
+            (data.frameworks || []).forEach(function(framework) { benchmark.frameworkById[framework.id] = framework; });
+            benchmarkById[benchmark.id] = benchmark;
           });
-
-          evalData.vendors.forEach(function(vendor) {
-            vendorById[vendor.id] = vendor;
-          });
-
-          evalData.frameworks.forEach(function(framework) {
-            frameworkById[framework.id] = framework;
-          });
-
 
           function displayName(model) {
             return model.name;
           }
 
-          function recallPercentage(model) {
+          function recallPercentage(benchmark, model) {
             var recalledRuns = 0;
-            evalData.evals.forEach(function(evalItem) {
+            benchmark.data.evals.forEach(function(evalItem) {
               recalledRuns += evalItem.results[model.id].recalled_runs;
             });
             return Math.round(recalledRuns * 1000 / model.metrics.total_runs) / 10;
@@ -345,27 +353,28 @@ redirect_from:
             sortRows('accuracy', 'number', 'desc');
           });
 
-          var benchmarkModels = evalData.models.map(function(model) {
-            return {
-              model: model,
-              vendor: vendorById[model.vendor_id],
-              accuracy: model.metrics.accuracy_percentage,
-              duration: model.metrics.median_duration_seconds,
-              tokensPerRun: model.metrics.tokens_per_run,
-              costPerRun: model.metrics.cost_per_run_usd,
-              apiRecall: recallPercentage(model)
-            };
-          });
+          function chartModelsFor(benchmark) {
+            return benchmark.data.models.map(function(model) {
+              return {
+                model: model,
+                vendor: benchmark.vendorById[model.vendor_id],
+                accuracy: model.metrics.accuracy_percentage,
+                duration: model.metrics.median_duration_seconds,
+                tokensPerRun: model.metrics.tokens_per_run,
+                costPerRun: model.metrics.cost_per_run_usd
+              };
+            });
+          }
 
-          var currentBenchmarkMetric = 'tokens';
-
-          function renderBenchmarkChart(metric) {
-            currentBenchmarkMetric = metric;
-            var plot = document.querySelector('[data-benchmark-plot]');
-            var title = document.querySelector('[data-benchmark-title]');
-            var description = document.querySelector('[data-benchmark-description]');
-            var xLabel = document.querySelector('[data-benchmark-x-label]');
-            var xLegend = document.querySelector('[data-benchmark-x-legend]');
+          function renderBenchmarkChart(benchmark, metric) {
+            benchmark.currentMetric = metric;
+            var panel = document.querySelector('[data-benchmark-panel="' + benchmark.id + '"]');
+            if (!panel || panel.hidden) return;
+            var plot = panel.querySelector('[data-benchmark-plot]');
+            var title = panel.querySelector('[data-benchmark-title]');
+            var description = panel.querySelector('[data-benchmark-description]');
+            var xLabel = panel.querySelector('[data-benchmark-x-label]');
+            var xLegend = panel.querySelector('[data-benchmark-x-legend]');
             if (!plot || !title || !description || !xLabel || !xLegend) return;
 
             var points = plot.querySelector('[data-benchmark-points]');
@@ -412,15 +421,16 @@ redirect_from:
               }
             };
             var view = views[metric];
-            var chartModels = benchmarkModels.filter(function(item) { return view.value(item) != null; });
+            var chartModels = chartModelsFor(benchmark).filter(function(item) { return view.value(item) != null; });
             var rawValues = chartModels.map(view.value);
             var bounds = view.padding(Math.min.apply(null, rawValues), Math.max.apply(null, rawValues));
             var xMinimum = bounds[0];
             var xMaximum = bounds[1];
             var transform = view.transform || function(value) { return value; };
             var inverse = view.inverse || function(value) { return value; };
-            var yMinimum = Math.floor((Math.min.apply(null, chartModels.map(function(item) { return item.accuracy; })) - 5) / 5) * 5;
-            var yMaximum = 100;
+            var accuracies = chartModels.map(function(item) { return item.accuracy; });
+            var yMinimum = Math.max(0, Math.floor((Math.min.apply(null, accuracies) - 5) / 5) * 5);
+            var yMaximum = Math.min(100, Math.ceil((Math.max.apply(null, accuracies) + 5) / 5) * 5);
 
             title.textContent = view.title;
             description.textContent = view.description;
@@ -500,6 +510,7 @@ redirect_from:
               point.type = 'button';
               point.className = 'ai__benchmark-point ai__benchmark-point--label-' + (index % 2 === 0 ? 'above' : 'below');
               point.dataset.evalDetails = '';
+              point.dataset.benchmark = benchmark.id;
               point.dataset.modelId = item.model.id;
               point.style.left = position.x + 'px';
               point.style.top = position.y + 'px';
@@ -539,22 +550,74 @@ redirect_from:
             });
           }
 
-          document.querySelectorAll('[data-benchmark-metric]').forEach(function(button) {
-            button.addEventListener('click', function() {
-              document.querySelectorAll('[data-benchmark-metric]').forEach(function(candidate) {
-                candidate.setAttribute('aria-pressed', candidate === button ? 'true' : 'false');
+          benchmarks.forEach(function(benchmark) {
+            var panel = document.querySelector('[data-benchmark-panel="' + benchmark.id + '"]');
+            if (!panel) return;
+            panel.querySelectorAll('[data-benchmark-metric]').forEach(function(button) {
+              button.addEventListener('click', function() {
+                panel.querySelectorAll('[data-benchmark-metric]').forEach(function(candidate) {
+                  candidate.setAttribute('aria-pressed', candidate === button ? 'true' : 'false');
+                });
+                renderBenchmarkChart(benchmark, button.dataset.benchmarkMetric);
               });
-              renderBenchmarkChart(button.dataset.benchmarkMetric);
             });
           });
 
-          renderBenchmarkChart('cost');
+          function activeBenchmark() {
+            var active = benchmarks.filter(function(benchmark) {
+              var panel = document.querySelector('[data-benchmark-panel="' + benchmark.id + '"]');
+              return panel && !panel.hidden;
+            });
+            return active[0];
+          }
+
+          function activateBenchmark(id) {
+            benchmarks.forEach(function(benchmark) {
+              var panel = document.querySelector('[data-benchmark-panel="' + benchmark.id + '"]');
+              var tab = document.querySelector('[data-benchmark-tab="' + benchmark.id + '"]');
+              var active = benchmark.id === id;
+              if (panel) panel.hidden = !active;
+              if (tab) tab.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+            var benchmark = benchmarkById[id];
+            if (benchmark) renderBenchmarkChart(benchmark, benchmark.currentMetric);
+          }
+
+          function benchmarkForHash(hash) {
+            var key = hash.replace('#', '');
+            if (!key) return null;
+            var matches = benchmarks.filter(function(benchmark) {
+              return benchmark.anchor === key || benchmark.id === key;
+            });
+            return matches[0] || null;
+          }
+
+          document.querySelectorAll('[data-benchmark-tab]').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+              var benchmark = benchmarkById[tab.dataset.benchmarkTab];
+              activateBenchmark(benchmark.id);
+              if (history.replaceState) history.replaceState(null, '', '#' + benchmark.anchor);
+            });
+          });
+
+          var requestedBenchmark = benchmarkForHash(window.location.hash);
+          activateBenchmark(requestedBenchmark ? requestedBenchmark.id : benchmarks[0].id);
+          if (requestedBenchmark) {
+            var section = document.querySelector('.ai__models');
+            if (section) window.requestAnimationFrame(function() { section.scrollIntoView(); });
+          }
+
+          window.addEventListener('hashchange', function() {
+            var benchmark = benchmarkForHash(window.location.hash);
+            if (benchmark) activateBenchmark(benchmark.id);
+          });
 
           var benchmarkResizeTimer;
           window.addEventListener('resize', function() {
             window.clearTimeout(benchmarkResizeTimer);
             benchmarkResizeTimer = window.setTimeout(function() {
-              renderBenchmarkChart(currentBenchmarkMetric);
+              var benchmark = activeBenchmark();
+              if (benchmark) renderBenchmarkChart(benchmark, benchmark.currentMetric);
             }, 150);
           });
 
@@ -564,62 +627,98 @@ redirect_from:
           var dialogModel = dialog.querySelector('[data-eval-dialog-model]');
           var dialogTitle = dialog.querySelector('[data-eval-dialog-title]');
           var dialogSummary = dialog.querySelector('[data-eval-dialog-summary]');
+          var dialogHead = dialog.querySelector('[data-eval-dialog-head]');
           var dialogResults = dialog.querySelector('[data-eval-dialog-results]');
-          function scoreClass(score) {
-            if (score === evalData.scoring.runs_per_eval) return 'ai__score--high';
-            if (score >= Math.ceil(evalData.scoring.runs_per_eval / 2)) return 'ai__score--mid';
+
+          function scoreClass(benchmark, score) {
+            var runs = benchmark.data.scoring.runs_per_eval;
+            if (score === runs) return 'ai__score--high';
+            if (score >= Math.ceil(runs / 2)) return 'ai__score--mid';
             return 'ai__score--low';
           }
 
-          function renderResult(evalItem, modelId) {
+          function renderHead(benchmark) {
+            var row = document.createElement('tr');
+            var columns = benchmark.recall
+              ? ['Evaluation', 'Framework', 'Target', 'Score', 'Time', 'Tokens/run', 'Cost/run', 'API Recall']
+              : ['Ticket', 'Exercises', 'Score', 'Time', 'Tokens/run', 'Cost/run'];
+            columns.forEach(function(column) { addTextElement(row, 'th', null, column); });
+            dialogHead.replaceChildren(row);
+          }
+
+          function renderResult(benchmark, evalItem, modelId) {
             var result = evalItem.results[modelId];
-            var framework = frameworkById[evalItem.framework_id];
+            var runs = benchmark.data.scoring.runs_per_eval;
             var row = document.createElement('tr');
             var evalCell = document.createElement('th');
-            var frameworkCell = document.createElement('td');
-            var targetCell = document.createElement('td');
+            evalCell.scope = 'row';
+            if (evalItem.url) {
+              var link = document.createElement('a');
+              link.href = evalItem.url;
+              link.target = '_blank';
+              link.rel = 'noopener';
+              addTextElement(link, 'strong', null, evalItem.id);
+              evalCell.appendChild(link);
+            } else {
+              addTextElement(evalCell, 'strong', null, evalItem.id);
+            }
+            addTextElement(evalCell, 'span', null, evalItem.description);
+            row.appendChild(evalCell);
+
+            if (benchmark.recall) {
+              var framework = benchmark.frameworkById[evalItem.framework_id];
+              var frameworkCell = document.createElement('td');
+              var targetCell = document.createElement('td');
+              frameworkCell.textContent = framework ? framework.name : evalItem.framework_id;
+              addTextElement(targetCell, 'code', null, evalItem.target);
+              row.appendChild(frameworkCell);
+              row.appendChild(targetCell);
+            } else {
+              var tagsCell = document.createElement('td');
+              tagsCell.className = 'ai__eval-dialog__tags';
+              (evalItem.tags || []).forEach(function(tag) { addTextElement(tagsCell, 'code', null, tag); });
+              row.appendChild(tagsCell);
+            }
+
             var scoreCell = document.createElement('td');
             var durationCell = document.createElement('td');
             var tokensCell = document.createElement('td');
             var costCell = document.createElement('td');
-            var recallCell = document.createElement('td');
-
-            evalCell.scope = 'row';
-            addTextElement(evalCell, 'strong', null, evalItem.id);
-            addTextElement(evalCell, 'span', null, evalItem.description);
-            frameworkCell.textContent = framework ? framework.name : evalItem.framework_id;
-            addTextElement(targetCell, 'code', null, evalItem.target);
-            addTextElement(scoreCell, 'span', 'ai__score ' + scoreClass(result.score), result.score + '/' + evalData.scoring.runs_per_eval);
+            addTextElement(scoreCell, 'span', 'ai__score ' + scoreClass(benchmark, result.score), result.score + '/' + runs);
             durationCell.textContent = formatDuration(result.duration_seconds);
             tokensCell.textContent = integerFormat.format(result.average_tokens_per_run);
             costCell.textContent = result.cost_usd == null ? '—' : currency.format(result.cost_usd);
-            addTextElement(recallCell, 'span', 'ai__score ' + scoreClass(result.recalled_runs), result.recalled_runs + '/' + evalData.scoring.runs_per_eval);
-
-            row.appendChild(evalCell);
-            row.appendChild(frameworkCell);
-            row.appendChild(targetCell);
             row.appendChild(scoreCell);
             row.appendChild(durationCell);
             row.appendChild(tokensCell);
             row.appendChild(costCell);
-            row.appendChild(recallCell);
+
+            if (benchmark.recall) {
+              var recallCell = document.createElement('td');
+              addTextElement(recallCell, 'span', 'ai__score ' + scoreClass(benchmark, result.recalled_runs), result.recalled_runs + '/' + runs);
+              row.appendChild(recallCell);
+            }
+
             dialogResults.appendChild(row);
           }
 
           function openDetails(trigger) {
+            var benchmark = benchmarkById[trigger.dataset.benchmark] || activeBenchmark();
             var modelId = trigger.dataset.modelId;
-            var model = modelById[modelId];
-            var vendor = vendorById[model.vendor_id];
-            var evaluations = evalData.evals;
+            var model = benchmark.modelById[modelId];
+            var vendor = benchmark.vendorById[model.vendor_id];
 
             lastDialogTrigger = trigger;
-            dialogModel.textContent = displayName(model) + ' · ' + vendor.name;
+            dialogModel.textContent = displayName(model) + ' · ' + vendor.name + ' · ' + benchmark.label;
             dialogTitle.textContent = 'Overall results';
             var costSummary = model.metrics.cost_per_run_usd == null ? 'subscription pricing' : formatBenchmarkCost(model.metrics.cost_per_run_usd) + ' mean cost per run';
-            dialogSummary.textContent = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(model.metrics.tokens_per_run) + ' mean tokens per run · ' + costSummary + ' · ' + recallPercentage(model) + '% API recall';
+            var summary = model.metrics.successful_runs + ' of ' + model.metrics.total_runs + ' runs solved · ' + model.metrics.accuracy_percentage + '% accuracy · ' + formatDuration(model.metrics.median_duration_seconds) + ' median · ' + integerFormat.format(model.metrics.tokens_per_run) + ' mean tokens per run · ' + costSummary;
+            if (benchmark.recall) summary += ' · ' + recallPercentage(benchmark, model) + '% API recall';
+            dialogSummary.textContent = summary;
+            renderHead(benchmark);
             dialogResults.replaceChildren();
-            evaluations.forEach(function(evalItem) {
-              renderResult(evalItem, modelId);
+            benchmark.data.evals.forEach(function(evalItem) {
+              renderResult(benchmark, evalItem, modelId);
             });
             document.body.classList.add('ai-dialog-open');
             dialog.showModal();

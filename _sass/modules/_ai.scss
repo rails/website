@@ -155,6 +155,70 @@ body.ai-dialog-open {
     }
   }
 
+  &__models__tabs {
+    background: $color-grey-1;
+    border-radius: 999px;
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 4px;
+
+    button {
+      align-items: center;
+      background: transparent;
+      border-radius: 999px;
+      color: $color-grey-5;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 15px;
+      font-weight: 700;
+      gap: 8px;
+      min-height: 44px;
+      padding: 8px 18px;
+      transition: background $transition, color $transition, box-shadow $transition;
+
+      small {
+        color: $color-grey-4;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      &[aria-selected="true"] {
+        background: $color-white;
+        box-shadow: 0 1px 5px rgba($color-black, 0.15);
+        color: $color-red;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-red;
+        outline-offset: 1px;
+      }
+    }
+  }
+
+  &__models__blurb {
+    color: $color-grey-5;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto 24px;
+    max-width: 760px;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  &__benchmark[hidden] {
+    display: none;
+  }
+
+  &__eval-dialog__tags {
+    code {
+      display: inline-block;
+      margin: 0 4px 4px 0;
+      white-space: nowrap;
+    }
+  }
+
   &__benchmark-chart {
     background: $color-white;
     border-radius: 10px;
