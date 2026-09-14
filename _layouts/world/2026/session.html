@@ -3,8 +3,9 @@ layout: world/2026/default
 ---
 
 {% assign all_2026_speakers = site.world_speakers | where_exp: 'item', 'item.path contains "2026"' %}
-{% assign speaker       = all_2026_speakers | where_exp: 'item', 'item.path contains page.speaker'        | first %}
+{% assign speaker        = all_2026_speakers | where_exp: 'item', 'item.path contains page.speaker'        | first %}
 {% assign second_speaker = all_2026_speakers | where_exp: 'item', 'item.path contains page.second_speaker' | first %}
+{% assign facilitator    = all_2026_speakers | where_exp: 'item', 'item.path contains page.facilitator'    | first %}
 
 <div class="page-wrapper-2026">
   <div id="section-desktop">
@@ -41,6 +42,16 @@ layout: world/2026/default
           </div>
         {% endif %}
 
+        {% if facilitator %}
+          <div class="session-page__speaker session-page__speaker--facilitator">
+            <div class="session-page__speaker-header">
+              <span class="session-page__speaker-name">{{ facilitator.first_name }} {{ facilitator.last_name }}</span>
+              <a href="/world/2026/speakers/{{ page.facilitator }}" class="session-page__bio-btn">Facilitator bio</a>
+            </div>
+            <p class="session-page__speaker-tagline">{{ facilitator.tagline }}{% if facilitator.company and facilitator.company != "false" %}, {{ facilitator.company }}{% endif %}</p>
+          </div>
+        {% endif %}
+
         {% if page.description %}
           <div class="session-page__description">
             <p>{{ page.description }}</p>
@@ -61,6 +72,11 @@ layout: world/2026/default
         {% if second_speaker %}
           <div class="session-page__photo-frame">
             <img src="{{ second_speaker.image_path }}" alt="{{ second_speaker.first_name }} {{ second_speaker.last_name }}" loading="lazy">
+          </div>
+        {% endif %}
+        {% if facilitator %}
+          <div class="session-page__photo-frame">
+            <img src="{{ facilitator.image_path }}" alt="{{ facilitator.first_name }} {{ facilitator.last_name }}" loading="lazy">
           </div>
         {% endif %}
       </div>

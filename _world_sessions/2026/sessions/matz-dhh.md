@@ -5,6 +5,7 @@ time: "10:00 AM"
 track: "KEYNOTE"
 speaker: "yukihiro-matz"
 second_speaker: "dhh"
+facilitator: "jeremy-daer"
 tags:
   - AI
   - Ruby
