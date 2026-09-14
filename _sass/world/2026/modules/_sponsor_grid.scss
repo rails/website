@@ -221,9 +221,12 @@
 
 &__item--cedarcode img,
 &__item--typesense img,
-&__item--planet-argon img,
-&__item--saeloun img {
+&__item--planet-argon img {
   max-height: 35px;
+}
+
+&__item--saeloun img {
+  max-height: 44px;
 }
 
   &__item--judoscale img {
@@ -293,7 +296,7 @@
   }
 
   &__item--thoughtbot img {
-    max-height: 28px;
+    max-height: 34px;
     max-width: 140px;
   }
 

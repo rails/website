@@ -86,6 +86,9 @@ other:
   - name: "thoughtbot"
     logo: /assets/world/2026/logos/logo-thoughtbot.svg
     url: "https://thoughtbot.com/"
+  - name: "Saeloun"
+    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
+    url: "https://www.saeloun.com/"
   - name: "Typesense"
     logo: /assets/world/2026/logos/logo-typesense.png
     url: "https://typesense.org/"
@@ -124,9 +127,6 @@ members:
   - name: "Gusto"
     logo: /assets/images/logo-gusto.svg
     url: "https://gusto.com/"
-  - name: "Saeloun"
-    logo: /assets/world/2024/images/sponsors/RW-logo-saeloun.svg
-    url: "https://www.saeloun.com/"
   - name: "Chime"
     logo: /assets/images/logo-chime-black.svg
     url: "https://www.chime.com/"
