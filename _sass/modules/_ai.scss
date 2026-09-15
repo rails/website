@@ -268,7 +268,7 @@ body.ai-dialog-open {
     background-size: 25% 25%;
     border-bottom: 2px solid rgba($color-black, 0.35);
     border-left: 2px solid rgba($color-black, 0.35);
-    height: 390px;
+    height: 450px;
     min-width: 620px;
     position: relative;
   }
@@ -340,6 +340,12 @@ body.ai-dialog-open {
     z-index: 0;
   }
 
+  &__benchmark-point-connector--effort {
+    background: none;
+    border-top: 2px dashed rgba($color-black, 0.3);
+    height: 0;
+  }
+
   &__benchmark-point {
     align-items: center;
     background: $color-white;
@@ -383,6 +389,13 @@ body.ai-dialog-open {
       position: absolute;
       transform: translateX(-50%);
       white-space: nowrap;
+
+      small {
+        color: $color-grey-5;
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 4px;
+      }
     }
   }
 
@@ -407,6 +420,148 @@ body.ai-dialog-open {
 
   &__benchmark-point--label-right span {
     left: calc(100% + 7px);
+  }
+
+  &__benchmark-point--label-above-left span,
+  &__benchmark-point--label-above-right span,
+  &__benchmark-point--label-below-left span,
+  &__benchmark-point--label-below-right span {
+    transform: none;
+  }
+
+  &__benchmark-point--label-above-left span,
+  &__benchmark-point--label-above-right span {
+    bottom: calc(100% + 2px);
+  }
+
+  &__benchmark-point--label-below-left span,
+  &__benchmark-point--label-below-right span {
+    top: calc(100% + 2px);
+  }
+
+  &__benchmark-point--label-above-left span,
+  &__benchmark-point--label-below-left span {
+    left: auto;
+    right: 50%;
+  }
+
+  &__benchmark-point--label-far-above span,
+  &__benchmark-point--label-far-below span,
+  &__benchmark-point--label-far-left span,
+  &__benchmark-point--label-far-right span {
+    &::before {
+      background: rgba($color-black, 0.3);
+      content: "";
+      position: absolute;
+    }
+  }
+
+  &__benchmark-point--label-far-above span,
+  &__benchmark-point--label-far-below span {
+    &::before {
+      height: 18px;
+      left: 50%;
+      width: 1px;
+    }
+  }
+
+  &__benchmark-point--label-far-above span {
+    bottom: calc(100% + 26px);
+
+    &::before {
+      top: 100%;
+    }
+  }
+
+  &__benchmark-point--label-far-below span {
+    top: calc(100% + 26px);
+
+    &::before {
+      bottom: 100%;
+    }
+  }
+
+  &__benchmark-point--label-far-left span,
+  &__benchmark-point--label-far-right span {
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before {
+      height: 1px;
+      top: 50%;
+      width: 18px;
+    }
+  }
+
+  &__benchmark-point--label-far-left span {
+    left: auto;
+    right: calc(100% + 26px);
+
+    &::before {
+      left: 100%;
+    }
+  }
+
+  &__benchmark-point--label-far-right span {
+    left: calc(100% + 26px);
+
+    &::before {
+      right: 100%;
+    }
+  }
+
+  &__benchmark-point--label-far-above-left span,
+  &__benchmark-point--label-far-above-right span,
+  &__benchmark-point--label-far-below-left span,
+  &__benchmark-point--label-far-below-right span {
+    transform: none;
+
+    &::before {
+      height: 1px;
+      width: 22px;
+    }
+  }
+
+  &__benchmark-point--label-far-above-left span,
+  &__benchmark-point--label-far-above-right span {
+    bottom: calc(100% + 14px);
+
+    &::before {
+      top: calc(100% + 6px);
+      transform: rotate(45deg);
+      transform-origin: left center;
+    }
+  }
+
+  &__benchmark-point--label-far-below-left span,
+  &__benchmark-point--label-far-below-right span {
+    top: calc(100% + 14px);
+
+    &::before {
+      bottom: calc(100% + 6px);
+      transform: rotate(-45deg);
+      transform-origin: left center;
+    }
+  }
+
+  &__benchmark-point--label-far-above-left span,
+  &__benchmark-point--label-far-below-left span {
+    left: auto;
+    right: calc(50% + 16px);
+
+    &::before {
+      left: 100%;
+      transform-origin: right center;
+    }
+  }
+
+  &__benchmark-point--label-far-above-right span,
+  &__benchmark-point--label-far-below-right span {
+    left: calc(50% + 16px);
+
+    &::before {
+      right: 100%;
+    }
   }
 
   &__benchmark-chart__legend {
