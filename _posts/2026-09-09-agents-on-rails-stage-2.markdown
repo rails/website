@@ -11,12 +11,12 @@ Today we're expanding **Agents on Rails** with Stage 2, a new set of benchmark t
 
 Before we go deep, here are the results:
 
-<p style="text-align: center;"><img src="/assets/images/evals-stage-2-scoreboard.png" style="width: 100%;" alt="Score cards for all 10 models on Stage 2 feature tickets: GPT-6 Astra 35%, Claude Fable 5.1 30%, Gemini 3.8 Flash 28%, Claude Opus 5 25%, GPT-5.6 Sol 15%, GLM 5.3 Flash 13%, Grok 4.6 13%, Kimi K3 13%, Muse Spark 1.3 10%, GPT-5.6 Luna 0%"></p>
+<p style="text-align: center;"><img src="/assets/images/evals-stage-2-scoreboard.png" style="width: 100%;" alt="Score cards for all 10 models on Stage 2 feature tickets: GPT-6 Astra 35%, Claude Fable 5.1 32%, Gemini 3.8 Flash 28%, Claude Opus 5 25%, GPT-5.6 Sol 18%, GLM 5.3 Flash 15%, Grok 4.6 15%, Kimi K3 13%, Muse Spark 1.3 10%, GPT-5.6 Luna 0%"></p>
 
 First results for Stage 2:
 
 - **Most accurate:** GPT-6 Astra, with 35% of runs solved (21 of 60).
-- **Cheapest:** GLM 5.3 Flash, 13% for $18.78 across all 60 runs. (Luna's $1.69 would win, but it finished 0 of 60 tasks.)
+- **Cheapest:** GLM 5.3 Flash, 15% for $18.78 across all 60 runs. (Luna's $1.69 would win, but it finished 0 of 60 tasks.)
 - **Fastest:** GPT-6 Astra again, 9 minutes median per run. (Luna's 3 minutes don't count here, either.)
 - **Best combination of all three:** GPT-6 Astra, for the third time. At $150.47 for the campaign it's on the cheaper end too, which makes it the model of this round. It’s also worth pointing out that Astra achieved this at its default effort level, which is **medium**.
 
@@ -31,6 +31,8 @@ To answer that, we wrote 20 feature tickets against [Fizzy](https://github.com/b
 Each ticket is written the way a product person writes it to a developer: "Let's add Japanese to the app, ASAP." Real-world tickets don't list every requirement or name an API. A careful developer understands that anyway, and the hidden checks we built grade against what that developer would ship. These hidden checks test genuinely good engineering practices and some honest edge cases that might slip past a human developer, since we believe agents should perform better.
 
 One hard rule: the verifier is still deterministic. The app's own suite has to stay green, then every hidden check must pass, with the test directories restored to their pre-agent state first. That's how it stays fair.
+
+**Update (September 15, 2026)**: we no longer restore the test directories before grading feature tickets. It was right for Stage 1, where the tests are the spec, and unfair here, where changing the tests along with the feature is normal development work. Tests are not sealed now, every run was regraded, and the numbers on the [Agents on Rails](/ai#stage2) page are the regraded ones: Claude Fable 5.1 32%, GPT-5.6 Sol 18%, GLM 5.3 Flash and Grok 4.6 15%. The rest is unchanged. Details in [the max-effort report](/2026/9/15/agents-on-rails-maximum-effort-and-deepseek-4-1-flash).
 
 We started with 10 models this round, at their provider's **default effort**: GPT-6 Astra (medium), Claude Fable 5.1 (high), Gemini 3.8 Flash (medium), Claude Opus 5 (high), GPT-5.6 Sol (medium), GLM 5.3 Flash (max), Grok 4.6 (high), Kimi K3 (max), Muse Spark 1.3 (medium), GPT-5.6 Luna (medium).
 
@@ -52,7 +54,7 @@ No other agent timed out more than once.
 
 Luna completing 46 tasks out of 63 for 90 cents was one of the most fascinating results of Stage 1, but on feature tickets it completed 0 out of 60. Big tasks require diligence, and smaller models like Luna try lucky guesses instead: submitting a half-done job, or skipping the test suite and the migrations altogether. At atomic scale you can ship a model’s work without checking with relatively few repercussions, but adding features requires more high-level planning, and a model that doesn’t or cannot do that, doesn't ship.
 
-<p style="text-align: center;"><img src="/assets/images/evals-stage-2-cost-vs-accuracy.png" style="width: 100%;" alt="Solve rate against mean cost per run on a log scale, cheaper to the right. GPT-6 Astra 35% at $2.51 per run, Claude Fable 5.1 30% at $9.14, Gemini 3.8 Flash 28% at $2.92, Claude Opus 5 25% at $9.85, GPT-5.6 Sol 15% at $0.75, GLM 5.3 Flash 13% at $0.31, Kimi K3 13% at $5.16, Grok 4.6 13% at $4.23, Muse Spark 1.3 10% at $2.63, GPT-5.6 Luna 0% at $0.028"></p>
+<p style="text-align: center;"><img src="/assets/images/evals-stage-2-cost-vs-accuracy.png" style="width: 100%;" alt="Solve rate against mean cost per run on a log scale, cheaper to the right. GPT-6 Astra 35% at $2.51 per run, Claude Fable 5.1 32% at $9.14, Gemini 3.8 Flash 28% at $2.92, Claude Opus 5 25% at $9.85, GPT-5.6 Sol 18% at $0.75, GLM 5.3 Flash 15% at $0.31, Kimi K3 13% at $5.16, Grok 4.6 15% at $4.23, Muse Spark 1.3 10% at $2.63, GPT-5.6 Luna 0% at $0.028"></p>
 
 ## Sometimes even money won't buy you feature completeness
 
