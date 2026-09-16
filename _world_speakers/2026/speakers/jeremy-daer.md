@@ -2,7 +2,7 @@
 first_name: Jeremy
 last_name: Daer
 image_path: /assets/world/2026/images/speakers/jeremy-daer.jpg
-tagline: Keynote Facilitator
+tagline: Rails Core
 company: 37signals
 specific_order: 1.8
 keynote: true
