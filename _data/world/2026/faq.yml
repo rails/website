@@ -4,7 +4,7 @@
     - question: "What is Rails World? Who is it for?"
       answer: "Rails World is a conference focused on the Ruby on Rails framework. It brings together developers, engineers, and enthusiasts, as well as the Rails maintainers from around the world to discuss and explore the latest trends, techniques, and advancements in Rails development. It is designed for anyone with an interest in Ruby on Rails, from beginners to experienced professionals."
     - question: "Will Rails World be livestreamed?"
-      answer: "The Opening Keynote will be livestreamed and will be published within hours of taking place. All other sessions will follow quickly and be on the [Rails YouTube channel](https://www.youtube.com/@railsofficial) within two weeks after Rails World. Watch the livestream [here](https://www.youtube.com/live/V9SxpJpHuus?si=KHYIyXTb453mYfFv)."
+      answer: "The Opening Keynote will be livestreamed and will be published within hours of taking place. All other sessions will follow quickly and be on the <a href=”https://www.youtube.com/@railsofficial”>Rails YouTube channel</a> within two weeks after Rails World. Watch the livestream <a href=“https://www.youtube.com/live/V9SxpJpHuus?si=KHYIyXTb453mYfFv”>here</a>.
     - question: "Will there be a conference app or chat?"
       answer: "We'll use Campfire for the conference chat this year. Attendees will receive a link approximately one month before Rails World."
     - question: "Should I stay for the weekend after Rails World?"
