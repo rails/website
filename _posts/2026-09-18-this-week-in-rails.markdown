@@ -11,6 +11,9 @@ date: 2026-09-18
 
 A week of things that should just work: schema cache that loads in JSON, PostgreSQL names that resolve to one table, Active Storage that boots even when libvips is missing or too old, and Live responses that finally carry the default headers. Here's what's new in Rails:
 
+[Watch the Rails World 2026 Opening Keynote live](https://www.youtube.com/live/V9SxpJpHuus)   
+[DHH's opening keynote](https://x.com/rails/status/2098074197050155303?s=20) is streaming for anyone who can't get to Austin. He'll cover what's new in Rails, what's coming next, and where the framework is headed. Tune in at 9:30 AM Austin, 7:30 AM Pacific, 10:30 AM Eastern, 3:30 PM UK, 4:30 PM Central Europe, or 11:30 PM Japan. The livestream is made possible by Rails World Event Partner Shopify.
+
 [Active Record schema caches can now be dumped in JSON](https://github.com/rails/rails/pull/58769)   
 Point `schema_cache_path` at a file ending in `.json` and Active Record dumps and loads the cache in JSON instead of YAML or Marshal. On a production app with 944 tables, JSON loaded about 22x faster than YAML.
 
