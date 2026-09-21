@@ -8,13 +8,13 @@
   recall: false
   blurb: 20 feature-sized tickets on Fizzy, 37signals' kanban app, written the way a product person files them. Compare accuracy, speed, token efficiency, and cost.
   methodology: >-
-    Each model ran every ticket three times in September 2026 at the provider's
-    default effort, and again at the highest effort the provider offers — 60 runs per model and effort, capped at
-    90 minutes, 400 steps, and $60 per run. Accuracy is the share of runs that passed
-    both the app's own test suite and the ticket's hidden checks; differences of a few
-    points between models are within run-to-run noise. Speed is the median run
-    duration, and tokens and cost are means per run. Select any model or result for
-    the underlying evaluation details.
+    Each model ran every ticket three times in September 2026 at the provider's default
+    effort, and again at the highest effort the provider offers — 60 runs per model and
+    effort, capped at 90 minutes, 400 steps, and $60 per run. Accuracy is the share of
+    runs that passed both the app's own test suite and the ticket's hidden checks;
+    differences of a few points between models are within run-to-run noise. Speed is the
+    median run duration, and tokens and cost are means per run. Select any model or
+    result for the underlying evaluation details.
   thresholds:
     accuracy: [25, 15]
     speed: [600, 1500]
