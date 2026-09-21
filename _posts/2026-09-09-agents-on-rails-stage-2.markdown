@@ -32,7 +32,7 @@ Each ticket is written the way a product person writes it to a developer: "Let's
 
 One hard rule: the verifier is still deterministic. The app's own suite has to stay green, then every hidden check must pass, with the test directories restored to their pre-agent state first. That's how it stays fair.
 
-**Update (September 15, 2026)**: we no longer restore the test directories before grading feature tickets. It was right for Stage 1, where the tests are the spec, and unfair here, where changing the tests along with the feature is normal development work. Tests are not sealed now, every run was regraded, and the numbers on the [Agents on Rails](/ai#stage2) page are the regraded ones: Claude Fable 5.1 32%, GPT-5.6 Sol 18%, GLM 5.3 Flash and Grok 4.6 15%. The rest is unchanged. Details in [the max-effort report](/2026/9/15/agents-on-rails-maximum-effort-and-deepseek-4-1-flash).
+**Update (September 15, 2026)**: we no longer restore the test directories before grading feature tickets. It was right for Stage 1, where the tests are the spec, and unfair here, where changing the tests along with the feature is normal development work. Tests are not sealed now, every run was regraded, and the numbers on the [Agents on Rails](/ai#stage2) page are the regraded ones: Claude Fable 5.1 32%, GPT-5.6 Sol 18%, GLM 5.3 Flash and Grok 4.6 15%. The rest is unchanged. Details in [the max-effort report](/2026/9/21/agents-on-rails-maximum-effort-and-deepseek-4-1-flash).
 
 We started with 10 models this round, at their provider's **default effort**: GPT-6 Astra (medium), Claude Fable 5.1 (high), Gemini 3.8 Flash (medium), Claude Opus 5 (high), GPT-5.6 Sol (medium), GLM 5.3 Flash (max), Grok 4.6 (high), Kimi K3 (max), Muse Spark 1.3 (medium), GPT-5.6 Luna (medium).
 

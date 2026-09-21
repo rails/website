@@ -4,7 +4,7 @@ title: "Agents on Rails: Maximum effort and DeepSeek 4.1 Flash"
 categories: agents
 author: Svyatoslav Kryukov, Artur Petrov, Alexander Baygeldin
 published: true
-date: 2026-09-15
+date: 2026-09-21
 ---
 
 Last week we shipped [Stage 2](/2026/9/9/agents-on-rails-stage-2), 20 feature tickets on Fizzy, and we promised to explore benchmarking the agents all on max-effort. This week we ran it: every model on the board, same tickets, reasoning turned all the way up. We also tested a new model: **DeepSeek 4.1 Flash**.
