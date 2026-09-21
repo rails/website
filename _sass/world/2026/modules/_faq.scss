@@ -63,6 +63,14 @@
       inset  0   5px  12px rgba(#FF000B, 1);
   }
 
+  &--active {
+    background: rgba($black, 0.85);
+  }
+
+  &:not(.faq-tab--active) {
+    opacity: 0.5;
+  }
+
   &--contact-mobile {
     display: none;
   }

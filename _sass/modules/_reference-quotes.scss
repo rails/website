@@ -1,0 +1,127 @@
+// A distinct, tinted band of quote cards from voices on Rails + AI, shown
+// above the Reference Apps grid. The band is separated from the page intro
+// above it and presents each quote as its own white card.
+.reference-quotes {
+  background: $color-grey-1;
+  margin-top: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  &__heading {
+    color: $color-black;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 24px;
+    list-style: none;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  // Each quote is a white card.
+  &__item {
+    background: $color-white;
+    border-radius: 12px;
+    box-shadow:
+      0 3px 15px 2px rgba($color-black, 0.04),
+      0 1px 1px rgba($color-black, 0.02),
+      0 0 0 1px rgba($color-black, 0.06);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 28px;
+
+    blockquote {
+      border: none;
+      flex: 1 1 auto;
+      margin: 0 0 20px;
+      padding: 0;
+      position: relative;
+
+      // Red opening quotation mark as a subtle accent.
+      &:before {
+        color: $color-red;
+        content: "\201C";
+        font-size: 44px;
+        font-weight: 700;
+        left: -2px;
+        line-height: 1;
+        position: absolute;
+        top: -6px;
+      }
+
+      p {
+        color: $color-black;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+        padding-top: 30px;
+      }
+    }
+
+    cite {
+      border-top: 1px solid rgba($color-black, 0.08);
+      display: block;
+      font-style: normal;
+      padding-top: 18px;
+
+      a {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        text-decoration: none;
+
+        &:hover .reference-quotes__name {
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    flex: 0 0 auto;
+    height: 44px;
+    object-fit: cover;
+    width: 44px;
+  }
+
+  &__person {
+    display: block;
+    min-width: 0;
+  }
+
+  &__name {
+    color: $color-black;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color $transition;
+  }
+
+  &__meta {
+    color: $color-grey-5;
+    display: block;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  @media (min-width: 768px) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+// Rails World 2026 — Session detail page
+
+.session-page {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+  padding: 60px 89px 96px;
+  max-width: 1262px;
+  margin: 0 auto;
+
+  @include media(TabletScreens) {
+    grid-template-columns: 1fr 260px;
+    gap: 40px;
+    padding: 40px 40px 72px;
+  }
+
+  @include media(MobileScreens) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 20px 60px;
+  }
+
+  // ── Left column ────────────────────────────────────────────────────────────
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__chip {
+    font-size: 15px;
+    font-weight: $font-weight-500;
+    color: $white;
+    letter-spacing: 0.15em;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    @include neon-glow;
+
+    @include media(MobileScreens) {
+      font-size: 13px;
+      padding: 4px 10px;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+
+    @include media(TabletScreens) {
+      font-size: 36px;
+    }
+
+    @include media(MobileScreens) {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__speaker {
+    margin-bottom: 20px;
+  }
+
+  &__speaker-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  &__speaker-name {
+    font-size: 20px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 1.3;
+  }
+
+  &__bio-btn {
+    font-size: 12px;
+    font-weight: $font-weight-500;
+    color: $white;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba($white, 0.5);
+    padding: 4px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: $white;
+    }
+  }
+
+  &__speaker-tagline {
+    font-size: 15px;
+    font-weight: $font-weight-400;
+    color: $off-white;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  &__description {
+    margin-top: 32px;
+
+    p {
+      font-size: 18px;
+      font-weight: 200;
+      color: $white;
+      line-height: 1.7;
+      letter-spacing: 0.3px;
+      margin: 0;
+
+      @include media(MobileScreens) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__tags {
+    font-size: 13px;
+    font-weight: $font-weight-500;
+    color: $off-white;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    @include media(MobileScreens) {
+      font-size: 11px;
+    }
+  }
+
+  // ── Right column — speaker photos ──────────────────────────────────────────
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: sticky;
+    top: 24px;
+
+    @include media(MobileScreens) {
+      position: static;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  &__photo-frame {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    overflow: hidden;
+    @include neon-glow-outer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: $neon-border-gradient;
+      opacity: 0.7;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 3;
+      @include neon-glow-inner;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 3 / 4;
+      object-position: top center;
+
+      @include media(MobileScreens) {
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+}

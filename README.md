@@ -8,6 +8,8 @@ If you notice spelling mistakes, or the latest version marker being out of sync,
 
 We do not, however, take pull requests for updating the list of highlighted Rails applications.
 
+New [On Rails](https://podcast.rubyonrails.org) episodes are posts in `_posts` like any other. Copy the most recent one and update it: `categories: podcast` is what lists the episode on the news page, and `youtube` is the video id that renders the player.
+
 ## Development
 
 1. `bundle install`

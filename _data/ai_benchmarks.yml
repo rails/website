@@ -1,0 +1,45 @@
+# Benchmarks shown on /ai. Each entry points at a JSON file in _data and
+# carries the copy and score thresholds for that tab.
+- id: features
+  anchor: stage2
+  label: Feature tickets
+  stage: Stage 2
+  data: ai_page_features
+  recall: false
+  blurb: 20 feature-sized tickets on Fizzy, 37signals' kanban app, written the way a product person files them. Compare accuracy, speed, token efficiency, and cost.
+  methodology: >-
+    Each model ran every ticket three times in September 2026, using the provider's
+    default settings — 60 runs per model, capped at 90 minutes, 400 steps, and $60
+    per run. Accuracy is the share of runs that passed both the app's own test suite
+    and the ticket's hidden checks; differences of a few points between models are
+    within run-to-run noise. Speed is the median run duration, and tokens and cost
+    are means per run. Select any model or result for the underlying evaluation
+    details.
+  thresholds:
+    accuracy: [25, 15]
+    speed: [600, 1500]
+    tokens: [80000, 150000]
+    cost: [1, 5]
+- id: atomic
+  anchor: stage1
+  label: Atomic tasks
+  stage: Stage 1
+  data: ai_page_evals
+  recall: true
+  blurb: 21 small, self-contained tasks on Writebook, each turning on one Rails API. Compare accuracy, speed, token efficiency, cost, and API recall.
+  methodology: >-
+    Each model ran every evaluation three times in August or September 2026, using
+    the provider's default settings — 63 runs per model. Accuracy is the share of
+    runs that passed the evaluation's hidden tests; refusals count as failures, and
+    differences of a few points between models are within run-to-run noise. Speed
+    is the median run duration, and tokens and cost are means per run. API recall
+    is the percentage of runs in which the model reached directly for the target
+    Rails API. Model-level medians come from run-level data, so they can differ
+    slightly from the per-evaluation timings. GLM 5.3 ran on a coding-plan
+    subscription, so it carries no dollar figures. Select any model or result for
+    the underlying evaluation details.
+  thresholds:
+    accuracy: [83.3, 50]
+    speed: [400, 700]
+    tokens: [30000, 50000]
+    cost: [0.033, 1.17]

@@ -19,7 +19,7 @@ This refactoring separates socket handling, concurrency primitives, and other tr
 Can be read on [Edge Guides](https://edgeguides.rubyonrails.org/active_storage_overview.html) already.
 
 [Add shims for Ractor shareability methods](https://github.com/rails/rails/pull/57467)  
-Adds new core extension to Kernel *ractor_shareable?*, *ractor_make_shareable*, *ractor_shareable_proc*, and *ractor_shareable_lamda*. In environments where those are available, it forwards them to the Ractor method, otherwise they are a no-op.
+Adds new core extension to Kernel *ractor_shareable?*, *ractor_make_shareable*, *ractor_shareable_proc*, and *ractor_shareable_lambda*. In environments where those are available, it forwards them to the Ractor method, otherwise they are a no-op.
 
 [Make exception wrapper Ractor safe](https://github.com/rails/rails/pull/57483)  
 Adds a configuration for *ActionDispatch::ExceptionWrapper* *silent_exceptions* and *wrapper_exceptions* to silence noisy framework exceptions and be able to decide which exceptions should unwrap to the original cause when reporting.

@@ -1,6 +1,7 @@
 ---
 first_name: DHH
 last_name:
+schedule_name: "David Heinemeier Hansson"
 image_path: /assets/world/2024/images/speakers/d-hansson.jpg
 tagline: CTO
 company: 37signals

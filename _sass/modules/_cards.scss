@@ -363,6 +363,12 @@
       margin-left: 60px;
       margin-right: 60px;
 
+      &--docs-dive-deeper {
+        .card:last-child:nth-child(3n + 1) {
+          grid-column: 2;
+        }
+      }
+
       &.card__fullwidth {
         // This is handled in the specific fullwidth section above
         .card {

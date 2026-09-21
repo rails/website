@@ -1,0 +1,288 @@
+// Rails World 2026 — Schedule / Programme Page
+
+.schedule-page {
+  padding: 48px 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 24px 16px 40px;
+  }
+}
+
+.schedule-inner {
+  max-width: 1262px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Header ────────────────────────────────────────────────────────────────────
+
+.schedule-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 22px;
+
+  &__text {
+    max-width: 60%;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 200;
+    color: $light-grey;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+
+  &__boot {
+    flex-shrink: 0;
+    width: 340px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @include media(TabletScreens) {
+    &__title { font-size: 42px; }
+    &__boot { width: 240px; }
+  }
+
+  @include media(MobileScreens) {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+
+    &__title { font-size: 36px; }
+    &__boot { width: 180px; align-self: flex-end; }
+  }
+}
+
+// ── Tab overrides ─────────────────────────────────────────────────────────────
+
+.schedule-page .faq-tab {
+  border-radius: 0;
+
+  &::after {
+    border-radius: 0;
+  }
+}
+
+// ── Content box padding override ─────────────────────────────────────────────
+
+.schedule-page .faq-content-box {
+  padding: 48px;
+  border-radius: 0;
+
+  @include media(MobileScreens) {
+    padding: 20px 16px;
+  }
+}
+
+// ── Session list ──────────────────────────────────────────────────────────────
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// ── Session card ──────────────────────────────────────────────────────────────
+
+.schedule-session {
+  position: relative;
+  border-radius: 4px;
+  border: none;
+  background: #0d0d0d;
+  padding: 40px 48px;
+  box-shadow:
+    0 0 0 1px rgba($white, 0.5),
+    0px 4px  4px rgba(0, 0, 0, 0.25),
+    4px 0    8px rgba(#FD8B00, 1),
+    0   4px  8px rgba(#993FF2, 1),
+    -4px 0   8px rgba(#3C51ED, 1),
+    0   -4px 8px rgba(#FF000B, 1);
+
+  // Inner glow
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    @include neon-glow-inner;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  &__day,
+  &__time,
+  &__track {
+    font-size: 18px;
+    font-weight: $font-weight-500;
+    color: $white;
+    letter-spacing: 0.15em;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+
+  &__title {
+    font-size: 24px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  &__speaker {
+    font-size: 18px;
+    font-weight: $font-weight-600;
+    color: $white;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  &__speaker-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__title-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+
+  &__location {
+    font-size: 12px;
+    font-weight: $font-weight-500;
+    color: $off-white;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 200;
+    color: $white;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  &__tags {
+    font-size: 13px;
+    font-weight: $font-weight-500;
+    color: $off-white;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  @include media(MobileScreens) {
+    padding: 16px;
+
+    &__title { font-size: 20px; line-height: 24px; }
+    &__speaker { font-size: 15px; }
+    &__description { font-size: 14px; }
+    &__tags { font-size: 11px; }
+  }
+}
+
+// ── Speaker page talk cards ────────────────────────────────────────────────────
+
+.speaker-talks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 89px 96px;
+
+  @include media(MobileAndTabletScreens) {
+    padding: 0 24px 60px;
+    gap: 20px;
+  }
+
+  .schedule-session__meta {
+    @include media(MobileScreens) {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+
+  .schedule-session__day,
+  .schedule-session__time,
+  .schedule-session__track {
+    border: 1px solid $white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    @include neon-glow;
+
+    @include media(MobileScreens) {
+      font-size: 13px;
+      padding: 4px 10px;
+    }
+  }
+}
+
+// ── Rails at Scale notice ─────────────────────────────────────────────────────
+
+.schedule-ras-notice {
+  text-align: center;
+  padding: 48px;
+
+  p {
+    font-size: 16px;
+    font-weight: $font-weight-400;
+    color: $off-white;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+    margin-bottom: 24px;
+
+    strong {
+      color: $white;
+      font-weight: $font-weight-600;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: $font-weight-500;
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba($white, 0.4);
+    transition: border-color 0.2s;
+
+    &:hover { border-color: $white; }
+  }
+
+  @include media(MobileScreens) {
+    padding: 28px 16px;
+    p { font-size: 14px; }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 first_name: Andrew
 last_name: Novoselac
-image_path: https://sessionize.com/image/99da-400o400o1-W3jUFZcrJCg1yy4GcqZro7.jpg
+image_path: https://sessionize.com/image/421f-0o0o0-pPgDvLytpzf96wAHbUFB1N.jpg
 tagline: Developer
 company: Shopify
 specific_order: 5
@@ -15,4 +15,4 @@ talk_description: |
   In this talk, we'll show how an AI agent loop helped us make rapid progress toward Rails Ractor-safety in just a couple of weeks. We'll explain why Rails' reliance on global state makes adopting Ractors hard, and why this problem is especially suited to AI-driven prototyping. Then we'll walk through the harness and specification that enabled the agent to generate, test, and refine multiple prototypes. Of course, not everything can be automated – we'll also talk about hotspots where human intervention and design is needed to land on the right solution. We'll close with the current state of Rails Ractor-safety, what worked, what failed, and what remains.
 ---
 
-Andrew is a developer and the manager of the Rails Infrastructure team at Shopify. He is a self-taught Rubyist who has been working with Rails since 2018.
+Andrew is a developer on the Ruby & Rails Infrastructure team at Shopify. He is a self-taught Rubyist who has been working with Rails since 2018.

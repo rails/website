@@ -1,0 +1,11 @@
+{% if include.session.second_speaker_slug %}
+  {% assign slug1 = include.session.speaker_slug %}
+  {% assign slug2 = include.session.second_speaker_slug %}
+  {% assign spk1 = include.all_speakers | where_exp: 'item', 'item.path contains slug1' | first %}
+  {% assign spk2 = include.all_speakers | where_exp: 'item', 'item.path contains slug2' | first %}
+  <a href="/world/2026/speakers/{{ slug1 }}" class="schedule-session__speaker-link">{{ spk1.first_name }} {{ spk1.last_name }}</a> &amp; <a href="/world/2026/speakers/{{ slug2 }}" class="schedule-session__speaker-link">{{ spk2.first_name }} {{ spk2.last_name }}</a>
+{% elsif include.session.speaker_slug %}
+  <a href="/world/2026/speakers/{{ include.session.speaker_slug }}" class="schedule-session__speaker-link">{{ include.session.speaker }}</a>
+{% else %}
+  {{ include.session.speaker }}
+{% endif %}

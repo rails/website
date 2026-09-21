@@ -53,7 +53,11 @@
       a {
 
         color: $color-grey-5;
-        display: inline-block;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        min-height: 44px;
+        min-width: 44px;
 
         &:hover {
           color: $color-black;
@@ -63,7 +67,7 @@
       }
 
       &:not(:last-child) {
-        margin-bottom: 8px;
+        margin-bottom: 0;
       }
 
     }

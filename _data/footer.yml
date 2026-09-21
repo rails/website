@@ -1,4 +1,7 @@
 items:
+  - title: Merch
+    url: https://merch.rubyonrails.org
+
   - title: Conduct
     url: /conduct
 
