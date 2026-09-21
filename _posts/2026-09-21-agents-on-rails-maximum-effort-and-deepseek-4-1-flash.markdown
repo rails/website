@@ -7,7 +7,7 @@ published: true
 date: 2026-09-21
 ---
 
-Last week we shipped [Stage 2](/2026/9/9/agents-on-rails-stage-2), 20 feature tickets on Fizzy, and we promised to explore benchmarking the agents all on max-effort. This week we ran it: every model on the board, same tickets, reasoning turned all the way up. We also tested a new model: **DeepSeek 4.1 Flash**.
+In the [Stage 2 report](/2026/9/9/agents-on-rails-stage-2) we shipped 20 feature tickets on Fizzy and promised to explore benchmarking the agents all on max-effort. Now we have run it: every model on the board, same tickets, reasoning turned all the way up. We also tested a new model: **DeepSeek 4.1 Flash**.
 
 The short version:
 
@@ -91,7 +91,7 @@ On the same note: Opus 5 gained four runs for another $310. Grok 4.6 gained one 
 
 ## Luna is back in the game
 
-Last week we wrote that a dollar gets you nothing on feature tickets with Luna. At default, it spent 19 steps and 3 minutes per run, guessed, and finished 0 of 60.
+In the Stage 2 report we wrote that a dollar gets you nothing on feature tickets with Luna. At default, it spent 19 steps and 3 minutes per run, guessed, and finished 0 of 60.
 
 At max it is a different agent. 90 steps and 19 minutes per run, the test suite ran five times as often, and 16 of 60 solved. The whole campaign cost $29, about 49 cents a run.
 
