@@ -37,9 +37,29 @@
       "id": "z-ai",
       "name": "Z.ai",
       "logo": "/assets/images/ai-vendors/z-ai.svg"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "logo": "/assets/images/ai-vendors/deepseek.svg"
     }
   ],
   "models": [
+    {
+      "id": "astra-max",
+      "name": "GPT-6 Astra",
+      "vendor_id": "openai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 53.3,
+        "median_duration_seconds": 1435,
+        "tokens_per_run": 128900,
+        "cost_per_run_usd": 6.63,
+        "successful_runs": 32,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
     {
       "id": "astra",
       "name": "GPT-6 Astra",
@@ -61,11 +81,56 @@
       "vendor_id": "anthropic",
       "default_effort": "high",
       "metrics": {
-        "accuracy_percentage": 30.0,
+        "accuracy_percentage": 31.7,
         "median_duration_seconds": 1405,
         "tokens_per_run": 177000,
         "cost_per_run_usd": 9.14,
-        "successful_runs": 18,
+        "successful_runs": 19,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "fable-5-1-max",
+      "name": "Claude Fable 5.1",
+      "vendor_id": "anthropic",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 31.7,
+        "median_duration_seconds": 2721,
+        "tokens_per_run": 314700,
+        "cost_per_run_usd": 19.1,
+        "successful_runs": 19,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "opus-5-max",
+      "name": "Claude Opus 5",
+      "vendor_id": "anthropic",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 31.7,
+        "median_duration_seconds": 1989,
+        "tokens_per_run": 268900,
+        "cost_per_run_usd": 15.0,
+        "successful_runs": 19,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "sol-max",
+      "name": "GPT-5.6 Sol",
+      "vendor_id": "openai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 28.3,
+        "median_duration_seconds": 1779,
+        "tokens_per_run": 207900,
+        "cost_per_run_usd": 3.68,
+        "successful_runs": 17,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -86,6 +151,21 @@
       }
     },
     {
+      "id": "luna-max",
+      "name": "GPT-5.6 Luna",
+      "vendor_id": "openai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 26.7,
+        "median_duration_seconds": 1122,
+        "tokens_per_run": 212300,
+        "cost_per_run_usd": 0.491,
+        "successful_runs": 16,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
       "id": "opus-5",
       "name": "Claude Opus 5",
       "vendor_id": "anthropic",
@@ -101,16 +181,76 @@
       }
     },
     {
+      "id": "gemini-3-8-flash-high",
+      "name": "Gemini 3.8 Flash",
+      "vendor_id": "google",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 23.3,
+        "median_duration_seconds": 1481,
+        "tokens_per_run": 224900,
+        "cost_per_run_usd": 3.19,
+        "successful_runs": 14,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "muse-1-3-max",
+      "name": "Muse Spark 1.3",
+      "vendor_id": "meta",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 20.0,
+        "median_duration_seconds": 1201,
+        "tokens_per_run": 213700,
+        "cost_per_run_usd": 13.0,
+        "successful_runs": 12,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
       "id": "sol",
       "name": "GPT-5.6 Sol",
       "vendor_id": "openai",
       "default_effort": "medium",
       "metrics": {
-        "accuracy_percentage": 15.0,
+        "accuracy_percentage": 18.3,
         "median_duration_seconds": 633,
         "tokens_per_run": 71300,
         "cost_per_run_usd": 0.753,
-        "successful_runs": 9,
+        "successful_runs": 11,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "deepseek-4-1-flash-max",
+      "name": "DeepSeek 4.1 Flash",
+      "vendor_id": "deepseek",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 16.7,
+        "median_duration_seconds": 2357,
+        "tokens_per_run": 332200,
+        "cost_per_run_usd": 0.548,
+        "successful_runs": 10,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "name": "Grok 4.6",
+      "vendor_id": "xai",
+      "default_effort": "xhigh",
+      "metrics": {
+        "accuracy_percentage": 16.7,
+        "median_duration_seconds": 1450,
+        "tokens_per_run": 169000,
+        "cost_per_run_usd": 6.58,
+        "successful_runs": 10,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -121,11 +261,11 @@
       "vendor_id": "z-ai",
       "default_effort": "max",
       "metrics": {
-        "accuracy_percentage": 13.3,
+        "accuracy_percentage": 15.0,
         "median_duration_seconds": 3208,
         "tokens_per_run": 184600,
         "cost_per_run_usd": 0.313,
-        "successful_runs": 8,
+        "successful_runs": 9,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -136,11 +276,11 @@
       "vendor_id": "xai",
       "default_effort": "high",
       "metrics": {
-        "accuracy_percentage": 13.3,
+        "accuracy_percentage": 15.0,
         "median_duration_seconds": 1020,
         "tokens_per_run": 129200,
         "cost_per_run_usd": 4.23,
-        "successful_runs": 8,
+        "successful_runs": 9,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -156,6 +296,21 @@
         "tokens_per_run": 150700,
         "cost_per_run_usd": 5.16,
         "successful_runs": 8,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "deepseek-4-1-flash",
+      "name": "DeepSeek 4.1 Flash",
+      "vendor_id": "deepseek",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 11.7,
+        "median_duration_seconds": 1642,
+        "tokens_per_run": 233400,
+        "cost_per_run_usd": 0.39,
+        "successful_runs": 7,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -263,6 +418,66 @@
           "cost_usd": 0.46,
           "duration_seconds": 3051,
           "average_tokens_per_run": 227200
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.36,
+          "duration_seconds": 1620,
+          "average_tokens_per_run": 246600
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 6.56,
+          "duration_seconds": 1518,
+          "average_tokens_per_run": 138900
+        },
+        "fable-5-1-max": {
+          "score": 2,
+          "cost_usd": 21.96,
+          "duration_seconds": 2921,
+          "average_tokens_per_run": 375200
+        },
+        "opus-5-max": {
+          "score": 2,
+          "cost_usd": 20.14,
+          "duration_seconds": 2200,
+          "average_tokens_per_run": 341400
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 2.98,
+          "duration_seconds": 1664,
+          "average_tokens_per_run": 247400
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 1.0,
+          "duration_seconds": 1772,
+          "average_tokens_per_run": 325200
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 4.47,
+          "duration_seconds": 1801,
+          "average_tokens_per_run": 295300
+        },
+        "muse-1-3-max": {
+          "score": 2,
+          "cost_usd": 20.87,
+          "duration_seconds": 1626,
+          "average_tokens_per_run": 284100
+        },
+        "grok-4-6-xhigh": {
+          "score": 1,
+          "cost_usd": 8.25,
+          "duration_seconds": 1451,
+          "average_tokens_per_run": 211900
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.59,
+          "duration_seconds": 2141,
+          "average_tokens_per_run": 327900
         }
       }
     },
@@ -336,6 +551,66 @@
           "cost_usd": 0.24,
           "duration_seconds": 4023,
           "average_tokens_per_run": 171800
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.43,
+          "duration_seconds": 1492,
+          "average_tokens_per_run": 251500
+        },
+        "astra-max": {
+          "score": 2,
+          "cost_usd": 6.55,
+          "duration_seconds": 2132,
+          "average_tokens_per_run": 126200
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 17.6,
+          "duration_seconds": 2897,
+          "average_tokens_per_run": 293300
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 12.59,
+          "duration_seconds": 2301,
+          "average_tokens_per_run": 271300
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 3.26,
+          "duration_seconds": 1883,
+          "average_tokens_per_run": 221900
+        },
+        "luna-max": {
+          "score": 1,
+          "cost_usd": 0.51,
+          "duration_seconds": 1740,
+          "average_tokens_per_run": 233300
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.6,
+          "duration_seconds": 1770,
+          "average_tokens_per_run": 240600
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 11.48,
+          "duration_seconds": 1459,
+          "average_tokens_per_run": 231800
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 6.09,
+          "duration_seconds": 1618,
+          "average_tokens_per_run": 178500
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.61,
+          "duration_seconds": 2682,
+          "average_tokens_per_run": 376000
         }
       }
     },
@@ -408,6 +683,66 @@
           "cost_usd": 0.16,
           "duration_seconds": 2365,
           "average_tokens_per_run": 137000
+        },
+        "deepseek-4-1-flash": {
+          "score": 1,
+          "cost_usd": 0.23,
+          "duration_seconds": 879,
+          "average_tokens_per_run": 193600
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 3.24,
+          "duration_seconds": 952,
+          "average_tokens_per_run": 77800
+        },
+        "fable-5-1-max": {
+          "score": 1,
+          "cost_usd": 9.89,
+          "duration_seconds": 1540,
+          "average_tokens_per_run": 210500
+        },
+        "opus-5-max": {
+          "score": 2,
+          "cost_usd": 6.5,
+          "duration_seconds": 1099,
+          "average_tokens_per_run": 174000
+        },
+        "sol-max": {
+          "score": 2,
+          "cost_usd": 1.63,
+          "duration_seconds": 1292,
+          "average_tokens_per_run": 164000
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.26,
+          "duration_seconds": 957,
+          "average_tokens_per_run": 163300
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 1.95,
+          "duration_seconds": 1247,
+          "average_tokens_per_run": 177000
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 4.27,
+          "duration_seconds": 662,
+          "average_tokens_per_run": 143900
+        },
+        "grok-4-6-xhigh": {
+          "score": 1,
+          "cost_usd": 4.8,
+          "duration_seconds": 1220,
+          "average_tokens_per_run": 142400
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.27,
+          "duration_seconds": 1375,
+          "average_tokens_per_run": 210400
         }
       }
     },
@@ -481,6 +816,66 @@
           "cost_usd": 0.26,
           "duration_seconds": 3159,
           "average_tokens_per_run": 172000
+        },
+        "deepseek-4-1-flash": {
+          "score": 1,
+          "cost_usd": 0.36,
+          "duration_seconds": 1264,
+          "average_tokens_per_run": 259800
+        },
+        "astra-max": {
+          "score": 1,
+          "cost_usd": 4.53,
+          "duration_seconds": 1123,
+          "average_tokens_per_run": 107500
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 21.74,
+          "duration_seconds": 2848,
+          "average_tokens_per_run": 362600
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 11.56,
+          "duration_seconds": 1747,
+          "average_tokens_per_run": 251100
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 2.38,
+          "duration_seconds": 1330,
+          "average_tokens_per_run": 201100
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.27,
+          "duration_seconds": 972,
+          "average_tokens_per_run": 175200
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.73,
+          "duration_seconds": 1658,
+          "average_tokens_per_run": 219600
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 7.42,
+          "duration_seconds": 1056,
+          "average_tokens_per_run": 157600
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 5.87,
+          "duration_seconds": 1200,
+          "average_tokens_per_run": 169700
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.45,
+          "duration_seconds": 1840,
+          "average_tokens_per_run": 304300
         }
       }
     },
@@ -554,6 +949,66 @@
           "cost_usd": 0.16,
           "duration_seconds": 2298,
           "average_tokens_per_run": 127900
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.17,
+          "duration_seconds": 803,
+          "average_tokens_per_run": 149400
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 3.7,
+          "duration_seconds": 922,
+          "average_tokens_per_run": 85800
+        },
+        "fable-5-1-max": {
+          "score": 1,
+          "cost_usd": 9.01,
+          "duration_seconds": 1376,
+          "average_tokens_per_run": 191700
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 5.95,
+          "duration_seconds": 1098,
+          "average_tokens_per_run": 157600
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 1.56,
+          "duration_seconds": 1261,
+          "average_tokens_per_run": 148300
+        },
+        "luna-max": {
+          "score": 3,
+          "cost_usd": 0.3,
+          "duration_seconds": 944,
+          "average_tokens_per_run": 187500
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 2.75,
+          "duration_seconds": 1482,
+          "average_tokens_per_run": 207000
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 6.84,
+          "duration_seconds": 1004,
+          "average_tokens_per_run": 173400
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 2.42,
+          "duration_seconds": 779,
+          "average_tokens_per_run": 99900
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 3,
+          "cost_usd": 0.29,
+          "duration_seconds": 1493,
+          "average_tokens_per_run": 208500
         }
       }
     },
@@ -626,6 +1081,66 @@
           "cost_usd": 0.29,
           "duration_seconds": 3935,
           "average_tokens_per_run": 194500
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.26,
+          "duration_seconds": 1206,
+          "average_tokens_per_run": 178100
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 7.04,
+          "duration_seconds": 1765,
+          "average_tokens_per_run": 130800
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 17.69,
+          "duration_seconds": 3419,
+          "average_tokens_per_run": 307600
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 10.64,
+          "duration_seconds": 2252,
+          "average_tokens_per_run": 236500
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 2.47,
+          "duration_seconds": 1991,
+          "average_tokens_per_run": 173200
+        },
+        "luna-max": {
+          "score": 1,
+          "cost_usd": 0.35,
+          "duration_seconds": 1151,
+          "average_tokens_per_run": 204300
+        },
+        "gemini-3-8-flash-high": {
+          "score": 3,
+          "cost_usd": 2.45,
+          "duration_seconds": 1751,
+          "average_tokens_per_run": 213200
+        },
+        "muse-1-3-max": {
+          "score": 3,
+          "cost_usd": 9.7,
+          "duration_seconds": 1034,
+          "average_tokens_per_run": 197200
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 4.24,
+          "duration_seconds": 1391,
+          "average_tokens_per_run": 144900
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 2,
+          "cost_usd": 0.44,
+          "duration_seconds": 2636,
+          "average_tokens_per_run": 276200
         }
       }
     },
@@ -699,6 +1214,66 @@
           "cost_usd": 0.19,
           "duration_seconds": 2484,
           "average_tokens_per_run": 142700
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.26,
+          "duration_seconds": 1599,
+          "average_tokens_per_run": 167000
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 4.97,
+          "duration_seconds": 1185,
+          "average_tokens_per_run": 111800
+        },
+        "fable-5-1-max": {
+          "score": 2,
+          "cost_usd": 16.07,
+          "duration_seconds": 2693,
+          "average_tokens_per_run": 290000
+        },
+        "opus-5-max": {
+          "score": 3,
+          "cost_usd": 10.54,
+          "duration_seconds": 1334,
+          "average_tokens_per_run": 221100
+        },
+        "sol-max": {
+          "score": 3,
+          "cost_usd": 2.42,
+          "duration_seconds": 1708,
+          "average_tokens_per_run": 165300
+        },
+        "luna-max": {
+          "score": 2,
+          "cost_usd": 0.25,
+          "duration_seconds": 830,
+          "average_tokens_per_run": 168500
+        },
+        "gemini-3-8-flash-high": {
+          "score": 3,
+          "cost_usd": 3.03,
+          "duration_seconds": 1449,
+          "average_tokens_per_run": 192600
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 5.85,
+          "duration_seconds": 742,
+          "average_tokens_per_run": 156500
+        },
+        "grok-4-6-xhigh": {
+          "score": 1,
+          "cost_usd": 5.17,
+          "duration_seconds": 1334,
+          "average_tokens_per_run": 151800
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 1,
+          "cost_usd": 0.31,
+          "duration_seconds": 1802,
+          "average_tokens_per_run": 225300
         }
       }
     },
@@ -771,6 +1346,66 @@
           "cost_usd": 0.18,
           "duration_seconds": 2672,
           "average_tokens_per_run": 153400
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.36,
+          "duration_seconds": 1628,
+          "average_tokens_per_run": 209700
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 6.59,
+          "duration_seconds": 1379,
+          "average_tokens_per_run": 130800
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 12.67,
+          "duration_seconds": 1852,
+          "average_tokens_per_run": 243000
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 8.78,
+          "duration_seconds": 1630,
+          "average_tokens_per_run": 214000
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 2.38,
+          "duration_seconds": 1520,
+          "average_tokens_per_run": 195100
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.34,
+          "duration_seconds": 1667,
+          "average_tokens_per_run": 194600
+        },
+        "gemini-3-8-flash-high": {
+          "score": 1,
+          "cost_usd": 3.72,
+          "duration_seconds": 1509,
+          "average_tokens_per_run": 237000
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 8.49,
+          "duration_seconds": 982,
+          "average_tokens_per_run": 177000
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 5.63,
+          "duration_seconds": 1242,
+          "average_tokens_per_run": 154000
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.6,
+          "duration_seconds": 2751,
+          "average_tokens_per_run": 380700
         }
       }
     },
@@ -844,6 +1479,66 @@
           "cost_usd": 0.57,
           "duration_seconds": 5528,
           "average_tokens_per_run": 261000
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.66,
+          "duration_seconds": 2462,
+          "average_tokens_per_run": 290400
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 4.87,
+          "duration_seconds": 1435,
+          "average_tokens_per_run": 104000
+        },
+        "fable-5-1-max": {
+          "score": 3,
+          "cost_usd": 20.51,
+          "duration_seconds": 3098,
+          "average_tokens_per_run": 339200
+        },
+        "opus-5-max": {
+          "score": 2,
+          "cost_usd": 15.35,
+          "duration_seconds": 2371,
+          "average_tokens_per_run": 284500
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 2.62,
+          "duration_seconds": 1752,
+          "average_tokens_per_run": 202700
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.58,
+          "duration_seconds": 1530,
+          "average_tokens_per_run": 247500
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.54,
+          "duration_seconds": 1828,
+          "average_tokens_per_run": 227400
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 13.25,
+          "duration_seconds": 1464,
+          "average_tokens_per_run": 242600
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 6.73,
+          "duration_seconds": 1553,
+          "average_tokens_per_run": 183700
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 1,
+          "cost_usd": 0.67,
+          "duration_seconds": 2842,
+          "average_tokens_per_run": 382800
         }
       }
     },
@@ -919,6 +1614,66 @@
           "cost_usd": 0.63,
           "duration_seconds": 5474,
           "average_tokens_per_run": 269500
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.52,
+          "duration_seconds": 2556,
+          "average_tokens_per_run": 283100
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 14.87,
+          "duration_seconds": 4533,
+          "average_tokens_per_run": 238200
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 32.22,
+          "duration_seconds": 4298,
+          "average_tokens_per_run": 468500
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 25.3,
+          "duration_seconds": 3379,
+          "average_tokens_per_run": 375400
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 9.34,
+          "duration_seconds": 3395,
+          "average_tokens_per_run": 375500
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 1.01,
+          "duration_seconds": 2434,
+          "average_tokens_per_run": 301300
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 4.54,
+          "duration_seconds": 1779,
+          "average_tokens_per_run": 281500
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 26.69,
+          "duration_seconds": 2295,
+          "average_tokens_per_run": 322400
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 15.46,
+          "duration_seconds": 2445,
+          "average_tokens_per_run": 243800
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 1.13,
+          "duration_seconds": 3437,
+          "average_tokens_per_run": 509100
         }
       }
     },
@@ -952,7 +1707,7 @@
           "average_tokens_per_run": 40700
         },
         "sol": {
-          "score": 0,
+          "score": 1,
           "cost_usd": 0.63,
           "duration_seconds": 821,
           "average_tokens_per_run": 59400
@@ -992,6 +1747,66 @@
           "cost_usd": 0.36,
           "duration_seconds": 4111,
           "average_tokens_per_run": 209900
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.46,
+          "duration_seconds": 1971,
+          "average_tokens_per_run": 229200
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 4.32,
+          "duration_seconds": 1454,
+          "average_tokens_per_run": 94200
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 19.21,
+          "duration_seconds": 2565,
+          "average_tokens_per_run": 301200
+        },
+        "opus-5-max": {
+          "score": 2,
+          "cost_usd": 11.78,
+          "duration_seconds": 1902,
+          "average_tokens_per_run": 245600
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 2.77,
+          "duration_seconds": 2040,
+          "average_tokens_per_run": 185700
+        },
+        "luna-max": {
+          "score": 3,
+          "cost_usd": 0.29,
+          "duration_seconds": 1285,
+          "average_tokens_per_run": 168300
+        },
+        "gemini-3-8-flash-high": {
+          "score": 1,
+          "cost_usd": 2.23,
+          "duration_seconds": 1118,
+          "average_tokens_per_run": 194300
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 9.07,
+          "duration_seconds": 1208,
+          "average_tokens_per_run": 183100
+        },
+        "grok-4-6-xhigh": {
+          "score": 1,
+          "cost_usd": 5.15,
+          "duration_seconds": 1570,
+          "average_tokens_per_run": 157700
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 1,
+          "cost_usd": 0.77,
+          "duration_seconds": 2963,
+          "average_tokens_per_run": 410800
         }
       }
     },
@@ -1065,6 +1880,66 @@
           "cost_usd": 0.2,
           "duration_seconds": 5491,
           "average_tokens_per_run": 168600
+        },
+        "deepseek-4-1-flash": {
+          "score": 1,
+          "cost_usd": 0.33,
+          "duration_seconds": 1569,
+          "average_tokens_per_run": 212900
+        },
+        "astra-max": {
+          "score": 2,
+          "cost_usd": 3.73,
+          "duration_seconds": 1058,
+          "average_tokens_per_run": 82700
+        },
+        "fable-5-1-max": {
+          "score": 1,
+          "cost_usd": 15.05,
+          "duration_seconds": 3400,
+          "average_tokens_per_run": 244500
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 14.37,
+          "duration_seconds": 2993,
+          "average_tokens_per_run": 261100
+        },
+        "sol-max": {
+          "score": 2,
+          "cost_usd": 1.17,
+          "duration_seconds": 1125,
+          "average_tokens_per_run": 100900
+        },
+        "luna-max": {
+          "score": 1,
+          "cost_usd": 0.24,
+          "duration_seconds": 817,
+          "average_tokens_per_run": 141800
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 2.19,
+          "duration_seconds": 1264,
+          "average_tokens_per_run": 208500
+        },
+        "muse-1-3-max": {
+          "score": 2,
+          "cost_usd": 7.48,
+          "duration_seconds": 1537,
+          "average_tokens_per_run": 182500
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 3.61,
+          "duration_seconds": 1140,
+          "average_tokens_per_run": 126900
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.35,
+          "duration_seconds": 1910,
+          "average_tokens_per_run": 253100
         }
       }
     },
@@ -1137,6 +2012,66 @@
           "cost_usd": 0.85,
           "duration_seconds": 5471,
           "average_tokens_per_run": 308000
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.86,
+          "duration_seconds": 3240,
+          "average_tokens_per_run": 402400
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 20.81,
+          "duration_seconds": 4932,
+          "average_tokens_per_run": 322700
+        },
+        "fable-5-1-max": {
+          "score": 1,
+          "cost_usd": 46.11,
+          "duration_seconds": 4839,
+          "average_tokens_per_run": 626000
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 58.23,
+          "duration_seconds": 4294,
+          "average_tokens_per_run": 576200
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 20.69,
+          "duration_seconds": 5115,
+          "average_tokens_per_run": 528500
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 2.01,
+          "duration_seconds": 2662,
+          "average_tokens_per_run": 440500
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 6.11,
+          "duration_seconds": 1898,
+          "average_tokens_per_run": 370600
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 60.32,
+          "duration_seconds": 4343,
+          "average_tokens_per_run": 516100
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 18.44,
+          "duration_seconds": 2825,
+          "average_tokens_per_run": 286600
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.94,
+          "duration_seconds": 3072,
+          "average_tokens_per_run": 517800
         }
       }
     },
@@ -1209,6 +2144,66 @@
           "cost_usd": 0.15,
           "duration_seconds": 1842,
           "average_tokens_per_run": 122800
+        },
+        "deepseek-4-1-flash": {
+          "score": 1,
+          "cost_usd": 0.23,
+          "duration_seconds": 1156,
+          "average_tokens_per_run": 165800
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 3.92,
+          "duration_seconds": 1116,
+          "average_tokens_per_run": 90600
+        },
+        "fable-5-1-max": {
+          "score": 3,
+          "cost_usd": 10.65,
+          "duration_seconds": 1724,
+          "average_tokens_per_run": 208200
+        },
+        "opus-5-max": {
+          "score": 3,
+          "cost_usd": 8.38,
+          "duration_seconds": 1413,
+          "average_tokens_per_run": 204000
+        },
+        "sol-max": {
+          "score": 2,
+          "cost_usd": 1.39,
+          "duration_seconds": 1225,
+          "average_tokens_per_run": 136700
+        },
+        "luna-max": {
+          "score": 2,
+          "cost_usd": 0.23,
+          "duration_seconds": 716,
+          "average_tokens_per_run": 153900
+        },
+        "gemini-3-8-flash-high": {
+          "score": 3,
+          "cost_usd": 2.34,
+          "duration_seconds": 1210,
+          "average_tokens_per_run": 187200
+        },
+        "muse-1-3-max": {
+          "score": 3,
+          "cost_usd": 5.51,
+          "duration_seconds": 660,
+          "average_tokens_per_run": 143700
+        },
+        "grok-4-6-xhigh": {
+          "score": 3,
+          "cost_usd": 2.53,
+          "duration_seconds": 1228,
+          "average_tokens_per_run": 110300
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 1,
+          "cost_usd": 0.31,
+          "duration_seconds": 1250,
+          "average_tokens_per_run": 239000
         }
       }
     },
@@ -1282,6 +2277,66 @@
           "cost_usd": 0.18,
           "duration_seconds": 2541,
           "average_tokens_per_run": 140400
+        },
+        "deepseek-4-1-flash": {
+          "score": 2,
+          "cost_usd": 0.29,
+          "duration_seconds": 2134,
+          "average_tokens_per_run": 195900
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 3.79,
+          "duration_seconds": 1204,
+          "average_tokens_per_run": 87700
+        },
+        "fable-5-1-max": {
+          "score": 2,
+          "cost_usd": 11.97,
+          "duration_seconds": 2110,
+          "average_tokens_per_run": 221100
+        },
+        "opus-5-max": {
+          "score": 3,
+          "cost_usd": 10.73,
+          "duration_seconds": 2256,
+          "average_tokens_per_run": 236000
+        },
+        "sol-max": {
+          "score": 1,
+          "cost_usd": 2.38,
+          "duration_seconds": 1778,
+          "average_tokens_per_run": 183700
+        },
+        "luna-max": {
+          "score": 1,
+          "cost_usd": 0.28,
+          "duration_seconds": 967,
+          "average_tokens_per_run": 186400
+        },
+        "gemini-3-8-flash-high": {
+          "score": 3,
+          "cost_usd": 2.57,
+          "duration_seconds": 1242,
+          "average_tokens_per_run": 203300
+        },
+        "muse-1-3-max": {
+          "score": 2,
+          "cost_usd": 9.31,
+          "duration_seconds": 1138,
+          "average_tokens_per_run": 195300
+        },
+        "grok-4-6-xhigh": {
+          "score": 3,
+          "cost_usd": 4.86,
+          "duration_seconds": 1386,
+          "average_tokens_per_run": 145600
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 1,
+          "cost_usd": 0.32,
+          "duration_seconds": 1860,
+          "average_tokens_per_run": 243100
         }
       }
     },
@@ -1355,6 +2410,66 @@
           "cost_usd": 0.19,
           "duration_seconds": 2419,
           "average_tokens_per_run": 138400
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.24,
+          "duration_seconds": 1128,
+          "average_tokens_per_run": 168200
+        },
+        "astra-max": {
+          "score": 3,
+          "cost_usd": 4.91,
+          "duration_seconds": 1240,
+          "average_tokens_per_run": 107200
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 14.3,
+          "duration_seconds": 2045,
+          "average_tokens_per_run": 267900
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 10.31,
+          "duration_seconds": 1392,
+          "average_tokens_per_run": 219800
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 1.6,
+          "duration_seconds": 1256,
+          "average_tokens_per_run": 127200
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.23,
+          "duration_seconds": 655,
+          "average_tokens_per_run": 152500
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.01,
+          "duration_seconds": 1141,
+          "average_tokens_per_run": 203000
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 5.14,
+          "duration_seconds": 738,
+          "average_tokens_per_run": 133000
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 4.56,
+          "duration_seconds": 1462,
+          "average_tokens_per_run": 154200
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.28,
+          "duration_seconds": 1255,
+          "average_tokens_per_run": 227000
         }
       }
     },
@@ -1428,6 +2543,66 @@
           "cost_usd": 0.24,
           "duration_seconds": 3257,
           "average_tokens_per_run": 167600
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.43,
+          "duration_seconds": 2201,
+          "average_tokens_per_run": 273600
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 4.96,
+          "duration_seconds": 1402,
+          "average_tokens_per_run": 99500
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 17.43,
+          "duration_seconds": 2538,
+          "average_tokens_per_run": 295000
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 11.86,
+          "duration_seconds": 1695,
+          "average_tokens_per_run": 238200
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 2.51,
+          "duration_seconds": 1936,
+          "average_tokens_per_run": 179900
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.26,
+          "duration_seconds": 947,
+          "average_tokens_per_run": 153800
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 2.56,
+          "duration_seconds": 1458,
+          "average_tokens_per_run": 187800
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 8.89,
+          "duration_seconds": 1163,
+          "average_tokens_per_run": 176300
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 5.42,
+          "duration_seconds": 1449,
+          "average_tokens_per_run": 155100
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.71,
+          "duration_seconds": 2586,
+          "average_tokens_per_run": 408400
         }
       }
     },
@@ -1449,7 +2624,7 @@
           "average_tokens_per_run": 217200
         },
         "fable-5-1": {
-          "score": 1,
+          "score": 2,
           "cost_usd": 15.87,
           "duration_seconds": 2198,
           "average_tokens_per_run": 269500
@@ -1461,7 +2636,7 @@
           "average_tokens_per_run": 71000
         },
         "sol": {
-          "score": 1,
+          "score": 2,
           "cost_usd": 1.13,
           "duration_seconds": 802,
           "average_tokens_per_run": 103400
@@ -1479,7 +2654,7 @@
           "average_tokens_per_run": 226000
         },
         "grok-4-6": {
-          "score": 0,
+          "score": 1,
           "cost_usd": 4.36,
           "duration_seconds": 1176,
           "average_tokens_per_run": 147900
@@ -1497,10 +2672,70 @@
           "average_tokens_per_run": 176000
         },
         "glm-5-3-flash": {
-          "score": 1,
+          "score": 2,
           "cost_usd": 0.46,
           "duration_seconds": 4686,
           "average_tokens_per_run": 243600
+        },
+        "deepseek-4-1-flash": {
+          "score": 1,
+          "cost_usd": 0.51,
+          "duration_seconds": 2840,
+          "average_tokens_per_run": 295800
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 9.28,
+          "duration_seconds": 2835,
+          "average_tokens_per_run": 171700
+        },
+        "fable-5-1-max": {
+          "score": 3,
+          "cost_usd": 27.53,
+          "duration_seconds": 4027,
+          "average_tokens_per_run": 384900
+        },
+        "opus-5-max": {
+          "score": 2,
+          "cost_usd": 20.87,
+          "duration_seconds": 2709,
+          "average_tokens_per_run": 344900
+        },
+        "sol-max": {
+          "score": 2,
+          "cost_usd": 4.03,
+          "duration_seconds": 2369,
+          "average_tokens_per_run": 231200
+        },
+        "luna-max": {
+          "score": 2,
+          "cost_usd": 0.66,
+          "duration_seconds": 1650,
+          "average_tokens_per_run": 252200
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.44,
+          "duration_seconds": 2703,
+          "average_tokens_per_run": 237800
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 22.71,
+          "duration_seconds": 2096,
+          "average_tokens_per_run": 260300
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 6.96,
+          "duration_seconds": 3403,
+          "average_tokens_per_run": 182200
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.96,
+          "duration_seconds": 3140,
+          "average_tokens_per_run": 444800
         }
       }
     },
@@ -1574,6 +2809,66 @@
           "cost_usd": 0.35,
           "duration_seconds": 4308,
           "average_tokens_per_run": 194600
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.5,
+          "duration_seconds": 2075,
+          "average_tokens_per_run": 277800
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 7.09,
+          "duration_seconds": 1895,
+          "average_tokens_per_run": 140600
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 25.61,
+          "duration_seconds": 4370,
+          "average_tokens_per_run": 395100
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 16.51,
+          "duration_seconds": 2121,
+          "average_tokens_per_run": 294400
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 3.26,
+          "duration_seconds": 1950,
+          "average_tokens_per_run": 199200
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.44,
+          "duration_seconds": 1237,
+          "average_tokens_per_run": 211700
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 3.38,
+          "duration_seconds": 1517,
+          "average_tokens_per_run": 218200
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 7.18,
+          "duration_seconds": 1273,
+          "average_tokens_per_run": 202100
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 8.88,
+          "duration_seconds": 2021,
+          "average_tokens_per_run": 208200
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.56,
+          "duration_seconds": 2808,
+          "average_tokens_per_run": 386200
         }
       }
     },
@@ -1647,6 +2942,66 @@
           "cost_usd": 0.15,
           "duration_seconds": 2497,
           "average_tokens_per_run": 141200
+        },
+        "deepseek-4-1-flash": {
+          "score": 0,
+          "cost_usd": 0.32,
+          "duration_seconds": 1342,
+          "average_tokens_per_run": 216500
+        },
+        "astra-max": {
+          "score": 0,
+          "cost_usd": 6.8,
+          "duration_seconds": 1945,
+          "average_tokens_per_run": 129200
+        },
+        "fable-5-1-max": {
+          "score": 0,
+          "cost_usd": 14.76,
+          "duration_seconds": 2382,
+          "average_tokens_per_run": 267500
+        },
+        "opus-5-max": {
+          "score": 0,
+          "cost_usd": 10.21,
+          "duration_seconds": 1670,
+          "average_tokens_per_run": 230100
+        },
+        "sol-max": {
+          "score": 0,
+          "cost_usd": 2.77,
+          "duration_seconds": 1856,
+          "average_tokens_per_run": 189300
+        },
+        "luna-max": {
+          "score": 0,
+          "cost_usd": 0.29,
+          "duration_seconds": 1057,
+          "average_tokens_per_run": 184000
+        },
+        "gemini-3-8-flash-high": {
+          "score": 0,
+          "cost_usd": 2.18,
+          "duration_seconds": 1270,
+          "average_tokens_per_run": 195600
+        },
+        "muse-1-3-max": {
+          "score": 0,
+          "cost_usd": 10.25,
+          "duration_seconds": 1188,
+          "average_tokens_per_run": 195900
+        },
+        "grok-4-6-xhigh": {
+          "score": 0,
+          "cost_usd": 6.57,
+          "duration_seconds": 1292,
+          "average_tokens_per_run": 172400
+        },
+        "deepseek-4-1-flash-max": {
+          "score": 0,
+          "cost_usd": 0.42,
+          "duration_seconds": 1629,
+          "average_tokens_per_run": 313300
         }
       }
     }

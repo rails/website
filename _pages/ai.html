@@ -54,7 +54,7 @@ redirect_from:
 
         <div class="ai__models__header">
           <h2 id="ai-models-heading">Which model is best?</h2>
-          <p>Two benchmarks, one harness. Atomic tasks ask whether a model knows Rails. Feature tickets ask whether it can ship.</p>
+          <p>Two benchmarks, one harness. Atomic tasks ask whether a model knows Rails. Feature tickets ask whether it can ship, at default effort and at max effort.</p>
           <div class="ai__models__tabs" role="tablist" aria-label="Benchmark">
             {% for benchmark in site.data.ai_benchmarks %}
             <button type="button" role="tab" id="ai-tab-{{ benchmark.id }}" aria-controls="{{ benchmark.anchor }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-benchmark-tab="{{ benchmark.id }}">{{ benchmark.label }}<small>{{ benchmark.stage }}</small></button>
@@ -466,10 +466,35 @@ redirect_from:
               return [offset[0] * pointSize, offset[1] * pointSize];
             });
 
-            chartModels.forEach(function(item, index) {
+            function truePosition(item) {
               var xValue = transform(view.value(item));
-              var trueX = (xMaximum - xValue) / (xMaximum - xMinimum) * plotWidth;
-              var trueY = (yMaximum - item.accuracy) / (yMaximum - yMinimum) * plotHeight;
+              return {
+                x: (xMaximum - xValue) / (xMaximum - xMinimum) * plotWidth,
+                y: (yMaximum - item.accuracy) / (yMaximum - yMinimum) * plotHeight
+              };
+            }
+
+            var efforts = {};
+            chartModels.forEach(function(item) {
+              (efforts[item.model.name] = efforts[item.model.name] || []).push(item);
+            });
+            Object.keys(efforts).forEach(function(name) {
+              if (efforts[name].length < 2) return;
+              var from = truePosition(efforts[name][0]);
+              var to = truePosition(efforts[name][1]);
+              var link = document.createElement('span');
+              link.className = 'ai__benchmark-point-connector ai__benchmark-point-connector--effort';
+              link.style.left = from.x + 'px';
+              link.style.top = from.y + 'px';
+              link.style.width = Math.hypot(to.x - from.x, to.y - from.y) + 'px';
+              link.style.transform = 'rotate(' + Math.atan2(to.y - from.y, to.x - from.x) + 'rad)';
+              points.appendChild(link);
+            });
+
+            chartModels.forEach(function(item, index) {
+              var origin = truePosition(item);
+              var trueX = origin.x;
+              var trueY = origin.y;
               var position = { x: trueX, y: trueY };
               var bestAvailableDistance = -1;
 
@@ -517,37 +542,45 @@ redirect_from:
               point.style.width = pointSize + 'px';
               point.style.height = pointSize + 'px';
               var costLabel = item.costPerRun == null ? 'subscription pricing' : formatBenchmarkCost(item.costPerRun) + ' mean cost per run';
-              point.setAttribute('aria-label', displayName(item.model) + ': ' + item.accuracy.toFixed(1) + '% accuracy, ' + integerFormat.format(item.tokensPerRun) + ' mean tokens per run, ' + formatDuration(item.duration) + ' median completion time, ' + costLabel);
+              point.setAttribute('aria-label', displayName(item.model) + (efforts[item.model.name].length > 1 ? ' at ' + item.model.default_effort + ' effort' : '') + ': ' + item.accuracy.toFixed(1) + '% accuracy, ' + integerFormat.format(item.tokensPerRun) + ' mean tokens per run, ' + formatDuration(item.duration) + ' median completion time, ' + costLabel);
 
               logo.src = item.vendor.logo;
               logo.alt = '';
               point.appendChild(logo);
-              addTextElement(point, 'span', null, displayName(item.model));
+              var label = addTextElement(point, 'span', null, displayName(item.model));
+              if (efforts[item.model.name].length > 1) addTextElement(label, 'small', null, item.model.default_effort);
               points.appendChild(point);
             });
 
-            var placedLabels = [];
+            var plotBounds = plot.getBoundingClientRect();
             var chartPoints = Array.from(points.querySelectorAll('.ai__benchmark-point'));
-            chartPoints.forEach(function(point) {
-              var label = point.querySelector('span');
-              var directions = ['above', 'below', 'right', 'left'];
+            function overlapArea(a, b) {
+              return Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left) + 6) * Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) + 6);
+            }
+            var pointBounds = chartPoints.map(function(point) { return point.getBoundingClientRect(); });
+            chartPoints.forEach(function(point) { placeLabel(point, chartPoints.slice(0, chartPoints.indexOf(point))); });
+            for (var pass = 0; pass < 2; pass += 1) {
+              chartPoints.forEach(function(point) { placeLabel(point, chartPoints.filter(function(candidate) { return candidate !== point; })); });
+            }
 
-              directions.some(function(direction) {
+            function placeLabel(point, labelled) {
+              var label = point.querySelector('span');
+              var labels = labelled.map(function(candidate) { return candidate.querySelector('span').getBoundingClientRect(); });
+              var circles = pointBounds.filter(function(bounds, index) { return chartPoints[index] !== point; });
+              var best = null;
+
+              ['above', 'below', 'right', 'left', 'above-left', 'above-right', 'below-left', 'below-right', 'far-above', 'far-below', 'far-right', 'far-left', 'far-above-left', 'far-above-right', 'far-below-left', 'far-below-right'].forEach(function(direction) {
                 point.className = 'ai__benchmark-point ai__benchmark-point--label-' + direction;
                 var labelBounds = label.getBoundingClientRect();
-                var overlapsLabel = placedLabels.some(function(bounds) {
-                  return !(labelBounds.right + 3 < bounds.left || labelBounds.left - 3 > bounds.right || labelBounds.bottom + 3 < bounds.top || labelBounds.top - 3 > bounds.bottom);
-                });
-                var overlapsPoint = chartPoints.some(function(candidate) {
-                  if (candidate === point) return false;
-                  var bounds = candidate.getBoundingClientRect();
-                  return !(labelBounds.right + 3 < bounds.left || labelBounds.left - 3 > bounds.right || labelBounds.bottom + 3 < bounds.top || labelBounds.top - 3 > bounds.bottom);
-                });
-                return !overlapsLabel && !overlapsPoint;
+                var overlap = (direction.indexOf('far-') === 0 ? 40 : 0)
+                  + labels.reduce(function(sum, bounds) { return sum + overlapArea(labelBounds, bounds); }, 0)
+                  + 3 * circles.reduce(function(sum, bounds) { return sum + overlapArea(labelBounds, bounds); }, 0);
+                if (labelBounds.left < plotBounds.left || labelBounds.right > plotBounds.right || labelBounds.top < plotBounds.top || labelBounds.bottom > plotBounds.bottom) overlap += Infinity;
+                if (!best || overlap < best.overlap) best = { direction: direction, overlap: overlap };
               });
 
-              placedLabels.push(label.getBoundingClientRect());
-            });
+              point.className = 'ai__benchmark-point ai__benchmark-point--label-' + best.direction;
+            }
           }
 
           benchmarks.forEach(function(benchmark) {
