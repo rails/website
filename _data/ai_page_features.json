@@ -271,6 +271,21 @@
       }
     },
     {
+      "id": "luna-6-max",
+      "name": "GPT-6 Luna",
+      "vendor_id": "openai",
+      "default_effort": "max",
+      "metrics": {
+        "accuracy_percentage": 18.3,
+        "median_duration_seconds": 1193,
+        "tokens_per_run": 213100,
+        "cost_per_run_usd": 0.191,
+        "successful_runs": 11,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
       "id": "deepseek-4-1-flash-max",
       "name": "DeepSeek 4.1 Flash",
       "vendor_id": "deepseek",
@@ -562,6 +577,12 @@
           "cost_usd": 0.19,
           "duration_seconds": 1077,
           "average_tokens_per_run": 187100
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.36,
+          "duration_seconds": 1538,
+          "average_tokens_per_run": 347600
         }
       }
     },
@@ -719,6 +740,12 @@
           "cost_usd": 0.06,
           "duration_seconds": 619,
           "average_tokens_per_run": 80700
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.22,
+          "duration_seconds": 1502,
+          "average_tokens_per_run": 232600
         }
       }
     },
@@ -875,6 +902,12 @@
           "cost_usd": 0.02,
           "duration_seconds": 316,
           "average_tokens_per_run": 53500
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.06,
+          "duration_seconds": 654,
+          "average_tokens_per_run": 124300
         }
       }
     },
@@ -1032,6 +1065,12 @@
           "cost_usd": 0.02,
           "duration_seconds": 350,
           "average_tokens_per_run": 56900
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.07,
+          "duration_seconds": 927,
+          "average_tokens_per_run": 138600
         }
       }
     },
@@ -1189,6 +1228,12 @@
           "cost_usd": 0.01,
           "duration_seconds": 319,
           "average_tokens_per_run": 43700
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.07,
+          "duration_seconds": 811,
+          "average_tokens_per_run": 135100
         }
       }
     },
@@ -1345,6 +1390,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 402,
           "average_tokens_per_run": 65500
+        },
+        "luna-6-max": {
+          "score": 1,
+          "cost_usd": 0.15,
+          "duration_seconds": 1219,
+          "average_tokens_per_run": 200900
         }
       }
     },
@@ -1502,6 +1553,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 386,
           "average_tokens_per_run": 59800
+        },
+        "luna-6-max": {
+          "score": 1,
+          "cost_usd": 0.11,
+          "duration_seconds": 893,
+          "average_tokens_per_run": 174600
         }
       }
     },
@@ -1658,6 +1715,12 @@
           "cost_usd": 0.08,
           "duration_seconds": 911,
           "average_tokens_per_run": 113300
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.22,
+          "duration_seconds": 1368,
+          "average_tokens_per_run": 247200
         }
       }
     },
@@ -1815,6 +1878,12 @@
           "cost_usd": 0.04,
           "duration_seconds": 529,
           "average_tokens_per_run": 67300
+        },
+        "luna-6-max": {
+          "score": 2,
+          "cost_usd": 0.19,
+          "duration_seconds": 1594,
+          "average_tokens_per_run": 233200
         }
       }
     },
@@ -1974,6 +2043,12 @@
           "cost_usd": 0.13,
           "duration_seconds": 1271,
           "average_tokens_per_run": 148900
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.5,
+          "duration_seconds": 2087,
+          "average_tokens_per_run": 387700
         }
       }
     },
@@ -2131,6 +2206,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 503,
           "average_tokens_per_run": 65800
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.11,
+          "duration_seconds": 917,
+          "average_tokens_per_run": 154100
         }
       }
     },
@@ -2288,6 +2369,12 @@
           "cost_usd": 0.01,
           "duration_seconds": 203,
           "average_tokens_per_run": 34100
+        },
+        "luna-6-max": {
+          "score": 1,
+          "cost_usd": 0.1,
+          "duration_seconds": 1494,
+          "average_tokens_per_run": 135600
         }
       }
     },
@@ -2444,6 +2531,12 @@
           "cost_usd": 0.14,
           "duration_seconds": 912,
           "average_tokens_per_run": 157700
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.71,
+          "duration_seconds": 4112,
+          "average_tokens_per_run": 474800
         }
       }
     },
@@ -2600,6 +2693,12 @@
           "cost_usd": 0.02,
           "duration_seconds": 250,
           "average_tokens_per_run": 39700
+        },
+        "luna-6-max": {
+          "score": 3,
+          "cost_usd": 0.07,
+          "duration_seconds": 636,
+          "average_tokens_per_run": 130500
         }
       }
     },
@@ -2757,6 +2856,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 367,
           "average_tokens_per_run": 58600
+        },
+        "luna-6-max": {
+          "score": 1,
+          "cost_usd": 0.14,
+          "duration_seconds": 1303,
+          "average_tokens_per_run": 178400
         }
       }
     },
@@ -2914,6 +3019,12 @@
           "cost_usd": 0.02,
           "duration_seconds": 278,
           "average_tokens_per_run": 55700
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.08,
+          "duration_seconds": 621,
+          "average_tokens_per_run": 135700
         }
       }
     },
@@ -3071,6 +3182,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 357,
           "average_tokens_per_run": 57200
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.11,
+          "duration_seconds": 919,
+          "average_tokens_per_run": 159100
         }
       }
     },
@@ -3228,6 +3345,12 @@
           "cost_usd": 0.09,
           "duration_seconds": 780,
           "average_tokens_per_run": 121800
+        },
+        "luna-6-max": {
+          "score": 2,
+          "cost_usd": 0.25,
+          "duration_seconds": 1882,
+          "average_tokens_per_run": 264100
         }
       }
     },
@@ -3385,6 +3508,12 @@
           "cost_usd": 0.04,
           "duration_seconds": 590,
           "average_tokens_per_run": 76100
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.18,
+          "duration_seconds": 1223,
+          "average_tokens_per_run": 241700
         }
       }
     },
@@ -3542,6 +3671,12 @@
           "cost_usd": 0.03,
           "duration_seconds": 379,
           "average_tokens_per_run": 57500
+        },
+        "luna-6-max": {
+          "score": 0,
+          "cost_usd": 0.11,
+          "duration_seconds": 866,
+          "average_tokens_per_run": 165700
         }
       }
     }
