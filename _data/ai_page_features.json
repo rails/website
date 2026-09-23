@@ -76,6 +76,21 @@
       }
     },
     {
+      "id": "opus-5-5",
+      "name": "Claude Opus 5.5",
+      "vendor_id": "anthropic",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 33.3,
+        "median_duration_seconds": 685,
+        "tokens_per_run": 110900,
+        "cost_per_run_usd": 2.78,
+        "successful_runs": 20,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
       "id": "fable-5-1",
       "name": "Claude Fable 5.1",
       "vendor_id": "anthropic",
@@ -115,6 +130,21 @@
         "median_duration_seconds": 1989,
         "tokens_per_run": 268900,
         "cost_per_run_usd": 15.0,
+        "successful_runs": 19,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "grok-4-7",
+      "name": "Grok 4.7",
+      "vendor_id": "xai",
+      "default_effort": "high",
+      "metrics": {
+        "accuracy_percentage": 31.7,
+        "median_duration_seconds": 1308,
+        "tokens_per_run": 180600,
+        "cost_per_run_usd": 5.95,
         "successful_runs": 19,
         "total_runs": 60,
         "invalid_runs": 0
@@ -191,6 +221,21 @@
         "tokens_per_run": 224900,
         "cost_per_run_usd": 3.19,
         "successful_runs": 14,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "sol-6",
+      "name": "GPT-6 Sol",
+      "vendor_id": "openai",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 21.7,
+        "median_duration_seconds": 326,
+        "tokens_per_run": 47800,
+        "cost_per_run_usd": 0.453,
+        "successful_runs": 13,
         "total_runs": 60,
         "invalid_runs": 0
       }
@@ -310,6 +355,21 @@
         "median_duration_seconds": 1642,
         "tokens_per_run": 233400,
         "cost_per_run_usd": 0.39,
+        "successful_runs": 7,
+        "total_runs": 60,
+        "invalid_runs": 0
+      }
+    },
+    {
+      "id": "luna-6",
+      "name": "GPT-6 Luna",
+      "vendor_id": "openai",
+      "default_effort": "medium",
+      "metrics": {
+        "accuracy_percentage": 11.7,
+        "median_duration_seconds": 430,
+        "tokens_per_run": 80100,
+        "cost_per_run_usd": 0.0531,
         "successful_runs": 7,
         "total_runs": 60,
         "invalid_runs": 0
@@ -478,6 +538,30 @@
           "cost_usd": 0.59,
           "duration_seconds": 2141,
           "average_tokens_per_run": 327900
+        },
+        "opus-5-5": {
+          "score": 2,
+          "cost_usd": 3.32,
+          "duration_seconds": 961,
+          "average_tokens_per_run": 140100
+        },
+        "grok-4-7": {
+          "score": 2,
+          "cost_usd": 7.68,
+          "duration_seconds": 1373,
+          "average_tokens_per_run": 226700
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 1.33,
+          "duration_seconds": 692,
+          "average_tokens_per_run": 100500
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.19,
+          "duration_seconds": 1077,
+          "average_tokens_per_run": 187100
         }
       }
     },
@@ -611,6 +695,30 @@
           "cost_usd": 0.61,
           "duration_seconds": 2682,
           "average_tokens_per_run": 376000
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 1.83,
+          "duration_seconds": 659,
+          "average_tokens_per_run": 90700
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 6.31,
+          "duration_seconds": 1400,
+          "average_tokens_per_run": 183600
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.47,
+          "duration_seconds": 383,
+          "average_tokens_per_run": 46100
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.06,
+          "duration_seconds": 619,
+          "average_tokens_per_run": 80700
         }
       }
     },
@@ -743,6 +851,30 @@
           "cost_usd": 0.27,
           "duration_seconds": 1375,
           "average_tokens_per_run": 210400
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 0.62,
+          "duration_seconds": 243,
+          "average_tokens_per_run": 45400
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 3.15,
+          "duration_seconds": 830,
+          "average_tokens_per_run": 129400
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.3,
+          "duration_seconds": 174,
+          "average_tokens_per_run": 38400
+        },
+        "luna-6": {
+          "score": 1,
+          "cost_usd": 0.02,
+          "duration_seconds": 316,
+          "average_tokens_per_run": 53500
         }
       }
     },
@@ -876,6 +1008,30 @@
           "cost_usd": 0.45,
           "duration_seconds": 1840,
           "average_tokens_per_run": 304300
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 1.15,
+          "duration_seconds": 380,
+          "average_tokens_per_run": 70900
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 5.59,
+          "duration_seconds": 1102,
+          "average_tokens_per_run": 177100
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.28,
+          "duration_seconds": 225,
+          "average_tokens_per_run": 35300
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 350,
+          "average_tokens_per_run": 56900
         }
       }
     },
@@ -1009,6 +1165,30 @@
           "cost_usd": 0.29,
           "duration_seconds": 1493,
           "average_tokens_per_run": 208500
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 0.54,
+          "duration_seconds": 287,
+          "average_tokens_per_run": 34600
+        },
+        "grok-4-7": {
+          "score": 3,
+          "cost_usd": 4.71,
+          "duration_seconds": 1304,
+          "average_tokens_per_run": 155200
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.25,
+          "duration_seconds": 180,
+          "average_tokens_per_run": 37300
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.01,
+          "duration_seconds": 319,
+          "average_tokens_per_run": 43700
         }
       }
     },
@@ -1141,6 +1321,30 @@
           "cost_usd": 0.44,
           "duration_seconds": 2636,
           "average_tokens_per_run": 276200
+        },
+        "opus-5-5": {
+          "score": 2,
+          "cost_usd": 1.95,
+          "duration_seconds": 919,
+          "average_tokens_per_run": 97400
+        },
+        "grok-4-7": {
+          "score": 3,
+          "cost_usd": 3.95,
+          "duration_seconds": 1214,
+          "average_tokens_per_run": 166200
+        },
+        "sol-6": {
+          "score": 1,
+          "cost_usd": 0.59,
+          "duration_seconds": 455,
+          "average_tokens_per_run": 63000
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 402,
+          "average_tokens_per_run": 65500
         }
       }
     },
@@ -1274,6 +1478,30 @@
           "cost_usd": 0.31,
           "duration_seconds": 1802,
           "average_tokens_per_run": 225300
+        },
+        "opus-5-5": {
+          "score": 2,
+          "cost_usd": 1.28,
+          "duration_seconds": 404,
+          "average_tokens_per_run": 71800
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 4.76,
+          "duration_seconds": 1086,
+          "average_tokens_per_run": 169100
+        },
+        "sol-6": {
+          "score": 3,
+          "cost_usd": 0.4,
+          "duration_seconds": 263,
+          "average_tokens_per_run": 48000
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 386,
+          "average_tokens_per_run": 59800
         }
       }
     },
@@ -1406,6 +1634,30 @@
           "cost_usd": 0.6,
           "duration_seconds": 2751,
           "average_tokens_per_run": 380700
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 1.43,
+          "duration_seconds": 1230,
+          "average_tokens_per_run": 78100
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 5.58,
+          "duration_seconds": 1278,
+          "average_tokens_per_run": 167900
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.25,
+          "duration_seconds": 203,
+          "average_tokens_per_run": 34500
+        },
+        "luna-6": {
+          "score": 1,
+          "cost_usd": 0.08,
+          "duration_seconds": 911,
+          "average_tokens_per_run": 113300
         }
       }
     },
@@ -1539,6 +1791,30 @@
           "cost_usd": 0.67,
           "duration_seconds": 2842,
           "average_tokens_per_run": 382800
+        },
+        "opus-5-5": {
+          "score": 3,
+          "cost_usd": 2.57,
+          "duration_seconds": 1055,
+          "average_tokens_per_run": 119800
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 7.16,
+          "duration_seconds": 1649,
+          "average_tokens_per_run": 202700
+        },
+        "sol-6": {
+          "score": 2,
+          "cost_usd": 0.38,
+          "duration_seconds": 308,
+          "average_tokens_per_run": 43500
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.04,
+          "duration_seconds": 529,
+          "average_tokens_per_run": 67300
         }
       }
     },
@@ -1674,6 +1950,30 @@
           "cost_usd": 1.13,
           "duration_seconds": 3437,
           "average_tokens_per_run": 509100
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 6.54,
+          "duration_seconds": 1560,
+          "average_tokens_per_run": 219700
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 8.71,
+          "duration_seconds": 1677,
+          "average_tokens_per_run": 234800
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.9,
+          "duration_seconds": 523,
+          "average_tokens_per_run": 71500
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.13,
+          "duration_seconds": 1271,
+          "average_tokens_per_run": 148900
         }
       }
     },
@@ -1807,6 +2107,30 @@
           "cost_usd": 0.77,
           "duration_seconds": 2963,
           "average_tokens_per_run": 410800
+        },
+        "opus-5-5": {
+          "score": 2,
+          "cost_usd": 1.77,
+          "duration_seconds": 622,
+          "average_tokens_per_run": 93600
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 4.84,
+          "duration_seconds": 1355,
+          "average_tokens_per_run": 164600
+        },
+        "sol-6": {
+          "score": 2,
+          "cost_usd": 0.31,
+          "duration_seconds": 258,
+          "average_tokens_per_run": 36200
+        },
+        "luna-6": {
+          "score": 1,
+          "cost_usd": 0.03,
+          "duration_seconds": 503,
+          "average_tokens_per_run": 65800
         }
       }
     },
@@ -1940,6 +2264,30 @@
           "cost_usd": 0.35,
           "duration_seconds": 1910,
           "average_tokens_per_run": 253100
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 1.08,
+          "duration_seconds": 884,
+          "average_tokens_per_run": 57200
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 5.62,
+          "duration_seconds": 1571,
+          "average_tokens_per_run": 158700
+        },
+        "sol-6": {
+          "score": 1,
+          "cost_usd": 0.2,
+          "duration_seconds": 266,
+          "average_tokens_per_run": 30600
+        },
+        "luna-6": {
+          "score": 2,
+          "cost_usd": 0.01,
+          "duration_seconds": 203,
+          "average_tokens_per_run": 34100
         }
       }
     },
@@ -2072,6 +2420,30 @@
           "cost_usd": 0.94,
           "duration_seconds": 3072,
           "average_tokens_per_run": 517800
+        },
+        "opus-5-5": {
+          "score": 1,
+          "cost_usd": 19.34,
+          "duration_seconds": 3219,
+          "average_tokens_per_run": 491800
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 14.59,
+          "duration_seconds": 2061,
+          "average_tokens_per_run": 296200
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.79,
+          "duration_seconds": 418,
+          "average_tokens_per_run": 72400
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.14,
+          "duration_seconds": 912,
+          "average_tokens_per_run": 157700
         }
       }
     },
@@ -2204,6 +2576,30 @@
           "cost_usd": 0.31,
           "duration_seconds": 1250,
           "average_tokens_per_run": 239000
+        },
+        "opus-5-5": {
+          "score": 3,
+          "cost_usd": 0.57,
+          "duration_seconds": 248,
+          "average_tokens_per_run": 40700
+        },
+        "grok-4-7": {
+          "score": 2,
+          "cost_usd": 3.55,
+          "duration_seconds": 862,
+          "average_tokens_per_run": 128000
+        },
+        "sol-6": {
+          "score": 3,
+          "cost_usd": 0.19,
+          "duration_seconds": 455,
+          "average_tokens_per_run": 28000
+        },
+        "luna-6": {
+          "score": 1,
+          "cost_usd": 0.02,
+          "duration_seconds": 250,
+          "average_tokens_per_run": 39700
         }
       }
     },
@@ -2337,6 +2733,30 @@
           "cost_usd": 0.32,
           "duration_seconds": 1860,
           "average_tokens_per_run": 243100
+        },
+        "opus-5-5": {
+          "score": 1,
+          "cost_usd": 1.46,
+          "duration_seconds": 577,
+          "average_tokens_per_run": 76800
+        },
+        "grok-4-7": {
+          "score": 3,
+          "cost_usd": 3.73,
+          "duration_seconds": 1110,
+          "average_tokens_per_run": 147400
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.29,
+          "duration_seconds": 247,
+          "average_tokens_per_run": 35300
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 367,
+          "average_tokens_per_run": 58600
         }
       }
     },
@@ -2470,6 +2890,30 @@
           "cost_usd": 0.28,
           "duration_seconds": 1255,
           "average_tokens_per_run": 227000
+        },
+        "opus-5-5": {
+          "score": 2,
+          "cost_usd": 0.78,
+          "duration_seconds": 318,
+          "average_tokens_per_run": 50700
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 4.96,
+          "duration_seconds": 1069,
+          "average_tokens_per_run": 166400
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.25,
+          "duration_seconds": 225,
+          "average_tokens_per_run": 33800
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.02,
+          "duration_seconds": 278,
+          "average_tokens_per_run": 55700
         }
       }
     },
@@ -2603,6 +3047,30 @@
           "cost_usd": 0.71,
           "duration_seconds": 2586,
           "average_tokens_per_run": 408400
+        },
+        "opus-5-5": {
+          "score": 1,
+          "cost_usd": 1.9,
+          "duration_seconds": 789,
+          "average_tokens_per_run": 88200
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 5.87,
+          "duration_seconds": 1395,
+          "average_tokens_per_run": 173300
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.36,
+          "duration_seconds": 236,
+          "average_tokens_per_run": 40700
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 357,
+          "average_tokens_per_run": 57200
         }
       }
     },
@@ -2736,6 +3204,30 @@
           "cost_usd": 0.96,
           "duration_seconds": 3140,
           "average_tokens_per_run": 444800
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 3.41,
+          "duration_seconds": 1060,
+          "average_tokens_per_run": 151100
+        },
+        "grok-4-7": {
+          "score": 1,
+          "cost_usd": 5.91,
+          "duration_seconds": 1523,
+          "average_tokens_per_run": 197700
+        },
+        "sol-6": {
+          "score": 1,
+          "cost_usd": 0.6,
+          "duration_seconds": 366,
+          "average_tokens_per_run": 59600
+        },
+        "luna-6": {
+          "score": 1,
+          "cost_usd": 0.09,
+          "duration_seconds": 780,
+          "average_tokens_per_run": 121800
         }
       }
     },
@@ -2869,6 +3361,30 @@
           "cost_usd": 0.56,
           "duration_seconds": 2808,
           "average_tokens_per_run": 386200
+        },
+        "opus-5-5": {
+          "score": 1,
+          "cost_usd": 2.91,
+          "duration_seconds": 853,
+          "average_tokens_per_run": 132500
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 6.43,
+          "duration_seconds": 1255,
+          "average_tokens_per_run": 187900
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.55,
+          "duration_seconds": 390,
+          "average_tokens_per_run": 57300
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.04,
+          "duration_seconds": 590,
+          "average_tokens_per_run": 76100
         }
       }
     },
@@ -3002,6 +3518,30 @@
           "cost_usd": 0.42,
           "duration_seconds": 1629,
           "average_tokens_per_run": 313300
+        },
+        "opus-5-5": {
+          "score": 0,
+          "cost_usd": 1.13,
+          "duration_seconds": 502,
+          "average_tokens_per_run": 66800
+        },
+        "grok-4-7": {
+          "score": 0,
+          "cost_usd": 5.81,
+          "duration_seconds": 1245,
+          "average_tokens_per_run": 178600
+        },
+        "sol-6": {
+          "score": 0,
+          "cost_usd": 0.37,
+          "duration_seconds": 332,
+          "average_tokens_per_run": 43500
+        },
+        "luna-6": {
+          "score": 0,
+          "cost_usd": 0.03,
+          "duration_seconds": 379,
+          "average_tokens_per_run": 57500
         }
       }
     }
