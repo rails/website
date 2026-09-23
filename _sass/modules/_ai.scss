@@ -291,6 +291,7 @@ body.ai-dialog-open {
     bottom: -24px;
     position: absolute;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
 
   &__benchmark-chart__y-ticks span {
