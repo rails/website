@@ -52,7 +52,7 @@ d(dev):001> Rails.app.executor
 Was introduced as part of the migration path toward Rails 7.0's defaults and is no longer needed.
 
 [Honour all_queries default scopes in internal queries](https://github.com/rails/rails/pull/58485)  
-Introduces an `all_queries_scope` method to build an internal query scope. Applies default scopes with `all_queries: true` and rhe current scope from `scoping(all_queries: true)`.
+Introduces an `all_queries_scope` method to build an internal query scope. Applies default scopes with `all_queries: true` and the current scope from `scoping(all_queries: true)`.
 
 [Freeze the Controller default_url_options](https://github.com/rails/rails/pull/58483)  
 Affects the `default_url_options` used to tweak the generated URLs inside controllers/views (not the one on the `RouteSet` object).
