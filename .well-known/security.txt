@@ -1,0 +1,4 @@
+Contact: https://hackerone.com/rails
+Expires: 2027-08-13T00:00:00.000Z
+Policy: https://rubyonrails.org/security
+Preferred-Languages: en

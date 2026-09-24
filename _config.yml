@@ -13,6 +13,9 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
+include:
+  - .well-known
+
 exclude:
   - Gemfile
   - Gemfile.lock
