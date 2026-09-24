@@ -186,6 +186,22 @@
 
 
 
+  @media(min-width: 768px) {
+
+    &__members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__member {
+      flex: 0 0 calc(20% - 30px);
+      max-width: none;
+    }
+
+  }
+
+
   @media(min-width: 1024px) {
 
     &__body {
@@ -206,9 +222,6 @@
       margin-right: 45px;
     }
 
-    &__member {
-      max-width: 120px;
-    }
 
   }
 
