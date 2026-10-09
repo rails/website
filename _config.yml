@@ -21,6 +21,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - bin
+  - tmp
 
 collections:
   case_studies:
