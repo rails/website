@@ -1,3 +1,7 @@
+html:has(.ai__eval-dialog) {
+  scrollbar-gutter: stable;
+}
+
 body.ai-dialog-open {
   overflow: hidden;
 }
@@ -155,26 +159,54 @@ body.ai-dialog-open {
     }
   }
 
-  &__models__tabs {
+  &__task-filters {
+    align-items: center;
+    display: flex;
+    gap: 8px 20px;
+    justify-content: center;
+    margin: 0 auto 28px;
+    max-width: calc(100% - 48px);
+    position: relative;
+    width: max-content;
+    z-index: 5;
+  }
+
+  &__task-filters__label {
+    color: $color-black;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  &__task-filters__chips {
     background: $color-grey-1;
     border-radius: 999px;
-    display: inline-flex;
-    margin-top: 20px;
-    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 0;
+    justify-content: center;
 
-    button {
+    [data-task-type] {
       align-items: center;
       background: transparent;
+      border: 0;
       border-radius: 999px;
       color: $color-grey-5;
       cursor: pointer;
       display: inline-flex;
+      flex-shrink: 0;
+      font-family: inherit;
       font-size: 15px;
       font-weight: 700;
       gap: 8px;
+      line-height: 20px;
       min-height: 44px;
       padding: 8px 18px;
       transition: background $transition, color $transition, box-shadow $transition;
+      white-space: nowrap;
+      margin: 0 5px;
 
       small {
         color: $color-grey-4;
@@ -184,10 +216,14 @@ body.ai-dialog-open {
         text-transform: uppercase;
       }
 
-      &[aria-selected="true"] {
+      &[aria-pressed="true"] {
         background: $color-white;
         box-shadow: 0 1px 5px rgba($color-black, 0.15);
         color: $color-red;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
       }
 
       &:focus-visible {
@@ -197,14 +233,124 @@ body.ai-dialog-open {
     }
   }
 
-  &__models__blurb {
+  &__task-help {
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  &__task-help__toggle {
+    align-items: center;
+    background: transparent;
+    border: 0;
     color: $color-grey-5;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 auto 24px;
-    max-width: 760px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 14px;
+    gap: 8px;
+    line-height: 20px;
+    min-height: 44px;
+    padding: 0;
+    white-space: nowrap;
+
+    &::before {
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+      content: "i";
+      font-family: Georgia, serif;
+      font-size: 13px;
+      font-weight: 700;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      width: 16px;
+    }
+
+    &:hover,
+    &[aria-expanded="true"] {
+      color: $color-black;
+    }
+
+    &:focus-visible {
+      border-radius: 3px;
+      outline: 2px solid $color-red;
+      outline-offset: 4px;
+    }
+  }
+
+  &__task-help__popover {
+    background: $color-white;
+    border: 1px solid rgba($color-black, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba($color-black, 0.12), 0 1px 3px rgba($color-black, 0.08);
+    color: $color-grey-5;
+    font-size: 13px;
+    box-sizing: border-box;
+    left: 9.5px;
+    line-height: 19px;
+    max-width: calc(100vw - 48px);
+    padding: 20px;
+    position: absolute;
+    text-align: left;
+    top: calc(100% + 6px);
+    transform: translateX(-50%);
+    width: 362px;
+    z-index: 6;
+
+    &::before {
+      background: $color-white;
+      border-left: 1px solid rgba($color-black, 0.12);
+      border-top: 1px solid rgba($color-black, 0.12);
+      content: "";
+      height: 12px;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: -7px;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+    }
+
+    &[hidden] {
+      display: none;
+    }
+
+    h3 {
+      color: $color-black;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-bottom: 14px;
+    }
+
+    dt {
+      color: $color-black;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    dd + dt {
+      margin-top: 14px;
+    }
+
+    p {
+      border-top: 1px solid $color-grey-2;
+      margin-top: 15px;
+      padding-top: 14px;
+    }
+  }
+
+  &__benchmark-empty {
+    color: $color-grey-5;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 36px 24px;
     text-align: center;
-    text-wrap: balance;
+
+    &[hidden] {
+      display: none;
+    }
   }
 
   &__benchmark[hidden] {
@@ -271,6 +417,25 @@ body.ai-dialog-open {
     height: 450px;
     min-width: 620px;
     position: relative;
+  }
+
+  &__benchmark-chart__empty {
+    align-items: center;
+    background: rgba($color-white, 0.9);
+    color: $color-grey-5;
+    display: flex;
+    font-size: 15px;
+    inset: 0;
+    justify-content: center;
+    line-height: 23px;
+    padding: 24px;
+    position: absolute;
+    text-align: center;
+    z-index: 4;
+
+    &[hidden] {
+      display: none;
+    }
   }
 
   &__benchmark-chart__points,
@@ -699,6 +864,16 @@ body.ai-dialog-open {
     overflow-x: auto;
   }
 
+  &__models__table-wrap--unified {
+    overflow: visible;
+    position: relative;
+  }
+
+  &__models__table-scroll {
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+
   &__models__table {
     border-collapse: collapse;
     min-width: 900px;
@@ -951,6 +1126,7 @@ body.ai-dialog-open {
 
   &__eval-dialog__table {
     min-width: 1080px;
+    table-layout: fixed;
     width: 100%;
 
     th,
@@ -975,6 +1151,10 @@ body.ai-dialog-open {
       z-index: 1;
     }
 
+    thead th:first-child {
+      width: 32%;
+    }
+
     tbody tr:last-child th,
     tbody tr:last-child td {
       border-bottom: 0;
@@ -996,6 +1176,7 @@ body.ai-dialog-open {
       strong {
         font-weight: 700;
         margin-bottom: 3px;
+        overflow-wrap: anywhere;
       }
 
       span {
@@ -1113,6 +1294,10 @@ body.ai-dialog-open {
 
   @media(max-width: 1023px) {
 
+    &__task-help__popover {
+      width: 240px;
+    }
+
     &__models__table {
       thead th:first-child,
       tbody th {
@@ -1151,6 +1336,33 @@ body.ai-dialog-open {
   }
 
   @media(max-width: 600px) {
+
+    &__task-filters {
+      column-gap: 14px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      max-width: calc(100% - 28px);
+    }
+
+    &__task-filters__chips {
+      grid-column: 1 / -1;
+      grid-row: 2;
+
+      [data-task-type] {
+        font-size: 12px;
+        gap: 7px;
+        padding: 10px 14px;
+
+        small {
+          font-size: 10px;
+        }
+      }
+    }
+
+    &__task-help__popover {
+      max-width: 60vw;
+      width: 220px;
+    }
 
     &__models__table {
       min-width: 760px;
@@ -1233,20 +1445,13 @@ body.ai-dialog-open {
 
       td:before {
         color: $color-grey-5;
+        content: attr(data-label);
         font-size: 10px;
         font-weight: 700;
         letter-spacing: 0.04em;
         padding-top: 2px;
         text-transform: uppercase;
       }
-
-      td:nth-of-type(1):before { content: "Framework"; }
-      td:nth-of-type(2):before { content: "Target API"; }
-      td:nth-of-type(3):before { content: "Score"; }
-      td:nth-of-type(4):before { content: "Time"; }
-      td:nth-of-type(5):before { content: "Tokens/run"; }
-      td:nth-of-type(6):before { content: "Cost"; }
-      td:nth-of-type(7):before { content: "Approach"; }
 
       code {
         overflow-wrap: anywhere;
@@ -1334,6 +1539,10 @@ body.ai-dialog-open {
       tbody th {
         min-width: 0;
       }
+    }
+
+    &__models__table-scroll {
+      overflow: visible;
     }
 
     &__score--button,

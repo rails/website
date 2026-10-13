@@ -5,3 +5,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+.vscode
+.codex
+.devcontainer/local
+tmp/

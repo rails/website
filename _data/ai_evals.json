@@ -1,0 +1,4277 @@
+{
+  "vendors": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "logo": "/assets/images/ai-vendors/anthropic.svg"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "logo": "/assets/images/ai-vendors/openai.svg"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "logo": "/assets/images/ai-vendors/xai.svg"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "logo": "/assets/images/ai-vendors/deepseek.svg"
+    },
+    {
+      "id": "moonshot-ai",
+      "name": "Moonshot AI",
+      "logo": "/assets/images/ai-vendors/moonshot-ai.svg"
+    },
+    {
+      "id": "z-ai",
+      "name": "Z.ai",
+      "logo": "/assets/images/ai-vendors/z-ai.svg"
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "logo": "/assets/images/ai-vendors/meta.svg"
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5.5-medium",
+      "name": "Claude Opus 5.5",
+      "vendor_id": "anthropic",
+      "effort": "medium"
+    },
+    {
+      "id": "claude-opus-5.5-xhigh",
+      "name": "Claude Opus 5.5",
+      "vendor_id": "anthropic",
+      "effort": "xhigh"
+    },
+    {
+      "id": "gpt-6-astra-medium",
+      "name": "GPT-6 Astra",
+      "vendor_id": "openai",
+      "effort": "medium"
+    },
+    {
+      "id": "gpt-6-astra-xhigh",
+      "name": "GPT-6 Astra",
+      "vendor_id": "openai",
+      "effort": "xhigh"
+    },
+    {
+      "id": "gpt-6.1-sol-xhigh",
+      "name": "GPT-6.1 Sol",
+      "vendor_id": "openai",
+      "effort": "xhigh"
+    },
+    {
+      "id": "gpt-6-luna-max",
+      "name": "GPT-6 Luna",
+      "vendor_id": "openai",
+      "effort": "max"
+    },
+    {
+      "id": "grok-4.7-high",
+      "name": "Grok 4.7",
+      "vendor_id": "xai",
+      "effort": "high"
+    },
+    {
+      "id": "deepseek-v4.1-flash-max",
+      "name": "DeepSeek 4.1 Flash",
+      "vendor_id": "deepseek",
+      "effort": "max",
+      "open_weights": true
+    },
+    {
+      "id": "kimi-k3-max",
+      "name": "Kimi K3",
+      "vendor_id": "moonshot-ai",
+      "effort": "max",
+      "open_weights": true
+    },
+    {
+      "id": "glm-5.3-flash-max",
+      "name": "GLM 5.3 Flash",
+      "vendor_id": "z-ai",
+      "effort": "max",
+      "open_weights": true
+    },
+    {
+      "id": "muse-spark-1.3-max",
+      "name": "Muse Spark 1.3",
+      "vendor_id": "meta",
+      "effort": "max"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "at-announce-once",
+      "type": "atomic",
+      "description": "Announce exactly once per going-live, whatever else the same save did.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-announce-once",
+      "tags": [
+        "active-record",
+        "callbacks",
+        "transactions",
+        "active-job"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 222,
+          "tokens": 197495,
+          "cost_usd": 0.33
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 638,
+          "tokens": 1644993,
+          "cost_usd": 1.72
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 215,
+          "tokens": 90276,
+          "cost_usd": 0.48
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 488,
+          "tokens": 233786,
+          "cost_usd": 1.19
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 440,
+          "tokens": 266393,
+          "cost_usd": 0.25
+        },
+        "gpt-6-luna-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 326,
+          "tokens": 451615,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 937,
+          "tokens": 3314481,
+          "cost_usd": 2.55
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 796,
+          "tokens": 3644343,
+          "cost_usd": 0.25
+        },
+        "kimi-k3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 897,
+          "tokens": 847673,
+          "cost_usd": 0.74
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 1411,
+          "tokens": 2876987,
+          "cost_usd": 0.12
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 564,
+          "tokens": 1107030,
+          "cost_usd": 0.88
+        }
+      }
+    },
+    {
+      "id": "at-archive-book-access",
+      "type": "atomic",
+      "description": "Read rows at destroy time that dependent: :destroy has already deleted.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-archive-book-access",
+      "tags": [
+        "active-record",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 160,
+          "tokens": 197614,
+          "cost_usd": 0.24
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 440,
+          "tokens": 1120796,
+          "cost_usd": 1.06
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 188,
+          "tokens": 128303,
+          "cost_usd": 0.58
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 446,
+          "tokens": 238962,
+          "cost_usd": 1.09
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 320,
+          "tokens": 221798,
+          "cost_usd": 0.21
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 327,
+          "tokens": 586366,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 425,
+          "tokens": 1375756,
+          "cost_usd": 1.1
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 484,
+          "tokens": 2182817,
+          "cost_usd": 0.12
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 575,
+          "tokens": 573872,
+          "cost_usd": 0.47
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 672,
+          "tokens": 1679260,
+          "cost_usd": 0.07
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 800,
+          "tokens": 2199364,
+          "cost_usd": 1.19
+        }
+      }
+    },
+    {
+      "id": "at-audit-sweep",
+      "type": "atomic",
+      "description": "Close five security defects from a checklist that states properties, never bugs.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-audit-sweep",
+      "tags": [
+        "security",
+        "strong-parameters",
+        "authorization",
+        "sql-injection"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 238,
+          "tokens": 277188,
+          "cost_usd": 0.33
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 645,
+          "tokens": 3105964,
+          "cost_usd": 1.89
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 246,
+          "tokens": 157979,
+          "cost_usd": 0.69
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 428,
+          "tokens": 385511,
+          "cost_usd": 1.54
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 428,
+          "tokens": 368945,
+          "cost_usd": 0.26
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 466,
+          "tokens": 1395490,
+          "cost_usd": 0.04
+        },
+        "grok-4.7-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1165,
+          "tokens": 3388929,
+          "cost_usd": 2.53
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 817,
+          "tokens": 4124306,
+          "cost_usd": 0.24
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1004,
+          "tokens": 1788797,
+          "cost_usd": 1.16
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 928,
+          "tokens": 3401773,
+          "cost_usd": 0.13
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1079,
+          "tokens": 2223187,
+          "cost_usd": 1.19
+        }
+      }
+    },
+    {
+      "id": "at-bulk-access-grants",
+      "type": "atomic",
+      "description": "One INSERT for a whole roster, no notices when the roster is turned down, and an unknown level rejected like any other bad row.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-bulk-access-grants",
+      "tags": [
+        "active-record",
+        "bulk-insert",
+        "active-job",
+        "transactions"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 192,
+          "tokens": 186578,
+          "cost_usd": 0.3
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 682,
+          "tokens": 1579583,
+          "cost_usd": 1.81
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 241,
+          "tokens": 116774,
+          "cost_usd": 0.63
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 445,
+          "tokens": 322455,
+          "cost_usd": 1.52
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 418,
+          "tokens": 235683,
+          "cost_usd": 0.24
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 573,
+          "tokens": 1557367,
+          "cost_usd": 0.05
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 990,
+          "tokens": 2107782,
+          "cost_usd": 1.8
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1295,
+          "tokens": 6636561,
+          "cost_usd": 0.41
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 958,
+          "tokens": 973267,
+          "cost_usd": 0.92
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 899,
+          "tokens": 1856168,
+          "cost_usd": 0.08
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 851,
+          "tokens": 1487754,
+          "cost_usd": 1.13
+        }
+      }
+    },
+    {
+      "id": "at-compact-positions",
+      "type": "atomic",
+      "description": "A typo'd quoted identifier silently destroys hand-arranged page order.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-compact-positions",
+      "tags": [
+        "active-record",
+        "sqlite",
+        "raw-sql"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 119,
+          "tokens": 77942,
+          "cost_usd": 0.15
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 351,
+          "tokens": 554117,
+          "cost_usd": 0.63
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 161,
+          "tokens": 87714,
+          "cost_usd": 0.41
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 253,
+          "tokens": 148010,
+          "cost_usd": 0.73
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 251,
+          "tokens": 188588,
+          "cost_usd": 0.15
+        },
+        "gpt-6-luna-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 162,
+          "tokens": 165936,
+          "cost_usd": 0.01
+        },
+        "grok-4.7-high": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 527,
+          "tokens": 1104701,
+          "cost_usd": 0.87
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 341,
+          "tokens": 1567510,
+          "cost_usd": 0.11
+        },
+        "kimi-k3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 520,
+          "tokens": 401856,
+          "cost_usd": 0.39
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 591,
+          "tokens": 881572,
+          "cost_usd": 0.05
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 539,
+          "tokens": 1067765,
+          "cost_usd": 0.74
+        }
+      }
+    },
+    {
+      "id": "at-deep-link-return",
+      "type": "atomic",
+      "description": "Open-redirect on sign-in return: reject hostile hosts, keep legitimate deep links.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-deep-link-return",
+      "tags": [
+        "action-controller",
+        "redirects",
+        "open-redirect"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 129,
+          "tokens": 56183,
+          "cost_usd": 0.15
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 620,
+          "tokens": 1382457,
+          "cost_usd": 1.34
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 239,
+          "tokens": 111921,
+          "cost_usd": 0.6
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 367,
+          "tokens": 246596,
+          "cost_usd": 1.18
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 369,
+          "tokens": 277582,
+          "cost_usd": 0.22
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 452,
+          "tokens": 244524,
+          "cost_usd": 0.01
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 879,
+          "tokens": 2154457,
+          "cost_usd": 1.75
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 704,
+          "tokens": 3040638,
+          "cost_usd": 0.17
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 467,
+          "tokens": 344740,
+          "cost_usd": 0.35
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 437,
+          "tokens": 761209,
+          "cost_usd": 0.04
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 621,
+          "tokens": 1518782,
+          "cost_usd": 0.98
+        }
+      }
+    },
+    {
+      "id": "at-enqueue-after-commit",
+      "type": "atomic",
+      "description": "Hand an edit's follow-up jobs to the queue only once its transaction commits, without swallowing the notification an abandoned batch still owes its operator.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-enqueue-after-commit",
+      "tags": [
+        "active-job",
+        "transactions",
+        "active-storage"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 165,
+          "tokens": 207451,
+          "cost_usd": 0.28
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 586,
+          "tokens": 1590782,
+          "cost_usd": 1.46
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 205,
+          "tokens": 108727,
+          "cost_usd": 0.5
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 297,
+          "tokens": 216873,
+          "cost_usd": 0.94
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 318,
+          "tokens": 280220,
+          "cost_usd": 0.21
+        },
+        "gpt-6-luna-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 239,
+          "tokens": 566578,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 464,
+          "tokens": 1521952,
+          "cost_usd": 1.31
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 637,
+          "tokens": 4221872,
+          "cost_usd": 0.23
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 786,
+          "tokens": 1066339,
+          "cost_usd": 0.86
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 683,
+          "tokens": 1837704,
+          "cost_usd": 0.08
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 827,
+          "tokens": 2535287,
+          "cost_usd": 1.42
+        }
+      }
+    },
+    {
+      "id": "at-erase-account",
+      "type": "atomic",
+      "description": "Erase an account and everything of theirs, including rows reachable only indirectly.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-erase-account",
+      "tags": [
+        "active-record",
+        "dependent-destroy",
+        "callbacks",
+        "foreign-keys",
+        "data-erasure"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 402,
+          "tokens": 1169211,
+          "cost_usd": 1.0
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 1246,
+          "tokens": 6001551,
+          "cost_usd": 3.86
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 389,
+          "tokens": 362321,
+          "cost_usd": 1.26
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 522,
+          "tokens": 547743,
+          "cost_usd": 2.0
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 678,
+          "tokens": 712929,
+          "cost_usd": 0.4
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 694,
+          "tokens": 3116512,
+          "cost_usd": 0.07
+        },
+        "grok-4.7-high": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1440,
+          "tokens": 7196642,
+          "cost_usd": 4.66
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1467,
+          "tokens": 10813622,
+          "cost_usd": 0.46
+        },
+        "kimi-k3-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1308,
+          "tokens": 2293788,
+          "cost_usd": 1.61
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1318,
+          "tokens": 4571466,
+          "cost_usd": 0.18
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 1496,
+          "tokens": 6805519,
+          "cost_usd": 3.09
+        }
+      }
+    },
+    {
+      "id": "at-error-page-flake",
+      "type": "atomic",
+      "description": "An order-dependent suite flake from a helper leaking a process-wide toggle.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-error-page-flake",
+      "tags": [
+        "action-dispatch",
+        "testing",
+        "flaky-tests"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 468,
+          "tokens": 77959,
+          "cost_usd": 0.17
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1634,
+          "tokens": 943252,
+          "cost_usd": 0.82
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 320,
+          "tokens": 155025,
+          "cost_usd": 0.71
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 463,
+          "tokens": 250311,
+          "cost_usd": 1.16
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 511,
+          "tokens": 312471,
+          "cost_usd": 0.25
+        },
+        "gpt-6-luna-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 419,
+          "tokens": 787745,
+          "cost_usd": 0.03
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 720,
+          "tokens": 1328139,
+          "cost_usd": 1.2
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1533,
+          "tokens": 2435970,
+          "cost_usd": 0.17
+        },
+        "kimi-k3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1993,
+          "tokens": 1318572,
+          "cost_usd": 1.02
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1546,
+          "tokens": 1127051,
+          "cost_usd": 0.05
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1368,
+          "tokens": 2456590,
+          "cost_usd": 1.47
+        }
+      }
+    },
+    {
+      "id": "at-legacy-conversions",
+      "type": "atomic",
+      "description": "Sweep every removed Active Support conversion, including the no-argument aliases.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-legacy-conversions",
+      "tags": [
+        "active-support",
+        "upgrade"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 164,
+          "tokens": 119709,
+          "cost_usd": 0.2
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 559,
+          "tokens": 1265699,
+          "cost_usd": 1.15
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 191,
+          "tokens": 165234,
+          "cost_usd": 0.62
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 293,
+          "tokens": 265870,
+          "cost_usd": 1.04
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 294,
+          "tokens": 284044,
+          "cost_usd": 0.2
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 286,
+          "tokens": 626879,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 913,
+          "tokens": 1651152,
+          "cost_usd": 1.34
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 728,
+          "tokens": 3418636,
+          "cost_usd": 0.18
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 644,
+          "tokens": 641995,
+          "cost_usd": 0.55
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 888,
+          "tokens": 1726136,
+          "cost_usd": 0.07
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 911,
+          "tokens": 2403621,
+          "cost_usd": 1.43
+        }
+      }
+    },
+    {
+      "id": "at-log-to-terminal",
+      "type": "atomic",
+      "description": "Add terminal output to a runner script without losing its log output.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-log-to-terminal",
+      "tags": [
+        "logging",
+        "broadcast-logger",
+        "rails-runner"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 158,
+          "tokens": 186265,
+          "cost_usd": 0.25
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 605,
+          "tokens": 2061538,
+          "cost_usd": 1.58
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 209,
+          "tokens": 140949,
+          "cost_usd": 0.6
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 405,
+          "tokens": 261104,
+          "cost_usd": 1.22
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 374,
+          "tokens": 291426,
+          "cost_usd": 0.23
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 271,
+          "tokens": 473875,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 629,
+          "tokens": 2463044,
+          "cost_usd": 1.74
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 629,
+          "tokens": 3435427,
+          "cost_usd": 0.2
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 654,
+          "tokens": 536367,
+          "cost_usd": 0.52
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 583,
+          "tokens": 886459,
+          "cost_usd": 0.04
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 918,
+          "tokens": 2439431,
+          "cost_usd": 1.2
+        }
+      }
+    },
+    {
+      "id": "at-purge-embedded-images",
+      "type": "atomic",
+      "description": "Free the file and blob behind a deleted page.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-purge-embedded-images",
+      "tags": [
+        "active-storage",
+        "active-record",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 200,
+          "tokens": 239043,
+          "cost_usd": 0.3
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.85,
+          "run_count": 3,
+          "duration_seconds": 562,
+          "tokens": 1533038,
+          "cost_usd": 1.38
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 159,
+          "tokens": 106253,
+          "cost_usd": 0.46
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 202,
+          "tokens": 177984,
+          "cost_usd": 0.73
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 259,
+          "tokens": 182152,
+          "cost_usd": 0.13
+        },
+        "gpt-6-luna-max": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 295,
+          "tokens": 745122,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 559,
+          "tokens": 2226721,
+          "cost_usd": 1.66
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.85,
+          "run_count": 3,
+          "duration_seconds": 828,
+          "tokens": 4735434,
+          "cost_usd": 0.25
+        },
+        "kimi-k3-max": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 734,
+          "tokens": 1021569,
+          "cost_usd": 0.79
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 847,
+          "tokens": 2533470,
+          "cost_usd": 0.12
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 830,
+          "tokens": 2877631,
+          "cost_usd": 1.3
+        }
+      }
+    },
+    {
+      "id": "at-release-recap",
+      "type": "atomic",
+      "description": "A commit callback fills a cache from a stale instance.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-release-recap",
+      "tags": [
+        "active-record",
+        "callbacks",
+        "transactions",
+        "caching"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 170,
+          "tokens": 71131,
+          "cost_usd": 0.16
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 378,
+          "tokens": 730987,
+          "cost_usd": 0.76
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 204,
+          "tokens": 79441,
+          "cost_usd": 0.36
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 214,
+          "tokens": 168262,
+          "cost_usd": 0.7
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 202,
+          "tokens": 160389,
+          "cost_usd": 0.13
+        },
+        "gpt-6-luna-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 310,
+          "tokens": 523515,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 847,
+          "tokens": 1553147,
+          "cost_usd": 1.22
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 590,
+          "tokens": 2226395,
+          "cost_usd": 0.15
+        },
+        "kimi-k3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 593,
+          "tokens": 512419,
+          "cost_usd": 0.46
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 787,
+          "tokens": 1118876,
+          "cost_usd": 0.05
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 669,
+          "tokens": 1572727,
+          "cost_usd": 0.81
+        }
+      }
+    },
+    {
+      "id": "at-resumable-cleanup",
+      "type": "atomic",
+      "description": "Resume an interrupted long job from its own checkpoint \\u2014 no hand-rolled bookkeeping.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-resumable-cleanup",
+      "tags": [
+        "active-job",
+        "continuations"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 346,
+          "tokens": 396295,
+          "cost_usd": 0.46
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 831,
+          "tokens": 2339044,
+          "cost_usd": 1.87
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 264,
+          "tokens": 238696,
+          "cost_usd": 0.86
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 513,
+          "tokens": 509822,
+          "cost_usd": 1.86
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 466,
+          "tokens": 561017,
+          "cost_usd": 0.33
+        },
+        "gpt-6-luna-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 540,
+          "tokens": 1229505,
+          "cost_usd": 0.04
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1447,
+          "tokens": 5596785,
+          "cost_usd": 3.87
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1862,
+          "tokens": 13137270,
+          "cost_usd": 0.55
+        },
+        "kimi-k3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1174,
+          "tokens": 1300360,
+          "cost_usd": 1.1
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1446,
+          "tokens": 3966106,
+          "cost_usd": 0.16
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 939,
+          "tokens": 2219515,
+          "cost_usd": 1.28
+        }
+      }
+    },
+    {
+      "id": "at-scoped-broadcast",
+      "type": "atomic",
+      "description": "A Turbo broadcast still reaches collaborators whose access was revoked.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-scoped-broadcast",
+      "tags": [
+        "hotwire",
+        "turbo-streams",
+        "action-cable"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 211,
+          "tokens": 308957,
+          "cost_usd": 0.35
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 550,
+          "tokens": 1553078,
+          "cost_usd": 1.29
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 195,
+          "tokens": 111199,
+          "cost_usd": 0.51
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 328,
+          "tokens": 241601,
+          "cost_usd": 1.06
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 360,
+          "tokens": 274356,
+          "cost_usd": 0.21
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 542,
+          "tokens": 1898029,
+          "cost_usd": 0.05
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 953,
+          "tokens": 3544607,
+          "cost_usd": 2.46
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1251,
+          "tokens": 8913284,
+          "cost_usd": 0.4
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1093,
+          "tokens": 1724090,
+          "cost_usd": 1.22
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1004,
+          "tokens": 2880450,
+          "cost_usd": 0.11
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 954,
+          "tokens": 2757062,
+          "cost_usd": 1.23
+        }
+      }
+    },
+    {
+      "id": "at-tenant-isolation",
+      "type": "atomic",
+      "description": "Add tenants and close every cross-tenant read, including routes that never load a Book.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-tenant-isolation",
+      "tags": [
+        "active-record",
+        "multi-tenancy",
+        "migrations"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 285,
+          "tokens": 607739,
+          "cost_usd": 0.63
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 888,
+          "tokens": 4273006,
+          "cost_usd": 2.77
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 318,
+          "tokens": 265006,
+          "cost_usd": 1.06
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 502,
+          "tokens": 467871,
+          "cost_usd": 1.89
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 530,
+          "tokens": 413139,
+          "cost_usd": 0.32
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 793,
+          "tokens": 2232977,
+          "cost_usd": 0.06
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1435,
+          "tokens": 4192223,
+          "cost_usd": 3.08
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1843,
+          "tokens": 12745052,
+          "cost_usd": 0.47
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1812,
+          "tokens": 2181014,
+          "cost_usd": 1.53
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1316,
+          "tokens": 4648168,
+          "cost_usd": 0.19
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1356,
+          "tokens": 3405323,
+          "cost_usd": 1.74
+        }
+      }
+    },
+    {
+      "id": "at-throttle-search",
+      "type": "atomic",
+      "description": "Throttle the public book search per address, with a counter that expires itself.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-throttle-search",
+      "tags": [
+        "action-controller",
+        "rate-limiting"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 211,
+          "tokens": 183376,
+          "cost_usd": 0.32
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1119,
+          "tokens": 3816907,
+          "cost_usd": 2.85
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 296,
+          "tokens": 198535,
+          "cost_usd": 0.81
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 586,
+          "tokens": 520451,
+          "cost_usd": 1.9
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 551,
+          "tokens": 396036,
+          "cost_usd": 0.29
+        },
+        "gpt-6-luna-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 294,
+          "tokens": 569847,
+          "cost_usd": 0.02
+        },
+        "grok-4.7-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 787,
+          "tokens": 3276637,
+          "cost_usd": 2.27
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1032,
+          "tokens": 7607504,
+          "cost_usd": 0.34
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1253,
+          "tokens": 955780,
+          "cost_usd": 0.86
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1384,
+          "tokens": 3674641,
+          "cost_usd": 0.16
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 1235,
+          "tokens": 2118349,
+          "cost_usd": 1.13
+        }
+      }
+    },
+    {
+      "id": "at-toc-cache-per-role",
+      "type": "atomic",
+      "description": "A collection cache keyed on the item alone leaks the first viewer's permissions.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-toc-cache-per-role",
+      "tags": [
+        "action-view",
+        "caching"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 282,
+          "tokens": 454415,
+          "cost_usd": 0.46
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1021,
+          "tokens": 3199242,
+          "cost_usd": 2.23
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 312,
+          "tokens": 309963,
+          "cost_usd": 1.04
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 463,
+          "tokens": 458896,
+          "cost_usd": 1.69
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 463,
+          "tokens": 514084,
+          "cost_usd": 0.31
+        },
+        "gpt-6-luna-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 936,
+          "tokens": 2036124,
+          "cost_usd": 0.05
+        },
+        "grok-4.7-high": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 1366,
+          "tokens": 6959711,
+          "cost_usd": 4.61
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1307,
+          "tokens": 8713759,
+          "cost_usd": 0.31
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1895,
+          "tokens": 2972520,
+          "cost_usd": 1.98
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1946,
+          "tokens": 7330960,
+          "cost_usd": 0.27
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1014,
+          "tokens": 6590657,
+          "cost_usd": 3.0
+        }
+      }
+    },
+    {
+      "id": "at-variant-processed-once",
+      "type": "atomic",
+      "description": "The preprocessed variant never matches the one requested, so every upload converts twice.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/at-variant-processed-once",
+      "tags": [
+        "active-storage",
+        "variants",
+        "serialization",
+        "active-job"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 220,
+          "tokens": 330841,
+          "cost_usd": 0.33
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 484,
+          "tokens": 1458037,
+          "cost_usd": 1.15
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 234,
+          "tokens": 200316,
+          "cost_usd": 0.75
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 383,
+          "tokens": 420945,
+          "cost_usd": 1.43
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 393,
+          "tokens": 445145,
+          "cost_usd": 0.26
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 380,
+          "tokens": 1472893,
+          "cost_usd": 0.04
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1071,
+          "tokens": 4892498,
+          "cost_usd": 3.14
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1199,
+          "tokens": 4681916,
+          "cost_usd": 0.23
+        },
+        "kimi-k3-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1313,
+          "tokens": 2388419,
+          "cost_usd": 1.72
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1095,
+          "tokens": 4241100,
+          "cost_usd": 0.17
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 945,
+          "tokens": 3932781,
+          "cost_usd": 1.9
+        }
+      }
+    },
+    {
+      "id": "ft-account-id-rollout",
+      "type": "features",
+      "description": "Migration and backfill work - write the migrations that finish the account_id rollout, backfill every existing row's account through its association path, index by account, and roll back cleanly on a live database.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-account-id-rollout",
+      "tags": [
+        "active-record",
+        "migrations",
+        "backfill",
+        "multi-tenancy"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1213,
+          "tokens": 8224806,
+          "cost_usd": 3.34
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1921,
+          "tokens": 19315152,
+          "cost_usd": 7.32
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 811,
+          "tokens": 1019608,
+          "cost_usd": 2.75
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1042,
+          "tokens": 1414783,
+          "cost_usd": 3.63
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1056,
+          "tokens": 1776440,
+          "cost_usd": 0.68
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1684,
+          "tokens": 16764843,
+          "cost_usd": 0.27
+        },
+        "grok-4.7-high": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 1553,
+          "tokens": 17847481,
+          "cost_usd": 9.95
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.57,
+          "run_count": 3,
+          "duration_seconds": 2978,
+          "tokens": 60365974,
+          "cost_usd": 1.77
+        },
+        "kimi-k3-max": {
+          "score": 0.57,
+          "run_count": 3,
+          "duration_seconds": 4012,
+          "tokens": 21697153,
+          "cost_usd": 10.83
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3768,
+          "tokens": 27575587,
+          "cost_usd": 0.91
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 2631,
+          "tokens": 25048175,
+          "cost_usd": 8.65
+        }
+      }
+    },
+    {
+      "id": "ft-active-storage-tracking",
+      "type": "features",
+      "description": "Track storage usage for accounts and boards.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-active-storage-tracking",
+      "tags": [
+        "active-storage",
+        "active-record",
+        "active-job",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1314,
+          "tokens": 2468434,
+          "cost_usd": 1.87
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 3626,
+          "tokens": 30758595,
+          "cost_usd": 13.07
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 904,
+          "tokens": 762778,
+          "cost_usd": 2.51
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1549,
+          "tokens": 929085,
+          "cost_usd": 3.5
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1391,
+          "tokens": 1516577,
+          "cost_usd": 0.72
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1889,
+          "tokens": 12441229,
+          "cost_usd": 0.22
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2010,
+          "tokens": 14432433,
+          "cost_usd": 8.41
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4129,
+          "tokens": 42051467,
+          "cost_usd": 1.32
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4756,
+          "tokens": 13616517,
+          "cost_usd": 7.07
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4875,
+          "tokens": 23385639,
+          "cost_usd": 0.8
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 2684,
+          "tokens": 16454059,
+          "cost_usd": 4.99
+        }
+      }
+    },
+    {
+      "id": "ft-activity-feed-api",
+      "type": "features",
+      "description": "Expose the existing HTML activity timeline as an API endpoint.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-activity-feed-api",
+      "tags": [
+        "action-controller",
+        "action-view",
+        "serialization",
+        "http-api"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 401,
+          "tokens": 785005,
+          "cost_usd": 0.62
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 960,
+          "tokens": 6541754,
+          "cost_usd": 3.22
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 431,
+          "tokens": 449841,
+          "cost_usd": 1.32
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 577,
+          "tokens": 660356,
+          "cost_usd": 1.87
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 645,
+          "tokens": 826497,
+          "cost_usd": 0.39
+        },
+        "gpt-6-luna-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 681,
+          "tokens": 2511843,
+          "cost_usd": 0.06
+        },
+        "grok-4.7-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1553,
+          "tokens": 9090165,
+          "cost_usd": 5.75
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 1494,
+          "tokens": 15399420,
+          "cost_usd": 0.57
+        },
+        "kimi-k3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1938,
+          "tokens": 5928536,
+          "cost_usd": 3.3
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 2666,
+          "tokens": 7325144,
+          "cost_usd": 0.26
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1434,
+          "tokens": 7298926,
+          "cost_usd": 2.68
+        }
+      }
+    },
+    {
+      "id": "ft-board-publish-unpublish-public-boundary",
+      "type": "features",
+      "description": "Publish a board to an unguessable public URL that unpublishing revokes at once.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-board-publish-unpublish-public-boundary",
+      "tags": [
+        "action-controller",
+        "active-record",
+        "authorization",
+        "caching"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.17,
+          "run_count": 3,
+          "duration_seconds": 558,
+          "tokens": 1730814,
+          "cost_usd": 1.09
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.83,
+          "run_count": 3,
+          "duration_seconds": 2631,
+          "tokens": 22181880,
+          "cost_usd": 7.62
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 548,
+          "tokens": 491851,
+          "cost_usd": 1.56
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 682,
+          "tokens": 1383797,
+          "cost_usd": 3.42
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 969,
+          "tokens": 1208298,
+          "cost_usd": 0.52
+        },
+        "gpt-6-luna-max": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 967,
+          "tokens": 4643888,
+          "cost_usd": 0.1
+        },
+        "grok-4.7-high": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 1560,
+          "tokens": 15196293,
+          "cost_usd": 8.51
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 2828,
+          "tokens": 47111604,
+          "cost_usd": 1.22
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2789,
+          "tokens": 8354782,
+          "cost_usd": 4.34
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3214,
+          "tokens": 17844413,
+          "cost_usd": 0.61
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.17,
+          "run_count": 3,
+          "duration_seconds": 1761,
+          "tokens": 13748699,
+          "cost_usd": 6.19
+        }
+      }
+    },
+    {
+      "id": "ft-cancelled-account-cleanup",
+      "type": "features",
+      "description": "Permanently remove data belonging to cancelled accounts after a grace period.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-cancelled-account-cleanup",
+      "tags": [
+        "active-record",
+        "active-job",
+        "active-storage",
+        "data-erasure"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 270,
+          "tokens": 197230,
+          "cost_usd": 0.27
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1162,
+          "tokens": 5596368,
+          "cost_usd": 3.08
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 531,
+          "tokens": 491186,
+          "cost_usd": 1.41
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 667,
+          "tokens": 742907,
+          "cost_usd": 2.1
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 824,
+          "tokens": 727536,
+          "cost_usd": 0.36
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 852,
+          "tokens": 4019909,
+          "cost_usd": 0.09
+        },
+        "grok-4.7-high": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1277,
+          "tokens": 11501244,
+          "cost_usd": 6.56
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1688,
+          "tokens": 15536677,
+          "cost_usd": 0.51
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1900,
+          "tokens": 4326738,
+          "cost_usd": 2.32
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 1793,
+          "tokens": 7312958,
+          "cost_usd": 0.26
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1675,
+          "tokens": 12216449,
+          "cost_usd": 4.81
+        }
+      }
+    },
+    {
+      "id": "ft-card-drop-settled-landing",
+      "type": "features",
+      "description": "Drag cards around the board, settled the moment you let go.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-drop-settled-landing",
+      "tags": [
+        "hotwire",
+        "stimulus",
+        "turbo-streams"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1257,
+          "tokens": 3421096,
+          "cost_usd": 1.92
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2812,
+          "tokens": 17775726,
+          "cost_usd": 7.87
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 789,
+          "tokens": 688105,
+          "cost_usd": 2.11
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1210,
+          "tokens": 1455314,
+          "cost_usd": 3.67
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1270,
+          "tokens": 1266660,
+          "cost_usd": 0.62
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1887,
+          "tokens": 14714742,
+          "cost_usd": 0.24
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1637,
+          "tokens": 10107218,
+          "cost_usd": 6.12
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 3249,
+          "tokens": 40993279,
+          "cost_usd": 1.28
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3679,
+          "tokens": 7538010,
+          "cost_usd": 4.23
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 5369,
+          "tokens": 27992697,
+          "cost_usd": 0.94
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1939,
+          "tokens": 11817504,
+          "cost_usd": 5.7
+        }
+      }
+    },
+    {
+      "id": "ft-card-reactions",
+      "type": "features",
+      "description": "Extend reaction support from comments to cards.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-reactions",
+      "tags": [
+        "active-record",
+        "action-controller",
+        "migrations",
+        "caching"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 1195,
+          "tokens": 2610827,
+          "cost_usd": 1.44
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1861,
+          "tokens": 21988160,
+          "cost_usd": 7.67
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 578,
+          "tokens": 613945,
+          "cost_usd": 1.77
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 755,
+          "tokens": 1023990,
+          "cost_usd": 2.71
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 872,
+          "tokens": 1005648,
+          "cost_usd": 0.43
+        },
+        "gpt-6-luna-max": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 943,
+          "tokens": 4520884,
+          "cost_usd": 0.1
+        },
+        "grok-4.7-high": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 2104,
+          "tokens": 13292615,
+          "cost_usd": 7.94
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 2473,
+          "tokens": 22041967,
+          "cost_usd": 0.74
+        },
+        "kimi-k3-max": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 2397,
+          "tokens": 7021962,
+          "cost_usd": 3.8
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 2588,
+          "tokens": 11958299,
+          "cost_usd": 0.41
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1546,
+          "tokens": 10379674,
+          "cost_usd": 3.36
+        }
+      }
+    },
+    {
+      "id": "ft-card-stalled-quiet-clock",
+      "type": "features",
+      "description": "Badge cards that caught fire and then went quiet, and let people list them.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-card-stalled-quiet-clock",
+      "tags": [
+        "active-record",
+        "active-job",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 687,
+          "tokens": 2558467,
+          "cost_usd": 1.36
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1867,
+          "tokens": 15470099,
+          "cost_usd": 6.42
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 788,
+          "tokens": 796807,
+          "cost_usd": 2.12
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1067,
+          "tokens": 1515644,
+          "cost_usd": 3.65
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1119,
+          "tokens": 1599922,
+          "cost_usd": 0.61
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1383,
+          "tokens": 6635874,
+          "cost_usd": 0.13
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2168,
+          "tokens": 12965811,
+          "cost_usd": 7.57
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3432,
+          "tokens": 49327313,
+          "cost_usd": 1.54
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2934,
+          "tokens": 8072232,
+          "cost_usd": 4.5
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2447,
+          "tokens": 7241556,
+          "cost_usd": 0.26
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2349,
+          "tokens": 13312110,
+          "cost_usd": 4.58
+        }
+      }
+    },
+    {
+      "id": "ft-comment-reaction-live-echo",
+      "type": "features",
+      "description": "Let people react to comments, live for everyone, settled instantly for the reactor.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-comment-reaction-live-echo",
+      "tags": [
+        "hotwire",
+        "turbo-streams",
+        "active-record",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1644,
+          "tokens": 4334575,
+          "cost_usd": 2.31
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.83,
+          "run_count": 3,
+          "duration_seconds": 3122,
+          "tokens": 19368057,
+          "cost_usd": 7.98
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 958,
+          "tokens": 695344,
+          "cost_usd": 2.07
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1116,
+          "tokens": 1116968,
+          "cost_usd": 3.17
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1603,
+          "tokens": 1683817,
+          "cost_usd": 0.64
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1620,
+          "tokens": 12471419,
+          "cost_usd": 0.21
+        },
+        "grok-4.7-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1947,
+          "tokens": 22581549,
+          "cost_usd": 12.47
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3696,
+          "tokens": 54622406,
+          "cost_usd": 1.56
+        },
+        "kimi-k3-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 5001,
+          "tokens": 16091254,
+          "cost_usd": 7.69
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4743,
+          "tokens": 26342225,
+          "cost_usd": 0.88
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2788,
+          "tokens": 22739748,
+          "cost_usd": 6.03
+        }
+      }
+    },
+    {
+      "id": "ft-data-export-and-import",
+      "type": "features",
+      "description": "Export an account or a person's cards as a file, and bring an account file back in as a new account.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-data-export-and-import",
+      "tags": [
+        "active-job",
+        "active-storage",
+        "action-mailer",
+        "authorization",
+        "multi-tenancy",
+        "security"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1917,
+          "tokens": 16483076,
+          "cost_usd": 6.35
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3880,
+          "tokens": 58643068,
+          "cost_usd": 19.47
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1356,
+          "tokens": 1981388,
+          "cost_usd": 4.92
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1357,
+          "tokens": 2414162,
+          "cost_usd": 5.75
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1776,
+          "tokens": 3188573,
+          "cost_usd": 1.21
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2749,
+          "tokens": 39574455,
+          "cost_usd": 0.55
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2118,
+          "tokens": 19406439,
+          "cost_usd": 11.02
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4606,
+          "tokens": 84668199,
+          "cost_usd": 1.67
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5488,
+          "tokens": 23977106,
+          "cost_usd": 11.14
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5319,
+          "tokens": 55178468,
+          "cost_usd": 1.78
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3911,
+          "tokens": 36894445,
+          "cost_usd": 13.57
+        }
+      }
+    },
+    {
+      "id": "ft-email-code-sign-in",
+      "type": "features",
+      "description": "Sign in, sign up and join with a six-character code sent by email.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-email-code-sign-in",
+      "tags": [
+        "action-controller",
+        "action-mailer",
+        "authentication",
+        "rate-limiting"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 693,
+          "tokens": 2555037,
+          "cost_usd": 1.56
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1503,
+          "tokens": 13017936,
+          "cost_usd": 5.63
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 660,
+          "tokens": 486180,
+          "cost_usd": 1.74
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 868,
+          "tokens": 705138,
+          "cost_usd": 2.49
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 855,
+          "tokens": 671330,
+          "cost_usd": 0.44
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1092,
+          "tokens": 4147672,
+          "cost_usd": 0.1
+        },
+        "grok-4.7-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1614,
+          "tokens": 9914424,
+          "cost_usd": 6.09
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3188,
+          "tokens": 47253211,
+          "cost_usd": 1.28
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3166,
+          "tokens": 10447821,
+          "cost_usd": 5.46
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 3345,
+          "tokens": 17161047,
+          "cost_usd": 0.59
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 2004,
+          "tokens": 11244286,
+          "cost_usd": 3.66
+        }
+      }
+    },
+    {
+      "id": "ft-entropy-sweep",
+      "type": "features",
+      "description": "Large-account performance incident: the hourly auto-postpone sweep no longer fits its hour.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-entropy-sweep",
+      "tags": [
+        "active-record",
+        "migrations",
+        "performance",
+        "query-planning"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1235,
+          "tokens": 1141187,
+          "cost_usd": 0.99
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2134,
+          "tokens": 3657918,
+          "cost_usd": 2.92
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 562,
+          "tokens": 339983,
+          "cost_usd": 1.17
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 655,
+          "tokens": 534930,
+          "cost_usd": 1.84
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 831,
+          "tokens": 769229,
+          "cost_usd": 0.38
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 871,
+          "tokens": 2285917,
+          "cost_usd": 0.06
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1965,
+          "tokens": 12810210,
+          "cost_usd": 7.61
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3726,
+          "tokens": 31903208,
+          "cost_usd": 1.02
+        },
+        "kimi-k3-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 3787,
+          "tokens": 7146762,
+          "cost_usd": 4.19
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5615,
+          "tokens": 8567216,
+          "cost_usd": 0.33
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 2500,
+          "tokens": 9846386,
+          "cost_usd": 6.16
+        }
+      }
+    },
+    {
+      "id": "ft-i18n-support",
+      "type": "features",
+      "description": "Add full internationalization to Fizzy - a complete Japanese locale, a per-person language choice that persists, and unchanged English for everyone else.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-i18n-support",
+      "tags": [
+        "i18n",
+        "action-view",
+        "caching"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 4751,
+          "tokens": 65160530,
+          "cost_usd": 19.73
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 5311,
+          "tokens": 126382145,
+          "cost_usd": 35.81
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1782,
+          "tokens": 6269393,
+          "cost_usd": 10.91
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2610,
+          "tokens": 8447281,
+          "cost_usd": 14.13
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2196,
+          "tokens": 8453007,
+          "cost_usd": 2.06
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3359,
+          "tokens": 73467890,
+          "cost_usd": 0.92
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2561,
+          "tokens": 39150115,
+          "cost_usd": 21.26
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5371,
+          "tokens": 76887862,
+          "cost_usd": 2.11
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5557,
+          "tokens": 35575644,
+          "cost_usd": 17.08
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5535,
+          "tokens": 70509521,
+          "cost_usd": 2.24
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5257,
+          "tokens": 63920629,
+          "cost_usd": 25.2
+        }
+      }
+    },
+    {
+      "id": "ft-kamal-deploy",
+      "type": "features",
+      "description": "Give the open-source Fizzy a Kamal deployment for one box, with the deployment's settings and secrets outside the code.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-kamal-deploy",
+      "tags": [
+        "deployment",
+        "kamal",
+        "configuration"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 451,
+          "tokens": 914600,
+          "cost_usd": 0.78
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2108,
+          "tokens": 11572374,
+          "cost_usd": 5.32
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 403,
+          "tokens": 303488,
+          "cost_usd": 1.14
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 717,
+          "tokens": 580363,
+          "cost_usd": 2.08
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 813,
+          "tokens": 740532,
+          "cost_usd": 0.41
+        },
+        "gpt-6-luna-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 828,
+          "tokens": 3473042,
+          "cost_usd": 0.08
+        },
+        "grok-4.7-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2057,
+          "tokens": 10107923,
+          "cost_usd": 6.05
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1438,
+          "tokens": 20311448,
+          "cost_usd": 0.68
+        },
+        "kimi-k3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1873,
+          "tokens": 3675911,
+          "cost_usd": 2.16
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 2244,
+          "tokens": 11831673,
+          "cost_usd": 0.41
+        },
+        "muse-spark-1.3-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1184,
+          "tokens": 5803955,
+          "cost_usd": 1.96
+        }
+      }
+    },
+    {
+      "id": "ft-local-time-human-clock",
+      "type": "features",
+      "description": "Render times in the browser, in the viewer's timezone, the way a person says them.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-local-time-human-clock",
+      "tags": [
+        "hotwire",
+        "stimulus",
+        "caching",
+        "i18n"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 995,
+          "tokens": 2137903,
+          "cost_usd": 1.32
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 2151,
+          "tokens": 15548281,
+          "cost_usd": 6.73
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 580,
+          "tokens": 378007,
+          "cost_usd": 1.41
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.83,
+          "run_count": 3,
+          "duration_seconds": 744,
+          "tokens": 586370,
+          "cost_usd": 2.2
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1044,
+          "tokens": 974485,
+          "cost_usd": 0.49
+        },
+        "gpt-6-luna-max": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 1300,
+          "tokens": 9035055,
+          "cost_usd": 0.16
+        },
+        "grok-4.7-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1630,
+          "tokens": 10330025,
+          "cost_usd": 6.28
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.83,
+          "run_count": 3,
+          "duration_seconds": 3048,
+          "tokens": 47413450,
+          "cost_usd": 1.16
+        },
+        "kimi-k3-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 3746,
+          "tokens": 8419146,
+          "cost_usd": 4.77
+        },
+        "glm-5.3-flash-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2611,
+          "tokens": 8849908,
+          "cost_usd": 0.32
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 1753,
+          "tokens": 9386050,
+          "cost_usd": 3.35
+        }
+      }
+    },
+    {
+      "id": "ft-mysql-fulltext-search-foundation",
+      "type": "features",
+      "description": "Search cards, scoped to the boards a person currently has access to.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-mysql-fulltext-search-foundation",
+      "tags": [
+        "active-record",
+        "migrations",
+        "raw-sql",
+        "callbacks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 409,
+          "tokens": 735882,
+          "cost_usd": 0.61
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1797,
+          "tokens": 14730495,
+          "cost_usd": 6.33
+        },
+        "gpt-6-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 599,
+          "tokens": 596381,
+          "cost_usd": 1.86
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 863,
+          "tokens": 835960,
+          "cost_usd": 2.67
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 993,
+          "tokens": 1409459,
+          "cost_usd": 0.6
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 722,
+          "tokens": 2582824,
+          "cost_usd": 0.06
+        },
+        "grok-4.7-high": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1936,
+          "tokens": 10926297,
+          "cost_usd": 6.44
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3212,
+          "tokens": 23225657,
+          "cost_usd": 0.68
+        },
+        "kimi-k3-max": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 2799,
+          "tokens": 7441525,
+          "cost_usd": 3.94
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2586,
+          "tokens": 13458690,
+          "cost_usd": 0.46
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1659,
+          "tokens": 9993617,
+          "cost_usd": 4.71
+        }
+      }
+    },
+    {
+      "id": "ft-notification-bundle-window-overlap",
+      "type": "features",
+      "description": "Bundle notifications into per-person email digests, windows that never overlap, nothing dropped.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-notification-bundle-window-overlap",
+      "tags": [
+        "active-record",
+        "active-job",
+        "callbacks",
+        "transactions"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 907,
+          "tokens": 2791362,
+          "cost_usd": 1.71
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2339,
+          "tokens": 18758751,
+          "cost_usd": 7.74
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 656,
+          "tokens": 496726,
+          "cost_usd": 1.65
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 858,
+          "tokens": 667447,
+          "cost_usd": 2.26
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 989,
+          "tokens": 750707,
+          "cost_usd": 0.43
+        },
+        "gpt-6-luna-max": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 1249,
+          "tokens": 5073983,
+          "cost_usd": 0.11
+        },
+        "grok-4.7-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1967,
+          "tokens": 10290155,
+          "cost_usd": 6.16
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3252,
+          "tokens": 70523518,
+          "cost_usd": 1.79
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3882,
+          "tokens": 11045842,
+          "cost_usd": 5.79
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.47,
+          "run_count": 3,
+          "duration_seconds": 2192,
+          "tokens": 10607121,
+          "cost_usd": 0.38
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2362,
+          "tokens": 14142597,
+          "cost_usd": 4.91
+        }
+      }
+    },
+    {
+      "id": "ft-saas-billing",
+      "type": "features",
+      "description": "Bring the paid product back to hosted Fizzy - Stripe-driven subscriptions and plans, free-tier card and storage allowances enforced in the app, the upgrade path in settings, staff comps and overrides, and a signature-guarded webhook endpoint.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-saas-billing",
+      "tags": [
+        "action-controller",
+        "engines",
+        "billing",
+        "webhooks"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1434,
+          "tokens": 8967459,
+          "cost_usd": 4.14
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2211,
+          "tokens": 23046539,
+          "cost_usd": 9.35
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 769,
+          "tokens": 1086221,
+          "cost_usd": 3.04
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 963,
+          "tokens": 1328380,
+          "cost_usd": 3.65
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1225,
+          "tokens": 1580208,
+          "cost_usd": 0.78
+        },
+        "gpt-6-luna-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1615,
+          "tokens": 11171469,
+          "cost_usd": 0.2
+        },
+        "grok-4.7-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 2020,
+          "tokens": 14301087,
+          "cost_usd": 8.44
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4643,
+          "tokens": 94042089,
+          "cost_usd": 2.72
+        },
+        "kimi-k3-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 4677,
+          "tokens": 17198546,
+          "cost_usd": 9.04
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3983,
+          "tokens": 29600616,
+          "cost_usd": 0.99
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2363,
+          "tokens": 25116152,
+          "cost_usd": 10.01
+        }
+      }
+    },
+    {
+      "id": "ft-web-push-device-delivery",
+      "type": "features",
+      "description": "Push notifications for the web app, readable on every device, once, never inward.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-web-push-device-delivery",
+      "tags": [
+        "active-job",
+        "web-push",
+        "service-worker",
+        "security"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 900,
+          "tokens": 6412897,
+          "cost_usd": 2.95
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 4301,
+          "tokens": 34907859,
+          "cost_usd": 13.07
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 841,
+          "tokens": 794833,
+          "cost_usd": 2.48
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 976,
+          "tokens": 1084912,
+          "cost_usd": 3.43
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 926,
+          "tokens": 1137052,
+          "cost_usd": 0.59
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1463,
+          "tokens": 10597454,
+          "cost_usd": 0.19
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1895,
+          "tokens": 14517774,
+          "cost_usd": 8.44
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2852,
+          "tokens": 40631885,
+          "cost_usd": 1.23
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4299,
+          "tokens": 13387102,
+          "cost_usd": 6.79
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2950,
+          "tokens": 24295058,
+          "cost_usd": 0.8
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2390,
+          "tokens": 19830092,
+          "cost_usd": 9.59
+        }
+      }
+    },
+    {
+      "id": "ft-webhook-delivery-trust-and-restart",
+      "type": "features",
+      "description": "Make board webhooks deliver, once per event, switched off when dead.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ft-webhook-delivery-trust-and-restart",
+      "tags": [
+        "active-job",
+        "webhooks",
+        "security",
+        "net-http"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 962,
+          "tokens": 1701518,
+          "cost_usd": 1.31
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1521,
+          "tokens": 10723123,
+          "cost_usd": 5.27
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 690,
+          "tokens": 585928,
+          "cost_usd": 1.87
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 759,
+          "tokens": 821147,
+          "cost_usd": 2.53
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 809,
+          "tokens": 1045902,
+          "cost_usd": 0.51
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1483,
+          "tokens": 4635181,
+          "cost_usd": 0.11
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1645,
+          "tokens": 10673872,
+          "cost_usd": 6.62
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3063,
+          "tokens": 51382024,
+          "cost_usd": 1.73
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3272,
+          "tokens": 8377203,
+          "cost_usd": 4.47
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2504,
+          "tokens": 10985779,
+          "cost_usd": 0.39
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1828,
+          "tokens": 10758099,
+          "cost_usd": 5.02
+        }
+      }
+    },
+    {
+      "id": "ms-campfire-bots",
+      "type": "multistep",
+      "description": "Add bots to Campfire in five steps (UI, posting API, webhooks, auto-join, limits and abuse detection), graded end to end in a browser.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-campfire-bots",
+      "tags": [
+        "http-api",
+        "webhooks",
+        "minitest",
+        "e2e"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.28,
+          "run_count": 3,
+          "duration_seconds": 3850,
+          "tokens": 9196407,
+          "cost_usd": 6.05
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 11694,
+          "tokens": 72001512,
+          "cost_usd": 32.11
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.59,
+          "run_count": 3,
+          "duration_seconds": 2181,
+          "tokens": 1579934,
+          "cost_usd": 5.56
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.92,
+          "run_count": 3,
+          "duration_seconds": 4102,
+          "tokens": 4776593,
+          "cost_usd": 13.7
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.85,
+          "run_count": 3,
+          "duration_seconds": 4706,
+          "tokens": 6310426,
+          "cost_usd": 2.81
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2518,
+          "tokens": 7816619,
+          "cost_usd": 0.17
+        },
+        "grok-4.7-high": {
+          "score": 0.27,
+          "run_count": 3,
+          "duration_seconds": 10571,
+          "tokens": 46077583,
+          "cost_usd": 30.26
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 8682,
+          "tokens": 118888821,
+          "cost_usd": 1.86
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 8215,
+          "tokens": 31760911,
+          "cost_usd": 16.59
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2044,
+          "tokens": 15439238,
+          "cost_usd": 0.59
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 4399,
+          "tokens": 28579458,
+          "cost_usd": 11.98
+        }
+      }
+    },
+    {
+      "id": "ms-forem-active-storage",
+      "type": "multistep",
+      "description": "Move Forem's profile pictures from CarrierWave to Active Storage, one deploy at a time, without breaking a picture anyone can already see.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-forem-active-storage",
+      "tags": [
+        "active-storage",
+        "data-migration"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 8695,
+          "tokens": 33480989,
+          "cost_usd": 13.7
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 12817,
+          "tokens": 97196082,
+          "cost_usd": 36.04
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1254,
+          "tokens": 1899813,
+          "cost_usd": 4.25
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1647,
+          "tokens": 2982018,
+          "cost_usd": 6.4
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.2,
+          "run_count": 3,
+          "duration_seconds": 2219,
+          "tokens": 3075079,
+          "cost_usd": 1.27
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2253,
+          "tokens": 26587603,
+          "cost_usd": 0.39
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3479,
+          "tokens": 25289534,
+          "cost_usd": 14.25
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.2,
+          "run_count": 3,
+          "duration_seconds": 8856,
+          "tokens": 116904079,
+          "cost_usd": 2.04
+        },
+        "kimi-k3-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 8028,
+          "tokens": 42756101,
+          "cost_usd": 22.88
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5612,
+          "tokens": 39527410,
+          "cost_usd": 1.64
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3799,
+          "tokens": 52542462,
+          "cost_usd": 15.58
+        }
+      }
+    },
+    {
+      "id": "ms-greenfield-helpdesk",
+      "type": "multistep",
+      "description": "Build a Zendesk-like helpdesk SaaS.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-greenfield-helpdesk",
+      "tags": [
+        "active-record",
+        "active-job",
+        "action-mailer",
+        "action-mailbox",
+        "http-api",
+        "multi-tenancy",
+        "greenfield"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.52,
+          "run_count": 2,
+          "duration_seconds": 2595,
+          "tokens": 6483138,
+          "cost_usd": 7.21
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.52,
+          "run_count": 2,
+          "duration_seconds": 9938,
+          "tokens": 60767730,
+          "cost_usd": 35.68
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.51,
+          "run_count": 2,
+          "duration_seconds": 2220,
+          "tokens": 1814412,
+          "cost_usd": 9.31
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.48,
+          "run_count": 2,
+          "duration_seconds": 4581,
+          "tokens": 3289916,
+          "cost_usd": 16.2
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.52,
+          "run_count": 2,
+          "duration_seconds": 4352,
+          "tokens": 3570302,
+          "cost_usd": 3.2
+        },
+        "gpt-6-luna-max": {
+          "score": 0.15,
+          "run_count": 2,
+          "duration_seconds": 6388,
+          "tokens": 13569932,
+          "cost_usd": 0.44
+        },
+        "grok-4.7-high": {
+          "score": 0.49,
+          "run_count": 2,
+          "duration_seconds": 11295,
+          "tokens": 26724446,
+          "cost_usd": 21.69
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.32,
+          "run_count": 2,
+          "duration_seconds": 14592,
+          "tokens": 79403114,
+          "cost_usd": 2.81
+        },
+        "kimi-k3-max": {
+          "score": 0.39,
+          "run_count": 2,
+          "duration_seconds": 11760,
+          "tokens": 20590862,
+          "cost_usd": 18.68
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 8177,
+          "tokens": 53461702,
+          "cost_usd": 1.88
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 2796,
+          "tokens": 20429148,
+          "cost_usd": 10.77
+        }
+      }
+    },
+    {
+      "id": "ms-greenfield-quizzy",
+      "type": "multistep",
+      "description": "Build Quizzy, a live quiz app for conference talks, from an empty repository in five steps (authoring, import/export, live game, scoring and winners, timer), graded end to end in a browser.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-greenfield-quizzy",
+      "tags": [
+        "greenfield",
+        "hotwire",
+        "real-time",
+        "e2e"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 3426,
+          "tokens": 9250461,
+          "cost_usd": 7.24
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 11929,
+          "tokens": 78640313,
+          "cost_usd": 39.3
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3124,
+          "tokens": 2549854,
+          "cost_usd": 9.03
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 4959,
+          "tokens": 4493230,
+          "cost_usd": 14.94
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.93,
+          "run_count": 3,
+          "duration_seconds": 4440,
+          "tokens": 4542092,
+          "cost_usd": 2.61
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 6457,
+          "tokens": 37545605,
+          "cost_usd": 0.68
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 10797,
+          "tokens": 30505142,
+          "cost_usd": 20.65
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3081,
+          "tokens": 32151352,
+          "cost_usd": 0.85
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1479,
+          "tokens": 5413405,
+          "cost_usd": 3.36
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 6384,
+          "tokens": 41635123,
+          "cost_usd": 1.56
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 10184,
+          "tokens": 64061293,
+          "cost_usd": 32.78
+        }
+      }
+    },
+    {
+      "id": "ms-mastodon-tests",
+      "type": "multistep",
+      "description": "Profile and speed up a large RSpec suite keeping every spec green.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-mastodon-tests",
+      "tags": [
+        "rspec",
+        "testing",
+        "performance"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.91,
+          "run_count": 3,
+          "duration_seconds": 7005,
+          "tokens": 10765207,
+          "cost_usd": 5.77
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.95,
+          "run_count": 3,
+          "duration_seconds": 10560,
+          "tokens": 51738379,
+          "cost_usd": 18.73
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.28,
+          "run_count": 3,
+          "duration_seconds": 4919,
+          "tokens": 2446079,
+          "cost_usd": 5.98
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.28,
+          "run_count": 3,
+          "duration_seconds": 5343,
+          "tokens": 4478603,
+          "cost_usd": 9.91
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.28,
+          "run_count": 3,
+          "duration_seconds": 4610,
+          "tokens": 4344938,
+          "cost_usd": 1.65
+        },
+        "gpt-6-luna-max": {
+          "score": 0.25,
+          "run_count": 3,
+          "duration_seconds": 3324,
+          "tokens": 4309720,
+          "cost_usd": 0.12
+        },
+        "grok-4.7-high": {
+          "score": 0.27,
+          "run_count": 3,
+          "duration_seconds": 8559,
+          "tokens": 35435022,
+          "cost_usd": 23.08
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 7379,
+          "tokens": 33593188,
+          "cost_usd": 0.87
+        },
+        "kimi-k3-max": {
+          "score": 0.84,
+          "run_count": 3,
+          "duration_seconds": 7818,
+          "tokens": 19032979,
+          "cost_usd": 7.87
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.3,
+          "run_count": 3,
+          "duration_seconds": 14562,
+          "tokens": 53737869,
+          "cost_usd": 1.93
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5818,
+          "tokens": 39677398,
+          "cost_usd": 12.88
+        }
+      }
+    },
+    {
+      "id": "ms-redmine-rails-upgrade",
+      "type": "multistep",
+      "description": "Upgrade a production Redmine to Rails 8.1 and Ruby 3.4, one rollback-safe deploy at a time, without losing a session or a sent mail link.",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-redmine-rails-upgrade",
+      "tags": [
+        "upgrade",
+        "configuration"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.43,
+          "run_count": 2,
+          "duration_seconds": 14508,
+          "tokens": 59379671,
+          "cost_usd": 23.92
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.43,
+          "run_count": 2,
+          "duration_seconds": 14851,
+          "tokens": 122183466,
+          "cost_usd": 43.09
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.5,
+          "run_count": 2,
+          "duration_seconds": 6469,
+          "tokens": 5603962,
+          "cost_usd": 11.91
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.87,
+          "run_count": 2,
+          "duration_seconds": 7993,
+          "tokens": 10780574,
+          "cost_usd": 22.87
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.87,
+          "run_count": 2,
+          "duration_seconds": 10794,
+          "tokens": 10466842,
+          "cost_usd": 3.81
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4401,
+          "tokens": 32717596,
+          "cost_usd": 0.48
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 5585,
+          "tokens": 26693385,
+          "cost_usd": 15.27
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 11332,
+          "tokens": 69211958,
+          "cost_usd": 0.98
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 8629,
+          "tokens": 25804020,
+          "cost_usd": 14.61
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 9050,
+          "tokens": 49881133,
+          "cost_usd": 1.65
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4064,
+          "tokens": 41436056,
+          "cost_usd": 13.64
+        }
+      }
+    },
+    {
+      "id": "ms-retire-proposals",
+      "type": "multistep",
+      "description": "Retire the citizen proposals feature, its six tables and related columns from Consul Democracy without downtime or data loss",
+      "url": "https://github.com/rails/ai-evals/tree/main/tasks/ms-retire-proposals",
+      "tags": [
+        "active-record",
+        "migrations",
+        "refactoring",
+        "postgresql"
+      ],
+      "results": {
+        "claude-opus-5.5-medium": {
+          "score": 0.5,
+          "run_count": 2,
+          "duration_seconds": 11097,
+          "tokens": 140257028,
+          "cost_usd": 50.59
+        },
+        "claude-opus-5.5-xhigh": {
+          "score": 0.95,
+          "run_count": 2,
+          "duration_seconds": 12867,
+          "tokens": 236690332,
+          "cost_usd": 66.07
+        },
+        "gpt-6-astra-medium": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 5813,
+          "tokens": 22077506,
+          "cost_usd": 32.91
+        },
+        "gpt-6-astra-xhigh": {
+          "score": 0.5,
+          "run_count": 2,
+          "duration_seconds": 6114,
+          "tokens": 25891686,
+          "cost_usd": 37.01
+        },
+        "gpt-6.1-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4142,
+          "tokens": 22493481,
+          "cost_usd": 4.18
+        },
+        "gpt-6-luna-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 7636,
+          "tokens": 155436875,
+          "cost_usd": 1.85
+        },
+        "grok-4.7-high": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 2549,
+          "tokens": 41026598,
+          "cost_usd": 21.87
+        },
+        "deepseek-v4.1-flash-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 6887,
+          "tokens": 159093761,
+          "cost_usd": 2.58
+        },
+        "kimi-k3-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 11308,
+          "tokens": 141870207,
+          "cost_usd": 65.25
+        },
+        "glm-5.3-flash-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 10859,
+          "tokens": 210161026,
+          "cost_usd": 7.06
+        },
+        "muse-spark-1.3-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 2803,
+          "tokens": 59257085,
+          "cost_usd": 15.27
+        }
+      }
+    }
+  ]
+}
