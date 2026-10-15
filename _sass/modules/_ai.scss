@@ -85,8 +85,6 @@ body.ai-dialog-open {
       letter-spacing: -0.01em;
       line-height: 31px;
       margin-bottom: 12px;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
     }
 
     p {
@@ -111,7 +109,7 @@ body.ai-dialog-open {
     font-weight: 600;
     left: 0;
     letter-spacing: 0.1em;
-    line-height: 21px;
+    line-height: 27px;
     position: absolute;
     text-align: center;
     top: -15px;
@@ -134,7 +132,7 @@ body.ai-dialog-open {
 
   &__models {
     margin: 80px auto 0;
-    max-width: 1280px;
+    max-width: 1040px;
   }
 
   &__models__header {
@@ -222,13 +220,14 @@ body.ai-dialog-open {
         color: $color-red;
       }
 
-      &:disabled {
-        cursor: not-allowed;
+      @media(hover: hover) {
+        &:not([aria-pressed="true"]):not(:disabled):hover {
+          color: $color-black;
+        }
       }
 
-      &:focus-visible {
-        outline: 2px solid $color-red;
-        outline-offset: 1px;
+      &:disabled {
+        cursor: not-allowed;
       }
     }
   }
@@ -269,12 +268,6 @@ body.ai-dialog-open {
     &:hover,
     &[aria-expanded="true"] {
       color: $color-black;
-    }
-
-    &:focus-visible {
-      border-radius: 3px;
-      outline: 2px solid $color-red;
-      outline-offset: 4px;
     }
   }
 
@@ -330,7 +323,7 @@ body.ai-dialog-open {
       margin-bottom: 2px;
     }
 
-    dd + dt {
+    dd+dt {
       margin-top: 14px;
     }
 
@@ -402,7 +395,6 @@ body.ai-dialog-open {
   }
 
   &__benchmark-chart__frame {
-    overflow-x: auto;
     padding: 26px 25px 54px 62px;
     position: relative;
   }
@@ -415,7 +407,6 @@ body.ai-dialog-open {
     border-bottom: 2px solid rgba($color-black, 0.35);
     border-left: 2px solid rgba($color-black, 0.35);
     height: 450px;
-    min-width: 620px;
     position: relative;
   }
 
@@ -530,8 +521,6 @@ body.ai-dialog-open {
     &:hover,
     &:focus-visible {
       box-shadow: 0 6px 20px rgba($color-black, 0.32);
-      outline: 3px solid rgba($color-red, 0.25);
-      outline-offset: 3px;
       transform: translate(-50%, -50%) scale(1.08);
       z-index: 4;
     }
@@ -828,30 +817,12 @@ body.ai-dialog-open {
         color: $color-red;
       }
 
-      &:focus-visible {
-        outline: 2px solid $color-red;
-        outline-offset: 1px;
+      @media(hover: hover) {
+        &:not([aria-pressed="true"]):hover {
+          color: $color-black;
+        }
       }
     }
-  }
-
-  &__scroll-hint {
-    color: $color-grey-5;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 18px;
-    margin: -10px 0 14px;
-    text-align: right;
-
-    span {
-      color: $color-red;
-      font-size: 17px;
-      margin-left: 3px;
-    }
-  }
-
-  &__scroll-hint--chart {
-    margin: 18px 20px -8px;
   }
 
   &__models__table-wrap {
@@ -861,17 +832,10 @@ body.ai-dialog-open {
       0 3px 15px 2px rgba($color-black, 0.05),
       0 1px 1px rgba($color-black, 0.02),
       0 0 0 3px rgba($color-black, 0.1);
-    overflow-x: auto;
   }
 
   &__models__table-wrap--unified {
-    overflow: visible;
     position: relative;
-  }
-
-  &__models__table-scroll {
-    border-radius: 8px;
-    overflow-x: auto;
   }
 
   &__models__table {
@@ -891,7 +855,7 @@ body.ai-dialog-open {
     }
 
     thead th {
-      background: rgba($color-grey-1, 0.75);
+      background: mix($color-grey-1, $color-white, 75%);
       font-size: 13px;
       letter-spacing: 0.03em;
       line-height: 17px;
@@ -902,7 +866,12 @@ body.ai-dialog-open {
       z-index: 1;
 
       &:first-child {
+        border-top-left-radius: 8px;
         text-align: left;
+      }
+
+      &:last-child {
+        border-top-right-radius: 8px;
       }
 
       small {
@@ -913,9 +882,42 @@ body.ai-dialog-open {
       }
     }
 
+    &.is-stuck thead th {
+      border-radius: 0;
+    }
+
     tbody tr:last-child th,
     tbody tr:last-child td {
       border-bottom: none;
+    }
+
+    tbody tr:last-child th {
+      border-bottom-left-radius: 8px;
+    }
+
+    tbody tr:last-child td:last-child {
+      border-bottom-right-radius: 8px;
+    }
+
+    tbody tr {
+      cursor: pointer;
+    }
+
+    tbody th,
+    tbody td {
+      transition: background-color $transition;
+    }
+
+    @media(hover: hover) {
+
+      tbody tr:hover th,
+      tbody tr:hover td {
+        background-color: mix($color-grey-1, $color-white, 40%);
+      }
+
+      tbody tr:hover .ai__model--button {
+        color: $color-red;
+      }
     }
 
     tbody th {
@@ -938,6 +940,15 @@ body.ai-dialog-open {
       position: relative;
       text-align: inherit;
       text-transform: inherit;
+      transition: color $transition;
+
+      @media(hover: hover) {
+
+        &:hover,
+        &:hover small {
+          color: $color-red;
+        }
+      }
     }
 
     thead th:first-child button {
@@ -946,22 +957,24 @@ body.ai-dialog-open {
 
     [aria-sort] button {
       &:after {
-        color: $color-red;
-        font-size: 16px;
-        line-height: 1;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        content: "";
+        height: 0;
         position: absolute;
-        right: 0;
+        right: 4px;
         top: 50%;
         transform: translateY(-50%);
+        width: 0;
       }
     }
 
     [aria-sort="ascending"] button:after {
-      content: "\25B2";
+      border-bottom: 6px solid $color-red;
     }
 
     [aria-sort="descending"] button:after {
-      content: "\25BC";
+      border-top: 6px solid $color-red;
     }
   }
 
@@ -991,16 +1004,10 @@ body.ai-dialog-open {
     color: $color-black;
     cursor: pointer;
     font: inherit;
+    font-size: 16px;
     font-weight: 700;
     min-height: 44px;
     padding: 4px;
-
-    &:hover,
-    &:focus-visible {
-      color: $color-red;
-      outline: 2px solid $color-red;
-      outline-offset: 2px;
-    }
   }
 
   &__score {
@@ -1017,12 +1024,10 @@ body.ai-dialog-open {
     font-weight: 700;
     min-height: 44px;
     min-width: 72px;
-    transition: border-color $transition, transform $transition;
 
-    &:hover,
     &:focus-visible {
-      border-color: currentColor;
-      transform: translateY(-1px);
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
     }
   }
 
@@ -1073,23 +1078,22 @@ body.ai-dialog-open {
   }
 
   &__eval-dialog__close {
-    background: $color-grey-1;
+    background: transparent;
+    border: 0;
     border-radius: 999px;
     color: $color-black;
     cursor: pointer;
-    font-size: 26px;
+    font-size: 36px;
     height: 44px;
     line-height: 40px;
     position: absolute;
     right: 22px;
     top: 22px;
+    transition: color $transition;
     width: 44px;
 
-    &:hover,
-    &:focus-visible {
-      background: $color-grey-2;
-      outline: 2px solid $color-red;
-      outline-offset: 2px;
+    &:hover {
+      color: $color-red;
     }
   }
 
@@ -1108,6 +1112,11 @@ body.ai-dialog-open {
     letter-spacing: -0.02em;
     line-height: 1.1;
     margin: 0 50px 8px 0;
+
+    // Focused only programmatically on open (tabindex="-1"), not a control.
+    &:focus {
+      outline: none;
+    }
   }
 
   &__eval-dialog__summary {
@@ -1117,9 +1126,14 @@ body.ai-dialog-open {
     margin-bottom: 24px;
   }
 
+  // The wrap clips the inner scroller, so its scrollbars follow the rounded corners.
   &__eval-dialog__table-wrap {
     border: 1px solid $color-grey-2;
     border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__eval-dialog__table-scroll {
     max-height: min(62vh, 680px);
     overflow: auto;
   }
@@ -1243,14 +1257,24 @@ body.ai-dialog-open {
 
   &__benchmark-report {
     margin: 28px auto 0;
+    padding: 0 20px;
     text-align: center;
+
+    // Let the long label wrap on narrow screens instead of overflowing the pill.
+    .common-button {
+      height: auto;
+      line-height: 21px;
+      max-width: 100%;
+      min-height: 39px;
+      padding: 8px 0;
+    }
   }
 
   &__methodology {
     background: rgba($color-white, 0.7);
     border-radius: 8px;
     margin: 24px auto 0;
-    max-width: 920px;
+    max-width: 1040px;
     padding: 24px 28px;
 
     h3 {
@@ -1266,7 +1290,7 @@ body.ai-dialog-open {
       font-size: 17px;
       line-height: 26px;
 
-      + p {
+      +p {
         margin-top: 14px;
       }
 
@@ -1295,111 +1319,165 @@ body.ai-dialog-open {
   @media(max-width: 1023px) {
 
     &__task-help__popover {
-      width: 240px;
+      width: 320px;
     }
 
+    &__task-filters__chips [data-task-type] {
+      flex-direction: column;
+      gap: 0;
+      line-height: 18px;
+
+      small {
+        line-height: 14px;
+      }
+    }
+
+    // The plot spans the chart's side padding to get more room on smaller screens.
+    &__benchmark-chart__frame {
+      margin-left: -20px;
+      margin-right: -20px;
+
+      @media(min-width: 768px) {
+        margin-left: -30px;
+        margin-right: -30px;
+      }
+    }
+
+    // Each row reflows into a full-width model name above four metric columns.
     &__models__table {
-      thead th:first-child,
-      tbody th {
-        background: $color-white;
-        box-shadow: 2px 0 5px rgba($color-black, 0.08);
-        left: 0;
+      display: block;
+      min-width: 0;
+
+      thead {
+        background: mix($color-grey-1, $color-white, 75%);
+        display: block;
         position: sticky;
-      }
-
-      thead th:first-child {
-        background: $color-grey-1;
-        z-index: 3;
-      }
-
-      tbody th {
-        z-index: 2;
-      }
-    }
-
-    &__eval-dialog__table {
-      thead th:first-child,
-      tbody th {
-        background: $color-white;
-        box-shadow: 2px 0 5px rgba($color-black, 0.08);
-        left: 0;
-        position: sticky;
+        top: 0;
         z-index: 2;
       }
 
-      thead th:first-child {
-        background: $color-grey-1;
-        z-index: 3;
+      tbody {
+        display: block;
       }
-    }
 
-  }
+      tr {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
 
-  @media(max-width: 600px) {
+      th,
+      td {
+        border-bottom: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
 
-    &__task-filters {
-      column-gap: 14px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      max-width: calc(100% - 28px);
-    }
+      thead th {
+        background: transparent;
+        border-radius: 0;
+        font-size: 11px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        position: static;
+        white-space: normal;
+      }
 
-    &__task-filters__chips {
-      grid-column: 1 / -1;
-      grid-row: 2;
+      // The model sort stays available to keyboard and screen reader users.
+      thead th:first-child {
+        clip-path: inset(50%);
+        grid-column: 1 / -1;
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
 
-      [data-task-type] {
-        font-size: 12px;
-        gap: 7px;
-        padding: 10px 14px;
-
-        small {
-          font-size: 10px;
+        &:focus-within {
+          clip-path: none;
+          height: auto;
+          overflow: visible;
+          padding: 6px 12px 0 20px;
+          position: static;
+          width: auto;
         }
       }
-    }
 
-    &__task-help__popover {
-      max-width: 60vw;
-      width: 220px;
-    }
+      thead button,
+      thead th:first-child button {
+        padding: 0;
+      }
 
-    &__models__table {
-      min-width: 760px;
+      .ai__models__table-mean {
+        display: none;
+      }
+
+      [aria-sort] button:after {
+        display: none;
+      }
+
+      thead button>span {
+        position: relative;
+      }
+
+      [aria-sort] button>span:after {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        content: "";
+        left: calc(100% + 4px);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      [aria-sort="ascending"] button>span:after {
+        border-bottom: 5px solid $color-red;
+      }
+
+      [aria-sort="descending"] button>span:after {
+        border-top: 5px solid $color-red;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid rgba($color-black, 0.08);
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
 
       tbody th {
-        min-width: 160px;
+        grid-column: 1 / -1;
+        min-width: 0;
+        padding: 12px 12px 2px 20px;
+      }
+
+      tbody th button {
+        min-height: 0;
+        padding: 0;
+      }
+
+      tbody td {
+        padding-bottom: 12px;
+        padding-top: 4px;
       }
     }
 
-    &__eval-dialog {
-      max-height: calc(100vh - 16px);
-      width: calc(100% - 16px);
-    }
-
-    &__eval-dialog__body {
-      max-height: calc(100vh - 16px);
-      padding: 20px;
-    }
-
-    &__eval-dialog__close {
-      right: 14px;
-      top: 14px;
-    }
-
-    &__eval-dialog__model,
-    &__eval-dialog h2 {
-      margin-right: 48px;
-    }
-
-    &__eval-dialog__summary {
-      font-size: 14px;
-      line-height: 22px;
-      margin-bottom: 18px;
+    &__score--button,
+    &__score--unavailable {
+      max-width: 88px;
+      min-width: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+      width: 100%;
     }
 
     &__eval-dialog__table-wrap {
       border: 0;
+      overflow: visible;
+    }
+
+    &__eval-dialog__table-scroll {
       max-height: none;
       overflow: visible;
     }
@@ -1461,11 +1539,57 @@ body.ai-dialog-open {
 
   }
 
-  @media(min-width: 768px) {
+  @media(max-width: 767px) {
 
-    &__scroll-hint--chart {
-      display: none;
+    &__task-filters {
+      column-gap: 14px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      max-width: calc(100% - 28px);
     }
+
+    &__task-filters__chips {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+
+  }
+
+  @media(max-width: 600px) {
+
+    &__task-help__popover {
+      max-width: 70vw;
+    }
+
+    &__eval-dialog {
+      max-height: calc(100vh - 16px);
+      width: calc(100% - 16px);
+    }
+
+    &__eval-dialog__body {
+      max-height: calc(100vh - 16px);
+      padding: 20px;
+    }
+
+    &__eval-dialog__close {
+      right: 14px;
+      top: 14px;
+    }
+
+    &__eval-dialog__model,
+    &__eval-dialog h2 {
+      margin-right: 48px;
+    }
+
+    &__eval-dialog__summary {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 18px;
+    }
+
+  }
+
+  @media(min-width: 768px) {
 
     &__areas {
       gap: 30px;
@@ -1481,22 +1605,49 @@ body.ai-dialog-open {
       padding: 32px 30px 26px;
     }
 
-    &__benchmark-chart__frame {
-      overflow: visible;
+  }
+
+  // Until these blocks reach their max width they span the viewport edge to edge,
+  // so they drop the rounded frame.
+  @media(max-width: 1039px) {
+
+    &__models__table-wrap--unified,
+    &__benchmark-chart {
+      border-bottom: 1px solid rgba($color-black, 0.12);
+      border-radius: 0;
+      border-top: 1px solid rgba($color-black, 0.12);
+      box-shadow: none;
     }
 
-    &__benchmark-chart__plot {
-      min-width: 0;
+    &__methodology {
+      border-radius: 0;
     }
 
+    &__models__table {
 
+      thead th:first-child,
+      thead th:last-child,
+      tbody tr:last-child th,
+      tbody tr:last-child td:last-child {
+        border-radius: 0;
+      }
+    }
+  }
+
+  @media(min-width: 1040px) {
+
+    &__models__table.is-stuck-bottom thead th {
+      &:first-child {
+        border-bottom-left-radius: 8px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 8px;
+      }
+    }
   }
 
   @media(min-width: 1024px) {
-
-    &__scroll-hint {
-      display: none;
-    }
 
     &__body {
       padding: 50px 0 100px;
@@ -1512,10 +1663,6 @@ body.ai-dialog-open {
     }
 
 
-    &__models__table-wrap {
-      overflow: visible;
-    }
-
     &__models__table {
       min-width: 0;
       table-layout: fixed;
@@ -1528,21 +1675,18 @@ body.ai-dialog-open {
       }
 
       thead th {
-        font-size: 11px;
         white-space: normal;
 
         &:first-child {
+          padding-left: 16px;
           width: 20%;
         }
       }
 
       tbody th {
         min-width: 0;
+        padding-left: 16px;
       }
-    }
-
-    &__models__table-scroll {
-      overflow: visible;
     }
 
     &__score--button,

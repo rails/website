@@ -79,20 +79,19 @@ redirect_from:
               </div>
             </div>
           </div>
-          <p class="ai__scroll-hint">Swipe to compare all model metrics <span aria-hidden="true">→</span></p>
           <div class="ai__models__table-wrap ai__models__table-wrap--unified ai__leaderboard-table">
-            <div class="ai__models__table-scroll" tabindex="0" role="region" aria-label="Model benchmark results">
-              <table class="ai__models__table" data-sortable-table>
-                <thead>
-                  <tr>
-                    <th scope="col"><button type="button" data-sort-key="model">Model</button></th>
-                    <th scope="col" aria-sort="descending"><button type="button" data-sort-key="accuracy">Accuracy<small>Mean task score</small></button></th>
-                    <th scope="col"><button type="button" data-sort-key="speed">Speed<small>Mean task time</small></button></th>
-                    <th scope="col"><button type="button" data-sort-key="tokens">Tokens<small>Mean per run</small></button></th>
-                    <th scope="col"><button type="button" data-sort-key="cost">Cost<small>Mean per run</small></button></th>
+            <div class="ai__models__table-scroll" role="region" aria-label="Model benchmark results">
+              <table class="ai__models__table" data-sortable-table role="table">
+                <thead role="rowgroup">
+                  <tr role="row">
+                    <th scope="col" role="columnheader"><button type="button" data-sort-key="model"><span>Model</span></button></th>
+                    <th scope="col" role="columnheader" aria-sort="descending"><button type="button" data-sort-key="accuracy"><span>Accuracy</span><small><span class="ai__models__table-mean">Mean </span>task score</small></button></th>
+                    <th scope="col" role="columnheader"><button type="button" data-sort-key="speed"><span>Speed</span><small><span class="ai__models__table-mean">Mean </span>task time</small></button></th>
+                    <th scope="col" role="columnheader"><button type="button" data-sort-key="tokens"><span>Tokens</span><small><span class="ai__models__table-mean">Mean </span>per run</small></button></th>
+                    <th scope="col" role="columnheader"><button type="button" data-sort-key="cost"><span>Cost</span><small><span class="ai__models__table-mean">Mean </span>per run</small></button></th>
                   </tr>
                 </thead>
-                <tbody data-benchmark-results></tbody>
+                <tbody role="rowgroup" data-benchmark-results></tbody>
               </table>
             </div>
             <noscript><p class="ai__benchmark-empty">Enable JavaScript to filter and explore the benchmark results.</p></noscript>
@@ -109,7 +108,6 @@ redirect_from:
               </div>
             </div>
 
-            <p class="ai__scroll-hint ai__scroll-hint--chart">Swipe to explore every model <span aria-hidden="true">→</span></p>
             <div class="ai__benchmark-chart__frame">
               <div class="ai__benchmark-chart__plot" data-benchmark-plot aria-label="Model accuracy compared with mean cost per run">
                 <div class="ai__benchmark-chart__y-ticks" data-benchmark-y-ticks aria-hidden="true"></div>
@@ -176,14 +174,16 @@ redirect_from:
             <button class="ai__eval-dialog__close" type="submit" aria-label="Close evaluation details">×</button>
           </form>
           <p class="ai__eval-dialog__model" data-eval-dialog-model></p>
-          <h2 id="ai-eval-dialog-title" data-eval-dialog-title></h2>
+          <h2 id="ai-eval-dialog-title" data-eval-dialog-title tabindex="-1" autofocus></h2>
           <p class="ai__eval-dialog__summary" data-eval-dialog-summary></p>
 
           <div class="ai__eval-dialog__table-wrap">
-            <table class="ai__eval-dialog__table">
-              <thead data-eval-dialog-head></thead>
-              <tbody data-eval-dialog-results></tbody>
-            </table>
+            <div class="ai__eval-dialog__table-scroll">
+              <table class="ai__eval-dialog__table" role="table">
+                <thead role="rowgroup" data-eval-dialog-head></thead>
+                <tbody role="rowgroup" data-eval-dialog-results></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </dialog>
