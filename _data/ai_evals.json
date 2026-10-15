@@ -34,6 +34,11 @@
       "id": "meta",
       "name": "Meta",
       "logo": "/assets/images/ai-vendors/meta.svg"
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "logo": "/assets/images/ai-vendors/google.svg"
     }
   ],
   "models": [
@@ -105,6 +110,18 @@
       "name": "Muse Spark 1.3",
       "vendor_id": "meta",
       "effort": "max"
+    },
+    {
+      "id": "muse-wonder-xhigh",
+      "name": "Muse Wonder",
+      "vendor_id": "meta",
+      "effort": "xhigh"
+    },
+    {
+      "id": "gemini-4-argon-high",
+      "name": "Gemini 4 Argon",
+      "vendor_id": "google",
+      "effort": "high"
     }
   ],
   "tasks": [
@@ -195,7 +212,21 @@
           "run_count": 3,
           "duration_seconds": 564,
           "tokens": 1107030,
-          "cost_usd": 0.88
+          "cost_usd": 0.32
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 539,
+          "tokens": 1441451,
+          "cost_usd": 0.99
+        },
+        "gemini-4-argon-high": {
+          "score": 0.07,
+          "run_count": 3,
+          "duration_seconds": 1708,
+          "tokens": 6383362,
+          "cost_usd": 2.2
         }
       }
     },
@@ -284,7 +315,21 @@
           "run_count": 3,
           "duration_seconds": 800,
           "tokens": 2199364,
-          "cost_usd": 1.19
+          "cost_usd": 0.53
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 358,
+          "tokens": 583750,
+          "cost_usd": 0.41
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 832,
+          "tokens": 1520748,
+          "cost_usd": 0.74
         }
       }
     },
@@ -375,7 +420,21 @@
           "run_count": 3,
           "duration_seconds": 1079,
           "tokens": 2223187,
-          "cost_usd": 1.19
+          "cost_usd": 0.52
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 638,
+          "tokens": 1643197,
+          "cost_usd": 0.88
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 668,
+          "tokens": 1646057,
+          "cost_usd": 0.68
         }
       }
     },
@@ -466,7 +525,21 @@
           "run_count": 3,
           "duration_seconds": 851,
           "tokens": 1487754,
-          "cost_usd": 1.13
+          "cost_usd": 0.44
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 330,
+          "tokens": 502681,
+          "cost_usd": 0.59
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1159,
+          "tokens": 3226645,
+          "cost_usd": 2.15
         }
       }
     },
@@ -556,7 +629,21 @@
           "run_count": 3,
           "duration_seconds": 539,
           "tokens": 1067765,
-          "cost_usd": 0.74
+          "cost_usd": 0.29
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.03,
+          "run_count": 3,
+          "duration_seconds": 274,
+          "tokens": 633858,
+          "cost_usd": 0.51
+        },
+        "gemini-4-argon-high": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 1058,
+          "tokens": 2196037,
+          "cost_usd": 1.22
         }
       }
     },
@@ -646,7 +733,21 @@
           "run_count": 3,
           "duration_seconds": 621,
           "tokens": 1518782,
-          "cost_usd": 0.98
+          "cost_usd": 0.42
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.37,
+          "run_count": 3,
+          "duration_seconds": 462,
+          "tokens": 1079221,
+          "cost_usd": 0.89
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1036,
+          "tokens": 1928985,
+          "cost_usd": 1.23
         }
       }
     },
@@ -736,7 +837,21 @@
           "run_count": 3,
           "duration_seconds": 827,
           "tokens": 2535287,
-          "cost_usd": 1.42
+          "cost_usd": 0.59
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 328,
+          "tokens": 901928,
+          "cost_usd": 0.63
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1123,
+          "tokens": 3706698,
+          "cost_usd": 1.45
         }
       }
     },
@@ -828,7 +943,21 @@
           "run_count": 3,
           "duration_seconds": 1496,
           "tokens": 6805519,
-          "cost_usd": 3.09
+          "cost_usd": 1.49
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 980,
+          "tokens": 3568992,
+          "cost_usd": 1.92
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1809,
+          "tokens": 6628417,
+          "cost_usd": 2.09
         }
       }
     },
@@ -918,7 +1047,21 @@
           "run_count": 3,
           "duration_seconds": 1368,
           "tokens": 2456590,
-          "cost_usd": 1.47
+          "cost_usd": 0.57
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 494,
+          "tokens": 943483,
+          "cost_usd": 0.6
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 542,
+          "tokens": 874385,
+          "cost_usd": 0.41
         }
       }
     },
@@ -1007,7 +1150,21 @@
           "run_count": 3,
           "duration_seconds": 911,
           "tokens": 2403621,
-          "cost_usd": 1.43
+          "cost_usd": 0.56
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 366,
+          "tokens": 791062,
+          "cost_usd": 0.46
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 585,
+          "tokens": 1870482,
+          "cost_usd": 0.77
         }
       }
     },
@@ -1097,7 +1254,21 @@
           "run_count": 3,
           "duration_seconds": 918,
           "tokens": 2439431,
-          "cost_usd": 1.2
+          "cost_usd": 0.57
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 445,
+          "tokens": 911148,
+          "cost_usd": 0.71
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 919,
+          "tokens": 2527963,
+          "cost_usd": 1.43
         }
       }
     },
@@ -1187,7 +1358,21 @@
           "run_count": 3,
           "duration_seconds": 830,
           "tokens": 2877631,
-          "cost_usd": 1.3
+          "cost_usd": 0.64
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 505,
+          "tokens": 1564659,
+          "cost_usd": 0.85
+        },
+        "gemini-4-argon-high": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 1124,
+          "tokens": 4358693,
+          "cost_usd": 1.42
         }
       }
     },
@@ -1278,7 +1463,21 @@
           "run_count": 3,
           "duration_seconds": 669,
           "tokens": 1572727,
-          "cost_usd": 0.81
+          "cost_usd": 0.41
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 236,
+          "tokens": 394370,
+          "cost_usd": 0.34
+        },
+        "gemini-4-argon-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 771,
+          "tokens": 1431875,
+          "cost_usd": 0.74
         }
       }
     },
@@ -1367,7 +1566,21 @@
           "run_count": 3,
           "duration_seconds": 939,
           "tokens": 2219515,
-          "cost_usd": 1.28
+          "cost_usd": 0.56
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 495,
+          "tokens": 1468566,
+          "cost_usd": 1.0
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1356,
+          "tokens": 3721214,
+          "cost_usd": 1.75
         }
       }
     },
@@ -1457,7 +1670,21 @@
           "run_count": 3,
           "duration_seconds": 954,
           "tokens": 2757062,
-          "cost_usd": 1.23
+          "cost_usd": 0.64
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 488,
+          "tokens": 2245021,
+          "cost_usd": 1.27
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1655,
+          "tokens": 5983661,
+          "cost_usd": 3.73
         }
       }
     },
@@ -1547,7 +1774,21 @@
           "run_count": 3,
           "duration_seconds": 1356,
           "tokens": 3405323,
-          "cost_usd": 1.74
+          "cost_usd": 0.79
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 623,
+          "tokens": 2844615,
+          "cost_usd": 1.59
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1366,
+          "tokens": 4908420,
+          "cost_usd": 1.85
         }
       }
     },
@@ -1636,7 +1877,21 @@
           "run_count": 3,
           "duration_seconds": 1235,
           "tokens": 2118349,
-          "cost_usd": 1.13
+          "cost_usd": 0.53
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 549,
+          "tokens": 1105414,
+          "cost_usd": 0.79
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1623,
+          "tokens": 4640462,
+          "cost_usd": 2.04
         }
       }
     },
@@ -1725,7 +1980,21 @@
           "run_count": 3,
           "duration_seconds": 1014,
           "tokens": 6590657,
-          "cost_usd": 3.0
+          "cost_usd": 1.38
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 536,
+          "tokens": 2857410,
+          "cost_usd": 1.5
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2396,
+          "tokens": 13321812,
+          "cost_usd": 3.65
         }
       }
     },
@@ -1816,7 +2085,21 @@
           "run_count": 3,
           "duration_seconds": 945,
           "tokens": 3932781,
-          "cost_usd": 1.9
+          "cost_usd": 0.87
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 298,
+          "tokens": 1376454,
+          "cost_usd": 0.75
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 617,
+          "tokens": 3354937,
+          "cost_usd": 1.96
         }
       }
     },
@@ -1907,7 +2190,21 @@
           "run_count": 3,
           "duration_seconds": 2631,
           "tokens": 25048175,
-          "cost_usd": 8.65
+          "cost_usd": 4.92
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1460,
+          "tokens": 26209026,
+          "cost_usd": 9.59
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 3482,
+          "tokens": 33677241,
+          "cost_usd": 6.39
         }
       }
     },
@@ -1998,7 +2295,21 @@
           "run_count": 3,
           "duration_seconds": 2684,
           "tokens": 16454059,
-          "cost_usd": 4.99
+          "cost_usd": 3.39
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1584,
+          "tokens": 14254509,
+          "cost_usd": 6.1
+        },
+        "gemini-4-argon-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 3450,
+          "tokens": 28333787,
+          "cost_usd": 6.46
         }
       }
     },
@@ -2089,7 +2400,21 @@
           "run_count": 3,
           "duration_seconds": 1434,
           "tokens": 7298926,
-          "cost_usd": 2.68
+          "cost_usd": 1.52
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 523,
+          "tokens": 3451024,
+          "cost_usd": 1.63
+        },
+        "gemini-4-argon-high": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1582,
+          "tokens": 11357032,
+          "cost_usd": 3.26
         }
       }
     },
@@ -2180,7 +2505,21 @@
           "run_count": 3,
           "duration_seconds": 1761,
           "tokens": 13748699,
-          "cost_usd": 6.19
+          "cost_usd": 2.77
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 815,
+          "tokens": 7933069,
+          "cost_usd": 3.37
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2834,
+          "tokens": 34477520,
+          "cost_usd": 5.62
         }
       }
     },
@@ -2271,7 +2610,21 @@
           "run_count": 3,
           "duration_seconds": 1675,
           "tokens": 12216449,
-          "cost_usd": 4.81
+          "cost_usd": 2.48
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 782,
+          "tokens": 5654788,
+          "cost_usd": 2.55
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1818,
+          "tokens": 14827158,
+          "cost_usd": 3.37
         }
       }
     },
@@ -2361,7 +2714,21 @@
           "run_count": 3,
           "duration_seconds": 1939,
           "tokens": 11817504,
-          "cost_usd": 5.7
+          "cost_usd": 2.42
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1185,
+          "tokens": 9032916,
+          "cost_usd": 3.98
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 4149,
+          "tokens": 26765349,
+          "cost_usd": 14.82
         }
       }
     },
@@ -2452,7 +2819,21 @@
           "run_count": 3,
           "duration_seconds": 1546,
           "tokens": 10379674,
-          "cost_usd": 3.36
+          "cost_usd": 2.08
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 836,
+          "tokens": 9825318,
+          "cost_usd": 3.87
+        },
+        "gemini-4-argon-high": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 2368,
+          "tokens": 23707573,
+          "cost_usd": 4.82
         }
       }
     },
@@ -2542,7 +2923,21 @@
           "run_count": 3,
           "duration_seconds": 2349,
           "tokens": 13312110,
-          "cost_usd": 4.58
+          "cost_usd": 2.68
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 941,
+          "tokens": 7245979,
+          "cost_usd": 3.23
+        },
+        "gemini-4-argon-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 3899,
+          "tokens": 29086398,
+          "cost_usd": 6.5
         }
       }
     },
@@ -2633,7 +3028,21 @@
           "run_count": 3,
           "duration_seconds": 2788,
           "tokens": 22739748,
-          "cost_usd": 6.03
+          "cost_usd": 4.47
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1440,
+          "tokens": 15518084,
+          "cost_usd": 6.18
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 3214,
+          "tokens": 30064407,
+          "cost_usd": 5.91
         }
       }
     },
@@ -2726,7 +3135,21 @@
           "run_count": 3,
           "duration_seconds": 3911,
           "tokens": 36894445,
-          "cost_usd": 13.57
+          "cost_usd": 7.28
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2496,
+          "tokens": 44553080,
+          "cost_usd": 16.63
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3753,
+          "tokens": 37451894,
+          "cost_usd": 7.44
         }
       }
     },
@@ -2817,7 +3240,21 @@
           "run_count": 3,
           "duration_seconds": 2004,
           "tokens": 11244286,
-          "cost_usd": 3.66
+          "cost_usd": 2.33
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1093,
+          "tokens": 9122987,
+          "cost_usd": 4.22
+        },
+        "gemini-4-argon-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 3463,
+          "tokens": 24949446,
+          "cost_usd": 5.49
         }
       }
     },
@@ -2908,7 +3345,21 @@
           "run_count": 3,
           "duration_seconds": 2500,
           "tokens": 9846386,
-          "cost_usd": 6.16
+          "cost_usd": 2.15
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1144,
+          "tokens": 5566432,
+          "cost_usd": 2.78
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5593,
+          "tokens": 40201348,
+          "cost_usd": 28.4
         }
       }
     },
@@ -2998,7 +3449,21 @@
           "run_count": 3,
           "duration_seconds": 5257,
           "tokens": 63920629,
-          "cost_usd": 25.2
+          "cost_usd": 12.32
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2297,
+          "tokens": 78418684,
+          "cost_usd": 27.42
+        },
+        "gemini-4-argon-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 4513,
+          "tokens": 54335635,
+          "cost_usd": 11.52
         }
       }
     },
@@ -3088,7 +3553,21 @@
           "run_count": 3,
           "duration_seconds": 1184,
           "tokens": 5803955,
-          "cost_usd": 1.96
+          "cost_usd": 1.21
+        },
+        "muse-wonder-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 650,
+          "tokens": 4717411,
+          "cost_usd": 2.09
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2062,
+          "tokens": 18270984,
+          "cost_usd": 4.02
         }
       }
     },
@@ -3179,7 +3658,21 @@
           "run_count": 3,
           "duration_seconds": 1753,
           "tokens": 9386050,
-          "cost_usd": 3.35
+          "cost_usd": 1.96
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 981,
+          "tokens": 9567039,
+          "cost_usd": 3.97
+        },
+        "gemini-4-argon-high": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 3276,
+          "tokens": 17786519,
+          "cost_usd": 5.39
         }
       }
     },
@@ -3270,7 +3763,21 @@
           "run_count": 3,
           "duration_seconds": 1659,
           "tokens": 9993617,
-          "cost_usd": 4.71
+          "cost_usd": 2.09
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 748,
+          "tokens": 5109749,
+          "cost_usd": 2.37
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2471,
+          "tokens": 21608016,
+          "cost_usd": 4.5
         }
       }
     },
@@ -3361,7 +3868,21 @@
           "run_count": 3,
           "duration_seconds": 2362,
           "tokens": 14142597,
-          "cost_usd": 4.91
+          "cost_usd": 2.9
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.47,
+          "run_count": 3,
+          "duration_seconds": 1130,
+          "tokens": 11331710,
+          "cost_usd": 4.84
+        },
+        "gemini-4-argon-high": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 3387,
+          "tokens": 24201741,
+          "cost_usd": 6.11
         }
       }
     },
@@ -3452,7 +3973,21 @@
           "run_count": 3,
           "duration_seconds": 2363,
           "tokens": 25116152,
-          "cost_usd": 10.01
+          "cost_usd": 5.01
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1553,
+          "tokens": 17778470,
+          "cost_usd": 7.31
+        },
+        "gemini-4-argon-high": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 2801,
+          "tokens": 17539524,
+          "cost_usd": 4.2
         }
       }
     },
@@ -3543,7 +4078,21 @@
           "run_count": 3,
           "duration_seconds": 2390,
           "tokens": 19830092,
-          "cost_usd": 9.59
+          "cost_usd": 3.92
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1163,
+          "tokens": 15636725,
+          "cost_usd": 6.04
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3066,
+          "tokens": 34627645,
+          "cost_usd": 6.2
         }
       }
     },
@@ -3634,7 +4183,21 @@
           "run_count": 3,
           "duration_seconds": 1828,
           "tokens": 10758099,
-          "cost_usd": 5.02
+          "cost_usd": 2.25
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 977,
+          "tokens": 8809851,
+          "cost_usd": 3.96
+        },
+        "gemini-4-argon-high": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 2515,
+          "tokens": 17914170,
+          "cost_usd": 4.09
         }
       }
     },
@@ -3725,7 +4288,21 @@
           "run_count": 3,
           "duration_seconds": 4399,
           "tokens": 28579458,
-          "cost_usd": 11.98
+          "cost_usd": 6.12
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3731,
+          "tokens": 24218213,
+          "cost_usd": 10.97
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 7169,
+          "tokens": 39656085,
+          "cost_usd": 15.46
         }
       }
     },
@@ -3814,7 +4391,21 @@
           "run_count": 3,
           "duration_seconds": 3799,
           "tokens": 52542462,
-          "cost_usd": 15.58
+          "cost_usd": 10.15
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.2,
+          "run_count": 3,
+          "duration_seconds": 4012,
+          "tokens": 34450587,
+          "cost_usd": 13.0
+        },
+        "gemini-4-argon-high": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 9064,
+          "tokens": 78462721,
+          "cost_usd": 14.74
         }
       }
     },
@@ -3908,7 +4499,21 @@
           "run_count": 2,
           "duration_seconds": 2796,
           "tokens": 20429148,
-          "cost_usd": 10.77
+          "cost_usd": 4.58
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.31,
+          "run_count": 2,
+          "duration_seconds": 4058,
+          "tokens": 23081467,
+          "cost_usd": 13.69
+        },
+        "gemini-4-argon-high": {
+          "score": 0.25,
+          "run_count": 2,
+          "duration_seconds": 7461,
+          "tokens": 16748431,
+          "cost_usd": 9.7
         }
       }
     },
@@ -3999,7 +4604,21 @@
           "run_count": 3,
           "duration_seconds": 10184,
           "tokens": 64061293,
-          "cost_usd": 32.78
+          "cost_usd": 13.34
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2582,
+          "tokens": 11465136,
+          "cost_usd": 6.18
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5237,
+          "tokens": 16380019,
+          "cost_usd": 9.26
         }
       }
     },
@@ -4089,7 +4708,21 @@
           "run_count": 3,
           "duration_seconds": 5818,
           "tokens": 39677398,
-          "cost_usd": 12.88
+          "cost_usd": 7.82
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.57,
+          "run_count": 3,
+          "duration_seconds": 7213,
+          "tokens": 38922012,
+          "cost_usd": 14.93
+        },
+        "gemini-4-argon-high": {
+          "score": 0.98,
+          "run_count": 3,
+          "duration_seconds": 11824,
+          "tokens": 90384574,
+          "cost_usd": 16.39
         }
       }
     },
@@ -4178,7 +4811,21 @@
           "run_count": 2,
           "duration_seconds": 4064,
           "tokens": 41436056,
-          "cost_usd": 13.64
+          "cost_usd": 8.09
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 10143,
+          "tokens": 116603552,
+          "cost_usd": 42.0
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 11317,
+          "tokens": 85847474,
+          "cost_usd": 16.19
         }
       }
     },
@@ -4269,7 +4916,21 @@
           "run_count": 2,
           "duration_seconds": 2803,
           "tokens": 59257085,
-          "cost_usd": 15.27
+          "cost_usd": 11.34
+        },
+        "muse-wonder-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 6555,
+          "tokens": 128105258,
+          "cost_usd": 42.46
+        },
+        "gemini-4-argon-high": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 8339,
+          "tokens": 134718185,
+          "cost_usd": 23.99
         }
       }
     }
