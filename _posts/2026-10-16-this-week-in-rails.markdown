@@ -8,7 +8,7 @@ published: true
 date: 2026-10-16
 ---
 
-Hi, it's [Vipul](https://github.com/vipulnsward). Let's explore this week's changes in the Rails codebase.
+Hi, it's [Vipul](https://www.saeloun.com/team/vipul/). Let's explore this week's changes in the Rails codebase.
 
 [Agents on Rails: Can a model build on its own work?](https://rubyonrails.org/2026/10/13/agents-on-rails-stage-3)  
 Stage 3 adds multi-step tasks where each ticket starts a fresh session, while files and notes carry forward. The benchmark now combines all three stages into one leaderboard, with tasks spanning legacy applications and new projects.
