@@ -1233,25 +1233,10 @@ body.ai-dialog-open {
         white-space: normal;
       }
 
-      // The model sort stays available to keyboard and screen reader users.
+      // Like the model name in each row, the model header spans the metric headers.
       thead th:first-child {
-        clip-path: inset(50%);
         grid-column: 1 / -1;
-        height: 1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-
-        &:focus-within {
-          clip-path: none;
-          height: auto;
-          overflow: visible;
-          padding: 6px 12px 0 20px;
-          position: static;
-          width: auto;
-        }
+        padding: 6px 12px 0 20px;
       }
 
       thead button,

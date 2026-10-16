@@ -127,10 +127,9 @@ export function createTable(root, vendors, percentiles) {
   }
 
   // The header is CSS sticky; measure how far it has moved down the table to style it.
-  // The first visible header cell is used, as the model header is hidden on smaller screens.
   function updateStuck() {
     const { top, height } = table.getBoundingClientRect();
-    const header = headers[1].getBoundingClientRect();
+    const header = headers[0].getBoundingClientRect();
     const offset = header.top - top;
     table.classList.toggle('is-stuck', offset > 1);
     table.classList.toggle('is-stuck-bottom', offset > 1 && offset >= height - header.height - 1);
