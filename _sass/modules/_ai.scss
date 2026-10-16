@@ -1553,6 +1553,20 @@ body.ai-dialog-open {
       grid-row: 2;
     }
 
+    // The toggle sits at the right edge here, so the popover opens leftward from it.
+    &__task-help__popover {
+      left: auto;
+      right: 0;
+      transform: none;
+
+      // shortcut: points at the icon of the 112px-wide toggle, re-measure if its label or font changes.
+      &::before {
+        left: auto;
+        right: 101.5px;
+        transform: translateX(50%) rotate(45deg);
+      }
+    }
+
   }
 
   @media(max-width: 600px) {
