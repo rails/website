@@ -84,7 +84,8 @@ export function createTable(root, vendors, percentiles) {
       detailsButton(cell, model, text, className, `${column.key} ${text} details`);
     }
     row.addEventListener('click', (event) => {
-      if (!event.target.closest('button')) button.click();
+      // A drag to select text also ends in a click.
+      if (!event.target.closest('button') && !window.getSelection().toString()) button.click();
     });
     return row;
   }
