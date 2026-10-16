@@ -454,6 +454,11 @@ body.ai-dialog-open {
     left: -11px;
     position: absolute;
     transform: translate(-100%, -50%);
+
+    // Sit the lowest tick above the axis so it clears the first cost, time or token tick.
+    &:last-child {
+      transform: translate(-100%, -100%);
+    }
   }
 
   &__benchmark-chart__x-label,
@@ -538,12 +543,23 @@ body.ai-dialog-open {
       color: $color-black;
       font-size: 11px;
       font-weight: 700;
-      left: 50%;
       line-height: 15px;
       padding: 2px 5px;
       position: absolute;
-      transform: translateX(-50%);
       white-space: nowrap;
+
+      // chart-layout.js positions the label and sets the line for labels further out.
+      &::before {
+        background: rgba($color-black, 0.3);
+        content: "";
+        height: 1px;
+        left: var(--leader-x);
+        position: absolute;
+        top: var(--leader-y);
+        transform: rotate(var(--leader-angle));
+        transform-origin: left center;
+        width: var(--leader-length, 0);
+      }
 
       small {
         color: $color-grey-5;
@@ -551,171 +567,6 @@ body.ai-dialog-open {
         font-weight: 400;
         margin-left: 4px;
       }
-    }
-  }
-
-  &__benchmark-point--label-above span {
-    bottom: calc(100% + 7px);
-  }
-
-  &__benchmark-point--label-below span {
-    top: calc(100% + 7px);
-  }
-
-  &__benchmark-point--label-left span,
-  &__benchmark-point--label-right span {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  &__benchmark-point--label-left span {
-    left: auto;
-    right: calc(100% + 7px);
-  }
-
-  &__benchmark-point--label-right span {
-    left: calc(100% + 7px);
-  }
-
-  &__benchmark-point--label-above-left span,
-  &__benchmark-point--label-above-right span,
-  &__benchmark-point--label-below-left span,
-  &__benchmark-point--label-below-right span {
-    transform: none;
-  }
-
-  &__benchmark-point--label-above-left span,
-  &__benchmark-point--label-above-right span {
-    bottom: calc(100% + 2px);
-  }
-
-  &__benchmark-point--label-below-left span,
-  &__benchmark-point--label-below-right span {
-    top: calc(100% + 2px);
-  }
-
-  &__benchmark-point--label-above-left span,
-  &__benchmark-point--label-below-left span {
-    left: auto;
-    right: 50%;
-  }
-
-  &__benchmark-point--label-far-above span,
-  &__benchmark-point--label-far-below span,
-  &__benchmark-point--label-far-left span,
-  &__benchmark-point--label-far-right span {
-    &::before {
-      background: rgba($color-black, 0.3);
-      content: "";
-      position: absolute;
-    }
-  }
-
-  &__benchmark-point--label-far-above span,
-  &__benchmark-point--label-far-below span {
-    &::before {
-      height: 18px;
-      left: 50%;
-      width: 1px;
-    }
-  }
-
-  &__benchmark-point--label-far-above span {
-    bottom: calc(100% + 26px);
-
-    &::before {
-      top: 100%;
-    }
-  }
-
-  &__benchmark-point--label-far-below span {
-    top: calc(100% + 26px);
-
-    &::before {
-      bottom: 100%;
-    }
-  }
-
-  &__benchmark-point--label-far-left span,
-  &__benchmark-point--label-far-right span {
-    top: 50%;
-    transform: translateY(-50%);
-
-    &::before {
-      height: 1px;
-      top: 50%;
-      width: 18px;
-    }
-  }
-
-  &__benchmark-point--label-far-left span {
-    left: auto;
-    right: calc(100% + 26px);
-
-    &::before {
-      left: 100%;
-    }
-  }
-
-  &__benchmark-point--label-far-right span {
-    left: calc(100% + 26px);
-
-    &::before {
-      right: 100%;
-    }
-  }
-
-  &__benchmark-point--label-far-above-left span,
-  &__benchmark-point--label-far-above-right span,
-  &__benchmark-point--label-far-below-left span,
-  &__benchmark-point--label-far-below-right span {
-    transform: none;
-
-    &::before {
-      height: 1px;
-      width: 22px;
-    }
-  }
-
-  &__benchmark-point--label-far-above-left span,
-  &__benchmark-point--label-far-above-right span {
-    bottom: calc(100% + 14px);
-
-    &::before {
-      top: calc(100% + 6px);
-      transform: rotate(45deg);
-      transform-origin: left center;
-    }
-  }
-
-  &__benchmark-point--label-far-below-left span,
-  &__benchmark-point--label-far-below-right span {
-    top: calc(100% + 14px);
-
-    &::before {
-      bottom: calc(100% + 6px);
-      transform: rotate(-45deg);
-      transform-origin: left center;
-    }
-  }
-
-  &__benchmark-point--label-far-above-left span,
-  &__benchmark-point--label-far-below-left span {
-    left: auto;
-    right: calc(50% + 16px);
-
-    &::before {
-      left: 100%;
-      transform-origin: right center;
-    }
-  }
-
-  &__benchmark-point--label-far-above-right span,
-  &__benchmark-point--label-far-below-right span {
-    left: calc(50% + 16px);
-
-    &::before {
-      right: 100%;
     }
   }
 
@@ -1540,6 +1391,18 @@ body.ai-dialog-open {
   }
 
   @media(max-width: 767px) {
+
+    // Smaller labels leave more room around the markers on phones.
+    &__benchmark-point span {
+      font-size: 9px;
+      line-height: 12px;
+      padding: 1px 4px;
+
+      small {
+        font-size: 8px;
+        margin-left: 3px;
+      }
+    }
 
     &__task-filters {
       column-gap: 14px;
