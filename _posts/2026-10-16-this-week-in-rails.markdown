@@ -51,7 +51,7 @@ Deserialized jobs now get their own copy of `exception_executions`. Retrying a j
 Empty tuple conditions and empty composite-key association conditions now return no records without issuing a query, instead of generating `WHERE ()`. Polymorphic association queries also accept relations targeting composite-key models, and querying a composite-key association with a bare ID raises an explanatory `ArgumentError`.
 
 [Keep connected_to state isolated between streaming and request threads](https://github.com/rails/rails/pull/58881)  
-This October 9 fix wasn't covered in last week's roundup. `ActionController::Live` shared the request's `connected_to` stack with its streaming thread, so leaving a block in one thread could change the shard and role seen by the other. Rails now replaces the stack with a modified copy when pushing or popping, preserving each thread's connection context.
+`ActionController::Live` shared the request's `connected_to` stack with its streaming thread, so leaving a block in one thread could change the shard and role seen by the other. Rails now replaces the stack with a modified copy when pushing or popping, preserving each thread's connection context.
 
 [Detect Aube as a JavaScript package manager](https://github.com/rails/rails/pull/59092)  
 Rails generators now recognize `aube-lock.yaml` when detecting an application's JavaScript package manager.
