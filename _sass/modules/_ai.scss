@@ -323,7 +323,7 @@ body.ai-dialog-open {
       margin-bottom: 2px;
     }
 
-    dd+dt {
+    dd + dt {
       margin-top: 14px;
     }
 
@@ -1141,7 +1141,7 @@ body.ai-dialog-open {
       font-size: 17px;
       line-height: 26px;
 
-      +p {
+      + p {
         margin-top: 14px;
       }
 
@@ -1252,11 +1252,11 @@ body.ai-dialog-open {
         display: none;
       }
 
-      thead button>span {
+      thead button > span {
         position: relative;
       }
 
-      [aria-sort] button>span:after {
+      [aria-sort] button > span:after {
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         content: "";
@@ -1266,11 +1266,11 @@ body.ai-dialog-open {
         transform: translateY(-50%);
       }
 
-      [aria-sort="ascending"] button>span:after {
+      [aria-sort="ascending"] button > span:after {
         border-bottom: 5px solid $color-red;
       }
 
-      [aria-sort="descending"] button>span:after {
+      [aria-sort="descending"] button > span:after {
         border-top: 5px solid $color-red;
       }
 
