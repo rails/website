@@ -25,7 +25,7 @@ Action View now renders collection partials into one shared output buffer when n
 SQLite can roll back a transaction itself after errors such as a full disk. Rails used to issue another rollback, masking the original failure with "cannot rollback - no transaction is active" and skipping record cleanup. It now avoids the redundant rollback, preserves the original failure as the cause of `ActiveRecord::StatementInvalid`, restores record state, and runs `after_rollback` callbacks.
 
 [Include PostgreSQL extension schemas in schema dumps](https://github.com/rails/rails/pull/59017)  
-An extension such as `pg_trgm` can live in a schema outside `dump_schemas`. Rails now emits `create_schema` with `if_not_exists: true` for schemas referenced by dumped extensions, so loading the dump works whether the schema already exists or needs to be created.
+Following the [earlier extension-dumping fixes](https://rubyonrails.org/2026/9/25/this-week-in-rails), this covers relocatable extensions such as `pg_trgm` in schemas outside `dump_schemas`. Rails now emits `create_schema` with `if_not_exists: true` for schemas referenced by dumped extensions, so loading the dump works whether the schema already exists or needs to be created.
 
 ```ruby
 create_schema "extensions", if_not_exists: true
