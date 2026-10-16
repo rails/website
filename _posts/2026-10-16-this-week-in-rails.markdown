@@ -18,8 +18,14 @@ Here are some highlights from the changes merged to Rails `main` this week.
 [Speed up String#blank? for ASCII strings](https://github.com/rails/rails/pull/58745)  
 `String#blank?` now checks ASCII-only strings by scanning their bytes instead of running a regular expression. Strings containing non-ASCII characters keep the existing regexp path and its encoding-specific whitespace handling. A [follow-up](https://github.com/rails/rails/pull/59030) removes repeated `bytesize` calls from the scan.
 
+[Share read-only default attributes in Active Record](https://github.com/rails/rails/pull/59083)  
+Active Record now shares a read-only set of default attributes when it can, with a per-Ractor fallback for defaults that cannot be shared. In the PR author's ruby-bench Active Record run, average time excluding warm-up iterations fell from 199 ms to 170 ms; the same PR reports 134 ms for Rails 8.1.4.
+
 [Render collections with fewer intermediate objects](https://github.com/rails/rails/pull/59118)  
 Action View now renders collection partials into one shared output buffer when neither collection caching nor a per-item layout needs the items separately. This avoids allocating buffers and rendered-template wrappers just to concatenate them afterward. Collections using caching or per-item layouts keep their existing rendering path.
+
+[Only consult connection pools the execution context has used](https://github.com/rails/rails/pull/59018)  
+Active Record now tracks which pools an execution context has used. Checking for open transactions, releasing active connections, and clearing query caches only consult that subset. This reduces bookkeeping for applications with many configured pools; the PR notes that most applications won't see a difference.
 
 [Preserve the original error when SQLite rolls back a transaction](https://github.com/rails/rails/pull/59033)  
 SQLite can roll back a transaction itself after errors such as a full disk. Rails used to issue another rollback, masking the original failure with "cannot rollback - no transaction is active" and skipping record cleanup. It now avoids the redundant rollback, preserves the original failure as the cause of `ActiveRecord::StatementInvalid`, restores record state, and runs `after_rollback` callbacks.
@@ -43,6 +49,9 @@ Deserialized jobs now get their own copy of `exception_executions`. Retrying a j
 
 [Fix composite-key association queries](https://github.com/rails/rails/pull/59075)  
 Empty tuple conditions and empty composite-key association conditions now return no records without issuing a query, instead of generating `WHERE ()`. Polymorphic association queries also accept relations targeting composite-key models, and querying a composite-key association with a bare ID raises an explanatory `ArgumentError`.
+
+[Keep connected_to state isolated between streaming and request threads](https://github.com/rails/rails/pull/58881)  
+This October 9 fix wasn't covered in last week's roundup. `ActionController::Live` shared the request's `connected_to` stack with its streaming thread, so leaving a block in one thread could change the shard and role seen by the other. Rails now replaces the stack with a modified copy when pushing or popping, preserving each thread's connection context.
 
 [Detect Aube as a JavaScript package manager](https://github.com/rails/rails/pull/59092)  
 Rails generators now recognize `aube-lock.yaml` when detecting an application's JavaScript package manager.
