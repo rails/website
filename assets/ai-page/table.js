@@ -108,6 +108,7 @@ export function createTable(root, vendors, percentiles) {
       .querySelector(`[data-sort-key="${sortKey}"]`)
       .closest('th')
       .setAttribute('aria-sort', sortDirection === 'asc' ? 'ascending' : 'descending');
+    updateStuck();
   }
 
   for (const button of table.querySelectorAll('[data-sort-key]')) {
@@ -136,7 +137,6 @@ export function createTable(root, vendors, percentiles) {
   }
   window.addEventListener('scroll', updateStuck, { passive: true });
   window.addEventListener('resize', updateStuck);
-  updateStuck();
 
   return {
     render(results) {
