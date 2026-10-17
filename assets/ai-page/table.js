@@ -51,11 +51,14 @@ export function createTable(root, vendors, percentiles) {
 
   function modelRow(item, thresholds) {
     const { model } = item;
+    // Explicit roles keep table semantics when CSS changes the display on smaller screens.
     const row = document.createElement('tr');
+    row.setAttribute('role', 'row');
     row.dataset.model = model.name;
     row.dataset.modelId = model.id;
     const modelCell = document.createElement('th');
     modelCell.scope = 'row';
+    modelCell.setAttribute('role', 'rowheader');
     const button = detailsButton(
       modelCell,
       model,
@@ -74,11 +77,16 @@ export function createTable(root, vendors, percentiles) {
       const value = item[column.property];
       const text = column.format(value);
       const cell = appendText(row, 'td', '');
+      cell.setAttribute('role', 'cell');
       cell.dataset.sortColumn = column.key;
       cell.dataset.sortValue = value ?? '';
       const className = `ai__score ai__score--button ${scoreClass(thresholds, column.key, value)}`;
       detailsButton(cell, model, text, className, `${column.key} ${text} details`);
     }
+    row.addEventListener('click', (event) => {
+      // A drag to select text also ends in a click.
+      if (!event.target.closest('button') && !window.getSelection().toString()) button.click();
+    });
     return row;
   }
 
@@ -101,6 +109,7 @@ export function createTable(root, vendors, percentiles) {
       .querySelector(`[data-sort-key="${sortKey}"]`)
       .closest('th')
       .setAttribute('aria-sort', sortDirection === 'asc' ? 'ascending' : 'descending');
+    updateStuck();
   }
 
   for (const button of table.querySelectorAll('[data-sort-key]')) {
@@ -118,6 +127,18 @@ export function createTable(root, vendors, percentiles) {
       render();
     });
   }
+
+  // The header is CSS sticky; measure how far it has moved down the table to style it.
+  function updateStuck() {
+    const { top, height } = table.getBoundingClientRect();
+    const header = headers[0].getBoundingClientRect();
+    const offset = header.top - top;
+    table.classList.toggle('is-stuck', offset > 1);
+    table.classList.toggle('is-stuck-bottom', offset > 1 && offset >= height - header.height - 1);
+  }
+  window.addEventListener('scroll', updateStuck, { passive: true });
+  window.addEventListener('resize', updateStuck);
+
   return {
     render(results) {
       models = results;

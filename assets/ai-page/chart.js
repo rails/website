@@ -93,7 +93,7 @@ export function createChart(root, vendors) {
     if (Math.hypot(position.x - origin.x, position.y - origin.y) > 2) connector(origin, position);
     const point = document.createElement('button');
     point.type = 'button';
-    point.className = 'ai__benchmark-point ai__benchmark-point--label-above';
+    point.className = 'ai__benchmark-point';
     point.dataset.evalDetails = '';
     point.dataset.modelId = item.model.id;
     Object.assign(point.style, {

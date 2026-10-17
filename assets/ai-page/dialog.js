@@ -17,8 +17,14 @@ export function createDialog(dialog, vendors, taskTypes, percentiles) {
   const results = dialog.querySelector('[data-eval-dialog-results]');
   const labels = new Map(taskTypes.map((type) => [type.id, type.label]));
   let lastTrigger;
+  // Explicit roles keep table semantics when CSS changes the display on smaller screens.
   const head = document.createElement('tr');
-  for (const label of columns) appendText(head, 'th', label).scope = 'col';
+  head.setAttribute('role', 'row');
+  for (const label of columns) {
+    const cell = appendText(head, 'th', label);
+    cell.scope = 'col';
+    cell.setAttribute('role', 'columnheader');
+  }
   dialog.querySelector('[data-eval-dialog-head]').replaceChildren(head);
 
   function resultRow({ task, metrics }) {
@@ -30,9 +36,11 @@ export function createDialog(dialog, vendors, taskTypes, percentiles) {
       )
     };
     const row = document.createElement('tr');
+    row.setAttribute('role', 'row');
     row.dataset.taskId = task.id;
     const taskCell = document.createElement('th');
     taskCell.scope = 'row';
+    taskCell.setAttribute('role', 'rowheader');
     let parent = taskCell;
     if (task.url) {
       parent = appendText(taskCell, 'a', '');
@@ -54,6 +62,7 @@ export function createDialog(dialog, vendors, taskTypes, percentiles) {
     appendText(row, 'td', formatInteger(metrics.tokensPerRun));
     appendText(row, 'td', formatCost(metrics.costPerRun));
     [...row.querySelectorAll('td')].forEach((cell, index) => {
+      cell.setAttribute('role', 'cell');
       cell.dataset.label = columns[index + 1];
     });
     return row;
