@@ -77,7 +77,7 @@ A parameter such as `%70assword` is now matched by a `:password` filter in reque
 They no longer shares winter clocks with US Mountain time. Prefer `Northwest Territories` (or `America/Inuvik`) for users in that region.
 
 [Use Markdown as the default API docs markup](https://github.com/rails/rails/pull/59339)   
-The README files of [Railties](https://github.com/rails/rails/pull/59345), [Active Support](https://github.com/rails/rails/pull/59344), [Action View](https://github.com/rails/rails/pull/59343) and [Action Pack](https://github.com/rails/rails/pull/59342) have all been converted from RDoc to Markdown.
+Xavier Noria spent months converting RDoc to Markdown across the frameworks, including the README files of [Railties](https://github.com/rails/rails/pull/59345), [Active Support](https://github.com/rails/rails/pull/59344), [Action View](https://github.com/rails/rails/pull/59343) and [Action Pack](https://github.com/rails/rails/pull/59342).
 
 [Decode and encode PostgreSQL integer arrays in C](https://github.com/rails/rails/pull/59399)   
 Reading or writing an `integer[]` or `bigint[]` column no longer allocates one String per element.
