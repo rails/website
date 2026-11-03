@@ -20,8 +20,8 @@ rails_usage: |
   The vast majority of the backend applications Cedarcode works with are built on Rails. It’s their framework of choice and the one Cedarcode recommends to their partners for scaling steadily and building fast.<br><br>
   For Cedarcode-specific applications, including all the tooling around their webauthn-ruby ecosystem, they are running the latest Rails versions. Deploys are handled by Kamal, and some internal apps have been transitioned to Hotwire.
 pull_quote: "We firmly believe that Ruby on Rails is the best tool for building the web. It empowers us to create complex systems successfully while enjoying the process. More importantly, it provides everything needed for others—including solo developers—to test and turn their ideas into reality. This is what makes Ruby on Rails so powerful, and why we are committed to investing in it. As a company, we wanted to actively contribute to the framework’s evolution and longevity. Our goal is to help ensure that developers can continue to thrive with Rails for many years to come."
-quote_author: "Sebastian Suttner"
-quote_title: "Cedarcode Co-Founder"
+quote_author: "Braulio Martinez"
+quote_title: "Cedarcode Founder"
 member_status: "In 2023, Cedarcode became a **contributing member** of the Rails Foundation."
 github_contributions:
   - name: "webauthn-ruby"
