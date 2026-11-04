@@ -1,0 +1,89 @@
+---
+layout: post
+title: 'Rails Versions 8.0.5.2 and 8.1.4.1 have been released!'
+categories: releases
+author: Mike Dalessio
+published: true
+date: 2026-11-03 21:30:00 -05:00
+---
+
+Hello, Rails community!
+
+Rails Versions 8.0.5.2 and 8.1.4.1 have been released. These are **security updates** addressing 21 security issues falling into a few themes:
+
+* Possible arbitrary file read, file write and remote code execution in Active Storage image and video processing
+* Possible Strong Parameters bypass in `Parameters#each_key`
+* Possible IP spoofing in `remote_ip` through the `Forwarded` header (8.1 only)
+* Multiple possible XSS vulnerabilities in Action View helpers, and one in the Active Support MessagePack serializer (8.1 only)
+* Possible DoS vulnerabilities in Active Support `safe_constantize`, Action Controller Live streaming, and Active Storage proxy mode and filename handling
+* Unsigned `Content-Type` and unenforced file size in Active Storage direct uploads to Google Cloud Storage
+* Session handling issues: a destroyed session restored by `CacheStore`, a session cookie leaked by Active Storage proxy mode, and a missing `SameSite` attribute on session cookies
+* Possible cache poisoning through content negotiation
+* Possible signature replay in Action Mailbox Mailgun ingress
+
+We strongly recommend upgrading as soon as possible.
+
+Older versions of Rails are unsupported, and users are recommended to upgrade to at least the 8.0 series. Security support for the 8.0 series ends on November 7, 2026. See our [maintenance policy](https://rubyonrails.org/maintenance) for details.
+
+Here is a list of security issues that these releases address:
+
+* [GHSA-f3w6-w445-fwh9 Possible arbitrary file write and read in Active Storage image analysis](https://github.com/rails/rails/security/advisories/GHSA-f3w6-w445-fwh9) (Critical)
+* [GHSA-v924-7rp8-4mxh Possible arbitrary file read and remote code execution in Active Storage video previews, analysis and image processing](https://github.com/rails/rails/security/advisories/GHSA-v924-7rp8-4mxh) (High)
+* [GHSA-wm3x-v3qw-4jh3 Possible Strong Parameters bypass in `Parameters#each_key` in Action Pack](https://github.com/rails/rails/security/advisories/GHSA-wm3x-v3qw-4jh3) (High)
+* [GHSA-2gff-2mmg-m73p Possible IP spoofing in Action Dispatch `RemoteIp`](https://github.com/rails/rails/security/advisories/GHSA-2gff-2mmg-m73p) (8.1 only) (High)
+* [GHSA-8474-xrp6-wh69 Possible DoS vulnerability in Active Support `safe_constantize`](https://github.com/rails/rails/security/advisories/GHSA-8474-xrp6-wh69) (High)
+* [GHSA-2p2f-4rq4-gjwc Possible XSS vulnerability in Action View text helpers](https://github.com/rails/rails/security/advisories/GHSA-2p2f-4rq4-gjwc) (Medium)
+* [GHSA-v6rj-xm57-3p59 Possible XSS vulnerability in Action View highlight helper](https://github.com/rails/rails/security/advisories/GHSA-v6rj-xm57-3p59) (Medium)
+* [GHSA-rq8q-p985-fjq7 Possible XSS vulnerability in Action View `strip_tags`](https://github.com/rails/rails/security/advisories/GHSA-rq8q-p985-fjq7) (Medium)
+* [GHSA-68p9-83h6-5wpj Possible XSS vulnerability in Action View tag helpers](https://github.com/rails/rails/security/advisories/GHSA-68p9-83h6-5wpj) (Medium)
+* [GHSA-2w9f-fxwj-w2qf Possible XSS vulnerability in Active Support MessagePack serializer](https://github.com/rails/rails/security/advisories/GHSA-2w9f-fxwj-w2qf) (8.1 only) (Medium)
+* [GHSA-rwvh-fw6r-pwvp Possible DoS vulnerability in Action Controller Live streaming](https://github.com/rails/rails/security/advisories/GHSA-rwvh-fw6r-pwvp) (Medium)
+* [GHSA-4v2w-w6g6-f8f8 Possible DoS vulnerability in Active Storage proxy mode via storage errors during streaming](https://github.com/rails/rails/security/advisories/GHSA-4v2w-w6g6-f8f8) (Medium)
+* [GHSA-p2pm-g2h6-7j5j Possible DoS vulnerability in Active Storage filename handling](https://github.com/rails/rails/security/advisories/GHSA-p2pm-g2h6-7j5j) (Medium)
+* [GHSA-3w93-6hmw-whh4 Unsigned Content-Type in Active Storage GCS direct uploads with `cache_control`](https://github.com/rails/rails/security/advisories/GHSA-3w93-6hmw-whh4) (Medium)
+* [GHSA-hfr4-8rjc-97m2 Possible circumvention of file size limits in Active Storage direct uploads to Google Cloud Storage](https://github.com/rails/rails/security/advisories/GHSA-hfr4-8rjc-97m2) (Medium)
+* [GHSA-2586-8ghr-69fj Possible restoration of destroyed sessions in Action Dispatch `CacheStore`](https://github.com/rails/rails/security/advisories/GHSA-2586-8ghr-69fj) (Medium)
+* [GHSA-x6mj-8jx9-qhqv Possible sensitive session information leak in Active Storage proxy mode](https://github.com/rails/rails/security/advisories/GHSA-x6mj-8jx9-qhqv) (Medium)
+* [GHSA-r9jg-fmfx-2gv6 Possible cache poisoning in Action Pack content negotiation](https://github.com/rails/rails/security/advisories/GHSA-r9jg-fmfx-2gv6) (Medium)
+* [GHSA-3f4q-8x5m-76v8 Possible local file disclosure in Active Storage video previews and analysis](https://github.com/rails/rails/security/advisories/GHSA-3f4q-8x5m-76v8) (Low)
+* [GHSA-5957-c7qm-m469 Possible signature replay in Action Mailbox Mailgun ingress](https://github.com/rails/rails/security/advisories/GHSA-5957-c7qm-m469) (Low)
+* [GHSA-gmj8-hvj3-49mw Missing SameSite attribute on session cookies from Action Pack session stores](https://github.com/rails/rails/security/advisories/GHSA-gmj8-hvj3-49mw) (Low)
+
+Each GHSA links to patches that may be useful if you cannot immediately upgrade.
+
+## SHA-256
+
+If you'd like to verify that your gems are the same as the ones we've uploaded,
+please use these SHA-256 hashes.
+
+```
+6841f8f3e2e605b8ac95369cbcd5a323ebc4b399e65b60fba309ec6e16b22b76  pkg/actioncable-8.0.5.2.gem
+45fa1d741696c0939d3724b660286f247fd1b676e084b22e68cb22c38486b78c  pkg/actionmailbox-8.0.5.2.gem
+b3a86551c40a67ce00349573d83a60588a92a404d850bc3541b58cdfe831da9e  pkg/actionmailer-8.0.5.2.gem
+5b96a0a841192954151047b4f6e8d992d56f767922e53b9e2c94449a26aebd61  pkg/actionpack-8.0.5.2.gem
+de4f3d9faea828f56be86dd48ade24d5f87b0318f0282fcdab338b754d4ad7f1  pkg/actiontext-8.0.5.2.gem
+8bba8b4a165a555eda0d9bf1c035de0644a77b6700fc5f214a7c0f75ae241cab  pkg/actionview-8.0.5.2.gem
+7360cc455bd78d5f215ffaa062b229ac68bf8ba41c963d96a919ebc5f0e3618e  pkg/activejob-8.0.5.2.gem
+8aabf86d1dc1516f47329d0cc8d61dea2af9652606e1bbfa467558bef615f375  pkg/activemodel-8.0.5.2.gem
+f2abc9288493a2ca9617a2287c229daad425d2eeb74f44027a8cdb3b46055d14  pkg/activerecord-8.0.5.2.gem
+556c548b9b0ae5ddc3ec4e5278c065cb48d0fa5ca93c1f2a020e484b8e4c1d44  pkg/activestorage-8.0.5.2.gem
+673acec3133cc8108a03d5ae0e3a9d0f5c7f818d02db33bcfed527a6c57bcdd1  pkg/activesupport-8.0.5.2.gem
+84bf06f0b96ebf625f4d120caa9c660f8fd09b3146acc1542679713b2cdda90a  pkg/rails-8.0.5.2.gem
+4b43a2c134a1b9887dd9ef659c71f61e8376d18a8fc52a09471979666b919fa6  pkg/railties-8.0.5.2.gem
+```
+
+```
+007670f7297973e94809e9f32a56624a7aa60b6e9d6696cd078064ce86d1c7fc  pkg/actioncable-8.1.4.1.gem
+18b43dd842bf3a3e31b8e38b7917c21e48c128fc8b263c893481cc66ee1a8f78  pkg/actionmailbox-8.1.4.1.gem
+a7b71dedf744e48dd6751e97350634edce9a2f7beeceac332dcccb91729ad066  pkg/actionmailer-8.1.4.1.gem
+8c6f2e7cbd2653ef0539bde1ff20eb3e2e264e366affe56f0ba7f06d3670cb4b  pkg/actionpack-8.1.4.1.gem
+fb59611dc16e2b6bbfcec66793acfae6cdd64b1e35ef3f9175424f31e62c38da  pkg/actiontext-8.1.4.1.gem
+d25b4d9cf8d0c0195ffcfe8b2cf3fcbe6fea54fd7c17f1a9cb8182881463f12b  pkg/actionview-8.1.4.1.gem
+82c4c9311ea1016d5f7f134a0c5f9b6527cad5a6237f5f3f60aa17984ef36229  pkg/activejob-8.1.4.1.gem
+063caf105372fbc98b2d789e4be23de63ac5c043f7d9330f04e2caddb7012805  pkg/activemodel-8.1.4.1.gem
+bd65599ca0b5d210937f835d42c7aff69d271741c75aab022730be6cbce67e87  pkg/activerecord-8.1.4.1.gem
+0f4e2f114f3584723a80a2c089aacc6170e765a0b2c385c9782e26ed78f05c66  pkg/activestorage-8.1.4.1.gem
+16ac4f341ca65c85a1fcdb8ac73f68891aae9e3c4a6f9c3a27daed8b00017ed7  pkg/activesupport-8.1.4.1.gem
+365c3a0ad2713bd6e60628e5e826622d4ca8dee60b5a7e560e9b20844e9650bc  pkg/rails-8.1.4.1.gem
+ff2ef4b5a62cbc89811f88be11c776e2ed71b14dd012eae6a494d37994aa9782  pkg/railties-8.1.4.1.gem
+```
