@@ -67,8 +67,26 @@
       "effort": "xhigh"
     },
     {
+      "id": "gpt-6.2-astra-medium",
+      "name": "GPT-6.2 Astra",
+      "vendor_id": "openai",
+      "effort": "medium"
+    },
+    {
+      "id": "gpt-6.2-astra-xhigh",
+      "name": "GPT-6.2 Astra",
+      "vendor_id": "openai",
+      "effort": "xhigh"
+    },
+    {
       "id": "gpt-6.1-sol-xhigh",
       "name": "GPT-6.1 Sol",
+      "vendor_id": "openai",
+      "effort": "xhigh"
+    },
+    {
+      "id": "gpt-6.2-sol-xhigh",
+      "name": "GPT-6.2 Sol",
       "vendor_id": "openai",
       "effort": "xhigh"
     },
@@ -87,6 +105,13 @@
     {
       "id": "deepseek-v4.1-flash-max",
       "name": "DeepSeek 4.1 Flash",
+      "vendor_id": "deepseek",
+      "effort": "max",
+      "open_weights": true
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017-max",
+      "name": "DeepSeek 4.1 Flash 1017",
       "vendor_id": "deepseek",
       "effort": "max",
       "open_weights": true
@@ -165,12 +190,33 @@
           "tokens": 233786,
           "cost_usd": 1.19
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 233,
+          "tokens": 137131,
+          "cost_usd": 0.4
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 605,
+          "tokens": 462646,
+          "cost_usd": 1.34
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.1,
           "run_count": 3,
           "duration_seconds": 440,
           "tokens": 266393,
           "cost_usd": 0.25
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.07,
+          "run_count": 3,
+          "duration_seconds": 274,
+          "tokens": 403880,
+          "cost_usd": 0.22
         },
         "gpt-6-luna-max": {
           "score": 0.1,
@@ -192,6 +238,13 @@
           "duration_seconds": 796,
           "tokens": 3644343,
           "cost_usd": 0.25
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 588,
+          "tokens": 1087855,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 0.1,
@@ -268,12 +321,33 @@
           "tokens": 238962,
           "cost_usd": 1.09
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 128,
+          "tokens": 53222,
+          "cost_usd": 0.19
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 206,
+          "tokens": 179348,
+          "cost_usd": 0.48
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 320,
           "tokens": 221798,
           "cost_usd": 0.21
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 256,
+          "tokens": 308571,
+          "cost_usd": 0.18
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -295,6 +369,13 @@
           "duration_seconds": 484,
           "tokens": 2182817,
           "cost_usd": 0.12
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 727,
+          "tokens": 1272695,
+          "cost_usd": 0.06
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -373,12 +454,33 @@
           "tokens": 385511,
           "cost_usd": 1.54
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 129,
+          "tokens": 113579,
+          "cost_usd": 0.29
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 267,
+          "tokens": 365627,
+          "cost_usd": 0.82
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 428,
           "tokens": 368945,
           "cost_usd": 0.26
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 278,
+          "tokens": 469999,
+          "cost_usd": 0.25
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -400,6 +502,13 @@
           "duration_seconds": 817,
           "tokens": 4124306,
           "cost_usd": 0.24
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 642,
+          "tokens": 1928486,
+          "cost_usd": 0.04
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -478,12 +587,33 @@
           "tokens": 322455,
           "cost_usd": 1.52
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 200,
+          "tokens": 130802,
+          "cost_usd": 0.38
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 508,
+          "tokens": 710257,
+          "cost_usd": 1.47
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 418,
           "tokens": 235683,
           "cost_usd": 0.24
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 302,
+          "tokens": 430670,
+          "cost_usd": 0.26
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -505,6 +635,13 @@
           "duration_seconds": 1295,
           "tokens": 6636561,
           "cost_usd": 0.41
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 687,
+          "tokens": 1390545,
+          "cost_usd": 0.04
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -582,12 +719,33 @@
           "tokens": 148010,
           "cost_usd": 0.73
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.07,
+          "run_count": 3,
+          "duration_seconds": 114,
+          "tokens": 67235,
+          "cost_usd": 0.19
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 258,
+          "tokens": 312453,
+          "cost_usd": 0.75
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.1,
           "run_count": 3,
           "duration_seconds": 251,
           "tokens": 188588,
           "cost_usd": 0.15
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 200,
+          "tokens": 308028,
+          "cost_usd": 0.17
         },
         "gpt-6-luna-max": {
           "score": 0.1,
@@ -609,6 +767,13 @@
           "duration_seconds": 341,
           "tokens": 1567510,
           "cost_usd": 0.11
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 422,
+          "tokens": 469239,
+          "cost_usd": 0.02
         },
         "kimi-k3-max": {
           "score": 0.1,
@@ -686,12 +851,33 @@
           "tokens": 246596,
           "cost_usd": 1.18
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 135,
+          "tokens": 59892,
+          "cost_usd": 0.2
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 343,
+          "tokens": 615002,
+          "cost_usd": 1.18
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.7,
           "run_count": 3,
           "duration_seconds": 369,
           "tokens": 277582,
           "cost_usd": 0.22
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 268,
+          "tokens": 462803,
+          "cost_usd": 0.23
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -713,6 +899,13 @@
           "duration_seconds": 704,
           "tokens": 3040638,
           "cost_usd": 0.17
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 438,
+          "tokens": 697584,
+          "cost_usd": 0.02
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -790,12 +983,33 @@
           "tokens": 216873,
           "cost_usd": 0.94
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 116,
+          "tokens": 76740,
+          "cost_usd": 0.2
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 238,
+          "tokens": 376242,
+          "cost_usd": 0.76
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 318,
           "tokens": 280220,
           "cost_usd": 0.21
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 236,
+          "tokens": 326693,
+          "cost_usd": 0.19
         },
         "gpt-6-luna-max": {
           "score": 0.7,
@@ -817,6 +1031,13 @@
           "duration_seconds": 637,
           "tokens": 4221872,
           "cost_usd": 0.23
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 648,
+          "tokens": 1653585,
+          "cost_usd": 0.04
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -896,12 +1117,33 @@
           "tokens": 547743,
           "cost_usd": 2.0
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 316,
+          "tokens": 517795,
+          "cost_usd": 0.88
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 950,
+          "tokens": 1872252,
+          "cost_usd": 3.32
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 678,
           "tokens": 712929,
           "cost_usd": 0.4
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 513,
+          "tokens": 1150040,
+          "cost_usd": 0.51
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -923,6 +1165,13 @@
           "duration_seconds": 1467,
           "tokens": 10813622,
           "cost_usd": 0.46
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1050,
+          "tokens": 4507900,
+          "cost_usd": 0.09
         },
         "kimi-k3-max": {
           "score": 0.33,
@@ -1000,12 +1249,33 @@
           "tokens": 250311,
           "cost_usd": 1.16
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 127,
+          "tokens": 59171,
+          "cost_usd": 0.18
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 232,
+          "tokens": 251447,
+          "cost_usd": 0.56
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.1,
           "run_count": 3,
           "duration_seconds": 511,
           "tokens": 312471,
           "cost_usd": 0.25
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 304,
+          "tokens": 309610,
+          "cost_usd": 0.18
         },
         "gpt-6-luna-max": {
           "score": 0.1,
@@ -1027,6 +1297,13 @@
           "duration_seconds": 1533,
           "tokens": 2435970,
           "cost_usd": 0.17
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.4,
+          "run_count": 3,
+          "duration_seconds": 678,
+          "tokens": 930176,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 0.7,
@@ -1103,12 +1380,33 @@
           "tokens": 265870,
           "cost_usd": 1.04
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 125,
+          "tokens": 84979,
+          "cost_usd": 0.24
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 184,
+          "tokens": 237233,
+          "cost_usd": 0.59
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 294,
           "tokens": 284044,
           "cost_usd": 0.2
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 214,
+          "tokens": 354172,
+          "cost_usd": 0.19
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -1130,6 +1428,13 @@
           "duration_seconds": 728,
           "tokens": 3418636,
           "cost_usd": 0.18
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 539,
+          "tokens": 891114,
+          "cost_usd": 0.04
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -1207,12 +1512,33 @@
           "tokens": 261104,
           "cost_usd": 1.22
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 117,
+          "tokens": 78939,
+          "cost_usd": 0.22
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 378,
+          "tokens": 449139,
+          "cost_usd": 0.99
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 374,
           "tokens": 291426,
           "cost_usd": 0.23
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 311,
+          "tokens": 394805,
+          "cost_usd": 0.22
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -1234,6 +1560,13 @@
           "duration_seconds": 629,
           "tokens": 3435427,
           "cost_usd": 0.2
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 501,
+          "tokens": 868992,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -1311,12 +1644,33 @@
           "tokens": 177984,
           "cost_usd": 0.73
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 108,
+          "tokens": 68717,
+          "cost_usd": 0.18
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 319,
+          "tokens": 485768,
+          "cost_usd": 0.88
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.55,
           "run_count": 3,
           "duration_seconds": 259,
           "tokens": 182152,
           "cost_usd": 0.13
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 182,
+          "tokens": 300608,
+          "cost_usd": 0.16
         },
         "gpt-6-luna-max": {
           "score": 0.55,
@@ -1338,6 +1692,13 @@
           "duration_seconds": 828,
           "tokens": 4735434,
           "cost_usd": 0.25
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.55,
+          "run_count": 3,
+          "duration_seconds": 511,
+          "tokens": 1291355,
+          "cost_usd": 0.04
         },
         "kimi-k3-max": {
           "score": 0.55,
@@ -1416,12 +1777,33 @@
           "tokens": 168262,
           "cost_usd": 0.7
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 114,
+          "tokens": 45956,
+          "cost_usd": 0.16
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 201,
+          "tokens": 208694,
+          "cost_usd": 0.51
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.1,
           "run_count": 3,
           "duration_seconds": 202,
           "tokens": 160389,
           "cost_usd": 0.13
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 199,
+          "tokens": 241207,
+          "cost_usd": 0.15
         },
         "gpt-6-luna-max": {
           "score": 0.1,
@@ -1443,6 +1825,13 @@
           "duration_seconds": 590,
           "tokens": 2226395,
           "cost_usd": 0.15
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 525,
+          "tokens": 774641,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 0.1,
@@ -1519,12 +1908,33 @@
           "tokens": 509822,
           "cost_usd": 1.86
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 117,
+          "tokens": 78077,
+          "cost_usd": 0.22
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 416,
+          "tokens": 822045,
+          "cost_usd": 1.44
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 466,
           "tokens": 561017,
           "cost_usd": 0.33
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 103,
+          "tokens": 91066,
+          "cost_usd": 0.06
         },
         "gpt-6-luna-max": {
           "score": 0.4,
@@ -1546,6 +1956,13 @@
           "duration_seconds": 1862,
           "tokens": 13137270,
           "cost_usd": 0.55
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 627,
+          "tokens": 1247167,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 0.1,
@@ -1623,12 +2040,33 @@
           "tokens": 241601,
           "cost_usd": 1.06
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 146,
+          "tokens": 124301,
+          "cost_usd": 0.31
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 306,
+          "tokens": 594732,
+          "cost_usd": 1.19
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 360,
           "tokens": 274356,
           "cost_usd": 0.21
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 257,
+          "tokens": 192779,
+          "cost_usd": 0.12
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -1650,6 +2088,13 @@
           "duration_seconds": 1251,
           "tokens": 8913284,
           "cost_usd": 0.4
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 659,
+          "tokens": 1875137,
+          "cost_usd": 0.05
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -1727,12 +2172,33 @@
           "tokens": 467871,
           "cost_usd": 1.89
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 180,
+          "tokens": 221135,
+          "cost_usd": 0.5
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 385,
+          "tokens": 840429,
+          "cost_usd": 1.53
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 530,
           "tokens": 413139,
           "cost_usd": 0.32
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 171,
+          "tokens": 299869,
+          "cost_usd": 0.19
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -1754,6 +2220,13 @@
           "duration_seconds": 1843,
           "tokens": 12745052,
           "cost_usd": 0.47
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 739,
+          "tokens": 2420584,
+          "cost_usd": 0.05
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -1830,12 +2303,33 @@
           "tokens": 520451,
           "cost_usd": 1.9
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 132,
+          "tokens": 103062,
+          "cost_usd": 0.26
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 349,
+          "tokens": 555728,
+          "cost_usd": 1.12
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.1,
           "run_count": 3,
           "duration_seconds": 551,
           "tokens": 396036,
           "cost_usd": 0.29
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.1,
+          "run_count": 3,
+          "duration_seconds": 429,
+          "tokens": 715187,
+          "cost_usd": 0.34
         },
         "gpt-6-luna-max": {
           "score": 0.7,
@@ -1857,6 +2351,13 @@
           "duration_seconds": 1032,
           "tokens": 7607504,
           "cost_usd": 0.34
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 594,
+          "tokens": 1032806,
+          "cost_usd": 0.03
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -1933,12 +2434,33 @@
           "tokens": 458896,
           "cost_usd": 1.69
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 138,
+          "tokens": 195347,
+          "cost_usd": 0.39
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 300,
+          "tokens": 1127628,
+          "cost_usd": 1.64
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 463,
           "tokens": 514084,
           "cost_usd": 0.31
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 160,
+          "tokens": 402103,
+          "cost_usd": 0.17
         },
         "gpt-6-luna-max": {
           "score": 0.67,
@@ -1960,6 +2482,13 @@
           "duration_seconds": 1307,
           "tokens": 8713759,
           "cost_usd": 0.31
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 974,
+          "tokens": 6946901,
+          "cost_usd": 0.09
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -2038,12 +2567,33 @@
           "tokens": 420945,
           "cost_usd": 1.43
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 117,
+          "tokens": 157063,
+          "cost_usd": 0.31
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 214,
+          "tokens": 487456,
+          "cost_usd": 0.79
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 393,
           "tokens": 445145,
           "cost_usd": 0.26
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 152,
+          "tokens": 364250,
+          "cost_usd": 0.17
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -2065,6 +2615,13 @@
           "duration_seconds": 1199,
           "tokens": 4681916,
           "cost_usd": 0.23
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 623,
+          "tokens": 2502709,
+          "cost_usd": 0.06
         },
         "kimi-k3-max": {
           "score": 0.67,
@@ -2143,12 +2700,33 @@
           "tokens": 1414783,
           "cost_usd": 3.63
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 577,
+          "tokens": 2455837,
+          "cost_usd": 2.62
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1032,
+          "tokens": 5283255,
+          "cost_usd": 4.83
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 1056,
           "tokens": 1776440,
           "cost_usd": 0.68
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.47,
+          "run_count": 3,
+          "duration_seconds": 599,
+          "tokens": 3210494,
+          "cost_usd": 0.88
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -2170,6 +2748,13 @@
           "duration_seconds": 2978,
           "tokens": 60365974,
           "cost_usd": 1.77
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3068,
+          "tokens": 28349761,
+          "cost_usd": 0.25
         },
         "kimi-k3-max": {
           "score": 0.57,
@@ -2248,12 +2833,33 @@
           "tokens": 929085,
           "cost_usd": 3.5
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 773,
+          "tokens": 1971395,
+          "cost_usd": 2.4
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1234,
+          "tokens": 3325204,
+          "cost_usd": 4.08
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.67,
           "run_count": 3,
           "duration_seconds": 1391,
           "tokens": 1516577,
           "cost_usd": 0.72
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1077,
+          "tokens": 3046703,
+          "cost_usd": 1.1
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -2275,6 +2881,13 @@
           "duration_seconds": 4129,
           "tokens": 42051467,
           "cost_usd": 1.32
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 1356,
+          "tokens": 9667776,
+          "cost_usd": 0.09
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -2353,12 +2966,33 @@
           "tokens": 660356,
           "cost_usd": 1.87
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 223,
+          "tokens": 508511,
+          "cost_usd": 0.78
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 520,
+          "tokens": 1584405,
+          "cost_usd": 2.24
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.7,
           "run_count": 3,
           "duration_seconds": 645,
           "tokens": 826497,
           "cost_usd": 0.39
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.47,
+          "run_count": 3,
+          "duration_seconds": 331,
+          "tokens": 1136359,
+          "cost_usd": 0.42
         },
         "gpt-6-luna-max": {
           "score": 0.7,
@@ -2380,6 +3014,13 @@
           "duration_seconds": 1494,
           "tokens": 15399420,
           "cost_usd": 0.57
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 930,
+          "tokens": 5491765,
+          "cost_usd": 0.06
         },
         "kimi-k3-max": {
           "score": 0.7,
@@ -2458,12 +3099,33 @@
           "tokens": 1383797,
           "cost_usd": 3.42
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 251,
+          "tokens": 611353,
+          "cost_usd": 0.91
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 711,
+          "tokens": 3002072,
+          "cost_usd": 3.35
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.5,
           "run_count": 3,
           "duration_seconds": 969,
           "tokens": 1208298,
           "cost_usd": 0.52
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 540,
+          "tokens": 2545838,
+          "cost_usd": 0.76
         },
         "gpt-6-luna-max": {
           "score": 0.5,
@@ -2485,6 +3147,13 @@
           "duration_seconds": 2828,
           "tokens": 47111604,
           "cost_usd": 1.22
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.5,
+          "run_count": 3,
+          "duration_seconds": 893,
+          "tokens": 8602740,
+          "cost_usd": 0.07
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -2563,12 +3232,33 @@
           "tokens": 742907,
           "cost_usd": 2.1
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 274,
+          "tokens": 837113,
+          "cost_usd": 1.13
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 685,
+          "tokens": 2092098,
+          "cost_usd": 2.71
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.67,
           "run_count": 3,
           "duration_seconds": 824,
           "tokens": 727536,
           "cost_usd": 0.36
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 281,
+          "tokens": 923207,
+          "cost_usd": 0.33
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -2590,6 +3280,13 @@
           "duration_seconds": 1688,
           "tokens": 15536677,
           "cost_usd": 0.51
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.23,
+          "run_count": 3,
+          "duration_seconds": 740,
+          "tokens": 4424280,
+          "cost_usd": 0.05
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -2667,12 +3364,33 @@
           "tokens": 1455314,
           "cost_usd": 3.67
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 441,
+          "tokens": 1188703,
+          "cost_usd": 1.59
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1234,
+          "tokens": 3735342,
+          "cost_usd": 4.35
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 1270,
           "tokens": 1266660,
           "cost_usd": 0.62
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 532,
+          "tokens": 2462510,
+          "cost_usd": 0.68
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -2694,6 +3412,13 @@
           "duration_seconds": 3249,
           "tokens": 40993279,
           "cost_usd": 1.28
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 1268,
+          "tokens": 7804091,
+          "cost_usd": 0.07
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -2772,12 +3497,33 @@
           "tokens": 1023990,
           "cost_usd": 2.71
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 257,
+          "tokens": 491638,
+          "cost_usd": 0.84
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 530,
+          "tokens": 2047021,
+          "cost_usd": 2.55
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 872,
           "tokens": 1005648,
           "cost_usd": 0.43
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.8,
+          "run_count": 3,
+          "duration_seconds": 484,
+          "tokens": 2083600,
+          "cost_usd": 0.65
         },
         "gpt-6-luna-max": {
           "score": 0.9,
@@ -2799,6 +3545,13 @@
           "duration_seconds": 2473,
           "tokens": 22041967,
           "cost_usd": 0.74
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 874,
+          "tokens": 6842650,
+          "cost_usd": 0.06
         },
         "kimi-k3-max": {
           "score": 0.9,
@@ -2876,12 +3629,33 @@
           "tokens": 1515644,
           "cost_usd": 3.65
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 491,
+          "tokens": 2049736,
+          "cost_usd": 2.14
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1140,
+          "tokens": 5160119,
+          "cost_usd": 5.07
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 1119,
           "tokens": 1599922,
           "cost_usd": 0.61
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 400,
+          "tokens": 1708908,
+          "cost_usd": 0.53
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -2903,6 +3677,13 @@
           "duration_seconds": 3432,
           "tokens": 49327313,
           "cost_usd": 1.54
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 1838,
+          "tokens": 7455906,
+          "cost_usd": 0.12
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -2981,12 +3762,33 @@
           "tokens": 1116968,
           "cost_usd": 3.17
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 465,
+          "tokens": 1111506,
+          "cost_usd": 1.44
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 2,
+          "duration_seconds": 972,
+          "tokens": 2184378,
+          "cost_usd": 2.78
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 1603,
           "tokens": 1683817,
           "cost_usd": 0.64
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 672,
+          "tokens": 1822053,
+          "cost_usd": 0.62
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -3008,6 +3810,13 @@
           "duration_seconds": 3696,
           "tokens": 54622406,
           "cost_usd": 1.56
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3543,
+          "tokens": 21748044,
+          "cost_usd": 0.23
         },
         "kimi-k3-max": {
           "score": 0.33,
@@ -3088,12 +3897,33 @@
           "tokens": 2414162,
           "cost_usd": 5.75
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 1,
+          "duration_seconds": 736,
+          "tokens": 3155161,
+          "cost_usd": 3.45
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 1,
+          "duration_seconds": 1367,
+          "tokens": 6863569,
+          "cost_usd": 6.58
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 1776,
           "tokens": 3188573,
           "cost_usd": 1.21
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 710,
+          "tokens": 4248831,
+          "cost_usd": 1.12
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -3115,6 +3945,13 @@
           "duration_seconds": 4606,
           "tokens": 84668199,
           "cost_usd": 1.67
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3289,
+          "tokens": 52091655,
+          "cost_usd": 0.35
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -3193,12 +4030,33 @@
           "tokens": 705138,
           "cost_usd": 2.49
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 385,
+          "tokens": 732649,
+          "cost_usd": 1.17
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 706,
+          "tokens": 1966961,
+          "cost_usd": 2.83
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 855,
           "tokens": 671330,
           "cost_usd": 0.44
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 554,
+          "tokens": 2015560,
+          "cost_usd": 0.67
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -3220,6 +4078,13 @@
           "duration_seconds": 3188,
           "tokens": 47253211,
           "cost_usd": 1.28
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.33,
+          "run_count": 3,
+          "duration_seconds": 5113,
+          "tokens": 16302706,
+          "cost_usd": 0.24
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -3298,12 +4163,33 @@
           "tokens": 534930,
           "cost_usd": 1.84
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 221,
+          "tokens": 270202,
+          "cost_usd": 0.55
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1013,
+          "tokens": 2340930,
+          "cost_usd": 3.3
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 831,
           "tokens": 769229,
           "cost_usd": 0.38
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 661,
+          "tokens": 1467322,
+          "cost_usd": 0.54
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -3325,6 +4211,13 @@
           "duration_seconds": 3726,
           "tokens": 31903208,
           "cost_usd": 1.02
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2040,
+          "tokens": 9488695,
+          "cost_usd": 0.14
         },
         "kimi-k3-max": {
           "score": 0.67,
@@ -3402,12 +4295,33 @@
           "tokens": 8447281,
           "cost_usd": 14.13
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 1321,
+          "tokens": 15204539,
+          "cost_usd": 11.76
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 1736,
+          "tokens": 18882314,
+          "cost_usd": 16.21
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 2196,
           "tokens": 8453007,
           "cost_usd": 2.06
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 904,
+          "tokens": 7026390,
+          "cost_usd": 1.57
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -3429,6 +4343,13 @@
           "duration_seconds": 5371,
           "tokens": 76887862,
           "cost_usd": 2.11
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 5073,
+          "tokens": 89109599,
+          "cost_usd": 0.57
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -3506,12 +4427,33 @@
           "tokens": 580363,
           "cost_usd": 2.08
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 177,
+          "tokens": 337317,
+          "cost_usd": 0.63
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 551,
+          "tokens": 1761788,
+          "cost_usd": 2.34
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.67,
           "run_count": 3,
           "duration_seconds": 813,
           "tokens": 740532,
           "cost_usd": 0.41
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 360,
+          "tokens": 1147246,
+          "cost_usd": 0.4
         },
         "gpt-6-luna-max": {
           "score": 1.0,
@@ -3533,6 +4475,13 @@
           "duration_seconds": 1438,
           "tokens": 20311448,
           "cost_usd": 0.68
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 801,
+          "tokens": 6960592,
+          "cost_usd": 0.06
         },
         "kimi-k3-max": {
           "score": 1.0,
@@ -3611,12 +4560,33 @@
           "tokens": 586370,
           "cost_usd": 2.2
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 333,
+          "tokens": 789088,
+          "cost_usd": 1.13
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 745,
+          "tokens": 2207451,
+          "cost_usd": 2.78
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.67,
           "run_count": 3,
           "duration_seconds": 1044,
           "tokens": 974485,
           "cost_usd": 0.49
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 475,
+          "tokens": 1613450,
+          "cost_usd": 0.51
         },
         "gpt-6-luna-max": {
           "score": 0.5,
@@ -3638,6 +4608,13 @@
           "duration_seconds": 3048,
           "tokens": 47413450,
           "cost_usd": 1.16
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.67,
+          "run_count": 3,
+          "duration_seconds": 3602,
+          "tokens": 11114867,
+          "cost_usd": 0.15
         },
         "kimi-k3-max": {
           "score": 0.67,
@@ -3716,12 +4693,33 @@
           "tokens": 835960,
           "cost_usd": 2.67
         },
+        "gpt-6.2-astra-medium": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 265,
+          "tokens": 889572,
+          "cost_usd": 1.19
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 813,
+          "tokens": 3527519,
+          "cost_usd": 3.79
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 1.0,
           "run_count": 3,
           "duration_seconds": 993,
           "tokens": 1409459,
           "cost_usd": 0.6
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 1.0,
+          "run_count": 3,
+          "duration_seconds": 634,
+          "tokens": 3574048,
+          "cost_usd": 0.91
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -3743,6 +4741,13 @@
           "duration_seconds": 3212,
           "tokens": 23225657,
           "cost_usd": 0.68
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 965,
+          "tokens": 3095778,
+          "cost_usd": 0.07
         },
         "kimi-k3-max": {
           "score": 0.23,
@@ -3821,12 +4826,33 @@
           "tokens": 667447,
           "cost_usd": 2.26
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 336,
+          "tokens": 633980,
+          "cost_usd": 1.0
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 1149,
+          "tokens": 2955834,
+          "cost_usd": 4.09
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.7,
           "run_count": 3,
           "duration_seconds": 989,
           "tokens": 750707,
           "cost_usd": 0.43
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.7,
+          "run_count": 3,
+          "duration_seconds": 482,
+          "tokens": 1471997,
+          "cost_usd": 0.58
         },
         "gpt-6-luna-max": {
           "score": 0.23,
@@ -3848,6 +4874,13 @@
           "duration_seconds": 3252,
           "tokens": 70523518,
           "cost_usd": 1.79
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2873,
+          "tokens": 8349673,
+          "cost_usd": 0.14
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -3926,12 +4959,33 @@
           "tokens": 1328380,
           "cost_usd": 3.65
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 481,
+          "tokens": 1531593,
+          "cost_usd": 1.99
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 852,
+          "tokens": 2909903,
+          "cost_usd": 3.56
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 1225,
           "tokens": 1580208,
           "cost_usd": 0.78
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 583,
+          "tokens": 1857324,
+          "cost_usd": 0.64
         },
         "gpt-6-luna-max": {
           "score": 0.33,
@@ -3953,6 +5007,13 @@
           "duration_seconds": 4643,
           "tokens": 94042089,
           "cost_usd": 2.72
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3655,
+          "tokens": 33055667,
+          "cost_usd": 0.29
         },
         "kimi-k3-max": {
           "score": 0.67,
@@ -4031,12 +5092,33 @@
           "tokens": 1084912,
           "cost_usd": 3.43
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 415,
+          "tokens": 1253823,
+          "cost_usd": 1.67
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 923,
+          "tokens": 3057342,
+          "cost_usd": 3.5
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 926,
           "tokens": 1137052,
           "cost_usd": 0.59
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 650,
+          "tokens": 2368249,
+          "cost_usd": 0.76
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4058,6 +5140,13 @@
           "duration_seconds": 2852,
           "tokens": 40631885,
           "cost_usd": 1.23
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 2094,
+          "tokens": 18405532,
+          "cost_usd": 0.17
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -4136,12 +5225,33 @@
           "tokens": 821147,
           "cost_usd": 2.53
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 375,
+          "tokens": 1042173,
+          "cost_usd": 1.37
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 686,
+          "tokens": 2063349,
+          "cost_usd": 2.74
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 3,
           "duration_seconds": 809,
           "tokens": 1045902,
           "cost_usd": 0.51
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 654,
+          "tokens": 2521894,
+          "cost_usd": 0.79
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4163,6 +5273,13 @@
           "duration_seconds": 3063,
           "tokens": 51382024,
           "cost_usd": 1.73
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3665,
+          "tokens": 10774257,
+          "cost_usd": 0.16
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -4241,12 +5358,33 @@
           "tokens": 4776593,
           "cost_usd": 13.7
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.84,
+          "run_count": 3,
+          "duration_seconds": 1994,
+          "tokens": 1613207,
+          "cost_usd": 3.37
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.58,
+          "run_count": 3,
+          "duration_seconds": 4253,
+          "tokens": 8694411,
+          "cost_usd": 12.16
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.85,
           "run_count": 3,
           "duration_seconds": 4706,
           "tokens": 6310426,
           "cost_usd": 2.81
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.58,
+          "run_count": 3,
+          "duration_seconds": 2945,
+          "tokens": 6745797,
+          "cost_usd": 2.38
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4268,6 +5406,13 @@
           "duration_seconds": 8682,
           "tokens": 118888821,
           "cost_usd": 1.86
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 3107,
+          "tokens": 19950964,
+          "cost_usd": 0.19
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -4344,12 +5489,33 @@
           "tokens": 2982018,
           "cost_usd": 6.4
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 2416,
+          "tokens": 7056567,
+          "cost_usd": 7.48
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.3,
+          "run_count": 2,
+          "duration_seconds": 3204,
+          "tokens": 12175042,
+          "cost_usd": 11.11
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.2,
           "run_count": 3,
           "duration_seconds": 2219,
           "tokens": 3075079,
           "cost_usd": 1.27
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.2,
+          "run_count": 3,
+          "duration_seconds": 1689,
+          "tokens": 5603168,
+          "cost_usd": 1.75
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4371,6 +5537,13 @@
           "duration_seconds": 8856,
           "tokens": 116904079,
           "cost_usd": 2.04
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4574,
+          "tokens": 48155472,
+          "cost_usd": 0.37
         },
         "kimi-k3-max": {
           "score": 0.4,
@@ -4452,12 +5625,33 @@
           "tokens": 3289916,
           "cost_usd": 16.2
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 219,
+          "tokens": 187180,
+          "cost_usd": 0.71
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.52,
+          "run_count": 2,
+          "duration_seconds": 3150,
+          "tokens": 5801698,
+          "cost_usd": 13.06
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.52,
           "run_count": 2,
           "duration_seconds": 4352,
           "tokens": 3570302,
           "cost_usd": 3.2
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.47,
+          "run_count": 2,
+          "duration_seconds": 2462,
+          "tokens": 4119388,
+          "cost_usd": 2.67
         },
         "gpt-6-luna-max": {
           "score": 0.15,
@@ -4479,6 +5673,13 @@
           "duration_seconds": 14592,
           "tokens": 79403114,
           "cost_usd": 2.81
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.39,
+          "run_count": 2,
+          "duration_seconds": 4446,
+          "tokens": 18159705,
+          "cost_usd": 0.24
         },
         "kimi-k3-max": {
           "score": 0.39,
@@ -4557,12 +5758,33 @@
           "tokens": 4493230,
           "cost_usd": 14.94
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.6,
+          "run_count": 3,
+          "duration_seconds": 1631,
+          "tokens": 1703406,
+          "cost_usd": 3.77
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.9,
+          "run_count": 3,
+          "duration_seconds": 3699,
+          "tokens": 5796170,
+          "cost_usd": 10.9
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.93,
           "run_count": 3,
           "duration_seconds": 4440,
           "tokens": 4542092,
           "cost_usd": 2.61
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.3,
+          "run_count": 3,
+          "duration_seconds": 3047,
+          "tokens": 5273003,
+          "cost_usd": 2.71
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4584,6 +5806,13 @@
           "duration_seconds": 3081,
           "tokens": 32151352,
           "cost_usd": 0.85
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4641,
+          "tokens": 22911342,
+          "cost_usd": 0.2
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -4661,12 +5890,33 @@
           "tokens": 4478603,
           "cost_usd": 9.91
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 2719,
+          "tokens": 7637050,
+          "cost_usd": 6.64
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 3360,
+          "tokens": 13043402,
+          "cost_usd": 11.21
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.28,
           "run_count": 3,
           "duration_seconds": 4610,
           "tokens": 4344938,
           "cost_usd": 1.65
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 3,
+          "duration_seconds": 3231,
+          "tokens": 13664976,
+          "cost_usd": 2.95
         },
         "gpt-6-luna-max": {
           "score": 0.25,
@@ -4688,6 +5938,13 @@
           "duration_seconds": 7379,
           "tokens": 33593188,
           "cost_usd": 0.87
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 7783,
+          "tokens": 19583576,
+          "cost_usd": 0.14
         },
         "kimi-k3-max": {
           "score": 0.84,
@@ -4764,12 +6021,33 @@
           "tokens": 10780574,
           "cost_usd": 22.87
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.43,
+          "run_count": 2,
+          "duration_seconds": 5966,
+          "tokens": 14139910,
+          "cost_usd": 12.3
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.87,
+          "run_count": 2,
+          "duration_seconds": 5278,
+          "tokens": 21277186,
+          "cost_usd": 19.34
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.87,
           "run_count": 2,
           "duration_seconds": 10794,
           "tokens": 10466842,
           "cost_usd": 3.81
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 1392,
+          "tokens": 2780701,
+          "cost_usd": 0.7
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4791,6 +6069,13 @@
           "duration_seconds": 11332,
           "tokens": 69211958,
           "cost_usd": 0.98
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 9688,
+          "tokens": 77201267,
+          "cost_usd": 0.43
         },
         "kimi-k3-max": {
           "score": 0.0,
@@ -4869,12 +6154,33 @@
           "tokens": 25891686,
           "cost_usd": 37.01
         },
+        "gpt-6.2-astra-medium": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 3700,
+          "tokens": 18419974,
+          "cost_usd": 14.16
+        },
+        "gpt-6.2-astra-xhigh": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 4236,
+          "tokens": 23707558,
+          "cost_usd": 20.43
+        },
         "gpt-6.1-sol-xhigh": {
           "score": 0.0,
           "run_count": 2,
           "duration_seconds": 4142,
           "tokens": 22493481,
           "cost_usd": 4.18
+        },
+        "gpt-6.2-sol-xhigh": {
+          "score": 0.5,
+          "run_count": 2,
+          "duration_seconds": 3711,
+          "tokens": 26565470,
+          "cost_usd": 4.9
         },
         "gpt-6-luna-max": {
           "score": 0.0,
@@ -4896,6 +6202,13 @@
           "duration_seconds": 6887,
           "tokens": 159093761,
           "cost_usd": 2.58
+        },
+        "deepseek-v4.1-flash-1017-max": {
+          "score": 0.0,
+          "run_count": 2,
+          "duration_seconds": 6243,
+          "tokens": 154957458,
+          "cost_usd": 1.73
         },
         "kimi-k3-max": {
           "score": 0.0,
